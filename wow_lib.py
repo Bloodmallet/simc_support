@@ -396,6 +396,115 @@ def __combine_trinket_dicts(role_trinkets, stat_trinkets):
   return trinkets
 
 
+
+##
+## @brief      Generates all possible talent combinations for simc depending on
+##             blueprint and wow_lib.get_dps_talents
+##
+## @param      blueprint  The blueprint
+##
+## @return     List of all possible talent combinations
+##
+def __generate_talent_combinations( blueprint, wow_class, wow_spec ):
+  if not ( "x" in blueprint or "-" in blueprint ):
+    return [blueprint]
+  data_talents = get_dps_talents( wow_class )
+  pattern = ""
+
+  for i in range( 0, 7 ):
+    if ( blueprint[i] == "-" or blueprint[i] == "x" ) and data_talents[i] == "0":
+      pattern += "0"
+    else:
+      pattern += blueprint[i]
+
+  combinations = []
+  for first in range( 4 ):
+    for second in range( 4 ):
+      for third in range( 4 ):
+        for forth in range( 4 ):
+          for fivth in range( 4 ):
+            for sixth in range( 4 ):
+              for seventh in range( 4 ):
+                combination = str( first ) + str( second ) + str( third ) + str( forth ) + str( fivth ) + str( sixth ) + str( seventh )
+                add_it = True
+
+                # check whether the generated talent combination fits the wanted blueprint
+                for i in range( 7 ):
+                  if ( not ( pattern[i] == "-" or pattern[i] == "x" ) ) and not combination[i] == pattern[i]:
+                    add_it = False
+                  if combination[i] == "0" and ( pattern[i] == "-" or pattern[i] == "x" ):
+                    add_it = False
+                if add_it:
+                  combinations += [combination]
+  return combinations
+
+
+##
+## @brief      Determines if talent input from user is in a valid format.
+##
+## @param      talent_combination  The talent combination
+##
+## @return     True if talent input is valid, False otherwise.
+##
+def is_talent_combination( talent_combination ):
+  if talent_combination == None:
+    return False
+  if not type( talent_combination ) is str:
+    return False
+  if talent_combination == "":
+    return True
+  if len( talent_combination ) == 7:
+    for letter in talent_combination:
+      if not ( letter == "0" or letter == "1" or letter == "2" or letter == "3" or letter == "-" or letter == "x" ):
+        return False
+    return True
+  elif len( talent_combination ) == 2:
+    for letter in talent_combination:
+      if not ( letter == "0" or letter == "1" or letter == "2" or letter == "3" ):
+        return False
+    return True
+  # Would've been for talent combinations that set certain rows to a value without declaring anything else.
+  # Like 42 would set the forth row to the second talent. 4253 would set 4. row to 2 and 5. to 3
+  #elif len(talent_combination) % 2 == 0:
+  #  for i in range(0, len(talent_combination)):
+  #    if (i + 1) % 2 == 1 and not int(talent_combination[i]) in range(1,8):
+  #      return False
+  #    elif not int(talent_combination[i]) in range(0,4):
+  #      return False
+  #  return True
+  else:
+    return False
+
+
+##
+## @brief      Gets the possible talent combinations based on user_input. Either
+##             all possible combinations or just a collection of those that fit
+##             user_input.
+##
+## @param      user_input  The user input for talents
+## @param      wow_class   The wow class
+## @param      wow_spec    The wow spec
+##
+## @return     The possible talent combinations as a list.
+##
+def get_talent_combinations( user_input = "", wow_class, wow_spec ):
+  combination = []
+
+  if user_input == "" or user_input == None:
+    combinations = __generate_talent_combinations( "xxxxxxx", wow_class, wow_spec )
+
+  elif len( user_input ) == 2:
+    combinations = __generate_talent_combinations( "xxxxx" + user_input, wow_class, wow_spec )
+
+  elif len( user_input ) == 7:
+    combinations = __generate_talent_combinations( user_input, wow_class, wow_spec )
+
+  else:
+    sys.exit( "Something went wrong when generating talent combinations. Please recheck your user_input and settings" )
+
+  return combinations
+
+
 ##
 ## @brief      Function to test a trinket group for data
 ##
@@ -449,7 +558,7 @@ def get_races():
 ## @return     The role as string.
 ##
 def get_role(wow_class, wow_spec):
-  return __classes_data[wow_class]["specs"][wow_spec]["role"]
+  return __classes_data[wow_class.title()]["specs"][wow_spec.title()]["role"]
 
 
 ##
@@ -461,7 +570,7 @@ def get_role(wow_class, wow_spec):
 ## @return     The main stat as string.
 ##
 def get_stat(wow_class, wow_spec):
-  return __classes_data[wow_class]["specs"][wow_spec]["stat"]
+  return __classes_data[wow_class.title()]["specs"][wow_spec.title()]["stat"]
 
 
 ##
@@ -473,7 +582,7 @@ def get_stat(wow_class, wow_spec):
 ## @return     The dps talents as string.
 ##
 def get_dps_talents(wow_class, wow_spec=""):
-  return __classes_data[wow_class]["talents"]
+  return __classes_data[wow_class.title()]["talents"]
 
 
 ##
@@ -485,7 +594,7 @@ def get_dps_talents(wow_class, wow_spec=""):
 ##
 def get_specs(wow_class):
   spec_collection = []
-  for spec in __classes_data[wow_class]["specs"]:
+  for spec in __classes_data[wow_class.title()]["specs"]:
     spec_collection.append(spec)
   return spec_collection
 
