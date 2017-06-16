@@ -14,12 +14,43 @@ def get_fight_styles():
     "heavymovement", 
     "hecticaddcleave", 
     "beastlord", 
-    "helterskelter" )
+    "helterskelter"
+  )
+
 
 ##
-## @brief      Validates the input fight styles.
+## @brief      Gets the profiles of the current addon.
 ##
-## @param      fight_styles  The fight style like in SimC options
+## @return     The profiles.
+##
+def get_profiles():
+  return (
+    "T19P",
+    "T19H",
+    "T19H_NH",
+    "T19M",
+    "T19M_NH",
+    "T20H",
+    "T20M"
+  )
+
+
+##
+## @brief      Gets the tiers for the current addon
+##
+## @return     The tiers.
+##
+def get_tiers():
+  return (
+    "19",
+    "20"
+  )
+
+
+##
+## @brief      Validates the input fight style.
+##
+## @param      fight_style  The fight style like in SimC options
 ##
 ## @return     True if fight_style matches predetermined SimC-styles
 ##
@@ -50,6 +81,20 @@ def is_iteration(iterations):
 
 
 ##
+## @brief      Determines if profile is a valid input based on simc profiles.
+##
+## @param      profile  The profile
+##
+## @return     True if profile matches simc profiles, False otherwise.
+##
+def is_profile(profile):
+  for base_profile in get_profiles():
+    if profile.lower() == base_profile.lower():
+      return True
+  return False
+
+
+##
 ## @brief      Determines if target error is string and < 0.5 and >= 0.0.
 ##
 ## @param      target_error  The target error
@@ -60,5 +105,33 @@ def is_iteration(iterations):
 def is_target_error(target_error):
   if type(target_error) is str:
     if 0.5 >= float(target_error) >= 0.0:
+      return True
+  return False
+
+
+##
+## @brief      Determines if threads is useable for simc.
+##
+## @param      threads  The threads
+##
+## @return     True if threads, False otherwise.
+##
+def is_threads(threads):
+  if type(threads) == str:
+    if threads == "" or int(threads) > 0:
+      return True
+  return False
+
+
+##
+## @brief      Determines if tier number matches the current (addon) available tiers.
+##
+## @param      tier_number  The tier number
+##
+## @return     True if tier number, False otherwise.
+##
+def is_tier_number(tier_number):
+  if type(tier_number) == str:
+    if tier_number in get_tiers():
       return True
   return False
