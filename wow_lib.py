@@ -487,7 +487,7 @@ def is_talent_combination( talent_combination ):
 ##
 ## @return     The possible talent combinations as a list.
 ##
-def get_talent_combinations( user_input = "", wow_class, wow_spec ):
+def get_talent_combinations( wow_class, wow_spec, user_input = "" ):
   combination = []
 
   if user_input == "" or user_input == None:
