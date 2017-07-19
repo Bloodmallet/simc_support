@@ -48,7 +48,6 @@ melee_trinkets["dungeon"] = [
   [ "Faulty Countermeasure",             "137539", 805, 1200 ],
   [ "Gift of Radiance",                  "133647", 805, 1200 ],
   [ "Giant Ornamental Pearl",            "137369", 805, 1200 ],
-  [ "Hunger of the Pack",                "136975", 805, 1200 ],
   [ "Mark of Dargrul",                   "137357", 805, 1200 ],
   [ "Memento of Angerboda",              "133644", 805, 1200 ],
   [ "Nightmare Egg Shell",               "137312", 805, 1200 ],
