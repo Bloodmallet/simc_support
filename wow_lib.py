@@ -71,7 +71,8 @@ melee_trinkets["nighthold"] = [
 melee_trinkets["tomb_of_sargeras"] = [
   [ "Infernal Cinders",                  "147009", 885, 1200 ],
   [ "Umbral Moonglaives",                "147012", 890, 1200 ],
-  [ "Vial of Ceaseless Toxins",          "147011", 890, 1200 ]
+  [ "Vial of Ceaseless Toxins",          "147011", 890, 1200 ],
+  [ "Specter of Betrayal",               "151190", 895, 1200 ]
 ]
 melee_trinkets["world"] = [
   [ "The Devilsaur's Bite",              "140026", 805, 1200 ],
