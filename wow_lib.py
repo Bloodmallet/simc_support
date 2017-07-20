@@ -92,7 +92,6 @@ ranged_trinkets["dungeon"] = [
   [ "Naraxas' Spiked Tongue",             "137349", 840, 1200 ],
   [ "Oakheart's Gnarled Root",            "137306", 840, 1200 ],
   [ "Obelisk of the Void",                "137433", 840, 1200 ],
-  [ "Portable Manacracker",               "137398", 840, 1200 ],
   [ "Stormsinger Fulmination Charge",     "137367", 840, 1200 ]
 ]
 ranged_trinkets["emerald_nightmare"] = [  
@@ -156,7 +155,8 @@ int_trinkets["crafted"] = [
 ]
 int_trinkets["dungeon"] = [
   [ "Dreadstone of Endless Shadows",     "144480", 845, 1200 ],
-  [ "Infernal Writ",                     "137485", 840, 1200 ] 
+  [ "Infernal Writ",                     "137485", 840, 1200 ], 
+  [ "Portable Manacracker",              "137398", 840, 1200 ]
 ]
 int_trinkets["emerald_nightmare"] = [
   [ "Bough of Corruption",               "139323", 835, 1200 ],
