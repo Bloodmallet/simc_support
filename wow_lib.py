@@ -36,7 +36,7 @@ shared_trinkets["world"] = [
 ]
 
 
-## Usable by melee classes.
+## Usable by melee classes (survival hunters)
 melee_trinkets = {}
 melee_trinkets["crafted"] = [
   [ "Darkmoon Deck: Dominion",           "128705", 815, 900  ],
@@ -63,7 +63,6 @@ melee_trinkets["emerald_nightmare"] = [
   [ "Spontaneous Appendages",            "139325", 835, 1200 ]
 ]
 melee_trinkets["nighthold"] = [
-  [ "Convergence of Fates",              "140806", 860, 1200 ],
   [ "Draught of Souls",                  "140808", 865, 1200 ],
   [ "Entwined Elemental Foci",           "140796", 860, 1200 ]
 ]
@@ -127,6 +126,7 @@ agi_trinkets["emerald_nightmare"] = [
 ]
 agi_trinkets["nighthold"] = [
   [ "Arcanogolem Digit",                 "140794", 855, 1200 ],
+  [ "Convergence of Fates",              "140806", 860, 1200 ],
   [ "Nightblooming Frond",               "140802", 860, 1200 ]
 ]
 agi_trinkets["pvp"] = [
@@ -200,6 +200,7 @@ str_trinkets["emerald_nightmare"] = [
 ]
 str_trinkets["nighthold"] = [
   [ "Claw of the Crystalline Scorpid",   "140790", 855, 1200 ],
+  [ "Convergence of Fates",              "140806", 860, 1200 ],
   [ "Might of Krosus",                   "140799", 860, 1200 ]
 ]
 str_trinkets["pvp"] = [
