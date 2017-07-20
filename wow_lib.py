@@ -102,10 +102,6 @@ ranged_trinkets["nighthold"] = [
   [ "Fury of the Burning Sky",           "140801", 860, 1200 ],
   [ "Icon of Rot",                       "140798", 860, 1200 ] 
 ]
-ranged_trinkets["pvp"] = [   
-  [ "PVP Badge of Dominance",            "142779", 840, 1200 ],
-  [ "PVP Insignia of Dominance",         "142668", 840, 1200 ]
-]
 ranged_trinkets["tomb_of_sargeras"] = [
   [ "Spectral Thurible",                 "147018", 890, 1200 ],
   [ "Tarnished Sentinel Medallion",      "147017", 890, 1200 ],
