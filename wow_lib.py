@@ -32,7 +32,7 @@ shared_trinkets["crafted"] = [
   [ "Infernal Alchemist Stone",          "127842", 815, 900  ],
 ]
 shared_trinkets["world"] = [
-  [ "Unstable Arcano Crystal",           "141482", 860, 1200 ],
+  [ "Unstable Arcanocrystal",           "141482", 860, 1200 ],
 ]
 
 
@@ -177,6 +177,7 @@ int_trinkets["tomb_of_sargeras"] = [
 ]
 int_trinkets["world"] = [
   [ "Devilsaur Shock-Baton",             "140030", 840, 1200 ],
+  [ "Eyasu's Mulligan",                  "141584", 810, 1200 ],
   [ "Padawsen's Unlucky Charm",          "141536", 860, 1200 ],
   # 142507 is Brinewater Slime in a Bottle, used as a reference stat stick
   [ "Stat Stick (Crit)",                 "142507,bonus_id=603", 865, 1200 ],
