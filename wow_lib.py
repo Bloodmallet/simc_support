@@ -27,6 +27,7 @@ shared_trinkets = {}
 shared_trinkets["dungeon"] = [
   [ "Chrono Shard",                      "137419", 840, 1200 ],
   [ "Horn of Valor",                     "133642", 805, 1200 ],
+  [ "Toe Knee's Promise",                "142164", 855, 1200 ],
 ]
 shared_trinkets["crafted"] = [
   [ "Infernal Alchemist Stone",          "127842", 815, 900  ],
@@ -54,7 +55,6 @@ melee_trinkets["dungeon"] = [
   [ "Spiked Counterweight",              "136715", 805, 1200 ],
   [ "Terrorbound Nexus",                 "137406", 840, 1200 ],
   [ "Tiny Oozeling in a Jar",            "137439", 805, 1200 ],
-  [ "Toe Knee's Promise",                "142164", 855, 1200 ],
   [ "Windscar Whetstone",                "137486", 840, 1200 ]
 ]
 melee_trinkets["emerald_nightmare"] = [
