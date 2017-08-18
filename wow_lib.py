@@ -64,7 +64,6 @@ melee_trinkets["emerald_nightmare"] = [
 ]
 melee_trinkets["nighthold"] = [
   [ "Draught of Souls",                  "140808", 865, 1200 ],
-  [ "Entwined Elemental Foci",           "140796", 860, 1200 ]
 ]
 melee_trinkets["tomb_of_sargeras"] = [
   [ "Infernal Cinders",                  "147009", 885, 1200 ],
@@ -122,6 +121,7 @@ agi_trinkets["emerald_nightmare"] = [
 agi_trinkets["nighthold"] = [
   [ "Arcanogolem Digit",                 "140794", 855, 1200 ],
   [ "Convergence of Fates",              "140806", 860, 1200 ],
+  [ "Entwined Elemental Foci",           "140796", 860, 1200 ],
   [ "Nightblooming Frond",               "140802", 860, 1200 ]
 ]
 agi_trinkets["pvp"] = [
@@ -198,6 +198,7 @@ str_trinkets["emerald_nightmare"] = [
 str_trinkets["nighthold"] = [
   [ "Claw of the Crystalline Scorpid",   "140790", 855, 1200 ],
   [ "Convergence of Fates",              "140806", 860, 1200 ],
+  [ "Entwined Elemental Foci",           "140796", 860, 1200 ],
   [ "Might of Krosus",                   "140799", 860, 1200 ]
 ]
 str_trinkets["pvp"] = [
