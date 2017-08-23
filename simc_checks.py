@@ -50,7 +50,7 @@ def get_tiers():
 ##
 ## @brief      Validates the input fight style.
 ##
-## @param      fight_style  The fight style like in SimC options
+## @param      fight_styles  The fight style like in SimC options
 ##
 ## @return     True if fight_style matches predetermined SimC-styles
 ##

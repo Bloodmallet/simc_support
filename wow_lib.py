@@ -658,7 +658,7 @@ def is_spec( wow_spec ):
 ## @param      wow_class  The class name as string
 ## @param      wow_spec   The specifier name as string
 ##
-## @return     List of [role, main_stat]
+## @return     [role s, main_stat s]
 ##
 def get_role_stat(wow_class, wow_spec):
   return [get_role(wow_class, wow_spec), get_stat(wow_class, wow_spec)]
@@ -670,7 +670,7 @@ def get_role_stat(wow_class, wow_spec):
 ## @param      wow_class  The wow class
 ## @param      wow_spec   The wow specifier
 ##
-## @return     The specifier information.
+## @return     [role s, main_stat s, dps_talents s]
 ##
 def get_spec_info(wow_class, wow_spec):
   return [
