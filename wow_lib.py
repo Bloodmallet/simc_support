@@ -104,7 +104,8 @@ ranged_trinkets["nighthold"] = [
 ranged_trinkets["tomb_of_sargeras"] = [
   [ "Spectral Thurible",                 "147018", 890, 1200 ],
   [ "Tarnished Sentinel Medallion",      "147017", 890, 1200 ],
-  [ "Terror From Below",                 "147016", 890, 1200 ]
+  [ "Terror From Below",                 "147016", 890, 1200 ],
+  [ "Tome of Unraveling Sanity",         "147019", 895, 1200 ]
 ]
 
 
@@ -173,7 +174,6 @@ int_trinkets["pvp"] = [
 ]
 int_trinkets["tomb_of_sargeras"] = [
   [ "Charm of the Rising Tide",          "147002", 885, 1200 ],
-  [ "Tome of Unraveling Sanity",         "147019", 895, 1200 ]
 ]
 int_trinkets["world"] = [
   [ "Devilsaur Shock-Baton",             "140030", 840, 1200 ],
