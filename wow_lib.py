@@ -31,7 +31,7 @@ shared_trinkets["dungeon"] = [
 ]
 shared_trinkets["crafted"] = [
   [ "Infernal Alchemist Stone",          "127842", 815, 900  ],
-  [ "Astral Alchemist Stone",            "151607", 885, 955  ],
+  [ "Astral Alchemist Stone",            "151607", 885, 935  ],
 ]
 shared_trinkets["world"] = [
   [ "Unstable Arcanocrystal",           "141482", 860, 1200 ],
