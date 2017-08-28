@@ -31,6 +31,7 @@ shared_trinkets["dungeon"] = [
 ]
 shared_trinkets["crafted"] = [
   [ "Infernal Alchemist Stone",          "127842", 815, 900  ],
+  [ "Astral Alchemist Stone",            "151607", 885, 955  ],
 ]
 shared_trinkets["world"] = [
   [ "Unstable Arcanocrystal",           "141482", 860, 1200 ],
@@ -114,7 +115,8 @@ agi_trinkets = {}
 agi_trinkets["dungeon"] = [
   [ "Splinters of Agronax",              "144477", 845, 1200 ],
   [ "Tempered Egg of Serpentrix",        "137373", 805, 1200 ],
-  [ "Tirathon's Betrayal",               "137537", 805, 1200 ]
+  [ "Tirathon's Betrayal",               "137537", 805, 1200 ],
+  [ "Void Stalker's Contract",           "151307", 845, 1200 ]
 ]
 agi_trinkets["emerald_nightmare"] = [
   [ "Bloodthirsty Instinct",             "139329", 835, 1200 ]
@@ -153,14 +155,15 @@ int_trinkets["crafted"] = [
 int_trinkets["dungeon"] = [
   [ "Dreadstone of Endless Shadows",     "144480", 845, 1200 ],
   [ "Infernal Writ",                     "137485", 840, 1200 ], 
-  [ "Portable Manacracker",              "137398", 840, 1200 ]
+  [ "Portable Manacracker",              "137398", 840, 1200 ],
+  [ "Reality Breacher",                  "151310", 845, 1200 ],
 ]
 int_trinkets["emerald_nightmare"] = [
   [ "Bough of Corruption",               "139323", 835, 1200 ],
   [ "Swarming Plaguehive",               "139321", 835, 1200 ],
   [ "Twisting Wind",                     "139323", 835, 1200 ],
   [ "Unstable Horrorslime",              "138224", 835, 1200 ],
-  [ "Wriggling Sinew",                   "139326", 835, 1200 ] 
+  [ "Wriggling Sinew",                   "139326", 835, 1200 ]
 ]
 int_trinkets["nighthold"] = [
   [ "Erratic Metronome",                 "140792", 855, 1200 ],
@@ -191,6 +194,7 @@ int_trinkets["world"] = [
 str_trinkets = {}
 str_trinkets["dungeon"] = [
   [ "Fel-Oiled Infernal Machine",        "144482", 845, 1200 ],
+  [ "Void Stalker's Contract",           "151307", 845, 1200 ]
 ]
 str_trinkets["emerald_nightmare"] = [
   [ "Ursoc's Rending Paw",               "139328", 835, 1200 ],
