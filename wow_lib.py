@@ -226,7 +226,7 @@ str_trinkets["world"] = [
 __crucible_data = {
   "Chaotic Darkness": "1779",
   "Dark Sorrows": "1781",
-  "Infusion of Light": "1783"
+  "Infusion of Light": "1783",
   "Light Speed": "1770",
   "Master of Shadows": "1771",
   "Murderous Intent": "1774",
