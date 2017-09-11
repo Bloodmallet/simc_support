@@ -223,6 +223,19 @@ str_trinkets["world"] = [
 ]
 
 
+__crucible_data = {
+  "Chaotic Darkness": "1779",
+  "Dark Sorrows": "1781",
+  "Infusion of Light": "1783"
+  "Light Speed": "1770",
+  "Master of Shadows": "1771",
+  "Murderous Intent": "1774",
+  "Secure in the Light": "1782",
+  "Shadowbind": "1778",
+  "Shocklight": "1777",
+  "Torment the Weak": "1780",
+}
+
 
 __classes_data = {
   "Death_Knight": {
@@ -477,6 +490,15 @@ def is_talent_combination( talent_combination ):
   #  return True
   else:
     return False
+
+
+##
+## @brief      Gets the crucible traits.
+##
+## @return     The crucible traits dict.
+##
+def get_crucible_traits():
+  return __crucible_data
 
 
 ##
