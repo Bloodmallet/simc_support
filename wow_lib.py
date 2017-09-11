@@ -234,6 +234,7 @@ __crucible_data = {
   "Shadowbind": "1778",
   "Shocklight": "1777",
   "Torment the Weak": "1780",
+  "+5 itemlevel": "1739",
 }
 
 
