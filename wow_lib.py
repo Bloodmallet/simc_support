@@ -2211,6 +2211,27 @@ def get_crucible_traits(wow_class, wow_spec):
 
 
 ##
+## @brief      Gets the crucible spec traits.
+##
+## @param      wow_class  The wow class
+## @param      wow_spec   The wow specifier
+##
+## @return     The crucible specifier traits.
+##
+def get_crucible_spec_traits( wow_class, wow_spec ):
+  return __crucible_spec_data[wow_class][wow_spec]
+
+
+##
+## @brief      Gets the crucible light shadow traits.
+##
+## @return     The crucible light shadow traits.
+##
+def get_crucible_light_shadow_traits():
+  return __crucible_general_data
+
+
+##
 ## @brief      Gets the possible talent combinations based on user_input. Either
 ##             all possible combinations or just a collection of those that fit
 ##             user_input.
