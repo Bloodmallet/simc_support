@@ -314,38 +314,10 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "274",
-        "spell": {
-          "id": "192447",
-          "name": "Grim Perseverance"
-        }
-      },
-      {
-        "id": "277",
-        "spell": {
-          "id": "238687",
-          "name": "Vampiric Fangs"
-        }
-      },
-      {
-        "id": "273",
-        "spell": {
-          "id": "192453",
-          "name": "Meat Shield"
-        }
-      },
-      {
         "id": "278",
         "spell": {
           "id": "192464",
           "name": "All-Consuming Rot"
-        }
-      },
-      {
-        "id": "272",
-        "spell": {
-          "id": "192450",
-          "name": "Iron Heart"
         }
       },
       {
@@ -367,13 +339,6 @@ __crucible_spec_data = {
         "spell": {
           "id": "192514",
           "name": "Dance of Darkness"
-        }
-      },
-      {
-        "id": "1481",
-        "spell": {
-          "id": "238042",
-          "name": "Carrion Feast"
         }
       }
     ],
@@ -425,20 +390,6 @@ __crucible_spec_data = {
         "spell": {
           "id": "189144",
           "name": "Nothing but the Boots"
-        }
-      },
-      {
-        "id": "1090",
-        "spell": {
-          "id": "204875",
-          "name": "Frozen Skin"
-        }
-      },
-      {
-        "id": "115",
-        "spell": {
-          "id": "189154",
-          "name": "Ice in Your Veins"
         }
       },
       {
@@ -497,20 +448,6 @@ __crucible_spec_data = {
         "spell": {
           "id": "191494",
           "name": "Scourge the Unbeliever"
-        }
-      },
-      {
-        "id": "267",
-        "spell": {
-          "id": "191584",
-          "name": "Unholy Endurance"
-        }
-      },
-      {
-        "id": "262",
-        "spell": {
-          "id": "191565",
-          "name": "Deadly Durability"
         }
       },
       {
@@ -574,20 +511,6 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "1007",
-        "spell": {
-          "id": "201463",
-          "name": "Deceiver's Fury"
-        }
-      },
-      {
-        "id": "1005",
-        "spell": {
-          "id": "201459",
-          "name": "Illidari Knowledge"
-        }
-      },
-      {
         "id": "1493",
         "spell": {
           "id": "238045",
@@ -622,41 +545,6 @@ __crucible_spec_data = {
         "spell": {
           "id": "207347",
           "name": "Aura of Pain"
-        }
-      },
-      {
-        "id": "1232",
-        "spell": {
-          "id": "212819",
-          "name": "Will of the Illidari"
-        }
-      },
-      {
-        "id": "1099",
-        "spell": {
-          "id": "207343",
-          "name": "Aldrachi Design"
-        }
-      },
-      {
-        "id": "1230",
-        "spell": {
-          "id": "212816",
-          "name": "Embrace the Pain"
-        }
-      },
-      {
-        "id": "1234",
-        "spell": {
-          "id": "212827",
-          "name": "Shatter the Souls"
-        }
-      },
-      {
-        "id": "1233",
-        "spell": {
-          "id": "212821",
-          "name": "Devour Souls"
         }
       },
       {
@@ -720,20 +608,6 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "1035",
-        "spell": {
-          "id": "203018",
-          "name": "Touch of the Moon"
-        }
-      },
-      {
-        "id": "1034",
-        "spell": {
-          "id": "202302",
-          "name": "Bladed Feathers"
-        }
-      },
-      {
         "id": "1501",
         "spell": {
           "id": "238047",
@@ -792,20 +666,6 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "1165",
-        "spell": {
-          "id": "210590",
-          "name": "Attuned to Nature"
-        }
-      },
-      {
-        "id": "1160",
-        "spell": {
-          "id": "210557",
-          "name": "Honed Instincts"
-        }
-      },
-      {
         "id": "1505",
         "spell": {
           "id": "238048",
@@ -815,13 +675,6 @@ __crucible_spec_data = {
     ],
     "Guardian": [ 
       {
-        "id": "951",
-        "spell": {
-          "id": "200402",
-          "name": "Perpetual Spring"
-        }
-      },
-      {
         "id": "955",
         "spell": {
           "id": "208762",
@@ -829,31 +682,10 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "953",
-        "spell": {
-          "id": "200414",
-          "name": "Bestial Fortitude"
-        }
-      },
-      {
         "id": "949",
         "spell": {
           "id": "200399",
           "name": "Ursoc's Endurance"
-        }
-      },
-      {
-        "id": "954",
-        "spell": {
-          "id": "200415",
-          "name": "Sharpened Instincts"
-        }
-      },
-      {
-        "id": "948",
-        "spell": {
-          "id": "200395",
-          "name": "Reinforced Fur"
         }
       },
       {
@@ -868,20 +700,6 @@ __crucible_spec_data = {
         "spell": {
           "id": "200440",
           "name": "Vicious Bites"
-        }
-      },
-      {
-        "id": "950",
-        "spell": {
-          "id": "200400",
-          "name": "Wildflesh"
-        }
-      },
-      {
-        "id": "1509",
-        "spell": {
-          "id": "238049",
-          "name": "Scintillating Moonlight"
         }
       }
     ]
@@ -935,20 +753,6 @@ __crucible_spec_data = {
         "spell": {
           "id": "197140",
           "name": "Spitting Cobras"
-        }
-      },
-      {
-        "id": "871",
-        "spell": {
-          "id": "197138",
-          "name": "Natural Reflexes"
-        }
-      },
-      {
-        "id": "874",
-        "spell": {
-          "id": "197160",
-          "name": "Mimiron's Shell"
         }
       },
       {
@@ -1010,20 +814,6 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "317",
-        "spell": {
-          "id": "190514",
-          "name": "Survival of the Fittest"
-        }
-      },
-      {
-        "id": "316",
-        "spell": {
-          "id": "190503",
-          "name": "Healing Shell"
-        }
-      },
-      {
         "id": "1521",
         "spell": {
           "id": "238052",
@@ -1079,20 +869,6 @@ __crucible_spec_data = {
         "spell": {
           "id": "203669",
           "name": "Fluffy, Go"
-        }
-      },
-      {
-        "id": "1078",
-        "spell": {
-          "id": "203749",
-          "name": "Hunter's Bounty"
-        }
-      },
-      {
-        "id": "1077",
-        "spell": {
-          "id": "224764",
-          "name": "Bird of Prey"
         }
       },
       {
@@ -1156,20 +932,6 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "84",
-        "spell": {
-          "id": "210716",
-          "name": "Force Barrier"
-        }
-      },
-      {
-        "id": "83",
-        "spell": {
-          "id": "187301",
-          "name": "Everywhere At Once"
-        }
-      },
-      {
         "id": "1529",
         "spell": {
           "id": "238054",
@@ -1225,20 +987,6 @@ __crucible_spec_data = {
         "spell": {
           "id": "194313",
           "name": "Great Balls of Fire"
-        }
-      },
-      {
-        "id": "757",
-        "spell": {
-          "id": "194315",
-          "name": "Molten Skin"
-        }
-      },
-      {
-        "id": "756",
-        "spell": {
-          "id": "194318",
-          "name": "Cauterizing Blink"
         }
       },
       {
@@ -1300,20 +1048,6 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "792",
-        "spell": {
-          "id": "214626",
-          "name": "Jouster"
-        }
-      },
-      {
-        "id": "791",
-        "spell": {
-          "id": "195354",
-          "name": "Shield of Alodi"
-        }
-      },
-      {
         "id": "1537",
         "spell": {
           "id": "238056",
@@ -1324,27 +1058,6 @@ __crucible_spec_data = {
   },
   "Monk": {
     "Brewmaster": [ 
-      {
-        "id": "1281",
-        "spell": {
-          "id": "239307",
-          "name": "Dark Side of the Moon"
-        }
-      },
-      {
-        "id": "1280",
-        "spell": {
-          "id": "213180",
-          "name": "Overflow"
-        }
-      },
-      {
-        "id": "1283",
-        "spell": {
-          "id": "213133",
-          "name": "Healthy Appetite"
-        }
-      },
       {
         "id": "1279",
         "spell": {
@@ -1367,24 +1080,10 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "1282",
-        "spell": {
-          "id": "213055",
-          "name": "Staggering Around"
-        }
-      },
-      {
         "id": "1286",
         "spell": {
           "id": "213116",
           "name": "Face Palm"
-        }
-      },
-      {
-        "id": "1285",
-        "spell": {
-          "id": "213047",
-          "name": "Potent Kick"
         }
       },
       {
@@ -1446,20 +1145,6 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "829",
-        "spell": {
-          "id": "195380",
-          "name": "Healing Winds"
-        }
-      },
-      {
-        "id": "801",
-        "spell": {
-          "id": "195244",
-          "name": "Light on Your Feet"
-        }
-      },
-      {
         "id": "1549",
         "spell": {
           "id": "238059",
@@ -1478,13 +1163,6 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "1123",
-        "spell": {
-          "id": "209220",
-          "name": "Unflinching Defense"
-        }
-      },
-      {
         "id": "1126",
         "spell": {
           "id": "209218",
@@ -1499,45 +1177,10 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "1127",
-        "spell": {
-          "id": "209216",
-          "name": "Bastion of Truth"
-        }
-      },
-      {
         "id": "1121",
         "spell": {
           "id": "209229",
           "name": "Hammer Time"
-        }
-      },
-      {
-        "id": "1125",
-        "spell": {
-          "id": "209223",
-          "name": "Scatter the Shadows"
-        }
-      },
-      {
-        "id": "1129",
-        "spell": {
-          "id": "239296",
-          "name": "Faith's Armor"
-        }
-      },
-      {
-        "id": "1128",
-        "spell": {
-          "id": "209224",
-          "name": "Resolve of Truth"
-        }
-      },
-      {
-        "id": "1557",
-        "spell": {
-          "id": "238061",
-          "name": "Holy Aegis"
         }
       }
     ],
@@ -1589,20 +1232,6 @@ __crucible_spec_data = {
         "spell": {
           "id": "186927",
           "name": "Deliver the Justice"
-        }
-      },
-      {
-        "id": "47",
-        "spell": {
-          "id": "184778",
-          "name": "Deflection"
-        }
-      },
-      {
-        "id": "44",
-        "spell": {
-          "id": "186934",
-          "name": "Embrace the Light"
         }
       },
       {
@@ -1666,20 +1295,6 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "775",
-        "spell": {
-          "id": "193647",
-          "name": "Thoughts of Insanity"
-        }
-      },
-      {
-        "id": "771",
-        "spell": {
-          "id": "193642",
-          "name": "From the Shadows"
-        }
-      },
-      {
         "id": "1573",
         "spell": {
           "id": "238065",
@@ -1740,20 +1355,6 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "329",
-        "spell": {
-          "id": "192345",
-          "name": "Shadow Walker"
-        }
-      },
-      {
-        "id": "326",
-        "spell": {
-          "id": "192323",
-          "name": "Fade into Shadows"
-        }
-      },
-      {
         "id": "1577",
         "spell": {
           "id": "238066",
@@ -1809,13 +1410,6 @@ __crucible_spec_data = {
         "spell": {
           "id": "202524",
           "name": "Fatebringer"
-        }
-      },
-      {
-        "id": "1066",
-        "spell": {
-          "id": "202533",
-          "name": "Ghostly Shell"
         }
       },
       {
@@ -1884,20 +1478,6 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "860",
-        "spell": {
-          "id": "197244",
-          "name": "Ghost Armor"
-        }
-      },
-      {
-        "id": "859",
-        "spell": {
-          "id": "239291",
-          "name": "Catlike Reflexes"
-        }
-      },
-      {
         "id": "1585",
         "spell": {
           "id": "238068",
@@ -1958,20 +1538,6 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "305",
-        "spell": {
-          "id": "191582",
-          "name": "Shamanistic Healing"
-        }
-      },
-      {
-        "id": "302",
-        "spell": {
-          "id": "191569",
-          "name": "Protection of the Elements"
-        }
-      },
-      {
         "id": "1589",
         "spell": {
           "id": "238069",
@@ -2027,20 +1593,6 @@ __crucible_spec_data = {
         "spell": {
           "id": "198299",
           "name": "Gathering Storms"
-        }
-      },
-      {
-        "id": "909",
-        "spell": {
-          "id": "198248",
-          "name": "Elemental Healing"
-        }
-      },
-      {
-        "id": "911",
-        "spell": {
-          "id": "198296",
-          "name": "Spiritual Healing"
         }
       },
       {
@@ -2104,20 +1656,6 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "923",
-        "spell": {
-          "id": "199214",
-          "name": "Long Dark Night of the Soul"
-        }
-      },
-      {
-        "id": "922",
-        "spell": {
-          "id": "199212",
-          "name": "Shadows of the Flesh"
-        }
-      },
-      {
         "id": "1601",
         "spell": {
           "id": "238072",
@@ -2176,20 +1714,6 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "1179",
-        "spell": {
-          "id": "211131",
-          "name": "Firm Resolve"
-        }
-      },
-      {
-        "id": "1178",
-        "spell": {
-          "id": "211144",
-          "name": "Open Link"
-        }
-      },
-      {
         "id": "1605",
         "spell": {
           "id": "238073",
@@ -2245,13 +1769,6 @@ __crucible_spec_data = {
         "spell": {
           "id": "196236",
           "name": "Soulsnatcher"
-        }
-      },
-      {
-        "id": "812",
-        "spell": {
-          "id": "196305",
-          "name": "Eternal Struggle"
         }
       },
       {
@@ -2322,20 +1839,6 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "1151",
-        "spell": {
-          "id": "209541",
-          "name": "Touch of Zakajz"
-        }
-      },
-      {
-        "id": "1148",
-        "spell": {
-          "id": "209483",
-          "name": "Tactical Advance"
-        }
-      },
-      {
         "id": "1613",
         "spell": {
           "id": "238075",
@@ -2394,20 +1897,6 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "994",
-        "spell": {
-          "id": "200859",
-          "name": "Bloodcraze"
-        }
-      },
-      {
-        "id": "993",
-        "spell": {
-          "id": "200857",
-          "name": "Battle Scars"
-        }
-      },
-      {
         "id": "1617",
         "spell": {
           "id": "238076",
@@ -2416,20 +1905,6 @@ __crucible_spec_data = {
       }
     ],
     "Protection": [ 
-      {
-        "id": "99",
-        "spell": {
-          "id": "203230",
-          "name": "Leaping Giants"
-        }
-      },
-      {
-        "id": "98",
-        "spell": {
-          "id": "188683",
-          "name": "Will to Survive"
-        }
-      },
       {
         "id": "101",
         "spell": {
@@ -2452,38 +1927,10 @@ __crucible_spec_data = {
         }
       },
       {
-        "id": "95",
-        "spell": {
-          "id": "188635",
-          "name": "Vrykul Shield Training"
-        }
-      },
-      {
-        "id": "100",
-        "spell": {
-          "id": "203225",
-          "name": "Dragon Skin"
-        }
-      },
-      {
         "id": "106",
         "spell": {
           "id": "188644",
           "name": "Thunder Crash"
-        }
-      },
-      {
-        "id": "105",
-        "spell": {
-          "id": "188632",
-          "name": "Toughness"
-        }
-      },
-      {
-        "id": "1621",
-        "spell": {
-          "id": "238077",
-          "name": "Bastion of the Aspects"
         }
       }
     ]
