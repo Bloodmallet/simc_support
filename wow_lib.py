@@ -14,11 +14,17 @@ from collections import defaultdict
 ##   int       - pure int (pure caster)
 ##   str       - pure str (plate wearer)
 
+## potential new format
+#try_out_trinkets = [
+#  ( "Name",                       "id",       "min",  "max", "str",   "agi",  "int",  "melee","range","legendary" ),
+#  ( "Kil'jaeden's Burning Wish",  "144259",   1000,   1200,   True,   True,   True,   True,   True,   True ),
+#]
 
 ## legendary trinkets for everyone
 legendary_trinkets = {}
 legendary_trinkets["legendary"] = [
   [ "Kil'jaeden's Burning Wish",         "144259", 970, 1200 ],
+  [ "Aman'Thul's Vision",                "154172", 970, 1200 ],
 ]
 
 
@@ -75,6 +81,11 @@ melee_trinkets["tomb_of_sargeras"] = [
 melee_trinkets["world"] = [
   [ "The Devilsaur's Bite",              "140026", 805, 1200 ],
 ]
+melee_trinkets["argus"] = [
+  [ "Gorshalach's Legacy",               "152093", 915, 1200 ],
+  [ "Seeping Scourgewing",               "151964", 915, 1200 ],
+]
+
 
 
 ## Usable by casters and hunters
@@ -94,21 +105,24 @@ ranged_trinkets["dungeon"] = [
   [ "Obelisk of the Void",                "137433", 840, 1200 ],
   [ "Stormsinger Fulmination Charge",     "137367", 840, 1200 ]
 ]
-ranged_trinkets["emerald_nightmare"] = [  
+ranged_trinkets["emerald_nightmare"] = [
   [ "Twisting Wind",                     "139323", 835, 1200 ],
   [ "Unstable Horrorslime",              "138224", 835, 1200 ]
 ]
-ranged_trinkets["nighthold"] = [  
+ranged_trinkets["nighthold"] = [
   [ "Fury of the Burning Sky",           "140801", 860, 1200 ],
-  [ "Icon of Rot",                       "140798", 860, 1200 ] 
+  [ "Icon of Rot",                       "140798", 860, 1200 ]
 ]
 ranged_trinkets["tomb_of_sargeras"] = [
   [ "Spectral Thurible",                 "147018", 890, 1200 ],
   [ "Tarnished Sentinel Medallion",      "147017", 890, 1200 ],
   [ "Terror From Below",                 "147016", 890, 1200 ],
-  [ "Tome of Unraveling Sanity",         "147019", 895, 1200 ]
+  [ "Tome of Unraveling Sanity",         "147019", 895, 1200 ],
 ]
-
+ranged_trinkets["argus"] = [
+  [ "Prototype Personnel Decimator",     "151962", 915, 1200 ],
+  [ "Terminus Signaling Beacon",         "151969", 915, 1200 ],
+]
 
 ## Usable by lether wearers and hunters
 agi_trinkets = {}
@@ -143,7 +157,12 @@ agi_trinkets["world"] = [
   [ "Stat Stick (Haste)",                "142506,bonus_id=604", 865, 1200 ],
   [ "Stat Stick (Mastery)",              "142506,bonus_id=605", 865, 1200 ],
   [ "Stat Stick (Versatility)",          "142506,bonus_id=607", 865, 1200 ],
-  [ "Thrice-Accursed Compass",           "141537",              860, 1200 ]
+  [ "Thrice-Accursed Compass",           "141537",              860, 1200 ],
+]
+agi_trinkets["argus"] = [
+  [ "Forgefiend's Fabricator",           "151963", 915, 1200 ],
+  [ "Shadow-Singed Fang",                "151968", 915, 1200 ],
+  [ "Golganneth's Vitality",             "154174", 940, 1200 ],
 ]
 
 
@@ -154,7 +173,7 @@ int_trinkets["crafted"] = [
 ]
 int_trinkets["dungeon"] = [
   [ "Dreadstone of Endless Shadows",     "144480", 845, 1200 ],
-  [ "Infernal Writ",                     "137485", 840, 1200 ], 
+  [ "Infernal Writ",                     "137485", 840, 1200 ],
   [ "Portable Manacracker",              "137398", 840, 1200 ],
   [ "Reality Breacher",                  "151310", 845, 1200 ],
 ]
@@ -171,12 +190,18 @@ int_trinkets["nighthold"] = [
   [ "Star Gate",                         "140804", 860, 1200 ],
   [ "Whispers in the Dark",              "140809", 865, 1200 ]
 ]
-int_trinkets["pvp"] = [ 
+int_trinkets["pvp"] = [
   [ "PVP Insignia of Dominance",         "142668", 840, 1200 ],
   [ "PVP Badge of Dominance",            "142779", 840, 1200 ]
 ]
 int_trinkets["tomb_of_sargeras"] = [
   [ "Charm of the Rising Tide",          "147002", 885, 1200 ],
+]
+int_trinkets["argus"] = [
+  [ "Acrid Catalyst Injector",           "151955", 915, 1200 ],
+  [ "Sheath of Asara",                   "151971", 915, 1200 ],
+  [ "Vitality Resonator",                "151970", 915, 1200 ],
+  [ "Norgannon's Prowess",               "154177", 940, 1200 ],
 ]
 int_trinkets["world"] = [
   [ "Devilsaur Shock-Baton",             "140030", 840, 1200 ],
@@ -221,6 +246,11 @@ str_trinkets["world"] = [
   [ "Stat Stick (Versatility)",          "142508,bonus_id=607", 865, 1200 ],
   [ "Ettin Fingernail",                  "141535",              860, 1200 ]
 ]
+str_trinkets["argus"] = [
+  [ "Forgefiend's Fabricator",           "151963", 915, 1200 ],
+  [ "Khaz'goroths Courage",              "154176", 940, 1200 ],
+]
+
 
 
 __crucible_general_data = [
@@ -460,7 +490,7 @@ __crucible_spec_data = {
     ]
   },
   "Demon_Hunter": {
-    "Havoc":    [ 
+    "Havoc":    [
       {
         "id": "1003",
         "spell": {
@@ -518,7 +548,7 @@ __crucible_spec_data = {
         }
       }
     ],
-    "Vengance": [ 
+    "Vengance": [
       {
         "id": "1229",
         "spell": {
@@ -557,7 +587,7 @@ __crucible_spec_data = {
     ]
   },
   "Druid": {
-    "Balance":  [ 
+    "Balance":  [
       {
         "id": "1039",
         "spell": {
@@ -615,7 +645,7 @@ __crucible_spec_data = {
         }
       }
     ],
-    "Feral":    [ 
+    "Feral":    [
       {
         "id": "1164",
         "spell": {
@@ -673,7 +703,7 @@ __crucible_spec_data = {
         }
       }
     ],
-    "Guardian": [ 
+    "Guardian": [
       {
         "id": "955",
         "spell": {
@@ -705,7 +735,7 @@ __crucible_spec_data = {
     ]
   },
   "Hunter": {
-    "Beast_Mastery": [ 
+    "Beast_Mastery": [
       {
         "id": "872",
         "spell": {
@@ -763,7 +793,7 @@ __crucible_spec_data = {
         }
       }
     ],
-    "Marksmanship":  [ 
+    "Marksmanship":  [
       {
         "id": "315",
         "spell": {
@@ -821,7 +851,7 @@ __crucible_spec_data = {
         }
       }
     ],
-    "Survival":      [ 
+    "Survival":      [
       {
         "id": "1073",
         "spell": {
@@ -881,7 +911,7 @@ __crucible_spec_data = {
     ]
   },
   "Mage": {
-    "Arcane": [ 
+    "Arcane": [
       {
         "id": "82",
         "spell": {
@@ -939,7 +969,7 @@ __crucible_spec_data = {
         }
       }
     ],
-    "Fire":   [ 
+    "Fire":   [
       {
         "id": "753",
         "spell": {
@@ -997,7 +1027,7 @@ __crucible_spec_data = {
         }
       }
     ],
-    "Frost":  [ 
+    "Frost":  [
       {
         "id": "787",
         "spell": {
@@ -1057,7 +1087,7 @@ __crucible_spec_data = {
     ]
   },
   "Monk": {
-    "Brewmaster": [ 
+    "Brewmaster": [
       {
         "id": "1279",
         "spell": {
@@ -1094,7 +1124,7 @@ __crucible_spec_data = {
         }
       }
     ],
-    "Windwalker": [ 
+    "Windwalker": [
       {
         "id": "822",
         "spell": {
@@ -1154,7 +1184,7 @@ __crucible_spec_data = {
     ]
   },
   "Paladin": {
-    "Protection":  [ 
+    "Protection":  [
       {
         "id": "1124",
         "spell": {
@@ -1184,7 +1214,7 @@ __crucible_spec_data = {
         }
       }
     ],
-    "Retribution": [ 
+    "Retribution": [
       {
         "id": "53",
         "spell": {
@@ -1244,7 +1274,7 @@ __crucible_spec_data = {
     ]
   },
   "Priest": {
-    "Shadow": [ 
+    "Shadow": [
       {
         "id": "774",
         "spell": {
@@ -1304,7 +1334,7 @@ __crucible_spec_data = {
     ]
   },
   "Rogue": {
-    "Assassination": [ 
+    "Assassination": [
       {
         "id": "327",
         "spell": {
@@ -1362,7 +1392,7 @@ __crucible_spec_data = {
         }
       }
     ],
-    "Outlaw":        [ 
+    "Outlaw":        [
       {
         "id": "1063",
         "spell": {
@@ -1427,7 +1457,7 @@ __crucible_spec_data = {
         }
       }
     ],
-    "Subtlety":      [ 
+    "Subtlety":      [
       {
         "id": "855",
         "spell": {
@@ -1545,7 +1575,7 @@ __crucible_spec_data = {
         }
       }
     ],
-    "Enhancement": [ 
+    "Enhancement": [
       {
         "id": "910",
         "spell": {
@@ -1663,7 +1693,7 @@ __crucible_spec_data = {
         }
       }
     ],
-    "Demonology":  [ 
+    "Demonology":  [
       {
         "id": "1174",
         "spell": {
@@ -1721,7 +1751,7 @@ __crucible_spec_data = {
         }
       }
     ],
-    "Destruction": [ 
+    "Destruction": [
       {
         "id": "807",
         "spell": {
@@ -1788,7 +1818,7 @@ __crucible_spec_data = {
     ]
   },
   "Warrior": {
-    "Arms":       [ 
+    "Arms":       [
       {
         "id": "1146",
         "spell": {
@@ -1846,7 +1876,7 @@ __crucible_spec_data = {
         }
       }
     ],
-    "Fury":       [ 
+    "Fury":       [
       {
         "id": "991",
         "spell": {
@@ -1904,7 +1934,7 @@ __crucible_spec_data = {
         }
       }
     ],
-    "Protection": [ 
+    "Protection": [
       {
         "id": "101",
         "spell": {
@@ -1955,7 +1985,7 @@ __classes_data = {
   },
   "Druid": {
     "talents": "1000111",
-    "specs": { 
+    "specs": {
       "Balance":  { "role": "ranged", "stat": "int" },
       "Feral":    { "role": "melee",  "stat": "agi" },
       "Guardian": { "role": "melee",  "stat": "agi" }
@@ -2089,7 +2119,7 @@ def __get_relevant_trinkets(role, stat):
 ##
 ## @return     A group of trinkets relevant to the spec as a dictionary of lists
 ##
-def __combine_trinket_dicts(role_trinkets, stat_trinkets):  
+def __combine_trinket_dicts(role_trinkets, stat_trinkets):
   # Populate a new trinkets dict with role trinkets
   trinkets = role_trinkets
 
@@ -2098,7 +2128,7 @@ def __combine_trinket_dicts(role_trinkets, stat_trinkets):
       # Append int/str/agi trinkets to existing list in the newly created dict
       trinkets[source] = trinkets[source] + stat_trinkets[source]
     else:
-      # Just set the int/str/agi trinket list to the newly created dict's source key  
+      # Just set the int/str/agi trinket list to the newly created dict's source key
       trinkets[source] = stat_trinkets[source]
   for source in shared_trinkets:
     if trinkets.get(source) is not None:
@@ -2430,8 +2460,8 @@ def get_role_stat(wow_class, wow_spec):
 ##
 def get_spec_info(wow_class, wow_spec):
   return [
-    get_role(wow_class, wow_spec), 
-    get_stat(wow_class, wow_spec), 
+    get_role(wow_class, wow_spec),
+    get_stat(wow_class, wow_spec),
     get_dps_talents(wow_class)
   ]
 

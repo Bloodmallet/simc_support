@@ -10,10 +10,10 @@
 def get_fight_styles():
   return (
     "patchwerk",
-    "lightmovement", 
-    "heavymovement", 
-    "hecticaddcleave", 
-    "beastlord", 
+    "lightmovement",
+    "heavymovement",
+    "hecticaddcleave",
+    "beastlord",
     "helterskelter"
   )
 
@@ -25,13 +25,10 @@ def get_fight_styles():
 ##
 def get_profiles():
   return (
-    "T19P",
-    "T19H",
-    "T19H_NH",
-    "T19M",
-    "T19M_NH",
-    "T20H",
-    "T20M"
+    "PR"
+    "T19",
+    "T20",
+    "T21"
   )
 
 
@@ -43,7 +40,8 @@ def get_profiles():
 def get_tiers():
   return (
     "19",
-    "20"
+    "20",
+    "21"
   )
 
 
