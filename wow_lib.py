@@ -40,7 +40,7 @@ from collections import defaultdict
 
 TRADER_TOKEN = 910
 M_PLUS_DROPLEVEL = 915
-TITANFORGE_CAP = TITANFORGE_CAP
+TITANFORGE_CAP = 985
 
 ## legendary trinkets for everyone
 ##
