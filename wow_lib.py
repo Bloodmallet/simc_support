@@ -47,8 +47,8 @@ TITANFORGE_CAP = TITANFORGE_CAP
 # {"source": [ [ "name", "id", minitemlevel, maxitemlevel, maxdropitemlevel ], ] }
 legendary_trinkets = {}
 legendary_trinkets["legendary"] = [
-  [ "Kil'jaeden's Burning Wish",         "144259", 970, 1000, 1000 ],
-  [ "Aman'Thul's Vision",                "154172", 970, 1000, 1000 ],
+  [ "Kil'jaeden's Burning Wish",         "144259", 970,  1000, 1000 ],
+  [ "Aman'Thul's Vision",                "154172", 1000, 1000, 1000 ],
 ]
 
 
@@ -2209,6 +2209,7 @@ def __generate_talent_combinations( blueprint, wow_class, wow_spec ):
                     add_it = False
                 if add_it:
                   combinations += [combination]
+
   return combinations
 
 
