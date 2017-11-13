@@ -102,9 +102,6 @@ melee_trinkets["tomb_of_sargeras"] = [
   [ "Vial of Ceaseless Toxins",          "147011", 890, TITANFORGE_CAP, 930 ],
   [ "Specter of Betrayal",               "151190", 895, TITANFORGE_CAP, 940 ]
 ]
-melee_trinkets["world"] = [
-  [ "The Devilsaur's Bite",              "140026", 805, TITANFORGE_CAP, TRADER_TOKEN ],
-]
 melee_trinkets["argus"] = [
   [ "Gorshalach's Legacy",               "152093", 915, TITANFORGE_CAP, 960 ],
   [ "Seeping Scourgewing",               "151964", 915, TITANFORGE_CAP, 960 ],
@@ -174,6 +171,7 @@ agi_trinkets["tomb_of_sargeras"] = [
   [ "Engine of Eradication",             "147015", 890, TITANFORGE_CAP, 930 ]
 ]
 agi_trinkets["world"] = [
+  [ "The Devilsaur's Bite",              "140026", 805, TITANFORGE_CAP, TRADER_TOKEN ],
   [ "Ley Spark",                         "140027", 805, TITANFORGE_CAP, TRADER_TOKEN ],
   [ "Six-Feather Fan",                   "141585", 810, TITANFORGE_CAP, TRADER_TOKEN ],
     # 142506 is Eye of Guarm, used as a reference stat stick
@@ -263,6 +261,7 @@ str_trinkets["tomb_of_sargeras"] = [
   [ "Engine of Eradication",             "147015", 890, TITANFORGE_CAP, 930 ]
 ]
 str_trinkets["world"] = [
+  [ "Impact Tremor",                     "140034", 805, TITANFORGE_CAP, TRADER_TOKEN ],
   # 142508 is Chains of the Valorous, used as a reference stat stick
   [ "Stat Stick (Crit)",                 "142508,bonus_id=603", 865, TITANFORGE_CAP, TRADER_TOKEN ],
   [ "Stat Stick (Haste)",                "142508,bonus_id=604", 865, TITANFORGE_CAP, TRADER_TOKEN ],
