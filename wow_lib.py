@@ -98,8 +98,8 @@ melee_trinkets["nighthold"] = [
 ]
 melee_trinkets["tomb_of_sargeras"] = [
   [ "Infernal Cinders",                  "147009", 885, TITANFORGE_CAP, 930 ],
-  [ "Umbral Moonglaives",                "147012", 890, TITANFORGE_CAP, 930 ],
-  [ "Vial of Ceaseless Toxins",          "147011", 890, TITANFORGE_CAP, 930 ],
+  [ "Umbral Moonglaives",                "147012", 885, TITANFORGE_CAP, 930 ],
+  [ "Vial of Ceaseless Toxins",          "147011", 885, TITANFORGE_CAP, 930 ],
   [ "Specter of Betrayal",               "151190", 895, TITANFORGE_CAP, 940 ]
 ]
 melee_trinkets["argus"] = [
@@ -135,9 +135,9 @@ ranged_trinkets["nighthold"] = [
   [ "Icon of Rot",                       "140798", 860, TITANFORGE_CAP, TRADER_TOKEN ]
 ]
 ranged_trinkets["tomb_of_sargeras"] = [
-  [ "Spectral Thurible",                 "147018", 890, TITANFORGE_CAP, 930 ],
-  [ "Tarnished Sentinel Medallion",      "147017", 890, TITANFORGE_CAP, 930 ],
-  [ "Terror From Below",                 "147016", 890, TITANFORGE_CAP, 930 ],
+  [ "Spectral Thurible",                 "147018", 885, TITANFORGE_CAP, 930 ],
+  [ "Tarnished Sentinel Medallion",      "147017", 885, TITANFORGE_CAP, 930 ],
+  [ "Terror From Below",                 "147016", 885, TITANFORGE_CAP, 930 ],
   [ "Tome of Unraveling Sanity",         "147019", 895, TITANFORGE_CAP, 940 ],
 ]
 ranged_trinkets["argus"] = [
@@ -168,7 +168,7 @@ agi_trinkets["pvp"] = [
 ]
 agi_trinkets["tomb_of_sargeras"] = [
   [ "Cradle of Anguish",                 "147010", 885, TITANFORGE_CAP, 930 ],
-  [ "Engine of Eradication",             "147015", 890, TITANFORGE_CAP, 930 ]
+  [ "Engine of Eradication",             "147015", 885, TITANFORGE_CAP, 930 ]
 ]
 agi_trinkets["world"] = [
   [ "The Devilsaur's Bite",              "140026", 805, TITANFORGE_CAP, TRADER_TOKEN ],
@@ -258,7 +258,7 @@ str_trinkets["pvp"] = [
 ]
 str_trinkets["tomb_of_sargeras"] = [
   [ "Cradle of Anguish",                 "147010", 885, TITANFORGE_CAP, 930 ],
-  [ "Engine of Eradication",             "147015", 890, TITANFORGE_CAP, 930 ]
+  [ "Engine of Eradication",             "147015", 885, TITANFORGE_CAP, 930 ]
 ]
 str_trinkets["world"] = [
   [ "Impact Tremor",                     "140034", 805, TITANFORGE_CAP, TRADER_TOKEN ],
