@@ -280,77 +280,77 @@ __crucible_general_data = [
   {
     "id": "1779",
     "spell": {
-      "id": "",
+      "id": "252888",
       "name": "Chaotic Darkness"
     }
   },
   {
     "id": "1781",
     "spell": {
-      "id": "",
+      "id": "252922",
       "name": "Dark Sorrows"
     }
   },
   {
     "id": "1783",
     "spell": {
-      "id": "",
+      "id": "253093",
       "name": "Infusion of Light"
     }
   },
   {
     "id": "1770",
     "spell": {
-      "id": "",
+      "id": "252088",
       "name": "Light Speed"
     }
   },
   {
     "id": "1771",
     "spell": {
-      "id": "",
+      "id": "252091",
       "name": "Master of Shadows"
     }
   },
   {
     "id": "1774",
     "spell": {
-      "id": "",
+      "id": "252191",
       "name": "Murderous Intent"
     }
   },
   {
     "id": "1782",
     "spell": {
-      "id": "",
+      "id": "253070",
       "name": "Secure in the Light"
     }
   },
   {
     "id": "1778",
     "spell": {
-      "id": "",
+      "id": "252875",
       "name": "Shadowbind"
     }
   },
   {
     "id": "1777",
     "spell": {
-      "id": "",
+      "id": "252799",
       "name": "Shocklight"
     }
   },
   {
     "id": "1780",
     "spell": {
-      "id": "",
+      "id": "252906",
       "name": "Torment the Weak"
     }
   },
   {
     "id": "1739",
     "spell": {
-      "id": "",
+      "id": "250879",
       "name": "+5 itemlevel"
     }
   }
@@ -2288,7 +2288,7 @@ def get_crucible_light_shadow_traits():
 
 
 ##
-## @brief      Gets the weapon identifier.
+## @brief      Gets the weapon id.
 ##
 ## @param      wow_class  The wow class
 ## @param      wow_spec   The wow specifier
@@ -2297,6 +2297,29 @@ def get_crucible_light_shadow_traits():
 ##
 def get_weapon_id( wow_class, wow_spec ):
   return __classes_data[ wow_class.title() ][ "specs" ][ wow_spec.title() ][ "weapon" ]
+
+
+##
+## @brief      Gets the crucible spell id.
+##
+## @param      wow_class            The wow class
+## @param      wow_spec             The wow specifier
+## @param      crucible_trait_name  The crucible trait name
+##
+## @return     The crucible spell identifier or False if the crucible_trait_name
+##             is unknown.
+##
+def get_crucible_spell_id( wow_class, wow_spec, crucible_trait_name ):
+
+  for trait in __crucible_general_data:
+    if trait[ "spell" ][ "name" ] == crucible_trait_name:
+      return trait[ "spell" ][ "id" ]
+
+  for trait in __crucible_spec_data[ wow_class.title() ][ wow_spec.title() ]:
+    if trait[ "spell" ][ "name" ] == crucible_trait_name:
+      return trait[ "spell" ][ "id" ]
+
+  return False
 
 
 ##
