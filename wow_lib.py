@@ -1994,91 +1994,91 @@ __classes_data = {
   "Death_Knight": {
     "talents": "1110011",
     "specs": {
-      "Blood":  { "role": "melee", "stat": "str" },
-      "Frost":  { "role": "melee", "stat": "str" },
-      "Unholy": { "role": "melee", "stat": "str" }
+      "Blood":  { "role": "melee", "stat": "str", "weapon": "128402" },
+      "Frost":  { "role": "melee", "stat": "str", "weapon": "128293" },
+      "Unholy": { "role": "melee", "stat": "str", "weapon": "128403" }
     }
   },
   "Demon_Hunter": {
     "talents": "1110111",
     "specs": {
-      "Havoc":    { "role": "melee", "stat": "agi" },
-      "Vengance": { "role": "melee", "stat": "agi" }
+      "Havoc":    { "role": "melee", "stat": "agi", "weapon": "127830" },
+      "Vengance": { "role": "melee", "stat": "agi", "weapon": "128832" }
     }
   },
   "Druid": {
     "talents": "1000111",
     "specs": {
-      "Balance":  { "role": "ranged", "stat": "int" },
-      "Feral":    { "role": "melee",  "stat": "agi" },
-      "Guardian": { "role": "melee",  "stat": "agi" }
+      "Balance":  { "role": "ranged", "stat": "int", "weapon": "128858" },
+      "Feral":    { "role": "melee",  "stat": "agi", "weapon": "128860" },
+      "Guardian": { "role": "melee",  "stat": "agi", "weapon": "128821" }
     }
   },
   "Hunter": {
     "talents": "1101011",
     "specs": {
-      "Beast_Mastery": { "role": "ranged", "stat": "agi" },
-      "Marksmanship":  { "role": "ranged", "stat": "agi" },
-      "Survival":      { "role": "melee",  "stat": "agi" }
+      "Beast_Mastery": { "role": "ranged", "stat": "agi", "weapon": "128861" },
+      "Marksmanship":  { "role": "ranged", "stat": "agi", "weapon": "128826" },
+      "Survival":      { "role": "melee",  "stat": "agi", "weapon": "128808" }
     }
   },
   "Mage": {
     "talents": "1011011",
     "specs": {
-      "Arcane": { "role": "ranged", "stat": "int" },
-      "Fire":   { "role": "ranged", "stat": "int" },
-      "Frost":  { "role": "ranged", "stat": "int" }
+      "Arcane": { "role": "ranged", "stat": "int", "weapon": "127857" },
+      "Fire":   { "role": "ranged", "stat": "int", "weapon": "128820" },
+      "Frost":  { "role": "ranged", "stat": "int", "weapon": "128862" }
     }
   },
   "Monk": {
     "talents": "1010011",
     "specs": {
-      "Brewmaster": { "role": "melee", "stat": "agi" },
-      "Windwalker": { "role": "melee", "stat": "agi" }
+      "Brewmaster": { "role": "melee", "stat": "agi", "weapon": "128938" },
+      "Windwalker": { "role": "melee", "stat": "agi", "weapon": "128940" }
     }
   },
   "Paladin": {
     "talents": "1101001",
     "specs": {
-      "Protection":  { "role": "melee", "stat": "str" },
-      "Retribution": { "role": "melee", "stat": "str" }
+      "Protection":  { "role": "melee", "stat": "str", "weapon": "128866" }, # or 128867 if mainhand is used
+      "Retribution": { "role": "melee", "stat": "str", "weapon": "120978" }
     }
   },
   "Priest": {
     "talents": "1001111",
     "specs": {
-      "Shadow": { "role": "ranged", "stat": "int" }
+      "Shadow": { "role": "ranged", "stat": "int", "weapon": "128827" }
     }
   },
   "Rogue": {
     "talents": "1110111",
     "specs": {
-      "Assassination": { "role": "melee", "stat": "agi" },
-      "Outlaw":        { "role": "melee", "stat": "agi" },
-      "Subtlety":      { "role": "melee", "stat": "agi" }
+      "Assassination": { "role": "melee", "stat": "agi", "weapon": "128870" },
+      "Outlaw":        { "role": "melee", "stat": "agi", "weapon": "128872" },
+      "Subtlety":      { "role": "melee", "stat": "agi", "weapon": "128476" }
     }
   },
   "Shaman": {
     "talents": "1001111",
     "specs": {
-      "Elemental":   { "role": "ranged", "stat": "int" },
-      "Enhancement": { "role": "melee",  "stat": "agi" }
+      "Elemental":   { "role": "ranged", "stat": "int", "weapon": "128935" },
+      "Enhancement": { "role": "melee",  "stat": "agi", "weapon": "128819" }
     }
   },
   "Warlock": {
     "talents": "1101011",
     "specs": {
-      "Affliction":  { "role": "ranged", "stat": "int" },
-      "Demonology":  { "role": "ranged", "stat": "int" },
-      "Destruction": { "role": "ranged", "stat": "int" }
+      "Affliction":  { "role": "ranged", "stat": "int", "weapon": "128942" },
+      "Demonology":  { "role": "ranged", "stat": "int", "weapon": "128943" }, # or 137246 if mainhand is used
+      "Destruction": { "role": "ranged", "stat": "int", "weapon": "128941" }
     }
   },
   "Warrior": {
     "talents": "1010111",
     "specs": {
-      "Arms":       { "role": "melee", "stat": "str" },
-      "Fury":       { "role": "melee", "stat": "str" },
-      "Protection": { "role": "melee", "stat": "str" }
+      "Arms":       { "role": "melee", "stat": "str", "weapon": "128910" },
+      "Fury":       { "role": "melee", "stat": "str", "weapon": "128908" },
+      "Protection": { "role": "melee", "stat": "str", "weapon": "128289" } # or 128288 if mainhand is used
     }
   }
 }
@@ -2285,6 +2285,18 @@ def get_crucible_spec_traits( wow_class, wow_spec ):
 ##
 def get_crucible_light_shadow_traits():
   return __crucible_general_data
+
+
+##
+## @brief      Gets the weapon identifier.
+##
+## @param      wow_class  The wow class
+## @param      wow_spec   The wow specifier
+##
+## @return     The weapon identifier.
+##
+def get_weapon_id( wow_class, wow_spec ):
+  return __classes_data[ wow_class.title() ][ "specs" ][ wow_spec.title() ][ "weapon" ]
 
 
 ##
