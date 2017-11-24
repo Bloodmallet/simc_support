@@ -272,6 +272,7 @@ str_trinkets["world"] = [
 str_trinkets["argus"] = [
   [ "Forgefiend's Fabricator",           "151963", 915, TITANFORGE_CAP,  960  ],
   [ "Khaz'goroths Courage",              "154176", 940, 1000, 1000 ],
+  [ "Shadow-Singed Fang",                "151968", 915, TITANFORGE_CAP,  960  ],
 ]
 
 
