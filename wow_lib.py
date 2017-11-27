@@ -1996,14 +1996,14 @@ __classes_data = {
     "talents": "1110011",
     "specs": {
       "Blood":  { "role": "melee", "stat": "str", "weapon": "128402" },
-      "Frost":  { "role": "melee", "stat": "str", "weapon": "128293" },
+      "Frost":  { "role": "melee", "stat": "str", "weapon": "128292" },
       "Unholy": { "role": "melee", "stat": "str", "weapon": "128403" }
     }
   },
   "Demon_Hunter": {
     "talents": "1110111",
     "specs": {
-      "Havoc":    { "role": "melee", "stat": "agi", "weapon": "127830" },
+      "Havoc":    { "role": "melee", "stat": "agi", "weapon": "127829" },
       "Vengance": { "role": "melee", "stat": "agi", "weapon": "128832" }
     }
   },
