@@ -2600,7 +2600,13 @@ def __validity_check():
 def get_trinkets_for_spec(class_name, spec_name):
   spec_info = get_role_stat(class_name, spec_name)
   role_trinkets, stat_trinkets = __get_relevant_trinkets(spec_info[0], spec_info[1])
+
+  ## add tank legendary if a tank spec is choosen
+  if spec_name.title() in ("Blood", "Vengence", "Guardian", "Protection"):
+    role_trinkets["legendary"] = role_trinkets["legendary"] + [ "Archimonde's Hatred Reborn", "144249", 970,  1000, 1000 ]
+
   combined_trinkets = __combine_trinket_dicts(role_trinkets, stat_trinkets)
+
   return combined_trinkets
 
 
