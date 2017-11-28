@@ -2140,10 +2140,11 @@ def __get_relevant_trinkets(role, stat):
 ##                            dict of lists
 ## @param      stat_trinkets  The trinkets relevant to a spec's stat
 ##                            (int/str/agi) as a dict of lists
+## @param      spec_name      Name of the wow spec
 ##
 ## @return     A group of trinkets relevant to the spec as a dictionary of lists
 ##
-def __combine_trinket_dicts(role_trinkets, stat_trinkets):
+def __combine_trinket_dicts(role_trinkets, stat_trinkets, spec_name):
   # Populate a new trinkets dict with role trinkets
   trinkets = role_trinkets
 
@@ -2154,18 +2155,25 @@ def __combine_trinket_dicts(role_trinkets, stat_trinkets):
     else:
       # Just set the int/str/agi trinket list to the newly created dict's source key
       trinkets[source] = stat_trinkets[source]
+
   # add shared trinkets from data
   for source in shared_trinkets:
     if trinkets.get(source) is not None:
       trinkets[source] = trinkets[source] + shared_trinkets[source]
     else:
       trinkets[source] = shared_trinkets[source]
+
   # add legendary from data
   for source in legendary_trinkets:
     if trinkets.get(source) is not None:
       trinkets[source] = trinkets[source] + legendary_trinkets[source]
     else:
       trinkets[source] = legendary_trinkets[source]
+
+    # add tank legendary if a tank spec is choosen
+    if spec_name.title() in ( "Blood", "Vengence", "Guardian", "Protection" ):
+      trinkets[ "legendary" ].append( [ "Archimonde's Hatred Reborn", "144249", 970,  1000, 1000 ] )
+
   return trinkets
 
 
@@ -2601,11 +2609,7 @@ def get_trinkets_for_spec(class_name, spec_name):
   spec_info = get_role_stat(class_name, spec_name)
   role_trinkets, stat_trinkets = __get_relevant_trinkets(spec_info[0], spec_info[1])
 
-  ## add tank legendary if a tank spec is choosen
-  if spec_name.title() in ("Blood", "Vengence", "Guardian", "Protection"):
-    role_trinkets["legendary"] = role_trinkets["legendary"] + [ "Archimonde's Hatred Reborn", "144249", 970,  1000, 1000 ]
-
-  combined_trinkets = __combine_trinket_dicts(role_trinkets, stat_trinkets)
+  combined_trinkets = __combine_trinket_dicts(role_trinkets, stat_trinkets, spec_name)
 
   return combined_trinkets
 
