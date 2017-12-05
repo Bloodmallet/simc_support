@@ -2171,7 +2171,7 @@ def __combine_trinket_dicts(role_trinkets, stat_trinkets, spec_name):
       trinkets[source] = legendary_trinkets[source]
 
     # add tank legendary if a tank spec is choosen
-    if spec_name.title() in ( "Blood", "Vengence", "Guardian", "Protection" ):
+    if spec_name.title() in ( "Blood", "Vengeance", "Brewmaster", "Guardian", "Protection" ):
       trinkets[ "legendary" ].append( [ "Archimonde's Hatred Reborn", "144249", 970,  1000, 1000 ] )
 
   return trinkets
