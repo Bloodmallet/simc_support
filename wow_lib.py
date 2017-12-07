@@ -3,6 +3,8 @@
 ## Contains wow classes, specs, dps talent rows,
 ## races, trinkets
 
+import copy
+
 from collections import defaultdict
 
 ## Available types:
@@ -2146,7 +2148,7 @@ def __get_relevant_trinkets(role, stat):
 ##
 def __combine_trinket_dicts(role_trinkets, stat_trinkets, spec_name):
   # Populate a new trinkets dict with role trinkets
-  trinkets = dict( role_trinkets )
+  trinkets = copy.deepcopy( role_trinkets )
 
   for source in stat_trinkets:
     if trinkets.get(source) is not None:
@@ -2268,7 +2270,7 @@ def is_talent_combination( talent_combination ):
 ## @return     The crucible traits list.
 ##
 def get_crucible_traits(wow_class, wow_spec):
-  crucible_list = dict( __crucible_general_data )
+  crucible_list = copy.deepcopy( __crucible_general_data )
   # add all spec specific traits to the list
   for trait in __crucible_spec_data[wow_class][wow_spec]:
     crucible_list.append(trait)
@@ -2294,7 +2296,7 @@ def get_crucible_spec_traits( wow_class, wow_spec ):
 ## @return     The crucible light shadow traits.
 ##
 def get_crucible_light_shadow_traits():
-  return dict( __crucible_general_data )
+  return copy.deepcopy( __crucible_general_data )
 
 
 ##
