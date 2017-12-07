@@ -2316,8 +2316,8 @@ def get_weapon_id( wow_class, wow_spec ):
 ## @param      wow_spec             The wow specifier
 ## @param      crucible_trait_name  The crucible trait name
 ##
-## @return     The crucible spell identifier or False if the crucible_trait_name
-##             is unknown.
+## @return     The crucible spell identifier or raises ValueError if the
+##             crucible_trait_name is unknown.
 ##
 def get_crucible_spell_id( wow_class, wow_spec, crucible_trait_name ):
 
@@ -2329,7 +2329,7 @@ def get_crucible_spell_id( wow_class, wow_spec, crucible_trait_name ):
     if trait[ "spell" ][ "name" ] == crucible_trait_name:
       return trait[ "spell" ][ "id" ]
 
-  return False
+  raise ValueError("Could not find {crucible_trait} in library of {wow_class} {wow_spec}".format(crucible_trait=crucible_trait_name, wow_class=wow_class, wow_spec=wow_spec))
 
 
 ##
