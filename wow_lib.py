@@ -2268,7 +2268,7 @@ def is_talent_combination( talent_combination ):
 ## @return     The crucible traits list.
 ##
 def get_crucible_traits(wow_class, wow_spec):
-  crucible_list = __crucible_general_data
+  crucible_list = dict( __crucible_general_data )
   # add all spec specific traits to the list
   for trait in __crucible_spec_data[wow_class][wow_spec]:
     crucible_list.append(trait)
@@ -2294,7 +2294,7 @@ def get_crucible_spec_traits( wow_class, wow_spec ):
 ## @return     The crucible light shadow traits.
 ##
 def get_crucible_light_shadow_traits():
-  return __crucible_general_data
+  return dict( __crucible_general_data )
 
 
 ##
@@ -2517,8 +2517,11 @@ def is_spec( wow_spec ):
 ##
 ## @return     [role s, main_stat s]
 ##
-def get_role_stat(wow_class, wow_spec):
-  return [get_role(wow_class, wow_spec), get_stat(wow_class, wow_spec)]
+def get_role_stat( wow_class, wow_spec ):
+  return [
+    get_role( wow_class, wow_spec ),
+    get_stat( wow_class, wow_spec )
+  ]
 
 
 ##
