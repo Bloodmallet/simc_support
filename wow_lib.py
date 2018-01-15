@@ -41,7 +41,7 @@ from collections import defaultdict
 #    self.source = str( source )
 
 TRADER_TOKEN = 910
-M_PLUS_DROPLEVEL = 915
+M_PLUS_DROPLEVEL = 940
 TITANFORGE_CAP = 985
 
 ## legendary trinkets for everyone
