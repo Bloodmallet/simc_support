@@ -104,7 +104,7 @@ melee_trinkets["tomb_of_sargeras"] = [
   [ "Vial of Ceaseless Toxins",          "147011", 885, TITANFORGE_CAP, 930 ],
   [ "Specter of Betrayal",               "151190", 895, TITANFORGE_CAP, 940 ]
 ]
-melee_trinkets["argus"] = [
+melee_trinkets["antorus"] = [
   [ "Gorshalach's Legacy",               "152093", 915, TITANFORGE_CAP, 960 ],
   [ "Seeping Scourgewing",               "151964", 915, TITANFORGE_CAP, 960 ],
 ]
@@ -142,7 +142,7 @@ ranged_trinkets["tomb_of_sargeras"] = [
   [ "Terror From Below",                 "147016", 885, TITANFORGE_CAP, 930 ],
   [ "Tome of Unraveling Sanity",         "147019", 895, TITANFORGE_CAP, 940 ],
 ]
-ranged_trinkets["argus"] = [
+ranged_trinkets["antorus"] = [
   [ "Prototype Personnel Decimator",     "151962", 915, TITANFORGE_CAP, 960 ],
   [ "Terminus Signaling Beacon",         "151969", 915, TITANFORGE_CAP, 960 ],
 ]
@@ -183,7 +183,7 @@ agi_trinkets["world"] = [
   [ "Stat Stick (Versatility)",          "142506,bonus_id=607", 865, TITANFORGE_CAP, TRADER_TOKEN ],
   [ "Thrice-Accursed Compass",           "141537",              860, TITANFORGE_CAP, TRADER_TOKEN ],
 ]
-agi_trinkets["argus"] = [
+agi_trinkets["antorus"] = [
   [ "Forgefiend's Fabricator",           "151963", 915, TITANFORGE_CAP,  960  ],
   [ "Shadow-Singed Fang",                "151968", 915, TITANFORGE_CAP,  960  ],
   [ "Golganneth's Vitality",             "154174", 940, 1000, 1000 ],
@@ -221,7 +221,7 @@ int_trinkets["pvp"] = [
 int_trinkets["tomb_of_sargeras"] = [
   [ "Charm of the Rising Tide",          "147002", 885, TITANFORGE_CAP, 930 ],
 ]
-int_trinkets["argus"] = [
+int_trinkets["antorus"] = [
   [ "Acrid Catalyst Injector",           "151955", 915, TITANFORGE_CAP,  960  ],
   [ "Sheath of Asara",                   "151971", 915, TITANFORGE_CAP,  960  ],
   [ "Vitality Resonator",                "151970", 915, TITANFORGE_CAP,  960  ],
@@ -271,7 +271,7 @@ str_trinkets["world"] = [
   [ "Stat Stick (Versatility)",          "142508,bonus_id=607", 865, TITANFORGE_CAP, TRADER_TOKEN ],
   [ "Ettin Fingernail",                  "141535",              860, TITANFORGE_CAP, TRADER_TOKEN ]
 ]
-str_trinkets["argus"] = [
+str_trinkets["antorus"] = [
   [ "Forgefiend's Fabricator",           "151963", 915, TITANFORGE_CAP,  960  ],
   [ "Khaz'goroths Courage",              "154176", 940, 1000, 1000 ],
   [ "Shadow-Singed Fang",                "151968", 915, TITANFORGE_CAP,  960  ],
@@ -2176,6 +2176,11 @@ def __combine_trinket_dicts(role_trinkets, stat_trinkets, spec_name):
     if spec_name.title() in ( "Blood", "Vengeance", "Brewmaster", "Guardian", "Protection" ):
       trinkets[ "legendary" ].append( [ "Archimonde's Hatred Reborn", "144249", 970,  1000, 1000 ] )
       trinkets[ "legendary" ].append( [ "Aggramar's Conviction", "154173", 940,  1000, 1000 ] )
+      trinkets[ "antorus" ].append( [ "Diima's Glacial Aegis", "151977", 930, TITANFORGE_CAP, 960 ] )
+      trinkets[ "antorus" ].append( [ "Smoldering Titanguard", "151978", 930, TITANFORGE_CAP, 960 ] )
+      trinkets[ "antorus" ].append( [ "Riftworld Codex", "151976", 930, TITANFORGE_CAP, 960 ] )
+      trinkets[ "tomb_of_sargeras" ].append( [ "Leviathan's Hunger", "147023", 885, TITANFORGE_CAP, 930 ] )
+      trinkets[ "tomb_of_sargeras" ].append( [ "Feverish Carapace", "147022", 885, TITANFORGE_CAP, 930 ] )
 
   return trinkets
 
