@@ -48,11 +48,28 @@ def get_tiers():
 ##
 ## @brief      Validates the input fight style.
 ##
-## @param      fight_styles  The fight style like in SimC options
+## @param      fight_style  The fight style like in SimC options
 ##
 ## @return     True if fight_style matches predetermined SimC-styles
 ##
-def is_fight_style(fight_styles):
+def is_fight_style(fight_style):
+  # downwards compatibility
+  if type(fight_style) is list:
+    return is_fight_style_list(fight_style)
+  fight_style_list = get_fight_styles()
+  if not fight_style.lower() in fight_style_list:
+    return False
+  return True
+
+
+##
+## @brief      Validates the input fight style.
+##
+## @param      fight_styles  The fight styles list like in SimC options
+##
+## @return     True if fight_style matches predetermined SimC-styles
+##
+def is_fight_style_list(fight_styles):
   fight_style_list = get_fight_styles()
   for fight_style in fight_styles:
     if not type(fight_style) is str:
@@ -60,7 +77,6 @@ def is_fight_style(fight_styles):
     if not fight_style.lower() in fight_style_list:
       return False
   return True
-
 
 ##
 ## @brief      Determines if iteration is a number as a string and greater than
