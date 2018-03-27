@@ -9,3 +9,6 @@
 
 # build directory from adding installing in local dev
 /build/
+
+# local dev environement
+/env/

@@ -54,10 +54,10 @@ def get_tiers():
 ##
 def is_fight_style(fight_style):
   # downwards compatibility
-  if type(fight_style) is list:
+  if type(fight_style) == list:
     return is_fight_style_list(fight_style)
   fight_style_list = get_fight_styles()
-  if not fight_style.lower() in fight_style_list:
+  if not str(fight_style).lower() in fight_style_list:
     return False
   return True
 
@@ -72,9 +72,9 @@ def is_fight_style(fight_style):
 def is_fight_style_list(fight_styles):
   fight_style_list = get_fight_styles()
   for fight_style in fight_styles:
-    if not type(fight_style) is str:
+    if not type(fight_style) == str:
       return False
-    if not fight_style.lower() in fight_style_list:
+    if not str(fight_style).lower() in fight_style_list:
       return False
   return True
 
