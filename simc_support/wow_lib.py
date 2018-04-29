@@ -36,7 +36,7 @@ class Trinket(object):
     ranged,
     legendary=False
   ):
-    super(trinket, self).__init__()
+    super(Trinket, self).__init__()
     self.name: str = str(name)
     self.item_id: str = str(item_id)
     self.min_itemlevel: int = int(min_itemlevel)
@@ -1992,27 +1992,58 @@ __classes_data = {
 
 __races = {
   "alliance": {
-    "draenei": ("shaman"),
-    "dwarf": ("shaman"),
-    "gnome": (),
-    "human": (),
-    "nightelf": (),
-    "pandaren": ("shaman"),
-    "worgen": (),
-    "void_elf": (),
-    "lightforged_draenei": (),
+    "draenei": (
+      "warrior", "paladin", "hunter", "priest", "shaman", "mage", "monk",
+      "death_knight"
+    ),
+    "dwarf": (
+      "warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage",
+      "warlock", "monk", "death_knight"
+    ),
+    "gnome": (
+      "warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk",
+      "death_knight"
+    ),
+    "human": (
+      "warrior", "paladin", "hunter", "rogue", "priest", "mage", "warlock",
+      "monk", "death_knight"
+    ),
+    "nightelf": (
+      "warrior", "hunter", "rogue", "priest", "mage", "monk", "druid",
+      "death_knight"
+    ),
+    "pandaren": (
+      "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk"
+    ),
+    "worgen": (
+      "warrior", "hunter", "rogue", "priest", "mage", "warlock", "druid",
+      "death_knight"
+    ),
+    "void_elf": (
+      "warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk"
+    ),
+    "lightforged_draenei": ("warrior", "paladin", "hunter", "priest", "mage"),
     #"dark_iron_dwarf": ("shaman")
   },
   "horde": {
-    "bloodelf": (),
-    "goblin": ("shaman"),
-    "orc": ("shaman"),
-    "pandaren": ("shaman"),
-    "tauren": ("shaman"),
-    "troll": ("shaman"),
-    "undead": (),
-    "nightborne": (),
-    "highmountain_tauren": ("shaman"),
+    "bloodelf": ("warrior", "paladin", "hunter", "rogue", "priest", "mage", "warlock", "monk", "death_knight"
+),
+    "goblin": ("warrior", "hunter", "rogue", "priest", "shaman", "mage", "warlock", "death_knight"
+),
+    "orc": ("warrior", "hunter", "rogue", "shaman", "mage", "warlock", "monk", "death_knight"
+),
+    "pandaren": ("warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk"
+),
+    "tauren": ("warrior", "paladin", "hunter", "priest", "shaman", "monk", "druid", "death_knight"
+),
+    "troll": ("warrior", "hunter", "rogue", "priest", "shaman", "mage", "warlock", "monk", "druid", "death_knight"
+),
+    "undead": ("warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk", "death_knight"
+),
+    "nightborne": ("warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk"
+),
+    "highmountain_tauren": ("warrior", "hunter", "shaman", "monk", "druid"
+),
     #"maghar_orc": ("shaman")
   }
 }
@@ -2054,6 +2085,16 @@ def get_mask_for_spec(wow_class, wow_spec):
 
 
 def get_trinkets_for_spec2(wow_class, wow_spec):
+  """New function to return all available trinkets for a spec
+
+  Arguments:
+    wow_class {str} -- name of the wow class
+    wow_spec {str} -- name of the wow spec
+
+  Returns:
+    list[Trinket] -- List of all Trinkets
+  """
+
   melee, ranged, agility, intellect, strength = get_mask_for_spec(
     wow_class, wow_spec
   )
@@ -2087,17 +2128,26 @@ def get_trinkets_for_spec2(wow_class, wow_spec):
   return return_list
 
 
-def get_trinkets_for_spec(class_name, spec_name):
-  spec_info = get_role_stat(class_name, spec_name)
-  role_trinkets, stat_trinkets = __get_relevant_trinkets(
-    spec_info[0], spec_info[1]
-  )
+def get_trinket_id(trinket_name):
+  """Return the trinket id as string
 
-  combined_trinkets = __combine_trinket_dicts(
-    role_trinkets, stat_trinkets, spec_name
-  )
+  Arguments:
+    trinket_name {str} -- trinket name
 
-  return combined_trinkets
+  Returns:
+    str -- item ID as string
+  """
+
+  for trinket in __trinket_list:
+    if trinket.name in trinket_name:
+      return trinket.item_id
+
+
+def get_all_trinkets():
+  all_trinkets = []
+  for trinket in __trinket_list:
+    all_trinkets.append(trinket.name)
+  return all_trinkets
 
 
 ##
