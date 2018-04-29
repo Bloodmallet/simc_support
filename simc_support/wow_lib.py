@@ -8,6 +8,48 @@ import copy
 
 from collections import defaultdict
 
+## potential new format
+#try_out_trinkets = [
+#  ( "Name",                       "id",       "min",  "max", "str",   "agi",  "int",  "melee","range","legendary" ),
+#  ( "Kil'jaeden's Burning Wish",  "144259",   1000,   1200,   True,   True,   True,   True,   True,   True ),
+#]
+
+TRADER_TOKEN = 910
+M_PLUS_DROPLEVEL = 940
+TITANFORGE_CAP = 985
+
+
+class Trinket(object):
+  """docstring for trinket"""
+
+  def __init__(
+    self,
+    name,
+    item_id,
+    min_itemlevel,
+    max_itemlevel,
+    max_itemlevel_drop,
+    strength,
+    agility,
+    intellect,
+    melee,
+    ranged,
+    legendary=False
+  ):
+    super(trinket, self).__init__()
+    self.name: str = str(name)
+    self.item_id: str = str(item_id)
+    self.min_itemlevel: int = int(min_itemlevel)
+    self.max_itemlevel: int = int(max_itemlevel)
+    self.max_itemlevel_drop: int = int(max_itemlevel_drop)
+    self.strength: bool = bool(strength)
+    self.agility: bool = bool(agility)
+    self.intellect: bool = bool(intellect)
+    self.melee: bool = bool(melee)
+    self.ranged: bool = bool(ranged)
+    self.legendary: bool = bool(legendary)
+
+
 ## Available types:
 ##   legendary - legendary trinkets for everyone
 ##   shared    - trinkets for everyone
@@ -16,34 +58,6 @@ from collections import defaultdict
 ##   agi       - pure agi (leather wearer + hunter)
 ##   int       - pure int (pure caster)
 ##   str       - pure str (plate wearer)
-
-## potential new format
-#try_out_trinkets = [
-#  ( "Name",                       "id",       "min",  "max", "str",   "agi",  "int",  "melee","range","legendary" ),
-#  ( "Kil'jaeden's Burning Wish",  "144259",   1000,   1200,   True,   True,   True,   True,   True,   True ),
-#]
-
-#class trinket( object ):
-#  """docstring for trinket"""
-#  def __init__( self, name, id, min_itemlevel, max_itemlevel, max_itemlevel_drop, strength, agility, intellect, melee, ranged, legendary=False, location="", source="" ):
-#    super( trinket, self ).__init__()
-#    self.name = str( name )
-#    self.id = str( id )
-#    self.min_itemlevel = int(min_itemlevel )
-#    self.max_itemlevel = int( max_itemlevel )
-#    self.max_itemlevel_drop = int( max_itemlevel_drop )
-#    self.strength = bool( strength )
-#    self.agility = bool( agility )
-#    self.intellect = bool( intellect )
-#    self.melee = bool( melee )
-#    self.ranged = bool( ranged )
-#    self.legendary = bool( legendary )
-#    self.location = str( location )
-#    self.source = str( source )
-
-TRADER_TOKEN = 910
-M_PLUS_DROPLEVEL = 940
-TITANFORGE_CAP = 985
 
 ## legendary trinkets for everyone
 ##
@@ -1984,7 +1998,10 @@ __races = {
     "human": (),
     "nightelf": (),
     "pandaren": ("shaman"),
-    "worgen": ()
+    "worgen": (),
+    "void_elf": (),
+    "lightforged_draenei": (),
+    #"dark_iron_dwarf": ("shaman")
   },
   "horde": {
     "bloodelf": (),
@@ -1993,9 +2010,94 @@ __races = {
     "pandaren": ("shaman"),
     "tauren": ("shaman"),
     "troll": ("shaman"),
-    "undead": ()
+    "undead": (),
+    "nightborne": (),
+    "highmountain_tauren": ("shaman"),
+    #"maghar_orc": ("shaman")
   }
 }
+
+__trinket_list = [
+  Trinket(
+    "Unstable Arcanocrystal", "141482", 860, TITANFORGE_CAP, TRADER_TOKEN,
+    True, True, True, True, True
+  ),
+  Trinket(
+    "Horn of Valor", "133642", 805, TITANFORGE_CAP, M_PLUS_DROPLEVEL, True,
+    True, True, True, True
+  ),
+  Trinket(
+    "Devilsaur Shock-Baton", "140030", 840, TITANFORGE_CAP, TRADER_TOKEN,
+    False, False, True, False, True
+  ),
+]
+
+
+def is_melee(wow_class, wow_spec):
+  return __classes_data[wow_class.title()][wow_spec.title()]["role"] == "melee"
+
+
+def is_ranged(wow_class, wow_spec):
+  return __classes_data[wow_class.title()][wow_spec.title()]["role"
+                                                            ] == "ranged"
+
+
+def get_mask_for_spec(wow_class, wow_spec):
+  melee = is_melee(wow_class, wow_spec)
+  ranged = is_ranged(wow_class, wow_spec)
+  main_stat = get_main_stat(wow_class, wow_spec)
+  main_stat_agi = main_stat == "agi"
+  main_stat_int = main_stat == "int"
+  main_stat_str = main_stat == "str"
+
+  return (melee, ranged, main_stat_agi, main_stat_int, main_stat_str)
+
+
+def get_trinkets_for_spec2(wow_class, wow_spec):
+  melee, ranged, agility, intellect, strength = get_mask_for_spec(
+    wow_class, wow_spec
+  )
+  return_list = []
+  for trinket in __trinket_list:
+    if melee and trinket.melee:
+      return_list.append((
+        trinket.name, trinket.item_id, trinket.min_itemlevel,
+        trinket.max_itemlevel, trinket.max_itemlevel_drop
+      ))
+    elif ranged and trinket.ranged:
+      return_list.append((
+        trinket.name, trinket.item_id, trinket.min_itemlevel,
+        trinket.max_itemlevel, trinket.max_itemlevel_drop
+      ))
+    elif agility and trinket.agility:
+      return_list.append((
+        trinket.name, trinket.item_id, trinket.min_itemlevel,
+        trinket.max_itemlevel, trinket.max_itemlevel_drop
+      ))
+    elif intellect and trinket.intellect:
+      return_list.append((
+        trinket.name, trinket.item_id, trinket.min_itemlevel,
+        trinket.max_itemlevel, trinket.max_itemlevel_drop
+      ))
+    elif strength and trinket.strength:
+      return_list.append((
+        trinket.name, trinket.item_id, trinket.min_itemlevel,
+        trinket.max_itemlevel, trinket.max_itemlevel_drop
+      ))
+  return return_list
+
+
+def get_trinkets_for_spec(class_name, spec_name):
+  spec_info = get_role_stat(class_name, spec_name)
+  role_trinkets, stat_trinkets = __get_relevant_trinkets(
+    spec_info[0], spec_info[1]
+  )
+
+  combined_trinkets = __combine_trinket_dicts(
+    role_trinkets, stat_trinkets, spec_name
+  )
+
+  return combined_trinkets
 
 
 ##
@@ -2271,7 +2373,7 @@ def get_crucible_spell_id(wow_class, wow_spec, crucible_trait_name):
 ## @return     The possible talent combinations as a list.
 ##
 def get_talent_combinations(wow_class, wow_spec, user_input=""):
-  combination = []
+  combinations = []
 
   if user_input == "" or user_input == None:
     combinations = __generate_talent_combinations(
@@ -2297,25 +2399,6 @@ def get_talent_combinations(wow_class, wow_spec, user_input=""):
 
 
 ##
-## @brief      Function to test a trinket group for data
-##
-## @param      trinket_group  The trinket group
-##
-## @return     True
-##
-def __test_trinkets(trinket_group):
-  for location in trinket_group:
-    print("  Location: " + location)
-    for trinket in trinket_group[location]:
-      print("    Name:\t\t" + trinket[0])
-      print("    ID:\t\t\t" + trinket[1])
-      print("    Min-iLevel:\t" + str(trinket[2]))
-      print("    Max-iLevel:\t" + str(trinket[3]))
-      print("")
-  return True
-
-
-##
 ## @brief      Gets the wow classes.
 ##
 ## @return     The classes list.
@@ -2334,9 +2417,10 @@ def get_classes():
 ##
 def get_races():
   races = []
-  for faction in __races:
-    for race in __races[faction]:
-      races.append(race)
+  for faction in __races.keys():
+    for race in __races[faction].keys():
+      if not race in races:
+        races.append(race)
   return races
 
 
@@ -2345,11 +2429,13 @@ def get_races():
 ##
 ## @return    List of races
 ##
-def get_races_of_class(wow_class):
+def get_races_for_class(wow_class):
   race_list = []
   for faction in __races.keys():
     for race in __races[faction].keys():
-      if str(wow_class).lower() in __races[faction][race]:
+      # additionally prevent double races like pandaren
+      if str(wow_class).lower() in __races[faction][race
+                                                   ] and not race in race_list:
         race_list.append(race)
   return race_list
 
@@ -2374,7 +2460,7 @@ def get_role(wow_class, wow_spec):
 ##
 ## @return     The main stat as string.
 ##
-def get_stat(wow_class, wow_spec):
+def get_main_stat(wow_class, wow_spec):
   return __classes_data[wow_class.title()]["specs"][wow_spec.title()]["stat"]
 
 
@@ -2452,9 +2538,9 @@ def is_spec(wow_spec):
 
 
 ##
-#-------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 # Higher functions
-#-------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 ##
 
 
@@ -2536,25 +2622,6 @@ def is_dps_talent_combination(talent_combination, wow_class):
 
 
 ##
-## @brief      Simple data check
-##
-## @return     True if data doesn't have obvious flaws, False otherwise.
-##
-def __validity_check():
-  for wow_class in __classes_data:
-    for wow_spec in get_specs(wow_class):
-      if (
-        get_role(wow_class, wow_spec) == "ranged" and
-        get_stat(wow_class, wow_spec) == "str"
-      ) or (
-        get_role(wow_class, wow_spec) == "melee" and
-        get_stat(wow_class, wow_spec) == "int"
-      ):
-        return False
-  return True
-
-
-##
 ## @brief      Uses class and spec names to return a dict of relevant trinkets
 ##
 ## @param      class_name  The class name as string
@@ -2573,33 +2640,3 @@ def get_trinkets_for_spec(class_name, spec_name):
   )
 
   return combined_trinkets
-
-
-if __name__ == '__main__':
-  print("Selftest")
-  print("Testing Legendary trinkets.")
-  __test_trinkets(legendary_trinkets)
-  print("Done")
-  print("Testing Shared Trinkets.")
-  __test_trinkets(shared_trinkets)
-  print("Done")
-  print("Testing Melee Trinkets.")
-  __test_trinkets(melee_trinkets)
-  print("Done")
-  print("Testing Ranged Trinkets.")
-  __test_trinkets(ranged_trinkets)
-  print("Done")
-  print("Testing Agi Trinkets.")
-  __test_trinkets(agi_trinkets)
-  print("Done")
-  print("Testing Int Trinkets.")
-  __test_trinkets(int_trinkets)
-  print("Done")
-  print("Testing Str Trinkets.")
-  __test_trinkets(str_trinkets)
-  print("Done")
-  print("Testing spec validity.")
-  if __validity_check():
-    print("Data looks clean.")
-  else:
-    print("Data seems to be incorrect.")
