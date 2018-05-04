@@ -4,9 +4,10 @@
 ## races, trinkets
 
 # these values are used throughout the code to determine itemlevel "borders" of items
-TRADER_TOKEN = 910  # usually used as a catch up mechanic, drops usually all items from previous content
-M_PLUS_DROPLEVEL = 940  # highest available itemlevel from m+ dungeons. weekly chest is NOT included here
-TITANFORGE_CAP = 985  # currently highest itemlevel titanforging cap
+TRADER_TOKEN = 0  # usually used as a catch up mechanic, drops usually all items from previous content
+DUNGEON_ITEMLEVEL = 300  # standard dungeon itemlevel (normal, max level dungeon)
+M_PLUS_DROPLEVEL = 340  # highest available itemlevel from m+ dungeons. weekly chest is NOT included here
+TITANFORGE_CAP = 355  # currently highest itemlevel titanforging cap
 
 
 class Trinket(object):
@@ -19,9 +20,9 @@ class Trinket(object):
     min_itemlevel,
     max_itemlevel,
     max_itemlevel_drop,
-    strength,
     agility,
     intellect,
+    strength,
     melee,
     ranged,
     legendary=False
@@ -32,9 +33,9 @@ class Trinket(object):
     self.min_itemlevel: int = int(min_itemlevel)
     self.max_itemlevel: int = int(max_itemlevel)
     self.max_itemlevel_drop: int = int(max_itemlevel_drop)
-    self.strength: bool = bool(strength)
     self.agility: bool = bool(agility)
     self.intellect: bool = bool(intellect)
+    self.strength: bool = bool(strength)
     self.melee: bool = bool(melee)
     self.ranged: bool = bool(ranged)
     self.legendary: bool = bool(legendary)
@@ -295,18 +296,104 @@ __races = {
 }
 
 __trinket_list = [
+  # dungeon trinkets
   Trinket(
-    "Unstable Arcanocrystal", "141482", 860, TITANFORGE_CAP, TRADER_TOKEN,
-    True, True, True, True, True
+    "My'das Talisman", "158319", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, True, False, False, False, False
   ),
   Trinket(
-    "Horn of Valor", "133642", 805, TITANFORGE_CAP, M_PLUS_DROPLEVEL, True,
-    True, True, True, True
+    "Rezan's Gleaming Eye", "158712", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, False, False, True, False, False
   ),
   Trinket(
-    "Devilsaur Shock-Baton", "140030", 840, TITANFORGE_CAP, TRADER_TOKEN,
-    False, False, True, False, True
+    "Vessel of Skittering Shadows", "159610", DUNGEON_ITEMLEVEL,
+    TITANFORGE_CAP, TRADER_TOKEN, False, True, False, False, False
   ),
+  Trinket(
+    "Harlan's Loaded Dice", "155881", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, True, False, False, False, False
+  ),
+  Trinket(
+    "Lustrous Golden Plumage", "159617", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, True, False, False, False, False
+  ),
+  Trinket(
+    "Briny Barnacle", "159619", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, False, False, True, False, False
+  ),
+  Trinket(
+    "Galecaller's Boon", "159614", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, True, False, False, False, False
+  ),
+  Trinket(
+    "Conch of Dark Whispers", "159620", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, False, True, False, False, False
+  ),
+  Trinket(
+    "Dead-Eye Spyglass", "159623", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, True, False, False, False, False
+  ),
+  Trinket(
+    "Hadal's Nautilus", "159622", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, False, True, False, False, False
+  ),
+  Trinket(
+    "Tiny Electromental in a Jar", "158374", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, True, False, False, False, False
+  ),
+  Trinket(
+    "Merektha's Fang", "158367", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, False, False, True, False, False
+  ),
+  Trinket(
+    "Razdunk's Big Red Button", "159611", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, False, False, True, False, False
+  ),
+  Trinket(
+    "Tik'ali's Resonating Heart", "159612", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, True, False, False, False, False
+  ),
+  # The Underrot
+  Trinket(
+    "Lingering Sporepods", "159626", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, True, False, True, False, False
+  ),
+  Trinket(
+    "Rotcrusted Voodoo Doll", "159624", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, False, True, False, False, False
+  ),
+  Trinket(
+    "Vial of Animated Blood", "159625", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, False, False, True, False, False
+  ),
+  Trinket(
+    "Jes' Howler", "159627", DUNGEON_ITEMLEVEL, TITANFORGE_CAP, TRADER_TOKEN,
+    False, False, True, False, False
+  ),
+  Trinket(
+    "Cannonball Hurdler", "159628", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, True, False, False, False, False
+  ),
+  Trinket(
+    "Ignition Mage's Fuse", "159615", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, False, True, False, False, False
+  ),
+  Trinket(
+    "Lady Waycrest's Music Box", "159631", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, False, True, False, False, False
+  ),
+  Trinket(
+    "Balefire Branch", "159630", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, False, True, False, False, False
+  ),
+  Trinket(
+    "Gorecrusted Butcher's Block", "159616", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+    TRADER_TOKEN, False, False, True, False, False
+  ),
+  # Trinket(
+  #   "", "", DUNGEON_ITEMLEVEL, TITANFORGE_CAP, TRADER_TOKEN,
+  #   False, False, False, False, False
+  # ),
 ]
 
 
@@ -403,8 +490,21 @@ def get_trinkets_for_spec(wow_class, wow_spec):
   return return_list
 
 
+def get_second_trinket_for_spec(wow_class, wow_spec):
+  main_stat = get_main_stat(wow_class, wow_spec)
+  if main_stat == "agi":
+    #return ',id=,ilevel={}'.format(DUNGEON_ITEMLEVEL if DUNGEON_ITEMLEVEL > TRADER_TOKEN else TRADER_TOKEN)
+    return ''
+  if main_stat == "int":
+    #return ',id=,ilevel={}'.format(DUNGEON_ITEMLEVEL if DUNGEON_ITEMLEVEL > TRADER_TOKEN else TRADER_TOKEN)
+    return ''
+  if main_stat == "str":
+    #return ',id=,ilevel={}'.format(DUNGEON_ITEMLEVEL if DUNGEON_ITEMLEVEL > TRADER_TOKEN else TRADER_TOKEN)
+    return ''
+
+
 def get_trinket_id(trinket_name):
-  """Return the trinket id as string
+  """Return the trinket id as string. Function can handly extended names like 'Pancakes Specialtext' and will still return the ID of 'Pancakes' in this case.
 
   Arguments:
     trinket_name {str} -- trinket name
@@ -414,6 +514,7 @@ def get_trinket_id(trinket_name):
   """
 
   for trinket in __trinket_list:
+    # ordered like this to allows look ups of extended names like "Norgannons + 15" to yield an ID
     if trinket.name in trinket_name:
       return trinket.item_id
 
