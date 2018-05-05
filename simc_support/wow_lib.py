@@ -44,7 +44,7 @@ class Trinket(object):
 __class_data = {
   "Death_Knight": {
     "talents": "1110011",
-    "id": 110,
+    "id": 6,
     "specs": {
       "Blood": {
         "role": "melee",
@@ -65,7 +65,7 @@ __class_data = {
   },
   "Demon_Hunter": {
     "talents": "1110111",
-    "id": 110,
+    "id": 12,
     "specs": {
       "Havoc": {
         "role": "melee",
@@ -81,7 +81,7 @@ __class_data = {
   },
   "Druid": {
     "talents": "1000111",
-    "id": 110,
+    "id": 11,
     "specs": {
       "Balance": {
         "role": "ranged",
@@ -102,7 +102,7 @@ __class_data = {
   },
   "Hunter": {
     "talents": "1101011",
-    "id": 110,
+    "id": 3,
     "specs": {
       "Beast_Mastery": {
         "role": "ranged",
@@ -123,7 +123,7 @@ __class_data = {
   },
   "Mage": {
     "talents": "1011011",
-    "id": 110,
+    "id": 8,
     "specs": {
       "Arcane": {
         "role": "ranged",
@@ -144,7 +144,7 @@ __class_data = {
   },
   "Monk": {
     "talents": "1010011",
-    "id": 110,
+    "id": 10,
     "specs": {
       "Brewmaster": {
         "role": "melee",
@@ -160,7 +160,7 @@ __class_data = {
   },
   "Paladin": {
     "talents": "1101001",
-    "id": 110,
+    "id": 2,
     "specs": {
       "Protection": {
         "role": "melee",
@@ -176,7 +176,7 @@ __class_data = {
   },
   "Priest": {
     "talents": "1001111",
-    "id": 110,
+    "id": 5,
     "specs": {
       "Shadow": {
         "role": "ranged",
@@ -187,7 +187,7 @@ __class_data = {
   },
   "Rogue": {
     "talents": "1110111",
-    "id": 110,
+    "id": 4,
     "specs": {
       "Assassination": {
         "role": "melee",
@@ -208,7 +208,7 @@ __class_data = {
   },
   "Shaman": {
     "talents": "1001111",
-    "id": 110,
+    "id": 7,
     "specs": {
       "Elemental": {
         "role": "ranged",
@@ -224,7 +224,7 @@ __class_data = {
   },
   "Warlock": {
     "talents": "1101011",
-    "id": 110,
+    "id": 9,
     "specs": {
       "Affliction": {
         "role": "ranged",
@@ -245,7 +245,7 @@ __class_data = {
   },
   "Warrior": {
     "talents": "1010111",
-    "id": 110,
+    "id": 1,
     "specs": {
       "Arms": {
         "role": "melee",
