@@ -41,184 +41,226 @@ class Trinket(object):
     self.legendary: bool = bool(legendary)
 
 
-__classes_data = {
+__class_data = {
   "Death_Knight": {
     "talents": "1110011",
+    "id": 110,
     "specs": {
       "Blood": {
         "role": "melee",
         "stat": "str",
+        "id": 250,
       },
       "Frost": {
         "role": "melee",
         "stat": "str",
+        "id": 251,
       },
       "Unholy": {
         "role": "melee",
         "stat": "str",
+        "id": 252,
       }
     }
   },
   "Demon_Hunter": {
     "talents": "1110111",
+    "id": 110,
     "specs": {
       "Havoc": {
         "role": "melee",
         "stat": "agi",
+        "id": 577,
       },
       "Vengance": {
         "role": "melee",
         "stat": "agi",
+        "id": 581,
       }
     }
   },
   "Druid": {
     "talents": "1000111",
+    "id": 110,
     "specs": {
       "Balance": {
         "role": "ranged",
         "stat": "int",
+        "id": 102,
       },
       "Feral": {
         "role": "melee",
         "stat": "agi",
+        "id": 103,
       },
       "Guardian": {
         "role": "melee",
         "stat": "agi",
+        "id": 104,
       }
     }
   },
   "Hunter": {
     "talents": "1101011",
+    "id": 110,
     "specs": {
       "Beast_Mastery": {
         "role": "ranged",
         "stat": "agi",
+        "id": 253,
       },
       "Marksmanship": {
         "role": "ranged",
         "stat": "agi",
+        "id": 254,
       },
       "Survival": {
         "role": "melee",
         "stat": "agi",
+        "id": 255,
       }
     }
   },
   "Mage": {
     "talents": "1011011",
+    "id": 110,
     "specs": {
       "Arcane": {
         "role": "ranged",
         "stat": "int",
+        "id": 62,
       },
       "Fire": {
         "role": "ranged",
         "stat": "int",
+        "id": 63,
       },
       "Frost": {
         "role": "ranged",
         "stat": "int",
+        "id": 64,
       }
     }
   },
   "Monk": {
     "talents": "1010011",
+    "id": 110,
     "specs": {
       "Brewmaster": {
         "role": "melee",
         "stat": "agi",
+        "id": 268,
       },
       "Windwalker": {
         "role": "melee",
         "stat": "agi",
+        "id": 269,
       }
     }
   },
   "Paladin": {
     "talents": "1101001",
+    "id": 110,
     "specs": {
       "Protection": {
         "role": "melee",
         "stat": "str",
+        "id": 66,
       },
       "Retribution": {
         "role": "melee",
         "stat": "str",
+        "id": 70,
       }
     }
   },
   "Priest": {
     "talents": "1001111",
+    "id": 110,
     "specs": {
       "Shadow": {
         "role": "ranged",
         "stat": "int",
+        "id": 258,
       }
     }
   },
   "Rogue": {
     "talents": "1110111",
+    "id": 110,
     "specs": {
       "Assassination": {
         "role": "melee",
         "stat": "agi",
+        "id": 259,
       },
       "Outlaw": {
         "role": "melee",
         "stat": "agi",
+        "id": 260,
       },
       "Subtlety": {
         "role": "melee",
         "stat": "agi",
+        "id": 261,
       }
     }
   },
   "Shaman": {
     "talents": "1001111",
+    "id": 110,
     "specs": {
       "Elemental": {
         "role": "ranged",
         "stat": "int",
+        "id": 262,
       },
       "Enhancement": {
         "role": "melee",
         "stat": "agi",
+        "id": 263,
       }
     }
   },
   "Warlock": {
     "talents": "1101011",
+    "id": 110,
     "specs": {
       "Affliction": {
         "role": "ranged",
         "stat": "int",
+        "id": 265,
       },
       "Demonology": {
         "role": "ranged",
         "stat": "int",
+        "id": 266,
       },
       "Destruction": {
         "role": "ranged",
         "stat": "int",
+        "id": 267,
       }
     }
   },
   "Warrior": {
     "talents": "1010111",
+    "id": 110,
     "specs": {
       "Arms": {
         "role": "melee",
         "stat": "str",
+        "id": 71,
       },
       "Fury": {
         "role": "melee",
         "stat": "str",
+        "id": 72,
       },
       "Protection": {
         "role": "melee",
         "stat": "str",
+        "id": 73,
       }
     }
   }
@@ -673,7 +715,7 @@ def get_classes():
   """
 
   classes = []
-  for wow_class in __classes_data:
+  for wow_class in __class_data:
     classes.append(wow_class)
   return classes
 
@@ -724,7 +766,34 @@ def get_role(wow_class, wow_spec):
     str -- role ('ranged'/'melee')
   """
 
-  return __classes_data[wow_class.title()]["specs"][wow_spec.title()]["role"]
+  return __class_data[wow_class.title()]["specs"][wow_spec.title()]["role"]
+
+
+def get_class_id(wow_class: str) -> int:
+  """Get the wow ID of the given class.
+
+  Arguments:
+    wow_class {str} -- [description]
+
+  Returns:
+    int -- wow_class_id
+  """
+
+  return __class_data[wow_class.title()]["id"]
+
+
+def get_spec_id(wow_class: str, wow_spec: str) -> int:
+  """Get the ID of a given spec.
+
+  Arguments:
+    wow_class {str} -- [description]
+    wow_spec {str} -- [description]
+
+  Returns:
+    int -- wow_spec_id
+  """
+
+  return __class_data[wow_class.title()][wow_spec.title()]["id"]
 
 
 def get_main_stat(wow_class, wow_spec):
@@ -738,7 +807,7 @@ def get_main_stat(wow_class, wow_spec):
     str -- main stat (agi / int / str)
   """
 
-  return __classes_data[wow_class.title()]["specs"][wow_spec.title()]["stat"]
+  return __class_data[wow_class.title()]["specs"][wow_spec.title()]["stat"]
 
 
 def get_dps_talents(wow_class, wow_spec=""):
@@ -754,7 +823,7 @@ def get_dps_talents(wow_class, wow_spec=""):
     str -- talent mask, e.g. '1011101'
   """
 
-  return __classes_data[wow_class.title()]["talents"]
+  return __class_data[wow_class.title()]["talents"]
 
 
 def get_specs(wow_class):
@@ -768,7 +837,7 @@ def get_specs(wow_class):
   """
 
   spec_collection = []
-  for spec in __classes_data[wow_class.title()]["specs"]:
+  for spec in __class_data[wow_class.title()]["specs"]:
     spec_collection.append(spec)
   return spec_collection
 
@@ -857,10 +926,10 @@ def is_dps_talent_combination(talent_combination, wow_class):
   """
 
   for i in range(0, 7):
-    if talent_combination[i] == "0" and __classes_data[wow_class]["talents"
-                                                                 ][i] == "1":
+    if talent_combination[i] == "0" and __class_data[wow_class]["talents"
+                                                               ][i] == "1":
       return False
-    elif not talent_combination[i] == "0" and __classes_data[wow_class][
+    elif not talent_combination[i] == "0" and __class_data[wow_class][
       "talents"
     ][i] == "0":
       return False
