@@ -793,7 +793,7 @@ def get_spec_id(wow_class: str, wow_spec: str) -> int:
     int -- wow_spec_id
   """
 
-  return __class_data[wow_class.title()][wow_spec.title()]["id"]
+  return __class_data[wow_class.title()]["specs"][wow_spec.title()]["id"]
 
 
 def get_main_stat(wow_class, wow_spec):
