@@ -720,6 +720,21 @@ def get_classes():
   return classes
 
 
+def get_classes_specs():
+  """Get a list of all wow classes and wow specs.
+
+  Returns:
+    List[Tuple(String, String)] -- List of all wow_class and wow_spec combinations
+  """
+
+  class_list = get_classes()
+  full_list = []
+  for wow_class in class_list:
+    for spec in get_specs(wow_class):
+      full_list.append((wow_class, spec))
+  return full_list
+
+
 def get_races():
   """Get a list of all wow race names.
 
