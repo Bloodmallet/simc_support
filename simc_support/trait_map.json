@@ -1,10 +1,7 @@
 {
     "263786": {
         "class": {
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ]
+            "Shaman": []
         },
         "description": "Increases the damage reduction of Astral Shift by an additional $s1%. ",
         "max_itemlevel": -1,
@@ -14,10 +11,7 @@
     },
     "263790": {
         "class": {
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ]
+            "Shaman": []
         },
         "description": "Increases the healing of Chain Heal by $s1 and causes it to bounce an additional time.",
         "max_itemlevel": -1,
@@ -28,7 +22,6 @@
     "263795": {
         "class": {
             "Shaman": [
-                "Elemental",
                 "Enhancement"
             ]
         },
@@ -41,9 +34,7 @@
     "263814": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
+                "Marksmanship"
             ]
         },
         "description": "Increases the damage of Aimed Shot by $s1 and has a $s2% chance to reset  the cooldown of your Rapid Fire.",
@@ -55,8 +46,6 @@
     "263818": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
                 "Survival"
             ]
         },
@@ -68,11 +57,7 @@
     },
     "263829": {
         "class": {
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ]
+            "Hunter": []
         },
         "description": "Adds an additional $s1% speed to the initial 3 seconds of Aspect of the Cheetah.",
         "max_itemlevel": -1,
@@ -82,60 +67,18 @@
     },
     "263962": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Hunter": [],
+            "Mage": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "Every $270568t1 sec, gain an absorb shield for $s1 for $269279d.",
         "max_itemlevel": -1,
@@ -379,8 +322,7 @@
     "264113": {
         "class": {
             "Shaman": [
-                "Elemental",
-                "Enhancement"
+                "Elemental"
             ]
         },
         "description": "Increases the damage of Lava Burst by $s1 and causes it to grant an additional $s2 Maelstrom.",
@@ -393,7 +335,6 @@
         "class": {
             "Hunter": [
                 "Beast_Mastery",
-                "Marksmanship",
                 "Survival"
             ]
         },
@@ -406,9 +347,7 @@
     "264198": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
+                "Marksmanship"
             ]
         },
         "description": "When Rapid Fire finishes fully channeling, your Haste is increased by $s1 for $272733d.",
@@ -637,33 +576,12 @@
     },
     "267671": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Monk": [],
+            "Paladin": [],
+            "Warrior": []
         },
         "description": "Taking damage grants you $s1 Dodge for $269214d, stacking up to $269214u times.",
         "max_itemlevel": -1,
@@ -673,33 +591,12 @@
     },
     "267683": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Monk": [],
+            "Paladin": [],
+            "Warrior": []
         },
         "description": "Taking damage has a chance to grant you Azerite Veins, healing you for $s1 every $270674t1 sec. Lasts $270674d or until you are fully healed.",
         "max_itemlevel": -1,
@@ -725,26 +622,11 @@
     },
     "267880": {
         "class": {
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ]
+            "Druid": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Shaman": []
         },
         "description": "Your healing effects have a chance to increase your Haste by up to $s1 for $269085d. Healing lower health targets will grant you more Haste.",
         "max_itemlevel": -1,
@@ -754,17 +636,9 @@
     },
     "267882": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ]
+            "Paladin": [],
+            "Priest": [],
+            "Shaman": []
         },
         "description": "Your healing effects have a chance to grant the target ${$s1*2} additional healing every $272260t1 sec for $272260d. This effect doubles every $272260t1 sec. ",
         "max_itemlevel": -1,
@@ -774,26 +648,11 @@
     },
     "267883": {
         "class": {
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ]
+            "Druid": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Shaman": []
         },
         "description": "Your heals on targets below $s2% health have a chance to heal for an additional $s1.",
         "max_itemlevel": -1,
@@ -803,26 +662,11 @@
     },
     "267884": {
         "class": {
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ]
+            "Druid": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Shaman": []
         },
         "description": "Your heals have a chance to apply Bracing Chill. Healing a target with Bracing Chill will heal for an additional $s1 and move Bracing Chill to a nearby ally (up to $272276u times).",
         "max_itemlevel": -1,
@@ -832,26 +676,11 @@
     },
     "267886": {
         "class": {
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ]
+            "Druid": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Shaman": []
         },
         "description": "Casting a healing spell restores ${$s1*($272572d/$272572t1)} mana over $272572d. Stacks up to $272572u times.",
         "max_itemlevel": -1,
@@ -861,14 +690,8 @@
     },
     "267889": {
         "class": {
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Priest": [
-                "Shadow"
-            ]
+            "Druid": [],
+            "Priest": []
         },
         "description": "Your healing spells have a chance to apply Blessed Portents for $271843d. When the ally falls below $s2% health, Blessed Portents is consumed and instantly restores $s1 health.",
         "max_itemlevel": -1,
@@ -878,13 +701,8 @@
     },
     "267892": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ]
+            "Paladin": [],
+            "Priest": []
         },
         "description": "Casting $?a137009[Wild Growth]?a137022[Essence Font]?a137030[Prayer of Healing or Power Word: Radiance]?a137026[Light of Dawn]?a137038[Chain Heal][your multi-target healing spell] grants you $s1 Mastery for $272090d sec. This cannot occur more than once every $272089proccooldown sec.",
         "max_itemlevel": -1,
@@ -894,60 +712,18 @@
     },
     "268435": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Hunter": [],
+            "Mage": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "When stunned, immobilized, or knocked back, you heal for $s1.",
         "max_itemlevel": -1,
@@ -957,60 +733,18 @@
     },
     "268437": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Hunter": [],
+            "Mage": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "When you take damage, heal for $s1. Cannot occur more than once every $270654proccooldown sec.",
         "max_itemlevel": -1,
@@ -1047,60 +781,18 @@
     },
     "268595": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Hunter": [],
+            "Mage": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "When you are surrounded by $s2 or more enemies, gain a shield that absorbs $s1 damage. Cannot occur more than once every $270656d.",
         "max_itemlevel": -1,
@@ -1110,60 +802,18 @@
     },
     "268596": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Hunter": [],
+            "Mage": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "When dealt damage greater than $s3% of your maximum health, gain $s1 Avoidance and $s2 Armor for $270576d.",
         "max_itemlevel": -1,
@@ -1173,60 +823,18 @@
     },
     "268599": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Hunter": [],
+            "Mage": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "When an enemy you damaged dies, you heal for $s1 and gain $s2 Speed for $269239d.",
         "max_itemlevel": -1,
@@ -1236,60 +844,18 @@
     },
     "268600": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Hunter": [],
+            "Mage": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "While no enemies are within $s2 yds, you heal for $s1 every $270661t1 sec.",
         "max_itemlevel": -1,
@@ -1299,10 +865,7 @@
     },
     "269621": {
         "class": {
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ]
+            "Monk": []
         },
         "description": "Vivify does an additional $s1 healing when empowered by Thunder Focus Tea.",
         "max_itemlevel": -1,
@@ -1376,9 +939,7 @@
     "270669": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
+                "Arcane"
             ]
         },
         "description": "Each wave of Arcane Missiles deals $s1 more damage than the previous one.",
@@ -1390,30 +951,21 @@
     "271536": {
         "class": {
             "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
+                "Blood"
             ],
             "Demon_Hunter": [
-                "Havoc",
                 "Vengance"
             ],
             "Druid": [
-                "Balance",
-                "Feral",
                 "Guardian"
             ],
             "Monk": [
-                "Brewmaster",
-                "Windwalker"
+                "Brewmaster"
             ],
             "Paladin": [
-                "Protection",
-                "Retribution"
+                "Protection"
             ],
             "Warrior": [
-                "Arms",
-                "Fury",
                 "Protection"
             ]
         },
@@ -1425,20 +977,9 @@
     },
     "271540": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Paladin": [],
+            "Warrior": []
         },
         "description": "Falling below $271542s1% health grants you $s1 Armor for $271543d. Taking further Physical damage reduces the Armor granted. May only occur every $271544d.",
         "max_itemlevel": -1,
@@ -1448,33 +989,12 @@
     },
     "271557": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Monk": [],
+            "Paladin": [],
+            "Warrior": []
         },
         "description": "Taking damage has a chance to create an upwelling of Azerite beneath your feet, increasing your Health by $s1 and your Armor by $s2 while you stand within it. Lasts $271560d.",
         "max_itemlevel": -1,
@@ -1485,9 +1005,7 @@
     "272684": {
         "class": {
             "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
+                "Blood"
             ]
         },
         "description": "Heart Strike amplifies your Blood Plague on your primary target for $272685d, causing it to drain an additional $s1 health each time it drains.",
@@ -1500,7 +1018,6 @@
         "class": {
             "Hunter": [
                 "Beast_Mastery",
-                "Marksmanship",
                 "Survival"
             ]
         },
@@ -1513,9 +1030,7 @@
     "272718": {
         "class": {
             "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
+                "Frost"
             ]
         },
         "description": "When Pillar of Frost expires, your Strength is increased by $s1 for $272723d. This effect lasts ${$s2/1000} sec longer for each Obliterate and Frostscythe critical strike during Pillar of Frost.",
@@ -1527,8 +1042,6 @@
     "272738": {
         "class": {
             "Death_Knight": [
-                "Blood",
-                "Frost",
                 "Unholy"
             ]
         },
@@ -1541,8 +1054,6 @@
     "272742": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
                 "Survival"
             ]
         },
@@ -1554,9 +1065,7 @@
     },
     "272775": {
         "class": {
-            "Priest": [
-                "Shadow"
-            ]
+            "Priest": []
         },
         "description": "Pain Suppression applies Atonement to the target and instantly heals them for $s1.",
         "max_itemlevel": -1,
@@ -1566,9 +1075,7 @@
     },
     "272780": {
         "class": {
-            "Priest": [
-                "Shadow"
-            ]
+            "Priest": []
         },
         "description": "Flash Heal increases the healing of your Flash Heals on that ally by $s1 for $272783d.",
         "max_itemlevel": -1,
@@ -1591,8 +1098,7 @@
     "272792": {
         "class": {
             "Monk": [
-                "Brewmaster",
-                "Windwalker"
+                "Brewmaster"
             ]
         },
         "description": "Breath of Fire deals ${$s2*($123725d/$123725t1)} additional damage over its duration, and has a chance to summon a Healing Sphere each time it deals damage.",
@@ -1603,11 +1109,7 @@
     },
     "272802": {
         "class": {
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ]
+            "Druid": []
         },
         "description": "Swiftmend causes your Efflorescence mushroom to burst, healing a nearby injured ally for $s1.",
         "max_itemlevel": -1,
@@ -1618,7 +1120,6 @@
     "272804": {
         "class": {
             "Monk": [
-                "Brewmaster",
                 "Windwalker"
             ]
         },
@@ -1631,8 +1132,6 @@
     "272824": {
         "class": {
             "Warrior": [
-                "Arms",
-                "Fury",
                 "Protection"
             ]
         },
@@ -1645,9 +1144,7 @@
     "272836": {
         "class": {
             "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
+                "Fury"
             ]
         },
         "description": "Rampaging an enemy whose health percentage is lower than yours increases your Strength and Stamina by $s1 for $272838d.",
@@ -1659,9 +1156,7 @@
     "272866": {
         "class": {
             "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
+                "Arms"
             ]
         },
         "description": "Execute increases the damage of your next Mortal Strike against the target by $s1, stacking up to $272870u times.",
@@ -1673,9 +1168,7 @@
     "272871": {
         "class": {
             "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
+                "Balance"
             ]
         },
         "description": "While Celestial Alignment is active, your spells call a Streaking Star, dealing an additional $s1 damage when they are not a repeat of the previous ability.",
@@ -1687,9 +1180,7 @@
     "272891": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
+                "Affliction"
             ]
         },
         "description": "Every other Soul Shard your Agony generates also increases your Intellect by $s1 for $272893d.",
@@ -1715,7 +1206,6 @@
         "class": {
             "Rogue": [
                 "Assassination",
-                "Outlaw",
                 "Subtlety"
             ]
         },
@@ -1728,9 +1218,7 @@
     "272932": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
+                "Fire"
             ]
         },
         "description": "Enhanced Pyrotechnics grants an additional $s1 Haste. ",
@@ -1742,9 +1230,7 @@
     "272935": {
         "class": {
             "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
+                "Outlaw"
             ]
         },
         "description": "Between the Eyes increases the damage of your next Pistol Shot by $s1.",
@@ -1756,9 +1242,7 @@
     "272944": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
+                "Demonology"
             ]
         },
         "description": "When your summoned Dreadstalkers fade away, they increase the damage of your Demonbolt by $s1 for $272945d.",
@@ -1770,8 +1254,6 @@
     "272955": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
                 "Destruction"
             ]
         },
@@ -1784,8 +1266,6 @@
     "272968": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
                 "Frost"
             ]
         },
@@ -1797,10 +1277,7 @@
     },
     "272976": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ]
+            "Paladin": []
         },
         "description": "Avenger's Shield grants you a shield, absorbing $s1 damage for $272979d.",
         "max_itemlevel": -1,
@@ -1811,8 +1288,7 @@
     "272978": {
         "class": {
             "Shaman": [
-                "Elemental",
-                "Enhancement"
+                "Elemental"
             ]
         },
         "description": "Lava Bursts on a target that has been struck by your Lightning in the last 4 sec deal an additional $s1 damage. ",
@@ -1823,10 +1299,7 @@
     },
     "272983": {
         "class": {
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ]
+            "Demon_Hunter": []
         },
         "description": "When Fiery Brand expires on your primary target, you gain a shield that absorbs up to $s1 damage for $272987d, based on your damage dealt to them while Fiery Brand was active. ",
         "max_itemlevel": -1,
@@ -1836,10 +1309,7 @@
     },
     "272989": {
         "class": {
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ]
+            "Shaman": []
         },
         "description": "Your Chain Heal heals its primary target for an additional $s1 healing.",
         "max_itemlevel": -1,
@@ -1850,7 +1320,6 @@
     "272992": {
         "class": {
             "Shaman": [
-                "Elemental",
                 "Enhancement"
             ]
         },
@@ -1863,9 +1332,7 @@
     "273007": {
         "class": {
             "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
+                "Assassination"
             ]
         },
         "description": "When Mutilate applies Lethal Poison with both daggers, it poisons the target for an additional $s1 damage.",
@@ -1876,10 +1343,7 @@
     },
     "273027": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ]
+            "Paladin": []
         },
         "description": "Light of the Martyr has a chance to cause your Blessing of Sacrifice to additionally heal the target for $s1. This effect can stack up to 10 times.",
         "max_itemlevel": -1,
@@ -1891,7 +1355,6 @@
         "class": {
             "Death_Knight": [
                 "Blood",
-                "Frost",
                 "Unholy"
             ]
         },
@@ -1904,9 +1367,7 @@
     "273093": {
         "class": {
             "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
+                "Frost"
             ]
         },
         "description": "Frost Strike deals an additional ${$s1+($s1/2)} damage if you have at least $s2 empty runes.",
@@ -1918,8 +1379,6 @@
     "273095": {
         "class": {
             "Death_Knight": [
-                "Blood",
-                "Frost",
                 "Unholy"
             ]
         },
@@ -1931,10 +1390,7 @@
     },
     "273130": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ]
+            "Paladin": []
         },
         "description": "Flash of Light on your Beacon of Light target is increased by $s1.",
         "max_itemlevel": -1,
@@ -1944,10 +1400,7 @@
     },
     "273131": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ]
+            "Paladin": []
         },
         "description": "Your Holy Light critical strikes refund $s1 mana during Avenging Wrath.",
         "max_itemlevel": -1,
@@ -1957,10 +1410,7 @@
     },
     "273134": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ]
+            "Paladin": []
         },
         "description": "Aura Mastery also grants your allies $s1 Max Health for its duration.",
         "max_itemlevel": -1,
@@ -1970,10 +1420,7 @@
     },
     "273136": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ]
+            "Paladin": []
         },
         "description": "Flash of Light grants you $s1 Critical Strike for 6 seconds if it heals a target below 50% health.",
         "max_itemlevel": -1,
@@ -1984,8 +1431,7 @@
     "273140": {
         "class": {
             "Paladin": [
-                "Protection",
-                "Retribution"
+                "Protection"
             ]
         },
         "description": "When Shield of the Righteous expires, gain $s1 block and deal $s2 Holy damage to all attackers for 4 seconds.",
@@ -1996,10 +1442,7 @@
     },
     "273142": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ]
+            "Paladin": []
         },
         "description": "Hammer of the Righteous heals you for X if your health is below 20%.",
         "max_itemlevel": -1,
@@ -2036,8 +1479,7 @@
     "273149": {
         "class": {
             "Paladin": [
-                "Protection",
-                "Retribution"
+                "Protection"
             ]
         },
         "description": "Your spells and abilities have a chance to draw a Wandering Soul from Thros. The Soul grants you a shield that absorbs $s1 damage for 14 sec. When the shield is consumed or expires, the Soul releases a wave of dark energy dealing $s2 Shadow damage to all enemies within 8 yds.",
@@ -2067,8 +1509,7 @@
     "273154": {
         "class": {
             "Paladin": [
-                "Protection",
-                "Retribution"
+                "Protection"
             ]
         },
         "description": "Being attacked by an enemy of the Loa has a chance to call a Child of Rezan to grant you a blessing, healing you for $s1 and increasing your primary stat by $s2 for 1 min.",
@@ -2080,8 +1521,7 @@
     "273231": {
         "class": {
             "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
+                "Havoc"
             ]
         },
         "description": "When Eye Beam finishes fully channeling, your Haste is increased by $s1 for $273232d.",
@@ -2093,7 +1533,6 @@
     "273236": {
         "class": {
             "Demon_Hunter": [
-                "Havoc",
                 "Vengance"
             ]
         },
@@ -2106,9 +1545,7 @@
     "273262": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
+                "Beast_Mastery"
             ]
         },
         "description": "Bestial Wrath increases your Agility by $s1 for $273264d.",
@@ -2120,9 +1557,7 @@
     "273265": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
+                "Marksmanship"
             ]
         },
         "description": "Arcane Shot increases the damage of Arcane Shot by $s1 for $273267d, stacking up to $273267u times.",
@@ -2134,8 +1569,6 @@
     "273283": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
                 "Survival"
             ]
         },
@@ -2148,7 +1581,6 @@
     "273291": {
         "class": {
             "Monk": [
-                "Brewmaster",
                 "Windwalker"
             ]
         },
@@ -2160,9 +1592,7 @@
     },
     "273307": {
         "class": {
-            "Priest": [
-                "Shadow"
-            ]
+            "Priest": []
         },
         "description": "Healing an ally with Penance increases the damage of your next Smite by $s1. Damaging an enemy with Penance increase the absorption of your next Power Word: Shield by $s2.",
         "max_itemlevel": -1,
@@ -2172,9 +1602,7 @@
     },
     "273313": {
         "class": {
-            "Priest": [
-                "Shadow"
-            ]
+            "Priest": []
         },
         "description": "Echo of Light from Holy Word: Sanctify heals for an additional ${$s1*2}.",
         "max_itemlevel": -1,
@@ -2197,9 +1625,7 @@
     "273326": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
+                "Arcane"
             ]
         },
         "description": "While channeling Evocation, your Intellect is increased by $s1 every $273329t1 sec. Lasts $273330d.",
@@ -2210,10 +1636,7 @@
     },
     "273328": {
         "class": {
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ]
+            "Monk": []
         },
         "description": "Your Enveloping Mists heal the target for $s1 each time they take damage.",
         "max_itemlevel": -1,
@@ -2224,9 +1647,7 @@
     "273331": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
+                "Fire"
             ]
         },
         "description": "Scorch increases the damage the target takes from your Fire Blast by $s1 for $273333d.",
@@ -2238,9 +1659,7 @@
     "273338": {
         "class": {
             "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
+                "Feral"
             ]
         },
         "description": "Rake increases damage of your next Ferocious Bite by $s1.",
@@ -2252,8 +1671,6 @@
     "273344": {
         "class": {
             "Druid": [
-                "Balance",
-                "Feral",
                 "Guardian"
             ]
         },
@@ -2266,8 +1683,6 @@
     "273346": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
                 "Frost"
             ]
         },
@@ -2280,9 +1695,7 @@
     "273367": {
         "class": {
             "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
+                "Balance"
             ]
         },
         "description": "Moonfire deals $s2 additional damage instantly, and has a $273389h% chance to grant you Lunar Empowerment.",
@@ -2294,9 +1707,7 @@
     "273409": {
         "class": {
             "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
+                "Arms"
             ]
         },
         "description": "While $?s152277[Ravager is active][Bladestorming], every $273414t1 sec you gain $s2 Speed and $?s152277[Ravager's][Bladestorm's] damage increases by $s1. Lasts $273415d.",
@@ -2308,8 +1719,6 @@
     "273418": {
         "class": {
             "Rogue": [
-                "Assassination",
-                "Outlaw",
                 "Subtlety"
             ]
         },
@@ -2322,9 +1731,7 @@
     "273420": {
         "class": {
             "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
+                "Fury"
             ]
         },
         "description": "Bloodthirst gains $s1 critical strike rating every $273423t1 sec, up to ${$s1*$273428u} rating. This effect resets when Bloodthirst critically strikes.",
