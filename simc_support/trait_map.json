@@ -1743,8 +1743,7 @@
     "273448": {
         "class": {
             "Shaman": [
-                "Elemental",
-                "Enhancement"
+                "Elemental"
             ]
         },
         "description": "Flame Shock damage increases the damage of your next Earth Shock by $s1, stacking up to $273453u times.",
@@ -1756,9 +1755,7 @@
     "273452": {
         "class": {
             "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
+                "Assassination"
             ]
         },
         "description": "Extra strikes from Sinister Strike increase the damage of your next Dispatch by $s1.",
@@ -1770,7 +1767,6 @@
     "273461": {
         "class": {
             "Shaman": [
-                "Elemental",
                 "Enhancement"
             ]
         },
@@ -1782,10 +1778,7 @@
     },
     "273464": {
         "class": {
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ]
+            "Monk": []
         },
         "description": "When you Blackout Strike, your Stagger is reduced by $s1.",
         "max_itemlevel": -1,
@@ -1796,7 +1789,6 @@
     "273473": {
         "class": {
             "Paladin": [
-                "Protection",
                 "Retribution"
             ]
         },
@@ -1809,9 +1801,7 @@
     "273488": {
         "class": {
             "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
+                "Assassination"
             ]
         },
         "description": "Envenom deals $s1 additional damage per combo point, and Envenom lasts for ${$s2/1000}.1 sec longer when it critically strikes.",
@@ -1823,8 +1813,6 @@
     "273504": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
                 "Destruction"
             ]
         },
@@ -1836,10 +1824,7 @@
     },
     "273513": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ]
+            "Paladin": []
         },
         "description": "Your Flash of Light heals for an additional $s1 when cast on a target affected by your Beacon of Light.",
         "max_itemlevel": -1,
@@ -1850,9 +1835,7 @@
     "273521": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
+                "Affliction"
             ]
         },
         "description": "Damaging an enemy with Corruption increases the damage of your next Drain Life by $s1. This effect stacks up to $273525u times.",
@@ -1864,9 +1847,7 @@
     "273523": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
+                "Demonology"
             ]
         },
         "description": "Your Hand of Guldan has a $s2% chance to burn its target for $s1 additional Shadowflame damage every $273526t1 sec for $273526d.",
@@ -1877,10 +1858,7 @@
     },
     "273553": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ]
+            "Paladin": []
         },
         "description": "When Guardian of Ancient Kings expires, your Block is increased by $s1 for $273555d ",
         "max_itemlevel": -1,
@@ -1890,10 +1868,7 @@
     },
     "273597": {
         "class": {
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ]
+            "Shaman": []
         },
         "description": "Healing Tide Totem restores up to $s1 additional health each pulse, based on how close your allies are to the totem. Maximum benefit for allies within $s2 yds of the totem.",
         "max_itemlevel": -1,
@@ -2282,9 +2257,7 @@
     "274057": {
         "class": {
             "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
+                "Blood"
             ]
         },
         "description": "Death Strike heals for an additional $s1 for each remaining charge of Bone Shield.",
@@ -2296,9 +2269,7 @@
     "274070": {
         "class": {
             "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
+                "Frost"
             ]
         },
         "description": "Your autoattacks have a chance to apply Glacial Contagion, dealing ${s1*($274074d/$274074t1)} Frost damage over $274074d. Obliterate deals an additional $s2 damage to targets infected with Glacial Contagion.",
@@ -2310,8 +2281,6 @@
     "274081": {
         "class": {
             "Death_Knight": [
-                "Blood",
-                "Frost",
                 "Unholy"
             ]
         },
@@ -2323,10 +2292,7 @@
     },
     "274344": {
         "class": {
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ]
+            "Demon_Hunter": []
         },
         "description": "Consuming a Soul Fragment shields you, granting $s1 Absorb for $274346d",
         "max_itemlevel": -1,
@@ -2336,11 +2302,7 @@
     },
     "274355": {
         "class": {
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ]
+            "Hunter": []
         },
         "description": "Each second Aspect of the Turtle is active, heal for $s1",
         "max_itemlevel": -1,
@@ -2350,9 +2312,7 @@
     },
     "274366": {
         "class": {
-            "Priest": [
-                "Shadow"
-            ]
+            "Priest": []
         },
         "description": "When you cast Fade, absorb $s1 Magic damage for $274369d.",
         "max_itemlevel": -1,
@@ -2362,11 +2322,7 @@
     },
     "274379": {
         "class": {
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ]
+            "Mage": []
         },
         "description": "Your Ice Barrier, Blazing Barrier, and Prismatic Barrier absorb $s1 additional damage.",
         "max_itemlevel": -1,
@@ -2376,10 +2332,7 @@
     },
     "274388": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ]
+            "Paladin": []
         },
         "description": "When you cast Divine Shield, grant $s1 absorb for $274395d to nearby allies.",
         "max_itemlevel": -1,
@@ -2390,9 +2343,7 @@
     "274397": {
         "class": {
             "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
+                "Balance"
             ]
         },
         "description": "Solar Wrath increases the damage of your next Starsurge by $s1.",
@@ -2403,10 +2354,7 @@
     },
     "274412": {
         "class": {
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ]
+            "Shaman": []
         },
         "description": "When you cast Astral Shift and when Astral Shift ends, heal for $s1.",
         "max_itemlevel": -1,
@@ -2416,11 +2364,7 @@
     },
     "274418": {
         "class": {
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ]
+            "Warlock": []
         },
         "description": "When you use a Healthstone, gain $s1 Leech for $274420d",
         "max_itemlevel": -1,
@@ -2431,9 +2375,7 @@
     "274424": {
         "class": {
             "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
+                "Feral"
             ]
         },
         "description": "After your Tiger's Fury, your next four Shreds deal an additional $s1 damage.",
@@ -2444,11 +2386,7 @@
     },
     "274432": {
         "class": {
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ]
+            "Druid": []
         },
         "description": "If Rejuvenation is your only Heal over Time effect on the target, increase the healing of Rejuvenation by $s1. ",
         "max_itemlevel": -1,
@@ -2459,9 +2397,7 @@
     "274441": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
+                "Beast_Mastery"
             ]
         },
         "description": "Barbed Shot has a chance equal to your critical strike chance to grant you $s1 Agility for $274443d.",
@@ -2473,9 +2409,7 @@
     "274444": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
+                "Marksmanship"
             ]
         },
         "description": "While Trueshot is active you gain $s1 Critical Strike rating every sec, stacking up to 10 times.",
@@ -2486,11 +2420,7 @@
     },
     "274563": {
         "class": {
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Warrior": []
         },
         "description": "When you damage an enemy with Heroic Leap, gain $s1 Leech for $274571d.",
         "max_itemlevel": -1,
@@ -2501,8 +2431,6 @@
     "274590": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
                 "Survival"
             ]
         },
@@ -2515,9 +2443,7 @@
     "274594": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
+                "Arcane"
             ]
         },
         "description": "Arcane Barrage deals an additional $s1 damage per Arcane Charge against targets below $s2% health.",
@@ -2529,9 +2455,7 @@
     "274596": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
+                "Fire"
             ]
         },
         "description": "Fire Blast increases your Mastery by $s1 for 3 sec.",
@@ -2542,11 +2466,7 @@
     },
     "274692": {
         "class": {
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ]
+            "Rogue": []
         },
         "description": "Allies within $s2 yds while your Sprint is active gain $s1 Speed.",
         "max_itemlevel": -1,
@@ -2556,10 +2476,7 @@
     },
     "274762": {
         "class": {
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ]
+            "Monk": []
         },
         "description": "While $?c3[Touch of Karma][Fortifying Brew] is active, heal for $s1 every second.",
         "max_itemlevel": -1,
@@ -2569,11 +2486,7 @@
     },
     "274813": {
         "class": {
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ]
+            "Druid": []
         },
         "description": "When you resurrect an ally with Rebirth, they absorb $s1 damage over $274814d.",
         "max_itemlevel": -1,
@@ -2584,8 +2497,7 @@
     "275144": {
         "class": {
             "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
+                "Havoc"
             ]
         },
         "description": "Your inner demon slams into nearby enemies at the end of your Fel Rush, dealing $s1 Chaos damage.",
@@ -2596,10 +2508,7 @@
     },
     "275350": {
         "class": {
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ]
+            "Demon_Hunter": []
         },
         "description": "Demon Spikes increases your Armor by $s1 every $275351t2 sec, for $275351d.",
         "max_itemlevel": -1,
@@ -2610,9 +2519,7 @@
     "275372": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
+                "Affliction"
             ]
         },
         "description": "Casting Unstable Affliction on a target affected by your Unstable Affliction increases your Haste by $s1 for $275378d",
@@ -2624,8 +2531,7 @@
     "275381": {
         "class": {
             "Shaman": [
-                "Elemental",
-                "Enhancement"
+                "Elemental"
             ]
         },
         "description": "When your $?s192249[Storm Elemental][Fire Elemental] expires, it leaves behind a $?s192249[Spark Elemental][Ember Elemental] to continue attacking your enemies for $275385d.",
@@ -2637,7 +2543,6 @@
     "275388": {
         "class": {
             "Shaman": [
-                "Elemental",
                 "Enhancement"
             ]
         },
@@ -2650,9 +2555,7 @@
     "275395": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
+                "Demonology"
             ]
         },
         "description": "When your Implosion consumes 3 or more Imps, gain $s1 Haste for $275398d.",
@@ -2664,8 +2567,6 @@
     "275425": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
                 "Destruction"
             ]
         },
@@ -2677,10 +2578,7 @@
     },
     "275463": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ]
+            "Paladin": []
         },
         "description": "Healing an ally with Holy Light while empowered by Infusion of Light refunds $s1 mana.",
         "max_itemlevel": -1,
@@ -2691,8 +2589,7 @@
     "275477": {
         "class": {
             "Paladin": [
-                "Protection",
-                "Retribution"
+                "Protection"
             ]
         },
         "description": "When Shield of the Righteous expires, gain $s1 Block and deal $s2 Holy damage to all attackers for $275481d.",
@@ -2703,10 +2600,7 @@
     },
     "275488": {
         "class": {
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ]
+            "Shaman": []
         },
         "description": "Every $275495t1 sec your Healing Stream Totem releases a lesser chain heal, restoring $s1 health to up to $275499x1 injured allies. Healing is reduced by ${(1-$275499f1)*100)}% after each jump.",
         "max_itemlevel": -1,
@@ -2730,9 +2624,7 @@
     "275529": {
         "class": {
             "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
+                "Arms"
             ]
         },
         "description": "When $?s262161[Warbreaker][Colossus Smash] expires, your Strength is increased by $s1 for every $s2 Rage you spent during $?s262161[Warbreaker][Colossus Smash]. Lasts $275540d.",
@@ -2743,9 +2635,7 @@
     },
     "275541": {
         "class": {
-            "Priest": [
-                "Shadow"
-            ]
+            "Priest": []
         },
         "description": "Each time Shadow Word: Pain deals damage, the healing of your next Shadow Mend is increased by $s1, up to a maximum of ${$s1*30}.",
         "max_itemlevel": -1,
@@ -2755,9 +2645,7 @@
     },
     "275602": {
         "class": {
-            "Priest": [
-                "Shadow"
-            ]
+            "Priest": []
         },
         "description": "Prayer of Healing restores an additional $s1 health to the most injured ally it affects.",
         "max_itemlevel": -1,
@@ -2768,9 +2656,7 @@
     "275632": {
         "class": {
             "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
+                "Fury"
             ]
         },
         "description": "Raging Blow causes every strike of your next Rampage to deal an additional $s1 damage. Stacks up to $275672u times.",
@@ -2794,9 +2680,7 @@
     "275846": {
         "class": {
             "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
+                "Outlaw"
             ]
         },
         "description": "For each combo point spent on Roll the Bones, it causes your next Sinister Strike to deal $s1 additional damage.",
@@ -2808,8 +2692,6 @@
     "275860": {
         "class": {
             "Warrior": [
-                "Arms",
-                "Fury",
                 "Protection"
             ]
         },
@@ -2821,10 +2703,7 @@
     },
     "275892": {
         "class": {
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ]
+            "Monk": []
         },
         "description": "Drinking Purifying Brew while at Heavy Stagger causes your next $275893u melee abilities to heal you for $s1.",
         "max_itemlevel": -1,
@@ -2835,8 +2714,6 @@
     "275896": {
         "class": {
             "Rogue": [
-                "Assassination",
-                "Outlaw",
                 "Subtlety"
             ]
         },
@@ -2849,7 +2726,6 @@
     "275906": {
         "class": {
             "Druid": [
-                "Balance",
                 "Feral",
                 "Guardian"
             ]
@@ -2863,9 +2739,7 @@
     "275917": {
         "class": {
             "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
+                "Frost"
             ]
         },
         "description": "When empowered by Rime, Howling Blast causes a secondary burst of icy wind around you that deals $s1 Frost damage to nearby enemies.",
@@ -2876,11 +2750,7 @@
     },
     "275924": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ]
+            "Death_Knight": []
         },
         "description": "When Vampiric Blood expires, your Leech is increased by $s1 for $275926d.",
         "max_itemlevel": -1,
@@ -2891,8 +2761,6 @@
     "275929": {
         "class": {
             "Death_Knight": [
-                "Blood",
-                "Frost",
                 "Unholy"
             ]
         },
@@ -2917,10 +2785,7 @@
     },
     "275968": {
         "class": {
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ]
+            "Demon_Hunter": []
         },
         "description": "Soul Cleave grants you a shield that absorbs $s1 damage, increased by up to $s2% based on your missing health.",
         "max_itemlevel": -1,
@@ -2931,9 +2796,7 @@
     "275974": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
+                "Affliction"
             ]
         },
         "description": "If your Seed of Corruption detonates early, it deals $s1 additional damage.",
@@ -2944,10 +2807,7 @@
     },
     "275975": {
         "class": {
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ]
+            "Monk": []
         },
         "description": "When your Renewing Mists heals an ally, you have a chance to gain $s1 Haste for $276025d.",
         "max_itemlevel": -1,
@@ -2958,9 +2818,7 @@
     "276007": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
+                "Demonology"
             ]
         },
         "description": "When you gain Demonic Core, the damage of your next Demonbolt is increased by $s1",
@@ -2972,9 +2830,7 @@
     "276021": {
         "class": {
             "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
+                "Feral"
             ]
         },
         "description": "Ferocious Bite has a $s2% chance per combo point to increase the base damage of your next Maim by $s1.",
@@ -2986,9 +2842,7 @@
     "276072": {
         "class": {
             "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
+                "Assassination"
             ]
         },
         "description": "Garrote increases the critical strike rating of your next Mutilate by $s1. ",
@@ -3000,9 +2854,7 @@
     "276152": {
         "class": {
             "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
+                "Balance"
             ]
         },
         "description": "Lunar Strike increases the damage of your Solar Wrath by $s1 for $276154d.",
@@ -3013,11 +2865,7 @@
     },
     "276155": {
         "class": {
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ]
+            "Druid": []
         },
         "description": "Barkskin reduces melee attacks against you by $s1 damage.",
         "max_itemlevel": -1,
@@ -3028,8 +2876,6 @@
     "277636": {
         "class": {
             "Warrior": [
-                "Arms",
-                "Fury",
                 "Protection"
             ]
         },
@@ -3042,9 +2888,7 @@
     "277638": {
         "class": {
             "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
+                "Fury"
             ]
         },
         "description": "When Recklessness expires, your Critical Strike is increased by $s1 for $278134d. Your auto attacks will refresh the duration of this effect.",
@@ -3056,9 +2900,7 @@
     "277639": {
         "class": {
             "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
+                "Arms"
             ]
         },
         "description": "Overpower causes a seismic wave that deals $s1 Physical damage to enemies in a $s2 yd line.",
@@ -3070,9 +2912,7 @@
     "277651": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
+                "Marksmanship"
             ]
         },
         "description": "Steady Shot increases the damage of your next Aimed Shot against the target by $s1, stacking up to $277959u times.",
@@ -3084,8 +2924,6 @@
     "277653": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
                 "Survival"
             ]
         },
@@ -3098,9 +2936,7 @@
     "277656": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
+                "Fire"
             ]
         },
         "description": "Pyroblast burns enemies between you and the target for ${$s1*(1+$277703d/$277703t1)} Fire damage over $277703d.",
@@ -3111,10 +2947,7 @@
     },
     "277658": {
         "class": {
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ]
+            "Shaman": []
         },
         "description": "Your Healing Rain is $s2% larger, and casting Healing Rain instantly restores $s1 health to allies within its area.",
         "max_itemlevel": -1,
@@ -3125,8 +2958,6 @@
     "277663": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
                 "Frost"
             ]
         },
@@ -3138,10 +2969,7 @@
     },
     "277665": {
         "class": {
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ]
+            "Monk": []
         },
         "description": "Expel Harm restores ${$s1*($278535d/$278535t1)} health over $278535d for each Healing Sphere consumed.",
         "max_itemlevel": -1,
@@ -3164,10 +2992,7 @@
     },
     "277667": {
         "class": {
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ]
+            "Monk": []
         },
         "description": "When Life Cocoon expires, it releases a burst of mist that restores $s1 health split among the target and nearby allies.",
         "max_itemlevel": -1,
@@ -3178,7 +3003,6 @@
     "277669": {
         "class": {
             "Monk": [
-                "Brewmaster",
                 "Windwalker"
             ]
         },
@@ -3204,8 +3028,6 @@
     "277673": {
         "class": {
             "Rogue": [
-                "Assassination",
-                "Outlaw",
                 "Subtlety"
             ]
         },
@@ -3217,10 +3039,7 @@
     },
     "277674": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ]
+            "Paladin": []
         },
         "description": "Your Holy Shock criticals deal an additional $s1 damage, or an additional $s2 healing, over $278147d.",
         "max_itemlevel": -1,
@@ -3230,10 +3049,7 @@
     },
     "277675": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ]
+            "Paladin": []
         },
         "description": "Your Judgment critical strikes reduce the damage of the target's melee attacks against you by $s1 for $278574d.",
         "max_itemlevel": -1,
@@ -3244,9 +3060,7 @@
     "277676": {
         "class": {
             "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
+                "Outlaw"
             ]
         },
         "description": "Adrenaline Rush increases your Haste by $s1 every sec, stacking up to $277724U times. Lasts ${2*$277725d} seconds.",
@@ -3258,7 +3072,6 @@
     "277678": {
         "class": {
             "Paladin": [
-                "Protection",
                 "Retribution"
             ]
         },
@@ -3271,9 +3084,7 @@
     "277679": {
         "class": {
             "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
+                "Assassination"
             ]
         },
         "description": "Rupture increases your Agility by $s1. You may gain this benefit for each enemy suffering from your Rupture.",
@@ -3284,9 +3095,7 @@
     },
     "277680": {
         "class": {
-            "Priest": [
-                "Shadow"
-            ]
+            "Priest": []
         },
         "description": "Smite deals an additional $s1 damage if you have at least $s2 Atonements active.",
         "max_itemlevel": -1,
@@ -3296,9 +3105,7 @@
     },
     "277681": {
         "class": {
-            "Priest": [
-                "Shadow"
-            ]
+            "Priest": []
         },
         "description": "Heal restores up to $s1 additional health, based on your missing mana.",
         "max_itemlevel": -1,
@@ -3321,9 +3128,7 @@
     "278479": {
         "class": {
             "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
+                "Blood"
             ]
         },
         "description": "Dancing Rune Weapon grants you $s1 Strength, and each rune spent increases its duration by ${$s2/10}.1 sec, up to a maximum of $s3 sec.",
@@ -3335,9 +3140,7 @@
     "278480": {
         "class": {
             "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
+                "Frost"
             ]
         },
         "description": "Frost Strike deals $s1 additional damage with each hit and has a $s2% chance on critical strikes to grant Killing Machine.",
@@ -3349,8 +3152,6 @@
     "278482": {
         "class": {
             "Death_Knight": [
-                "Blood",
-                "Frost",
                 "Unholy"
             ]
         },
@@ -3362,11 +3163,7 @@
     },
     "278484": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ]
+            "Death_Knight": []
         },
         "description": "Marrowrend has a chance to grant an extra charge of Bone Shield. Bone Shield increases your Armor by $s1. ",
         "max_itemlevel": -1,
@@ -3377,9 +3174,7 @@
     "278487": {
         "class": {
             "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
+                "Frost"
             ]
         },
         "description": "Remorseless Winter deals an additional $s2 damage. The first time Remorseless Winter deals damage to $s1 different enemies, you gain Rime.",
@@ -3391,8 +3186,6 @@
     "278489": {
         "class": {
             "Death_Knight": [
-                "Blood",
-                "Frost",
                 "Unholy"
             ]
         },
@@ -3418,8 +3211,7 @@
     "278500": {
         "class": {
             "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
+                "Havoc"
             ]
         },
         "description": "Eye Beam deals an additional $?s203550[${$s2*15}][${$s2*10}] damage. Consuming a Soul Fragment reduces the cooldown of Eye Beam by ${$s1/1000}.1 sec.",
@@ -3431,7 +3223,6 @@
     "278501": {
         "class": {
             "Demon_Hunter": [
-                "Havoc",
                 "Vengance"
             ]
         },
@@ -3444,7 +3235,6 @@
     "278502": {
         "class": {
             "Demon_Hunter": [
-                "Havoc",
                 "Vengance"
             ]
         },
@@ -3457,9 +3247,7 @@
     "278505": {
         "class": {
             "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
+                "Balance"
             ]
         },
         "description": "Sunfire's radius is increased to $<radius> yds, and it deals $s2 additional damage to its primary target. ",
@@ -3471,9 +3259,7 @@
     "278507": {
         "class": {
             "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
+                "Balance"
             ]
         },
         "description": "Starfall's stars deal an additional $s1 damage to nearby enemies when they damage an enemy afflicted by Moonfire.",
@@ -3485,9 +3271,7 @@
     "278509": {
         "class": {
             "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
+                "Feral"
             ]
         },
         "description": "Rip deals ${$s2*12} additional damage per combo point, and has a $279468h% chance to award a combo point each time it deals damage.",
@@ -3498,11 +3282,7 @@
     },
     "278510": {
         "class": {
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ]
+            "Druid": []
         },
         "description": "Mangle extends the duration of your active Frenzied Regeneration by ${$s2/1000}.1 sec, and Frenzied Regeneration restores an additional $s1 health every sec. ",
         "max_itemlevel": -1,
@@ -3513,8 +3293,6 @@
     "278511": {
         "class": {
             "Druid": [
-                "Balance",
-                "Feral",
                 "Guardian"
             ]
         },
@@ -3526,11 +3304,7 @@
     },
     "278513": {
         "class": {
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ]
+            "Druid": []
         },
         "description": "Ysera's Gift now heals every ${$s2/1000} sec, and heals for an additional $s1 for each of your active Rejuvenations.",
         "max_itemlevel": -1,
@@ -3540,11 +3314,7 @@
     },
     "278515": {
         "class": {
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ]
+            "Druid": []
         },
         "description": "Regrowth heals for ${$s1*($8936d/$8936t2)} more over its duration, and its healing over time effect also applies to the target of your Lifebloom.",
         "max_itemlevel": -1,
@@ -3555,9 +3325,7 @@
     "278528": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
+                "Beast_Mastery"
             ]
         },
         "description": "Your primary pet's Basic Attack deals $s1 more damage for each other pet you have active.",
@@ -3569,9 +3337,7 @@
     "278529": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
+                "Beast_Mastery"
             ]
         },
         "description": "Barbed Shot deals ${$s2*($217200d/$217200t1)} additional damage over its duration, and Dire Frenzy's duration is increased to ${$s1/1000}.1 sec.",
@@ -3584,8 +3350,7 @@
         "class": {
             "Hunter": [
                 "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
+                "Marksmanship"
             ]
         },
         "description": "Multi-Shots that damage more than $s2 targets fire an additional wave of bullets, dealing $s1 damage and reducing the cooldown of your Aspects by $s3 sec.",
@@ -3597,9 +3362,7 @@
     "278531": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
+                "Marksmanship"
             ]
         },
         "description": "Rapid Fire deals an additional ${$s2*($257044d/$257044t2)} damage over its duration, and each shot has a $279636h% chance to generate $s1 additional Focus.",
@@ -3611,8 +3374,6 @@
     "278532": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
                 "Survival"
             ]
         },
@@ -3625,8 +3386,6 @@
     "278533": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
                 "Survival"
             ]
         },
@@ -3639,9 +3398,7 @@
     "278536": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
+                "Arcane"
             ]
         },
         "description": "Arcane Blast deals an additional $s2 damage and has a $s1 chance to generate a second Arcane Charge.",
@@ -3653,9 +3410,7 @@
     "278537": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
+                "Arcane"
             ]
         },
         "description": "Arcane Explosion deals an additional $s2 damage. When it damages at least $s1 targets, it has a $s3% chance to deal an additional $s4 Arcane damage to them.",
@@ -3667,9 +3422,7 @@
     "278538": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
+                "Fire"
             ]
         },
         "description": "Fireball deals an additional $s2 damage, and has a $s1 chance to launch a second Fireball.",
@@ -3681,9 +3434,7 @@
     "278539": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
+                "Fire"
             ]
         },
         "description": "Consuming Hot Streak grants you $s1 Intellect for $279715d. This effect stacks up to $s2 times.",
@@ -3695,8 +3446,6 @@
     "278541": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
                 "Frost"
             ]
         },
@@ -3709,8 +3458,6 @@
     "278542": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
                 "Frost"
             ]
         },
@@ -3723,8 +3470,7 @@
     "278569": {
         "class": {
             "Monk": [
-                "Brewmaster",
-                "Windwalker"
+                "Brewmaster"
             ]
         },
         "description": "Gain up to ${$s1*$s3} Mastery based on your current level of Stagger.",
@@ -3748,10 +3494,7 @@
     },
     "278576": {
         "class": {
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ]
+            "Monk": []
         },
         "description": "Your Vivify heals for an additional $s3. Vivify critical heals reduce the cooldown of your Revival by ${$s2/1000}.1 sec.",
         "max_itemlevel": -1,
@@ -3775,7 +3518,6 @@
     "278580": {
         "class": {
             "Monk": [
-                "Brewmaster",
                 "Windwalker"
             ]
         },
@@ -3787,10 +3529,7 @@
     },
     "278593": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ]
+            "Paladin": []
         },
         "description": "Judging a foe heals all allies within $s2 yards of that enemy for $s1.",
         "max_itemlevel": -1,
@@ -3800,10 +3539,7 @@
     },
     "278594": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ]
+            "Paladin": []
         },
         "description": "Increases the healing done by Light of Dawn by $s1 and its range to $s2 yards.",
         "max_itemlevel": -1,
@@ -3814,8 +3550,7 @@
     "278605": {
         "class": {
             "Paladin": [
-                "Protection",
-                "Retribution"
+                "Protection"
             ]
         },
         "description": "Avenger's Shield now strikes $s2 $Lenemy:enemies; and grants $s1 Mastery per enemy struck for $278954d.",
@@ -3827,8 +3562,7 @@
     "278609": {
         "class": {
             "Paladin": [
-                "Protection",
-                "Retribution"
+                "Protection"
             ]
         },
         "description": "Grand Crusader's chance is increased by $s2% and it grants you $s1 Strength for $279397d.",
@@ -3865,9 +3599,7 @@
     },
     "278629": {
         "class": {
-            "Priest": [
-                "Shadow"
-            ]
+            "Priest": []
         },
         "description": "Penance deals an additional $s2 damage and extends your Shadow Word: Pain by ${$s1/1000} sec per bolt.",
         "max_itemlevel": -1,
@@ -3877,9 +3609,7 @@
     },
     "278643": {
         "class": {
-            "Priest": [
-                "Shadow"
-            ]
+            "Priest": []
         },
         "description": "Power Word: Radiance restores $s2 additional health, and applies Atonement for $s1% of its normal duration.",
         "max_itemlevel": -1,
@@ -3889,9 +3619,7 @@
     },
     "278645": {
         "class": {
-            "Priest": [
-                "Shadow"
-            ]
+            "Priest": []
         },
         "description": "Prayer of Mending heals for an additional $s1 and reduces Holy Word: Sanctify's cooldown by ${$s2/1000} sec.",
         "max_itemlevel": -1,
@@ -3901,9 +3629,7 @@
     },
     "278655": {
         "class": {
-            "Priest": [
-                "Shadow"
-            ]
+            "Priest": []
         },
         "description": "Holy Fire deals an additional $s1 damage instantly, and restores $s2 mana each time it deals damage.",
         "max_itemlevel": -1,
@@ -3938,9 +3664,7 @@
     "278664": {
         "class": {
             "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
+                "Assassination"
             ]
         },
         "description": "Fan of Knives' radius is increased to $s2 yds and damage is increased by $s1 if it hits at least $s3 targets.",
@@ -3952,9 +3676,7 @@
     "278666": {
         "class": {
             "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
+                "Assassination"
             ]
         },
         "description": "Garrote cast from Stealth generates $s2 additional Combo Points and deals $s1 additional damage. ",
@@ -3966,9 +3688,7 @@
     "278675": {
         "class": {
             "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
+                "Outlaw"
             ]
         },
         "description": "Take control of the dice of fate, granting yourself $s1 Agility if Roll the Bones only provides you with one combat enhancement.",
@@ -3980,9 +3700,7 @@
     "278676": {
         "class": {
             "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
+                "Outlaw"
             ]
         },
         "description": "Each combo point spent on Between the Eyes increases damage an additional $s1 and grants a $s2% chance to gain $m3 $LCombo Point:Combo Points;.",
@@ -3994,8 +3712,6 @@
     "278681": {
         "class": {
             "Rogue": [
-                "Assassination",
-                "Outlaw",
                 "Subtlety"
             ]
         },
@@ -4008,8 +3724,6 @@
     "278683": {
         "class": {
             "Rogue": [
-                "Assassination",
-                "Outlaw",
                 "Subtlety"
             ]
         },
@@ -4047,10 +3761,7 @@
     },
     "278713": {
         "class": {
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ]
+            "Shaman": []
         },
         "description": "If the target of your Riptide is below $s2% of their maximum health, Riptide causes them to absorb up to $s1 damage for $279187d.",
         "max_itemlevel": -1,
@@ -4060,10 +3771,7 @@
     },
     "278715": {
         "class": {
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ]
+            "Shaman": []
         },
         "description": "Spirit Link Totem restores $s1 health to all nearby allies $m2 $Lsecond:seconds; after it is dropped.",
         "max_itemlevel": -1,
@@ -4074,7 +3782,6 @@
     "278719": {
         "class": {
             "Shaman": [
-                "Elemental",
                 "Enhancement"
             ]
         },
@@ -4087,9 +3794,7 @@
     "278721": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
+                "Affliction"
             ]
         },
         "description": "Agony deals up to an additional $<dmg> damage and starts with $s2 stacks.",
@@ -4101,9 +3806,7 @@
     "278727": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
+                "Affliction"
             ]
         },
         "description": "Unstable Affliction deals ${$s2*($233490d/$233490t1)} additional damage, and casting Unstable Affliction reduce the cooldown of Summon Darkglare by ${$s1/1000} sec.",
@@ -4115,9 +3818,7 @@
     "278737": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
+                "Demonology"
             ]
         },
         "description": "Hand of Gul'dan deals $s1 additional damage and has a $s2% chance per Soul Shard spent of refunding a Soul Shard.",
@@ -4129,9 +3830,7 @@
     "278738": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
+                "Demonology"
             ]
         },
         "description": "Call Dreadstalkers has a $279665h% chance to make your next non-instant Demonbolt deal $s1 additional damage.",
@@ -4143,8 +3842,6 @@
     "278747": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
                 "Destruction"
             ]
         },
@@ -4157,8 +3854,6 @@
     "278748": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
                 "Destruction"
             ]
         },
@@ -4171,9 +3866,7 @@
     "278751": {
         "class": {
             "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
+                "Arms"
             ]
         },
         "description": "Your melee abilities have a chance to increase the damage of your next Slam by $s1 and reduce its Rage cost by ${$s2/10}.",
@@ -4185,9 +3878,7 @@
     "278752": {
         "class": {
             "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
+                "Arms"
             ]
         },
         "description": "$?s262161[Warbreaker][Colossus Smash] deals an additional $s2 damage and generates ${$s1/10} Rage.",
@@ -4199,9 +3890,7 @@
     "278757": {
         "class": {
             "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
+                "Fury"
             ]
         },
         "description": "Rampage deals an additional ${5*$s2} damage and generates ${$s1/10} Rage per strike.",
@@ -4213,9 +3902,7 @@
     "278758": {
         "class": {
             "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
+                "Fury"
             ]
         },
         "description": "Auto attacks deal $s2 additional damage and reduce the cooldown of Recklessness by ${$s1/1000}.1 sec.",
@@ -4227,8 +3914,6 @@
     "278760": {
         "class": {
             "Warrior": [
-                "Arms",
-                "Fury",
                 "Protection"
             ]
         },
@@ -4241,8 +3926,6 @@
     "278765": {
         "class": {
             "Warrior": [
-                "Arms",
-                "Fury",
                 "Protection"
             ]
         },
@@ -4254,11 +3937,7 @@
     },
     "279172": {
         "class": {
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Warrior": []
         },
         "description": "Ignore Pain prevents $s3 additional damage, and grants you $s2 Leech for $279194d.",
         "max_itemlevel": -1,
@@ -4269,9 +3948,7 @@
     "279524": {
         "class": {
             "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
+                "Feral"
             ]
         },
         "description": "Rake deals ${$s2*5} additional damage over its duration, and has a chance to grant you Berserk for $279526d. Cannot occur while $?s102543[Incarnation: King of the Jungle][Berserk] is active.",
@@ -4283,9 +3960,7 @@
     "279527": {
         "class": {
             "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
+                "Feral"
             ]
         },
         "description": "Shred deals $s1 additional damage, and $?s202028[Brutal Slash][Swipe] deals $s2 additional damage, to enemies suffering from your Thrash.",
@@ -4297,8 +3972,6 @@
     "279552": {
         "class": {
             "Druid": [
-                "Balance",
-                "Feral",
                 "Guardian"
             ]
         },
@@ -4311,8 +3984,7 @@
     "279581": {
         "class": {
             "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
+                "Havoc"
             ]
         },
         "description": "Blade Dance deals ${$s2*4} additional damage, and the cost of your next Blade Dance is reduced by $279584s1 Fury for each enemy struck by the final slash.",
@@ -4324,9 +3996,7 @@
     "279642": {
         "class": {
             "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
+                "Balance"
             ]
         },
         "description": "When Innervate expires, your Intellect is increased by $s1 for each spell the target cast using Innervate. Lasts $279648d.",
@@ -4337,11 +4007,7 @@
     },
     "279778": {
         "class": {
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ]
+            "Druid": []
         },
         "description": "Swiftmend heals the target for ${$s1*($279793d/$279793t1)} over $279793d.",
         "max_itemlevel": -1,
@@ -4352,9 +4018,7 @@
     "279806": {
         "class": {
             "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
+                "Beast_Mastery"
             ]
         },
         "description": "Aspect of the Wild increases your Mastery by $s1, and grants you a charge of Barbed Shot.",
@@ -4366,8 +4030,6 @@
     "279854": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
                 "Frost"
             ]
         },
@@ -4380,9 +4042,7 @@
     "279867": {
         "class": {
             "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
+                "Arcane"
             ]
         },
         "description": "Arcane Missiles deals $s1 additional damage for each Arcane Charge you have.",
@@ -4393,10 +4053,7 @@
     },
     "279875": {
         "class": {
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ]
+            "Monk": []
         },
         "description": "Your Essence Font's initial heal is increased by $s2 and has a chance to reduce the cooldown of Thunder Focus Tea by $s1 sec.",
         "max_itemlevel": -1,
@@ -4532,11 +4189,7 @@
     },
     "280010": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ]
+            "Death_Knight": []
         },
         "description": "Anti-Magic Shell absorbs $s3 additional damage and its duration is increased to $s2 seconds.",
         "max_itemlevel": -1,
