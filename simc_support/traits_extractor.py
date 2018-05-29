@@ -87,6 +87,19 @@ def update_map(trait_dict):
               trait_id
             ][wow_class]
 
+          # delete old class if class is no longer in the list of the trait
+          to_delete_list = []
+          for check_class in updated_map[trait_id]["class"]:
+            if not check_class in trait_classes[trait_id]:
+              logger.warning(
+                "Trait {} (id={}) lost class {}.".format(
+                  updated_map[trait_id]["name"], trait_id, check_class
+                )
+              )
+              to_delete_list.append(check_class)
+          for to_delete in to_delete_list:
+            updated_map[trait_id]["class"].pop(to_delete)
+
   with open("trait_map.json", "w") as f:
     f.write(json.dumps(updated_map, sort_keys=True, indent=4))
 
