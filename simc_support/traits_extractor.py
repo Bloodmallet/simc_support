@@ -47,6 +47,7 @@ def update_map(trait_dict):
           updated_map[trait_id] = {
             "name":
               trait_dict[wow_class][wow_spec][trait_id]["name"],
+            "trait_id": trait_dict[wow_class][wow_spec][trait_id]["trait_id"],
             "class":
               trait_classes[trait_id],
             "description":
@@ -63,7 +64,7 @@ def update_map(trait_dict):
 
         else:
           logger.debug(
-            "Trait {} (id={}) was already found in MAP. Only Name and ID will be updated.".
+            "Trait {} (id={}) was already found in MAP. Only name and description will be updated.".
             format(
               trait_dict[wow_class][wow_spec][trait_id]["name"], trait_id
             )
@@ -71,6 +72,9 @@ def update_map(trait_dict):
           updated_map[trait_id]["name"] = trait_dict[wow_class][wow_spec][
             trait_id
           ]["name"]
+          updated_map[trait_id]["trait_id"] = trait_dict[wow_class][wow_spec][
+            trait_id
+          ]["trait_id"]
           updated_map[trait_id]["description"] = trait_dict[wow_class][
             wow_spec
           ][trait_id]["description"]
