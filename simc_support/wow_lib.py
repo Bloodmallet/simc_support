@@ -46,7 +46,7 @@ class Trinket(object):
 
 __class_data = {
   "Death_Knight": {
-    "talents": "1110011",
+    "talents": "1101011",
     "id": 6,
     "specs": {
       "Blood": {
@@ -178,7 +178,7 @@ __class_data = {
     }
   },
   "Priest": {
-    "talents": "1001111",
+    "talents": "1010111",
     "id": 5,
     "specs": {
       "Shadow": {
@@ -210,7 +210,7 @@ __class_data = {
     }
   },
   "Shaman": {
-    "talents": "1001111",
+    "talents": "1101011",
     "id": 7,
     "specs": {
       "Elemental": {
