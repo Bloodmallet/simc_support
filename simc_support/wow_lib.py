@@ -6,11 +6,11 @@
 import json
 
 # these values are used throughout the code to determine itemlevel "borders" of items
-TRADER_TOKEN = 0  # usually used as a catch up mechanic, drops usually all items from previous content
-WORLD_QUEST_ITEMLEVEL = 310
+TRADER_TOKEN = 192  # usually used as a catch up mechanic, drops usually all items from previous content
+WORLD_QUEST_ITEMLEVEL = 300
 DUNGEON_ITEMLEVEL = 310  # standard dungeon itemlevel (normal, max level dungeon)
-M_PLIS_ITEMLEVEL = 340  # highest available itemlevel from m+ dungeons. weekly chest is NOT included here
-TITANFORGE_CAP = 355  # currently highest itemlevel titanforging cap
+M_PLUS_ITEMLEVEL = 220  # highest available itemlevel from m+ dungeons. weekly chest is NOT included here
+TITANFORGE_CAP = 255  # currently highest itemlevel titanforging cap
 
 
 class Trinket(object):
@@ -287,7 +287,7 @@ __races = {
       "warrior", "paladin", "hunter", "rogue", "priest", "mage", "warlock",
       "monk", "death_knight"
     ),
-    "nightelf": (
+    "night_elf": (
       "warrior", "hunter", "rogue", "priest", "mage", "monk", "druid",
       "death_knight"
     ),
@@ -305,7 +305,7 @@ __races = {
     #"dark_iron_dwarf": ("shaman")
   },
   "horde": {
-    "bloodelf": (
+    "blood_elf": (
       "warrior", "paladin", "hunter", "rogue", "priest", "mage", "warlock",
       "monk", "death_knight"
     ),
@@ -340,6 +340,7 @@ __races = {
   }
 }
 
+# bfa data
 __trinket_list = [
   # dungeon trinkets
   Trinket(
@@ -546,6 +547,415 @@ __trinket_list = [
 ]
 
 
+# legion data
+## Available types:
+##   legendary - legendary trinkets for everyone
+##   shared    - trinkets for everyone
+##   melee     - agi + str (melee + sv hunter)
+##   ranged    - int + agi (caster + bm/mm hunter)
+##   agi       - pure agi (leather wearer + hunter)
+##   int       - pure int (pure caster)
+##   str       - pure str (plate wearer)
+
+## legendary trinkets for everyone
+##
+# {"source": [ [ "name", "id", minitemlevel, maxitemlevel, maxdropitemlevel ], ] }
+legendary_trinkets = {}
+legendary_trinkets["legendary"] = [
+  ["Kil'jaeden's Burning Wish", "144259", 265, 265, 265],
+  ["Aman'Thul's Vision", "154172", 280, 280, 280],
+]
+
+## Usable by everyone
+shared_trinkets = {}
+shared_trinkets["dungeon"] = [
+  ["Chrono Shard", "137419", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL],
+  ["Horn of Valor", "133642", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL],
+  ["Toe Knee's Promise", "142164", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL],
+]
+# shared_trinkets["crafted"] = [
+#   ["Infernal Alchemist Stone", "127842", 182, 900, 900],
+#   ["Astral Alchemist Stone", "151607", 885, 935, 935],
+# ]
+shared_trinkets["world"] = [
+  ["Unstable Arcanocrystal", "141482", 172, TITANFORGE_CAP, TRADER_TOKEN],
+]
+
+## Usable by melee classes (survival hunters)
+melee_trinkets = {}
+# melee_trinkets["crafted"] = [
+#   ["Darkmoon Deck: Dominion", "128705", 815, 900, 900],
+# ]
+melee_trinkets["dungeon"] = [[
+  "Bloodstained Handkerchief", "142159", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+], ["Chaos Talisman", "137459", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL], [
+  "Eye of Command", "142167", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+], [
+  "Faulty Countermeasure", "137539", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+], ["Gift of Radiance", "133647", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL], [
+  "Giant Ornamental Pearl", "137369", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+], ["Mark of Dargrul", "137357", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL], [
+  "Memento of Angerboda", "133644", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+], ["Nightmare Egg Shell", "137312", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL], [
+  "Spiked Counterweight", "136715", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+], ["Terrorbound Nexus", "137406", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL], [
+  "Tiny Oozeling in a Jar", "137439", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+], ["Windscar Whetstone", "137486", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL]]
+melee_trinkets["emerald_nightmare"] = [[
+  "Nature's Call", "139334", 162, TITANFORGE_CAP, TRADER_TOKEN
+], ["Ravaged Seed Pod", "139320", 162, TITANFORGE_CAP, TRADER_TOKEN], [
+  "Spontaneous Appendages", "139325", 162, TITANFORGE_CAP, TRADER_TOKEN
+]]
+melee_trinkets["nighthold"] = [
+  ["Draught of Souls", "140808", 170, TITANFORGE_CAP, TRADER_TOKEN],
+]
+melee_trinkets["tomb_of_sargeras"] = [[
+  "Infernal Cinders", "147009", 182, TITANFORGE_CAP, 930
+], ["Umbral Moonglaives", "147012", 182, TITANFORGE_CAP,
+    930], ["Vial of Ceaseless Toxins", "147011", 182, TITANFORGE_CAP,
+           930], ["Specter of Betrayal", "151190", 182, TITANFORGE_CAP, 940]]
+melee_trinkets["antorus"] = [
+  ["Gorshalach's Legacy", "152093", 195, TITANFORGE_CAP, 240],
+  ["Seeping Scourgewing", "151964", 195, TITANFORGE_CAP, 240],
+]
+
+## Usable by casters and hunters
+ranged_trinkets = {}
+ranged_trinkets["dungeon"] = [[
+  "Aran's Relaxing Ruby", "142157", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+], ["Caged Horror", "136716", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL], [
+  "Corrupted Starlight", "137301", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+], [
+  "Deteriorated Construct Core", "142165", 182, TITANFORGE_CAP,
+  M_PLUS_ITEMLEVEL
+], [
+  "Elementium Bomb Squirrel Generator", "137446", 182, TITANFORGE_CAP,
+  M_PLUS_ITEMLEVEL
+], ["Eye of Skovald", "133641", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL], [
+  "Figurehead of the Naglfar", "137329", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+], ["Moonlit Prism", "137541", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL], [
+  "Mrrgria's Favor", "142160", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+], [
+  "Naraxas' Spiked Tongue", "137349", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+], [
+  "Oakheart's Gnarled Root", "137306", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+], ["Obelisk of the Void", "137433", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL], [
+  "Stormsinger Fulmination Charge", "137367", 182, TITANFORGE_CAP,
+  M_PLUS_ITEMLEVEL
+]]
+ranged_trinkets["emerald_nightmare"] = [[
+  "Twisting Wind", "139323", 162, TITANFORGE_CAP, TRADER_TOKEN
+], ["Unstable Horrorslime", "138224", 162, TITANFORGE_CAP, TRADER_TOKEN]]
+ranged_trinkets["nighthold"] = [[
+  "Fury of the Burning Sky", "140801", 170, TITANFORGE_CAP, TRADER_TOKEN
+], ["Icon of Rot", "140798", 170, TITANFORGE_CAP, TRADER_TOKEN]]
+ranged_trinkets["tomb_of_sargeras"] = [
+  ["Spectral Thurible", "147018", 182, TITANFORGE_CAP, 930],
+  ["Tarnished Sentinel Medallion", "147017", 182, TITANFORGE_CAP, 930],
+  ["Terror From Below", "147016", 182, TITANFORGE_CAP, 930],
+  ["Tome of Unraveling Sanity", "147019", 182, TITANFORGE_CAP, 940],
+]
+ranged_trinkets["antorus"] = [
+  ["Prototype Personnel Decimator", "151962", 195, TITANFORGE_CAP, 240],
+  ["Terminus Signaling Beacon", "151969", 195, TITANFORGE_CAP, 240],
+]
+
+## Usable by lether wearers and hunters
+agi_trinkets = {}
+agi_trinkets["dungeon"] = [[
+  "Splinters of Agronax", "144477", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+], [
+  "Tempered Egg of Serpentrix", "137373", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+], ["Tirathon's Betrayal", "137537", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL], [
+  "Void Stalker's Contract", "151307", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+]]
+agi_trinkets["emerald_nightmare"] = [[
+  "Bloodthirsty Instinct", "139329", 162, TITANFORGE_CAP, TRADER_TOKEN
+]]
+agi_trinkets["nighthold"] = [[
+  "Arcanogolem Digit", "140794", 170, TITANFORGE_CAP, TRADER_TOKEN
+], ["Convergence of Fates", "140806", 170, TITANFORGE_CAP, TRADER_TOKEN], [
+  "Entwined Elemental Foci", "140796", 170, TITANFORGE_CAP, TRADER_TOKEN
+], ["Nightblooming Frond", "140802", 170, TITANFORGE_CAP, TRADER_TOKEN]]
+agi_trinkets["pvp"] = [[
+  "PVP Insignia of Conquest", "142662", 162, TITANFORGE_CAP, TRADER_TOKEN
+], ["PVP Badge of Conquest", "142773", 162, TITANFORGE_CAP, TRADER_TOKEN]]
+agi_trinkets["tomb_of_sargeras"] = [[
+  "Cradle of Anguish", "147010", 182, TITANFORGE_CAP, 930
+], ["Engine of Eradication", "147015", 182, TITANFORGE_CAP, 930]]
+agi_trinkets["world"] = [
+  ["The Devilsaur's Bite", "140026", 182, TITANFORGE_CAP, TRADER_TOKEN],
+  ["Ley Spark", "140027", 182, TITANFORGE_CAP, TRADER_TOKEN],
+  ["Six-Feather Fan", "141585", 182, TITANFORGE_CAP, TRADER_TOKEN],
+  # 142506 is Eye of Guarm, used as a reference stat stick
+  [
+    "Stat Stick (Crit)", "142506,bonus_id=603", 182, TITANFORGE_CAP,
+    TRADER_TOKEN
+  ],
+  [
+    "Stat Stick (Haste)", "142506,bonus_id=604", 182, TITANFORGE_CAP,
+    TRADER_TOKEN
+  ],
+  [
+    "Stat Stick (Mastery)", "142506,bonus_id=605", 182, TITANFORGE_CAP,
+    TRADER_TOKEN
+  ],
+  [
+    "Stat Stick (Versatility)", "142506,bonus_id=607", 182, TITANFORGE_CAP,
+    TRADER_TOKEN
+  ],
+  ["Thrice-Accursed Compass", "141537", 182, TITANFORGE_CAP, TRADER_TOKEN],
+]
+agi_trinkets["antorus"] = [
+  ["Forgefiend's Fabricator", "151963", 195, TITANFORGE_CAP, 240],
+  ["Shadow-Singed Fang", "151968", 195, TITANFORGE_CAP, 240],
+  ["Golganneth's Vitality", "154174", 195, 280, 280],
+]
+
+## Usable by casters
+int_trinkets = {}
+# int_trinkets["crafted"] = [
+#   ["Darkmoon Deck: Hellfire", "128709", 815, 900, 900],
+# ]
+int_trinkets["dungeon"] = [
+  [
+    "Dreadstone of Endless Shadows", "144480", 182, TITANFORGE_CAP,
+    M_PLUS_ITEMLEVEL
+  ],
+  ["Infernal Writ", "137485", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL],
+  ["Portable Manacracker", "137398", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL],
+  ["Reality Breacher", "151310", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL],
+]
+int_trinkets["emerald_nightmare"] = [[
+  "Bough of Corruption", "139323", 162, TITANFORGE_CAP, TRADER_TOKEN
+], ["Swarming Plaguehive", "139321", 162, TITANFORGE_CAP, TRADER_TOKEN], [
+  "Twisting Wind", "139323", 162, TITANFORGE_CAP, TRADER_TOKEN
+], ["Unstable Horrorslime", "138224", 162, TITANFORGE_CAP, TRADER_TOKEN], [
+  "Wriggling Sinew", "139326", 162, TITANFORGE_CAP, TRADER_TOKEN
+]]
+int_trinkets["nighthold"] = [[
+  "Erratic Metronome", "140792", 170, TITANFORGE_CAP, TRADER_TOKEN
+], [
+  "Pharameres Forbidden Grimoire", "140800", 170, TITANFORGE_CAP, TRADER_TOKEN
+], ["Star Gate", "140804", 170, TITANFORGE_CAP, TRADER_TOKEN], [
+  "Whispers in the Dark", "140809", 170, TITANFORGE_CAP, TRADER_TOKEN
+]]
+int_trinkets["pvp"] = [[
+  "PVP Insignia of Dominance", "142668", 182, TITANFORGE_CAP, TRADER_TOKEN
+], ["PVP Badge of Dominance", "142779", 182, TITANFORGE_CAP, TRADER_TOKEN]]
+int_trinkets["tomb_of_sargeras"] = [
+  ["Charm of the Rising Tide", "147002", 182, TITANFORGE_CAP, 930],
+]
+int_trinkets["antorus"] = [
+  ["Acrid Catalyst Injector", "151955", 195, TITANFORGE_CAP, 240],
+  ["Sheath of Asara", "151971", 195, TITANFORGE_CAP, 240],
+  ["Vitality Resonator", "151970", 195, TITANFORGE_CAP, 240],
+  ["Norgannon's Prowess", "154177", 195, 280, 280],
+]
+int_trinkets["world"] = [
+  ["Devilsaur Shock-Baton", "140030", 182, TITANFORGE_CAP, TRADER_TOKEN],
+  ["Eyasu's Mulligan", "141584", 182, TITANFORGE_CAP, TRADER_TOKEN],
+  ["Padawsen's Unlucky Charm", "141536", 182, TITANFORGE_CAP, TRADER_TOKEN],
+  # 142507 is Brinewater Slime in a Bottle, used as a reference stat stick
+  [
+    "Stat Stick (Crit)", "142507,bonus_id=603", 182, TITANFORGE_CAP,
+    TRADER_TOKEN
+  ],
+  [
+    "Stat Stick (Haste)", "142507,bonus_id=604", 182, TITANFORGE_CAP,
+    TRADER_TOKEN
+  ],
+  [
+    "Stat Stick (Mastery)", "142507,bonus_id=605", 182, TITANFORGE_CAP,
+    TRADER_TOKEN
+  ],
+  [
+    "Stat Stick (Versatility)", "142507,bonus_id=607", 182, TITANFORGE_CAP,
+    TRADER_TOKEN
+  ]
+]
+
+## Usable by plate wearers
+str_trinkets = {}
+str_trinkets["dungeon"] = [[
+  "Fel-Oiled Infernal Machine", "144482", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+], [
+  "Void Stalker's Contract", "151307", 182, TITANFORGE_CAP, M_PLUS_ITEMLEVEL
+]]
+str_trinkets["emerald_nightmare"] = [
+  ["Ursoc's Rending Paw", "139328", 162, TITANFORGE_CAP, TRADER_TOKEN],
+]
+str_trinkets["nighthold"] = [[
+  "Claw of the Crystalline Scorpid", "140790", 170, TITANFORGE_CAP,
+  TRADER_TOKEN
+], ["Convergence of Fates", "140806", 170, TITANFORGE_CAP, TRADER_TOKEN], [
+  "Entwined Elemental Foci", "140796", 170, TITANFORGE_CAP, TRADER_TOKEN
+], ["Might of Krosus", "140799", 170, TITANFORGE_CAP, TRADER_TOKEN]]
+str_trinkets["pvp"] = [[
+  "PVP Insignia of Victory", "142784", 182, TITANFORGE_CAP, TRADER_TOKEN
+], ["PVP Badge of Victory", "142669", 182, TITANFORGE_CAP, TRADER_TOKEN]]
+str_trinkets["tomb_of_sargeras"] = [[
+  "Cradle of Anguish", "147010", 182, TITANFORGE_CAP, 930
+], ["Engine of Eradication", "147015", 182, TITANFORGE_CAP, 930]]
+str_trinkets["world"] = [
+  ["Impact Tremor", "140034", 182, TITANFORGE_CAP, TRADER_TOKEN],
+  # 142508 is Chains of the Valorous, used as a reference stat stick
+  [
+    "Stat Stick (Crit)", "142508,bonus_id=603", 182, TITANFORGE_CAP,
+    TRADER_TOKEN
+  ],
+  [
+    "Stat Stick (Haste)", "142508,bonus_id=604", 182, TITANFORGE_CAP,
+    TRADER_TOKEN
+  ],
+  [
+    "Stat Stick (Mastery)", "142508,bonus_id=605", 182, TITANFORGE_CAP,
+    TRADER_TOKEN
+  ],
+  [
+    "Stat Stick (Versatility)", "142508,bonus_id=607", 182, TITANFORGE_CAP,
+    TRADER_TOKEN
+  ],
+  ["Ettin Fingernail", "141535", 182, TITANFORGE_CAP, TRADER_TOKEN]
+]
+str_trinkets["antorus"] = [
+  ["Forgefiend's Fabricator", "151963", 195, TITANFORGE_CAP, 240],
+  ["Khaz'goroths Courage", "154176", 195, 280, 280],
+  ["Shadow-Singed Fang", "151968", 195, TITANFORGE_CAP, 240],
+]
+
+##
+## @brief      Selects the relevant trinket dictionaries for a given spec
+##
+## @param      role  The specialisation name as string
+## @param      stat  The specialisation's main stat (str/int/agi) as a string
+##
+## @return     A group of trinkets relevant to the role as a dictionary of lists
+## @return     A group of trinkets relevant to the main stat as a dictionary of
+##             lists
+##
+def __get_relevant_trinkets(role, stat):
+  # Inelegant solution. No good way to do this.
+  if role == "ranged":
+    role_trinkets = ranged_trinkets
+  else:
+    role_trinkets = melee_trinkets
+
+  if stat == "int":
+    stat_trinkets = int_trinkets
+  elif stat == "agi":
+    stat_trinkets = agi_trinkets
+  else:
+    stat_trinkets = str_trinkets
+  return (role_trinkets, stat_trinkets)
+
+import copy
+##
+## @brief      Combines role and stat trinket
+##
+## @param      role_trinkets  The trinkets relevant to role (ranged/melee) as a
+##                            dict of lists
+## @param      stat_trinkets  The trinkets relevant to a spec's stat
+##                            (int/str/agi) as a dict of lists
+## @param      spec_name      Name of the wow spec
+##
+## @return     A group of trinkets relevant to the spec as a dictionary of lists
+##
+def __combine_trinket_dicts(role_trinkets, stat_trinkets, spec_name):
+  # Populate a new trinkets dict with role trinkets
+  trinkets = copy.deepcopy(role_trinkets)
+
+  for source in stat_trinkets:
+    if trinkets.get(source) is not None:
+      # Append int/str/agi trinkets to existing list in the newly created dict
+      trinkets[source] = trinkets[source] + stat_trinkets[source]
+    else:
+      # Just set the int/str/agi trinket list to the newly created dict's source key
+      trinkets[source] = stat_trinkets[source]
+
+  # add shared trinkets from data
+  for source in shared_trinkets:
+    if trinkets.get(source) is not None:
+      trinkets[source] = trinkets[source] + shared_trinkets[source]
+    else:
+      trinkets[source] = shared_trinkets[source]
+
+  # add legendary from data
+  for source in legendary_trinkets:
+    if trinkets.get(source) is not None:
+      trinkets[source] = trinkets[source] + legendary_trinkets[source]
+    else:
+      trinkets[source] = legendary_trinkets[source]
+
+    # add tank legendary if a tank spec is choosen
+    if spec_name.title(
+    ) in ("Blood", "Vengeance", "Brewmaster", "Guardian", "Protection"):
+      trinkets["legendary"].append([
+        "Archimonde's Hatred Reborn", "144249", 970, 1000, 1000
+      ])
+      trinkets["legendary"].append([
+        "Aggramar's Conviction", "154173", 940, 1000, 1000
+      ])
+      trinkets["antorus"].append([
+        "Diima's Glacial Aegis", "151977", 930, TITANFORGE_CAP, 960
+      ])
+      trinkets["antorus"].append([
+        "Smoldering Titanguard", "151978", 930, TITANFORGE_CAP, 960
+      ])
+      trinkets["antorus"].append([
+        "Riftworld Codex", "151976", 930, TITANFORGE_CAP, 960
+      ])
+      trinkets["tomb_of_sargeras"].append([
+        "Leviathan's Hunger", "147023", 885, TITANFORGE_CAP, 930
+      ])
+      trinkets["tomb_of_sargeras"].append([
+        "Feverish Carapace", "147022", 885, TITANFORGE_CAP, 930
+      ])
+
+  return trinkets
+
+##
+## @brief      Uses class and spec names to return a dict of relevant trinkets
+##
+## @param      class_name  The class name as string
+## @param      spec_name   The specifier name as string
+##
+## @return     Relevant trinkets as a dict of lists
+##
+def get_trinkets_for_spec_legion(class_name, spec_name):
+  spec_info = get_role_stat(class_name, spec_name)
+  role_trinkets, stat_trinkets = __get_relevant_trinkets(
+    spec_info[0], spec_info[1]
+  )
+
+  combined_trinkets = __combine_trinket_dicts(
+    role_trinkets, stat_trinkets, spec_name
+  )
+
+  return combined_trinkets
+
+##
+## @brief      Gets the main stat and role
+##
+## @param      wow_class  The class name as string
+## @param      wow_spec   The specifier name as string
+##
+## @return     List of [main_stat, role]
+##
+def get_role_stat(wow_class, wow_spec):
+
+  return [
+    __class_data[wow_class.title()]["specs"][wow_spec.title()]["role"],
+    __class_data[wow_class.title()]["specs"][wow_spec.title()]["stat"]
+  ]
+
+
+
+
+
+
+
+
 def is_melee(wow_class, wow_spec):
   """True if spec is melee spec.
 
@@ -606,36 +1016,54 @@ def get_trinkets_for_spec(wow_class, wow_spec):
     list[Trinket] -- List of all Trinkets
   """
 
-  melee, ranged, agility, intellect, strength = get_mask_for_spec(
-    wow_class, wow_spec
-  )
+  # get old trinket list
+
+  temp_list = get_trinkets_for_spec_legion(wow_class, wow_spec)
+
   return_list = []
-  for trinket in __trinket_list:
-    if melee and trinket.melee:
-      return_list.append((
-        trinket.name, trinket.item_id, trinket.min_itemlevel,
-        trinket.max_itemlevel, trinket.max_itemlevel_drop
-      ))
-    elif ranged and trinket.ranged:
-      return_list.append((
-        trinket.name, trinket.item_id, trinket.min_itemlevel,
-        trinket.max_itemlevel, trinket.max_itemlevel_drop
-      ))
-    elif agility and trinket.agility:
-      return_list.append((
-        trinket.name, trinket.item_id, trinket.min_itemlevel,
-        trinket.max_itemlevel, trinket.max_itemlevel_drop
-      ))
-    elif intellect and trinket.intellect:
-      return_list.append((
-        trinket.name, trinket.item_id, trinket.min_itemlevel,
-        trinket.max_itemlevel, trinket.max_itemlevel_drop
-      ))
-    elif strength and trinket.strength:
-      return_list.append((
-        trinket.name, trinket.item_id, trinket.min_itemlevel,
-        trinket.max_itemlevel, trinket.max_itemlevel_drop
-      ))
+
+  for source in temp_list:
+    for trinket_data in temp_list[source]:
+      name = trinket_data[0]
+      item_id = trinket_data[1]
+      min_itemlevel = trinket_data[2]
+      max_itemlevel = trinket_data[3]
+      max_itemlevel_drop = trinket_data[4]
+
+      return_list.append((name, item_id, min_itemlevel, max_itemlevel, max_itemlevel_drop))
+
+
+
+  # melee, ranged, agility, intellect, strength = get_mask_for_spec(
+  #   wow_class, wow_spec
+  # )
+  # return_list = []
+  # for trinket in __trinket_list:
+  #   if melee and trinket.melee:
+  #     return_list.append((
+  #       trinket.name, trinket.item_id, trinket.min_itemlevel,
+  #       trinket.max_itemlevel, trinket.max_itemlevel_drop
+  #     ))
+  #   elif ranged and trinket.ranged:
+  #     return_list.append((
+  #       trinket.name, trinket.item_id, trinket.min_itemlevel,
+  #       trinket.max_itemlevel, trinket.max_itemlevel_drop
+  #     ))
+  #   elif agility and trinket.agility:
+  #     return_list.append((
+  #       trinket.name, trinket.item_id, trinket.min_itemlevel,
+  #       trinket.max_itemlevel, trinket.max_itemlevel_drop
+  #     ))
+  #   elif intellect and trinket.intellect:
+  #     return_list.append((
+  #       trinket.name, trinket.item_id, trinket.min_itemlevel,
+  #       trinket.max_itemlevel, trinket.max_itemlevel_drop
+  #     ))
+  #   elif strength and trinket.strength:
+  #     return_list.append((
+  #       trinket.name, trinket.item_id, trinket.min_itemlevel,
+  #       trinket.max_itemlevel, trinket.max_itemlevel_drop
+  #     ))
   return return_list
 
 
