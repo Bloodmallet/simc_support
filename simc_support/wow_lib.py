@@ -75,7 +75,7 @@ __class_data = {
         "stat": "agi",
         "id": 577,
       },
-      "Vengance": {
+      "Vengeance": {
         "role": "melee",
         "stat": "agi",
         "id": 581,
