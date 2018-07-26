@@ -3,7 +3,7 @@
 from simc_support import wow_lib
 
 def print_simc_file(trinket_list, name):
-  with open("trinkets_" + name + ".simc", 'w') as f:
+  with open("trinkets_bfa_" + name + ".simc", 'w') as f:
     f.write("# PROFILE FOR TESTING ONLY!\n")
     f.write("# This file provides all available trinkets for {}s.\n".format(name.upper()))
     f.write("# Use this file to verify whether all trinkets are functioning as expected after changes.\n")
