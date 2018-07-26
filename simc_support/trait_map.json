@@ -646,19 +646,9 @@
     },
     "267682": {
         "class": {
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ]
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Monk": []
         },
         "description": "Your damaging abilities have a chance to apply Blinding Mists to all targets within 8 yards, reducing the damage dealt by their next 3 melee hits by $s1.",
         "max_itemlevel": -1,
@@ -730,15 +720,8 @@
     },
     "267882": {
         "class": {
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
+            "Druid": [],
+            "Monk": [],
             "Paladin": [],
             "Priest": [],
             "Shaman": []
@@ -798,19 +781,10 @@
     "267889": {
         "class": {
             "Druid": [],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
+            "Monk": [],
+            "Paladin": [],
             "Priest": [],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ]
+            "Shaman": []
         },
         "description": "Your healing spells have a chance to apply Blessed Portents for $271843d. When the ally falls below $s2% health, Blessed Portents is consumed and instantly restores $s1 health.",
         "max_itemlevel": -1,
@@ -821,21 +795,11 @@
     },
     "267892": {
         "class": {
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
+            "Druid": [],
+            "Monk": [],
             "Paladin": [],
             "Priest": [],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ]
+            "Shaman": []
         },
         "description": "Casting $?a137009[Wild Growth]?a137022[Essence Font]?a137030[Prayer of Healing or Power Word: Radiance]?a137026[Light of Dawn]?a137038[Chain Heal][your multi-target healing spell] grants you $s1 Mastery for $272090d sec. This cannot occur more than once every $272089proccooldown sec.",
         "max_itemlevel": -1,
@@ -890,60 +854,18 @@
     },
     "268594": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Hunter": [],
+            "Mage": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "Increases your movement speed by $s1% of your highest secondary rating, up to $s2%.",
         "max_itemlevel": -1,
@@ -1129,24 +1051,12 @@
     },
     "271536": {
         "class": {
-            "Death_Knight": [
-                "Blood"
-            ],
-            "Demon_Hunter": [
-                "Vengance"
-            ],
-            "Druid": [
-                "Guardian"
-            ],
-            "Monk": [
-                "Brewmaster"
-            ],
-            "Paladin": [
-                "Protection"
-            ],
-            "Warrior": [
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Monk": [],
+            "Paladin": [],
+            "Warrior": []
         },
         "description": "When dealt damage greater than $s3% of your maximum health, gain $s2 Armor and cause melee attackers to suffer $s1 Physical damage. Lasts $271538d.",
         "max_itemlevel": -1,
@@ -1158,19 +1068,9 @@
     "271540": {
         "class": {
             "Death_Knight": [],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Monk": [],
             "Paladin": [],
             "Warrior": []
         },
@@ -1183,33 +1083,12 @@
     },
     "271546": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Monk": [],
+            "Paladin": [],
+            "Warrior": []
         },
         "description": "Taking damage has a chance to increase your maximum health by $s1 for each enemy within $271548A1 yds, up to $271550u enemies. Lasts $271550d.",
         "max_itemlevel": -1,
@@ -1581,7 +1460,7 @@
                 "Enhancement"
             ]
         },
-        "description": "Melee attacks with Flametongue active increase the damage the target takes from your next Lava Lash by $s1, stacking up to 10 times.",
+        "description": "Melee attacks with Flametongue active increase the damage the target takes from your next Lava Lash by ${$s1/2}, stacking up to $273006u times.",
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
@@ -1820,7 +1699,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Ruinous Bolt (Drustvar)",
+        "name": "Ruinous Bolt (rank=Drustvar)",
         "trait_id": "156"
     },
     "273154": {
@@ -2284,7 +2163,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Meticulous Scheming (Tiragarde Sound)",
+        "name": "Meticulous Scheming (rank=Tiragarde Sound)",
         "trait_id": "192"
     },
     "273790": {
@@ -2348,7 +2227,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Rezan's Fury (Zuldazar)",
+        "name": "Rezan's Fury (rank=Zuldazar)",
         "trait_id": "157"
     },
     "273823": {
@@ -2412,7 +2291,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Blightborne Infusion (Drustvar)",
+        "name": "Blightborne Infusion (rank=Drustvar)",
         "trait_id": "193"
     },
     "273829": {
@@ -2476,7 +2355,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Secrets of the Deep (Stormsong Valley)",
+        "name": "Secrets of the Deep (rank=Stormsong Valley)",
         "trait_id": "195"
     },
     "273834": {
@@ -2540,7 +2419,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Filthy Transfusion (Nazmir)",
+        "name": "Filthy Transfusion (rank=Nazmir)",
         "trait_id": "194"
     },
     "273853": {
@@ -2608,9 +2487,7 @@
     },
     "274057": {
         "class": {
-            "Death_Knight": [
-                "Blood"
-            ]
+            "Death_Knight": []
         },
         "description": "Death Strike heals for an additional $s1 for each remaining charge of Bone Shield.",
         "max_itemlevel": -1,
@@ -2998,7 +2875,7 @@
                 "Retribution"
             ]
         },
-        "description": "Judgment deals additional damage when your health exceeds the target's health, up to $s1 damage.",
+        "description": "Judgment deals additional damage when your health percentage exceeds the target's, up to $s1 damage.",
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
@@ -3222,11 +3099,12 @@
                 "Demonology"
             ]
         },
-        "description": "When you gain Demonic Core, the damage of your next Demonbolt is increased by $s1",
+        "description": "When you gain Demonic Core, the damage of your next Demonbolt is increased by $s1.",
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Crashing Chaos"
+        "name": "Excoriate",
+        "trait_id": "443"
     },
     "276021": {
         "class": {
@@ -4679,8 +4557,6 @@
     "279909": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
                 "Destruction"
             ]
         },
@@ -4694,7 +4570,6 @@
     "279918": {
         "class": {
             "Monk": [
-                "Brewmaster",
                 "Windwalker"
             ]
         },
@@ -4782,11 +4657,7 @@
     },
     "280011": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ]
+            "Death_Knight": []
         },
         "description": "When you use Death's Advance, gain $s1 Speed for $280149d. The cooldown of Death's Advance is reduced to $s2 seconds.",
         "max_itemlevel": -1,
@@ -4797,10 +4668,7 @@
     },
     "280012": {
         "class": {
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ]
+            "Demon_Hunter": []
         },
         "description": "When your Consume Magic consumes a beneficial Magic effect from the target, gain $s1 Absorb for $274289d and shatter a Soul Fragment from the target.",
         "max_itemlevel": -1,
@@ -4811,11 +4679,7 @@
     },
     "280013": {
         "class": {
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ]
+            "Druid": []
         },
         "description": "When you use Barkskin or Survival Instincts, absorb $s1 damage over $280165d.",
         "max_itemlevel": -1,
@@ -4826,11 +4690,7 @@
     },
     "280014": {
         "class": {
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ]
+            "Hunter": []
         },
         "description": "Using Feign Death allows you to absorb $s1 damage over $280170d, and Feign Death's cooldown is reduced to $s2 seconds.",
         "max_itemlevel": -1,
@@ -4841,11 +4701,7 @@
     },
     "280015": {
         "class": {
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ]
+            "Mage": []
         },
         "description": "When you $?s212653[Shimmer][Blink], heal for $s1 every $280177t1 sec for $280177d.",
         "max_itemlevel": -1,
@@ -4856,10 +4712,7 @@
     },
     "280016": {
         "class": {
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ]
+            "Monk": []
         },
         "description": "When you Leg Sweep, your targets suffer $s2% reduced movement speed, and you gain $s1 Speed for $280187d.",
         "max_itemlevel": -1,
@@ -4870,10 +4723,7 @@
     },
     "280017": {
         "class": {
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ]
+            "Paladin": []
         },
         "description": "Inspire yourself and nearby allies while Divine Steed is active, granting $s1 Speed for $280192d. Divine Steed's cooldown is reduced to $s2 seconds.",
         "max_itemlevel": -1,
@@ -4884,9 +4734,7 @@
     },
     "280018": {
         "class": {
-            "Priest": [
-                "Shadow"
-            ]
+            "Priest": []
         },
         "description": "When you successfully Dispel Magic, heal yourself and $s2 injured allies for $s1.",
         "max_itemlevel": -1,
@@ -4897,11 +4745,7 @@
     },
     "280020": {
         "class": {
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ]
+            "Rogue": []
         },
         "description": "Cloak of Shadows heals you for $s1 every $280200t sec, plus an additional $s2 for each effect it negates.",
         "max_itemlevel": -1,
@@ -4912,10 +4756,7 @@
     },
     "280021": {
         "class": {
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ]
+            "Shaman": []
         },
         "description": "While Ghost Wolf is active, heal for $s1 every $280205t1 sec.",
         "max_itemlevel": -1,
@@ -4926,11 +4767,7 @@
     },
     "280022": {
         "class": {
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ]
+            "Warlock": []
         },
         "description": "While below $s2% health, your Drain Life heals for an additional $s1 health each $234153t1 sec.",
         "max_itemlevel": -1,
@@ -4941,11 +4778,7 @@
     },
     "280023": {
         "class": {
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Warrior": []
         },
         "description": "Your Rallying Cry grants $s1 additional Max Health to affected allies, and its duration is increased to $s2 sec.",
         "max_itemlevel": -1,
@@ -4956,11 +4789,7 @@
     },
     "280128": {
         "class": {
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Warrior": []
         },
         "description": "When you use $?s202168[Impending Victory][Victory Rush], gain $s1 Physical absorb for $280212d.",
         "max_itemlevel": -1,
@@ -5026,11 +4855,11 @@
                 "Protection"
             ]
         },
-        "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
+        "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Barrage Of Many Bombs (Goblin Engineering)",
+        "name": "Barrage Of Many Bombs (rank=Goblin Engineering)",
         "trait_id": "498"
     },
     "280168": {
@@ -5094,71 +4923,29 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Ricocheting Inflatable Pyrosaw (Goblin Engineering)",
+        "name": "Ricocheting Inflatable Pyrosaw (rank=Goblin Engineering)",
         "trait_id": "499"
     },
     "280172": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Hunter": [],
+            "Mage": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "Taking damage has a chance to unleash your Auto-Self-Cauterizer, healing you for $280583s1, removing most* bleed effects, and snaring nearby enemies by $280583s2% for $280583d.",
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Auto-Self-Cauterizer (Goblin Engineering)",
+        "name": "Auto-Self-Cauterizer (rank=Goblin Engineering)",
         "trait_id": "503"
     },
     "280174": {
@@ -5222,7 +5009,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Synaptic Spark Capacitor (Gnomish Engineering)",
+        "name": "Synaptic Spark Capacitor (rank=Gnomish Engineering)",
         "trait_id": "500"
     },
     "280178": {
@@ -5286,71 +5073,29 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Relational Normalization Gizmo (Gnomish Engineering)",
+        "name": "Relational Normalization Gizmo (rank=Gnomish Engineering)",
         "trait_id": "501"
     },
     "280181": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Hunter": [],
+            "Mage": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "Taking damage has a chance to call your Personal Absorb-o-Tron, absorbing the next $280660s1 damage you take over $280660d.",
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Personal Absorb-o-Tron (Gnomish Engineering)",
+        "name": "Personal Absorb-o-Tron (rank=Gnomish Engineering)",
         "trait_id": "502"
     },
     "280284": {
@@ -5414,7 +5159,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Dagger in the Back (Tiragarde Sound)",
+        "name": "Dagger in the Back (rank=Tiragarde Sound)",
         "trait_id": "479"
     },
     "280380": {
@@ -5478,7 +5223,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Thunderous Blast (Vol'dun)",
+        "name": "Thunderous Blast (rank=Vol'dun)",
         "trait_id": "482"
     },
     "280402": {
@@ -5542,7 +5287,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Tidal Surge (Stormsong Valley)",
+        "name": "Tidal Surge (rank=Stormsong Valley)",
         "trait_id": "478"
     },
     "280407": {
@@ -5606,7 +5351,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Blood Rite (Nazmir)",
+        "name": "Blood Rite (rank=Nazmir)",
         "trait_id": "480"
     },
     "280410": {
@@ -5670,7 +5415,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Incite the Pack (Zuldazar)",
+        "name": "Incite the Pack (rank=Zuldazar)",
         "trait_id": "481"
     },
     "280429": {
@@ -5734,8 +5479,136 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Swirling Sands (Vol'dun)",
+        "name": "Swirling Sands (rank=Vol'dun)",
         "trait_id": "196"
+    },
+    "280555": {
+        "class": {
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
+        },
+        "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Archive of the Titans (rank=Uldir)",
+        "trait_id": "483"
+    },
+    "280559": {
+        "class": {
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
+        },
+        "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Laser Matrix (rank=Uldir)",
+        "trait_id": "485"
     },
     "280577": {
         "class": {
@@ -5798,7 +5671,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Glory in Battle (Horde)",
+        "name": "Glory in Battle (rank=Horde)",
         "trait_id": "486"
     },
     "280579": {
@@ -5862,7 +5735,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Retaliatory Fury (Horde)",
+        "name": "Retaliatory Fury (rank=Horde)",
         "trait_id": "487"
     },
     "280580": {
@@ -5926,7 +5799,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Combined Might (Horde)",
+        "name": "Combined Might (rank=Horde)",
         "trait_id": "490"
     },
     "280581": {
@@ -5990,7 +5863,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Collective Will (Horde)",
+        "name": "Collective Will (rank=Horde)",
         "trait_id": "491"
     },
     "280582": {
@@ -6054,7 +5927,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Battlefield Focus (Horde)",
+        "name": "Battlefield Focus (rank=Horde)",
         "trait_id": "488"
     },
     "280598": {
@@ -6118,391 +5991,139 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Sylvanas' Resolve (Horde)",
+        "name": "Sylvanas' Resolve (rank=Horde)",
         "trait_id": "489"
     },
     "280623": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Hunter": [],
+            "Mage": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Liberator's Might (Alliance)",
+        "name": "Liberator's Might (rank=Alliance)",
         "trait_id": "492"
     },
     "280624": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Hunter": [],
+            "Mage": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Last Gift (Alliance)",
+        "name": "Last Gift (rank=Alliance)",
         "trait_id": "493"
     },
     "280625": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Hunter": [],
+            "Mage": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Stronger Together (Alliance)",
+        "name": "Stronger Together (rank=Alliance)",
         "trait_id": "496"
     },
     "280626": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Hunter": [],
+            "Mage": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Stand As One (Alliance)",
+        "name": "Stand As One (rank=Alliance)",
         "trait_id": "497"
     },
     "280627": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Hunter": [],
+            "Mage": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Battlefield Precision (Alliance)",
+        "name": "Battlefield Precision (rank=Alliance)",
         "trait_id": "494"
     },
     "280628": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Hunter": [],
+            "Mage": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Anduin's Dedication (Alliance)",
+        "name": "Anduin's Dedication (rank=Alliance)",
         "trait_id": "495"
     },
     "280710": {
@@ -6568,5 +6189,133 @@
         "min_itemlevel": -1,
         "name": "Champion of Azeroth",
         "trait_id": "82"
+    },
+    "281514": {
+        "class": {
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
+        },
+        "description": "Your spells and abilities have a chance to leak Azerite on the ground around you. Standing in the Azerite increases your primary stat by $s1 for $281516d.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Unstable Catalyst",
+        "trait_id": "504"
+    },
+    "281841": {
+        "class": {
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
+        },
+        "description": "Your spells and abilities have a chance to grant you $s1 Mastery for $281843d. When this effect expires it jumps once to a nearby ally, granting them $s2 Mastery for $281844d.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Tradewinds (rank=Tiragarde Sound)",
+        "trait_id": "505"
     }
 }
