@@ -1096,7 +1096,7 @@ def get_trinket_id(trinket_name):
       return trinket.item_id
 
 
-def get_trinket(name="", item_id=""):
+def get_trinket(name: str ="", item_id: str ="") -> Trinket:
   """Return Trinket of matching name or item_id. One must be provided. Else it'll return None.
 
   Keyword Arguments:
@@ -1114,7 +1114,7 @@ def get_trinket(name="", item_id=""):
   return None
 
 
-def get_azerite_traits(wow_class, wow_spec):
+def get_azerite_traits(wow_class: str, wow_spec: str) -> dict:
 
   import pkg_resources
 
@@ -1128,6 +1128,107 @@ def get_azerite_traits(wow_class, wow_spec):
     return traits[wow_class.title()][wow_spec.title()]
   except Exception as e:
     raise e
+
+
+def get_azerite_items(wow_class: str, wow_spec: str) -> dict:
+  """Return a dictionary of all azerite items for the given spec. Dictionary is organized by item slot. Items have all available traits for them, too.
+
+  REQUIRED: 'equippable-items-beta.json' and 'azerite-power-sets-beta.json'
+
+  "head": [item, item, ...],
+  "shoulders": [item, item, ...],
+  "chest": [item, item, ...]
+
+  Arguments:
+    wow_class {str} -- [description]
+    wow_spec {str} -- [description]
+
+  Returns:
+    dictionary -- all available azerite items for the given spec
+  """
+
+
+  import pkg_resources
+
+  path = "equippable-items-beta.json"
+
+  f = pkg_resources.ResourceManager().resource_stream(__name__, path)
+
+  loaded_items = json.load(f)
+
+  items = {
+    "head": [],
+    "shoulders": [],
+    "chest": []
+  }
+  item_type = {
+    1: "head",
+    3: "shoulders",
+    5: "chest", # ???
+    20: "chest" # ???
+  }
+
+  for item in loaded_items:
+    if "azeritePowerSetId" in item:
+
+      try:
+        items[item_type[item["inventoryType"]]].append(item)
+      except Exception:
+        pass
+
+
+  # enrich dict with azerite traits
+  path = "azerite-power-sets-beta.json"
+
+  f = pkg_resources.ResourceManager().resource_stream(__name__, path)
+
+  azerite_traits = json.load(f)
+
+  for slot in items:
+    for i in range(len(items[slot])):
+      item = items[slot][i]
+      try:
+        items[slot][i]["azeriteTraits"] = azerite_traits[str(items[slot][i]["azeritePowerSetId"])]
+      except Exception: # as e:
+        # logger.error(e)
+        # logger.error("slot: {}".format(slot))
+        # logger.error("item: {}".format(item))
+        # logger.error("item data: {}".format(items[slot][i]))
+        # logger.error("azeritePowerSetId: {}".format(items[slot][i]["azeritePowerSetId"]))
+        # logger.error(trait_dict[str(items[slot][i]["azeritePowerSetId"])])
+        pass
+
+  # create a new itemlist with only items for the wow spec/class
+  response = {}
+  class_id = get_class_id(wow_class)
+  spec_id = get_spec_id(wow_class, wow_spec) # unused...for now
+
+  for slot in items:
+    # create slot in new dict
+    if not slot in response:
+      response[slot] = []
+
+    for item in items[slot]:
+      not_of_wanted_class = True
+
+      for trait in item["azeriteTraits"]:
+        if trait["classId"] == class_id:
+          not_of_wanted_class = False
+
+          # take out delete of traits based on specs, because provided spec list is faulty TODO: re-enable this purge
+          # # delete trait if not for wanted spec
+          # if trait["specUsable"] != [] and not spec_id in trait["specUsable"]:
+          #   item["azeriteTraits"].remove(trait)
+
+        else:
+          # delete trait from list if it's not for the wanted class
+          item["azeriteTraits"].remove(trait)
+
+      if not not_of_wanted_class:
+        # add item, even when layout is already present. we're NOT doing extended filtering here!
+        response[slot].append(item)
+
+  return response
 
 
 def get_all_trinkets():
@@ -1304,7 +1405,7 @@ def get_classes_specs():
   return full_list
 
 
-def get_races():
+def get_races() -> list:
   """Get a list of all wow race names.
 
   Returns:
@@ -1319,7 +1420,7 @@ def get_races():
   return races
 
 
-def get_races_for_class(wow_class):
+def get_races_for_class(wow_class: str) -> list:
   """Get a list of all available races to the given wow_class.
 
   Arguments:
@@ -1339,7 +1440,7 @@ def get_races_for_class(wow_class):
   return race_list
 
 
-def get_role(wow_class, wow_spec):
+def get_role(wow_class: str, wow_spec: str) -> str:
   """Get the role of the given wow class and wow spec.
 
   Arguments:
