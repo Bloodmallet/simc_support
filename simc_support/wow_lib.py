@@ -289,7 +289,7 @@ __races = {
     ),
     "night_elf": (
       "warrior", "hunter", "rogue", "priest", "mage", "monk", "druid",
-      "death_knight"
+      "death_knight", "demon_hunter"
     ),
     "pandaren": (
       "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk"
@@ -307,7 +307,7 @@ __races = {
   "horde": {
     "blood_elf": (
       "warrior", "paladin", "hunter", "rogue", "priest", "mage", "warlock",
-      "monk", "death_knight"
+      "monk", "death_knight", "demon_hunter"
     ),
     "goblin": (
       "warrior", "hunter", "rogue", "priest", "shaman", "mage", "warlock",
