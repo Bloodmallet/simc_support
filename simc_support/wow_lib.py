@@ -305,7 +305,7 @@ __races = {
             "warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk"
         ),
         "lightforged_draenei": ("warrior", "paladin", "hunter", "priest", "mage"),
-        # "dark_iron_dwarf": ("shaman")
+        # "dark_iron_dwarf": ("warrior", "paladin", "hunter", "rogue", "priest, "shaman", "mage", "warlock", "monk")
     },
     "horde": {
         "blood_elf": (
@@ -339,7 +339,7 @@ __races = {
             "warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk"
         ),
         "highmountain_tauren": ("warrior", "hunter", "shaman", "monk", "druid"),
-        # "maghar_orc": ("shaman")
+        # "maghar_orc": ("warrior, "hunter", "rogue", "priest", "shaman", "mage", "monk")
     }
 }
 
@@ -554,6 +554,10 @@ __trinket_list = [
     Trinket(
         "Surging Alchemist Stone", "152632", 300, 300,
         300, True, True, True, False, False
+    ),
+    Trinket(
+        "Plunderbeard's Flask", "158164", 300, TITANFORGE_CAP,
+        TRADER_TOKEN, True, True, True, False, False
     ),
     # Trinket(
     #   "", "", DUNGEON_ITEMLEVEL, TITANFORGE_CAP, TRADER_TOKEN,
