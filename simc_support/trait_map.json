@@ -1699,7 +1699,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Ruinous Bolt (rank=Drustvar)",
+        "name": "Ruinous Bolt",
         "trait_id": "156"
     },
     "273154": {
@@ -2163,7 +2163,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Meticulous Scheming (rank=Tiragarde Sound)",
+        "name": "Meticulous Scheming",
         "trait_id": "192"
     },
     "273790": {
@@ -2227,7 +2227,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Rezan's Fury (rank=Zuldazar)",
+        "name": "Rezan's Fury",
         "trait_id": "157"
     },
     "273823": {
@@ -2291,7 +2291,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Blightborne Infusion (rank=Drustvar)",
+        "name": "Blightborne Infusion",
         "trait_id": "193"
     },
     "273829": {
@@ -2355,7 +2355,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Secrets of the Deep (rank=Stormsong Valley)",
+        "name": "Secrets of the Deep",
         "trait_id": "195"
     },
     "273834": {
@@ -2419,7 +2419,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Filthy Transfusion (rank=Nazmir)",
+        "name": "Filthy Transfusion",
         "trait_id": "194"
     },
     "273853": {
@@ -4859,7 +4859,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Barrage Of Many Bombs (rank=Goblin Engineering)",
+        "name": "Barrage Of Many Bombs",
         "trait_id": "498"
     },
     "280168": {
@@ -4923,7 +4923,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Ricocheting Inflatable Pyrosaw (rank=Goblin Engineering)",
+        "name": "Ricocheting Inflatable Pyrosaw",
         "trait_id": "499"
     },
     "280172": {
@@ -4945,7 +4945,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Auto-Self-Cauterizer (rank=Goblin Engineering)",
+        "name": "Auto-Self-Cauterizer",
         "trait_id": "503"
     },
     "280174": {
@@ -5009,7 +5009,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Synaptic Spark Capacitor (rank=Gnomish Engineering)",
+        "name": "Synaptic Spark Capacitor",
         "trait_id": "500"
     },
     "280178": {
@@ -5073,7 +5073,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Relational Normalization Gizmo (rank=Gnomish Engineering)",
+        "name": "Relational Normalization Gizmo",
         "trait_id": "501"
     },
     "280181": {
@@ -5095,7 +5095,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Personal Absorb-o-Tron (rank=Gnomish Engineering)",
+        "name": "Personal Absorb-o-Tron",
         "trait_id": "502"
     },
     "280284": {
@@ -5159,7 +5159,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Dagger in the Back (rank=Tiragarde Sound)",
+        "name": "Dagger in the Back",
         "trait_id": "479"
     },
     "280380": {
@@ -5223,7 +5223,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Thunderous Blast (rank=Vol'dun)",
+        "name": "Thunderous Blast",
         "trait_id": "482"
     },
     "280402": {
@@ -5287,7 +5287,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Tidal Surge (rank=Stormsong Valley)",
+        "name": "Tidal Surge",
         "trait_id": "478"
     },
     "280407": {
@@ -5351,7 +5351,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Blood Rite (rank=Nazmir)",
+        "name": "Blood Rite",
         "trait_id": "480"
     },
     "280410": {
@@ -5415,7 +5415,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Incite the Pack (rank=Zuldazar)",
+        "name": "Incite the Pack",
         "trait_id": "481"
     },
     "280429": {
@@ -5479,7 +5479,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Swirling Sands (rank=Vol'dun)",
+        "name": "Swirling Sands",
         "trait_id": "196"
     },
     "280555": {
@@ -5543,7 +5543,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Archive of the Titans (rank=Uldir)",
+        "name": "Archive of the Titans",
         "trait_id": "483"
     },
     "280559": {
@@ -5607,7 +5607,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Laser Matrix (rank=Uldir)",
+        "name": "Laser Matrix",
         "trait_id": "485"
     },
     "280577": {
@@ -5671,7 +5671,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Glory in Battle (rank=Horde)",
+        "name": "Glory in Battle",
         "trait_id": "486"
     },
     "280579": {
@@ -5735,7 +5735,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Retaliatory Fury (rank=Horde)",
+        "name": "Retaliatory Fury",
         "trait_id": "487"
     },
     "280580": {
@@ -5799,7 +5799,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Combined Might (rank=Horde)",
+        "name": "Combined Might",
         "trait_id": "490"
     },
     "280581": {
@@ -5863,7 +5863,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Collective Will (rank=Horde)",
+        "name": "Collective Will",
         "trait_id": "491"
     },
     "280582": {
@@ -5927,7 +5927,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Battlefield Focus (rank=Horde)",
+        "name": "Battlefield Focus",
         "trait_id": "488"
     },
     "280598": {
@@ -5991,7 +5991,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Sylvanas' Resolve (rank=Horde)",
+        "name": "Sylvanas' Resolve",
         "trait_id": "489"
     },
     "280623": {
@@ -6013,7 +6013,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Liberator's Might (rank=Alliance)",
+        "name": "Liberator's Might",
         "trait_id": "492"
     },
     "280624": {
@@ -6035,7 +6035,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Last Gift (rank=Alliance)",
+        "name": "Last Gift",
         "trait_id": "493"
     },
     "280625": {
@@ -6057,7 +6057,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Stronger Together (rank=Alliance)",
+        "name": "Stronger Together",
         "trait_id": "496"
     },
     "280626": {
@@ -6079,7 +6079,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Stand As One (rank=Alliance)",
+        "name": "Stand As One",
         "trait_id": "497"
     },
     "280627": {
@@ -6101,7 +6101,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Battlefield Precision (rank=Alliance)",
+        "name": "Battlefield Precision",
         "trait_id": "494"
     },
     "280628": {
@@ -6123,7 +6123,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Anduin's Dedication (rank=Alliance)",
+        "name": "Anduin's Dedication",
         "trait_id": "495"
     },
     "280710": {
@@ -6315,7 +6315,7 @@
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
-        "name": "Tradewinds (rank=Tiragarde Sound)",
+        "name": "Tradewinds",
         "trait_id": "505"
     }
 }
