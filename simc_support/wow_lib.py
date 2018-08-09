@@ -479,10 +479,10 @@ __trinket_list = [
         "Drust-Runed Icicle", "161380", 355, TITANFORGE_CAP, TRADER_TOKEN, False,
         True, False, False, False
     ),
-    Trinket(
-        "Dunewalker's Survival Kit", "161418", 340, TITANFORGE_CAP, TRADER_TOKEN,
-        True, False, False, False, False
-    ),
+    # Trinket( # ???
+    #     "Dunewalker's Survival Kit", "161418", 340, TITANFORGE_CAP, TRADER_TOKEN,
+    #     True, False, False, False, False
+    # ),
     Trinket(
         "Galecaller's Beak", "161379", 355, TITANFORGE_CAP, TRADER_TOKEN, False,
         False, True, False, False
@@ -511,10 +511,10 @@ __trinket_list = [
         "Prism of Dark Intensity", "161376", 355, TITANFORGE_CAP, TRADER_TOKEN,
         False, False, True, False, False
     ),
-    Trinket(
-        "Razorcrest of the Enraged Matriarch", "161415", 340, TITANFORGE_CAP,
-        TRADER_TOKEN, True, False, False, False, False
-    ),
+    # Trinket( # ???
+    #     "Razorcrest of the Enraged Matriarch", "161415", 340, TITANFORGE_CAP,
+    #     TRADER_TOKEN, True, False, False, False, False
+    # ),
     # Trinket(
     #     "Sandscoured Idol", "161417", 355, TITANFORGE_CAP, TRADER_TOKEN, False,
     #     True, False, False, False
@@ -535,10 +535,10 @@ __trinket_list = [
         "Tear of the Void", "161374", 340, TITANFORGE_CAP, TRADER_TOKEN, False,
         True, False, False, False
     ),
-    Trinket(
-        "Void Portal Stone", "161375", 340, TITANFORGE_CAP, TRADER_TOKEN, True,
-        False, False, False, False
-    ),
+    # Trinket( # ???
+    #     "Void Portal Stone", "161375", 340, TITANFORGE_CAP, TRADER_TOKEN, True,
+    #     False, False, False, False
+    # ),
     Trinket(
         "Wing Bone of the Budding Tempest", "161414", 340, TITANFORGE_CAP,
         TRADER_TOKEN, False, True, False, False, False
