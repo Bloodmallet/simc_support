@@ -595,6 +595,14 @@ __trinket_list = [
         name="Kaja-fied Banana", item_id="161125", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
     ),
+    Trinket(  # uldir
+        name="Syringe of Bloodborne Infirmity", item_id="160655", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False
+    ),
+    Trinket(  # uldir
+        name="Disc of Systematic Regression", item_id="160650", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False
+    ),
     # Trinket(
     #     name="", item_id="", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
     #     max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=False, melee=False, ranged=False
@@ -912,7 +920,7 @@ def __generate_talent_combinations(blueprint, wow_class, wow_spec):
                                 # check whether the generated talent combination fits the wanted blueprint
                                 for i in range(7):
                                     if (not (pattern[i] == "-" or pattern[i] == "x")
-                                        ) and not combination[i] == pattern[i]:
+                                            ) and not combination[i] == pattern[i]:
                                         add_it = False
                                     if combination[i] == "0" and (
                                         pattern[i] == "-" or pattern[i] == "x"
