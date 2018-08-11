@@ -305,7 +305,7 @@ __races = {
             "warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk"
         ),
         "lightforged_draenei": ("warrior", "paladin", "hunter", "priest", "mage"),
-        # "dark_iron_dwarf": ("warrior", "paladin", "hunter", "rogue", "priest, "shaman", "mage", "warlock", "monk")
+        "dark_iron_dwarf": ("warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage", "warlock", "monk")
     },
     "horde": {
         "blood_elf": (
@@ -339,7 +339,7 @@ __races = {
             "warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk"
         ),
         "highmountain_tauren": ("warrior", "hunter", "shaman", "monk", "druid"),
-        # "maghar_orc": ("warrior, "hunter", "rogue", "priest", "shaman", "mage", "monk")
+        "maghar_orc": ("warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk")
     }
 }
 
