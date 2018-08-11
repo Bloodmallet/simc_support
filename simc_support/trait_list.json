@@ -1541,6 +1541,285 @@
             }
         },
         "Vengeance": {
+            "263978": {
+                "description": "Increases the item level of this item by 5.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Azerite Empowered",
+                "spell_id": "263978",
+                "trait_id": "13"
+            },
+            "263984": {
+                "description": "Your damaging abilities have a chance to grant you Elemental Whirl, increasing your Critical Strike, Haste, Mastery, or Versatility by $s1 for $268956d.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Elemental Whirl",
+                "spell_id": "263984",
+                "trait_id": "21"
+            },
+            "263987": {
+                "description": "Your damaging abilities have a chance to deal $s1 Nature damage to your target, and $s2 Nature damage to enemies within 3 yards of that target.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Heed My Call",
+                "spell_id": "263987",
+                "trait_id": "22"
+            },
+            "264108": {
+                "description": "Increases your Mastery by $s1 and your Leech by $s2.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Blood Siphon",
+                "spell_id": "264108",
+                "trait_id": "18"
+            },
+            "266180": {
+                "description": "Your damaging abilities have a chance to grant you 25 applications of Overwhelming Power. Each stack of Overwhelming Power grants $s1 Haste. An application of Overwhelming Power is removed every 1 sec or whenever you take damage.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Overwhelming Power",
+                "spell_id": "266180",
+                "trait_id": "30"
+            },
+            "266936": {
+                "description": "Your damaging abilities have a chance to implant an Azerite Globule on your enemies. When an enemy collects $s2 Azerite Globules, they explode, dealing $s1 Fire damage to nearby enemies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Azerite Globules",
+                "spell_id": "266936",
+                "trait_id": "462"
+            },
+            "266937": {
+                "description": "Your damaging abilities have a chance to deal $s1 Physical damage to the target. Gutripper occurs much more often against targets below $s2% health. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Gutripper",
+                "spell_id": "266937",
+                "trait_id": "31"
+            },
+            "267665": {
+                "description": "Increases your Haste by $s1 and your Avoidance by $s2.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Lifespeed",
+                "spell_id": "267665",
+                "trait_id": "20"
+            },
+            "273150": {
+                "description": "Your spells and abilities have a chance to draw a Wandering Soul from Thros to serve you for $280204d. The Soul blasts a nearby enemy every $280204t2 sec, dealing $s1 Shadow damage.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Ruinous Bolt",
+                "spell_id": "273150",
+                "trait_id": "156"
+            },
+            "273236": {
+                "description": "Immolation Aura increases your Armor by $s2, and causes melee attackers to take $s1 Fire damage.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Infernal Armor",
+                "spell_id": "273236",
+                "trait_id": "160"
+            },
+            "273682": {
+                "description": "Your spells and abilities have a chance to grant you Meticulous Scheming for $273685d, which transforms into Seize the Moment! after you cast $s3 different spells, granting you $s4 Haste for $273714d.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Meticulous Scheming",
+                "spell_id": "273682",
+                "trait_id": "192"
+            },
+            "273790": {
+                "description": "Your damaging abilities have a chance to call a Child of Rezan to viciously rend your target, dealing $s1 Physical damage and causing them to bleed for ${($273794d/$273794t2)*$s2} damage over $273794d.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Rezan's Fury",
+                "spell_id": "273790",
+                "trait_id": "157"
+            },
+            "273823": {
+                "description": "Your spells and abilities have a chance to draw a Wandering Soul from Thros to serve you for $280204d. The Soul increases your Critical Strike by $s1.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Blightborne Infusion",
+                "spell_id": "273823",
+                "trait_id": "193"
+            },
+            "273829": {
+                "description": "Your spells and abilities have a chance to create a Surging Droplet nearby. Collecting it increases your primary stat by $s1 for $273842d.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Secrets of the Deep",
+                "spell_id": "273829",
+                "trait_id": "195"
+            },
+            "273834": {
+                "description": "Your damaging abilities have a chance to invoke a tainted swamp beneath the target, siphoning ${$s1*6} health from them over $273836d.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Filthy Transfusion",
+                "spell_id": "273834",
+                "trait_id": "194"
+            },
+            "275934": {
+                "description": "Chaos Strike increases your Agility by $s1 for $275936d. Stacking this effect does not extend its duration.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Seething Power",
+                "spell_id": "275934",
+                "trait_id": "245"
+            },
+            "278493": {
+                "description": "Every $278729t1 sec, increase the damage of Chaos Strike by $s1 and reduce its cost by $s2 Fury. This effect stacks.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Thirsting Blades",
+                "spell_id": "278493",
+                "trait_id": "352"
+            },
+            "278501": {
+                "description": "$?s263642[Fracture][Shear] has a chance to rip Lesser Soul Fragments from up to $s2 nearby enemies, dealing $s1 Fire damage to each.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Essence Sever",
+                "spell_id": "278501",
+                "trait_id": "355"
+            },
+            "278502": {
+                "description": "Afflicting an enemy with a Sigil grants you $s1 Agility for $278769d and reduces the cooldown of your Sigils by $s2 sec. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Cycle of Binding",
+                "spell_id": "278502",
+                "trait_id": "354"
+            },
+            "279899": {
+                "description": "Your damaging abilities have a chance to grant $s1 critical strike rating for $279902d. This effect stacks up to $279902u times.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Unstable Flames",
+                "spell_id": "279899",
+                "trait_id": "459"
+            },
+            "279926": {
+                "description": "Azerite energy courses through you, reaching ${$s1*6} $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] and then diminishing down to $s1 $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat], cycling every 6 sec.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Earthlink",
+                "spell_id": "279926",
+                "trait_id": "461"
+            },
+            "280163": {
+                "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Barrage Of Many Bombs",
+                "spell_id": "280163",
+                "trait_id": "498"
+            },
+            "280168": {
+                "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Ricocheting Inflatable Pyrosaw",
+                "spell_id": "280168",
+                "trait_id": "499"
+            },
+            "280174": {
+                "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Synaptic Spark Capacitor",
+                "spell_id": "280174",
+                "trait_id": "500"
+            },
+            "280178": {
+                "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Relational Normalization Gizmo",
+                "spell_id": "280178",
+                "trait_id": "501"
+            },
+            "280284": {
+                "description": "Your damaging spells and abilities have a chance to fling a dagger at your target, causing them to bleed for ${$s1*$280286d/$280286t1} Physical damage over $280286d, stacking up to $280286u times. Stabbing them in the back applies $s2 stacks.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Dagger in the Back",
+                "spell_id": "280284",
+                "trait_id": "479"
+            },
+            "280380": {
+                "description": "Dealing damage has a chance to call down a Thunderous Blast, dealing $s1 Nature damage to the enemy and increasing the damage of Thunderous Blast by $280385s1%. At ${$s2*$280385s1}% increased damage, Thunderous Blast will critically hit and reset this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Thunderous Blast",
+                "spell_id": "280380",
+                "trait_id": "482"
+            },
+            "280402": {
+                "description": "Your damaging spells and abilities have a chance to release a tidal surge, dealing $s1 Frost damage to your target and slowing their movement speed by $280404s2% for $280404d.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Tidal Surge",
+                "spell_id": "280402",
+                "trait_id": "478"
+            },
+            "280407": {
+                "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $280409d. Killing an enemy refreshes the duration of this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Blood Rite",
+                "spell_id": "280407",
+                "trait_id": "480"
+            },
+            "280410": {
+                "description": "You occasionally loose a tremendous roar, increasing your Mastery by $s1 and granting $s2 Mastery to up to $280413i nearby allies. Lasts $280412d.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Incite the Pack",
+                "spell_id": "280410",
+                "trait_id": "481"
+            },
+            "280429": {
+                "description": "Your spells and abilities have a chance to conjure Swirling Sands, increasing your Critical Strike by $s1 for $280433d. Your critical effects extend Swirling Sands by ${$s2/1000} sec, up to a maximum duration of ${$280433d+($s3/1000)} sec.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Swirling Sands",
+                "spell_id": "280429",
+                "trait_id": "196"
+            },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
                 "max_itemlevel": -1,
@@ -1558,6 +1837,69 @@
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "trait_id": "485"
+            },
+            "280577": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280780d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Glory in Battle",
+                "spell_id": "280577",
+                "trait_id": "486"
+            },
+            "280579": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280788d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Retaliatory Fury",
+                "spell_id": "280579",
+                "trait_id": "487"
+            },
+            "280580": {
+                "description": "Your abilities have a chance to plant a factional banner for $280841d, empowering yourself and up to $s2 allies with the spirit of the Horde.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Combined Might",
+                "spell_id": "280580",
+                "trait_id": "490"
+            },
+            "280581": {
+                "description": "Your abilities have a chance to drop a Horde Banner for $280830d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Collective Will",
+                "spell_id": "280581",
+                "trait_id": "491"
+            },
+            "280582": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Horde by $s1. Applying Battlefield Focus to a member of the Alliance grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Focus",
+                "spell_id": "280582",
+                "trait_id": "488"
+            },
+            "280598": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280809d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Sylvanas' Resolve",
+                "spell_id": "280598",
+                "trait_id": "489"
+            },
+            "280710": {
+                "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Champion of Azeroth",
+                "spell_id": "280710",
+                "trait_id": "82"
             },
             "281514": {
                 "description": "Your spells and abilities have a chance to leak Azerite on the ground around you. Standing in the Azerite increases your primary stat by $s1 for $281516d.",

@@ -96,7 +96,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -160,7 +160,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -224,7 +224,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -288,7 +288,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -408,7 +408,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -472,7 +472,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -536,7 +536,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -600,7 +600,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -982,7 +982,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -1647,7 +1647,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -1730,7 +1730,7 @@
     "273236": {
         "class": {
             "Demon_Hunter": [
-                "Vengance"
+                "Vengeance"
             ]
         },
         "description": "Immolation Aura increases your Armor by $s2, and causes melee attackers to take $s1 Fire damage.",
@@ -2111,7 +2111,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -2175,7 +2175,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -2239,7 +2239,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -2303,7 +2303,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -2367,7 +2367,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -2431,7 +2431,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -3048,7 +3048,7 @@
         "class": {
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ]
         },
         "description": "Chaos Strike increases your Agility by $s1 for $275936d. Stacking this effect does not extend its duration.",
@@ -3525,7 +3525,7 @@
         "class": {
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ]
         },
         "description": "Every $278729t1 sec, increase the damage of Chaos Strike by $s1 and reduce its cost by $s2 Fury. This effect stacks.",
@@ -3551,7 +3551,7 @@
     "278501": {
         "class": {
             "Demon_Hunter": [
-                "Vengance"
+                "Vengeance"
             ]
         },
         "description": "$?s263642[Fracture][Shear] has a chance to rip Lesser Soul Fragments from up to $s2 nearby enemies, dealing $s1 Fire damage to each.",
@@ -3564,7 +3564,7 @@
     "278502": {
         "class": {
             "Demon_Hunter": [
-                "Vengance"
+                "Vengeance"
             ]
         },
         "description": "Afflicting an enemy with a Sigil grants you $s1 Agility for $278769d and reduces the cooldown of your Sigils by $s2 sec. ",
@@ -4499,7 +4499,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -4589,7 +4589,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -4807,7 +4807,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -4871,7 +4871,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -4957,7 +4957,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -5021,7 +5021,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -5107,7 +5107,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -5171,7 +5171,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -5235,7 +5235,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -5299,7 +5299,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -5363,7 +5363,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -5427,7 +5427,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -5619,7 +5619,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -5683,7 +5683,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -5747,7 +5747,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -5811,7 +5811,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -5875,7 +5875,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -5939,7 +5939,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
@@ -6135,7 +6135,7 @@
             ],
             "Demon_Hunter": [
                 "Havoc",
-                "Vengance"
+                "Vengeance"
             ],
             "Druid": [
                 "Balance",
