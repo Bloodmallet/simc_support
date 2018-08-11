@@ -567,7 +567,7 @@ __trinket_list = [
         "Construct Overcharger", "160652", 340, TITANFORGE_CAP,
         TRADER_TOKEN, True, False, False, False, False
     ),
-    Trinket(
+    Trinket(  # Uldir
         "Vigilant's Bloodshaper", "160651", 340, TITANFORGE_CAP,
         TRADER_TOKEN, False, True, False, False, False
     ),
@@ -575,7 +575,7 @@ __trinket_list = [
         name="Kul Tiran Cannonball Runner", item_id="159628", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False
     ),
-    Trinket(
+    Trinket(  # Uldir
         name="Vanquished Tendril of G'huun", item_id="160654", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
     ),
@@ -602,6 +602,10 @@ __trinket_list = [
     Trinket(  # uldir
         name="Disc of Systematic Regression", item_id="160650", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False
+    ),
+    Trinket(  # uldir
+        name="Twitching Tentacle of Xalzaix", item_id="160656", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False
     ),
     # Trinket(
     #     name="", item_id="", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
@@ -920,7 +924,7 @@ def __generate_talent_combinations(blueprint, wow_class, wow_spec):
                                 # check whether the generated talent combination fits the wanted blueprint
                                 for i in range(7):
                                     if (not (pattern[i] == "-" or pattern[i] == "x")
-                                            ) and not combination[i] == pattern[i]:
+                                        ) and not combination[i] == pattern[i]:
                                         add_it = False
                                     if combination[i] == "0" and (
                                         pattern[i] == "-" or pattern[i] == "x"
