@@ -495,14 +495,6 @@ __trinket_list = [
         False, True, False, False
     ),
     Trinket(
-        "Hurricane Heart", "161416", 355, TITANFORGE_CAP, TRADER_TOKEN, False,
-        False, True, False, False
-    ),
-    Trinket(
-        "Knot of Spiritual Fury", "161413", 355, TITANFORGE_CAP, TRADER_TOKEN,
-        False, False, True, False, False
-    ),
-    Trinket(
         "Kraulok's Claw", "161419", 355, TITANFORGE_CAP, TRADER_TOKEN, False,
         False, True, False, False
     ),
@@ -518,37 +510,13 @@ __trinket_list = [
         "Prism of Dark Intensity", "161376", 355, TITANFORGE_CAP, TRADER_TOKEN,
         False, False, True, False, False
     ),
-    # Trinket( # ???
-    #     "Razorcrest of the Enraged Matriarch", "161415", 340, TITANFORGE_CAP,
-    #     TRADER_TOKEN, True, False, False, False, False
-    # ),
-    # Trinket(
-    #     "Sandscoured Idol", "161417", 355, TITANFORGE_CAP, TRADER_TOKEN, False,
-    #     True, False, False, False
-    # ),
     Trinket(
         "Spiritbound Voodoo Burl", "161412", 355, TITANFORGE_CAP, TRADER_TOKEN, True,
         False, False, False, False
     ),
     Trinket(
-        "Sublimating Iceshard", "161382", 340, TITANFORGE_CAP, TRADER_TOKEN, False,
-        False, True, False, False
-    ),
-    Trinket(
         "T'zane's Barkspines", "161411", 340, TITANFORGE_CAP, TRADER_TOKEN, False,
         True, False, False, False
-    ),
-    Trinket(
-        "Tear of the Void", "161374", 340, TITANFORGE_CAP, TRADER_TOKEN, False,
-        True, False, False, False
-    ),
-    # Trinket( # ???
-    #     "Void Portal Stone", "161375", 340, TITANFORGE_CAP, TRADER_TOKEN, True,
-    #     False, False, False, False
-    # ),
-    Trinket(
-        "Wing Bone of the Budding Tempest", "161414", 340, TITANFORGE_CAP,
-        TRADER_TOKEN, False, True, False, False, False
     ),
     Trinket(
         "Darkmoon Deck: Squalls", "159126", 355, 355,
