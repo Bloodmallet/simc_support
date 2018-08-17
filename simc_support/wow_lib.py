@@ -14,6 +14,7 @@ DUNGEON_ITEMLEVEL = 310
 # highest available itemlevel from m+ dungeons. weekly chest is NOT included here
 M_PLUS_ITEMLEVEL = 340
 TITANFORGE_CAP = 355  # currently highest itemlevel titanforging cap
+EXPANSION_START_ITEMLEVEL = 280
 
 
 class Trinket(object):
@@ -45,6 +46,12 @@ class Trinket(object):
         self.melee: bool = bool(melee)
         self.ranged: bool = bool(ranged)
         self.legendary: bool = bool(legendary)
+
+    def get_name(self):
+        return self.name
+
+    def get_id(self):
+        return self.item_id
 
 
 __class_data = {
@@ -607,6 +614,74 @@ __trinket_list = [
         name="Twitching Tentacle of Xalzaix", item_id="160656", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False
     ),
+    Trinket(  # alchemy
+        name="Endless Tincture of Fractional Power", item_id="152636", min_itemlevel=300, max_itemlevel=300,
+        max_itemlevel_drop=300, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
+    Trinket(  # stormsong valley
+        name="Galewind Chimes", item_id="155568", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
+    Trinket(  # wq
+        name="Gilded Loa Figurine", item_id="158153", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
+    Trinket(  # wq
+        name="Emblem of Zandalar", item_id="158154", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
+    Trinket(  # wq
+        name="Dinobone Charm", item_id="158155", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
+    Trinket(  # wq
+        name="Pearl Diver's Compass", item_id="158162", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
+    Trinket(  # wq
+        name="First Mate's Spyglass", item_id="158163", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
+    Trinket(  # stormsong valley
+        name="Whirlwing's Plumage", item_id="158215", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
+    Trinket(  # stormsong valley
+        name="Living Oil Cannister", item_id="158216", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
+    # Trinket(  # stormsong valley - tank
+    #     name="Dadalea's Wing", item_id="158218", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
+    #     max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    # ),
+    Trinket(  # stormsong valley
+        name="Vial of Storms", item_id="158224", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
+    Trinket(  # stormsong valley
+        name="Doom Shroom", item_id="158555", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
+    Trinket(  # waycrest manor
+        name="Gore-Crusted Butcher's Block", item_id="159616", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False
+    ),
+    Trinket(  # stormsong valley
+        name="Snowpelt Mangler", item_id="160263", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
+    Trinket(  # nazmir
+        name="Incessantly Ticking Clock", item_id="161113", min_itemlevel=325, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
+   Trinket(  # vol'dun
+        name="Ravasaur Skull Bijou", item_id="161119", min_itemlevel=325, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
+    Trinket(  # nazmir
+        name="Crawg Gnawed Femur", item_id="163703", min_itemlevel=325, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
     # Trinket(
     #     name="", item_id="", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
     #     max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=False, melee=False, ranged=False
@@ -663,7 +738,46 @@ def get_mask_for_spec(wow_class, wow_spec):
     return (main_stat_agi, main_stat_int, main_stat_str, melee, ranged)
 
 
-def get_trinkets_for_spec(wow_class, wow_spec):
+def _compare_trinket_lists():
+    import pkg_resources
+
+    path = "equippable-items.json"
+
+    f = pkg_resources.ResourceManager().resource_stream(__name__, path)
+
+    loaded_items = json.load(f)
+
+    # compare from wow data to local list
+    print("Searching through equippable-items.json:")
+    missing = 0
+    for item in loaded_items:
+        if item["inventoryType"] == 12 and item["itemLevel"] >= EXPANSION_START_ITEMLEVEL:
+            found = False
+            for trinket in __trinket_list:
+                if trinket.get_name() == item["name"]:
+                    found = True
+
+            if not found:
+                missing += 1
+                print(
+                    f"  {item['name']} not found in local list! id: {item['id']}")
+    if missing:
+        print(f"{missing} trinkets are missing.\n")
+
+    print("Searching through local trinkets:")
+    for trinket in __trinket_list:
+        found = False
+
+        for item in loaded_items:
+            if int(trinket.get_id()) == int(item["id"]):
+                found = True
+
+        if not found:
+            print(
+                f"  {trinket.get_name()} not found in equippable-items.json! id: {trinket.get_id()}")
+
+
+def get_trinkets_for_spec(wow_class: str, wow_spec: str) -> list:
     """New function to return all available trinkets for a spec
 
     Arguments:
