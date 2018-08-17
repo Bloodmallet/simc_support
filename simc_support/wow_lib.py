@@ -755,6 +755,18 @@ def get_trinket(name: str ="", item_id: str ="") -> Trinket:
 
 
 def get_azerite_traits(wow_class: str, wow_spec: str) -> dict:
+    """Get all azerite traits for the givesn wow class and spec.
+
+    Arguments:
+        wow_class {str} -- [description]
+        wow_spec {str} -- [description]
+
+    Raises:
+        e -- [description]
+
+    Returns:
+        dict -- [description]
+    """
 
     import pkg_resources
 
@@ -840,7 +852,7 @@ def get_azerite_items(wow_class: str, wow_spec: str) -> dict:
                 pass
 
     # create a new itemlist with only items for the wow spec/class
-    response = {}
+    response: dict = {}
     class_id = get_class_id(wow_class)
     spec_id = get_spec_id(wow_class, wow_spec)  # unused...for now
 
@@ -850,24 +862,15 @@ def get_azerite_items(wow_class: str, wow_spec: str) -> dict:
             response[slot] = []
 
         for item in items[slot]:
-            not_of_wanted_class = True
+            new_trait_list = []
 
             for trait in item["azeriteTraits"]:
-                if trait["classId"] == class_id:
-                    not_of_wanted_class = False
+                if trait["classId"] == class_id and (trait["specUsable"] == [] or spec_id in trait["specUsable"]):
+                    new_trait_list.append(trait)
 
-                    # take out delete of traits based on specs, because provided spec list is faulty TODO: re-enable this purge
-                    # # delete trait if not for wanted spec
-                    # if trait["specUsable"] != [] and not spec_id in trait["specUsable"]:
-                    #   item["azeriteTraits"].remove(trait)
+            item["azeriteTraits"] = new_trait_list
 
-                else:
-                    # delete trait from list if it's not for the wanted class
-                    item["azeriteTraits"].remove(trait)
-
-            if not not_of_wanted_class:
-                # add item, even when layout is already present. we're NOT doing extended filtering here!
-                response[slot].append(item)
+            response[slot].append(item)
 
     return response
 
