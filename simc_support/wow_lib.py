@@ -952,7 +952,9 @@ def get_azerite_items(wow_class: str, wow_spec: str) -> dict:
 
             item["azeriteTraits"] = new_trait_list
 
-            response[slot].append(item)
+            if item["azeriteTraits"]:
+                # add item only to the response if it has traits for the givesn class/spec
+                response[slot].append(item)
 
     return response
 
