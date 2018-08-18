@@ -451,10 +451,6 @@ __trinket_list = [
         TRADER_TOKEN, True, True, False, False, False
     ),
     Trinket(
-        "Zandalari Dinobone Charm", "158155", WORLD_QUEST_ITEMLEVEL,
-        TITANFORGE_CAP, TRADER_TOKEN, True, True, True, False, False
-    ),
-    Trinket(
         "Zandalari Bijou", "158154", WORLD_QUEST_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, True, True, True, False, False
     ),
