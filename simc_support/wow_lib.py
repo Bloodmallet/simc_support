@@ -447,10 +447,6 @@ __trinket_list = [
         TRADER_TOKEN, False, False, True, False, False
     ),
     Trinket(
-        "Perl Diver's Compass", "158162", WORLD_QUEST_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, True, True, False, False, False
-    ),
-    Trinket(
         "Zandalari Bijou", "158154", WORLD_QUEST_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, True, True, True, False, False
     ),
