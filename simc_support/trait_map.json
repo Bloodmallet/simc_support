@@ -5996,18 +5996,60 @@
     },
     "280623": {
         "class": {
-            "Death_Knight": [],
-            "Demon_Hunter": [],
-            "Druid": [],
-            "Hunter": [],
-            "Mage": [],
-            "Monk": [],
-            "Paladin": [],
-            "Priest": [],
-            "Rogue": [],
-            "Shaman": [],
-            "Warlock": [],
-            "Warrior": []
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
         },
         "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
         "max_itemlevel": -1,
@@ -6018,18 +6060,60 @@
     },
     "280624": {
         "class": {
-            "Death_Knight": [],
-            "Demon_Hunter": [],
-            "Druid": [],
-            "Hunter": [],
-            "Mage": [],
-            "Monk": [],
-            "Paladin": [],
-            "Priest": [],
-            "Rogue": [],
-            "Shaman": [],
-            "Warlock": [],
-            "Warrior": []
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
         },
         "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
         "max_itemlevel": -1,
@@ -6040,18 +6124,60 @@
     },
     "280625": {
         "class": {
-            "Death_Knight": [],
-            "Demon_Hunter": [],
-            "Druid": [],
-            "Hunter": [],
-            "Mage": [],
-            "Monk": [],
-            "Paladin": [],
-            "Priest": [],
-            "Rogue": [],
-            "Shaman": [],
-            "Warlock": [],
-            "Warrior": []
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
         },
         "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
         "max_itemlevel": -1,
@@ -6062,18 +6188,60 @@
     },
     "280626": {
         "class": {
-            "Death_Knight": [],
-            "Demon_Hunter": [],
-            "Druid": [],
-            "Hunter": [],
-            "Mage": [],
-            "Monk": [],
-            "Paladin": [],
-            "Priest": [],
-            "Rogue": [],
-            "Shaman": [],
-            "Warlock": [],
-            "Warrior": []
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
         },
         "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
         "max_itemlevel": -1,
@@ -6084,18 +6252,60 @@
     },
     "280627": {
         "class": {
-            "Death_Knight": [],
-            "Demon_Hunter": [],
-            "Druid": [],
-            "Hunter": [],
-            "Mage": [],
-            "Monk": [],
-            "Paladin": [],
-            "Priest": [],
-            "Rogue": [],
-            "Shaman": [],
-            "Warlock": [],
-            "Warrior": []
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
         },
         "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
         "max_itemlevel": -1,
@@ -6106,18 +6316,60 @@
     },
     "280628": {
         "class": {
-            "Death_Knight": [],
-            "Demon_Hunter": [],
-            "Druid": [],
-            "Hunter": [],
-            "Mage": [],
-            "Monk": [],
-            "Paladin": [],
-            "Priest": [],
-            "Rogue": [],
-            "Shaman": [],
-            "Warlock": [],
-            "Warrior": []
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
         },
         "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
         "max_itemlevel": -1,

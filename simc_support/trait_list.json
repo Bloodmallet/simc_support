@@ -334,6 +334,60 @@
                 "spell_id": "280598",
                 "trait_id": "489"
             },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
+            },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
                 "max_itemlevel": -1,
@@ -722,6 +776,60 @@
                 "name": "Sylvanas' Resolve",
                 "spell_id": "280598",
                 "trait_id": "489"
+            },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
             },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
@@ -1121,6 +1229,60 @@
                 "spell_id": "280598",
                 "trait_id": "489"
             },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
+            },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
                 "max_itemlevel": -1,
@@ -1512,6 +1674,60 @@
                 "spell_id": "280598",
                 "trait_id": "489"
             },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
+            },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
                 "max_itemlevel": -1,
@@ -1891,6 +2107,60 @@
                 "name": "Sylvanas' Resolve",
                 "spell_id": "280598",
                 "trait_id": "489"
+            },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
             },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
@@ -2301,6 +2571,60 @@
                 "spell_id": "280598",
                 "trait_id": "489"
             },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
+            },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
                 "max_itemlevel": -1,
@@ -2708,6 +3032,60 @@
                 "spell_id": "280598",
                 "trait_id": "489"
             },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
+            },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
                 "max_itemlevel": -1,
@@ -3087,6 +3465,60 @@
                 "name": "Sylvanas' Resolve",
                 "spell_id": "280598",
                 "trait_id": "489"
+            },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
             },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
@@ -3479,6 +3911,60 @@
                 "spell_id": "280598",
                 "trait_id": "489"
             },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
+            },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
                 "max_itemlevel": -1,
@@ -3858,6 +4344,60 @@
                 "name": "Sylvanas' Resolve",
                 "spell_id": "280598",
                 "trait_id": "489"
+            },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
             },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
@@ -4248,6 +4788,60 @@
                 "spell_id": "280598",
                 "trait_id": "489"
             },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
+            },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
                 "max_itemlevel": -1,
@@ -4630,6 +5224,60 @@
                 "spell_id": "280598",
                 "trait_id": "489"
             },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
+            },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
                 "max_itemlevel": -1,
@@ -5010,6 +5658,60 @@
                 "spell_id": "280598",
                 "trait_id": "489"
             },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
+            },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
                 "max_itemlevel": -1,
@@ -5389,6 +6091,60 @@
                 "name": "Sylvanas' Resolve",
                 "spell_id": "280598",
                 "trait_id": "489"
+            },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
             },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
@@ -5771,6 +6527,60 @@
                 "name": "Sylvanas' Resolve",
                 "spell_id": "280598",
                 "trait_id": "489"
+            },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
             },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
@@ -6178,6 +6988,60 @@
                 "name": "Sylvanas' Resolve",
                 "spell_id": "280598",
                 "trait_id": "489"
+            },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
             },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
@@ -6606,6 +7470,60 @@
                 "spell_id": "280598",
                 "trait_id": "489"
             },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
+            },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
                 "max_itemlevel": -1,
@@ -7013,6 +7931,60 @@
                 "spell_id": "280598",
                 "trait_id": "489"
             },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
+            },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
                 "max_itemlevel": -1,
@@ -7403,6 +8375,60 @@
                 "name": "Sylvanas' Resolve",
                 "spell_id": "280598",
                 "trait_id": "489"
+            },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
             },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
@@ -7804,6 +8830,60 @@
                 "spell_id": "280598",
                 "trait_id": "489"
             },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
+            },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
                 "max_itemlevel": -1,
@@ -8174,6 +9254,60 @@
                 "name": "Sylvanas' Resolve",
                 "spell_id": "280598",
                 "trait_id": "489"
+            },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
             },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
@@ -8554,6 +9688,60 @@
                 "name": "Sylvanas' Resolve",
                 "spell_id": "280598",
                 "trait_id": "489"
+            },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
             },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
@@ -8954,6 +10142,60 @@
                 "name": "Sylvanas' Resolve",
                 "spell_id": "280598",
                 "trait_id": "489"
+            },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
             },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
@@ -9371,6 +10613,60 @@
                 "spell_id": "280598",
                 "trait_id": "489"
             },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
+            },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
                 "max_itemlevel": -1,
@@ -9771,6 +11067,60 @@
                 "spell_id": "280598",
                 "trait_id": "489"
             },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
+            },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
                 "max_itemlevel": -1,
@@ -10169,6 +11519,60 @@
                 "spell_id": "280598",
                 "trait_id": "489"
             },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
+            },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
                 "max_itemlevel": -1,
@@ -10557,6 +11961,60 @@
                 "name": "Sylvanas' Resolve",
                 "spell_id": "280598",
                 "trait_id": "489"
+            },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
             },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
@@ -10949,6 +12407,60 @@
                 "spell_id": "280598",
                 "trait_id": "489"
             },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
+            },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
                 "max_itemlevel": -1,
@@ -11338,6 +12850,60 @@
                 "spell_id": "280598",
                 "trait_id": "489"
             },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
+            },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
                 "max_itemlevel": -1,
@@ -11717,6 +13283,60 @@
                 "name": "Sylvanas' Resolve",
                 "spell_id": "280598",
                 "trait_id": "489"
+            },
+            "280623": {
+                "description": "Your spells and abilities have a chance to grant $s1 Critical Strike and $s2 Haste for $280852d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Liberator's Might",
+                "spell_id": "280623",
+                "trait_id": "492"
+            },
+            "280624": {
+                "description": "Your spells and abilities have a chance to grant $s1 Mastery and absorb $s2 damage for $280862d. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Last Gift",
+                "spell_id": "280624",
+                "trait_id": "493"
+            },
+            "280625": {
+                "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stronger Together",
+                "spell_id": "280625",
+                "trait_id": "496"
+            },
+            "280626": {
+                "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Stand As One",
+                "spell_id": "280626",
+                "trait_id": "497"
+            },
+            "280627": {
+                "description": "Your abilities have a chance to apply $s2 stacks of Battlefield Focus to an enemy, increasing damage taken from members of the Alliance by $s1. Applying Battlefield Focus to a member of the Horde grants an additional $s3 stacks. ",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Battlefield Precision",
+                "spell_id": "280627",
+                "trait_id": "494"
+            },
+            "280628": {
+                "description": "Your abilities have a chance to increase your $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 for $280876d. If an ally dies nearby, you gain this effect.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Anduin's Dedication",
+                "spell_id": "280628",
+                "trait_id": "495"
             },
             "280710": {
                 "description": "Your spells and abilities have a chance to increase all secondary stats by $s1 for $280713d, stacking up to $280713u times.",
