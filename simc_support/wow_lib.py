@@ -946,6 +946,27 @@ def get_azerite_items(wow_class: str, wow_spec: str) -> dict:
 
     return response
 
+def get_azerite_tier(wow_class: str, wow_spec: str, trait: str) -> int:
+    """Get the tier number of an azerite trait. Very costly search!
+
+    Arguments:
+        wow_class {str} -- [description]
+        wow_spec {str} -- [description]
+        trait {str} -- [description]
+
+    Returns:
+        int -- [description]
+    """
+
+    items = get_azerite_items(wow_class, wow_spec)
+
+    for slot in items:
+        for item in items[slot]:
+            for tmp_trait in item["azeriteTraits"]:
+                if tmp_trait["name"] == trait:
+                    return tmp_trait["tier"]
+    return None
+
 
 def get_all_trinkets():
     """Get a list of all known trinket names.
