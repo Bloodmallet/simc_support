@@ -963,8 +963,12 @@ def get_azerite_tier(wow_class: str, wow_spec: str, trait: str) -> int:
     for slot in items:
         for item in items[slot]:
             for tmp_trait in item["azeriteTraits"]:
-                if tmp_trait["name"] == trait:
-                    return tmp_trait["tier"]
+                #apparently there are bugged (?) traits without a name or proper spell id
+                try:
+                    if tmp_trait["name"] == trait:
+                        return tmp_trait["tier"]
+                except Exception:
+                    pass
     return None
 
 
