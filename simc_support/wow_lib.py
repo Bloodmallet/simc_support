@@ -427,10 +427,6 @@ __trinket_list = [
         False, False, True, False, False
     ),
     Trinket(
-        "Cannonball Hurdler", "159628", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, True, False, False, False, False
-    ),
-    Trinket(
         "Ignition Mage's Fuse", "159615", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, False, True, False, False, False
     ),
