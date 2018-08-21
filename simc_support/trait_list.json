@@ -8551,15 +8551,6 @@
                 "spell_id": "273150",
                 "trait_id": "156"
             },
-            "273452": {
-                "description": "Extra strikes from Sinister Strike increase the damage of your next Dispatch by $s1.",
-                "max_itemlevel": -1,
-                "max_stack": 1,
-                "min_itemlevel": -1,
-                "name": "Storm of Steel",
-                "spell_id": "273452",
-                "trait_id": "180"
-            },
             "273488": {
                 "description": "Envenom deals $s1 additional damage per combo point, and Envenom lasts for ${$s2/1000}.1 sec longer when it critically strikes.",
                 "max_itemlevel": -1,
@@ -8993,6 +8984,15 @@
                 "name": "Ruinous Bolt",
                 "spell_id": "273150",
                 "trait_id": "156"
+            },
+            "273452": {
+                "description": "Extra strikes from Sinister Strike increase the damage of your next Dispatch by $s1.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Storm of Steel",
+                "spell_id": "273452",
+                "trait_id": "180"
             },
             "273682": {
                 "description": "Your spells and abilities have a chance to grant you Meticulous Scheming for $273685d, which transforms into Seize the Moment! after you cast $s3 different spells, granting you $s4 Haste for $273714d.",
@@ -10851,15 +10851,6 @@
                 "spell_id": "275974",
                 "trait_id": "442"
             },
-            "277644": {
-                "description": "Summoning your Infernal increases the damage of your next $s2 Chaos Bolts by $s1.",
-                "max_itemlevel": -1,
-                "max_stack": 1,
-                "min_itemlevel": -1,
-                "name": "Crashing Chaos",
-                "spell_id": "277644",
-                "trait_id": "444"
-            },
             "278721": {
                 "description": "Agony deals up to an additional $<dmg> damage and starts with $s2 stacks.",
                 "max_itemlevel": -1,
@@ -11302,15 +11293,6 @@
                 "name": "Excoriate",
                 "spell_id": "276007",
                 "trait_id": "443"
-            },
-            "277644": {
-                "description": "Summoning your Infernal increases the damage of your next $s2 Chaos Bolts by $s1.",
-                "max_itemlevel": -1,
-                "max_stack": 1,
-                "min_itemlevel": -1,
-                "name": "Crashing Chaos",
-                "spell_id": "277644",
-                "trait_id": "444"
             },
             "278737": {
                 "description": "Hand of Gul'dan deals $s1 additional damage and has a $s2% chance per Soul Shard spent of refunding a Soul Shard.",

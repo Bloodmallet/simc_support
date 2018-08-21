@@ -1971,7 +1971,7 @@
     "273452": {
         "class": {
             "Rogue": [
-                "Assassination"
+                "Outlaw"
             ]
         },
         "description": "Extra strikes from Sinister Strike increase the damage of your next Dispatch by $s1.",
@@ -3198,8 +3198,6 @@
     "277644": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
                 "Destruction"
             ]
         },
