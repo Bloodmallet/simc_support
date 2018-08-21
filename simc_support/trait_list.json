@@ -10424,15 +10424,6 @@
                 "spell_id": "278719",
                 "trait_id": "420"
             },
-            "279829": {
-                "description": "Your Lava Burst deals $s2 additional damage, and your Lava Surge chance is increased to $s3%.",
-                "max_itemlevel": -1,
-                "max_stack": 1,
-                "min_itemlevel": -1,
-                "name": "Igneous Potential",
-                "spell_id": "279829",
-                "trait_id": "457"
-            },
             "279899": {
                 "description": "Your damaging abilities have a chance to grant $s1 critical strike rating for $279902d. This effect stacks up to $279902u times.",
                 "max_itemlevel": -1,

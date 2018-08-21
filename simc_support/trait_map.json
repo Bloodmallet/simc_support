@@ -4425,8 +4425,7 @@
     "279829": {
         "class": {
             "Shaman": [
-                "Elemental",
-                "Enhancement"
+                "Elemental"
             ]
         },
         "description": "Your Lava Burst deals $s2 additional damage, and your Lava Surge chance is increased to $s3%.",
