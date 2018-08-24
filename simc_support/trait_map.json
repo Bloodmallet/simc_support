@@ -4349,7 +4349,8 @@
     "279527": {
         "class": {
             "Druid": [
-                "Feral"
+                "Feral",
+                "Guardian"
             ]
         },
         "description": "Shred deals $s1 additional damage, and $?s202028[Brutal Slash][Swipe] deals $s2 additional damage, to enemies suffering from your Thrash.",

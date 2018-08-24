@@ -3277,6 +3277,15 @@
                 "spell_id": "278511",
                 "trait_id": "361"
             },
+            "279527": {
+                "description": "Shred deals $s1 additional damage, and $?s202028[Brutal Slash][Swipe] deals $s2 additional damage, to enemies suffering from your Thrash.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Wild Fleshrending",
+                "spell_id": "279527",
+                "trait_id": "359"
+            },
             "279552": {
                 "description": "Ironfur increases your Agility by $s1, and has a $s2% chance to grant $s3 applications.",
                 "max_itemlevel": -1,
