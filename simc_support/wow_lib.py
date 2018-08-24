@@ -443,10 +443,6 @@ __trinket_list = [
         TRADER_TOKEN, False, False, True, False, False
     ),
     Trinket(
-        "Zandalari Loa Figurine", "158153", WORLD_QUEST_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, True, True, True, False, False
-    ),
-    Trinket(
         "Cursed Captain's Charm", "161115", WORLD_QUEST_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, True, True, True, False, False
     ),
