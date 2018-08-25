@@ -4476,9 +4476,7 @@
     "279878": {
         "class": {
             "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
+                "Demonology"
             ]
         },
         "description": "When your Demonic Tyrant expires, consume its life essence, granting you a stack of Demonic Core and increasing your Intellect by $s1 for $279885d.",

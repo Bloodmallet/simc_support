@@ -10869,15 +10869,6 @@
                 "spell_id": "278727",
                 "trait_id": "426"
             },
-            "279878": {
-                "description": "When your Demonic Tyrant expires, consume its life essence, granting you a stack of Demonic Core and increasing your Intellect by $s1 for $279885d.",
-                "max_itemlevel": -1,
-                "max_stack": 1,
-                "min_itemlevel": -1,
-                "name": "Supreme Commander",
-                "spell_id": "279878",
-                "trait_id": "458"
-            },
             "279899": {
                 "description": "Your damaging abilities have a chance to grant $s1 critical strike rating for $279902d. This effect stacks up to $279902u times.",
                 "max_itemlevel": -1,
@@ -11745,15 +11736,6 @@
                 "name": "Chaotic Inferno",
                 "spell_id": "278748",
                 "trait_id": "432"
-            },
-            "279878": {
-                "description": "When your Demonic Tyrant expires, consume its life essence, granting you a stack of Demonic Core and increasing your Intellect by $s1 for $279885d.",
-                "max_itemlevel": -1,
-                "max_stack": 1,
-                "min_itemlevel": -1,
-                "name": "Supreme Commander",
-                "spell_id": "279878",
-                "trait_id": "458"
             },
             "279899": {
                 "description": "Your damaging abilities have a chance to grant $s1 critical strike rating for $279902d. This effect stacks up to $279902u times.",
