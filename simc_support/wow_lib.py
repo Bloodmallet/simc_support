@@ -191,6 +191,16 @@ __class_data = {
         "talents": "1010111",
         "id": 5,
         "specs": {
+            "Discipline": {
+                "role": "ranged",
+                "stat": "int",
+                "id": 257,
+            },
+            "Holy": {
+                "role": "ranged",
+                "stat": "int",
+                "id": 257,
+            },
             "Shadow": {
                 "role": "ranged",
                 "stat": "int",

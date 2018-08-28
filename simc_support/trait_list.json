@@ -1901,15 +1901,6 @@
                 "spell_id": "275934",
                 "trait_id": "245"
             },
-            "278493": {
-                "description": "Every $278729t1 sec, increase the damage of Chaos Strike by $s1 and reduce its cost by $s2 Fury. This effect stacks.",
-                "max_itemlevel": -1,
-                "max_stack": 1,
-                "min_itemlevel": -1,
-                "name": "Thirsting Blades",
-                "spell_id": "278493",
-                "trait_id": "352"
-            },
             "278501": {
                 "description": "$?s263642[Fracture][Shear] has a chance to rip Lesser Soul Fragments from up to $s2 nearby enemies, dealing $s1 Fire damage to each.",
                 "max_itemlevel": -1,

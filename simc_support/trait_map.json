@@ -3522,8 +3522,7 @@
     "278493": {
         "class": {
             "Demon_Hunter": [
-                "Havoc",
-                "Vengeance"
+                "Havoc"
             ]
         },
         "description": "Every $278729t1 sec, increase the damage of Chaos Strike by $s1 and reduce its cost by $s2 Fury. This effect stacks.",
