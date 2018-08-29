@@ -457,7 +457,7 @@ __trinket_list = [
         TRADER_TOKEN, True, True, True, False, False
     ),
     Trinket(
-        "Azurethos'Singed Plumage", "161377", 355, TITANFORGE_CAP, TRADER_TOKEN,
+        "Azurethos' Singed Plumage", "161377", 355, TITANFORGE_CAP, TRADER_TOKEN,
         False, True, False, False, False
     ),
     Trinket(
@@ -706,9 +706,9 @@ def _compare_trinket_lists():
 
     path = "equippable-items.json"
 
-    f = pkg_resources.ResourceManager().resource_stream(__name__, path)
+    with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
 
-    loaded_items = json.load(f)
+        loaded_items = json.load(f, encoding="UTF-8")
 
     # compare from wow data to local list
     print("Searching through equippable-items.json:")
@@ -783,6 +783,64 @@ def get_trinkets_for_spec(wow_class: str, wow_spec: str) -> list:
             ))
     return return_list
 
+def get_trinket_list() -> list:
+    """Get a full trinket list for the ongoing expansion from equippable-items.json.
+
+    Returns:
+        list -- item list
+    """
+
+    import pkg_resources
+
+    path = "equippable-items.json"
+
+    with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
+
+        loaded_items = json.load(f, encoding="UTF-8")
+
+    item_list: list = []
+
+    for item in loaded_items:
+        if item["inventoryType"] == 12 and item["itemLevel"] >= 280:
+            item_list.append(item)
+
+    return item_list
+
+def get_item_translation(item_name: str = "", item_id: int = None, item_list: list = None) -> dict:
+    """Get the translation dictionary for an item. If item_list is provided, the lookup time is quicker.
+
+    Keyword Arguments:
+        item_name {str} -- English name of the Item (default: {""})
+        item_id {int} -- Item ID (default: {None})
+        item_list {list} -- item_list, can be generated with get_trinket_list() (default: {None})
+
+    Raises:
+        LookupError -- If no translation is found in data
+
+    Returns:
+        dict -- {language_shorthand: translation}
+    """
+
+    if item_list:
+        loaded_items = item_list
+
+    else:
+        import pkg_resources
+
+        path = "equippable-items.json"
+
+        with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
+
+            loaded_items = json.load(f, encoding="UTF-8")
+
+    for item in loaded_items:
+        if item_name and item_name == item["name"]:
+            return item["names"]
+        elif item_id and int(item_id) == item["id"]:
+            return item["names"]
+
+    raise LookupError("Translation not found for {}{}".format(item_name, item_id))
+
 
 def get_second_trinket_for_spec(wow_class, wow_spec):
     main_stat = get_main_stat(wow_class, wow_spec)
@@ -814,7 +872,7 @@ def get_trinket_id(trinket_name):
 
 
 def get_trinket(name: str ="", item_id: str ="") -> Trinket:
-    """Return Trinket of matching name or item_id. One must be provided. Else it'll return None.
+    """Return Trinket of matching name or item_id. One must be provided. Else None will be returned.
 
     Keyword Arguments:
       name {str} -- name of the trinket (default: {""})
@@ -849,9 +907,9 @@ def get_azerite_traits(wow_class: str, wow_spec: str) -> dict:
 
     path = "trait_list.json"
 
-    f = pkg_resources.ResourceManager().resource_stream(__name__, path)
+    with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
 
-    traits = json.load(f)
+        traits = json.load(f, encoding="UTF-8")
 
     try:
         return traits[wow_class.title()][wow_spec.title()]
@@ -882,11 +940,11 @@ def get_azerite_items(wow_class: str, wow_spec: str) -> dict:
 
     path = "equippable-items.json"
 
-    f = pkg_resources.ResourceManager().resource_stream(__name__, path)
+    with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
 
-    loaded_items = json.load(f)
+        loaded_items = json.load(f, encoding="UTF-8")
 
-    items = {
+    items: dict = {
         "head": [],
         "shoulders": [],
         "chest": []
@@ -909,9 +967,9 @@ def get_azerite_items(wow_class: str, wow_spec: str) -> dict:
     # enrich dict with azerite traits
     path = "azerite-power-sets.json"
 
-    f = pkg_resources.ResourceManager().resource_stream(__name__, path)
+    with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
 
-    azerite_traits = json.load(f)
+        azerite_traits = json.load(f, encoding="UTF-8")
 
     for slot in items:
         for i in range(len(items[slot])):
@@ -1160,7 +1218,7 @@ def get_races() -> list:
       list[wow_race_name{str}] -- List of all wow race names
     """
 
-    races = []
+    races: list = []
     for faction in __races.keys():
         for race in __races[faction].keys():
             if not race in races:
@@ -1178,7 +1236,7 @@ def get_races_for_class(wow_class: str) -> list:
       list[wow_race_name{str}] -- List of all available races to the given wow_class.
     """
 
-    race_list = []
+    race_list: list = []
     for faction in __races.keys():
         for race in __races[faction].keys():
             # additionally prevent double races like pandaren
@@ -1199,7 +1257,7 @@ def get_role(wow_class: str, wow_spec: str) -> str:
       str -- role ('ranged'/'melee')
     """
 
-    return __class_data[wow_class.title()]["specs"][wow_spec.title()]["role"]
+    return __class_data[wow_class.title()]["specs"][wow_spec.title()]["role"] # type: ignore
 
 
 def get_class_id(wow_class: str) -> int:
@@ -1212,7 +1270,7 @@ def get_class_id(wow_class: str) -> int:
       int -- wow_class_id
     """
 
-    return __class_data[wow_class.title()]["id"]
+    return __class_data[wow_class.title()]["id"] # type: ignore
 
 
 def get_spec_id(wow_class: str, wow_spec: str) -> int:
@@ -1226,7 +1284,7 @@ def get_spec_id(wow_class: str, wow_spec: str) -> int:
       int -- wow_spec_id
     """
 
-    return __class_data[wow_class.title()]["specs"][wow_spec.title()]["id"]
+    return __class_data[wow_class.title()]["specs"][wow_spec.title()]["id"] # type: ignore
 
 
 def get_main_stat(wow_class, wow_spec):
