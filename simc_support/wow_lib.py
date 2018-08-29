@@ -640,6 +640,11 @@ __trinket_list = [
         name="Crawg Gnawed Femur", item_id="163703", min_itemlevel=325, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
     ),
+    Trinket(  # airdrop
+        name="Dread Aspirant's Badge", item_id="162966", min_itemlevel=325, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
+
     # Trinket(
     #     name="", item_id="", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
     #     max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=False, melee=False, ranged=False
