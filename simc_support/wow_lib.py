@@ -449,7 +449,7 @@ __trinket_list = [
         TRADER_TOKEN, False, True, False, False, False
     ),
     Trinket(
-        "Gorecrusted Butcher's Block", "159616", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Gore-Crusted Butcher's Block", "159616", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, False, False, True, False, False
     ),
     Trinket(
@@ -843,6 +843,16 @@ def get_item_translation(item_name: str = "", item_id: int = None, item_list: li
 
 
 def get_second_trinket_for_spec(wow_class, wow_spec):
+    """Returns a vers stat stick for the spec.
+
+    Arguments:
+        wow_class {[type]} -- [description]
+        wow_spec {[type]} -- [description]
+
+    Returns:
+        [type] -- [description]
+    """
+
     main_stat = get_main_stat(wow_class, wow_spec)
     if main_stat == "agi":
         # "Stat Stick (Versatility)", "142506,bonus_id=607"
@@ -890,7 +900,7 @@ def get_trinket(name: str ="", item_id: str ="") -> Trinket:
 
 
 def get_azerite_traits(wow_class: str, wow_spec: str) -> dict:
-    """Get all azerite traits for the givesn wow class and spec.
+    """Get all azerite traits for the given wow class and spec.
 
     Arguments:
         wow_class {str} -- [description]
@@ -900,7 +910,7 @@ def get_azerite_traits(wow_class: str, wow_spec: str) -> dict:
         e -- [description]
 
     Returns:
-        dict -- [description]
+        dict -- Dict{spell_id: str : Dict{description: str : str, max_itemlevel: str : int, max_stack: str : int, min_itemlevel: str : int, name: str : str, spell_id: str : str, trait_id: str : str}}
     """
 
     import pkg_resources
