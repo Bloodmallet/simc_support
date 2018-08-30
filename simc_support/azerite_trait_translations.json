@@ -1,0 +1,1919 @@
+{
+  "Azerite Empowered": {
+    "de_DE": "Azeritverstärkt",
+    "en_US": "Azerite Empowered",
+    "es_ES": "Azerita potenciada",
+    "fr_FR": "Renforcé par l’azérite",
+    "it_IT": "Potenziamento d'Azerite",
+    "pt_BR": "Potencializado com Azerita",
+    "ru_RU": "Азеритовое усиление"
+  },
+  "Elemental Whirl": {
+    "de_DE": "Elementarwirbel",
+    "en_US": "Elemental Whirl",
+    "es_ES": "Remolino elemental",
+    "fr_FR": "Tourbillon élémentaire",
+    "it_IT": "Turbine Elementale",
+    "pt_BR": "Redemoinho Elemental",
+    "ru_RU": "Круговерть стихий"
+  },
+  "Heed My Call": {
+    "de_DE": "Hört meinen Ruf",
+    "en_US": "Heed My Call",
+    "es_ES": "Escuchar mi llamada",
+    "fr_FR": "Entendez mon appel",
+    "it_IT": "Ascolto della Chiamata",
+    "pt_BR": "Ouça Meu Chamado",
+    "ru_RU": "Услышь мой зов"
+  },
+  "Blood Siphon": {
+    "de_DE": "Blutsog",
+    "en_US": "Blood Siphon",
+    "es_ES": "Succión de sangre",
+    "fr_FR": "Siphon de sang",
+    "it_IT": "Aspirazione del Sangue",
+    "pt_BR": "Sifão de Sangue",
+    "ru_RU": "Вытягивание крови"
+  },
+  "Overwhelming Power": {
+    "de_DE": "Überwältigende Kraft",
+    "en_US": "Overwhelming Power",
+    "es_ES": "Poder sobrecogedor",
+    "fr_FR": "Puissance accablante",
+    "it_IT": "Potenza Opprimente",
+    "pt_BR": "Poder Subjugador",
+    "ru_RU": "Переполняющая мощь"
+  },
+  "Azerite Globules": {
+    "de_DE": "Azeritkugeln",
+    "en_US": "Azerite Globules",
+    "es_ES": "Glóbulos de azerita",
+    "fr_FR": "Globules d’azérite",
+    "it_IT": "Globuli d'Azerite",
+    "pt_BR": "Glóbulos de Azerita",
+    "ru_RU": "Капли азерита"
+  },
+  "Gutripper": {
+    "de_DE": "Magenfetzer",
+    "en_US": "Gutripper",
+    "es_ES": "Arrancatripas",
+    "fr_FR": "Arrache-tripes",
+    "it_IT": "Sbudellamento",
+    "pt_BR": "Rasgatripa",
+    "ru_RU": "Вспарывание"
+  },
+  "Lifespeed": {
+    "de_DE": "Lebensgeschwindigkeit",
+    "en_US": "Lifespeed",
+    "es_ES": "Velocidad vital",
+    "fr_FR": "Vitesse vitale",
+    "it_IT": "Velocità Vitale",
+    "pt_BR": "Velocidade Vital",
+    "ru_RU": "Спасительная скорость"
+  },
+  "Deep Cuts": {
+    "de_DE": "Tiefe Schnitte",
+    "en_US": "Deep Cuts",
+    "es_ES": "Cortes profundos",
+    "fr_FR": "Coupures profondes",
+    "it_IT": "Tagli Profondi",
+    "pt_BR": "Cortes Profundos",
+    "ru_RU": "Глубокие порезы"
+  },
+  "Bone Spike Graveyard": {
+    "de_DE": "Knochenstachelfriedhof",
+    "en_US": "Bone Spike Graveyard",
+    "es_ES": "Cementerio de púas osarias",
+    "fr_FR": "Cimetière de pointes d’os",
+    "it_IT": "Cimitero di Aculei Ossei",
+    "pt_BR": "Cemitério de Espigões Ósseos",
+    "ru_RU": "Костяной шип"
+  },
+  "Ruinous Bolt": {
+    "de_DE": "Zermürbender Blitz",
+    "en_US": "Ruinous Bolt",
+    "es_ES": "Descarga ruinosa",
+    "fr_FR": "Éclair ruineux",
+    "it_IT": "Dardo Rovinoso",
+    "pt_BR": "Seta Ruinosa",
+    "ru_RU": "Губительная стрела"
+  },
+  "Meticulous Scheming": {
+    "de_DE": "Durchtriebene Intrigen",
+    "en_US": "Meticulous Scheming",
+    "es_ES": "Intriga meticulosa",
+    "fr_FR": "Planification méticuleuse",
+    "it_IT": "Intrigo Meticoloso",
+    "pt_BR": "Maquinações Meticulosas",
+    "ru_RU": "Скрупулезное планирование"
+  },
+  "Rezan's Fury": {
+    "de_DE": "Rezans Furor",
+    "en_US": "Rezan's Fury",
+    "es_ES": "Furia de Rezan",
+    "fr_FR": "Fureur de Rezan",
+    "it_IT": "Furia di Rezan",
+    "pt_BR": "Fúria de Rezan",
+    "ru_RU": "Ярость Резана"
+  },
+  "Blightborne Infusion": {
+    "de_DE": "Seuchenerbeninfusion",
+    "en_US": "Blightborne Infusion",
+    "es_ES": "Infusión de vástagos del añublo",
+    "fr_FR": "Infusion chancre-née",
+    "it_IT": "Infusione della Piaga Nascente",
+    "pt_BR": "Infusão Filha da Praga",
+    "ru_RU": "Насыщение гнилью"
+  },
+  "Secrets of the Deep": {
+    "de_DE": "Geheimnisse der Tiefe",
+    "en_US": "Secrets of the Deep",
+    "es_ES": "Secretos de las profundidades",
+    "fr_FR": "Secrets des profondeurs",
+    "it_IT": "Segreti del Profondo",
+    "pt_BR": "Segredos das Profundezas",
+    "ru_RU": "Тайны глубин"
+  },
+  "Filthy Transfusion": {
+    "de_DE": "Schmutzige Transfusion",
+    "en_US": "Filthy Transfusion",
+    "es_ES": "Transfusión inmunda",
+    "fr_FR": "Transfusion contaminée",
+    "it_IT": "Trasfusione Sudicia",
+    "pt_BR": "Transfusão Imunda",
+    "ru_RU": "Пагубное переливание"
+  },
+  "Eternal Rune Weapon": {
+    "de_DE": "Ewige Runenwaffe",
+    "en_US": "Eternal Rune Weapon",
+    "es_ES": "Runa de arma eterna",
+    "fr_FR": "Arme runique éternelle",
+    "it_IT": "Arma Runica Eterna",
+    "pt_BR": "Arma Rúnica Eterna",
+    "ru_RU": "Вечное руническое оружие"
+  },
+  "Unstable Flames": {
+    "de_DE": "Instabile Flammen",
+    "en_US": "Unstable Flames",
+    "es_ES": "Llamas inestables",
+    "fr_FR": "Flammes instables",
+    "it_IT": "Fiamme Instabili",
+    "pt_BR": "Chamas Instáveis",
+    "ru_RU": "Нестабильное пламя"
+  },
+  "Earthlink": {
+    "de_DE": "Erdenband",
+    "en_US": "Earthlink",
+    "es_ES": "Vínculo terrestre",
+    "fr_FR": "Lien de terre",
+    "it_IT": "Legame Terrestre",
+    "pt_BR": "Vínculo Terreno",
+    "ru_RU": "Узы земли"
+  },
+  "Barrage Of Many Bombs": {
+    "de_DE": "Streubombenhagel",
+    "en_US": "Barrage Of Many Bombs",
+    "es_ES": "Tromba de muchas bombas",
+    "fr_FR": "Barrage de bombes",
+    "it_IT": "Raffica di Molte Bombe",
+    "pt_BR": "Barragem de Muitas Bombas",
+    "ru_RU": "Бомбы, бомбы и еще раз бомбы"
+  },
+  "Ricocheting Inflatable Pyrosaw": {
+    "de_DE": "Rumspringende irritierende Pyrosäge",
+    "en_US": "Ricocheting Inflatable Pyrosaw",
+    "es_ES": "Rebotador inflable pírico",
+    "fr_FR": "Robo-scie Imprévisible Pyromaniaque",
+    "it_IT": "Rimbalzante Ingombante Pirosega",
+    "pt_BR": "Rotosserra Inflável Pirotequicante",
+    "ru_RU": "Гоблинская рикошетящая огненная бензопила"
+  },
+  "Synaptic Spark Capacitor": {
+    "de_DE": "Synaptischer Funkenkompensator",
+    "en_US": "Synaptic Spark Capacitor",
+    "es_ES": "Condensador de chispas sináptico",
+    "fr_FR": "Condensateur d’allumage synaptique",
+    "it_IT": "Condensatore di Scintille Sinaptico",
+    "pt_BR": "Capacitador de Centelhas Sinápticas",
+    "ru_RU": "Конденсатор синаптического разряда"
+  },
+  "Relational Normalization Gizmo": {
+    "de_DE": "Relationsnormalisierungsskalierer",
+    "en_US": "Relational Normalization Gizmo",
+    "es_ES": "Chisme de normalización relacional",
+    "fr_FR": "Bidule de normalisation relationnelle",
+    "it_IT": "Ingranaggio Normalizzante Relazionale",
+    "pt_BR": "Dispositivo de Normalização Relacional",
+    "ru_RU": "Релятивистский нормализационный гаджет"
+  },
+  "Dagger in the Back": {
+    "de_DE": "Dolch im Rücken",
+    "en_US": "Dagger in the Back",
+    "es_ES": "Daga en la espalda",
+    "fr_FR": "Dague surprise",
+    "it_IT": "Pugnalata alla Schiena",
+    "pt_BR": "Adaga nas Costas",
+    "ru_RU": "Кинжал в спину"
+  },
+  "Thunderous Blast": {
+    "de_DE": "Donnernder Einschlag",
+    "en_US": "Thunderous Blast",
+    "es_ES": "Explosión atronadora",
+    "fr_FR": "Explosion tonitruante",
+    "it_IT": "Detonazione Tonante",
+    "pt_BR": "Impacto Trovejante",
+    "ru_RU": "Раскатистый гром"
+  },
+  "Tidal Surge": {
+    "de_DE": "Gezeitenwoge",
+    "en_US": "Tidal Surge",
+    "es_ES": "Fuerza del oleaje",
+    "fr_FR": "Reflux des marée",
+    "it_IT": "Inoculazione Mareale",
+    "pt_BR": "Surto das Marés",
+    "ru_RU": "Приливная волна"
+  },
+  "Blood Rite": {
+    "de_DE": "Blutritus",
+    "en_US": "Blood Rite",
+    "es_ES": "Rito de sangre",
+    "fr_FR": "Rite de sang",
+    "it_IT": "Rito del Sangue",
+    "pt_BR": "Rito de Sangue",
+    "ru_RU": "Кровавый ритуал"
+  },
+  "Incite the Pack": {
+    "de_DE": "Rudelansporn",
+    "en_US": "Incite the Pack",
+    "es_ES": "Incitar a la manada",
+    "fr_FR": "Provoquer la meute",
+    "it_IT": "Incitamento del Branco",
+    "pt_BR": "Incitar a Matilha",
+    "ru_RU": "Азарт стаи"
+  },
+  "Swirling Sands": {
+    "de_DE": "Wirbelnde Sande",
+    "en_US": "Swirling Sands",
+    "es_ES": "Remolino de arena",
+    "fr_FR": "Sables tourbillonnants",
+    "it_IT": "Sabbie Vorticanti",
+    "pt_BR": "Turbilhão de Areia",
+    "ru_RU": "Песчаный вихрь"
+  },
+  "Archive of the Titans": {
+    "de_DE": "Archiv der Titanen",
+    "en_US": "Archive of the Titans",
+    "es_ES": "Archivo de los titanes",
+    "fr_FR": "Archive des titans",
+    "it_IT": "Archivio dei Titani",
+    "pt_BR": "Arquivo dos Titãs",
+    "ru_RU": "Архив титанов"
+  },
+  "Laser Matrix": {
+    "de_DE": "Lasermatrix",
+    "en_US": "Laser Matrix",
+    "es_ES": "Matriz láser",
+    "fr_FR": "Matrice laser",
+    "it_IT": "Matrice Laser",
+    "pt_BR": "Matriz de Laser",
+    "ru_RU": "Лазерная решетка"
+  },
+  "Glory in Battle": {
+    "de_DE": "Ruhm im Kampf",
+    "en_US": "Glory in Battle",
+    "es_ES": "Gloria en la batalla",
+    "fr_FR": "Gloire au combat",
+    "it_IT": "Gloria in Battaglia",
+    "pt_BR": "Glória em Combate",
+    "ru_RU": "Боевая слава"
+  },
+  "Retaliatory Fury": {
+    "de_DE": "Vergeltungsfuror",
+    "en_US": "Retaliatory Fury",
+    "es_ES": "Furia vengativa",
+    "fr_FR": "Fureur de représailles",
+    "it_IT": "Furia di Rappresaglia",
+    "pt_BR": "Fúria Retaliatória",
+    "ru_RU": "Яростная контратака"
+  },
+  "Combined Might": {
+    "de_DE": "Geballte Macht",
+    "en_US": "Combined Might",
+    "es_ES": "Poderío combinado",
+    "fr_FR": "Puissance combinée",
+    "it_IT": "Vigore Combinato",
+    "pt_BR": "Força Combinada",
+    "ru_RU": "Объединенная мощь"
+  },
+  "Collective Will": {
+    "de_DE": "Vereinter Wille",
+    "en_US": "Collective Will",
+    "es_ES": "Voluntad colectiva",
+    "fr_FR": "Volonté collective",
+    "it_IT": "Volontà Collettiva",
+    "pt_BR": "Vontade Coletiva",
+    "ru_RU": "Совместная воля"
+  },
+  "Battlefield Focus": {
+    "de_DE": "Schlachtfeldfokus",
+    "en_US": "Battlefield Focus",
+    "es_ES": "Foco del campo de batalla",
+    "fr_FR": "Concentration du combattant",
+    "it_IT": "Focus del Campo di Battaglia",
+    "pt_BR": "Concentração no Campo de Batalha",
+    "ru_RU": "Боевое сосредоточение"
+  },
+  "Sylvanas' Resolve": {
+    "de_DE": "Sylvanas' Entschlossenheit",
+    "en_US": "Sylvanas' Resolve",
+    "es_ES": "Resolución de Sylvanas",
+    "fr_FR": "Résolution de Sylvanas",
+    "it_IT": "Risolutezza di Sylvanas",
+    "pt_BR": "Determinação de Sylvana",
+    "ru_RU": "Непреклонность Сильваны"
+  },
+  "Liberator's Might": {
+    "de_DE": "Macht des Befreiers",
+    "en_US": "Liberator's Might",
+    "es_ES": "Poderío de liberador",
+    "fr_FR": "Puissance du libérateur",
+    "it_IT": "Vigore del Liberatore",
+    "pt_BR": "Poder do Libertador",
+    "ru_RU": "Мощь освободителя"
+  },
+  "Last Gift": {
+    "de_DE": "Letzte Gabe",
+    "en_US": "Last Gift",
+    "es_ES": "Última ofrenda",
+    "fr_FR": "Dernière offrande",
+    "it_IT": "Ultimo Dono",
+    "pt_BR": "Última Dádiva",
+    "ru_RU": "Прощальный дар"
+  },
+  "Stronger Together": {
+    "de_DE": "Gemeinsam stärker",
+    "en_US": "Stronger Together",
+    "es_ES": "La unión hace la fuerza",
+    "fr_FR": "L’union fait la force",
+    "it_IT": "Uniti si Vince",
+    "pt_BR": "Juntos Somos Mais Fortes",
+    "ru_RU": "Сила в единстве"
+  },
+  "Stand As One": {
+    "de_DE": "Vereint stehen",
+    "en_US": "Stand As One",
+    "es_ES": "Luchar unidos",
+    "fr_FR": "Front uni",
+    "it_IT": "Combattere Uniti",
+    "pt_BR": "Todos Juntos",
+    "ru_RU": "Все за мной!"
+  },
+  "Battlefield Precision": {
+    "de_DE": "Schlachtfeldpräzision",
+    "en_US": "Battlefield Precision",
+    "es_ES": "Precisión de campo de batalla",
+    "fr_FR": "Précision du champ de bataille",
+    "it_IT": "Precisione del Campo di Battaglia",
+    "pt_BR": "Precisão no Campo de Batalha",
+    "ru_RU": "Боевая точность"
+  },
+  "Anduin's Dedication": {
+    "de_DE": "Anduins Hingabe",
+    "en_US": "Anduin's Dedication",
+    "es_ES": "Dedicación de Anduin",
+    "fr_FR": "Dévouement à Anduin",
+    "it_IT": "Devozione di Anduin",
+    "pt_BR": "Dedicação de Anduin",
+    "ru_RU": "Преданность Андуина"
+  },
+  "Champion of Azeroth": {
+    "de_DE": "Champion von Azeroth",
+    "en_US": "Champion of Azeroth",
+    "es_ES": "Campeón de Azeroth",
+    "fr_FR": "Champion d’Azeroth",
+    "it_IT": "Campione di Azeroth",
+    "pt_BR": "Campeão de Azeroth",
+    "ru_RU": "Защитник Азерот"
+  },
+  "Unstable Catalyst": {
+    "de_DE": "Instabiler Katalysator",
+    "en_US": "Unstable Catalyst",
+    "es_ES": "Catalizador inestable",
+    "fr_FR": "Catalyseur instable",
+    "it_IT": "Catalizzatore Instabile",
+    "pt_BR": "Catalisador Instável",
+    "ru_RU": "Неустойчивый катализатор"
+  },
+  "Tradewinds": {
+    "de_DE": "Handelswinde",
+    "en_US": "Tradewinds",
+    "es_ES": "Vientos alisios",
+    "fr_FR": "Alizés",
+    "it_IT": "Ventisaldi",
+    "pt_BR": "Vento Mercante",
+    "ru_RU": "Семь Ветров"
+  },
+  "Icy Citadel": {
+    "de_DE": "Eisige Zitadelle",
+    "en_US": "Icy Citadel",
+    "es_ES": "Ciudadela helada",
+    "fr_FR": "Citadelle glacée",
+    "it_IT": "Cittadella Ghiacciata",
+    "pt_BR": "Cidadela de Gelo",
+    "ru_RU": "Ледяная цитадель"
+  },
+  "Latent Chill": {
+    "de_DE": "Latente Kühle",
+    "en_US": "Latent Chill",
+    "es_ES": "Frío latente",
+    "fr_FR": "Froid latent",
+    "it_IT": "Brivido Latente",
+    "pt_BR": "Frio Latente",
+    "ru_RU": "Затаившаяся стужа"
+  },
+  "Glacial Contagion": {
+    "de_DE": "Eisige Ansteckung",
+    "en_US": "Glacial Contagion",
+    "es_ES": "Contagio glacial",
+    "fr_FR": "Contagion glaciale",
+    "it_IT": "Contagio Glaciale",
+    "pt_BR": "Contágio Glacial",
+    "ru_RU": "Ледяное заражение"
+  },
+  "Echoing Howl": {
+    "de_DE": "Hallendes Geheule",
+    "en_US": "Echoing Howl",
+    "es_ES": "Aullido resonante",
+    "fr_FR": "Hurlement résonnant",
+    "it_IT": "Ululato Echeggiante",
+    "pt_BR": "Uivo Ecoante",
+    "ru_RU": "Завывание ветра"
+  },
+  "Killer Frost": {
+    "de_DE": "Killerfrost",
+    "en_US": "Killer Frost",
+    "es_ES": "Escarcha asesina",
+    "fr_FR": "Givre funeste",
+    "it_IT": "Sicario del Gelo",
+    "pt_BR": "Gelo Matador",
+    "ru_RU": "Мороз-убийца"
+  },
+  "Frozen Tempest": {
+    "de_DE": "Eisiger Sturm",
+    "en_US": "Frozen Tempest",
+    "es_ES": "Tempestad de hielo",
+    "fr_FR": "Tempête gelée",
+    "it_IT": "Tempesta Congelata",
+    "pt_BR": "Tempestade Congelada",
+    "ru_RU": "Ледяная буря"
+  },
+  "Festering Doom": {
+    "de_DE": "Schwärende Verdammnis",
+    "en_US": "Festering Doom",
+    "es_ES": "Fatalidad purulenta",
+    "fr_FR": "Destin purulent",
+    "it_IT": "Rovina Putrescente",
+    "pt_BR": "Ruína Supurante",
+    "ru_RU": "Разлагающая погибель"
+  },
+  "Horrid Experimentation": {
+    "de_DE": "Entsetzliches Experiment",
+    "en_US": "Horrid Experimentation",
+    "es_ES": "Experimentación horrible",
+    "fr_FR": "Abjecte création",
+    "it_IT": "Esperimento Orrido",
+    "pt_BR": "Experimento Hórrido",
+    "ru_RU": "Чудовищный эксперимент"
+  },
+  "Festermight": {
+    "de_DE": "Eitermacht",
+    "en_US": "Festermight",
+    "es_ES": "Putrefuerza",
+    "fr_FR": "Supérulence",
+    "it_IT": "Morbo Putrido",
+    "pt_BR": "Poder Purulento",
+    "ru_RU": "Гниение - сила"
+  },
+  "Harrowing Decay": {
+    "de_DE": "Entsetzlicher Verfall",
+    "en_US": "Harrowing Decay",
+    "es_ES": "Descomposición angustiosa",
+    "fr_FR": "Décomposition lancinante",
+    "it_IT": "Decadimento Straziante",
+    "pt_BR": "Decomposição Lancinante",
+    "ru_RU": "Быстрое разложение"
+  },
+  "Cankerous Wounds": {
+    "de_DE": "Entzündete Wunden",
+    "en_US": "Cankerous Wounds",
+    "es_ES": "Heridas ulcerativas",
+    "fr_FR": "Ulcérations",
+    "it_IT": "Ferite Ulcerose",
+    "pt_BR": "Feridas Gangrenantes",
+    "ru_RU": "Смертельные язвы"
+  },
+  "Last Surprise": {
+    "de_DE": "Letzte Überraschung",
+    "en_US": "Last Surprise",
+    "es_ES": "Sorpresa final",
+    "fr_FR": "Ultime surprise",
+    "it_IT": "Ultima Sorpresa",
+    "pt_BR": "Última Surpresa",
+    "ru_RU": "Последний сюрприз"
+  },
+  "Furious Gaze": {
+    "de_DE": "Wildes Starren",
+    "en_US": "Furious Gaze",
+    "es_ES": "Mirada furiosa",
+    "fr_FR": "Regard furieux",
+    "it_IT": "Sguardo Furioso",
+    "pt_BR": "Olhar Furioso",
+    "ru_RU": "Яростный взор"
+  },
+  "Unbound Chaos": {
+    "de_DE": "Entfesseltes Chaos",
+    "en_US": "Unbound Chaos",
+    "es_ES": "Caos desatado",
+    "fr_FR": "Chaos délié",
+    "it_IT": "Caos Indomabile",
+    "pt_BR": "Caos Liberado",
+    "ru_RU": "Необузданный хаос"
+  },
+  "Seething Power": {
+    "de_DE": "Brodelnde Macht",
+    "en_US": "Seething Power",
+    "es_ES": "Poder iracundo",
+    "fr_FR": "Puissance tumultueuse",
+    "it_IT": "Potere Ribollente",
+    "pt_BR": "Poder Fervente",
+    "ru_RU": "Бурлящая сила"
+  },
+  "Thirsting Blades": {
+    "de_DE": "Durstige Klingen",
+    "en_US": "Thirsting Blades",
+    "es_ES": "Hojas sedientas",
+    "fr_FR": "Lames assoiffées",
+    "it_IT": "Lame Assetate",
+    "pt_BR": "Espadas Sedentas",
+    "ru_RU": "Ненасытные клинки"
+  },
+  "Eyes of Rage": {
+    "de_DE": "Augen voll Wut",
+    "en_US": "Eyes of Rage",
+    "es_ES": "Ojos iracundos",
+    "fr_FR": "Rayon de rage pure",
+    "it_IT": "Occhi della Rabbia",
+    "pt_BR": "Olhos da Fúria",
+    "ru_RU": "Гневный взгляд"
+  },
+  "Revolving Blades": {
+    "de_DE": "Drehende Klingen",
+    "en_US": "Revolving Blades",
+    "es_ES": "Hojas giratorias",
+    "fr_FR": "Lames tournoyantes",
+    "it_IT": "Lame Rotanti",
+    "pt_BR": "Lâminas Revolventes",
+    "ru_RU": "Вращающиеся клинки"
+  },
+  "Infernal Armor": {
+    "de_DE": "Höllische Rüstung",
+    "en_US": "Infernal Armor",
+    "es_ES": "Armadura infernal",
+    "fr_FR": "Armure infernale",
+    "it_IT": "Armatura Infernale",
+    "pt_BR": "Armadura Infernal",
+    "ru_RU": "Инфернальная броня"
+  },
+  "Essence Sever": {
+    "de_DE": "Essenz abtrennen",
+    "en_US": "Essence Sever",
+    "es_ES": "Segar esencia",
+    "fr_FR": "Scission d’essence",
+    "it_IT": "Squarto d'Essenza",
+    "pt_BR": "Arrancar Essência",
+    "ru_RU": "Рассечение сущности"
+  },
+  "Cycle of Binding": {
+    "de_DE": "Kreis der Bindung",
+    "en_US": "Cycle of Binding",
+    "es_ES": "Ciclo vinculante",
+    "fr_FR": "Cycle de liens",
+    "it_IT": "Ciclo del Vincolo",
+    "pt_BR": "Círculo da Vinculação",
+    "ru_RU": "Цикл запечатывания"
+  },
+  "On My Way": {
+    "de_DE": "Unterwegs",
+    "en_US": "On My Way",
+    "es_ES": "En camino",
+    "fr_FR": "En route",
+    "it_IT": "Sulla Strada",
+    "pt_BR": "A Caminho",
+    "ru_RU": "Полный вперед"
+  },
+  "Streaking Stars": {
+    "de_DE": "Streifende Sterne",
+    "en_US": "Streaking Stars",
+    "es_ES": "Buena estrella",
+    "fr_FR": "Voie étoilée",
+    "it_IT": "Scia di Stelle",
+    "pt_BR": "Estrelas Sequentes",
+    "ru_RU": "Стремительные звезды"
+  },
+  "Power of the Moon": {
+    "de_DE": "Macht des Mondes",
+    "en_US": "Power of the Moon",
+    "es_ES": "Poder de la luna",
+    "fr_FR": "Pouvoir de la lune",
+    "it_IT": "Potenza della Luna",
+    "pt_BR": "Poder da Lua",
+    "ru_RU": "Лунная сила"
+  },
+  "Sunblaze": {
+    "de_DE": "Sonnenflamme",
+    "en_US": "Sunblaze",
+    "es_ES": "Llamarada solar",
+    "fr_FR": "Brasier solaire",
+    "it_IT": "Fiammata Solare",
+    "pt_BR": "Ardessol",
+    "ru_RU": "Солнечный ожог"
+  },
+  "Dawning Sun": {
+    "de_DE": "Aufgehende Sonne",
+    "en_US": "Dawning Sun",
+    "es_ES": "Sol del atardecer",
+    "fr_FR": "Point du jour",
+    "it_IT": "Sole dell'Alba",
+    "pt_BR": "Sol da Aurora",
+    "ru_RU": "Восходящее солнце"
+  },
+  "High Noon": {
+    "de_DE": "Schlag zwölf",
+    "en_US": "High Noon",
+    "es_ES": "Sol de mediodía",
+    "fr_FR": "Soleil de plomb",
+    "it_IT": "Mezzogiorno di Fuoco",
+    "pt_BR": "Zênite",
+    "ru_RU": "Ровно полдень"
+  },
+  "Lunar Shrapnel": {
+    "de_DE": "Mondschrapnell",
+    "en_US": "Lunar Shrapnel",
+    "es_ES": "Metralla lunar",
+    "fr_FR": "Fragments lunaires",
+    "it_IT": "Scheggia Lunare",
+    "pt_BR": "Estilhaços Lunares",
+    "ru_RU": "Лунные осколки"
+  },
+  "Lively Spirit": {
+    "de_DE": "Lebhafter Geist",
+    "en_US": "Lively Spirit",
+    "es_ES": "Espíritu animado",
+    "fr_FR": "Esprit décidé",
+    "it_IT": "Spirito Vivace",
+    "pt_BR": "Espírito Vivaz",
+    "ru_RU": "Живость духа"
+  },
+  "Raking Ferocity": {
+    "de_DE": "Wilde Krallen",
+    "en_US": "Raking Ferocity",
+    "es_ES": "Ferocidad desatada",
+    "fr_FR": "Griffure féroce",
+    "it_IT": "Ferocia Graffiante",
+    "pt_BR": "Ferocidade Estraçalhante",
+    "ru_RU": "Свирепое терзание"
+  },
+  "Shredding Fury": {
+    "de_DE": "Schredderfuror",
+    "en_US": "Shredding Fury",
+    "es_ES": "Furia trituradora",
+    "fr_FR": "Fureur lacérante",
+    "it_IT": "Furia Tagliuzzante",
+    "pt_BR": "Fúria Despedaçante",
+    "ru_RU": "Когти ярости"
+  },
+  "Twisted Claws": {
+    "de_DE": "Gekrümmte Klauen",
+    "en_US": "Twisted Claws",
+    "es_ES": "Zarpas retorcidas",
+    "fr_FR": "Griffes tordues",
+    "it_IT": "Artigli Distorti",
+    "pt_BR": "Garras Pervertidas",
+    "ru_RU": "Изогнутые когти"
+  },
+  "Iron Jaws": {
+    "de_DE": "Eisenbeißer",
+    "en_US": "Iron Jaws",
+    "es_ES": "Fauces de hierro",
+    "fr_FR": "Mâchoires de fer",
+    "it_IT": "Fauci di Ferro",
+    "pt_BR": "Mandíbulas de Ferro",
+    "ru_RU": "Стальные челюсти"
+  },
+  "Gushing Lacerations": {
+    "de_DE": "Spritzende Schnitte",
+    "en_US": "Gushing Lacerations",
+    "es_ES": "Laceraciones sangrantes",
+    "fr_FR": "Lacérations frénétiques",
+    "it_IT": "Lacerazioni Zampillanti",
+    "pt_BR": "Lacerações Jorrantes",
+    "ru_RU": "Кровоточащие разрывы"
+  },
+  "Blood Mist": {
+    "de_DE": "Blutnebel",
+    "en_US": "Blood Mist",
+    "es_ES": "Neblina de sangre",
+    "fr_FR": "Brume de sang",
+    "it_IT": "Nebbia del Sangue",
+    "pt_BR": "Névoa de Sangue",
+    "ru_RU": "Кровавая пелена"
+  },
+  "Wild Fleshrending": {
+    "de_DE": "Wildes Fleischreißen",
+    "en_US": "Wild Fleshrending",
+    "es_ES": "Sacrificador salvaje",
+    "fr_FR": "Taillade sauvage",
+    "it_IT": "Squartamento Selvaggio",
+    "pt_BR": "Rasgação Selvagem",
+    "ru_RU": "Неистовое раздирание"
+  },
+  "Masterful Instincts": {
+    "de_DE": "Meisterhafte Instinkte",
+    "en_US": "Masterful Instincts",
+    "es_ES": "Instintos maestros",
+    "fr_FR": "Instincts magistraux",
+    "it_IT": "Istinti Magistrali",
+    "pt_BR": "Instintos Primorosos",
+    "ru_RU": "Отточенные инстинкты"
+  },
+  "Guardian's Wrath": {
+    "de_DE": "Zorn des Wächters",
+    "en_US": "Guardian's Wrath",
+    "es_ES": "Ira del guardián",
+    "fr_FR": "Courroux du gardien",
+    "it_IT": "Ira del Guardiano",
+    "pt_BR": "Ira do Guardião",
+    "ru_RU": "Гнев стража"
+  },
+  "Layered Mane": {
+    "de_DE": "Verflochtene Mähne",
+    "en_US": "Layered Mane",
+    "es_ES": "Crin con capas",
+    "fr_FR": "Crinière épaisse",
+    "it_IT": "Manto a Strati",
+    "pt_BR": "Juba Espessa",
+    "ru_RU": "Густая грива"
+  },
+  "Serrated Jaws": {
+    "de_DE": "Gezackte Kiefer",
+    "en_US": "Serrated Jaws",
+    "es_ES": "Fauces serradas",
+    "fr_FR": "Mâchoire dentelée",
+    "it_IT": "Morsa Seghettata",
+    "pt_BR": "Mandíbulas Serrilhadas",
+    "ru_RU": "Острые зубы"
+  },
+  "Haze of Rage": {
+    "de_DE": "Dunst der Wut",
+    "en_US": "Haze of Rage",
+    "es_ES": "Neblina de ira",
+    "fr_FR": "Brouillard de rage",
+    "it_IT": "Annebbiamento Rabbioso",
+    "pt_BR": "Neblina de Ódio",
+    "ru_RU": "Дурманящий гнев"
+  },
+  "Dance of Death": {
+    "de_DE": "Totentanz",
+    "en_US": "Dance of Death",
+    "es_ES": "Baile de la muerte",
+    "fr_FR": "Danse de mort",
+    "it_IT": "Danza della Morte",
+    "pt_BR": "Dança da Morte",
+    "ru_RU": "Танец смерти"
+  },
+  "Pack Alpha": {
+    "de_DE": "Rudelalpha",
+    "en_US": "Pack Alpha",
+    "es_ES": "Alfa de la manada",
+    "fr_FR": "Chef de meute",
+    "it_IT": "Alfa del Branco",
+    "pt_BR": "Alfa da Matilha",
+    "ru_RU": "Альфа-особь"
+  },
+  "Feeding Frenzy": {
+    "de_DE": "Fressrausch",
+    "en_US": "Feeding Frenzy",
+    "es_ES": "Frenesí hambriento",
+    "fr_FR": "Frénésie dévorante",
+    "it_IT": "Ferocia Famelica",
+    "pt_BR": "Frenesi Predatório",
+    "ru_RU": "Бешеный аппетит"
+  },
+  "Rapid Reload": {
+    "de_DE": "Schnellnachladen",
+    "en_US": "Rapid Reload",
+    "es_ES": "Recarga rápida",
+    "fr_FR": "Rechargement rapide",
+    "it_IT": "Ricarica Rapida",
+    "pt_BR": "Recarregamento Rápido",
+    "ru_RU": "Быстрая перезарядка"
+  },
+  "Primal Instincts": {
+    "de_DE": "Urinstinkte",
+    "en_US": "Primal Instincts",
+    "es_ES": "Instintos primigenios",
+    "fr_FR": "Instincts primaux",
+    "it_IT": "Istinti Primordiali",
+    "pt_BR": "Instintos Primevos",
+    "ru_RU": "Первобытные инстинкты"
+  },
+  "In The Rhythm": {
+    "de_DE": "Im Rhythmus",
+    "en_US": "In The Rhythm",
+    "es_ES": "Al compás",
+    "fr_FR": "En rythme",
+    "it_IT": "A Ritmo",
+    "pt_BR": "No Ritmo",
+    "ru_RU": "Чувство ритма"
+  },
+  "Arcane Flurry": {
+    "de_DE": "Arkanhagel",
+    "en_US": "Arcane Flurry",
+    "es_ES": "Aluvión Arcano",
+    "fr_FR": "Déluge des Arcanes",
+    "it_IT": "Vortice Arcano",
+    "pt_BR": "Rajada Arcana",
+    "ru_RU": "Чародейский шквал"
+  },
+  "Unerring Vision": {
+    "de_DE": "Unfehlbare Sicht",
+    "en_US": "Unerring Vision",
+    "es_ES": "Visión infalible",
+    "fr_FR": "Vision infaillible",
+    "it_IT": "Visione Precisa",
+    "pt_BR": "Visão Infalível",
+    "ru_RU": "Верный глаз"
+  },
+  "Steady Aim": {
+    "de_DE": "Ruhige Hand",
+    "en_US": "Steady Aim",
+    "es_ES": "Pulso firme",
+    "fr_FR": "Visée précise",
+    "it_IT": "Mira Ferma",
+    "pt_BR": "Mira Estável",
+    "ru_RU": "Твердая рука"
+  },
+  "Focused Fire": {
+    "de_DE": "Konzentriertes Feuer",
+    "en_US": "Focused Fire",
+    "es_ES": "Fuego enfocado",
+    "fr_FR": "Feu focalisé",
+    "it_IT": "Fuoco Concentrato",
+    "pt_BR": "Fogo Focalizado",
+    "ru_RU": "Средоточие огня"
+  },
+  "Wildfire Cluster": {
+    "de_DE": "Lauffeuerstreubombe",
+    "en_US": "Wildfire Cluster",
+    "es_ES": "Racimo de fuego salvaje",
+    "fr_FR": "Amas de feux de brousse",
+    "it_IT": "Fascio di Fuocobrado",
+    "pt_BR": "Dispersão de Fogo Indômito",
+    "ru_RU": "Кассетные огнебомбы"
+  },
+  "Latent Poison": {
+    "de_DE": "Latentes Gift",
+    "en_US": "Latent Poison",
+    "es_ES": "Veneno latente",
+    "fr_FR": "Poison latent",
+    "it_IT": "Veleno Latente",
+    "pt_BR": "Veneno Latente",
+    "ru_RU": "Медленный яд"
+  },
+  "Venomous Fangs": {
+    "de_DE": "Giftzähne",
+    "en_US": "Venomous Fangs",
+    "es_ES": "Colmillos venenosos",
+    "fr_FR": "Crocs venimeux",
+    "it_IT": "Zanne Velenose",
+    "pt_BR": "Presas Envenenadas",
+    "ru_RU": "Ядовитые клыки"
+  },
+  "Blur of Talons": {
+    "de_DE": "Blitzschnelle Krallen",
+    "en_US": "Blur of Talons",
+    "es_ES": "Garfas borrosas",
+    "fr_FR": "Bestialité",
+    "it_IT": "Turbinio d'Artigli",
+    "pt_BR": "Borrão de Garras",
+    "ru_RU": "Молниеносные когти"
+  },
+  "Wilderness Survival": {
+    "de_DE": "Überleben der Wildnis",
+    "en_US": "Wilderness Survival",
+    "es_ES": "Supervivencia salvaje",
+    "fr_FR": "Survie en terre hostile",
+    "it_IT": "Sopravvivenza nella Selva",
+    "pt_BR": "Sobrevivência na Selva",
+    "ru_RU": "Выживание в природе"
+  },
+  "Up Close And Personal": {
+    "de_DE": "Aufdringlich nah",
+    "en_US": "Up Close And Personal",
+    "es_ES": "Cara a cara",
+    "fr_FR": "Combat singulier",
+    "it_IT": "Da Vicino e Personalmente",
+    "pt_BR": "Bem Pertinho",
+    "ru_RU": "Лицом к лицу"
+  },
+  "Arcane Pummeling": {
+    "de_DE": "Arkandresche",
+    "en_US": "Arcane Pummeling",
+    "es_ES": "Aporreo Arcano",
+    "fr_FR": "Correction arcanique",
+    "it_IT": "Percussione Arcana",
+    "pt_BR": "Surra Arcana",
+    "ru_RU": "Чародейский разгром"
+  },
+  "Brain Storm": {
+    "de_DE": "Hirnsturm",
+    "en_US": "Brain Storm",
+    "es_ES": "Tormenta cerebral",
+    "fr_FR": "Tempête mentale",
+    "it_IT": "Colpo di Genio",
+    "pt_BR": "Tempestade Cerebral",
+    "ru_RU": "Мозговой шторм"
+  },
+  "Arcane Pressure": {
+    "de_DE": "Arkaner Druck",
+    "en_US": "Arcane Pressure",
+    "es_ES": "Presión Arcana",
+    "fr_FR": "Pression des Arcanes",
+    "it_IT": "Pressione Arcana",
+    "pt_BR": "Pressão Arcana",
+    "ru_RU": "Чародейский натиск"
+  },
+  "Galvanizing Spark": {
+    "de_DE": "Elektrisierender Funke",
+    "en_US": "Galvanizing Spark",
+    "es_ES": "Chispa galvanizadora",
+    "fr_FR": "Étincelle galvanisante",
+    "it_IT": "Scintilla Galvanizzante",
+    "pt_BR": "Centelha Galvanizadora",
+    "ru_RU": "Заряжающая искра"
+  },
+  "Explosive Echo": {
+    "de_DE": "Explosionsecho",
+    "en_US": "Explosive Echo",
+    "es_ES": "Eco explosivo",
+    "fr_FR": "Écho explosif",
+    "it_IT": "Eco Esplosiva",
+    "pt_BR": "Eco Explosivo",
+    "ru_RU": "Эхо взрыва"
+  },
+  "Anomalous Impact": {
+    "de_DE": "Anomaler Einschlag",
+    "en_US": "Anomalous Impact",
+    "es_ES": "Impacto anómalo",
+    "fr_FR": "Impact anormal",
+    "it_IT": "Impatto Anomalo",
+    "pt_BR": "Impacto Anômalo",
+    "ru_RU": "Аномальное воздействие"
+  },
+  "Flames of Alacrity": {
+    "de_DE": "Flammen des Eifers",
+    "en_US": "Flames of Alacrity",
+    "es_ES": "Llamas de prontitud",
+    "fr_FR": "Flammes d’empressement",
+    "it_IT": "Fiamme dell'Alacrità",
+    "pt_BR": "Chamas da Diligência",
+    "ru_RU": "Пламя рвения"
+  },
+  "Preheat": {
+    "de_DE": "Vorheizen",
+    "en_US": "Preheat",
+    "es_ES": "Precalentar",
+    "fr_FR": "Préchauffage",
+    "it_IT": "Riscaldamento",
+    "pt_BR": "Preaquecimento",
+    "ru_RU": "Прогрев"
+  },
+  "Blaster Master": {
+    "de_DE": "Meisterlicher Feuerschlag",
+    "en_US": "Blaster Master",
+    "es_ES": "Maestría de explosión",
+    "fr_FR": "Maître du feu",
+    "it_IT": "Esperto in Esplosioni",
+    "pt_BR": "Mestre dos Impactos",
+    "ru_RU": "Взрыв искусности"
+  },
+  "Trailing Embers": {
+    "de_DE": "Glühende Schneise",
+    "en_US": "Trailing Embers",
+    "es_ES": "Ascuas con rastro",
+    "fr_FR": "Sillon de braises",
+    "it_IT": "Traccia di Braci",
+    "pt_BR": "Rastro de Brasas",
+    "ru_RU": "Осколки глыбы"
+  },
+  "Duplicative Incineration": {
+    "de_DE": "Doppeleinäscherung",
+    "en_US": "Duplicative Incineration",
+    "es_ES": "Incineración doble",
+    "fr_FR": "Propagation enflammée",
+    "it_IT": "Incenerimento Duplicativo",
+    "pt_BR": "Incineração Duplicativa",
+    "ru_RU": "Огненный дубль"
+  },
+  "Firemind": {
+    "de_DE": "Flammende Gedanken",
+    "en_US": "Firemind",
+    "es_ES": "Mente ígnea",
+    "fr_FR": "Esprit avivé",
+    "it_IT": "Mente Infuocata",
+    "pt_BR": "Mente Ígnea",
+    "ru_RU": "Пылающий разум"
+  },
+  "Packed Ice": {
+    "de_DE": "Gebündeltes Eis",
+    "en_US": "Packed Ice",
+    "es_ES": "Hielo compacto",
+    "fr_FR": "Glace compactée",
+    "it_IT": "Ghiaccio Carico",
+    "pt_BR": "Gelo Compactado",
+    "ru_RU": "Плотный лед"
+  },
+  "Winter's Reach": {
+    "de_DE": "Griff des Winters",
+    "en_US": "Winter's Reach",
+    "es_ES": "Alcance del invierno",
+    "fr_FR": "Hiver sans fin",
+    "it_IT": "Presa dell'Inverno",
+    "pt_BR": "Alcance Invernal",
+    "ru_RU": "Прикосновение зимы"
+  },
+  "Tunnel of Ice": {
+    "de_DE": "Eistunnel",
+    "en_US": "Tunnel of Ice",
+    "es_ES": "Túnel de hielo",
+    "fr_FR": "Tunnel de glace",
+    "it_IT": "Tunnel di Ghiaccio",
+    "pt_BR": "Túnel de Gelo",
+    "ru_RU": "Ледяной туннель"
+  },
+  "Whiteout": {
+    "de_DE": "Weißer Tod",
+    "en_US": "Whiteout",
+    "es_ES": "Tormenta de nieve",
+    "fr_FR": "Froid pénétrant",
+    "it_IT": "Incubo Bianco",
+    "pt_BR": "Tormento Gélido",
+    "ru_RU": "Белая мгла"
+  },
+  "Frigid Grasp": {
+    "de_DE": "Eisiger Griff",
+    "en_US": "Frigid Grasp",
+    "es_ES": "Yugo gélido",
+    "fr_FR": "Étreinte algide",
+    "it_IT": "Presa Frigida",
+    "pt_BR": "Aperto Gélido",
+    "ru_RU": "Ледяной захват"
+  },
+  "Glacial Assault": {
+    "de_DE": "Gletschereinschlag",
+    "en_US": "Glacial Assault",
+    "es_ES": "Asalto glacial",
+    "fr_FR": "Assaut glacial",
+    "it_IT": "Assalto Glaciale",
+    "pt_BR": "Ataque Glacial",
+    "ru_RU": "Леденящий штурм"
+  },
+  "Boiling Brew": {
+    "de_DE": "Kochendes Bräu",
+    "en_US": "Boiling Brew",
+    "es_ES": "Brebaje hirviente",
+    "fr_FR": "Breuvage bouillant",
+    "it_IT": "Miscuglio Bollente",
+    "pt_BR": "Cerveja Fervente",
+    "ru_RU": "Кипящий отвар"
+  },
+  "Training of Niuzao": {
+    "de_DE": "Niuzaos Training",
+    "en_US": "Training of Niuzao",
+    "es_ES": "Entrenamiento de Niuzao",
+    "fr_FR": "Enseignements de Niuzao",
+    "it_IT": "Addestramento di Niuzao",
+    "pt_BR": "Treinamento de Niuzao",
+    "ru_RU": "Уроки Нюцзао"
+  },
+  "Elusive Footwork": {
+    "de_DE": "Schlüpfrige Fußarbeit",
+    "en_US": "Elusive Footwork",
+    "es_ES": "Movimientos elusivos",
+    "fr_FR": "Actions insaisissables",
+    "it_IT": "Movimenti Inafferrabili",
+    "pt_BR": "Movimentação Evasiva",
+    "ru_RU": "Нокаутирующая верткость"
+  },
+  "Pressure Point": {
+    "de_DE": "Druckpunkt",
+    "en_US": "Pressure Point",
+    "es_ES": "Punto de presión",
+    "fr_FR": "Point de pression",
+    "it_IT": "Punto di Pressione",
+    "pt_BR": "Ponto de Pressão",
+    "ru_RU": "Уязвимая точка"
+  },
+  "Iron Fists": {
+    "de_DE": "Eiserne Fäuste",
+    "en_US": "Iron Fists",
+    "es_ES": "Puños de hierro",
+    "fr_FR": "Poings de fer",
+    "it_IT": "Pugni di Ferro",
+    "pt_BR": "Punhos de Ferro",
+    "ru_RU": "Железные кулаки"
+  },
+  "Sunrise Technique": {
+    "de_DE": "Technik des Sonnenaufgangs",
+    "en_US": "Sunrise Technique",
+    "es_ES": "Técnica del amanecer",
+    "fr_FR": "Technique du lever de soleil",
+    "it_IT": "Tecnica dell'Alba",
+    "pt_BR": "Técnica do Sol Nascente",
+    "ru_RU": "Техника грядущего восхода"
+  },
+  "Swift Roundhouse": {
+    "de_DE": "Schneller Rundumtritt",
+    "en_US": "Swift Roundhouse",
+    "es_ES": "Patada circular presta",
+    "fr_FR": "Coup de pied circulaire fulgurant",
+    "it_IT": "Calcio Rotante Rapido",
+    "pt_BR": "Chute Giratório Veloz",
+    "ru_RU": "Быстрый удар с разворота"
+  },
+  "Meridian Strikes": {
+    "de_DE": "Meridianschläge",
+    "en_US": "Meridian Strikes",
+    "es_ES": "Golpes meridianos",
+    "fr_FR": "Frappes méridiennes",
+    "it_IT": "Assalti Meridiani",
+    "pt_BR": "Ataques Meridianos",
+    "ru_RU": "Удары зенита"
+  },
+  "Open Palm Strikes": {
+    "de_DE": "Handflächenschläge",
+    "en_US": "Open Palm Strikes",
+    "es_ES": "Golpes de palma abierta",
+    "fr_FR": "Frappes de la paume",
+    "it_IT": "Colpo di Palmo Aperto",
+    "pt_BR": "Golpe de Palma Aberta",
+    "ru_RU": "Удары ладонями"
+  },
+  "Avenger's Might": {
+    "de_DE": "Macht des Rächers",
+    "en_US": "Avenger's Might",
+    "es_ES": "Poderío del vengador",
+    "fr_FR": "Puissance du vengeur",
+    "it_IT": "Vigore del Vendicatore",
+    "pt_BR": "Poder do Vingador",
+    "ru_RU": "Мощь карателя"
+  },
+  "Righteous Flames": {
+    "de_DE": "Rechtschaffene Flammen",
+    "en_US": "Righteous Flames",
+    "es_ES": "Llamas de rectitud",
+    "fr_FR": "Flammes vertueuses",
+    "it_IT": "Fiamme Virtuose",
+    "pt_BR": "Chamas Íntegras",
+    "ru_RU": "Пламя праведников"
+  },
+  "Deferred Sentence": {
+    "de_DE": "Aufgeschobener Richtspruch",
+    "en_US": "Deferred Sentence",
+    "es_ES": "Sentencia aplazada",
+    "fr_FR": "Peine avec sursis",
+    "it_IT": "Sentenza Rinviata",
+    "pt_BR": "Sentença Preterida",
+    "ru_RU": "Отложенный приговор"
+  },
+  "Inner Light": {
+    "de_DE": "Inneres Licht",
+    "en_US": "Inner Light",
+    "es_ES": "Luz interior",
+    "fr_FR": "Lumière intérieure",
+    "it_IT": "Luce Interiore",
+    "pt_BR": "Luz Interior",
+    "ru_RU": "Внутренний свет"
+  },
+  "Indomitable Justice": {
+    "de_DE": "Unbezähmbare Gerechtigkeit",
+    "en_US": "Indomitable Justice",
+    "es_ES": "Justicia indómita",
+    "fr_FR": "Justice indomptable",
+    "it_IT": "Giustizia Indomabile",
+    "pt_BR": "Justiça Indomável",
+    "ru_RU": "Неудержимое правосудие"
+  },
+  "Soaring Shield": {
+    "de_DE": "Segelnder Schild",
+    "en_US": "Soaring Shield",
+    "es_ES": "Escudo a propulsión",
+    "fr_FR": "Poussée de bouclier",
+    "it_IT": "Scudo Crescente",
+    "pt_BR": "Escudo Pairante",
+    "ru_RU": "Парящий щит"
+  },
+  "Inspiring Vanguard": {
+    "de_DE": "Inspirierender Tatendrang",
+    "en_US": "Inspiring Vanguard",
+    "es_ES": "Vanguardia inspiradora",
+    "fr_FR": "Détermination de l’avant-garde",
+    "it_IT": "Avanguardia Motivante",
+    "pt_BR": "Vanguarda Inspiradora",
+    "ru_RU": "Ободряющая стойкость"
+  },
+  "Zealotry": {
+    "de_DE": "Unermüdlichkeit",
+    "en_US": "Zealotry",
+    "es_ES": "Fanatismo",
+    "fr_FR": "Fanatisme",
+    "it_IT": "Fanatismo",
+    "pt_BR": "Fanatismo",
+    "ru_RU": "Фанатизм"
+  },
+  "Relentless Inquisitor": {
+    "de_DE": "Unnachgiebiger Inquisitor",
+    "en_US": "Relentless Inquisitor",
+    "es_ES": "Inquisidor implacable",
+    "fr_FR": "Inquisiteur implacable",
+    "it_IT": "Inquisitore Implacabile",
+    "pt_BR": "Inquisidor Incansável",
+    "ru_RU": "Непреклонный инквизитор"
+  },
+  "Expurgation": {
+    "de_DE": "Ausmerzung",
+    "en_US": "Expurgation",
+    "es_ES": "Expurgación",
+    "fr_FR": "Expurgation",
+    "it_IT": "Censura",
+    "pt_BR": "Expurgo",
+    "ru_RU": "Огонь очищения"
+  },
+  "Divine Right": {
+    "de_DE": "Göttliches Recht",
+    "en_US": "Divine Right",
+    "es_ES": "Derecho divino",
+    "fr_FR": "Droit divin",
+    "it_IT": "Diritto Divino",
+    "pt_BR": "Direito Divino",
+    "ru_RU": "Божественное право"
+  },
+  "Sacred Flame": {
+    "de_DE": "Heilige Flamme",
+    "en_US": "Sacred Flame",
+    "es_ES": "Llama sagrada",
+    "fr_FR": "Flamme sacrée",
+    "it_IT": "Fiamma Sacra",
+    "pt_BR": "Chama Sagrada",
+    "ru_RU": "Священное пламя"
+  },
+  "Searing Dialogue": {
+    "de_DE": "Sengender Dialog",
+    "en_US": "Searing Dialogue",
+    "es_ES": "Diálogo abrasador",
+    "fr_FR": "Dialogue brûlant",
+    "it_IT": "Dialogo Rovente",
+    "pt_BR": "Diálogo Calcinante",
+    "ru_RU": "Иссушающая речь"
+  },
+  "Thought Harvester": {
+    "de_DE": "Gedankenernter",
+    "en_US": "Thought Harvester",
+    "es_ES": "Cosechador de pensamientos",
+    "fr_FR": "Moissonneur de pensées",
+    "it_IT": "Raccoglitore di Pensieri",
+    "pt_BR": "Ceifador de Pensamentos",
+    "ru_RU": "Пожинатель мыслей"
+  },
+  "Whispers of the Damned": {
+    "de_DE": "Flüstern der Verdammten",
+    "en_US": "Whispers of the Damned",
+    "es_ES": "Susurros de los condenados",
+    "fr_FR": "Murmures des Damnés",
+    "it_IT": "Sussurri dei Dannati",
+    "pt_BR": "Sussurros dos Malditos",
+    "ru_RU": "Шепот проклятых"
+  },
+  "Spiteful Apparitions": {
+    "de_DE": "Boshafte Erscheinungen",
+    "en_US": "Spiteful Apparitions",
+    "es_ES": "Apariciones maliciosas",
+    "fr_FR": "Apparitions malveillantes",
+    "it_IT": "Apparizioni Adirate",
+    "pt_BR": "Aparições Detestáveis",
+    "ru_RU": "Злобные призраки"
+  },
+  "Death Throes": {
+    "de_DE": "Todeswindungen",
+    "en_US": "Death Throes",
+    "es_ES": "Últimos estertores",
+    "fr_FR": "Affres de l’agonie",
+    "it_IT": "Spasmi di Morte",
+    "pt_BR": "Espasmos de Morte",
+    "ru_RU": "Предсмертные муки"
+  },
+  "Chorus of Insanity": {
+    "de_DE": "Refrain des Wahnsinns",
+    "en_US": "Chorus of Insanity",
+    "es_ES": "Coros de demencia",
+    "fr_FR": "Chœur dément",
+    "it_IT": "Coro della Follia",
+    "pt_BR": "Coro da Insanidade",
+    "ru_RU": "Хор безумия"
+  },
+  "Sharpened Blades": {
+    "de_DE": "Geschärfte Klingen",
+    "en_US": "Sharpened Blades",
+    "es_ES": "Hojas afiladas",
+    "fr_FR": "Lames affûtées",
+    "it_IT": "Lame Affilate",
+    "pt_BR": "Lâminas Afiadas",
+    "ru_RU": "Отточенные клинки"
+  },
+  "Double Dose": {
+    "de_DE": "Doppelte Dosis",
+    "en_US": "Double Dose",
+    "es_ES": "Doble dosis",
+    "fr_FR": "Double dose",
+    "it_IT": "Doppia Dose",
+    "pt_BR": "Dose Dupla",
+    "ru_RU": "Двойная доза"
+  },
+  "Twist the Knife": {
+    "de_DE": "Das Messer drehen",
+    "en_US": "Twist the Knife",
+    "es_ES": "Retorcer el cuchillo",
+    "fr_FR": "Tourner la lame",
+    "it_IT": "Distorsione del Coltello",
+    "pt_BR": "Torcer a Faca",
+    "ru_RU": "Поворот ножа"
+  },
+  "Poisoned Wire": {
+    "de_DE": "Vergifteter Draht",
+    "en_US": "Poisoned Wire",
+    "es_ES": "Alambre envenenado",
+    "fr_FR": "Fil empoisonné",
+    "it_IT": "Filo Avvelenato",
+    "pt_BR": "Fio Envenenado",
+    "ru_RU": "Отравленный шнур"
+  },
+  "Scent of Blood": {
+    "de_DE": "Blutgeruch",
+    "en_US": "Scent of Blood",
+    "es_ES": "Rastro de sangre",
+    "fr_FR": "Odeur du sang",
+    "it_IT": "Odore del Sangue",
+    "pt_BR": "Cheiro de Sangue",
+    "ru_RU": "Запах крови"
+  },
+  "Fan of Blades": {
+    "de_DE": "Klingenfächer",
+    "en_US": "Fan of Blades",
+    "es_ES": "Abanico de hojas",
+    "fr_FR": "Éventail de lames",
+    "it_IT": "Raffica di Lame",
+    "pt_BR": "Leque de Lâminas",
+    "ru_RU": "Веер кинжалов"
+  },
+  "Shrouded Suffocation": {
+    "de_DE": "Verborgenes Ersticken",
+    "en_US": "Shrouded Suffocation",
+    "es_ES": "Asfixia invisible",
+    "fr_FR": "Asphyxie sournoise",
+    "it_IT": "Soffocamento Silenzioso",
+    "pt_BR": "Sufocação Oculta",
+    "ru_RU": "Внезапное удушье"
+  },
+  "Deadshot": {
+    "de_DE": "Volltreffer",
+    "en_US": "Deadshot",
+    "es_ES": "Tirador",
+    "fr_FR": "Tir fatal",
+    "it_IT": "Tiro Letale",
+    "pt_BR": "Disparo Letal",
+    "ru_RU": "Смертельный выстрел"
+  },
+  "Storm of Steel": {
+    "de_DE": "Stählerner Sturm",
+    "en_US": "Storm of Steel",
+    "es_ES": "Tormenta de acero",
+    "fr_FR": "Tempête d’acier",
+    "it_IT": "Tempesta d'Acciaio",
+    "pt_BR": "Tempestade de Aço",
+    "ru_RU": "Шквал стали"
+  },
+  "Snake Eyes": {
+    "de_DE": "Schlangenaugen",
+    "en_US": "Snake Eyes",
+    "es_ES": "Ojos de serpiente",
+    "fr_FR": "Yeux de serpent",
+    "it_IT": "Doppio Uno",
+    "pt_BR": "Olhos de Cobra",
+    "ru_RU": "Глаза змеи"
+  },
+  "Brigand's Blitz": {
+    "de_DE": "Brigantenblitz",
+    "en_US": "Brigand's Blitz",
+    "es_ES": "Ataque relámpago de salteador",
+    "fr_FR": "Incursion expéditive",
+    "it_IT": "Incursione del Brigante",
+    "pt_BR": "Ataque Relâmpago do Salteador",
+    "ru_RU": "Бандитский блиц"
+  },
+  "Paradise Lost": {
+    "de_DE": "Verlorenes Paradies",
+    "en_US": "Paradise Lost",
+    "es_ES": "Paraíso perdido",
+    "fr_FR": "Paradis perdu",
+    "it_IT": "Paradiso Perduto",
+    "pt_BR": "Paraíso Perdido",
+    "ru_RU": "Потерянный рай"
+  },
+  "Ace Up Your Sleeve": {
+    "de_DE": "Ass im Ärmel",
+    "en_US": "Ace Up Your Sleeve",
+    "es_ES": "Un as en la manga",
+    "fr_FR": "Botte secrète",
+    "it_IT": "Asso nella Manica",
+    "pt_BR": "Ás na Manga",
+    "ru_RU": "Туз в рукаве"
+  },
+  "Night's Vengeance": {
+    "de_DE": "Rache der Nacht",
+    "en_US": "Night's Vengeance",
+    "es_ES": "Venganza de la noche",
+    "fr_FR": "Vengeance de la nuit",
+    "it_IT": "Vendetta della Notte",
+    "pt_BR": "Vingança Soturna",
+    "ru_RU": "Возмездие ночи"
+  },
+  "Blade In The Shadows": {
+    "de_DE": "Verdeckte Klinge",
+    "en_US": "Blade In The Shadows",
+    "es_ES": "Hoja en la oscuridad",
+    "fr_FR": "Lame des ombres",
+    "it_IT": "Lame nell'Ombra",
+    "pt_BR": "Lâmina nas Sombras",
+    "ru_RU": "Клинок во тьме"
+  },
+  "Perforate": {
+    "de_DE": "Durchlöchern",
+    "en_US": "Perforate",
+    "es_ES": "Traspasar",
+    "fr_FR": "Perforation",
+    "it_IT": "Perforazione",
+    "pt_BR": "Perfurar",
+    "ru_RU": "Пробивание"
+  },
+  "The First Dance": {
+    "de_DE": "Der erste Tanz",
+    "en_US": "The First Dance",
+    "es_ES": "El primer baile",
+    "fr_FR": "Prélude à la danse",
+    "it_IT": "Prima Danza",
+    "pt_BR": "Primeira Dança",
+    "ru_RU": "Первый танец"
+  },
+  "Inevitability": {
+    "de_DE": "Unausweichlichkeit",
+    "en_US": "Inevitability",
+    "es_ES": "Inevitabilidad",
+    "fr_FR": "Fatalité inexorable",
+    "it_IT": "Inevitabilità",
+    "pt_BR": "Inevitabilidade",
+    "ru_RU": "Неизбежность"
+  },
+  "Lava Shock": {
+    "de_DE": "Lavaschock",
+    "en_US": "Lava Shock",
+    "es_ES": "Choque de lava",
+    "fr_FR": "Horion de lave",
+    "it_IT": "Folgore di Lava",
+    "pt_BR": "Choque de Lava",
+    "ru_RU": "Лавовый шок"
+  },
+  "Echo of the Elementals": {
+    "de_DE": "Echo der Elementare",
+    "en_US": "Echo of the Elementals",
+    "es_ES": "Eco de los elementales",
+    "fr_FR": "Écho des élémentaires",
+    "it_IT": "Eco degli Elementali",
+    "pt_BR": "Eco dos Elementais",
+    "ru_RU": "Эхо элементаля"
+  },
+  "Ancestral Resonance": {
+    "de_DE": "Resonanz der Ahnen",
+    "en_US": "Ancestral Resonance",
+    "es_ES": "Resonancia ancestral",
+    "fr_FR": "Résonance ancestrale",
+    "it_IT": "Risonanza Ancestrale",
+    "pt_BR": "Ressonância Ancestral",
+    "ru_RU": "Отголосок предков"
+  },
+  "Synapse Shock": {
+    "de_DE": "Synapsenschock",
+    "en_US": "Synapse Shock",
+    "es_ES": "Choque de sinapsis",
+    "fr_FR": "Choc synaptique",
+    "it_IT": "Folgore delle Sinapsi",
+    "pt_BR": "Choque Sináptico",
+    "ru_RU": "Подзарядка синапсов"
+  },
+  "Natural Harmony": {
+    "de_DE": "Naturgegebene Harmonie",
+    "en_US": "Natural Harmony",
+    "es_ES": "Armonía natural",
+    "fr_FR": "Harmonie naturelle",
+    "it_IT": "Armonia Naturale",
+    "pt_BR": "Harmonia Natural",
+    "ru_RU": "Гармония стихий"
+  },
+  "Rumbling Tremors": {
+    "de_DE": "Bedrohliche Beben",
+    "en_US": "Rumbling Tremors",
+    "es_ES": "Temblores resonantes",
+    "fr_FR": "Tremblements grondants",
+    "it_IT": "Tremori Rombanti",
+    "pt_BR": "Tremores Estrondosos",
+    "ru_RU": "Громыхающие толчки"
+  },
+  "Igneous Potential": {
+    "de_DE": "Eruptives Potenzial",
+    "en_US": "Igneous Potential",
+    "es_ES": "Potencial ígneo",
+    "fr_FR": "Potentiel igné",
+    "it_IT": "Potenziale Igneo",
+    "pt_BR": "Potencial Ígneo",
+    "ru_RU": "Горючий потенциал"
+  },
+  "Primal Primer": {
+    "de_DE": "Zündende Zunge",
+    "en_US": "Primal Primer",
+    "es_ES": "Primera mano",
+    "fr_FR": "Amorce primordiale",
+    "it_IT": "Innesco Primario",
+    "pt_BR": "Detonador Primevo",
+    "ru_RU": "Дикий запал"
+  },
+  "Strength of Earth": {
+    "de_DE": "Stärke der Erde",
+    "en_US": "Strength of Earth",
+    "es_ES": "Fuerza de la tierra",
+    "fr_FR": "Force de la Terre",
+    "it_IT": "Forza della Terra",
+    "pt_BR": "Força da Terra",
+    "ru_RU": "Сила земли"
+  },
+  "Lightning Conduit": {
+    "de_DE": "Blitzleiter",
+    "en_US": "Lightning Conduit",
+    "es_ES": "Conducto de relámpagos",
+    "fr_FR": "Conduit de foudre",
+    "it_IT": "Elettroconduzione",
+    "pt_BR": "Conduto de Raio",
+    "ru_RU": "Проводник молний"
+  },
+  "Roiling Storm": {
+    "de_DE": "Grollender Sturm",
+    "en_US": "Roiling Storm",
+    "es_ES": "Tormenta enturbiada",
+    "fr_FR": "Tempête fracassante",
+    "it_IT": "Tempesta Torbida",
+    "pt_BR": "Tempestade Turbulenta",
+    "ru_RU": "Бурлящая буря"
+  },
+  "Wracking Brilliance": {
+    "de_DE": "Zermürbende Brillanz",
+    "en_US": "Wracking Brilliance",
+    "es_ES": "Brillantez atroz",
+    "fr_FR": "Illumination insupportable",
+    "it_IT": "Acume Devastante",
+    "pt_BR": "Lucidez Lancinante",
+    "ru_RU": "Разрушительная гениальность"
+  },
+  "Inevitable Demise": {
+    "de_DE": "Unausweichliches Ableben",
+    "en_US": "Inevitable Demise",
+    "es_ES": "Muerte inevitable",
+    "fr_FR": "Trépas inévitable",
+    "it_IT": "Disfatta Inevitabile",
+    "pt_BR": "Óbito Inevitável",
+    "ru_RU": "Неизбежная расплата"
+  },
+  "Cascading Calamity": {
+    "de_DE": "Kaskadierende Katastrophe",
+    "en_US": "Cascading Calamity",
+    "es_ES": "Calamidad torrencial",
+    "fr_FR": "Calamité en cascade",
+    "it_IT": "Calamità a Cascata",
+    "pt_BR": "Calamidade Cascateante",
+    "ru_RU": "Беда не приходит одна"
+  },
+  "Deathbloom": {
+    "de_DE": "Todesblüte",
+    "en_US": "Deathbloom",
+    "es_ES": "Flor de muerte",
+    "fr_FR": "Mortelle floraison",
+    "it_IT": "Fiore Mortale",
+    "pt_BR": "Florescer da Morte",
+    "ru_RU": "Бутон смерти"
+  },
+  "Sudden Onset": {
+    "de_DE": "Plötzlicher Ausbruch",
+    "en_US": "Sudden Onset",
+    "es_ES": "Agonía repentina",
+    "fr_FR": "Soubresaut fébrile",
+    "it_IT": "Inizio Improvviso",
+    "pt_BR": "Início Súbito",
+    "ru_RU": "Внезапный приступ"
+  },
+  "Dreadful Calling": {
+    "de_DE": "Schreckliche Berufung",
+    "en_US": "Dreadful Calling",
+    "es_ES": "Llamada sombría",
+    "fr_FR": "Appel effroyable",
+    "it_IT": "Richiamo Truce",
+    "pt_BR": "Chamado Pavoroso",
+    "ru_RU": "Пугающий призыв"
+  },
+  "Shadow's Bite": {
+    "de_DE": "Biss des Schattens",
+    "en_US": "Shadow's Bite",
+    "es_ES": "Mordedura de las Sombras",
+    "fr_FR": "Morsure d’ombre",
+    "it_IT": "Morso d'Ombra",
+    "pt_BR": "Mordida da Sombra",
+    "ru_RU": "Укус тени"
+  },
+  "Umbral Blaze": {
+    "de_DE": "Umbralohe",
+    "en_US": "Umbral Blaze",
+    "es_ES": "Llamarada umbría",
+    "fr_FR": "Brûlure ombreuse",
+    "it_IT": "Fiammata Ombrosa",
+    "pt_BR": "Flama Umbrática",
+    "ru_RU": "Темный ожог"
+  },
+  "Explosive Potential": {
+    "de_DE": "Explosives Potenzial",
+    "en_US": "Explosive Potential",
+    "es_ES": "Potencial explosivo",
+    "fr_FR": "Potentiel explosif",
+    "it_IT": "Potenziale Esplosivo",
+    "pt_BR": "Potencial Explosivo",
+    "ru_RU": "Имплозивный потенциал"
+  },
+  "Excoriate": {
+    "de_DE": "Missbilligen",
+    "en_US": "Excoriate",
+    "es_ES": "Excoriar",
+    "fr_FR": "Écorchure",
+    "it_IT": "Escoriazione",
+    "pt_BR": "Escoriar",
+    "ru_RU": "Изуверство"
+  },
+  "Demonic Meteor": {
+    "de_DE": "Dämonischer Meteor",
+    "en_US": "Demonic Meteor",
+    "es_ES": "Meteoro demoníaco",
+    "fr_FR": "Météore démoniaque",
+    "it_IT": "Meteora Demoniaca",
+    "pt_BR": "Meteoro Demoníaco",
+    "ru_RU": "Демонический метеорит"
+  },
+  "Forbidden Knowledge": {
+    "de_DE": "Verbotenes Wissen",
+    "en_US": "Forbidden Knowledge",
+    "es_ES": "Conocimiento prohibido",
+    "fr_FR": "Savoir interdit",
+    "it_IT": "Conoscenza Proibita",
+    "pt_BR": "Conhecimento Proibido",
+    "ru_RU": "Запретное знание"
+  },
+  "Supreme Commander": {
+    "de_DE": "Oberkommandant",
+    "en_US": "Supreme Commander",
+    "es_ES": "Comandante supremo",
+    "fr_FR": "Commandant suprême",
+    "it_IT": "Comandante Supremo",
+    "pt_BR": "Comandante Supremo",
+    "ru_RU": "Владыка демонов"
+  },
+  "Accelerant": {
+    "de_DE": "Brandbeschleuniger",
+    "en_US": "Accelerant",
+    "es_ES": "Acelerante",
+    "fr_FR": "Combustion accélérée",
+    "it_IT": "Accelerante",
+    "pt_BR": "Catalisador",
+    "ru_RU": "Ускоренное разрушение"
+  },
+  "Flashpoint": {
+    "de_DE": "Brennpunkt",
+    "en_US": "Flashpoint",
+    "es_ES": "Punto crítico",
+    "fr_FR": "Poudrière",
+    "it_IT": "Punto di Rottura",
+    "pt_BR": "Ponto de Fulgor",
+    "ru_RU": "Точка возгорания"
+  },
+  "Crashing Chaos": {
+    "de_DE": "Hereinbrechendes Chaos",
+    "en_US": "Crashing Chaos",
+    "es_ES": "Caos aplastante",
+    "fr_FR": "Chaos absolu",
+    "it_IT": "Caos Dirompente",
+    "pt_BR": "Caos Estrondoso",
+    "ru_RU": "Вихрь Хаоса"
+  },
+  "Rolling Havoc": {
+    "de_DE": "Tobende Verwüstung",
+    "en_US": "Rolling Havoc",
+    "es_ES": "Estragos múltiples",
+    "fr_FR": "Tumulte retentissant",
+    "it_IT": "Rovina Graduale",
+    "pt_BR": "Devastação Contínua",
+    "ru_RU": "Бурлящий хаос"
+  },
+  "Chaotic Inferno": {
+    "de_DE": "Chaotisches Inferno",
+    "en_US": "Chaotic Inferno",
+    "es_ES": "Inferno caótico",
+    "fr_FR": "Enfer chaotique",
+    "it_IT": "Inferno Caotico",
+    "pt_BR": "Inferno Caótico",
+    "ru_RU": "Хаотичное испепеление"
+  },
+  "Bursting Flare": {
+    "de_DE": "Stichflamme",
+    "en_US": "Bursting Flare",
+    "es_ES": "Fulgor explosivo",
+    "fr_FR": "Fusée détonante",
+    "it_IT": "Bengala Detonante",
+    "pt_BR": "Clarão Irruptivo",
+    "ru_RU": "Взрыв и вспышка"
+  },
+  "Executioner's Precision": {
+    "de_DE": "Präzision des Scharfrichters",
+    "en_US": "Executioner's Precision",
+    "es_ES": "Precisión de verdugo",
+    "fr_FR": "Précision du bourreau",
+    "it_IT": "Precisione dell'Esecutore",
+    "pt_BR": "Precisão do Carrasco",
+    "ru_RU": "Точность палача"
+  },
+  "Gathering Storm": {
+    "de_DE": "Aufziehender Sturm",
+    "en_US": "Gathering Storm",
+    "es_ES": "Tormenta inminente",
+    "fr_FR": "Tempête grandissante",
+    "it_IT": "Tempesta Incombente",
+    "pt_BR": "Tempestade Iminente",
+    "ru_RU": "Предвестие бури"
+  },
+  "Test of Might": {
+    "de_DE": "Machtprobe",
+    "en_US": "Test of Might",
+    "es_ES": "Prueba de poderío",
+    "fr_FR": "Epreuve de puissance",
+    "it_IT": "Prova del Vigore",
+    "pt_BR": "Prova do Poder",
+    "ru_RU": "Испытание силы"
+  },
+  "Seismic Wave": {
+    "de_DE": "Seismische Welle",
+    "en_US": "Seismic Wave",
+    "es_ES": "Ola sísmica",
+    "fr_FR": "Onde sismique",
+    "it_IT": "Onda Sismica",
+    "pt_BR": "Onda Sísmica",
+    "ru_RU": "Сейсмическая волна"
+  },
+  "Crushing Assault": {
+    "de_DE": "Zermalmender Ansturm",
+    "en_US": "Crushing Assault",
+    "es_ES": "Asalto aplastante",
+    "fr_FR": "Assaut écrasant",
+    "it_IT": "Assalto Frantumante",
+    "pt_BR": "Ataque Esmagador",
+    "ru_RU": "Сокрушительный штурм"
+  },
+  "Lord of War": {
+    "de_DE": "Herr des Krieges",
+    "en_US": "Lord of War",
+    "es_ES": "Señor de la guerra",
+    "fr_FR": "Seigneur de guerre",
+    "it_IT": "Signore della Guerra",
+    "pt_BR": "Senhor da Guerra",
+    "ru_RU": "Владыка войны"
+  },
+  "Trample the Weak": {
+    "de_DE": "Die Schwachen niedertrampeln",
+    "en_US": "Trample the Weak",
+    "es_ES": "Pisotear a los débiles",
+    "fr_FR": "Piétiner les faibles",
+    "it_IT": "Calpestamento dei Deboli",
+    "pt_BR": "Massacrar os Fracos",
+    "ru_RU": "Растоптать слабых"
+  },
+  "Bloodcraze": {
+    "de_DE": "Blutwahnsinn",
+    "en_US": "Bloodcraze",
+    "es_ES": "Afán de sangre",
+    "fr_FR": "Ivresse du sang",
+    "it_IT": "Furia Sanguinaria",
+    "pt_BR": "Loucura de Sangue",
+    "ru_RU": "Кровавое безумие"
+  },
+  "Pulverizing Blows": {
+    "de_DE": "Pulverisierende Schläge",
+    "en_US": "Pulverizing Blows",
+    "es_ES": "Golpes pulverizadores",
+    "fr_FR": "Coups pulvérisants",
+    "it_IT": "Colpi Polverizzanti",
+    "pt_BR": "Golpes Pulverizadores",
+    "ru_RU": "Сокрушительные удары"
+  },
+  "Infinite Fury": {
+    "de_DE": "Unendlicher Zorn",
+    "en_US": "Infinite Fury",
+    "es_ES": "Furia infinita",
+    "fr_FR": "Fureur infinie",
+    "it_IT": "Furia Infinita",
+    "pt_BR": "Fúria Infinita",
+    "ru_RU": "Бесконечная ярость"
+  },
+  "Simmering Rage": {
+    "de_DE": "Kochende Wut",
+    "en_US": "Simmering Rage",
+    "es_ES": "Ira bullente",
+    "fr_FR": "Rage débordante",
+    "it_IT": "Rabbia Ribollente",
+    "pt_BR": "Raiva Fervente",
+    "ru_RU": "Кипящая ярость"
+  },
+  "Reckless Flurry": {
+    "de_DE": "Tollkühner Wirbel",
+    "en_US": "Reckless Flurry",
+    "es_ES": "Aluvión temerario",
+    "fr_FR": "Déluge intrépide",
+    "it_IT": "Raffica Avventata",
+    "pt_BR": "Saraivada Audaciosa",
+    "ru_RU": "Шквал гнева"
+  },
+  "Deafening Crash": {
+    "de_DE": "Ohrenbetäubender Aufprall",
+    "en_US": "Deafening Crash",
+    "es_ES": "Pisotón ensordecedor",
+    "fr_FR": "Choc assourdissant",
+    "it_IT": "Schianto Assordante",
+    "pt_BR": "Ribombo Ensurdecedor",
+    "ru_RU": "Оглушительный раскат"
+  },
+  "Reinforced Plating": {
+    "de_DE": "Verstärkte Panzerung",
+    "en_US": "Reinforced Plating",
+    "es_ES": "Blindaje reforzado",
+    "fr_FR": "Blindage renforcé",
+    "it_IT": "Placche Rinforzate",
+    "pt_BR": "Revestimento Reforçado",
+    "ru_RU": "Усиленные латы"
+  },
+  "Brace for Impact": {
+    "de_DE": "Gefasst machen",
+    "en_US": "Brace for Impact",
+    "es_ES": "Prepárate para el impacto",
+    "fr_FR": "Résistance à l’épreuve",
+    "it_IT": "Pronto all'Impatto",
+    "pt_BR": "Preparar para o Impacto",
+    "ru_RU": "Блокировка удара"
+  },
+  "Callous Reprisal": {
+    "de_DE": "Herzlose Repressalien",
+    "en_US": "Callous Reprisal",
+    "es_ES": "Represalia cruel",
+    "fr_FR": "Représailles cruelles",
+    "it_IT": "Rappresaglia Spietata",
+    "pt_BR": "Represália Impiedosa",
+    "ru_RU": "Жесткий реванш"
+  },
+  "Iron Fortress": {
+    "de_DE": "Eiserne Festung",
+    "en_US": "Iron Fortress",
+    "es_ES": "Fortaleza férrea",
+    "fr_FR": "Forteresse inébranlable",
+    "it_IT": "Fortezza di Ferro",
+    "pt_BR": "Fortaleza de Ferro",
+    "ru_RU": "Железная крепость"
+  }
+}

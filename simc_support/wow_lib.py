@@ -841,6 +841,55 @@ def get_item_translation(item_name: str = "", item_id: int = None, item_list: li
 
     raise LookupError("Translation not found for {}{}".format(item_name, item_id))
 
+def get_trait_translation_dict():
+    """Return the dict of all azerite trait translations.
+
+    Returns:
+        dict -- {Name:{language:translation}}
+    """
+
+    import pkg_resources
+
+    path = "azerite_trait_translations.json"
+
+    with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
+
+        loaded_translations = json.load(f, encoding="UTF-8")
+
+    return loaded_translations
+
+
+def get_trait_translation(trait_name: str = "", translation_dict: dict = None) -> dict:
+    """Return the translation dict of one trait. Providing the translation_dict speeds up the process.
+
+    Keyword Arguments:
+        trait_name {str} -- [description] (default: {""})
+        translation_dict {dict} -- [description] (default: {None})
+
+    Raises:
+        LookupError -- [description]
+
+    Returns:
+        dict -- [description]
+    """
+
+
+    if translation_dict:
+        loaded_translations = translation_dict
+    else:
+        import pkg_resources
+
+        path = "azerite_trait_translations.json"
+
+        with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
+
+            loaded_translations = json.load(f, encoding="UTF-8")
+
+    try:
+        return loaded_translations[trait_name]
+    except Exception:
+        raise LookupError("Translation not found for {}".format(trait_name))
+
 
 def get_second_trinket_for_spec(wow_class, wow_spec):
     """Returns a vers stat stick for the spec.
@@ -1020,6 +1069,7 @@ def get_azerite_items(wow_class: str, wow_spec: str) -> dict:
                 response[slot].append(item)
 
     return response
+
 
 def get_azerite_tier(wow_class: str, wow_spec: str, trait: str) -> int:
     """Get the tier number of an azerite trait. Very costly search!
