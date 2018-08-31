@@ -21,7 +21,7 @@ def load_azerite_items() -> dict:
     dict -- Items sorted by itemslot
   """
 
-  with open('equippable-items-beta.json', 'r', encoding='utf-8') as f:
+  with open('equippable-items.json', 'r', encoding='utf-8') as f:
     items = json.load(f)
 
   sorted_items = {

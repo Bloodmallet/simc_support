@@ -360,6 +360,229 @@ __races = {
     }
 }
 
+__race_translations = {
+    "draenei": {
+        "de_DE": "Draenei",
+        "en_US": "Draenei",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "德莱尼"
+    },
+    "dwarf": {
+        "de_DE": "Zwerg",
+        "en_US": "Dwarf",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "矮人"
+    },
+    "gnome": {
+        "de_DE": "Gnom",
+        "en_US": "Gnome",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "侏儒"
+    },
+    "human": {
+        "de_DE": "Mensch",
+        "en_US": "Human",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "人类"
+    },
+    "night_elf": {
+        "de_DE": "Nachtelf",
+        "en_US": "Night Elf",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "暗夜精灵"
+    },
+    "pandaren": {
+        "de_DE": "",
+        "en_US": "",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": ""
+    },
+    "worgen": {
+        "de_DE": "Worgen",
+        "en_US": "Worgen",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "狼人"
+    },
+    "void_elf": {
+        "de_DE": "Leerenelf",
+        "en_US": "Void Elf",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "虚空精灵"
+    },
+    "lightforged_draenei": {
+        "de_DE": "",
+        "en_US": "Lightforged Draenei",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "光铸德莱尼"
+    },
+    "dark_iron_dwarf": {
+        "de_DE": "",
+        "en_US": "Dark Iron Dwarf",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "黑铁矮人"
+    },
+    "blood_elf": {
+        "de_DE": "Blutelf",
+        "en_US": "Blood Elf",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "血精灵"
+    },
+    "goblin": {
+        "de_DE": "Goblin",
+        "en_US": "Goblin",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "地精"
+    },
+    "orc": {
+        "de_DE": "Ork",
+        "en_US": "Orc",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "兽人"
+    },
+    "pandaren": {
+        "de_DE": "Pandaren",
+        "en_US": "Pandaren",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "熊猫人"
+    },
+    "tauren": {
+        "de_DE": "Tauren",
+        "en_US": "Tauren",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "牛头人"
+    },
+    "troll": {
+        "de_DE": "Troll",
+        "en_US": "Troll",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "巨魔"
+    },
+    "undead": {
+        "de_DE": "Untote",
+        "en_US": "Undead",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "亡灵"
+    },
+    "nightborne": {
+        "de_DE": "Nachtgeborene",
+        "en_US": "Nightborne",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "夜之子"
+    },
+    "highmountain_tauren": {
+        "de_DE": "Hochbergtauren",
+        "en_US": "Highmountain Tauren",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "至高岭牛头人"
+    },
+    "maghar_orc": {
+        "de_DE": "Maghar Ork",
+        "en_US": "Maghar Orc",
+        "es_ES": "",
+        "fr_FR": "",
+        "it_IT": "",
+        "pt_BR": "",
+        "ru_RU": "",
+        "ko_KO": "",
+        "cn_CN": "玛格汉兽人"
+    }
+}
+
 # bfa data
 __trinket_list = [
     # dungeon trinkets
@@ -783,6 +1006,18 @@ def get_trinkets_for_spec(wow_class: str, wow_spec: str) -> list:
             ))
     return return_list
 
+def get_race_translation(race:str ) -> dict:
+    """Return the translation dict for a race.
+
+    Arguments:
+        race {str} -- wow race
+
+    Returns:
+        dict -- [description]
+    """
+
+    return __race_translations[race.lower().replace(" ", "_")]
+
 def get_trinket_list() -> list:
     """Get a full trinket list for the ongoing expansion from equippable-items.json.
 
@@ -805,6 +1040,56 @@ def get_trinket_list() -> list:
             item_list.append(item)
 
     return item_list
+
+
+def get_trinket_translation(trinket_name) -> dict:
+    """Returns the translation dict for a trinket
+
+    Arguments:
+        trinket_name {[type]} -- [description]
+
+    Returns:
+        dict -- [description]
+    """
+
+    import pkg_resources
+
+    path = "trinket_translations.json"
+
+    with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
+
+        loaded_items = json.load(f, encoding="UTF-8")
+
+    try:
+        return loaded_items[trinket_name]
+    except Exception as e:
+        raise LookupError("Translation not found for {}. {}".format(trinket_name, e))
+
+def get_azerite_item_translation(item_name) -> dict:
+    """Returns the translation dict for a trinket
+
+    Arguments:
+        trinket_name {[type]} -- [description]
+
+    Returns:
+        dict -- [description]
+    """
+
+    import pkg_resources
+
+    path = "azerite_item_translations.json"
+
+    with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
+
+        loaded_items = json.load(f, encoding="UTF-8")
+
+    try:
+        return loaded_items[item_name]
+    except Exception as e:
+        raise LookupError("Translation not found for {}. {}".format(item_name, e))
+
+
+
 
 def get_item_translation(item_name: str = "", item_id: int = None, item_list: list = None) -> dict:
     """Get the translation dictionary for an item. If item_list is provided, the lookup time is quicker.
