@@ -6,7 +6,7 @@
     "fr_FR": "Heaume de guerre de conquasseur",
     "it_IT": "Elmo da Guerra dello Spezzamagie",
     "pt_BR": "Elmo Bélico do Quebra-concha",
-    "ko_KO": "껍질파괴자 전쟁투구",
+    "ko_KR": "껍질파괴자 전쟁투구",
     "cn_CN": "破壳战盔",
     "ru_RU": "Боевой шлем сокрушителя раковин"
   },
@@ -17,7 +17,7 @@
     "fr_FR": "Grand heaume d’écumeur des mers",
     "it_IT": "Grandelmo dell'Incursore Marino",
     "pt_BR": "Grande Elmo do Saqueador dos Mares",
-    "ko_KO": "바다 약탈자의 철갑투구",
+    "ko_KR": "바다 약탈자의 철갑투구",
     "cn_CN": "劫浪者巨盔",
     "ru_RU": "Шлем морского налетчика"
   },
@@ -28,7 +28,7 @@
     "fr_FR": "Casque de la milice des Malvoie",
     "it_IT": "Elmetto della Milizia dei Crestabianca",
     "pt_BR": "Capacete da Milícia Capelo",
-    "ko_KO": "웨이크레스트 민병대 보호모",
+    "ko_KR": "웨이크레스트 민병대 보호모",
     "cn_CN": "维克雷斯民兵头盔",
     "ru_RU": "Шлем дружины Уэйкрестов"
   },
@@ -39,7 +39,7 @@
     "fr_FR": "Grand heaume de corsaire de l’effroi",
     "it_IT": "Grandelmo del Corsaro del Terrore",
     "pt_BR": "Grande Elmo do Corsário Terrível",
-    "ko_KO": "공포의 바다사냥꾼 철갑투구",
+    "ko_KR": "공포의 바다사냥꾼 철갑투구",
     "cn_CN": "恐怖海盗巨盔",
     "ru_RU": "Шлем жуткого корсара"
   },
@@ -50,7 +50,7 @@
     "fr_FR": "Heaume rastari",
     "it_IT": "Elmo dei Rastari",
     "pt_BR": "Elmo Rastari",
-    "ko_KO": "라스타리 투구",
+    "ko_KR": "라스타리 투구",
     "cn_CN": "拉斯塔利头盔",
     "ru_RU": "Растарский шлем"
   },
@@ -61,7 +61,7 @@
     "fr_FR": "Ventaille de guerre nazmani en plaques",
     "it_IT": "Elmo Foderato a Piastre Feroci dei Nazmani",
     "pt_BR": "Viseira de Plastrão Nazmani",
-    "ko_KO": "나즈마니 전쟁판금 얼굴보호대",
+    "ko_KR": "나즈마니 전쟁판금 얼굴보호대",
     "cn_CN": "纳兹曼尼战铠护面",
     "ru_RU": "Назманийский большой боевой шлем"
   },
@@ -72,7 +72,7 @@
     "fr_FR": "Heaume du vétéran exilé",
     "it_IT": "Elmo del Veterano Esiliato",
     "pt_BR": "Elmo do Veterano Exilado",
-    "ko_KO": "추방당한 정예병의 투구",
+    "ko_KR": "추방당한 정예병의 투구",
     "cn_CN": "流亡老兵的头盔",
     "ru_RU": "Шлем ветерана-изгоя"
   },
@@ -83,7 +83,7 @@
     "fr_FR": "Cabasset tissé d’âme",
     "it_IT": "Casco Intessuto d'Anima",
     "pt_BR": "Casquete da Alma Tecida",
-    "ko_KO": "영혼엮음 투구모자",
+    "ko_KR": "영혼엮음 투구모자",
     "cn_CN": "织魂头盔",
     "ru_RU": "Каска истерзанных душ"
   },
@@ -94,7 +94,7 @@
     "fr_FR": "Grand heaume de bagarreur des mers",
     "it_IT": "Grandelmo del Combattente di Mare",
     "pt_BR": "Grande Elmo do Brigão dos Mares",
-    "ko_KO": "바다싸움꾼의 철갑투구",
+    "ko_KR": "바다싸움꾼의 철갑투구",
     "cn_CN": "斗海者巨盔",
     "ru_RU": "Шлем морского буяна"
   },
@@ -105,7 +105,7 @@
     "fr_FR": "Ventaille fétiche-d’os",
     "it_IT": "Elmo Foderato del Feticcio d'Ossa",
     "pt_BR": "Viseira do Fetiche Ósseo",
-    "ko_KO": "뼈장식 얼굴보호대",
+    "ko_KR": "뼈장식 얼굴보호대",
     "cn_CN": "骨质神像护面",
     "ru_RU": "Украшенный костями большой шлем"
   },
@@ -116,7 +116,7 @@
     "fr_FR": "Grand heaume du gardelame de Rezan",
     "it_IT": "Grandelmo della Guardia di Spade di Rezan",
     "pt_BR": "Grande Elmo do Guarda-lâmina de Rezan",
-    "ko_KO": "레잔의 칼날경비병의 철갑투구",
+    "ko_KR": "레잔의 칼날경비병의 철갑투구",
     "cn_CN": "莱赞剑卫巨盔",
     "ru_RU": "Великий шлем мастера клинка Резана"
   },
@@ -127,7 +127,7 @@
     "fr_FR": "Ventaille rampedune",
     "it_IT": "Elmo Foderato di Strisciadune",
     "pt_BR": "Viseira de Rasteja-dunas",
-    "ko_KO": "모래삼엽충 얼굴보호대",
+    "ko_KR": "모래삼엽충 얼굴보호대",
     "cn_CN": "沙丘爬行者护面",
     "ru_RU": "Большой шлем дюнного жука"
   },
@@ -138,7 +138,7 @@
     "fr_FR": "Ventaille de maître du port",
     "it_IT": "Elmo Foderato del Maestro del Porto",
     "pt_BR": "Viseira do Capitão do Porto",
-    "ko_KO": "항만관리자 얼굴보호대",
+    "ko_KR": "항만관리자 얼굴보호대",
     "cn_CN": "港务长面甲",
     "ru_RU": "Большой шлем капитана порта"
   },
@@ -149,7 +149,7 @@
     "fr_FR": "Grand heaume mornesylve",
     "it_IT": "Grandelmo della Selva Tetra",
     "pt_BR": "Grande Elmo da Mata Medonha",
-    "ko_KO": "냉혹숲 철갑투구",
+    "ko_KR": "냉혹숲 철갑투구",
     "cn_CN": "苍茫巨盔",
     "ru_RU": "Великий шлем Мрачной пустоши"
   },
@@ -160,7 +160,7 @@
     "fr_FR": "Heaume brèche-banc",
     "it_IT": "Elmo di Spaccascogli",
     "pt_BR": "Elmo Fende-baixio",
-    "ko_KO": "모래틈 투구",
+    "ko_KR": "모래틈 투구",
     "cn_CN": "浅滩碎浪头盔",
     "ru_RU": "Шлем береговой осады"
   },
@@ -171,7 +171,7 @@
     "fr_FR": "Casque antiémeute de surveillant",
     "it_IT": "Elmetto Antisommossa del Sovrintendente",
     "pt_BR": "Capacete de Choque do Feitor",
-    "ko_KO": "감독관의 폭동 보호모",
+    "ko_KR": "감독관의 폭동 보호모",
     "cn_CN": "狱长的暴乱头盔",
     "ru_RU": "Защитный шлем надзирателя"
   },
@@ -182,7 +182,7 @@
     "fr_FR": "Heaume du roi raptor",
     "it_IT": "Elmo del Re Raptor",
     "pt_BR": "Elmo do Raptor Rei",
-    "ko_KO": "랩터 왕의 투구",
+    "ko_KR": "랩터 왕의 투구",
     "cn_CN": "迅猛龙之王头盔",
     "ru_RU": "Боевой шлем повелителя ящеров"
   },
@@ -193,7 +193,7 @@
     "fr_FR": "Heaume de malveillance abyssale",
     "it_IT": "Elmo della Malevolenza Abissale",
     "pt_BR": "Elmo da Malevolência Abissal",
-    "ko_KO": "심연의 적개심 담긴 투구",
+    "ko_KR": "심연의 적개심 담긴 투구",
     "cn_CN": "深渊怨毒头盔",
     "ru_RU": "Шлем глубинной злобы"
   },
@@ -204,7 +204,7 @@
     "fr_FR": "Grand heaume du sentier putride",
     "it_IT": "Grandelmo del Sentiero Putrido",
     "pt_BR": "Grande Elmo do Percurso Pútrido",
-    "ko_KO": "부패한 길의 철갑투구",
+    "ko_KR": "부패한 길의 철갑투구",
     "cn_CN": "腐烂之路重盔",
     "ru_RU": "Великий шлем гнилостного пути"
   },
@@ -215,7 +215,7 @@
     "fr_FR": "Binocles orthogonaux AZ3-R1-T3",
     "it_IT": "Lenti Ortogonali AZ3-R1-T3",
     "pt_BR": "Optovisores Ortogonais AZ3-R1-T4",
-    "ko_KO": "AZ3-R1-T3 직각 광학렌즈",
+    "ko_KR": "AZ3-R1-T3 직각 광학렌즈",
     "cn_CN": "AZ3-R1-T3正交偏光镜",
     "ru_RU": "Ортогональная оптика типа \"AZ3-PNT\""
   },
@@ -226,7 +226,7 @@
     "fr_FR": "Galea de course-grille",
     "it_IT": "Galea del Calcagriglie",
     "pt_BR": "Gálea do Corre-matriz",
-    "ko_KO": "격자길잡이 투모",
+    "ko_KR": "격자길잡이 투모",
     "cn_CN": "移动迷网头盔",
     "ru_RU": "Матричный шлем"
   },
@@ -237,7 +237,7 @@
     "fr_FR": "Heaume du laboratoire profané",
     "it_IT": "Elmo del Laboratorio Profanato",
     "pt_BR": "Elmo do Laboratório Profanado",
-    "ko_KO": "더럽혀진 연구실의 투구",
+    "ko_KR": "더럽혀진 연구실의 투구",
     "cn_CN": "亵渎实验室之盔",
     "ru_RU": "Шлем из оскверненной лаборатории"
   },
@@ -248,7 +248,7 @@
     "fr_FR": "Casque d’écumeur des mers",
     "it_IT": "Elmetto dell'Incursore Marino",
     "pt_BR": "Capacete do Saqueador dos Mares",
-    "ko_KO": "바다 약탈자의 보호모",
+    "ko_KR": "바다 약탈자의 보호모",
     "cn_CN": "劫浪者重盔",
     "ru_RU": "Шлем морского налетчика"
   },
@@ -259,7 +259,7 @@
     "fr_FR": "Grand heaume du champion",
     "it_IT": "Grandelmo del Campione",
     "pt_BR": "Grande Elmo do Campeão",
-    "ko_KO": "용사의 철갑투구",
+    "ko_KR": "용사의 철갑투구",
     "cn_CN": "勇士重盔",
     "ru_RU": "Большой шлем защитника Азерот"
   },
@@ -270,7 +270,7 @@
     "fr_FR": "Casque rastari",
     "it_IT": "Elmetto dei Rastari",
     "pt_BR": "Capacete Rastari",
-    "ko_KO": "라스타리 보호모",
+    "ko_KR": "라스타리 보호모",
     "cn_CN": "拉斯塔利战盔",
     "ru_RU": "Растарский большой шлем"
   },
@@ -281,7 +281,7 @@
     "fr_FR": "Masque pétrifié de l’au-delà",
     "it_IT": "Maschera Pietrificata dell'Aldilà",
     "pt_BR": "Máscara Petrificada do Além-vida",
-    "ko_KO": "내세의 석화된 가면",
+    "ko_KR": "내세의 석화된 가면",
     "cn_CN": "石化冥界面具",
     "ru_RU": "Окаменевшая маска посмертия"
   },
@@ -292,7 +292,7 @@
     "fr_FR": "Casque du champion d’Azeroth",
     "it_IT": "Elmo del Campione Azerotiano",
     "pt_BR": "Elmo do Campeão Azerothiano",
-    "ko_KO": "아제로스 용사의 투구",
+    "ko_KR": "아제로스 용사의 투구",
     "cn_CN": "艾泽拉斯勇士头盔",
     "ru_RU": "Шлем защитника Азерот"
   },
@@ -303,7 +303,7 @@
     "fr_FR": "Heaume du gladiateur menaçant en plaques",
     "it_IT": "Elmo a Piastre del Gladiatore Terrificante",
     "pt_BR": "Elmo de Placa do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 판금 투구",
+    "ko_KR": "공포를 부르는 검투사의 판금 투구",
     "cn_CN": "悚然角斗士的板甲头盔",
     "ru_RU": "Латный шлем ужасающего гладиатора"
   },
@@ -314,7 +314,7 @@
     "fr_FR": "Bassinet du gladiateur menaçant en plaques",
     "it_IT": "Copricapo a Piastre del Gladiatore Terrificante",
     "pt_BR": "Barrete de Placa do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 판금 면갑",
+    "ko_KR": "공포를 부르는 검투사의 판금 면갑",
     "cn_CN": "悚然角斗士的板甲护额",
     "ru_RU": "Латный головной покров ужасающего гладиатора"
   },
@@ -325,7 +325,7 @@
     "fr_FR": "Grand heaume de golem nazmani",
     "it_IT": "Grandelmo del Golem dei Nazmani",
     "pt_BR": "Grande Elmo do Golem Nazmani",
-    "ko_KO": "나즈마니 골렘의 철갑투구",
+    "ko_KR": "나즈마니 골렘의 철갑투구",
     "cn_CN": "纳兹曼尼魔像的重型头盔",
     "ru_RU": "Великий шлем назманийского голема"
   },
@@ -336,7 +336,7 @@
     "fr_FR": "Heaume de l’aspirant menaçant en plaques",
     "it_IT": "Elmo a Piastre del Pretendente Terrificante",
     "pt_BR": "Elmo de Placa do Aspirante Medonho",
-    "ko_KO": "공포를 부르는 지원자의 판금 투구",
+    "ko_KR": "공포를 부르는 지원자의 판금 투구",
     "cn_CN": "悚然候选者的板甲头盔",
     "ru_RU": "Латный шлем ужасающего претендента"
   },
@@ -347,7 +347,7 @@
     "fr_FR": "Chapel de légionnaire de la 7e",
     "it_IT": "Cimiero del Legionario della VII Legione",
     "pt_BR": "Bacinete do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 머리쓰개",
+    "ko_KR": "7군단 용사의 머리쓰개",
     "cn_CN": "第七军团士兵护头",
     "ru_RU": "Латный головной убор 7-го легиона"
   },
@@ -358,7 +358,7 @@
     "fr_FR": "Grand heaume du centurion honorable",
     "it_IT": "Grandelmo del Centurione della Brigata dell'Onore",
     "pt_BR": "Grande Elmo do Centurião Brigadista",
-    "ko_KO": "명예결속단 백인대장의 철갑투구",
+    "ko_KR": "명예결속단 백인대장의 철갑투구",
     "cn_CN": "荣耀战团百夫长的重盔",
     "ru_RU": "Большой шлем центуриона Армии Чести"
   },
@@ -369,7 +369,7 @@
     "fr_FR": "Casque de légionnaire de la 7e",
     "it_IT": "Elmetto del Legionario della VII Legione",
     "pt_BR": "Capacete do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 보호모",
+    "ko_KR": "7군단 용사의 보호모",
     "cn_CN": "第七军团士兵战盔",
     "ru_RU": "Латный шлем 7-го легиона"
   },
@@ -380,7 +380,7 @@
     "fr_FR": "Heaume du centurion honorable",
     "it_IT": "Elmetto del Centurione della Brigata dell'Onore",
     "pt_BR": "Capacete do Centurião Brigadista",
-    "ko_KO": "명예결속단 백인대장의 보호모",
+    "ko_KR": "명예결속단 백인대장의 보호모",
     "cn_CN": "荣耀战团百夫长的头盔",
     "ru_RU": "Шлем центуриона Армии Чести"
   },
@@ -391,7 +391,7 @@
     "fr_FR": "Heaume de guerre vrykul marchandé",
     "it_IT": "Elmo da Guerra dei Vrykul Barattato",
     "pt_BR": "Elmo Bélico Vraikal Trocado",
-    "ko_KO": "물물교환 브리쿨 전쟁투구",
+    "ko_KR": "물물교환 브리쿨 전쟁투구",
     "cn_CN": "换来的维库战盔",
     "ru_RU": "Потрепанный врайкульский боевой шлем"
   },
@@ -402,7 +402,7 @@
     "fr_FR": "Espauliers de serpent abyssal",
     "it_IT": "Paraspalle del Serpente Abissale",
     "pt_BR": "Brafoneiras da Serpente Abissal",
-    "ko_KO": "심연독사 견갑",
+    "ko_KR": "심연독사 견갑",
     "cn_CN": "深渊之蛇护肩",
     "ru_RU": "Наплечье подводного змея"
   },
@@ -413,7 +413,7 @@
     "fr_FR": "Spallières d’écumeur des mers",
     "it_IT": "Guardaspalle dell'Incursore Marino",
     "pt_BR": "Espaldares do Saqueador dos Mares",
-    "ko_KO": "바다 약탈자의 어깨덮개",
+    "ko_KR": "바다 약탈자의 어깨덮개",
     "cn_CN": "劫浪者肩甲",
     "ru_RU": "Наплечники морского налетчика"
   },
@@ -424,7 +424,7 @@
     "fr_FR": "Spallières de la milice des Malvoie",
     "it_IT": "Guardaspalle della Milizia dei Crestabianca",
     "pt_BR": "Espaldares da Milícia Capelo",
-    "ko_KO": "웨이크레스트 민병대 어깨덮개",
+    "ko_KR": "웨이크레스트 민병대 어깨덮개",
     "cn_CN": "维克雷斯民兵护肩",
     "ru_RU": "Наплечники дружины Уэйкрестов"
   },
@@ -435,7 +435,7 @@
     "fr_FR": "Plaques d’épaule de corsaire de l’effroi",
     "it_IT": "Spallacci Corazzati del Corsaro del Terrore",
     "pt_BR": "Placa d'Ombros do Corsário Terrível",
-    "ko_KO": "공포의 바다사냥꾼 어깨철갑",
+    "ko_KR": "공포의 바다사냥꾼 어깨철갑",
     "cn_CN": "恐怖海盗肩铠",
     "ru_RU": "Наплечники жуткого корсара"
   },
@@ -446,7 +446,7 @@
     "fr_FR": "Espauliers rastari",
     "it_IT": "Paraspalle dei Rastari",
     "pt_BR": "Brafoneiras Rastari",
-    "ko_KO": "라스타리 견갑",
+    "ko_KR": "라스타리 견갑",
     "cn_CN": "拉斯塔利肩甲",
     "ru_RU": "Растарское наплечье"
   },
@@ -457,7 +457,7 @@
     "fr_FR": "Spallières de guerre nazmani en plaques",
     "it_IT": "Guardaspalle a Piastre Feroci dei Nazmani",
     "pt_BR": "Espaldares de Plastrão Nazmani",
-    "ko_KO": "나즈마니 전쟁판금 어깨덮개",
+    "ko_KR": "나즈마니 전쟁판금 어깨덮개",
     "cn_CN": "纳兹曼尼战铠肩胄",
     "ru_RU": "Назманийский боевой наплеч"
   },
@@ -468,7 +468,7 @@
     "fr_FR": "Espauliers du vétéran exilé",
     "it_IT": "Paraspalle del Veterano Esiliato",
     "pt_BR": "Brafoneiras do Veterano Exilado",
-    "ko_KO": "추방당한 정예병의 견갑",
+    "ko_KR": "추방당한 정예병의 견갑",
     "cn_CN": "流亡老兵的肩铠",
     "ru_RU": "Наплечье ветерана-изгоя"
   },
@@ -479,7 +479,7 @@
     "fr_FR": "Plaques d’épaule fétiche-d’os",
     "it_IT": "Spallacci Corazzati del Feticcio d'Ossa",
     "pt_BR": "Placa d'Ombros do Fetiche Ósseo",
-    "ko_KO": "뼈장식 어깨철갑",
+    "ko_KR": "뼈장식 어깨철갑",
     "cn_CN": "骨质神像护肩",
     "ru_RU": "Украшенные костями латные наплечники"
   },
@@ -490,7 +490,7 @@
     "fr_FR": "Espauliers du gardelame de Rezan",
     "it_IT": "Paraspalle della Guardia di Spade di Rezan",
     "pt_BR": "Brafoneiras do Guarda-lâmina de Rezan",
-    "ko_KO": "레잔의 칼날경비병의 견갑",
+    "ko_KR": "레잔의 칼날경비병의 견갑",
     "cn_CN": "莱赞剑卫肩铠",
     "ru_RU": "Наплечье мастера клинка Резана"
   },
@@ -501,7 +501,7 @@
     "fr_FR": "Spallières rampedune",
     "it_IT": "Guardaspalle di Strisciadune",
     "pt_BR": "Espaldares de Rasteja-dunas",
-    "ko_KO": "모래삼엽충 어깨덮개",
+    "ko_KR": "모래삼엽충 어깨덮개",
     "cn_CN": "沙丘爬行者肩甲",
     "ru_RU": "Наплеч дюнного жука"
   },
@@ -512,7 +512,7 @@
     "fr_FR": "Espauliers de maître du port",
     "it_IT": "Paraspalle del Maestro del Porto",
     "pt_BR": "Brafoneiras do Capitão do Porto",
-    "ko_KO": "항만관리자 견갑",
+    "ko_KR": "항만관리자 견갑",
     "cn_CN": "港务长护肩",
     "ru_RU": "Наплечье капитана порта"
   },
@@ -523,7 +523,7 @@
     "fr_FR": "Espauliers mornesylve",
     "it_IT": "Paraspalle della Selva Tetra",
     "pt_BR": "Brafoneiras da Mata Medonha",
-    "ko_KO": "냉혹숲 견갑",
+    "ko_KR": "냉혹숲 견갑",
     "cn_CN": "苍茫护肩",
     "ru_RU": "Наплечье Мрачной пустоши"
   },
@@ -534,7 +534,7 @@
     "fr_FR": "Espauliers brèche-banc",
     "it_IT": "Paraspalle di Spaccascogli",
     "pt_BR": "Brafoneiras Fende-baixio",
-    "ko_KO": "모래틈 견갑",
+    "ko_KR": "모래틈 견갑",
     "cn_CN": "浅滩碎浪护肩",
     "ru_RU": "Наплечье береговой осады"
   },
@@ -545,7 +545,7 @@
     "fr_FR": "Plaques d’épaule de tétanos",
     "it_IT": "Spallacci Corazzati del Serrafauci",
     "pt_BR": "Placa d'Ombros do Travaqueixo",
-    "ko_KO": "잠금턱 어깨철갑",
+    "ko_KR": "잠금턱 어깨철갑",
     "cn_CN": "钳嘴肩铠",
     "ru_RU": "Наплечники столбняка"
   },
@@ -556,7 +556,7 @@
     "fr_FR": "Espauliers flambe-ciel",
     "it_IT": "Paraspalle dei Bruciacieli",
     "pt_BR": "Brafoneiras do Queimacéu",
-    "ko_KO": "하늘방화꾼 견갑",
+    "ko_KR": "하늘방화꾼 견갑",
     "cn_CN": "灼天者肩铠",
     "ru_RU": "Наплечники огнелетчика"
   },
@@ -567,7 +567,7 @@
     "fr_FR": "Espauliers du grand unificateur",
     "it_IT": "Paraspalle del Grande Riunificatore",
     "pt_BR": "Brafoneiras do Grande Unificador",
-    "ko_KO": "위대한 통합자의 견갑",
+    "ko_KR": "위대한 통합자의 견갑",
     "cn_CN": "一统肩甲",
     "ru_RU": "Наплечье великого объединителя"
   },
@@ -578,7 +578,7 @@
     "fr_FR": "Espauliers en carapace de kraken",
     "it_IT": "Paraspalle di Carapace di Kraken",
     "pt_BR": "Brafoneiras de Concha de Kraken",
-    "ko_KO": "크라켄 껍질 견갑",
+    "ko_KR": "크라켄 껍질 견갑",
     "cn_CN": "海怪壳护肩",
     "ru_RU": "Наплечники из панциря кракена"
   },
@@ -589,7 +589,7 @@
     "fr_FR": "Espauliers de lieur c’thraxxi",
     "it_IT": "Paraspalle con Legacci dei C'thraxxi",
     "pt_BR": "Brafoneiras das Amarras de C'Thraxxi",
-    "ko_KO": "크트락시 결속사 견갑",
+    "ko_KR": "크트락시 결속사 견갑",
     "cn_CN": "克拉西斯封印者肩铠",
     "ru_RU": "Наплечные щитки К'тракси"
   },
@@ -600,7 +600,7 @@
     "fr_FR": "Espauliers de l’horreur à cornes",
     "it_IT": "Paraspalle dell'Orrore Cornuto",
     "pt_BR": "Brafoneiras do Horror Chifrudo",
-    "ko_KO": "뿔난 공포의 견갑",
+    "ko_KR": "뿔난 공포의 견갑",
     "cn_CN": "锐角恐惧肩铠",
     "ru_RU": "Наплечники рогатого ужаса"
   },
@@ -611,7 +611,7 @@
     "fr_FR": "Espauliers chitinépine",
     "it_IT": "Paraspalle di Fibre di Chitina",
     "pt_BR": "Brafoneiras de Quitespinha",
-    "ko_KO": "키틴척추 견갑",
+    "ko_KR": "키틴척추 견갑",
     "cn_CN": "几丁质脊柱肩胄",
     "ru_RU": "Наплечье из хитиновых шипов"
   },
@@ -622,7 +622,7 @@
     "fr_FR": "Espauliers de corsaire de l’effroi",
     "it_IT": "Paraspalle del Corsaro del Terrore",
     "pt_BR": "Brafoneiras do Corsário Terrível",
-    "ko_KO": "공포의 바다사냥꾼 견갑",
+    "ko_KR": "공포의 바다사냥꾼 견갑",
     "cn_CN": "恐怖海盗肩胄",
     "ru_RU": "Наплечье жуткого корсара"
   },
@@ -633,7 +633,7 @@
     "fr_FR": "Espauliers du champion",
     "it_IT": "Paraspalle del Campione",
     "pt_BR": "Brafoneiras do Campeão",
-    "ko_KO": "용사의 견갑",
+    "ko_KR": "용사의 견갑",
     "cn_CN": "勇士护肩",
     "ru_RU": "Наплечье защитника Азерот"
   },
@@ -644,7 +644,7 @@
     "fr_FR": "Spallières du vétéran exilé",
     "it_IT": "Guardaspalle del Veterano Esiliato",
     "pt_BR": "Espaldares do Veterano Exilado",
-    "ko_KO": "추방당한 정예병의 어깨덮개",
+    "ko_KR": "추방당한 정예병의 어깨덮개",
     "cn_CN": "流亡老兵的肩甲",
     "ru_RU": "Наплеч ветерана-изгоя"
   },
@@ -655,7 +655,7 @@
     "fr_FR": "Plaques d’épaule gravées en glace",
     "it_IT": "Spallacci Corazzati Incisi dal Ghiaccio",
     "pt_BR": "Placa d'Ombros Entalhadas em Gelo",
-    "ko_KO": "얼음으로 조각한 어깨철갑",
+    "ko_KR": "얼음으로 조각한 어깨철갑",
     "cn_CN": "冰雕肩甲",
     "ru_RU": "Высеченные изо льда наплечные щитки"
   },
@@ -666,7 +666,7 @@
     "fr_FR": "Espauliers du Rempart à pointes",
     "it_IT": "Paraspalle Chiodati di Scudonero",
     "pt_BR": "Brafoneiras do Defensor Medonho Farpadas",
-    "ko_KO": "가시 박힌 공포방패 견갑",
+    "ko_KR": "가시 박힌 공포방패 견갑",
     "cn_CN": "恐惧之盾尖刺护肩",
     "ru_RU": "Шипастые наплечники щитоносца"
   },
@@ -677,7 +677,7 @@
     "fr_FR": "Espauliers du rugissement du Lion",
     "it_IT": "Paraspalle del Ruggito del Leone",
     "pt_BR": "Brafoneiras do Rugido do Leão",
-    "ko_KO": "사자의 포효 견갑",
+    "ko_KR": "사자의 포효 견갑",
     "cn_CN": "雄狮之吼肩甲",
     "ru_RU": "Наплечники \"Львиного рыка\""
   },
@@ -688,7 +688,7 @@
     "fr_FR": "Espauliers du gladiateur menaçant en plaques",
     "it_IT": "Paraspalle a Piastre del Gladiatore Terrificante",
     "pt_BR": "Brafoneiras de Placa do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 판금 견갑",
+    "ko_KR": "공포를 부르는 검투사의 판금 견갑",
     "cn_CN": "悚然角斗士的板甲肩铠",
     "ru_RU": "Латное наплечье ужасающего гладиатора"
   },
@@ -699,7 +699,7 @@
     "fr_FR": "Espaulières du gladiateur menaçant en plaques",
     "it_IT": "Spallacci a Piastre del Gladiatore Terrificante",
     "pt_BR": "Omoplatas de Placa do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 판금 어깨보호구",
+    "ko_KR": "공포를 부르는 검투사의 판금 어깨보호구",
     "cn_CN": "悚然角斗士的板甲护肩",
     "ru_RU": "Латные наплечники ужасающего гладиатора"
   },
@@ -710,7 +710,7 @@
     "fr_FR": "Espauliers de l’aspirant menaçant en plaques",
     "it_IT": "Paraspalle a Piastre del Pretendente Terrificante",
     "pt_BR": "Brafoneiras de Placa do Aspirante Medonho",
-    "ko_KO": "공포를 부르는 지원자의 판금 견갑",
+    "ko_KR": "공포를 부르는 지원자의 판금 견갑",
     "cn_CN": "悚然候选者的板甲肩铠",
     "ru_RU": "Латное наплечье ужасающего претендента"
   },
@@ -721,7 +721,7 @@
     "fr_FR": "Plaques d’épaule de légionnaire de la 7e",
     "it_IT": "Spallacci Corazzati del Legionario della VII Legione",
     "pt_BR": "Placa d'Ombros do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 어깨철갑",
+    "ko_KR": "7군단 용사의 어깨철갑",
     "cn_CN": "第七军团士兵板甲护肩",
     "ru_RU": "Наплечные щитки 7-го легиона"
   },
@@ -732,7 +732,7 @@
     "fr_FR": "Plaques d’épaule du centurion honorable",
     "it_IT": "Spallacci Corazzati del Centurione della Brigata dell'Onore",
     "pt_BR": "Placa d'Ombros do Centurião Brigadista",
-    "ko_KO": "명예결속단 백인대장의 어깨철갑",
+    "ko_KR": "명예결속단 백인대장의 어깨철갑",
     "cn_CN": "荣耀战团百夫长的板甲护肩",
     "ru_RU": "Наплечные щитки центуриона Армии Чести"
   },
@@ -743,7 +743,7 @@
     "fr_FR": "Espauliers de légionnaire de la 7e",
     "it_IT": "Paraspalle del Legionario della VII Legione",
     "pt_BR": "Brafoneiras do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 견갑",
+    "ko_KR": "7군단 용사의 견갑",
     "cn_CN": "第七军团士兵肩铠",
     "ru_RU": "Наплечье 7-го легиона"
   },
@@ -754,7 +754,7 @@
     "fr_FR": "Espauliers du centurion honorable",
     "it_IT": "Paraspalle del Centurione della Brigata dell'Onore",
     "pt_BR": "Brafoneiras do Centurião Brigadista",
-    "ko_KO": "명예결속단 백인대장의 견갑",
+    "ko_KR": "명예결속단 백인대장의 견갑",
     "cn_CN": "荣耀战团百夫长的肩甲",
     "ru_RU": "Наплечье центуриона Армии Чести"
   },
@@ -765,7 +765,7 @@
     "fr_FR": "Cuirasse freine-pierres",
     "it_IT": "Pettorale Corazzato del Bloccarocce",
     "pt_BR": "Peitoral Para-foguete",
-    "ko_KO": "바위막이 가슴보호갑",
+    "ko_KR": "바위막이 가슴보호갑",
     "cn_CN": "阻岩者胸甲",
     "ru_RU": "Камнеупорная кираса"
   },
@@ -776,7 +776,7 @@
     "fr_FR": "Cuirasse de chevaucheur de griffon",
     "it_IT": "Pettorale Corazzato del Cavaliere di Grifoni",
     "pt_BR": "Peitoral do Cavalga-grifo",
-    "ko_KO": "그리핀 기수 가슴보호갑",
+    "ko_KR": "그리핀 기수 가슴보호갑",
     "cn_CN": "狮鹫骑士胸甲",
     "ru_RU": "Кираса всадника на грифоне"
   },
@@ -787,7 +787,7 @@
     "fr_FR": "Cuirasse d’écumeur des mers",
     "it_IT": "Pettorale Corazzato dell'Incursore Marino",
     "pt_BR": "Peitoral do Saqueador dos Mares",
-    "ko_KO": "바다 약탈자의 가슴보호갑",
+    "ko_KR": "바다 약탈자의 가슴보호갑",
     "cn_CN": "劫浪者胸甲",
     "ru_RU": "Кираса морского налетчика"
   },
@@ -798,7 +798,7 @@
     "fr_FR": "Cuirasse de la milice des Malvoie",
     "it_IT": "Pettorale Corazzato della Milizia dei Crestabianca",
     "pt_BR": "Peitoral da Milícia Capelo",
-    "ko_KO": "웨이크레스트 민병대 가슴보호갑",
+    "ko_KR": "웨이크레스트 민병대 가슴보호갑",
     "cn_CN": "维克雷斯民兵护胸",
     "ru_RU": "Кираса дружины Уэйкрестов"
   },
@@ -809,7 +809,7 @@
     "fr_FR": "Cuirasse de corsaire de l’effroi",
     "it_IT": "Pettorale Corazzato del Corsaro del Terrore",
     "pt_BR": "Peitoral do Corsário Terrível",
-    "ko_KO": "공포의 바다사냥꾼 가슴보호갑",
+    "ko_KR": "공포의 바다사냥꾼 가슴보호갑",
     "cn_CN": "恐怖海盗胸甲",
     "ru_RU": "Кираса жуткого корсара"
   },
@@ -820,7 +820,7 @@
     "fr_FR": "Cuirasse rastari",
     "it_IT": "Pettorale Corazzato dei Rastari",
     "pt_BR": "Peitoral Rastari",
-    "ko_KO": "라스타리 가슴보호갑",
+    "ko_KR": "라스타리 가슴보호갑",
     "cn_CN": "拉斯塔利胸甲",
     "ru_RU": "Растарская кираса"
   },
@@ -831,7 +831,7 @@
     "fr_FR": "Pansière de guerre nazmani en plaques",
     "it_IT": "Cotta a Piastre Feroci dei Nazmani",
     "pt_BR": "Guarda-peito de Plastrão Nazmani",
-    "ko_KO": "나즈마니 전쟁판금 가슴갑옷",
+    "ko_KR": "나즈마니 전쟁판금 가슴갑옷",
     "cn_CN": "纳兹曼尼战铠胸甲",
     "ru_RU": "Назманийская боевая бригантина"
   },
@@ -842,7 +842,7 @@
     "fr_FR": "Thorax du vétéran exilé",
     "it_IT": "Corazza del Veterano Esiliato",
     "pt_BR": "Corselete do Veterano Exilado",
-    "ko_KO": "추방당한 정예병의 흉갑",
+    "ko_KR": "추방당한 정예병의 흉갑",
     "cn_CN": "流亡老兵的胸铠",
     "ru_RU": "Кираса ветерана-изгоя"
   },
@@ -853,7 +853,7 @@
     "fr_FR": "Pansière fétiche-d’os",
     "it_IT": "Cotta del Feticcio d'Ossa",
     "pt_BR": "Guarda-peito do Fetiche Ósseo",
-    "ko_KO": "뼈장식 가슴갑옷",
+    "ko_KR": "뼈장식 가슴갑옷",
     "cn_CN": "骨质神像胸甲",
     "ru_RU": "Украшенная костями бригантина"
   },
@@ -864,7 +864,7 @@
     "fr_FR": "Cuirasse du gardelame de Rezan",
     "it_IT": "Pettorale Corazzato della Guardia di Spade di Rezan",
     "pt_BR": "Peitoral do Guarda-lâmina de Rezan",
-    "ko_KO": "레잔의 칼날경비병의 가슴보호갑",
+    "ko_KR": "레잔의 칼날경비병의 가슴보호갑",
     "cn_CN": "莱赞剑卫胸甲",
     "ru_RU": "Кираса мастера клинка Резана"
   },
@@ -875,7 +875,7 @@
     "fr_FR": "Pansière rampedune",
     "it_IT": "Cotta di Strisciadune",
     "pt_BR": "Guarda-peito de Rasteja-dunas",
-    "ko_KO": "모래삼엽충 가슴갑옷",
+    "ko_KR": "모래삼엽충 가슴갑옷",
     "cn_CN": "沙丘爬行者胸甲",
     "ru_RU": "Бригантина дюнного жука"
   },
@@ -886,7 +886,7 @@
     "fr_FR": "Thorax de maître du port",
     "it_IT": "Corazza del Maestro del Porto",
     "pt_BR": "Corselete do Capitão do Porto",
-    "ko_KO": "항만관리자 흉갑",
+    "ko_KR": "항만관리자 흉갑",
     "cn_CN": "港务长胸铠",
     "ru_RU": "Кираса капитана порта"
   },
@@ -897,7 +897,7 @@
     "fr_FR": "Corselet mornesylve",
     "it_IT": "Corazza Foderata della Selva Tetra",
     "pt_BR": "Couraça da Mata Medonha",
-    "ko_KO": "냉혹숲 가슴보호대",
+    "ko_KR": "냉혹숲 가슴보호대",
     "cn_CN": "苍茫护胸",
     "ru_RU": "Нагрудный доспех Мрачной пустоши"
   },
@@ -908,7 +908,7 @@
     "fr_FR": "Cuirasse brèche-banc",
     "it_IT": "Pettorale Corazzato di Spaccascogli",
     "pt_BR": "Peitoral Fende-baixio",
-    "ko_KO": "모래틈 가슴보호갑",
+    "ko_KR": "모래틈 가슴보호갑",
     "cn_CN": "浅滩碎浪胸甲",
     "ru_RU": "Кираса береговой осады"
   },
@@ -919,7 +919,7 @@
     "fr_FR": "Plastron de guerre nazmani en plaques",
     "it_IT": "Corazza a Piastre Feroci dei Nazmani",
     "pt_BR": "Peito d'Armas de Plastrão Nazmani",
-    "ko_KO": "나즈마니 전쟁판금 가슴보호구",
+    "ko_KR": "나즈마니 전쟁판금 가슴보호구",
     "cn_CN": "纳兹曼尼战铠胸甲",
     "ru_RU": "Назманийский боевой нагрудник"
   },
@@ -930,7 +930,7 @@
     "fr_FR": "Corselet de l’habitant des profondeurs",
     "it_IT": "Corazza Foderata dell'Abitante del Profondo",
     "pt_BR": "Couraça do Habitante das Profundezas",
-    "ko_KO": "심연 주민의 가슴보호대",
+    "ko_KR": "심연 주민의 가슴보호대",
     "cn_CN": "深渊住民护胸",
     "ru_RU": "Нагрудный доспех обитателя глубин"
   },
@@ -941,7 +941,7 @@
     "fr_FR": "Cuirasse de harponneur en plaques",
     "it_IT": "Corazza a Piastre del Ramponiere",
     "pt_BR": "Corselete de Placa do Arpoador",
-    "ko_KO": "작살사수의 판금 흉갑",
+    "ko_KR": "작살사수의 판금 흉갑",
     "cn_CN": "鱼叉手的板甲护胸",
     "ru_RU": "Латная кираса гарпунщика"
   },
@@ -952,7 +952,7 @@
     "fr_FR": "Cuirasse de gardien du désert",
     "it_IT": "Pettorale Corazzato del Guardiano del Deserto",
     "pt_BR": "Peitoral do Guardião do Deserto",
-    "ko_KO": "사막 수호자의 가슴보호갑",
+    "ko_KR": "사막 수호자의 가슴보호갑",
     "cn_CN": "沙漠卫士胸甲",
     "ru_RU": "Кираса стража пустыни"
   },
@@ -963,7 +963,7 @@
     "fr_FR": "Cuirasse de protection artérielle",
     "it_IT": "Pettorale Corazzato della Protezione Arteriosa",
     "pt_BR": "Peitoral da Proteção Arterial",
-    "ko_KO": "동맥 보호의 가슴보호갑",
+    "ko_KR": "동맥 보호의 가슴보호갑",
     "cn_CN": "动脉防护胸甲",
     "ru_RU": "Кираса артериальной защиты"
   },
@@ -974,7 +974,7 @@
     "fr_FR": "Cuirasse de gardien corsandre",
     "it_IT": "Corazza della Custode dei Bracescura",
     "pt_BR": "Corselete do Carcereiro Grimpagris",
-    "ko_KO": "애쉬베인 감시자의 흉갑",
+    "ko_KR": "애쉬베인 감시자의 흉갑",
     "cn_CN": "艾什凡卫士的胸铠",
     "ru_RU": "Кираса стражника корпорации Эшвейнов"
   },
@@ -985,7 +985,7 @@
     "fr_FR": "Cuirasse du vengeur",
     "it_IT": "Pettorale Corazzato del Vendicativo",
     "pt_BR": "Peitoral do Vindicante",
-    "ko_KO": "복수심에 가득찬 자의 가슴보호갑",
+    "ko_KR": "복수심에 가득찬 자의 가슴보호갑",
     "cn_CN": "世仇胸甲",
     "ru_RU": "Кираса мстителя"
   },
@@ -996,7 +996,7 @@
     "fr_FR": "Cuirasse du champion",
     "it_IT": "Pettorale Corazzato del Campione",
     "pt_BR": "Peitoral do Campeão",
-    "ko_KO": "용사의 가슴보호갑",
+    "ko_KR": "용사의 가슴보호갑",
     "cn_CN": "勇士护胸",
     "ru_RU": "Кираса защитника Азерот"
   },
@@ -1007,7 +1007,7 @@
     "fr_FR": "Corselet des mutagènes virulents",
     "it_IT": "Corazza Foderata dei Mutageni Virulenti",
     "pt_BR": "Couraça dos Mutágenos Virulentos",
-    "ko_KO": "증오심에 찬 돌연변이의 가슴보호대",
+    "ko_KR": "증오심에 찬 돌연변이의 가슴보호대",
     "cn_CN": "剧毒诱变剂护胸",
     "ru_RU": "Нагрудник опасных мутагенов"
   },
@@ -1018,7 +1018,7 @@
     "fr_FR": "Pansière des machinations apocalyptiques",
     "it_IT": "Cotta delle Macchinazioni Apocalittiche",
     "pt_BR": "Guarda-peito das Maquinações Apocalípticas",
-    "ko_KO": "종말적인 책략의 가슴갑옷",
+    "ko_KR": "종말적인 책략의 가슴갑옷",
     "cn_CN": "末日阴谋胸甲",
     "ru_RU": "Нагрудник апокалиптических манипуляций"
   },
@@ -1029,7 +1029,7 @@
     "fr_FR": "Harnois de bataille de la milice des Malvoie",
     "it_IT": "Corazza Feroce della Milizia dei Crestabianca",
     "pt_BR": "Loriga da Milícia Capelo",
-    "ko_KO": "웨이크레스트 민병대 전투판금",
+    "ko_KR": "웨이크레스트 민병대 전투판금",
     "cn_CN": "维克雷斯民兵胸甲",
     "ru_RU": "Нагрудник дружины Уэйкрестов"
   },
@@ -1040,7 +1040,7 @@
     "fr_FR": "Corselet du fracas de l’orage",
     "it_IT": "Corazza Foderata dello Schianto Tempestoso",
     "pt_BR": "Couraça Racha-tempestade",
-    "ko_KO": "폭풍충돌 가슴보호대",
+    "ko_KR": "폭풍충돌 가슴보호대",
     "cn_CN": "碎雷胸甲",
     "ru_RU": "Кираса крушащей бури"
   },
@@ -1051,7 +1051,7 @@
     "fr_FR": "Grill de machine de guerre moulé",
     "it_IT": "Griglia Fusa della Macchina da Guerra",
     "pt_BR": "Grelha Moldada de Máquina de Guerra",
-    "ko_KO": "본뜬 전쟁 기계 가슴판",
+    "ko_KR": "본뜬 전쟁 기계 가슴판",
     "cn_CN": "战争机器熔铸铁板",
     "ru_RU": "Литая решетка боевой машины"
   },
@@ -1062,7 +1062,7 @@
     "fr_FR": "Cuirasse polie de porte-bouclier",
     "it_IT": "Pettorale Corazzato Lucidato del Portascudi",
     "pt_BR": "Peitoral do Porta-escudo Polido",
-    "ko_KO": "광택나는 방패병의 가슴보호갑",
+    "ko_KR": "광택나는 방패병의 가슴보호갑",
     "cn_CN": "抛光的持盾卫士的胸甲",
     "ru_RU": "Отполированная кираса щитоносца"
   },
@@ -1073,7 +1073,7 @@
     "fr_FR": "Plastron du gladiateur menaçant en plaques",
     "it_IT": "Corazza a Piastre del Gladiatore Terrificante",
     "pt_BR": "Peito d'Armas de Placa do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 판금 가슴보호구",
+    "ko_KR": "공포를 부르는 검투사의 판금 가슴보호구",
     "cn_CN": "悚然角斗士的板甲护胸",
     "ru_RU": "Латный нагрудник ужасающего гладиатора"
   },
@@ -1084,7 +1084,7 @@
     "fr_FR": "Corselet du gladiateur menaçant en plaques",
     "it_IT": "Corazza Foderata a Piastre del Gladiatore Terrificante",
     "pt_BR": "Couraça de Placa do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 판금 가슴보호대",
+    "ko_KR": "공포를 부르는 검투사의 판금 가슴보호대",
     "cn_CN": "悚然角斗士的板甲胸铠",
     "ru_RU": "Латный нагрудный доспех ужасающего гладиатора"
   },
@@ -1095,7 +1095,7 @@
     "fr_FR": "Pansière de bastonneur sonné",
     "it_IT": "Cotta del Combattente Ubriaco",
     "pt_BR": "Guarda-peito do Brigão Grogue",
-    "ko_KO": "혼미한 싸움꾼의 가슴갑옷",
+    "ko_KR": "혼미한 싸움꾼의 가슴갑옷",
     "cn_CN": "淹水拳手的护胸",
     "ru_RU": "Нагрудник хмельного бойца"
   },
@@ -1106,7 +1106,7 @@
     "fr_FR": "Plastron de l’aspirant menaçant en plaques",
     "it_IT": "Corazza a Piastre del Pretendente Terrificante",
     "pt_BR": "Peito d'Armas de Placa do Aspirante Medonho",
-    "ko_KO": "공포를 부르는 지원자의 판금 가슴보호구",
+    "ko_KR": "공포를 부르는 지원자의 판금 가슴보호구",
     "cn_CN": "悚然候选者的板甲护胸",
     "ru_RU": "Латный нагрудник ужасающего претендента"
   },
@@ -1117,7 +1117,7 @@
     "fr_FR": "Corselet de légionnaire de la 7e",
     "it_IT": "Corazza Foderata del Legionario della VII Legione",
     "pt_BR": "Couraça do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 가슴보호대",
+    "ko_KR": "7군단 용사의 가슴보호대",
     "cn_CN": "第七军团士兵胸甲",
     "ru_RU": "Нагрудный доспех 7-го легиона"
   },
@@ -1128,7 +1128,7 @@
     "fr_FR": "Cuirasse du centurion honorable",
     "it_IT": "Pettorale Corazzato del Centurione della Brigata dell'Onore",
     "pt_BR": "Peitoral do Centurião Brigadista",
-    "ko_KO": "명예결속단 백인대장의 가슴보호갑",
+    "ko_KR": "명예결속단 백인대장의 가슴보호갑",
     "cn_CN": "荣耀战团百夫长的板甲护胸",
     "ru_RU": "Кираса центуриона Армии Чести"
   },
@@ -1139,7 +1139,7 @@
     "fr_FR": "Cuirasse de légionnaire de la 7e",
     "it_IT": "Pettorale Corazzato del Legionario della VII Legione",
     "pt_BR": "Peitoral do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 가슴보호갑",
+    "ko_KR": "7군단 용사의 가슴보호갑",
     "cn_CN": "第七军团士兵护胸",
     "ru_RU": "Кираса 7-го легиона"
   },
@@ -1150,7 +1150,7 @@
     "fr_FR": "Heaume en peau de sanglier maudit",
     "it_IT": "Elmo di Pelle di Cinghiale Maledetto",
     "pt_BR": "Elmo de Couro de Javali Amaldiçoado",
-    "ko_KO": "저주받은 멧돼지가죽 투구",
+    "ko_KR": "저주받은 멧돼지가죽 투구",
     "cn_CN": "诅咒野猪皮头盔",
     "ru_RU": "Шлем из шкуры проклятого вепря"
   },
@@ -1161,7 +1161,7 @@
     "fr_FR": "Capuche de flibustier",
     "it_IT": "Copricapo del Filibustiere",
     "pt_BR": "Capucho do Flibusteiro",
-    "ko_KO": "해적단 수도두건",
+    "ko_KR": "해적단 수도두건",
     "cn_CN": "海掠者头盔",
     "ru_RU": "Капюшон флибустьера"
   },
@@ -1172,7 +1172,7 @@
     "fr_FR": "Capuche de bannisseur",
     "it_IT": "Copricapo dell'Esiliatore",
     "pt_BR": "Capucho do Banidor",
-    "ko_KO": "추방꾼 수도두건",
+    "ko_KR": "추방꾼 수도두건",
     "cn_CN": "放逐者兜帽",
     "ru_RU": "Капюшон изгоняющего зло"
   },
@@ -1183,7 +1183,7 @@
     "fr_FR": "Chaperon des eaux sombres",
     "it_IT": "Cappuccio d'Acquascura",
     "pt_BR": "Capuz Aguanegra",
-    "ko_KO": "검은물 두건",
+    "ko_KR": "검은물 두건",
     "cn_CN": "暗水兜帽",
     "ru_RU": "Капюшон темных вод"
   },
@@ -1194,7 +1194,7 @@
     "fr_FR": "Chaperon jambani",
     "it_IT": "Cappuccio dei Jambani",
     "pt_BR": "Capuz Jambani",
-    "ko_KO": "잠바니 두건",
+    "ko_KR": "잠바니 두건",
     "cn_CN": "加巴尼罩帽",
     "ru_RU": "Капюшон культа Вол'джамбы"
   },
@@ -1205,7 +1205,7 @@
     "fr_FR": "Masque rituel d’écorcheur",
     "it_IT": "Maschera dello Scorticatore Rituale",
     "pt_BR": "Máscara do Esfolador Ritual",
-    "ko_KO": "의식 탈피공의 가면",
+    "ko_KR": "의식 탈피공의 가면",
     "cn_CN": "祭仪剥除者面具",
     "ru_RU": "Маска ритуального свежевателя"
   },
@@ -1216,7 +1216,7 @@
     "fr_FR": "Masque des Sables brûlés",
     "it_IT": "Maschera delle Sabbie Ardenti",
     "pt_BR": "Máscara das Areias Calcinantes",
-    "ko_KO": "그을린 모래 가면",
+    "ko_KR": "그을린 모래 가면",
     "cn_CN": "沙灼面具",
     "ru_RU": "Маска племени Опаленных Песков"
   },
@@ -1227,7 +1227,7 @@
     "fr_FR": "Chapeau de capitaine des Lamineurs",
     "it_IT": "Cappello del Capitano dei Marferreo",
     "pt_BR": "Chapéu do Capitão dos Maré-férrea",
-    "ko_KO": "무쇠파도 선장의 모자",
+    "ko_KR": "무쇠파도 선장의 모자",
     "cn_CN": "铁潮船长之帽",
     "ru_RU": "Шляпа капитана братства Стальных Волн"
   },
@@ -1238,7 +1238,7 @@
     "fr_FR": "Bassinet de Tourbesang",
     "it_IT": "Copricapo del Pantano del Sangue",
     "pt_BR": "Barrete do Brejo Sangrento",
-    "ko_KO": "피의 수렁 면갑",
+    "ko_KR": "피의 수렁 면갑",
     "cn_CN": "鲜血沼泽护额",
     "ru_RU": "Головной покров Кровавой заводи"
   },
@@ -1249,7 +1249,7 @@
     "fr_FR": "Masque d’estafette de Gonk",
     "it_IT": "Maschera della Staffetta di Gonk",
     "pt_BR": "Máscara do Vanguardeiro de Gonk",
-    "ko_KO": "공크 정찰꾼 가면",
+    "ko_KR": "공크 정찰꾼 가면",
     "cn_CN": "贡克神速面具",
     "ru_RU": "Маска гонца Гонка"
   },
@@ -1260,7 +1260,7 @@
     "fr_FR": "Chaperon claquemort",
     "it_IT": "Cappuccio di Schioccamorte",
     "pt_BR": "Capuz Estalúgubre",
-    "ko_KO": "죽음턱 두건",
+    "ko_KR": "죽음턱 두건",
     "cn_CN": "迅捷死亡兜帽",
     "ru_RU": "Капюшон гиблохвата"
   },
@@ -1271,7 +1271,7 @@
     "fr_FR": "Bassinet de marin",
     "it_IT": "Copricapo da Marinaio",
     "pt_BR": "Barrete do Marinheiro",
-    "ko_KO": "선원 면갑",
+    "ko_KR": "선원 면갑",
     "cn_CN": "航海家护额",
     "ru_RU": "Головной покров мореплавателя"
   },
@@ -1282,7 +1282,7 @@
     "fr_FR": "Chaperon tombépine",
     "it_IT": "Cappuccio della Spina Tombale",
     "pt_BR": "Capuz Espinatumba",
-    "ko_KO": "무덤가시 두건",
+    "ko_KR": "무덤가시 두건",
     "cn_CN": "墓棘兜帽",
     "ru_RU": "Капюшон могильной колючки"
   },
@@ -1293,7 +1293,7 @@
     "fr_FR": "Heaume de Beautemps",
     "it_IT": "Elmo di Chiarosole",
     "pt_BR": "Elmo Bontempo",
-    "ko_KO": "청천 투구",
+    "ko_KR": "청천 투구",
     "cn_CN": "法维瑟头盔",
     "ru_RU": "Шлем хорошей погоды"
   },
@@ -1304,7 +1304,7 @@
     "fr_FR": "Turban de haute altitude",
     "it_IT": "Turbante d'Altura",
     "pt_BR": "Turbante de Altas Altitudes",
-    "ko_KO": "고고도 터번",
+    "ko_KR": "고고도 터번",
     "cn_CN": "高海拔头巾",
     "ru_RU": "Летный тюрбан"
   },
@@ -1315,7 +1315,7 @@
     "fr_FR": "Heaume de pique-tête",
     "it_IT": "Elmo del Boia",
     "pt_BR": "Elmo do Decapitador",
-    "ko_KO": "머리강탈자의 투구",
+    "ko_KR": "머리강탈자의 투구",
     "cn_CN": "夺颅者头盔",
     "ru_RU": "Шлем головореза"
   },
@@ -1326,7 +1326,7 @@
     "fr_FR": "Capuche des machinations fluides",
     "it_IT": "Copricapo delle Macchinazioni Fluide",
     "pt_BR": "Capucho das Maquinações Fluidas",
-    "ko_KO": "유동적인 계략의 수도두건",
+    "ko_KR": "유동적인 계략의 수도두건",
     "cn_CN": "流水阴谋风帽",
     "ru_RU": "Клобук глубоких манипуляций"
   },
@@ -1337,7 +1337,7 @@
     "fr_FR": "Diadème du léviathan enveloppant",
     "it_IT": "Tiara del Leviatano Avvolgente",
     "pt_BR": "Diadema do Leviatã Envolvente",
-    "ko_KO": "휘감는 거대거수의 머리장식",
+    "ko_KR": "휘감는 거대거수의 머리장식",
     "cn_CN": "迷蒙海兽头环",
     "ru_RU": "Капюшон окутывающего левиафана"
   },
@@ -1348,7 +1348,7 @@
     "fr_FR": "Chaperon du Loa rampant",
     "it_IT": "Cappuccio del Loa Sinuoso",
     "pt_BR": "Capuz do Loa Serpenteante",
-    "ko_KO": "미끄러운 로아의 두건",
+    "ko_KR": "미끄러운 로아의 두건",
     "cn_CN": "蛇行神灵兜帽",
     "ru_RU": "Капюшон скользкого лоа"
   },
@@ -1359,7 +1359,7 @@
     "fr_FR": "Chaperon de poudre éclipsante",
     "it_IT": "Cappuccio della Polvere Rapida",
     "pt_BR": "Capuz Pó-do-clarão",
-    "ko_KO": "섬광가루 두건",
+    "ko_KR": "섬광가루 두건",
     "cn_CN": "闪光火药兜帽",
     "ru_RU": "Капюшон вспыхивающего пороха"
   },
@@ -1370,7 +1370,7 @@
     "fr_FR": "Lunettes à engrenages AZ3-R1-T3",
     "it_IT": "Visori Meccanici AZ3-R1-T3",
     "pt_BR": "Tecnóculos Telescópicos AZ3-R1-T4",
-    "ko_KO": "AZ3-R1-T3 톱니회전 고글",
+    "ko_KR": "AZ3-R1-T3 톱니회전 고글",
     "cn_CN": "AZ3-R1-T3转齿护目镜",
     "ru_RU": "Защитные очки типа \"AZ3-PNT\""
   },
@@ -1381,7 +1381,7 @@
     "fr_FR": "Chaperon d’ichor pestilentiel",
     "it_IT": "Cappuccio dell'Icore della Pestilenza",
     "pt_BR": "Capuz do Icor Pestilento",
-    "ko_KO": "전염성 수액의 두건",
+    "ko_KR": "전염성 수액의 두건",
     "cn_CN": "致命脓液兜帽",
     "ru_RU": "Капюшон ядовитого гноя"
   },
@@ -1392,7 +1392,7 @@
     "fr_FR": "Chaperon de flibustier",
     "it_IT": "Cappuccio del Filibustiere",
     "pt_BR": "Capuz do Flibusteiro",
-    "ko_KO": "해적단 두건",
+    "ko_KR": "해적단 두건",
     "cn_CN": "海掠者兜帽",
     "ru_RU": "Капюшон флибустьера"
   },
@@ -1403,7 +1403,7 @@
     "fr_FR": "Capuche du champion",
     "it_IT": "Copricapo del Campione",
     "pt_BR": "Capucho do Campeão",
-    "ko_KO": "용사의 수도두건",
+    "ko_KR": "용사의 수도두건",
     "cn_CN": "勇士兜帽",
     "ru_RU": "Клобук защитника Азерот"
   },
@@ -1414,7 +1414,7 @@
     "fr_FR": "Masque jambani",
     "it_IT": "Maschera dei Jambani",
     "pt_BR": "Máscara Jambani",
-    "ko_KO": "잠바니 가면",
+    "ko_KR": "잠바니 가면",
     "cn_CN": "加巴尼面具",
     "ru_RU": "Маска культа Вол'джамбы"
   },
@@ -1425,7 +1425,7 @@
     "fr_FR": "Chaperon du diablosaure sinueux",
     "it_IT": "Cappuccio del Gigantosauro Sinuoso",
     "pt_BR": "Capuz do Demossauro Sinuoso",
-    "ko_KO": "음흉한 데빌사우루스의 두건",
+    "ko_KR": "음흉한 데빌사우루스의 두건",
     "cn_CN": "强健魔暴龙兜帽",
     "ru_RU": "Капюшон хитрого дьявозавра"
   },
@@ -1436,7 +1436,7 @@
     "fr_FR": "Heaume du gladiateur menaçant en cuir",
     "it_IT": "Elmo di Cuoio del Gladiatore Terrificante",
     "pt_BR": "Elmo de Couro do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 가죽 투구",
+    "ko_KR": "공포를 부르는 검투사의 가죽 투구",
     "cn_CN": "悚然角斗士的皮甲头盔",
     "ru_RU": "Кожаный шлем ужасающего гладиатора"
   },
@@ -1447,7 +1447,7 @@
     "fr_FR": "Chaperon du gladiateur menaçant en cuir",
     "it_IT": "Cappuccio di Cuoio del Gladiatore Terrificante",
     "pt_BR": "Capuz de Couro do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 가죽 두건",
+    "ko_KR": "공포를 부르는 검투사의 가죽 두건",
     "cn_CN": "悚然角斗士的皮甲兜帽",
     "ru_RU": "Кожаный капюшон ужасающего гладиатора"
   },
@@ -1458,7 +1458,7 @@
     "fr_FR": "Tricorne du commandeur Calhoun",
     "it_IT": "Tricorno del Commodoro Calhoun",
     "pt_BR": "Tricorne do Comodoro Calum",
-    "ko_KO": "준장 칼호운의 삼각모",
+    "ko_KR": "준장 칼호운의 삼각모",
     "cn_CN": "海军准将卡尔霍恩的三角帽",
     "ru_RU": "Треуголка командора Колхауна"
   },
@@ -1469,7 +1469,7 @@
     "fr_FR": "Heaume de l’aspirant menaçant en cuir",
     "it_IT": "Elmo di Cuoio del Pretendente Terrificante",
     "pt_BR": "Elmo de Couro do Aspirante Medonho",
-    "ko_KO": "공포를 부르는 지원자의 가죽 투구",
+    "ko_KR": "공포를 부르는 지원자의 가죽 투구",
     "cn_CN": "悚然候选者的皮甲头盔",
     "ru_RU": "Кожаный шлем ужасающего претендента"
   },
@@ -1480,7 +1480,7 @@
     "fr_FR": "Visage de légionnaire de la 7e",
     "it_IT": "Visiera del Legionario della VII Legione",
     "pt_BR": "Visor do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 안면",
+    "ko_KR": "7군단 용사의 안면",
     "cn_CN": "第七军团士兵面容",
     "ru_RU": "Личина 7-го легиона"
   },
@@ -1491,7 +1491,7 @@
     "fr_FR": "Chapel du voltigeur honorable",
     "it_IT": "Cimiero del Perlustratore della Brigata dell'Onore",
     "pt_BR": "Bacinete do Pioneiro Brigadista",
-    "ko_KO": "명예결속단 수색병의 머리쓰개",
+    "ko_KR": "명예결속단 수색병의 머리쓰개",
     "cn_CN": "荣耀战团前锋的头饰",
     "ru_RU": "Головной убор всадника Армии Чести"
   },
@@ -1502,7 +1502,7 @@
     "fr_FR": "Capuche des sombres augures",
     "it_IT": "Velo dei Portenti Oscuri",
     "pt_BR": "Capucho dos Presságios Sombrios",
-    "ko_KO": "어두운 징조의 수도두건",
+    "ko_KR": "어두운 징조의 수도두건",
     "cn_CN": "黑暗束能兜帽",
     "ru_RU": "Клобук мрачного предвестия"
   },
@@ -1513,7 +1513,7 @@
     "fr_FR": "Masque de légionnaire de la 7e",
     "it_IT": "Maschera del Legionario della VII Legione",
     "pt_BR": "Máscara do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 가면",
+    "ko_KR": "7군단 용사의 가면",
     "cn_CN": "第七军团士兵面具",
     "ru_RU": "Маска 7-го легиона"
   },
@@ -1524,7 +1524,7 @@
     "fr_FR": "Ventaille du voltigeur honorable",
     "it_IT": "Elmo Foderato del Perlustratore della Brigata dell'Onore",
     "pt_BR": "Viseira do Pioneiro Brigadista",
-    "ko_KO": "명예결속단 수색병의 얼굴보호대",
+    "ko_KR": "명예결속단 수색병의 얼굴보호대",
     "cn_CN": "荣耀战团前锋的护面",
     "ru_RU": "Маска всадника Армии Чести"
   },
@@ -1535,7 +1535,7 @@
     "fr_FR": "Capuche vrykule marchandée",
     "it_IT": "Copricapo dei Vrykul Barattato",
     "pt_BR": "Capucho Vraikal Trocado",
-    "ko_KO": "물물교환 브리쿨 수도두건",
+    "ko_KR": "물물교환 브리쿨 수도두건",
     "cn_CN": "换来的维库头巾",
     "ru_RU": "Потрепанный врайкульский клобук"
   },
@@ -1546,7 +1546,7 @@
     "fr_FR": "Mantelet de maître des perroquets",
     "it_IT": "Coprispalle dell'Addestratore di Pappagalli",
     "pt_BR": "Dragonas do Adestrador de Papagaios",
-    "ko_KO": "앵무새조련사 어깨덧옷",
+    "ko_KR": "앵무새조련사 어깨덧옷",
     "cn_CN": "鹦鹉训练师的披肩",
     "ru_RU": "Оплечье дрессировщика попугаев"
   },
@@ -1557,7 +1557,7 @@
     "fr_FR": "Protège-épaules de flibustier",
     "it_IT": "Spalletti del Filibustiere",
     "pt_BR": "Ombreiras do Flibusteiro",
-    "ko_KO": "해적단 어깨덧대",
+    "ko_KR": "해적단 어깨덧대",
     "cn_CN": "海掠者肩甲",
     "ru_RU": "Наплечники флибустьера"
   },
@@ -1568,7 +1568,7 @@
     "fr_FR": "Protège-épaules de bannisseur",
     "it_IT": "Spalletti dell'Esiliatore",
     "pt_BR": "Ombreiras do Banidor",
-    "ko_KO": "추방꾼 어깨덧대",
+    "ko_KR": "추방꾼 어깨덧대",
     "cn_CN": "放逐者护肩",
     "ru_RU": "Наплечники изгоняющего зло"
   },
@@ -1579,7 +1579,7 @@
     "fr_FR": "Protège-épaules des eaux sombres",
     "it_IT": "Spalletti d'Acquascura",
     "pt_BR": "Ombreiras Aguanegra",
-    "ko_KO": "검은물 어깨덧대",
+    "ko_KR": "검은물 어깨덧대",
     "cn_CN": "暗水肩甲",
     "ru_RU": "Наплечники темных вод"
   },
@@ -1590,7 +1590,7 @@
     "fr_FR": "Protège-épaules jambani",
     "it_IT": "Spalletti dei Jambani",
     "pt_BR": "Ombreiras Jambani",
-    "ko_KO": "잠바니 어깨덧대",
+    "ko_KR": "잠바니 어깨덧대",
     "cn_CN": "加巴尼肩章",
     "ru_RU": "Наплечные пластины культа Вол'джамбы"
   },
@@ -1601,7 +1601,7 @@
     "fr_FR": "Spallières rituelles d’écorcheur",
     "it_IT": "Guardaspalle dello Scorticatore Rituale",
     "pt_BR": "Espaldares do Esfolador Ritual",
-    "ko_KO": "의식 탈피공의 어깨덮개",
+    "ko_KR": "의식 탈피공의 어깨덮개",
     "cn_CN": "祭仪剥除者肩甲",
     "ru_RU": "Наплеч ритуального свежевателя"
   },
@@ -1612,7 +1612,7 @@
     "fr_FR": "Garde-épaules des Sables brûlés",
     "it_IT": "Spallacci Foderati delle Sabbie Ardenti",
     "pt_BR": "Guarda-ombros das Areias Calcinantes",
-    "ko_KO": "그을린 모래 어깨보호대",
+    "ko_KR": "그을린 모래 어깨보호대",
     "cn_CN": "沙灼护肩",
     "ru_RU": "Наплечные щитки племени Опаленных Песков"
   },
@@ -1623,7 +1623,7 @@
     "fr_FR": "Protège-épaules de Tourbesang",
     "it_IT": "Spalletti del Pantano del Sangue",
     "pt_BR": "Ombreiras do Brejo Sangrento",
-    "ko_KO": "피의 수렁 어깨덧대",
+    "ko_KR": "피의 수렁 어깨덧대",
     "cn_CN": "鲜血沼泽肩垫",
     "ru_RU": "Наплечные пластины Кровавой заводи"
   },
@@ -1634,7 +1634,7 @@
     "fr_FR": "Garde-épaules d’estafette de Gonk",
     "it_IT": "Spallacci Foderati della Staffetta di Gonk",
     "pt_BR": "Guarda-ombros do Vanguardeiro de Gonk",
-    "ko_KO": "공크 정찰꾼 어깨보호대",
+    "ko_KR": "공크 정찰꾼 어깨보호대",
     "cn_CN": "贡克神速护肩",
     "ru_RU": "Наплечные щитки гонца Гонка"
   },
@@ -1645,7 +1645,7 @@
     "fr_FR": "Garde-épaules claquemort",
     "it_IT": "Spallacci Foderati di Schioccamorte",
     "pt_BR": "Guarda-ombros Estalúgubres",
-    "ko_KO": "죽음턱 어깨보호대",
+    "ko_KR": "죽음턱 어깨보호대",
     "cn_CN": "迅捷死亡护肩",
     "ru_RU": "Наплечные щитки гиблохвата"
   },
@@ -1656,7 +1656,7 @@
     "fr_FR": "Protège-épaules de marin",
     "it_IT": "Spalletti da Marinaio",
     "pt_BR": "Ombreiras do Marinheiro",
-    "ko_KO": "선원 어깨덧대",
+    "ko_KR": "선원 어깨덧대",
     "cn_CN": "航海家护肩",
     "ru_RU": "Наплечные пластины мореплавателя"
   },
@@ -1667,7 +1667,7 @@
     "fr_FR": "Garde-épaules tombépine",
     "it_IT": "Spallacci Foderati della Spina Tombale",
     "pt_BR": "Guarda-ombros Espinatumba",
-    "ko_KO": "무덤가시 어깨보호대",
+    "ko_KR": "무덤가시 어깨보호대",
     "cn_CN": "墓棘护肩",
     "ru_RU": "Наплечные щитки могильной колючки"
   },
@@ -1678,7 +1678,7 @@
     "fr_FR": "Protège-épaules de Beautemps",
     "it_IT": "Spalletti di Chiarosole",
     "pt_BR": "Ombreiras Bontempo",
-    "ko_KO": "청천 어깨덧대",
+    "ko_KR": "청천 어깨덧대",
     "cn_CN": "法维瑟肩甲",
     "ru_RU": "Наплечные пластины хорошей погоды"
   },
@@ -1689,7 +1689,7 @@
     "fr_FR": "Mantelet de machinations fastidieuses",
     "it_IT": "Coprispalle delle Macchinazioni Cavillose",
     "pt_BR": "Dragonas das Maquinações Meticulosas",
-    "ko_KO": "사악한 계략의 어깨덧옷",
+    "ko_KR": "사악한 계략의 어깨덧옷",
     "cn_CN": "繁复阴谋披肩",
     "ru_RU": "Оплечье изощренных манипуляций"
   },
@@ -1700,7 +1700,7 @@
     "fr_FR": "Épaulettes d’or floché",
     "it_IT": "Spalline con Tasselli d'Oro",
     "pt_BR": "Palas de Franjas Douradas",
-    "ko_KO": "황금 술이 달린 견장",
+    "ko_KR": "황금 술이 달린 견장",
     "cn_CN": "金色流苏肩饰",
     "ru_RU": "Эполеты c золотыми кисточками"
   },
@@ -1711,7 +1711,7 @@
     "fr_FR": "Spallières entrelacées de tentacules",
     "it_IT": "Guardaspalle Intrecciati di Tentacoli",
     "pt_BR": "Espaldares Recobertos de Tentáculos",
-    "ko_KO": "촉수 끈 어깨덮개",
+    "ko_KR": "촉수 끈 어깨덮개",
     "cn_CN": "繁复触须护肩",
     "ru_RU": "Украшенные щупальцем наплечи"
   },
@@ -1722,7 +1722,7 @@
     "fr_FR": "Épaulières de la monstruosité sanguine",
     "it_IT": "Spallacci della Mostruosità Rosso Sangue",
     "pt_BR": "Omoplatas da Monstruosidade Sanguínea",
-    "ko_KO": "핏빛 괴물의 어깨보호구",
+    "ko_KR": "핏빛 괴물의 어깨보호구",
     "cn_CN": "鲜血巨兽肩甲",
     "ru_RU": "Наплечники кровавого чудовища"
   },
@@ -1733,7 +1733,7 @@
     "fr_FR": "Spallières de pistolier",
     "it_IT": "Guardaspalle del Pistolero",
     "pt_BR": "Espaldares do Pistoleiro",
-    "ko_KO": "총잡이의 어깨덮개",
+    "ko_KR": "총잡이의 어깨덮개",
     "cn_CN": "手枪护肩",
     "ru_RU": "Наплечи стрелка"
   },
@@ -1744,7 +1744,7 @@
     "fr_FR": "Mantelet de Gorak Tul",
     "it_IT": "Coprispalle di Gorak Tul",
     "pt_BR": "Dragonas de Gorak Tul",
-    "ko_KO": "고라크 툴의 어깨덧옷",
+    "ko_KR": "고라크 툴의 어깨덧옷",
     "cn_CN": "高莱克·图尔的披肩",
     "ru_RU": "Оплечье Горака Тула"
   },
@@ -1755,7 +1755,7 @@
     "fr_FR": "Spallières couvertes de sang de l’usurpateur",
     "it_IT": "Guardaspalle Insanguinati dell'Usurpatore",
     "pt_BR": "Espaldares Ensanguentados do Usurpador",
-    "ko_KO": "강탈자의 피떡 어깨덮개",
+    "ko_KR": "강탈자의 피떡 어깨덮개",
     "cn_CN": "篡位者的凝血护肩",
     "ru_RU": "Запятнанные кровью наплечники узурпатора"
   },
@@ -1766,7 +1766,7 @@
     "fr_FR": "Garde-épaules des eaux sombres",
     "it_IT": "Spallacci Foderati d'Acquascura",
     "pt_BR": "Guarda-ombros Aguanegra",
-    "ko_KO": "검은물 어깨보호대",
+    "ko_KR": "검은물 어깨보호대",
     "cn_CN": "暗水护肩",
     "ru_RU": "Наплечные щитки темных вод"
   },
@@ -1777,7 +1777,7 @@
     "fr_FR": "Garde-épaules du champion",
     "it_IT": "Spallacci Foderati del Campione",
     "pt_BR": "Guarda-ombros do Campeão",
-    "ko_KO": "용사의 어깨보호대",
+    "ko_KR": "용사의 어깨보호대",
     "cn_CN": "勇士肩甲",
     "ru_RU": "Наплечные щитки защитника Азерот"
   },
@@ -1788,7 +1788,7 @@
     "fr_FR": "Protège-épaules des Sables brûlés",
     "it_IT": "Spalletti delle Sabbie Ardenti",
     "pt_BR": "Ombreiras das Areias Calcinantes",
-    "ko_KO": "그을린 모래 어깨덧대",
+    "ko_KR": "그을린 모래 어깨덧대",
     "cn_CN": "沙灼肩章",
     "ru_RU": "Наплечные пластины племени Опаленных Песков"
   },
@@ -1799,7 +1799,7 @@
     "fr_FR": "Protège-épaules de traînard mortel",
     "it_IT": "Spalletti della Morte Errante",
     "pt_BR": "Ombreiras da Morte Trôpega",
-    "ko_KO": "죽음비틀괴물의 어깨덧대",
+    "ko_KR": "죽음비틀괴물의 어깨덧대",
     "cn_CN": "死亡蹒跚者的肩饰",
     "ru_RU": "Наплечные пластины шаркуна смерти"
   },
@@ -1810,7 +1810,7 @@
     "fr_FR": "Spallières des dents redoutables",
     "it_IT": "Guardaspalle del Dente Feroce",
     "pt_BR": "Espaldares do Dente-atroz",
-    "ko_KO": "공포이빨 어깨덮개",
+    "ko_KR": "공포이빨 어깨덮개",
     "cn_CN": "恐惧之牙护肩",
     "ru_RU": "Наплеч из жутких зубов"
   },
@@ -1821,7 +1821,7 @@
     "fr_FR": "Garde-épaules ailes-dorées",
     "it_IT": "Spallacci Foderati dell'Ala Dorata",
     "pt_BR": "Guarda-ombros com Asas Douradas",
-    "ko_KO": "금박날개 어깨보호대",
+    "ko_KR": "금박날개 어깨보호대",
     "cn_CN": "鎏金之翼护肩",
     "ru_RU": "Наплечники с позолоченными крыльями"
   },
@@ -1832,7 +1832,7 @@
     "fr_FR": "Spallières du gladiateur menaçant en cuir",
     "it_IT": "Guardaspalle di Cuoio del Gladiatore Terrificante",
     "pt_BR": "Espaldares de Couro do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 가죽 어깨덮개",
+    "ko_KR": "공포를 부르는 검투사의 가죽 어깨덮개",
     "cn_CN": "悚然角斗士的皮甲护肩",
     "ru_RU": "Кожаный наплеч ужасающего гладиатора"
   },
@@ -1843,7 +1843,7 @@
     "fr_FR": "Mantelet du gladiateur menaçant en cuir",
     "it_IT": "Coprispalle di Cuoio del Gladiatore Terrificante",
     "pt_BR": "Dragonas de Couro do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 가죽 어깨덧옷",
+    "ko_KR": "공포를 부르는 검투사의 가죽 어깨덧옷",
     "cn_CN": "悚然角斗士的皮甲披肩",
     "ru_RU": "Кожаное оплечье ужасающего гладиатора"
   },
@@ -1854,7 +1854,7 @@
     "fr_FR": "Protège-épaules de rejeton de Shadra",
     "it_IT": "Spalletti di Shadra",
     "pt_BR": "Ombreiras da Prole de Shadra",
-    "ko_KO": "샤드라혈족 어깨덧대",
+    "ko_KR": "샤드라혈족 어깨덧대",
     "cn_CN": "沙德拉之嗣肩章",
     "ru_RU": "Наплечные пластины детей Шадры"
   },
@@ -1865,7 +1865,7 @@
     "fr_FR": "Spallières de l’aspirant menaçant en cuir",
     "it_IT": "Guardaspalle di Cuoio del Pretendente Terrificante",
     "pt_BR": "Espaldares de Couro do Aspirante Medonho",
-    "ko_KO": "공포를 부르는 지원자의 가죽 어깨덮개",
+    "ko_KR": "공포를 부르는 지원자의 가죽 어깨덮개",
     "cn_CN": "悚然候选者的皮甲护肩",
     "ru_RU": "Кожаный наплеч ужасающего претендента"
   },
@@ -1876,7 +1876,7 @@
     "fr_FR": "Mantelet en cuir de légionnaire de la 7e",
     "it_IT": "Coprispalle di Cuoio del Legionario della VII Legione",
     "pt_BR": "Dragonas de Couro do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 가죽 어깨덧옷",
+    "ko_KR": "7군단 용사의 가죽 어깨덧옷",
     "cn_CN": "第七军团士兵皮革披肩",
     "ru_RU": "Кожаное оплечье 7-го легиона"
   },
@@ -1887,7 +1887,7 @@
     "fr_FR": "Garde-épaules du voltigeur honorable",
     "it_IT": "Spallacci Foderati del Perlustratore della Brigata dell'Onore",
     "pt_BR": "Guarda-ombros do Pioneiro Brigadista",
-    "ko_KO": "명예결속단 수색병의 어깨보호대",
+    "ko_KR": "명예결속단 수색병의 어깨보호대",
     "cn_CN": "荣耀战团前锋的护肩",
     "ru_RU": "Наплечные щитки всадника Армии Чести"
   },
@@ -1898,7 +1898,7 @@
     "fr_FR": "Protège-épaules de légionnaire de la 7e",
     "it_IT": "Spalletti del Legionario della VII Legione",
     "pt_BR": "Ombreiras do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 어깨덧대",
+    "ko_KR": "7군단 용사의 어깨덧대",
     "cn_CN": "第七军团士兵肩章",
     "ru_RU": "Наплечные пластины 7-го легиона"
   },
@@ -1909,7 +1909,7 @@
     "fr_FR": "Mantelet du voltigeur honorable",
     "it_IT": "Coprispalle del Perlustratore della Brigata dell'Onore",
     "pt_BR": "Dragonas do Pioneiro Brigadista",
-    "ko_KO": "명예결속단 수색병의 어깨덧옷",
+    "ko_KR": "명예결속단 수색병의 어깨덧옷",
     "cn_CN": "荣耀战团前锋的披肩",
     "ru_RU": "Оплечье всадника Армии Чести"
   },
@@ -1920,7 +1920,7 @@
     "fr_FR": "Corselet lié par les flots",
     "it_IT": "Corazza Foderata Vincolata alla Marea",
     "pt_BR": "Couraça Marejante",
-    "ko_KO": "파도결속 가슴보호대",
+    "ko_KR": "파도결속 가슴보호대",
     "cn_CN": "潮缚胸甲",
     "ru_RU": "Нагрудный доспех слуги прилива"
   },
@@ -1931,7 +1931,7 @@
     "fr_FR": "Tunique de flibustier",
     "it_IT": "Giubba del Filibustiere",
     "pt_BR": "Túnica do Flibusteiro",
-    "ko_KO": "해적단 튜닉",
+    "ko_KR": "해적단 튜닉",
     "cn_CN": "海掠者外套",
     "ru_RU": "Мундир флибустьера"
   },
@@ -1942,7 +1942,7 @@
     "fr_FR": "Tunique de bannisseur",
     "it_IT": "Giubba dell'Esiliatore",
     "pt_BR": "Túnica do Banidor",
-    "ko_KO": "추방꾼 튜닉",
+    "ko_KR": "추방꾼 튜닉",
     "cn_CN": "放逐者外套",
     "ru_RU": "Мундир изгоняющего зло"
   },
@@ -1953,7 +1953,7 @@
     "fr_FR": "Tunique des eaux sombres",
     "it_IT": "Giubba d'Acquascura",
     "pt_BR": "Túnica Aguanegra",
-    "ko_KO": "검은물 튜닉",
+    "ko_KR": "검은물 튜닉",
     "cn_CN": "暗水外套",
     "ru_RU": "Мундир темных вод"
   },
@@ -1964,7 +1964,7 @@
     "fr_FR": "Pourpoint jambani",
     "it_IT": "Giaco dei Jambani",
     "pt_BR": "Gibão Jambani",
-    "ko_KO": "잠바니 웃옷",
+    "ko_KR": "잠바니 웃옷",
     "cn_CN": "加巴尼外衣",
     "ru_RU": "Куртка культа Вол'джамбы"
   },
@@ -1975,7 +1975,7 @@
     "fr_FR": "Gilet rituel d’écorcheur",
     "it_IT": "Giaco dello Scorticatore Rituale",
     "pt_BR": "Colete do Esfolador Ritual",
-    "ko_KO": "의식 탈피공의 조끼",
+    "ko_KR": "의식 탈피공의 조끼",
     "cn_CN": "祭仪剥除者外衣",
     "ru_RU": "Жилет ритуального свежевателя"
   },
@@ -1986,7 +1986,7 @@
     "fr_FR": "Couvre-bras des Sables brûlés",
     "it_IT": "Abito delle Sabbie Ardenti",
     "pt_BR": "Mantelete das Areias Calcinantes",
-    "ko_KO": "그을린 모래 겉옷",
+    "ko_KR": "그을린 모래 겉옷",
     "cn_CN": "沙灼裹衣",
     "ru_RU": "Жилет племени Опаленных Песков"
   },
@@ -1997,7 +1997,7 @@
     "fr_FR": "Protège-torse de maître-espion",
     "it_IT": "Giubba del Maestro delle Spie",
     "pt_BR": "Mantelete do Mestre Espião",
-    "ko_KO": "첩보단장의 겉옷",
+    "ko_KR": "첩보단장의 겉옷",
     "cn_CN": "间谍大师裹布",
     "ru_RU": "Жилет мастера шпионажа"
   },
@@ -2008,7 +2008,7 @@
     "fr_FR": "Couvre-bras de Tourbesang",
     "it_IT": "Abito del Pantano del Sangue",
     "pt_BR": "Mantelete do Brejo Sangrento",
-    "ko_KO": "피의 수렁 겉옷",
+    "ko_KR": "피의 수렁 겉옷",
     "cn_CN": "鲜血沼泽卫衣",
     "ru_RU": "Напульсники Кровавой заводи"
   },
@@ -2019,7 +2019,7 @@
     "fr_FR": "Gilet d’estafette de Gonk",
     "it_IT": "Giubba della Staffetta di Gonk",
     "pt_BR": "Colete do Vanguardeiro de Gonk",
-    "ko_KO": "공크 정찰꾼 조끼",
+    "ko_KR": "공크 정찰꾼 조끼",
     "cn_CN": "贡克神速外套",
     "ru_RU": "Куртка гонца Гонка"
   },
@@ -2030,7 +2030,7 @@
     "fr_FR": "Pourpoint claquemort",
     "it_IT": "Giaco di Schioccamorte",
     "pt_BR": "Gibão Estalúgubre",
-    "ko_KO": "죽음턱 웃옷",
+    "ko_KR": "죽음턱 웃옷",
     "cn_CN": "迅捷死亡外衣",
     "ru_RU": "Жакет гиблохвата"
   },
@@ -2041,7 +2041,7 @@
     "fr_FR": "Gilet de marin",
     "it_IT": "Giubba da Marinaio",
     "pt_BR": "Colete do Marinheiro",
-    "ko_KO": "선원의 조끼",
+    "ko_KR": "선원의 조끼",
     "cn_CN": "航海家外衣",
     "ru_RU": "Жилет мореплавателя"
   },
@@ -2052,7 +2052,7 @@
     "fr_FR": "Pourpoint tombépine",
     "it_IT": "Giaco della Spina Tombale",
     "pt_BR": "Gibão Espinatumba",
-    "ko_KO": "무덤가시 웃옷",
+    "ko_KR": "무덤가시 웃옷",
     "cn_CN": "墓棘外衣",
     "ru_RU": "Жакет могильной колючки"
   },
@@ -2063,7 +2063,7 @@
     "fr_FR": "Tunique de Beautemps",
     "it_IT": "Giubba di Chiarosole",
     "pt_BR": "Túnica Bontempo",
-    "ko_KO": "청천 튜닉",
+    "ko_KR": "청천 튜닉",
     "cn_CN": "法维瑟外衣",
     "ru_RU": "Туника хорошей погоды"
   },
@@ -2074,7 +2074,7 @@
     "fr_FR": "Pourpoint rituel d’écorcheur",
     "it_IT": "Giaco dello Scorticatore Rituale",
     "pt_BR": "Gibão do Esfolador Ritual",
-    "ko_KO": "의식 탈피공의 웃옷",
+    "ko_KR": "의식 탈피공의 웃옷",
     "cn_CN": "祭仪剥除者皮衣",
     "ru_RU": "Жакет ритуального свежевателя"
   },
@@ -2085,7 +2085,7 @@
     "fr_FR": "Gilet de plénipotentiaire de la KapitalRisk",
     "it_IT": "Giubba Plenipotenziaria della S.P.R. & Co.",
     "pt_BR": "Colete Plenipotenciário da Empreendimentos S.A.",
-    "ko_KO": "투자개발회사 전권 대사 조끼",
+    "ko_KR": "투자개발회사 전권 대사 조끼",
     "cn_CN": "风险投资公司全权代表的外衣",
     "ru_RU": "Жилет представителя Торговой компании"
   },
@@ -2096,7 +2096,7 @@
     "fr_FR": "Gilet d’adoration révérencieuse",
     "it_IT": "Giubba dell'Adorazione Reverenziale",
     "pt_BR": "Colete da Adoração Reverente",
-    "ko_KO": "경건한 숭배의 조끼",
+    "ko_KR": "경건한 숭배의 조끼",
     "cn_CN": "圣洁爱慕外衣",
     "ru_RU": "Жилет благоговения"
   },
@@ -2107,7 +2107,7 @@
     "fr_FR": "Veste en céphalocuir",
     "it_IT": "Giaco di Pelle di Cefalopode",
     "pt_BR": "Jaqueta de Cefalocouro",
-    "ko_KO": "머리가죽 재킷",
+    "ko_KR": "머리가죽 재킷",
     "cn_CN": "海怪皮马甲",
     "ru_RU": "Куртка из кожи моллюска"
   },
@@ -2118,7 +2118,7 @@
     "fr_FR": "Gilet taché de sang",
     "it_IT": "Giubba Macchiata di Sangue",
     "pt_BR": "Colete Coberto de Vísceras",
-    "ko_KO": "핏덩이 튀긴 조끼",
+    "ko_KR": "핏덩이 튀긴 조끼",
     "cn_CN": "血肉飞溅外衣",
     "ru_RU": "Забрызганный кровью жилет"
   },
@@ -2129,7 +2129,7 @@
     "fr_FR": "Grande tenue de la tribu chancreuse",
     "it_IT": "Tunica della Tribù Ammorbata",
     "pt_BR": "Indumentária da Tribo Pestilenta",
-    "ko_KO": "파멸한 부족의 의복",
+    "ko_KR": "파멸한 부족의 의복",
     "cn_CN": "枯败部族外衣",
     "ru_RU": "Облачение бесплотного племени"
   },
@@ -2140,7 +2140,7 @@
     "fr_FR": "Gilet du champion",
     "it_IT": "Giubba del Campione",
     "pt_BR": "Colete do Campeão",
-    "ko_KO": "용사의 조끼",
+    "ko_KR": "용사의 조끼",
     "cn_CN": "勇士外衣",
     "ru_RU": "Жилет защитника Азерот"
   },
@@ -2151,7 +2151,7 @@
     "fr_FR": "Pourpoint de la chimère absurde",
     "it_IT": "Giaco della Chimera Aberrante",
     "pt_BR": "Gibão da Quimera Aberrante",
-    "ko_KO": "변종 키메라의 웃옷",
+    "ko_KR": "변종 키메라의 웃옷",
     "cn_CN": "畸变奇美拉的外衣",
     "ru_RU": "Куртка из шкуры химеры-мутанта"
   },
@@ -2162,7 +2162,7 @@
     "fr_FR": "Tunique de la divinité sanguine",
     "it_IT": "Giubba della Deità Sanguinaria",
     "pt_BR": "Túnica da Divindade Sanguínea",
-    "ko_KO": "핏빛 신격의 튜닉",
+    "ko_KR": "핏빛 신격의 튜닉",
     "cn_CN": "血红神祇法袍",
     "ru_RU": "Туника окровавленного бога"
   },
@@ -2173,7 +2173,7 @@
     "fr_FR": "Pourpoint de bannisseur",
     "it_IT": "Giaco dell'Esiliatore",
     "pt_BR": "Gibão do Banidor",
-    "ko_KO": "추방꾼 웃옷",
+    "ko_KR": "추방꾼 웃옷",
     "cn_CN": "放逐者卫衣",
     "ru_RU": "Жакет изгоняющего зло"
   },
@@ -2184,7 +2184,7 @@
     "fr_FR": "Corselet des vents redoutables",
     "it_IT": "Corazza Foderata dei Venti Feroci",
     "pt_BR": "Couraça dos Ventos Atrozes",
-    "ko_KO": "광포한 바람의 가슴보호대",
+    "ko_KR": "광포한 바람의 가슴보호대",
     "cn_CN": "恶毒狂风护胸",
     "ru_RU": "Кираса жутких ветров"
   },
@@ -2195,7 +2195,7 @@
     "fr_FR": "Gilet du Héraut du malheur",
     "it_IT": "Veste dell'Urlo della Rovina",
     "pt_BR": "Colete do Uivo da Ruína",
-    "ko_KO": "멸망의 고함 조끼",
+    "ko_KR": "멸망의 고함 조끼",
     "cn_CN": "末日之嚎外套",
     "ru_RU": "Жилет с \"Гибельного воя\""
   },
@@ -2206,7 +2206,7 @@
     "fr_FR": "Gilet du griffon voilé",
     "it_IT": "Maglia del Grifone Velato",
     "pt_BR": "Colete do Grifo Velado",
-    "ko_KO": "가리어진 그리핀의 조끼",
+    "ko_KR": "가리어진 그리핀의 조끼",
     "cn_CN": "隐秘狮鹫外衣",
     "ru_RU": "Жилет скрытного грифона"
   },
@@ -2217,7 +2217,7 @@
     "fr_FR": "Gilet du champion d’Azeroth",
     "it_IT": "Giubba del Campione Azerotiano",
     "pt_BR": "Colete do Campeão Azerothiano",
-    "ko_KO": "아제로스 용사의 조끼",
+    "ko_KR": "아제로스 용사의 조끼",
     "cn_CN": "艾泽拉斯勇士外衣",
     "ru_RU": "Жилет защитника Азерот"
   },
@@ -2228,7 +2228,7 @@
     "fr_FR": "Tunique du gladiateur menaçant en cuir",
     "it_IT": "Giubba di Cuoio del Gladiatore Terrificante",
     "pt_BR": "Túnica de Couro do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 가죽 튜닉",
+    "ko_KR": "공포를 부르는 검투사의 가죽 튜닉",
     "cn_CN": "悚然角斗士的皮甲外套",
     "ru_RU": "Кожаный мундир ужасающего гладиатора"
   },
@@ -2239,7 +2239,7 @@
     "fr_FR": "Gilet du gladiateur menaçant en cuir",
     "it_IT": "Veste di Cuoio del Gladiatore Terrificante",
     "pt_BR": "Colete de Couro do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 가죽 조끼",
+    "ko_KR": "공포를 부르는 검투사의 가죽 조끼",
     "cn_CN": "悚然角斗士的皮甲外衣",
     "ru_RU": "Кожаный жилет ужасающего гладиатора"
   },
@@ -2250,7 +2250,7 @@
     "fr_FR": "Tunique de maître dinomancien",
     "it_IT": "Giubba del Maestro Dinomante",
     "pt_BR": "Túnica do Mestre Dinomante",
-    "ko_KO": "공룡술 대가의 튜닉",
+    "ko_KR": "공룡술 대가의 튜닉",
     "cn_CN": "恐龙统领大师的外套",
     "ru_RU": "Туника главного диноманта"
   },
@@ -2261,7 +2261,7 @@
     "fr_FR": "Tunique de l’aspirant menaçant en cuir",
     "it_IT": "Giubba di Cuoio del Pretendente Terrificante",
     "pt_BR": "Túnica de Couro do Aspirante Medonho",
-    "ko_KO": "공포를 부르는 지원자의 가죽 튜닉",
+    "ko_KR": "공포를 부르는 지원자의 가죽 튜닉",
     "cn_CN": "悚然候选者的皮甲外套",
     "ru_RU": "Кожаный мундир ужасающего претендента"
   },
@@ -2272,7 +2272,7 @@
     "fr_FR": "Gilet de légionnaire de la 7e",
     "it_IT": "Veste del Legionario della VII Legione",
     "pt_BR": "Colete do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 조끼",
+    "ko_KR": "7군단 용사의 조끼",
     "cn_CN": "第七军团士兵外套",
     "ru_RU": "Жилет 7-го легиона"
   },
@@ -2283,7 +2283,7 @@
     "fr_FR": "Tunique du voltigeur honorable",
     "it_IT": "Giubba del Perlustratore della Brigata dell'Onore",
     "pt_BR": "Túnica do Pioneiro Brigadista",
-    "ko_KO": "명예결속단 수색병의 튜닉",
+    "ko_KR": "명예결속단 수색병의 튜닉",
     "cn_CN": "荣耀战团前锋的外衣",
     "ru_RU": "Мундир всадника Армии Чести"
   },
@@ -2294,7 +2294,7 @@
     "fr_FR": "Tunique de légionnaire de la 7e",
     "it_IT": "Giubba del Legionario della VII Legione",
     "pt_BR": "Túnica do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 튜닉",
+    "ko_KR": "7군단 용사의 튜닉",
     "cn_CN": "第七军团士兵外衣",
     "ru_RU": "Мундир 7-го легиона"
   },
@@ -2305,7 +2305,7 @@
     "fr_FR": "Habit du voltigeur honorable",
     "it_IT": "Vesti del Perlustratore della Brigata dell'Onore",
     "pt_BR": "Vestimenta do Pioneiro Brigadista",
-    "ko_KO": "명예결속단 수색병의 예복",
+    "ko_KR": "명예결속단 수색병의 예복",
     "cn_CN": "荣耀战团前锋的法袍",
     "ru_RU": "Убранство всадника Армии Чести"
   },
@@ -2316,7 +2316,7 @@
     "fr_FR": "Casque de plongée de chercheur de trésor",
     "it_IT": "Casco da Immersione del Cercatore di Tesori",
     "pt_BR": "Capacete de Mergulho do Caçador de Tesouro",
-    "ko_KO": "보물 수색꾼의 잠수모",
+    "ko_KR": "보물 수색꾼의 잠수모",
     "cn_CN": "财宝猎人的潜水盔",
     "ru_RU": "Водолазный шлем искателя сокровищ"
   },
@@ -2327,7 +2327,7 @@
     "fr_FR": "Heaume des Barges",
     "it_IT": "Elmo dei Chigliatori",
     "pt_BR": "Elmo Rompe-onda",
-    "ko_KO": "먼바다 사냥꾼 투구",
+    "ko_KR": "먼바다 사냥꾼 투구",
     "cn_CN": "风舷头盔",
     "ru_RU": "Шлем Вольных гарпунщиков"
   },
@@ -2338,7 +2338,7 @@
     "fr_FR": "Heaume du traque-sorcière",
     "it_IT": "Elmo del Cacciatore di Streghe",
     "pt_BR": "Elmo do Caçador de Bruxa Má",
-    "ko_KO": "마녀수색자의 투구",
+    "ko_KR": "마녀수색자의 투구",
     "cn_CN": "巫婆追猎者的头盔",
     "ru_RU": "Шлем охотника на ведьм"
   },
@@ -2349,7 +2349,7 @@
     "fr_FR": "Camail du chasseur de tempêtes",
     "it_IT": "Camaglio dell'Inseguitore delle Tempeste",
     "pt_BR": "Coifa do Caça-tempestades",
-    "ko_KO": "폭풍추격자 코이프",
+    "ko_KR": "폭풍추격자 코이프",
     "cn_CN": "觅风者头盔",
     "ru_RU": "Шлем призывателя бурь"
   },
@@ -2360,7 +2360,7 @@
     "fr_FR": "Camail torcali",
     "it_IT": "Camaglio di Torcali",
     "pt_BR": "Coifa Torcalin",
-    "ko_KO": "토르칼린 코이프",
+    "ko_KR": "토르칼린 코이프",
     "cn_CN": "托卡林头罩",
     "ru_RU": "Капюшон культа Торкали"
   },
@@ -2371,7 +2371,7 @@
     "fr_FR": "Heaume de serment de mort",
     "it_IT": "Elmo del Promesso alla Morte",
     "pt_BR": "Elmo do Jurado de Morte",
-    "ko_KO": "죽음의 서약 투구",
+    "ko_KR": "죽음의 서약 투구",
     "cn_CN": "死誓头盔",
     "ru_RU": "Заклятый смертью шлем"
   },
@@ -2382,7 +2382,7 @@
     "fr_FR": "Camail du paria résistant",
     "it_IT": "Camaglio dell'Esiliato Resiliente",
     "pt_BR": "Coifa do Proscrito Resiliente",
-    "ko_KO": "끈질긴 추방자의 코이프",
+    "ko_KR": "끈질긴 추방자의 코이프",
     "cn_CN": "强韧流亡者的罩帽",
     "ru_RU": "Капюшон стойкого изгоя"
   },
@@ -2393,7 +2393,7 @@
     "fr_FR": "Couvre-chef orné de joyaux de Sweete",
     "it_IT": "Elmetto Ingioiellato di Sweete",
     "pt_BR": "Elmo com Joias do Mel",
-    "ko_KO": "스위트의 보석 박힌 머리보호구",
+    "ko_KR": "스위트의 보석 박힌 머리보호구",
     "cn_CN": "斯威提的珠宝头饰",
     "ru_RU": "Инкрустированный шлем Красавчика"
   },
@@ -2404,7 +2404,7 @@
     "fr_FR": "Heaume du Noir bourbier",
     "it_IT": "Elmo di Bragomorto",
     "pt_BR": "Elmo do Charco do Medo",
-    "ko_KO": "공포수렁 투구",
+    "ko_KR": "공포수렁 투구",
     "cn_CN": "恐惧之沼头盔",
     "ru_RU": "Шлем Жуткой трясины"
   },
@@ -2415,7 +2415,7 @@
     "fr_FR": "Heaume de coursier du vent de Pa’ku",
     "it_IT": "Elmo del Cavaliere del Vento di Pa'ku",
     "pt_BR": "Elmo da Mantícora de Pa'kul",
-    "ko_KO": "파쿠 와이번 기수 투구",
+    "ko_KR": "파쿠 와이번 기수 투구",
     "cn_CN": "帕库驭风者头盔",
     "ru_RU": "Шлем всадника Па'ку"
   },
@@ -2426,7 +2426,7 @@
     "fr_FR": "Heaume de l’acidoptère",
     "it_IT": "Elmetto di Alabile",
     "pt_BR": "Capacete de Biliasa",
-    "ko_KO": "담즙날개 투구",
+    "ko_KR": "담즙날개 투구",
     "cn_CN": "怨翼头盔",
     "ru_RU": "Шлем желчекрыла"
   },
@@ -2437,7 +2437,7 @@
     "fr_FR": "Casque du vent latéral",
     "it_IT": "Elmetto di Ventotraverso",
     "pt_BR": "Capacete dos Ventos Contrários",
-    "ko_KO": "맞바람 투구",
+    "ko_KR": "맞바람 투구",
     "cn_CN": "界风头盔",
     "ru_RU": "Шлем Галфвинда"
   },
@@ -2448,7 +2448,7 @@
     "fr_FR": "Casque cendrebois",
     "it_IT": "Elmo di Legnosecco",
     "pt_BR": "Elmo Grislenha",
-    "ko_KO": "잿빛나무 투구",
+    "ko_KR": "잿빛나무 투구",
     "cn_CN": "灰树林头盔",
     "ru_RU": "Шлем Ясеневой рощи"
   },
@@ -2459,7 +2459,7 @@
     "fr_FR": "Protège-front du Reflux mort",
     "it_IT": "Copricapo Foderato di Flussomorto",
     "pt_BR": "Cimeira da Água Morta",
-    "ko_KO": "썩은여울 머리보호구",
+    "ko_KR": "썩은여울 머리보호구",
     "cn_CN": "死亡浅滩头盔",
     "ru_RU": "Боевой шлем Мертвецкой Трясины"
   },
@@ -2470,7 +2470,7 @@
     "fr_FR": "Camail de l’araignée de la cour",
     "it_IT": "Camaglio della Corte del Ragno",
     "pt_BR": "Coifa da Aranha da Corte",
-    "ko_KO": "궁정 거미의 코이프",
+    "ko_KR": "궁정 거미의 코이프",
     "cn_CN": "庭院蜘蛛罩帽",
     "ru_RU": "Боевой капюшон придворной паучихи"
   },
@@ -2481,7 +2481,7 @@
     "fr_FR": "Heaume crochu de Sephraliss",
     "it_IT": "Elmo Zannuto di Sethraliss",
     "pt_BR": "Elmo com Presas de Sethraliss",
-    "ko_KO": "세스랄리스의 송곳니 투구",
+    "ko_KR": "세스랄리스의 송곳니 투구",
     "cn_CN": "塞塔里斯的尖牙头盔",
     "ru_RU": "Украшенный клыками шлем"
   },
@@ -2492,7 +2492,7 @@
     "fr_FR": "Visage des horreurs sanglantes",
     "it_IT": "Volto degli Orrori Insanguinati",
     "pt_BR": "Visão de Terror Sangrento",
-    "ko_KO": "피투성이 공포의 환영",
+    "ko_KR": "피투성이 공포의 환영",
     "cn_CN": "血腥恐惧面容",
     "ru_RU": "Шлем кровавых ужасов"
   },
@@ -2503,7 +2503,7 @@
     "fr_FR": "Chaperon du faucheur sombre",
     "it_IT": "Cappuccio del Mietitore Oscuro",
     "pt_BR": "Capuz do Ceifador Sombrio",
-    "ko_KO": "암흑 학살자의 두건",
+    "ko_KR": "암흑 학살자의 두건",
     "cn_CN": "黑暗收割者兜帽",
     "ru_RU": "Капюшон темного жнеца"
   },
@@ -2514,7 +2514,7 @@
     "fr_FR": "Couvre-chef des âmes balafrées",
     "it_IT": "Elmetto della Cicatrice d'Anima",
     "pt_BR": "Elmo da Alma Marcada",
-    "ko_KO": "영혼흉터 머리보호구",
+    "ko_KR": "영혼흉터 머리보호구",
     "cn_CN": "魂伤头盔",
     "ru_RU": "Головной покров истерзанной души"
   },
@@ -2525,7 +2525,7 @@
     "fr_FR": "Verres bifocaux bioniques AZ3-R1-T3",
     "it_IT": "Bifocali Bioniche AZ3-R1-T3",
     "pt_BR": "Bifocais Biônicos AZ3-R1-T4",
-    "ko_KO": "AZ3-R1-T3 생체 이중렌즈",
+    "ko_KR": "AZ3-R1-T3 생체 이중렌즈",
     "cn_CN": "AZ3-R1-T3生化眼镜",
     "ru_RU": "Бионические бифокальные очки типа \"AZ3-PNT\""
   },
@@ -2536,7 +2536,7 @@
     "fr_FR": "Écu du visionnaire immortel",
     "it_IT": "Cimiero del Visionario Imperituro",
     "pt_BR": "Crista do Visionário Imortal",
-    "ko_KO": "불멸의 환영의 벼슬",
+    "ko_KR": "불멸의 환영의 벼슬",
     "cn_CN": "不灭愿景头冠",
     "ru_RU": "Остроконечный шлем бессмертного провидца"
   },
@@ -2547,7 +2547,7 @@
     "fr_FR": "Camail des Barges",
     "it_IT": "Camaglio dei Chigliatori",
     "pt_BR": "Coifa Rompe-onda",
-    "ko_KO": "먼바다 사냥꾼 코이프",
+    "ko_KR": "먼바다 사냥꾼 코이프",
     "cn_CN": "风舷头巾",
     "ru_RU": "Боевой капюшон Вольных гарпунщиков"
   },
@@ -2558,7 +2558,7 @@
     "fr_FR": "Heaume du champion",
     "it_IT": "Elmo del Campione",
     "pt_BR": "Elmo do Campeão",
-    "ko_KO": "용사의 투구",
+    "ko_KR": "용사의 투구",
     "cn_CN": "勇士头盔",
     "ru_RU": "Шлем защитника Азерот"
   },
@@ -2569,7 +2569,7 @@
     "fr_FR": "Protège-front torcali",
     "it_IT": "Copricapo di Torcali",
     "pt_BR": "Cimeira Torcalin",
-    "ko_KO": "토르칼린 머리보호구",
+    "ko_KR": "토르칼린 머리보호구",
     "cn_CN": "托卡林护额",
     "ru_RU": "Головной убор культа Торкали"
   },
@@ -2580,7 +2580,7 @@
     "fr_FR": "Cimier à plumes du vent violent",
     "it_IT": "Cimiero Pennuto della Folata",
     "pt_BR": "Crista Borrascante Penosa",
-    "ko_KO": "깃털장식 풍력 벼슬",
+    "ko_KR": "깃털장식 풍력 벼슬",
     "cn_CN": "御风羽冠",
     "ru_RU": "Штормовой гребень"
   },
@@ -2591,7 +2591,7 @@
     "fr_FR": "Heaume cornu d’éclaireur de guerre",
     "it_IT": "Elmo Cornuto dell'Avanscoperta",
     "pt_BR": "Elmo Chifrudo do Batedor da Guerra",
-    "ko_KO": "전쟁정찰병의 뿔투구",
+    "ko_KR": "전쟁정찰병의 뿔투구",
     "cn_CN": "战地斥候的尖角头盔",
     "ru_RU": "Рогатый шлем разведчика"
   },
@@ -2602,7 +2602,7 @@
     "fr_FR": "Camail d’archer de l’Alliance",
     "it_IT": "Camaglio del Tiratore dell'Alleanza",
     "pt_BR": "Coifa do Arqueiro da Aliança",
-    "ko_KO": "얼라이언스 궁병의 코이프",
+    "ko_KR": "얼라이언스 궁병의 코이프",
     "cn_CN": "联盟弓手的罩帽",
     "ru_RU": "Капюшон лучника Альянса"
   },
@@ -2613,7 +2613,7 @@
     "fr_FR": "Heaume du gladiateur menaçant en anneaux",
     "it_IT": "Elmo Inanellato del Gladiatore Terrificante",
     "pt_BR": "Elmo Encadeado do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 사슬 투구",
+    "ko_KR": "공포를 부르는 검투사의 사슬 투구",
     "cn_CN": "悚然角斗士的链甲头盔",
     "ru_RU": "Плетеный шлем ужасающего гладиатора"
   },
@@ -2624,7 +2624,7 @@
     "fr_FR": "Chapel du gladiateur menaçant en anneaux",
     "it_IT": "Cimiero Inanellato del Gladiatore Terrificante",
     "pt_BR": "Bacinete Encadeado do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 사슬 머리쓰개",
+    "ko_KR": "공포를 부르는 검투사의 사슬 머리쓰개",
     "cn_CN": "悚然角斗士的链甲护头",
     "ru_RU": "Плетеный головной убор ужасающего гладиатора"
   },
@@ -2635,7 +2635,7 @@
     "fr_FR": "Coiffure de matriarche des totems",
     "it_IT": "Copricapo della Matriarca dei Totem",
     "pt_BR": "Diadema da Matriarca do Totem",
-    "ko_KO": "토템 여군주의 머리장식",
+    "ko_KR": "토템 여군주의 머리장식",
     "cn_CN": "图腾主母的头饰",
     "ru_RU": "Головной убор тотемного матриарха"
   },
@@ -2646,7 +2646,7 @@
     "fr_FR": "Heaume de l’aspirant menaçant en anneaux",
     "it_IT": "Elmo Inanellato del Pretendente Terrificante",
     "pt_BR": "Elmo Encadeado do Aspirante Medonho",
-    "ko_KO": "공포를 부르는 지원자의 사슬 투구",
+    "ko_KR": "공포를 부르는 지원자의 사슬 투구",
     "cn_CN": "悚然候选者的链甲头盔",
     "ru_RU": "Плетеный шлем ужасающего претендента"
   },
@@ -2657,7 +2657,7 @@
     "fr_FR": "Heaume de légionnaire de la 7e",
     "it_IT": "Elmo del Legionario della VII Legione",
     "pt_BR": "Elmo do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 투구",
+    "ko_KR": "7군단 용사의 투구",
     "cn_CN": "第七军团士兵头盔",
     "ru_RU": "Шлем 7-го легиона"
   },
@@ -2668,7 +2668,7 @@
     "fr_FR": "Garde-crâne de l’avant-garde honorable",
     "it_IT": "Copriteschio dell'Avanguardia della Brigata dell'Onore",
     "pt_BR": "Guarda-crânio da Vanguarda Brigadista",
-    "ko_KO": "명예결속단 선봉대의 해골 머리보호구",
+    "ko_KR": "명예결속단 선봉대의 해골 머리보호구",
     "cn_CN": "荣耀战团先锋的护颅",
     "ru_RU": "Кольчужный шлем авангарда Армии Чести"
   },
@@ -2679,7 +2679,7 @@
     "fr_FR": "Calot de légionnaire de la 7e",
     "it_IT": "Paratesta del Legionario della VII Legione",
     "pt_BR": "Morrião do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 해골모자",
+    "ko_KR": "7군단 용사의 해골모자",
     "cn_CN": "第七军团士兵护颅",
     "ru_RU": "Большой шлем 7-го легиона"
   },
@@ -2690,7 +2690,7 @@
     "fr_FR": "Heaume de l’avant-garde honorable",
     "it_IT": "Elmo dell'Avanguardia della Brigata dell'Onore",
     "pt_BR": "Elmo da Vanguarda Brigadista",
-    "ko_KO": "명예결속단 선봉대의 투구",
+    "ko_KR": "명예결속단 선봉대의 투구",
     "cn_CN": "荣耀战团先锋的头盔",
     "ru_RU": "Шлем авангарда Армии Чести"
   },
@@ -2701,7 +2701,7 @@
     "fr_FR": "Masque vrykul marchandé",
     "it_IT": "Maschera dei Vrykul Barattata",
     "pt_BR": "Máscara Vraikal Trocada",
-    "ko_KO": "물물교환 브리쿨 면갑",
+    "ko_KR": "물물교환 브리쿨 면갑",
     "cn_CN": "换来的维库面具",
     "ru_RU": "Потрепанная врайкульская маска"
   },
@@ -2712,7 +2712,7 @@
     "fr_FR": "Espauliers des Barges",
     "it_IT": "Paraspalle dei Chigliatori",
     "pt_BR": "Brafoneiras Rompe-onda",
-    "ko_KO": "먼바다 사냥꾼 견갑",
+    "ko_KR": "먼바다 사냥꾼 견갑",
     "cn_CN": "风舷肩甲",
     "ru_RU": "Наплечье Вольных гарпунщиков"
   },
@@ -2723,7 +2723,7 @@
     "fr_FR": "Garde-épaules du traque-sorcière",
     "it_IT": "Spallacci Foderati del Cacciatore di Streghe",
     "pt_BR": "Guarda-ombros do Caçador de Bruxa Má",
-    "ko_KO": "마녀수색자의 어깨보호대",
+    "ko_KR": "마녀수색자의 어깨보호대",
     "cn_CN": "巫婆追猎者的护肩",
     "ru_RU": "Наплечные щитки охотника на ведьм"
   },
@@ -2734,7 +2734,7 @@
     "fr_FR": "Espauliers du chasseur de tempêtes",
     "it_IT": "Paraspalle dell'Inseguitore delle Tempeste",
     "pt_BR": "Brafoneiras do Caça-tempestades",
-    "ko_KO": "폭풍추격자 견갑",
+    "ko_KR": "폭풍추격자 견갑",
     "cn_CN": "觅风者肩甲",
     "ru_RU": "Наплечники призывателя бурь"
   },
@@ -2745,7 +2745,7 @@
     "fr_FR": "Spallières torcali",
     "it_IT": "Guardaspalle di Torcali",
     "pt_BR": "Espaldares Torcalin",
-    "ko_KO": "토르칼린 어깨덮개",
+    "ko_KR": "토르칼린 어깨덮개",
     "cn_CN": "托卡林肩章",
     "ru_RU": "Наплеч культа Торкали"
   },
@@ -2756,7 +2756,7 @@
     "fr_FR": "Garde-épaules de serment de mort",
     "it_IT": "Spallacci Foderati del Promesso alla Morte",
     "pt_BR": "Guarda-ombros do Jurado de Morte",
-    "ko_KO": "죽음의 서약 어깨보호대",
+    "ko_KR": "죽음의 서약 어깨보호대",
     "cn_CN": "死誓肩胄",
     "ru_RU": "Заклятые смертью наплечные щитки"
   },
@@ -2767,7 +2767,7 @@
     "fr_FR": "Garde-épaules du paria résistant",
     "it_IT": "Spallacci Foderati dell'Esiliato Resiliente",
     "pt_BR": "Guarda-ombros do Proscrito Resiliente",
-    "ko_KO": "끈질긴 추방자의 어깨보호대",
+    "ko_KR": "끈질긴 추방자의 어깨보호대",
     "cn_CN": "强韧流亡者的肩铠",
     "ru_RU": "Наплечные щитки стойкого изгоя"
   },
@@ -2778,7 +2778,7 @@
     "fr_FR": "Garde-épaules du Noir bourbier",
     "it_IT": "Spallacci Foderati di Bragomorto",
     "pt_BR": "Guarda-ombros do Charco do Medo",
-    "ko_KO": "공포수렁 어깨보호대",
+    "ko_KR": "공포수렁 어깨보호대",
     "cn_CN": "恐惧之沼护肩",
     "ru_RU": "Наплечные щитки Жуткой трясины"
   },
@@ -2789,7 +2789,7 @@
     "fr_FR": "Garde-épaules de coursier du vent de Pa’ku",
     "it_IT": "Spallacci Foderati del Cavaliere del Vento di Pa'ku",
     "pt_BR": "Guarda-ombros da Mantícora de Pa'kul",
-    "ko_KO": "파쿠 와이번 기수 어깨보호대",
+    "ko_KR": "파쿠 와이번 기수 어깨보호대",
     "cn_CN": "帕库驭风者护肩",
     "ru_RU": "Наплечные щитки всадника Па'ку"
   },
@@ -2800,7 +2800,7 @@
     "fr_FR": "Mantelet de l’acidoptère",
     "it_IT": "Coprispalle di Alabile",
     "pt_BR": "Dragonas de Biliasa",
-    "ko_KO": "담즙날개 어깨덧옷",
+    "ko_KR": "담즙날개 어깨덧옷",
     "cn_CN": "怨翼护肩",
     "ru_RU": "Мантия желчекрыла"
   },
@@ -2811,7 +2811,7 @@
     "fr_FR": "Garde-épaules du vent latéral",
     "it_IT": "Spallacci Foderati di Ventotraverso",
     "pt_BR": "Guarda-ombros dos Ventos Contrários",
-    "ko_KO": "맞바람 어깨보호대",
+    "ko_KR": "맞바람 어깨보호대",
     "cn_CN": "界风护肩",
     "ru_RU": "Наплечные щитки Галфвинда"
   },
@@ -2822,7 +2822,7 @@
     "fr_FR": "Spallières cendrebois",
     "it_IT": "Guardaspalle di Legnosecco",
     "pt_BR": "Espaldares Grislenha",
-    "ko_KO": "잿빛나무 어깨덮개",
+    "ko_KR": "잿빛나무 어깨덮개",
     "cn_CN": "灰树林护肩",
     "ru_RU": "Наплеч Ясеневой рощи"
   },
@@ -2833,7 +2833,7 @@
     "fr_FR": "Mantelet du Reflux mort",
     "it_IT": "Coprispalle di Flussomorto",
     "pt_BR": "Dragonas da Água Morta",
-    "ko_KO": "썩은여울 어깨덧옷",
+    "ko_KR": "썩은여울 어깨덧옷",
     "cn_CN": "死亡浅滩护肩",
     "ru_RU": "Оплечье Мертвецкой Трясины"
   },
@@ -2844,7 +2844,7 @@
     "fr_FR": "Espauliers de Morsebise",
     "it_IT": "Paraspalle di Freddogelo",
     "pt_BR": "Brafoneiras Calafrio",
-    "ko_KO": "한파의 견갑",
+    "ko_KR": "한파의 견갑",
     "cn_CN": "冰冷断裂护肩",
     "ru_RU": "Наплеч морозных объятий"
   },
@@ -2855,7 +2855,7 @@
     "fr_FR": "Garde-épaules de la gueule béante",
     "it_IT": "Spallacci delle Fauci Spalancate",
     "pt_BR": "Guarda-ombros da Boca Escancarada",
-    "ko_KO": "뻐끔거리는 아귀 어깨보호대",
+    "ko_KR": "뻐끔거리는 아귀 어깨보호대",
     "cn_CN": "血喉护肩",
     "ru_RU": "Наплечные щитки зияющей пасти"
   },
@@ -2866,7 +2866,7 @@
     "fr_FR": "Spallières anti-impact",
     "it_IT": "Guardaspalle della Guardia dello Schianto",
     "pt_BR": "Espaldares da Guardapronta",
-    "ko_KO": "파괴경비병 어깨덮개",
+    "ko_KR": "파괴경비병 어깨덮개",
     "cn_CN": "防坠毁护肩",
     "ru_RU": "Противоударные наплечи"
   },
@@ -2877,7 +2877,7 @@
     "fr_FR": "Spallières du premier empereur",
     "it_IT": "Guardaspalle del Primo Imperatore",
     "pt_BR": "Espaldares do Imperador Primordial",
-    "ko_KO": "제1 황제의 어깨덮개",
+    "ko_KR": "제1 황제의 어깨덮개",
     "cn_CN": "首皇护肩",
     "ru_RU": "Наплечи первого императора"
   },
@@ -2888,7 +2888,7 @@
     "fr_FR": "Spallières barbelées de crochets",
     "it_IT": "Guardaspalle con Barbigli a Uncino",
     "pt_BR": "Espaldares com Ganchos Farpados",
-    "ko_KO": "갈고리 자국이 난 어깨덮개",
+    "ko_KR": "갈고리 자국이 난 어깨덮개",
     "cn_CN": "勾刺肩胄",
     "ru_RU": "Покрытые крючками наплечи"
   },
@@ -2899,7 +2899,7 @@
     "fr_FR": "Spallières d’abomination amalgamée",
     "it_IT": "Guardaspalle dell'Abominio Amalgamato",
     "pt_BR": "Espaldares da Abominação Amalgamada",
-    "ko_KO": "융합된 흉물 어깨덮개",
+    "ko_KR": "융합된 흉물 어깨덮개",
     "cn_CN": "聚合畸变护肩",
     "ru_RU": "Наплечи бесформенного чудовища"
   },
@@ -2910,7 +2910,7 @@
     "fr_FR": "Mantelet de canonnier",
     "it_IT": "Coprispalle del Cannoniere",
     "pt_BR": "Dragonas do Canhoneiro",
-    "ko_KO": "포병의 어깨덧옷",
+    "ko_KR": "포병의 어깨덧옷",
     "cn_CN": "火炮手护肩",
     "ru_RU": "Оплечье канонира"
   },
@@ -2921,7 +2921,7 @@
     "fr_FR": "Spallières stérilisées à la flamme",
     "it_IT": "Guardaspalle Sterilizzati col Fuoco",
     "pt_BR": "Espaldares Esterilizados pelas Chamas",
-    "ko_KO": "화염소독 어깨덮개",
+    "ko_KR": "화염소독 어깨덮개",
     "cn_CN": "高温消毒护肩",
     "ru_RU": "Стерилизованный огнем наплеч"
   },
@@ -2932,7 +2932,7 @@
     "fr_FR": "Spallières des viscères coagulées",
     "it_IT": "Guardaspalle dei Visceri Coagulati",
     "pt_BR": "Espaldares das Vísceras Coaguladas",
-    "ko_KO": "융합한 내장의 어깨덮개",
+    "ko_KR": "융합한 내장의 어깨덮개",
     "cn_CN": "凝结内脏护肩",
     "ru_RU": "Наплеч застывших внутренностей"
   },
@@ -2943,7 +2943,7 @@
     "fr_FR": "Garde-épaules du chasseur de tempêtes",
     "it_IT": "Spallacci Foderati dell'Inseguitore delle Tempeste",
     "pt_BR": "Guarda-ombros do Caça-tempestades",
-    "ko_KO": "폭풍추격자 어깨보호대",
+    "ko_KR": "폭풍추격자 어깨보호대",
     "cn_CN": "觅风者护肩",
     "ru_RU": "Наплечные щитки призывателя бурь"
   },
@@ -2954,7 +2954,7 @@
     "fr_FR": "Spallières du champion",
     "it_IT": "Guardaspalle del Campione",
     "pt_BR": "Espaldares do Campeão",
-    "ko_KO": "용사의 어깨덮개",
+    "ko_KR": "용사의 어깨덮개",
     "cn_CN": "勇士肩胄",
     "ru_RU": "Наплеч защитника Азерот"
   },
@@ -2965,7 +2965,7 @@
     "fr_FR": "Spallières du paria résistant",
     "it_IT": "Guardaspalle dell'Esiliato Resiliente",
     "pt_BR": "Espaldares do Proscrito Resiliente",
-    "ko_KO": "끈질긴 추방자의 어깨덮개",
+    "ko_KR": "끈질긴 추방자의 어깨덮개",
     "cn_CN": "强韧流亡者的肩甲",
     "ru_RU": "Наплеч стойкого изгоя"
   },
@@ -2976,7 +2976,7 @@
     "fr_FR": "Spallières de la gueule enveloppante",
     "it_IT": "Guardaspalle delle Fauci Avvolgenti",
     "pt_BR": "Espaldares da Gorja Devoradora",
-    "ko_KO": "휘감는 아귀의 어깨덮개",
+    "ko_KR": "휘감는 아귀의 어깨덮개",
     "cn_CN": "环密之喉肩甲",
     "ru_RU": "Наплеч окутывающей пасти"
   },
@@ -2987,7 +2987,7 @@
     "fr_FR": "Spallières du champion d’Azeroth",
     "it_IT": "Guardaspalle del Campione Azerotiano",
     "pt_BR": "Espaldares do Campeão Azerothiano",
-    "ko_KO": "아제로스 용사의 어깨덮개",
+    "ko_KR": "아제로스 용사의 어깨덮개",
     "cn_CN": "艾泽拉斯勇士肩甲",
     "ru_RU": "Наплечи защитника Азерот"
   },
@@ -2998,7 +2998,7 @@
     "fr_FR": "Spallières du gladiateur menaçant en anneaux",
     "it_IT": "Guardaspalle Inanellati del Gladiatore Terrificante",
     "pt_BR": "Espaldares Encadeados do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 사슬 어깨덮개",
+    "ko_KR": "공포를 부르는 검투사의 사슬 어깨덮개",
     "cn_CN": "悚然角斗士的链甲护肩",
     "ru_RU": "Плетеный наплеч ужасающего гладиатора"
   },
@@ -3009,7 +3009,7 @@
     "fr_FR": "Garde-épaules du gladiateur menaçant en anneaux",
     "it_IT": "Spallacci Foderati Inanellati del Gladiatore Terrificante",
     "pt_BR": "Guarda-ombros Encadeados do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 사슬 어깨보호대",
+    "ko_KR": "공포를 부르는 검투사의 사슬 어깨보호대",
     "cn_CN": "悚然角斗士的链甲肩胄",
     "ru_RU": "Плетеный наплечный щиток ужасающего гладиатора"
   },
@@ -3020,7 +3020,7 @@
     "fr_FR": "Garde-épaules d’os du diable",
     "it_IT": "Spallacci Foderati dell'Osso Diabolico",
     "pt_BR": "Guarda-ombros de Ossos Demoníacos",
-    "ko_KO": "악마뼈 어깨보호대",
+    "ko_KR": "악마뼈 어깨보호대",
     "cn_CN": "恶魔之骨护肩",
     "ru_RU": "Наплечные щитки из дьявольской кости"
   },
@@ -3031,7 +3031,7 @@
     "fr_FR": "Spallières de l’aspirant menaçant en anneaux",
     "it_IT": "Guardaspalle Inanellati del Pretendente Terrificante",
     "pt_BR": "Espaldares Encadeados do Aspirante Medonho",
-    "ko_KO": "공포를 부르는 지원자의 사슬 어깨덮개",
+    "ko_KR": "공포를 부르는 지원자의 사슬 어깨덮개",
     "cn_CN": "悚然候选者的链甲护肩",
     "ru_RU": "Плетеный наплеч ужасающего претендента"
   },
@@ -3042,7 +3042,7 @@
     "fr_FR": "Espalières de légionnaire de la 7e",
     "it_IT": "Spallacci del Legionario della VII Legione",
     "pt_BR": "Espáduas do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 어깨받이",
+    "ko_KR": "7군단 용사의 어깨받이",
     "cn_CN": "第七军团士兵锁甲护肩",
     "ru_RU": "Наплечники 7-го легиона"
   },
@@ -3053,7 +3053,7 @@
     "fr_FR": "Garde-épaules de l’avant-garde honorable",
     "it_IT": "Spallacci Foderati dell'Avanguardia della Brigata dell'Onore",
     "pt_BR": "Guarda-ombros da Vanguarda Brigadista",
-    "ko_KO": "명예결속단 선봉대의 어깨보호대",
+    "ko_KR": "명예결속단 선봉대의 어깨보호대",
     "cn_CN": "荣耀战团先锋的护肩",
     "ru_RU": "Наплечные щитки авангарда Армии Чести"
   },
@@ -3064,7 +3064,7 @@
     "fr_FR": "Spallières de légionnaire de la 7e",
     "it_IT": "Guardaspalle del Legionario della VII Legione",
     "pt_BR": "Espaldares do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 어깨덮개",
+    "ko_KR": "7군단 용사의 어깨덮개",
     "cn_CN": "第七军团士兵肩胄",
     "ru_RU": "Наплеч 7-го легиона"
   },
@@ -3075,7 +3075,7 @@
     "fr_FR": "Espauliers de l’avant-garde honorable",
     "it_IT": "Paraspalle dell'Avanguardia della Brigata dell'Onore",
     "pt_BR": "Brafoneiras da Vanguarda Brigadista",
-    "ko_KO": "명예결속단 선봉대의 견갑",
+    "ko_KR": "명예결속단 선봉대의 견갑",
     "cn_CN": "荣耀战团先锋的肩甲",
     "ru_RU": "Наплечье авангарда Армии Чести"
   },
@@ -3086,7 +3086,7 @@
     "fr_FR": "Cotte de mailles de méduse vagabonde",
     "it_IT": "Armatura di Maglia del Vagameduse",
     "pt_BR": "Malha de Anéis da Medusa Andarilha",
-    "ko_KO": "표류하는 메두사의 쇠사슬갑옷",
+    "ko_KR": "표류하는 메두사의 쇠사슬갑옷",
     "cn_CN": "逐浪水母胸甲",
     "ru_RU": "Кольчуга дрейфующей медузы"
   },
@@ -3097,7 +3097,7 @@
     "fr_FR": "Cotte de mailles des Barges",
     "it_IT": "Corazza dei Chigliatori",
     "pt_BR": "Malha de Anéis Rompe-onda",
-    "ko_KO": "먼바다 사냥꾼 쇠사슬갑옷",
+    "ko_KR": "먼바다 사냥꾼 쇠사슬갑옷",
     "cn_CN": "风舷链甲",
     "ru_RU": "Кольчуга Вольных гарпунщиков"
   },
@@ -3108,7 +3108,7 @@
     "fr_FR": "Cuirasse du traque-sorcière",
     "it_IT": "Pettorale Corazzato del Cacciatore di Streghe",
     "pt_BR": "Peitoral do Caçador de Bruxa Má",
-    "ko_KO": "마녀수색자의 가슴보호갑",
+    "ko_KR": "마녀수색자의 가슴보호갑",
     "cn_CN": "巫婆追猎者的胸甲",
     "ru_RU": "Кираса охотника на ведьм"
   },
@@ -3119,7 +3119,7 @@
     "fr_FR": "Cotte de mailles du chasseur de tempêtes",
     "it_IT": "Corazza dell'Inseguitore delle Tempeste",
     "pt_BR": "Malha de Anéis do Caça-tempestades",
-    "ko_KO": "폭풍추격자 쇠사슬갑옷",
+    "ko_KR": "폭풍추격자 쇠사슬갑옷",
     "cn_CN": "觅风者链甲",
     "ru_RU": "Кираса призывателя бурь"
   },
@@ -3130,7 +3130,7 @@
     "fr_FR": "Cotte de mailles torcali",
     "it_IT": "Armatura di Maglia di Torcali",
     "pt_BR": "Malha de Anéis Torcalin",
-    "ko_KO": "토르칼린 쇠사슬갑옷",
+    "ko_KR": "토르칼린 쇠사슬갑옷",
     "cn_CN": "托卡林链甲",
     "ru_RU": "Кольчуга культа Торкали"
   },
@@ -3141,7 +3141,7 @@
     "fr_FR": "Corselet de serment de mort",
     "it_IT": "Corazza Foderata del Promesso alla Morte",
     "pt_BR": "Couraça do Jurado de Morte",
-    "ko_KO": "죽음의 서약 가슴보호대",
+    "ko_KR": "죽음의 서약 가슴보호대",
     "cn_CN": "死誓护胸",
     "ru_RU": "Заклятый смертью нагрудный доспех"
   },
@@ -3152,7 +3152,7 @@
     "fr_FR": "Haubert du paria résistant",
     "it_IT": "Usbergo dell'Esiliato Resiliente",
     "pt_BR": "Cota do Proscrito Resiliente",
-    "ko_KO": "끈질긴 추방자의 갑옷",
+    "ko_KR": "끈질긴 추방자의 갑옷",
     "cn_CN": "强韧流亡者的半身甲",
     "ru_RU": "Хауберк стойкого изгоя"
   },
@@ -3163,7 +3163,7 @@
     "fr_FR": "Gilet du Noir bourbier",
     "it_IT": "Giubba di Bragomorto",
     "pt_BR": "Colete do Charco do Medo",
-    "ko_KO": "공포수렁 조끼",
+    "ko_KR": "공포수렁 조끼",
     "cn_CN": "恐惧之沼外衣",
     "ru_RU": "Жилет Жуткой трясины"
   },
@@ -3174,7 +3174,7 @@
     "fr_FR": "Pourpoint de coursier du vent de Pa’ku",
     "it_IT": "Giaco del Cavaliere del Vento di Pa'ku",
     "pt_BR": "Gibão da Mantícora de Pa'kul",
-    "ko_KO": "파쿠 와이번 기수 웃옷",
+    "ko_KR": "파쿠 와이번 기수 웃옷",
     "cn_CN": "帕库驭风者外套",
     "ru_RU": "Жакет всадника Па'ку"
   },
@@ -3185,7 +3185,7 @@
     "fr_FR": "Pourpoint de l’acidoptère",
     "it_IT": "Giaco di Alabile",
     "pt_BR": "Gibão de Biliasa",
-    "ko_KO": "담즙날개 웃옷",
+    "ko_KR": "담즙날개 웃옷",
     "cn_CN": "怨翼外衣",
     "ru_RU": "Жакет желчекрыла"
   },
@@ -3196,7 +3196,7 @@
     "fr_FR": "Cotte de mailles du vent latéral",
     "it_IT": "Armatura di Maglia di Ventotraverso",
     "pt_BR": "Malha de Anéis dos Ventos Contrários",
-    "ko_KO": "맞바람 쇠사슬갑옷",
+    "ko_KR": "맞바람 쇠사슬갑옷",
     "cn_CN": "界风链甲",
     "ru_RU": "Кольчуга Галфвинда"
   },
@@ -3207,7 +3207,7 @@
     "fr_FR": "Haubert cendrebois",
     "it_IT": "Usbergo di Legnosecco",
     "pt_BR": "Cota Grislenha",
-    "ko_KO": "잿빛나무 갑옷",
+    "ko_KR": "잿빛나무 갑옷",
     "cn_CN": "灰树林半身甲",
     "ru_RU": "Хауберк Ясеневой рощи"
   },
@@ -3218,7 +3218,7 @@
     "fr_FR": "Haubert du Reflux mort",
     "it_IT": "Usbergo di Flussomorto",
     "pt_BR": "Cota da Água Morta",
-    "ko_KO": "썩은여울 갑옷",
+    "ko_KR": "썩은여울 갑옷",
     "cn_CN": "死亡浅滩锁子甲",
     "ru_RU": "Хауберк Мертвецкой Трясины"
   },
@@ -3229,7 +3229,7 @@
     "fr_FR": "Corselet anti-mitraille",
     "it_IT": "Corazza Foderata Antiproiettile",
     "pt_BR": "Couraça Segura-estilhaços",
-    "ko_KO": "탄피 감쇠의 가슴보호대",
+    "ko_KR": "탄피 감쇠의 가슴보호대",
     "cn_CN": "弹片缓冲护胸",
     "ru_RU": "Останавливающая шрапнель кираса"
   },
@@ -3240,7 +3240,7 @@
     "fr_FR": "Corselet béni par les Loas",
     "it_IT": "Corazza Foderata Benedetta dai Loa",
     "pt_BR": "Couraça Abençoada pelos Loas",
-    "ko_KO": "로아의 축복을 받은 가슴보호대",
+    "ko_KR": "로아의 축복을 받은 가슴보호대",
     "cn_CN": "神赐护胸",
     "ru_RU": "Благословленный лоа нагрудник"
   },
@@ -3251,7 +3251,7 @@
     "fr_FR": "Haubert de serment de mort",
     "it_IT": "Usbergo del Promesso alla Morte",
     "pt_BR": "Cota do Jurado de Morte",
-    "ko_KO": "죽음의 서약 흉갑",
+    "ko_KR": "죽음의 서약 흉갑",
     "cn_CN": "死誓半身甲",
     "ru_RU": "Заклятый смертью хауберк"
   },
@@ -3262,7 +3262,7 @@
     "fr_FR": "Haubert de désespoir noyé",
     "it_IT": "Usbergo della Disperazione Sommersa",
     "pt_BR": "Cota do Desespero Submerso",
-    "ko_KO": "가라앉은 비탄의 갑옷",
+    "ko_KR": "가라앉은 비탄의 갑옷",
     "cn_CN": "沉眠绝望半身甲",
     "ru_RU": "Хауберк глубокого отчаяния"
   },
@@ -3273,7 +3273,7 @@
     "fr_FR": "Corselet tri-cœur",
     "it_IT": "Corazza Foderata del Triplice Cuore",
     "pt_BR": "Couraça Tricordiana",
-    "ko_KO": "세 심장 가슴보호대",
+    "ko_KR": "세 심장 가슴보호대",
     "cn_CN": "三心护胸",
     "ru_RU": "Нагрудный доспех трех сердец"
   },
@@ -3284,7 +3284,7 @@
     "fr_FR": "Habit de maléficieur corrompu",
     "it_IT": "Vesti del Malefico Corrotto",
     "pt_BR": "Vestimenta do Bagateiro Corrompido",
-    "ko_KO": "타락한 사술사의 예복",
+    "ko_KR": "타락한 사술사의 예복",
     "cn_CN": "堕落妖术师法衣",
     "ru_RU": "Одеяние падшего проклинателя"
   },
@@ -3295,7 +3295,7 @@
     "fr_FR": "Haubert de l’esclavagiste de la mort",
     "it_IT": "Usbergo dello Schiavista Mortale",
     "pt_BR": "Cota do Escravizador da Morte",
-    "ko_KO": "죽음구속자의 갑옷",
+    "ko_KR": "죽음구속자의 갑옷",
     "cn_CN": "奴亡者的半身甲",
     "ru_RU": "Хауберк поработителя смерти"
   },
@@ -3306,7 +3306,7 @@
     "fr_FR": "Cotte de mailles du champion",
     "it_IT": "Corazza del Campione",
     "pt_BR": "Malha do Campeão",
-    "ko_KO": "용사의 사슬 갑옷",
+    "ko_KR": "용사의 사슬 갑옷",
     "cn_CN": "勇士锁甲护胸",
     "ru_RU": "Кольчуга защитника Азерот"
   },
@@ -3317,7 +3317,7 @@
     "fr_FR": "Gilet en anneaux de qualité garantie",
     "it_IT": "Cotta di Qualità Garantita",
     "pt_BR": "Colete Encadeado de Qualidade Garantida",
-    "ko_KO": "품질 보증된 사슬조끼",
+    "ko_KR": "품질 보증된 사슬조끼",
     "cn_CN": "质量保证链甲",
     "ru_RU": "Кольчуга исключительного качества"
   },
@@ -3328,7 +3328,7 @@
     "fr_FR": "Haubert du général c’thraxxi",
     "it_IT": "Usbergo del Generale dei C'thraxxi",
     "pt_BR": "Cota do General C'Thraxxi",
-    "ko_KO": "크트락시 사령관의 사슬 갑옷",
+    "ko_KR": "크트락시 사령관의 사슬 갑옷",
     "cn_CN": "克拉西斯将军的半身甲",
     "ru_RU": "Хауберк генерала К'тракси"
   },
@@ -3339,7 +3339,7 @@
     "fr_FR": "Cotte de mailles du traque-sorcière",
     "it_IT": "Corazza del Cacciatore di Streghe",
     "pt_BR": "Malha de Anéis do Caçador de Bruxa Má",
-    "ko_KO": "마녀수색자의 쇠사슬갑옷",
+    "ko_KR": "마녀수색자의 쇠사슬갑옷",
     "cn_CN": "巫婆追猎者的链甲",
     "ru_RU": "Кольчуга охотника на ведьм"
   },
@@ -3350,7 +3350,7 @@
     "fr_FR": "Haubert du grêlon",
     "it_IT": "Usbergo di Chicchi di Grandine",
     "pt_BR": "Cota de Granizo",
-    "ko_KO": "우박 갑옷",
+    "ko_KR": "우박 갑옷",
     "cn_CN": "冰雹半身甲",
     "ru_RU": "Хауберк града"
   },
@@ -3361,7 +3361,7 @@
     "fr_FR": "Harnais de combat en écailles",
     "it_IT": "Imbracatura da Battaglia di Scaglie di Maglia",
     "pt_BR": "Arnês Bélico de Malha de Escamas",
-    "ko_KO": "미늘사슬 전투 멜빵",
+    "ko_KR": "미늘사슬 전투 멜빵",
     "cn_CN": "鳞甲战斗背心",
     "ru_RU": "Чешуйчатая боевая портупея"
   },
@@ -3372,7 +3372,7 @@
     "fr_FR": "Haubert de tireur de précision en anneaux",
     "it_IT": "Usbergo di Maglia Inanellata del Tiratore Scelto",
     "pt_BR": "Cota de Malha de Anéis do Atirador de Elite",
-    "ko_KO": "저격수의 쇠사슬 갑옷",
+    "ko_KR": "저격수의 쇠사슬 갑옷",
     "cn_CN": "神射手的锁链半身甲",
     "ru_RU": "Кольчужный хауберк стрелка"
   },
@@ -3383,7 +3383,7 @@
     "fr_FR": "Cotte d’anneaux du gladiateur menaçant",
     "it_IT": "Armatura Inanellata del Gladiatore Terrificante",
     "pt_BR": "Armadura Encadeada do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 사슬 갑옷",
+    "ko_KR": "공포를 부르는 검투사의 사슬 갑옷",
     "cn_CN": "悚然角斗士的链甲护胸",
     "ru_RU": "Плетеный доспех ужасающего гладиатора"
   },
@@ -3394,7 +3394,7 @@
     "fr_FR": "Corselet du gladiateur menaçant en anneaux",
     "it_IT": "Corazza Foderata Inanellata del Gladiatore Terrificante",
     "pt_BR": "Couraça Encadeada do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 사슬 가슴보호대",
+    "ko_KR": "공포를 부르는 검투사의 사슬 가슴보호대",
     "cn_CN": "悚然角斗士的链甲胸铠",
     "ru_RU": "Плетеный нагрудный доспех ужасающего гладиатора"
   },
@@ -3405,7 +3405,7 @@
     "fr_FR": "Cage thoracique de collectionneur d’os",
     "it_IT": "Corazza d'Ossa del Collezionista d'Ossa",
     "pt_BR": "Jaula Torácica do Colecionador de Ossos",
-    "ko_KO": "뼈 수집가의 흉골갑옷",
+    "ko_KR": "뼈 수집가의 흉골갑옷",
     "cn_CN": "集骨者的胸甲",
     "ru_RU": "Корсет собирателя костей"
   },
@@ -3416,7 +3416,7 @@
     "fr_FR": "Cotte d’anneaux de l’aspirant menaçant",
     "it_IT": "Armatura Inanellata del Pretendente Terrificante",
     "pt_BR": "Armadura Encadeada do Aspirante Medonho",
-    "ko_KO": "공포를 부르는 지원자의 사슬 갑옷",
+    "ko_KR": "공포를 부르는 지원자의 사슬 갑옷",
     "cn_CN": "悚然候选者的链甲护胸",
     "ru_RU": "Плетеный доспех ужасающего претендента"
   },
@@ -3427,7 +3427,7 @@
     "fr_FR": "Cotte de mailles de l’avant-garde honorable",
     "it_IT": "Armatura di Maglia dell'Avanguardia della Brigata dell'Onore",
     "pt_BR": "Malha de Anéis da Vanguarda Brigadista",
-    "ko_KO": "명예결속단 선봉대의 쇠사슬갑옷",
+    "ko_KR": "명예결속단 선봉대의 쇠사슬갑옷",
     "cn_CN": "荣耀战团先锋的链甲衫",
     "ru_RU": "Кольчуга авангарда Армии Чести"
   },
@@ -3438,7 +3438,7 @@
     "fr_FR": "Cotte de mailles de légionnaire de la 7e",
     "it_IT": "Corazza Inanellata del Legionario della VII Legione",
     "pt_BR": "Malha de Anéis do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 쇠사슬갑옷",
+    "ko_KR": "7군단 용사의 쇠사슬갑옷",
     "cn_CN": "第七军团士兵链甲护胸",
     "ru_RU": "Кольчуга 7-го легиона"
   },
@@ -3449,7 +3449,7 @@
     "fr_FR": "Diadème de navigateur",
     "it_IT": "Tiara del Navigatore",
     "pt_BR": "Diadema do Navegador",
-    "ko_KO": "항해사의 머리장식",
+    "ko_KR": "항해사의 머리장식",
     "cn_CN": "导航员的头饰",
     "ru_RU": "Капюшон штурмана"
   },
@@ -3460,7 +3460,7 @@
     "fr_FR": "Couronne en fibre maccarbre",
     "it_IT": "Corona di Vimini",
     "pt_BR": "Coroa de Vime Urdido",
-    "ko_KO": "버들엮음 관",
+    "ko_KR": "버들엮음 관",
     "cn_CN": "织柳头冠",
     "ru_RU": "Укрепленный плетением венец"
   },
@@ -3471,7 +3471,7 @@
     "fr_FR": "Diadème de prédicateur des marées",
     "it_IT": "Tiara dell'Oratore delle Maree",
     "pt_BR": "Diadema do Marglota",
-    "ko_KO": "파도예언자 머리장식",
+    "ko_KR": "파도예언자 머리장식",
     "cn_CN": "潮语者头饰",
     "ru_RU": "Капюшон заклинателя волн"
   },
@@ -3482,7 +3482,7 @@
     "fr_FR": "Capuche zanchuli",
     "it_IT": "Copricapo degli Zanchuli",
     "pt_BR": "Capucho Zanchuli",
-    "ko_KO": "잔추리 수도두건",
+    "ko_KR": "잔추리 수도두건",
     "cn_CN": "赞枢利头巾",
     "ru_RU": "Занчульский клобук"
   },
@@ -3493,7 +3493,7 @@
     "fr_FR": "Chaperon de parle-loa",
     "it_IT": "Cappuccio dell'Oratore dei Loa",
     "pt_BR": "Capuz da Voz-dos-loas",
-    "ko_KO": "로아 전령의 두건",
+    "ko_KR": "로아 전령의 두건",
     "cn_CN": "神谕者罩帽",
     "ru_RU": "Капюшон говорящего с лоа"
   },
@@ -3504,7 +3504,7 @@
     "fr_FR": "Chaperon du Vencestral",
     "it_IT": "Cappuccio di Ventotardo",
     "pt_BR": "Capuz Ventadoiro",
-    "ko_KO": "마지막 바람 두건",
+    "ko_KR": "마지막 바람 두건",
     "cn_CN": "止风兜帽",
     "ru_RU": "Капюшон Последнего Ветра"
   },
@@ -3515,7 +3515,7 @@
     "fr_FR": "Coiffe élégamment empanachée",
     "it_IT": "Copricapo Elegantemente Piumato",
     "pt_BR": "Casquete com Plumagem Elegante",
-    "ko_KO": "맵시있는 모자",
+    "ko_KR": "맵시있는 모자",
     "cn_CN": "亮眼长羽之帽",
     "ru_RU": "Красиво украшенная шляпа"
   },
@@ -3526,7 +3526,7 @@
     "fr_FR": "Coiffure d’esprit du marais",
     "it_IT": "Copricapo dello Spirito Fangoso",
     "pt_BR": "Cocar do Espírito do Charco",
-    "ko_KO": "수렁 영혼 머리장식",
+    "ko_KR": "수렁 영혼 머리장식",
     "cn_CN": "沼魂头饰",
     "ru_RU": "Головной убор духа Фэн"
   },
@@ -3537,7 +3537,7 @@
     "fr_FR": "Bandeau en soie de Shadra",
     "it_IT": "Benda di Seta di Shadra",
     "pt_BR": "Bandana de Seda de Shadra",
-    "ko_KO": "샤드라 비단 머리띠",
+    "ko_KR": "샤드라 비단 머리띠",
     "cn_CN": "沙德拉缠丝头带",
     "ru_RU": "Шелковая головная повязка Шадры"
   },
@@ -3548,7 +3548,7 @@
     "fr_FR": "Coiffure filesable",
     "it_IT": "Copricapo di Filasabbia",
     "pt_BR": "Cocar de Tece-areia",
-    "ko_KO": "모래그물 머리장식",
+    "ko_KR": "모래그물 머리장식",
     "cn_CN": "纺沙头饰",
     "ru_RU": "Головной убор песчаного прядильщика"
   },
@@ -3559,7 +3559,7 @@
     "fr_FR": "Coiffure chant-de-sirène",
     "it_IT": "Copricapo del Canto delle Sirene",
     "pt_BR": "Cocar da Canção da Sirena",
-    "ko_KO": "세이렌노래 머리장식",
+    "ko_KR": "세이렌노래 머리장식",
     "cn_CN": "海妖之歌头饰",
     "ru_RU": "Головной убор песни сирены"
   },
@@ -3570,7 +3570,7 @@
     "fr_FR": "Capuche rameau-de-feu",
     "it_IT": "Copricapo dei Ramorosso",
     "pt_BR": "Capucho Ramossangue",
-    "ko_KO": "핏빛가지 수도두건",
+    "ko_KR": "핏빛가지 수도두건",
     "cn_CN": "血枝风帽",
     "ru_RU": "Тростниковый клобук"
   },
@@ -3581,7 +3581,7 @@
     "fr_FR": "Chaperon de forme-grain",
     "it_IT": "Cappuccio del Plasmavento",
     "pt_BR": "Capuz do Moldaventos",
-    "ko_KO": "돌풍술사 두건",
+    "ko_KR": "돌풍술사 두건",
     "cn_CN": "塑风师头巾",
     "ru_RU": "Капюшон заклинателя штормов"
   },
@@ -3592,7 +3592,7 @@
     "fr_FR": "Mitre de la tisseuse secrète",
     "it_IT": "Mitria del Tessitore di Segreti",
     "pt_BR": "Mitra do Tecelão de Segredos",
-    "ko_KO": "은밀한 방적공의 의식모자",
+    "ko_KR": "은밀한 방적공의 의식모자",
     "cn_CN": "织谜者的法冠",
     "ru_RU": "Митра тайной ткачихи"
   },
@@ -3603,7 +3603,7 @@
     "fr_FR": "Diadème en poils d’araignée",
     "it_IT": "Tiara di Tela di Ragno",
     "pt_BR": "Diadema de Pelo de Aranha",
-    "ko_KO": "거미털 머리장식",
+    "ko_KR": "거미털 머리장식",
     "cn_CN": "蜘蛛毛头饰",
     "ru_RU": "Убор из паучьей щетины"
   },
@@ -3614,7 +3614,7 @@
     "fr_FR": "Coiffure du premier empire",
     "it_IT": "Copricapo del Primo Impero",
     "pt_BR": "Turbante do Primeiro Império",
-    "ko_KO": "첫 번째 제국의 머리장식",
+    "ko_KR": "첫 번째 제국의 머리장식",
     "cn_CN": "第一帝国头饰",
     "ru_RU": "Головной убор первой империи"
   },
@@ -3625,7 +3625,7 @@
     "fr_FR": "Capuche de rôde-tempête",
     "it_IT": "Cappuccio del Guardingo della Tempesta",
     "pt_BR": "Capucho do Espreitador da Tormenta",
-    "ko_KO": "폭풍잠복꾼의 수도두건",
+    "ko_KR": "폭풍잠복꾼의 수도두건",
     "cn_CN": "风暴潜伏者风帽",
     "ru_RU": "Клобук созерцания бури"
   },
@@ -3636,7 +3636,7 @@
     "fr_FR": "Couronne avide des profondeurs",
     "it_IT": "Corona Avida delle Profondità",
     "pt_BR": "Coroa Agarradiça das Profundezas",
-    "ko_KO": "심연의 거머쥐는 관",
+    "ko_KR": "심연의 거머쥐는 관",
     "cn_CN": "深渊攫取王冠",
     "ru_RU": "Головной убор цепких глубин"
   },
@@ -3647,7 +3647,7 @@
     "fr_FR": "Coiffure feu-de-l’âme",
     "it_IT": "Copricapo dell'Energia d'Anima",
     "pt_BR": "Adorno Nutrealma",
-    "ko_KO": "영혼동력 머리장식",
+    "ko_KR": "영혼동력 머리장식",
     "cn_CN": "灵魂供能头饰",
     "ru_RU": "Головной убор пожирания душ"
   },
@@ -3658,7 +3658,7 @@
     "fr_FR": "Bésicles synthétiques AZ3-R1-T3",
     "it_IT": "Occhiali Sintetici AZ3-R1-T3",
     "pt_BR": "Supralupas Sintéticas AZ3-R1-T4",
-    "ko_KO": "AZ3-R1-T3 인조 반사경",
+    "ko_KR": "AZ3-R1-T3 인조 반사경",
     "cn_CN": "AZ3-R1-T3合成眼镜",
     "ru_RU": "Синтетические очки типа \"AZ3-PNT\""
   },
@@ -3669,7 +3669,7 @@
     "fr_FR": "Chaperon de l’amalgame horrifique",
     "it_IT": "Cappuccio dell'Amalgama Orripilante",
     "pt_BR": "Capuz da Amálgama Horripilante",
-    "ko_KO": "끔찍한 결정체의 두건",
+    "ko_KR": "끔찍한 결정체의 두건",
     "cn_CN": "惊怖聚合体兜帽",
     "ru_RU": "Капюшон ужасающего слияния"
   },
@@ -3680,7 +3680,7 @@
     "fr_FR": "Visage du prophète sublimé",
     "it_IT": "Maschera del Profeta Asceso",
     "pt_BR": "Semblante do Profeta Elevado",
-    "ko_KO": "승천한 예언자의 안면",
+    "ko_KR": "승천한 예언자의 안면",
     "cn_CN": "晋升先知之面",
     "ru_RU": "Маска перерожденного пророка"
   },
@@ -3691,7 +3691,7 @@
     "fr_FR": "Couronne de navigateur",
     "it_IT": "Corona del Navigatore",
     "pt_BR": "Coroa do Navegador",
-    "ko_KO": "항해사의 관",
+    "ko_KR": "항해사의 관",
     "cn_CN": "导航员的王冠",
     "ru_RU": "Клобук штурмана"
   },
@@ -3702,7 +3702,7 @@
     "fr_FR": "Couronne du champion",
     "it_IT": "Corona del Campione",
     "pt_BR": "Coroa do Campeão",
-    "ko_KO": "용사의 관",
+    "ko_KR": "용사의 관",
     "cn_CN": "勇士王冠",
     "ru_RU": "Корона защитника Азерот"
   },
@@ -3713,7 +3713,7 @@
     "fr_FR": "Cimier zanchuli",
     "it_IT": "Cimiero degli Zanchuli",
     "pt_BR": "Crista Zanchuli",
-    "ko_KO": "잔추리 벼슬",
+    "ko_KR": "잔추리 벼슬",
     "cn_CN": "赞枢利头冠",
     "ru_RU": "Занчульский плюмаж"
   },
@@ -3724,7 +3724,7 @@
     "fr_FR": "Voile d’ombre de matriarche",
     "it_IT": "Velo d'Ombra della Matriarca",
     "pt_BR": "Véu Sombrio da Matriarca",
-    "ko_KO": "어미의 그림자면사포",
+    "ko_KR": "어미의 그림자면사포",
     "cn_CN": "龙母的暗影面纱",
     "ru_RU": "Теневой покров матриарха"
   },
@@ -3735,7 +3735,7 @@
     "fr_FR": "Collier de mage de bataille",
     "it_IT": "Collare del Mago Guerriero",
     "pt_BR": "Colar do Mago de Batalha",
-    "ko_KO": "전투마법사의 깃장식",
+    "ko_KR": "전투마법사의 깃장식",
     "cn_CN": "战斗法师的风帽",
     "ru_RU": "Воротник боевого мага"
   },
@@ -3746,7 +3746,7 @@
     "fr_FR": "Couronne du champion d’Azeroth",
     "it_IT": "Corona del Campione Azerotiano",
     "pt_BR": "Coroa do Campeão Azerothiano",
-    "ko_KO": "아제로스 용사의 관",
+    "ko_KR": "아제로스 용사의 관",
     "cn_CN": "艾泽拉斯勇士头冠",
     "ru_RU": "Корона защитника Азерот"
   },
@@ -3757,7 +3757,7 @@
     "fr_FR": "Chaperon du gladiateur menaçant en soie",
     "it_IT": "Cappuccio di Seta del Gladiatore Terrificante",
     "pt_BR": "Capuz de Seda do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 비단 두건",
+    "ko_KR": "공포를 부르는 검투사의 비단 두건",
     "cn_CN": "悚然角斗士的丝质兜帽",
     "ru_RU": "Шелковый капюшон ужасающего гладиатора"
   },
@@ -3768,7 +3768,7 @@
     "fr_FR": "Capuche du gladiateur menaçant en soie",
     "it_IT": "Copricapo di Seta del Gladiatore Terrificante",
     "pt_BR": "Capucho de Seda do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 비단 수도두건",
+    "ko_KR": "공포를 부르는 검투사의 비단 수도두건",
     "cn_CN": "悚然角斗士的丝质头巾",
     "ru_RU": "Шелковый клобук ужасающего гладиатора"
   },
@@ -3779,7 +3779,7 @@
     "fr_FR": "Coiffure de prêtre cobra",
     "it_IT": "Copricapo del Sacerdote del Cobra",
     "pt_BR": "Diadema do Sacerdote Naja",
-    "ko_KO": "코브라 사제의 머리장식",
+    "ko_KR": "코브라 사제의 머리장식",
     "cn_CN": "眼镜蛇祭司的头饰",
     "ru_RU": "Головной убор жреца кобры"
   },
@@ -3790,7 +3790,7 @@
     "fr_FR": "Chaperon de l’aspirant menaçant en soie",
     "it_IT": "Cappuccio di Seta del Pretendente Terrificante",
     "pt_BR": "Capuz de Seda do Aspirante Medonho",
-    "ko_KO": "공포를 부르는 지원자의 비단 두건",
+    "ko_KR": "공포를 부르는 지원자의 비단 두건",
     "cn_CN": "悚然候选者的丝质兜帽",
     "ru_RU": "Шелковый капюшон ужасающего претендента"
   },
@@ -3801,7 +3801,7 @@
     "fr_FR": "Chaperon de légionnaire de la 7e",
     "it_IT": "Cappuccio del Legionario della VII Legione",
     "pt_BR": "Capuz do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 두건",
+    "ko_KR": "7군단 용사의 두건",
     "cn_CN": "第七军团士兵兜帽",
     "ru_RU": "Капюшон 7-го легиона"
   },
@@ -3812,7 +3812,7 @@
     "fr_FR": "Semblance de l’artificier honorable",
     "it_IT": "Maschera dell'Ingegnere della Brigata dell'Onore",
     "pt_BR": "Socapa do Artífice Brigadista",
-    "ko_KO": "명예결속단 기술병의 탈",
+    "ko_KR": "명예결속단 기술병의 탈",
     "cn_CN": "荣耀战团技师的面具",
     "ru_RU": "Полумаска изобретателя Армии Чести"
   },
@@ -3823,7 +3823,7 @@
     "fr_FR": "Diadème de légionnaire de la 7e",
     "it_IT": "Tiara del Legionario della VII Legione",
     "pt_BR": "Diadema do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 머리장식",
+    "ko_KR": "7군단 용사의 머리장식",
     "cn_CN": "第七军团士兵头环",
     "ru_RU": "Венец 7-го легиона"
   },
@@ -3834,7 +3834,7 @@
     "fr_FR": "Calot de l’artificier honorable",
     "it_IT": "Copriteschio dell'Ingegnere della Brigata dell'Onore",
     "pt_BR": "Morrião do Artífice Brigadista",
-    "ko_KO": "명예결속단 기술병의 해골모자",
+    "ko_KR": "명예결속단 기술병의 해골모자",
     "cn_CN": "荣耀战团技师的护颅",
     "ru_RU": "Большой шлем изобретателя Армии Чести"
   },
@@ -3845,7 +3845,7 @@
     "fr_FR": "Chaperon vrykul marchandé",
     "it_IT": "Cappuccio dei Vrykul Barattato",
     "pt_BR": "Capuz Vraikal Trocado",
-    "ko_KO": "물물교환 브리쿨 두건",
+    "ko_KR": "물물교환 브리쿨 두건",
     "cn_CN": "换来的维库兜帽",
     "ru_RU": "Потрепанный врайкульский капюшон"
   },
@@ -3856,7 +3856,7 @@
     "fr_FR": "Mantelet de navigateur",
     "it_IT": "Coprispalle del Navigatore",
     "pt_BR": "Dragonas do Navegador",
-    "ko_KO": "항해사의 어깨덧옷",
+    "ko_KR": "항해사의 어깨덧옷",
     "cn_CN": "导航员的披肩",
     "ru_RU": "Оплечье штурмана"
   },
@@ -3867,7 +3867,7 @@
     "fr_FR": "Amict en fibre maccarbre",
     "it_IT": "Amitto di Vimini",
     "pt_BR": "Sobreveste de Vime Urdido",
-    "ko_KO": "버들엮음 아미스",
+    "ko_KR": "버들엮음 아미스",
     "cn_CN": "织柳披肩",
     "ru_RU": "Укрепленный плетением нарамник"
   },
@@ -3878,7 +3878,7 @@
     "fr_FR": "Mantelet de prédicateur des marées",
     "it_IT": "Coprispalle dell'Oratore delle Maree",
     "pt_BR": "Dragonas do Marglota",
-    "ko_KO": "파도예언자 어깨덧옷",
+    "ko_KR": "파도예언자 어깨덧옷",
     "cn_CN": "潮语者披肩",
     "ru_RU": "Оплечье заклинателя волн"
   },
@@ -3889,7 +3889,7 @@
     "fr_FR": "Mantelet zanchuli",
     "it_IT": "Coprispalle degli Zanchuli",
     "pt_BR": "Dragonas Zanchuli",
-    "ko_KO": "잔추리 어깨덧옷",
+    "ko_KR": "잔추리 어깨덧옷",
     "cn_CN": "赞枢利披肩",
     "ru_RU": "Занчульское оплечье"
   },
@@ -3900,7 +3900,7 @@
     "fr_FR": "Épaulettes de parle-loa",
     "it_IT": "Spalline dell'Oratore dei Loa",
     "pt_BR": "Palas da Voz-dos-loas",
-    "ko_KO": "로아 전령의 견장",
+    "ko_KR": "로아 전령의 견장",
     "cn_CN": "神谕者肩章",
     "ru_RU": "Эполеты говорящего с лоа"
   },
@@ -3911,7 +3911,7 @@
     "fr_FR": "Mantelet du Vencestral",
     "it_IT": "Coprispalle di Ventotardo",
     "pt_BR": "Dragonas Ventadoiro",
-    "ko_KO": "마지막 바람 어깨덧옷",
+    "ko_KR": "마지막 바람 어깨덧옷",
     "cn_CN": "止风披肩",
     "ru_RU": "Мантия Последнего Ветра"
   },
@@ -3922,7 +3922,7 @@
     "fr_FR": "Mantelet d’esprit du marais",
     "it_IT": "Coprispalle dello Spirito Fangoso",
     "pt_BR": "Dragonas do Espírito do Charco",
-    "ko_KO": "수렁 영혼 어깨덧옷",
+    "ko_KR": "수렁 영혼 어깨덧옷",
     "cn_CN": "沼魂披肩",
     "ru_RU": "Мантия духа Фэн"
   },
@@ -3933,7 +3933,7 @@
     "fr_FR": "Mantelet en soie de Shadra",
     "it_IT": "Coprispalle di Seta di Shadra",
     "pt_BR": "Dragonas de Seda de Shadra",
-    "ko_KO": "샤드라 비단 어깨덧옷",
+    "ko_KR": "샤드라 비단 어깨덧옷",
     "cn_CN": "沙德拉缠丝护肩",
     "ru_RU": "Шелковая мантия Шадры"
   },
@@ -3944,7 +3944,7 @@
     "fr_FR": "Mantelet filesable",
     "it_IT": "Coprispalle di Filasabbia",
     "pt_BR": "Dragonas de Tece-areia",
-    "ko_KO": "모래그물 어깨덧옷",
+    "ko_KR": "모래그물 어깨덧옷",
     "cn_CN": "纺沙披肩",
     "ru_RU": "Мантия песчаного прядильщика"
   },
@@ -3955,7 +3955,7 @@
     "fr_FR": "Amict chant-de-sirène",
     "it_IT": "Amitto del Canto delle Sirene",
     "pt_BR": "Sobreveste da Canção da Sirena",
-    "ko_KO": "세이렌노래 아미스",
+    "ko_KR": "세이렌노래 아미스",
     "cn_CN": "海妖之歌披肩",
     "ru_RU": "Нарамник песни сирены"
   },
@@ -3966,7 +3966,7 @@
     "fr_FR": "Mantelet rameau-de-feu",
     "it_IT": "Coprispalle dei Ramorosso",
     "pt_BR": "Dragonas Ramossangue",
-    "ko_KO": "핏빛가지 어깨덧옷",
+    "ko_KR": "핏빛가지 어깨덧옷",
     "cn_CN": "血枝披肩",
     "ru_RU": "Тростниковая мантия"
   },
@@ -3977,7 +3977,7 @@
     "fr_FR": "Mantelet de forme-grain",
     "it_IT": "Coprispalle del Plasmavento",
     "pt_BR": "Dragonas do Moldaventos",
-    "ko_KO": "돌풍술사 어깨덧옷",
+    "ko_KR": "돌풍술사 어깨덧옷",
     "cn_CN": "塑风师护肩",
     "ru_RU": "Мантия заклинателя штормов"
   },
@@ -3988,7 +3988,7 @@
     "fr_FR": "Mantelet d’ascension cérémonielle",
     "it_IT": "Coprispalle dell'Ascensione Cerimoniale",
     "pt_BR": "Dragonas da Ascensão Cerimonial",
-    "ko_KO": "승천 예식의 어깨덧옷",
+    "ko_KR": "승천 예식의 어깨덧옷",
     "cn_CN": "晋升仪式披肩",
     "ru_RU": "Оплечье церемониального восхождения"
   },
@@ -3999,7 +3999,7 @@
     "fr_FR": "Protège-épaules délicieusement aérodynamiques",
     "it_IT": "Spalletti Squisitamente Aerodinamici",
     "pt_BR": "Ombreiras Requintadamente Aerodinâmicas",
-    "ko_KO": "특별히 공기역학적인 어깨덧대",
+    "ko_KR": "특별히 공기역학적인 어깨덧대",
     "cn_CN": "空气动力学护肩",
     "ru_RU": "Наплечники с исключительной аэродинамикой"
   },
@@ -4010,7 +4010,7 @@
     "fr_FR": "Mantelet des eaux touchées par le Vide",
     "it_IT": "Coprispalle delle Acque Toccate dal Vuoto",
     "pt_BR": "Dragonas das Águas Tocadas pelo Caos",
-    "ko_KO": "공허에 물든 물가의 어깨덧옷",
+    "ko_KR": "공허에 물든 물가의 어깨덧옷",
     "cn_CN": "灵触水域披肩",
     "ru_RU": "Оплечье отмеченных Бездной вод"
   },
@@ -4021,7 +4021,7 @@
     "fr_FR": "Amict du purificateur de couvée",
     "it_IT": "Amitto del Purificatore della Stirpe",
     "pt_BR": "Sobreveste do Purificador da Ninhada",
-    "ko_KO": "무리 정화자의 아미스",
+    "ko_KR": "무리 정화자의 아미스",
     "cn_CN": "巢穴净化者护肩",
     "ru_RU": "Нарамник борца за чистоту породы"
   },
@@ -4032,7 +4032,7 @@
     "fr_FR": "Espauliers de corruption infâme",
     "it_IT": "Paraspalle della Corruzione Vile",
     "pt_BR": "Brafoneiras da Corrupção Torpe",
-    "ko_KO": "썩은 타락의 견갑",
+    "ko_KR": "썩은 타락의 견갑",
     "cn_CN": "恶毒腐蚀护肩",
     "ru_RU": "Наплечье гнусной порчи"
   },
@@ -4043,7 +4043,7 @@
     "fr_FR": "Amict du ressuscité",
     "it_IT": "Amitto del Ritornato",
     "pt_BR": "Sobreveste do Retorno",
-    "ko_KO": "돌아온 자의 아미스",
+    "ko_KR": "돌아온 자의 아미스",
     "cn_CN": "还魂披肩",
     "ru_RU": "Нарамник возвращения"
   },
@@ -4054,7 +4054,7 @@
     "fr_FR": "Mantelet de corruption contenue",
     "it_IT": "Coprispalle della Corruzione Contenuta",
     "pt_BR": "Dragonas da Corrupção Contida",
-    "ko_KO": "타락 담긴 어깨덧옷",
+    "ko_KR": "타락 담긴 어깨덧옷",
     "cn_CN": "腐蚀抑制披肩",
     "ru_RU": "Оплечье усмиренной порчи"
   },
@@ -4065,7 +4065,7 @@
     "fr_FR": "Amict d’horreur corruptrice",
     "it_IT": "Amitto dell'Orrore della Corruzione",
     "pt_BR": "Sobreveste do Terror Desvirtuante",
-    "ko_KO": "오염시키는 공포의 아미스",
+    "ko_KR": "오염시키는 공포의 아미스",
     "cn_CN": "腐化恐兽披肩",
     "ru_RU": "Нарамник расползающегося ужаса"
   },
@@ -4076,7 +4076,7 @@
     "fr_FR": "Amict de prédicateur des marées",
     "it_IT": "Amitto dell'Oratore delle Maree",
     "pt_BR": "Sobreveste da Voz da Maré",
-    "ko_KO": "파도예언자 아미스",
+    "ko_KR": "파도예언자 아미스",
     "cn_CN": "潮语者护肩",
     "ru_RU": "Нарамник заклинателя волн"
   },
@@ -4087,7 +4087,7 @@
     "fr_FR": "Mantelet du champion",
     "it_IT": "Coprispalle del Campione",
     "pt_BR": "Dragonas do Campeão",
-    "ko_KO": "용사의 어깨덧옷",
+    "ko_KR": "용사의 어깨덧옷",
     "cn_CN": "勇士披肩",
     "ru_RU": "Оплечье защитника Азерот"
   },
@@ -4098,7 +4098,7 @@
     "fr_FR": "Protège-épaules du Vencestral",
     "it_IT": "Spalletti di Ventotardo",
     "pt_BR": "Ombreiras Ventadoiro",
-    "ko_KO": "마지막 바람 어깨덧대",
+    "ko_KR": "마지막 바람 어깨덧대",
     "cn_CN": "止风肩章",
     "ru_RU": "Наплечные пластины Последнего Ветра"
   },
@@ -4109,7 +4109,7 @@
     "fr_FR": "Amict de l’abysse tranchant",
     "it_IT": "Amitto dell'Abisso Squarciante",
     "pt_BR": "Sobreveste do Abismo Dilacerante",
-    "ko_KO": "분쇄하는 심연의 아미스",
+    "ko_KR": "분쇄하는 심연의 아미스",
     "cn_CN": "深渊裂口披肩",
     "ru_RU": "Нарамник раздирающей пучины"
   },
@@ -4120,7 +4120,7 @@
     "fr_FR": "Mantelet de serre-plume givré",
     "it_IT": "Coprispalle di Piume Congelate",
     "pt_BR": "Dragonas de Unhapena Gélidas",
-    "ko_KO": "얼어붙은 갈퀴깃털 어깨덧옷",
+    "ko_KR": "얼어붙은 갈퀴깃털 어깨덧옷",
     "cn_CN": "覆霜利爪之羽斗篷",
     "ru_RU": "Оплечье замерзших перьев"
   },
@@ -4131,7 +4131,7 @@
     "fr_FR": "Mantelet d’invocateur de guerre du Héraut",
     "it_IT": "Coprispalle Rovinosi del Mago da Guerra",
     "pt_BR": "Dragonas da Ruína do Mago de Guerra",
-    "ko_KO": "전쟁마법사의 파멸 어깨덧옷",
+    "ko_KR": "전쟁마법사의 파멸 어깨덧옷",
     "cn_CN": "战争法师的末日披肩",
     "ru_RU": "Гибельное оплечье боевого заклинателя"
   },
@@ -4142,7 +4142,7 @@
     "fr_FR": "Mantelet des Arcanes d’invocateur de guerre",
     "it_IT": "Coprispalle Arcani del Mago da Guerra",
     "pt_BR": "Dragonas Arcanas do Mago de Guerra",
-    "ko_KO": "전쟁마법사의 비전 어깨덧옷",
+    "ko_KR": "전쟁마법사의 비전 어깨덧옷",
     "cn_CN": "战争法师的奥术护肩",
     "ru_RU": "Чародейское оплечье боевого заклинателя"
   },
@@ -4153,7 +4153,7 @@
     "fr_FR": "Mantelet du gladiateur menaçant en soie",
     "it_IT": "Coprispalle di Seta del Gladiatore Terrificante",
     "pt_BR": "Dragonas de Seda do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 비단 어깨덧옷",
+    "ko_KR": "공포를 부르는 검투사의 비단 어깨덧옷",
     "cn_CN": "悚然角斗士的丝质披肩",
     "ru_RU": "Шелковая мантия ужасающего гладиатора"
   },
@@ -4164,7 +4164,7 @@
     "fr_FR": "Amict du gladiateur menaçant en soie",
     "it_IT": "Amitto di Seta del Gladiatore Terrificante",
     "pt_BR": "Sobreveste de Seda do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 비단 아미스",
+    "ko_KR": "공포를 부르는 검투사의 비단 아미스",
     "cn_CN": "悚然角斗士的丝质肩胄",
     "ru_RU": "Шелковый нарамник ужасающего гладиатора"
   },
@@ -4175,7 +4175,7 @@
     "fr_FR": "Mantelet de mimétisme de couvée",
     "it_IT": "Coprispalle della Stirpe di Mimicry",
     "pt_BR": "Dragonas de Imitação da Ninhada",
-    "ko_KO": "무리 의태의 어깨덧옷",
+    "ko_KR": "무리 의태의 어깨덧옷",
     "cn_CN": "族群拟态护肩",
     "ru_RU": "Оплечье взаимодействия стаи"
   },
@@ -4186,7 +4186,7 @@
     "fr_FR": "Mantelet de l’aspirant menaçant en soie",
     "it_IT": "Coprispalle di Seta del Pretendente Terrificante",
     "pt_BR": "Dragonas de Seda do Aspirante Medonho",
-    "ko_KO": "공포를 부르는 지원자의 비단 어깨덧옷",
+    "ko_KR": "공포를 부르는 지원자의 비단 어깨덧옷",
     "cn_CN": "悚然候选者的丝质衬肩",
     "ru_RU": "Шелковая мантия ужасающего претендента"
   },
@@ -4197,7 +4197,7 @@
     "fr_FR": "Amict de légionnaire de la 7e",
     "it_IT": "Amitto del Legionario della VII Legione",
     "pt_BR": "Sobreveste do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 아미스",
+    "ko_KR": "7군단 용사의 아미스",
     "cn_CN": "第七军团士兵肩饰",
     "ru_RU": "Нарамник 7-го легиона"
   },
@@ -4208,7 +4208,7 @@
     "fr_FR": "Amict de l’artificier honorable",
     "it_IT": "Amitto dell'Ingegnere della Brigata dell'Onore",
     "pt_BR": "Sobreveste do Artífice Brigadista",
-    "ko_KO": "명예결속단 기술병의 아미스",
+    "ko_KR": "명예결속단 기술병의 아미스",
     "cn_CN": "荣耀战团技师的肩饰",
     "ru_RU": "Нарамник изобретателя Армии Чести"
   },
@@ -4219,7 +4219,7 @@
     "fr_FR": "Mantelet de légionnaire de la 7e",
     "it_IT": "Coprispalle del Legionario della VII Legione",
     "pt_BR": "Dragonas do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 어깨덧옷",
+    "ko_KR": "7군단 용사의 어깨덧옷",
     "cn_CN": "第七军团士兵披肩",
     "ru_RU": "Оплечье 7-го легиона"
   },
@@ -4230,7 +4230,7 @@
     "fr_FR": "Mantelet de l’artificier honorable",
     "it_IT": "Coprispalle dell'Ingegnere della Brigata dell'Onore",
     "pt_BR": "Dragonas do Artífice Brigadista",
-    "ko_KO": "명예결속단 기술병의 어깨덧옷",
+    "ko_KR": "명예결속단 기술병의 어깨덧옷",
     "cn_CN": "荣耀战团技师的披肩",
     "ru_RU": "Оплечье изобретателя Армии Чести"
   },
@@ -4241,7 +4241,7 @@
     "fr_FR": "Grande tenue du voile fongique",
     "it_IT": "Tunica del Manto Fungino",
     "pt_BR": "Indumentária Mortafúngica",
-    "ko_KO": "이끼수의 예복",
+    "ko_KR": "이끼수의 예복",
     "cn_CN": "菇雾法衣",
     "ru_RU": "Одеяние грибного покрова"
   },
@@ -4252,7 +4252,7 @@
     "fr_FR": "Robe de navigateur",
     "it_IT": "Vesti del Navigatore",
     "pt_BR": "Vestes do Navegador",
-    "ko_KO": "항해사의 로브",
+    "ko_KR": "항해사의 로브",
     "cn_CN": "导航员的长袍",
     "ru_RU": "Одеяния штурмана"
   },
@@ -4263,7 +4263,7 @@
     "fr_FR": "Robe en fibre maccarbre",
     "it_IT": "Tonaca di Vimini",
     "pt_BR": "Veste de Vime Urdido",
-    "ko_KO": "버들엮음 로브",
+    "ko_KR": "버들엮음 로브",
     "cn_CN": "织柳长袍",
     "ru_RU": "Укрепленные плетением одеяния"
   },
@@ -4274,7 +4274,7 @@
     "fr_FR": "Habit de prédicateur des marées",
     "it_IT": "Vesti dell'Oratore delle Maree",
     "pt_BR": "Vestimenta do Marglota",
-    "ko_KO": "파도예언자 예복",
+    "ko_KR": "파도예언자 예복",
     "cn_CN": "潮语者外衣",
     "ru_RU": "Одеяние заклинателя волн"
   },
@@ -4285,7 +4285,7 @@
     "fr_FR": "Grande tenue zanchuli",
     "it_IT": "Tunica degli Zanchuli",
     "pt_BR": "Indumentária Zanchuli",
-    "ko_KO": "잔추리 의복",
+    "ko_KR": "잔추리 의복",
     "cn_CN": "赞枢利圣服",
     "ru_RU": "Занчульские одеяния"
   },
@@ -4296,7 +4296,7 @@
     "fr_FR": "Robe du Vencestral",
     "it_IT": "Tunica di Ventotardo",
     "pt_BR": "Vestes Ventadoiro",
-    "ko_KO": "마지막 바람 로브",
+    "ko_KR": "마지막 바람 로브",
     "cn_CN": "止风长袍",
     "ru_RU": "Одеяния Последнего Ветра"
   },
@@ -4307,7 +4307,7 @@
     "fr_FR": "Robe de parle-loa",
     "it_IT": "Tunica dell'Oratore dei Loa",
     "pt_BR": "Vestes da Voz-dos-loas",
-    "ko_KO": "로아 전령의 로브",
+    "ko_KR": "로아 전령의 로브",
     "cn_CN": "神谕者长袍",
     "ru_RU": "Одеяния говорящего с лоа"
   },
@@ -4318,7 +4318,7 @@
     "fr_FR": "Bandelettes d’esprit du marais",
     "it_IT": "Abito dello Spirito Fangoso",
     "pt_BR": "Mantelete do Espírito do Charco",
-    "ko_KO": "수렁 영혼 겉옷",
+    "ko_KR": "수렁 영혼 겉옷",
     "cn_CN": "沼魂裹衣",
     "ru_RU": "Напульсники духа Фэн"
   },
@@ -4329,7 +4329,7 @@
     "fr_FR": "Robe en soie de Shadra",
     "it_IT": "Vesti di Seta di Shadra",
     "pt_BR": "Veste de Seda de Shadra",
-    "ko_KO": "샤드라 비단 로브",
+    "ko_KR": "샤드라 비단 로브",
     "cn_CN": "沙德拉缠丝长袍",
     "ru_RU": "Шелковые одеяния Шадры"
   },
@@ -4340,7 +4340,7 @@
     "fr_FR": "Habit filesable",
     "it_IT": "Vesti di Filasabbia",
     "pt_BR": "Vestimenta de Tece-areia",
-    "ko_KO": "모래그물 예복",
+    "ko_KR": "모래그물 예복",
     "cn_CN": "纺沙法衣",
     "ru_RU": "Облачения песчаного прядильщика"
   },
@@ -4351,7 +4351,7 @@
     "fr_FR": "Vêtement chant-de-sirène",
     "it_IT": "Vesti del Canto delle Sirene",
     "pt_BR": "Farpela da Canção da Sirena",
-    "ko_KO": "세이렌노래 예복",
+    "ko_KR": "세이렌노래 예복",
     "cn_CN": "海妖之歌长袍",
     "ru_RU": "Облачения песни сирены"
   },
@@ -4362,7 +4362,7 @@
     "fr_FR": "Vêtements rameau-de-feu",
     "it_IT": "Vesti dei Ramorosso",
     "pt_BR": "Farpela Ramossangue",
-    "ko_KO": "핏빛가지 예복",
+    "ko_KR": "핏빛가지 예복",
     "cn_CN": "血枝法衣",
     "ru_RU": "Тростниковые облачения"
   },
@@ -4373,7 +4373,7 @@
     "fr_FR": "Habit de forme-grain",
     "it_IT": "Vesti del Plasmavento",
     "pt_BR": "Vestimenta do Moldaventos",
-    "ko_KO": "돌풍술사 예복",
+    "ko_KR": "돌풍술사 예복",
     "cn_CN": "塑风师外衣",
     "ru_RU": "Облачения заклинателя штормов"
   },
@@ -4384,7 +4384,7 @@
     "fr_FR": "Chemisette de poète à jabot",
     "it_IT": "Blusa Increspata da Poeta",
     "pt_BR": "Blusa do Poeta Exasperado",
-    "ko_KO": "주름장식 품 넓은 블라우스",
+    "ko_KR": "주름장식 품 넓은 블라우스",
     "cn_CN": "褶饰诗歌上衣",
     "ru_RU": "Гофрированная рубашка поэта"
   },
@@ -4395,7 +4395,7 @@
     "fr_FR": "Jupon du baron d’azérite personnalisé",
     "it_IT": "Sottoveste del Barone dell'Azerite",
     "pt_BR": "Anágua do Suposto Barão da Azerita",
-    "ko_KO": "아제라이트 부호의 개인 개량 속치마",
+    "ko_KR": "아제라이트 부호의 개인 개량 속치마",
     "cn_CN": "艾泽里特巨头的衬裙",
     "ru_RU": "Ряса самопровозглашенного азеритового барона"
   },
@@ -4406,7 +4406,7 @@
     "fr_FR": "Habit de parle-loa",
     "it_IT": "Vesti dell'Oratore dei Loa",
     "pt_BR": "Vestimenta da Voz-dos-loas",
-    "ko_KO": "로아 전령의 예복",
+    "ko_KR": "로아 전령의 예복",
     "cn_CN": "神谕者法衣",
     "ru_RU": "Облачение говорящего с лоа"
   },
@@ -4417,7 +4417,7 @@
     "fr_FR": "Habit du traître des Loas",
     "it_IT": "Vesti del Traditore dei Loa",
     "pt_BR": "Vestimenta do Traidor do Loa",
-    "ko_KO": "로아 배신자의 예복",
+    "ko_KR": "로아 배신자의 예복",
     "cn_CN": "神灵背弃者的法衣",
     "ru_RU": "Облачение предателя лоа"
   },
@@ -4428,7 +4428,7 @@
     "fr_FR": "Robe trempée de sang",
     "it_IT": "Vesti Grondanti Sangue",
     "pt_BR": "Vestes Ensopadas de Sangue",
-    "ko_KO": "피에 젖은 로브",
+    "ko_KR": "피에 젖은 로브",
     "cn_CN": "鲜血浸染长袍",
     "ru_RU": "Залитые кровью одеяния"
   },
@@ -4439,7 +4439,7 @@
     "fr_FR": "Robe du serpent ressuscité",
     "it_IT": "Vesti del Serpente Rinato",
     "pt_BR": "Vestes da Serpente Renascida",
-    "ko_KO": "되살아난 뱀의 로브",
+    "ko_KR": "되살아난 뱀의 로브",
     "cn_CN": "重生巨蛇长袍",
     "ru_RU": "Одеяния возродившейся змеи"
   },
@@ -4450,7 +4450,7 @@
     "fr_FR": "Robe droite de bagnard",
     "it_IT": "Tonaca Semplice del Detenuto",
     "pt_BR": "Veste Reta do Apenado",
-    "ko_KO": "수감자의 직선 로브",
+    "ko_KR": "수감자의 직선 로브",
     "cn_CN": "囚徒的束袍",
     "ru_RU": "Смирительная роба заключенного"
   },
@@ -4461,7 +4461,7 @@
     "fr_FR": "Robe du champion",
     "it_IT": "Vesti del Campione",
     "pt_BR": "Vestes do Campeão",
-    "ko_KO": "용사의 로브",
+    "ko_KR": "용사의 로브",
     "cn_CN": "勇士法袍",
     "ru_RU": "Одеяния защитника Азерот"
   },
@@ -4472,7 +4472,7 @@
     "fr_FR": "Robe du Disloqueur",
     "it_IT": "Vesti dello Sbrogliatore",
     "pt_BR": "Vestes do Revelador",
-    "ko_KO": "해결자의 로브",
+    "ko_KR": "해결자의 로브",
     "cn_CN": "拆解者长袍",
     "ru_RU": "Одеяния Развоплотителя"
   },
@@ -4483,7 +4483,7 @@
     "fr_FR": "Habit en fibre maccarbre",
     "it_IT": "Tunica di Vimini",
     "pt_BR": "Vestimenta de Vime Urdido",
-    "ko_KO": "버들엮음 예복",
+    "ko_KR": "버들엮음 예복",
     "cn_CN": "织柳法衣",
     "ru_RU": "Укрепленное плетением облачение"
   },
@@ -4494,7 +4494,7 @@
     "fr_FR": "Tunique furtive de pilleur",
     "it_IT": "Tunica Avvolgente dell'Incursore",
     "pt_BR": "Kandura Amortalhada do Saqueador",
-    "ko_KO": "약탈자의 장막 가림옷",
+    "ko_KR": "약탈자의 장막 가림옷",
     "cn_CN": "劫掠者的迷蒙长袍",
     "ru_RU": "Укрывающий тауб налетчика"
   },
@@ -4505,7 +4505,7 @@
     "fr_FR": "Robe du gladiateur menaçant en soie",
     "it_IT": "Tonaca di Seta del Gladiatore Terrificante",
     "pt_BR": "Veste de Seda do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 비단 로브",
+    "ko_KR": "공포를 부르는 검투사의 비단 로브",
     "cn_CN": "悚然角斗士的丝质长袍",
     "ru_RU": "Шелковое одеяние ужасающего гладиатора"
   },
@@ -4516,7 +4516,7 @@
     "fr_FR": "Grande tenue du gladiateur menaçant en soie",
     "it_IT": "Tunica di Seta del Gladiatore Terrificante",
     "pt_BR": "Traje de Seda do Gladiador Medonho",
-    "ko_KO": "공포를 부르는 검투사의 비단 의복",
+    "ko_KR": "공포를 부르는 검투사의 비단 의복",
     "cn_CN": "悚然角斗士的丝质外衣",
     "ru_RU": "Шелковое облачение ужасающего гладиатора"
   },
@@ -4527,7 +4527,7 @@
     "fr_FR": "Bandeau maudit de Gwugnug",
     "it_IT": "Fascia Maledetta di Gwugnug",
     "pt_BR": "Munhequeiras Amaldiçoadas de Gwugnug",
-    "ko_KO": "그워그너그의 저주받은 머리싸개",
+    "ko_KR": "그워그너그의 저주받은 머리싸개",
     "cn_CN": "古格努格的诅咒头巾",
     "ru_RU": "Проклятые наручи Гвугнуга"
   },
@@ -4538,7 +4538,7 @@
     "fr_FR": "Robe de l’aspirant menaçant en soie",
     "it_IT": "Tonaca di Seta del Pretendente Terrificante",
     "pt_BR": "Veste de Seda do Aspirante Medonho",
-    "ko_KO": "공포를 부르는 지원자의 비단 로브",
+    "ko_KR": "공포를 부르는 지원자의 비단 로브",
     "cn_CN": "悚然候选者的丝质长袍",
     "ru_RU": "Шелковое одеяние ужасающего претендента"
   },
@@ -4549,7 +4549,7 @@
     "fr_FR": "Robe de légionnaire de la 7e",
     "it_IT": "Vesti del Legionario della VII Legione",
     "pt_BR": "Vestes do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 로브",
+    "ko_KR": "7군단 용사의 로브",
     "cn_CN": "第七军团士兵的长袍",
     "ru_RU": "Одеяние 7-го легиона"
   },
@@ -4560,7 +4560,7 @@
     "fr_FR": "Robe de l’artificier honorable",
     "it_IT": "Vesti dell'Ingegnere della Brigata dell'Onore",
     "pt_BR": "Vestes do Artífice Brigadista",
-    "ko_KO": "명예결속단 기술병의 로브",
+    "ko_KR": "명예결속단 기술병의 로브",
     "cn_CN": "荣耀战团技师的长袍",
     "ru_RU": "Одеяние изобретателя Армии Чести"
   },
@@ -4571,7 +4571,7 @@
     "fr_FR": "Grande tenue de légionnaire de la 7e",
     "it_IT": "Tunica del Legionario della VII Legione",
     "pt_BR": "Indumentária do Legionário da 7ª",
-    "ko_KO": "7군단 용사의 의복",
+    "ko_KR": "7군단 용사의 의복",
     "cn_CN": "第七军团士兵法袍",
     "ru_RU": "Облачение 7-го легиона"
   },
@@ -4582,7 +4582,7 @@
     "fr_FR": "Cuirasse primus",
     "it_IT": "Primus Breastplate",
     "pt_BR": "Primus Breastplate",
-    "ko_KO": "Primus Breastplate",
+    "ko_KR": "Primus Breastplate",
     "cn_CN": "第一胸甲",
     "ru_RU": "Primus Breastplate"
   },
@@ -4593,7 +4593,7 @@
     "fr_FR": "Cuirasse secondus",
     "it_IT": "Secondus Breastplate",
     "pt_BR": "Secondus Breastplate",
-    "ko_KO": "Secondus Breastplate",
+    "ko_KR": "Secondus Breastplate",
     "cn_CN": "第二胸甲",
     "ru_RU": "Secondus Breastplate"
   },
@@ -4604,7 +4604,7 @@
     "fr_FR": "Cuirasse tertius",
     "it_IT": "Tertius Breastplate",
     "pt_BR": "Tertius Breastplate",
-    "ko_KO": "Tertius Breastplate",
+    "ko_KR": "Tertius Breastplate",
     "cn_CN": "第三胸甲",
     "ru_RU": "Tertius Breastplate"
   },
@@ -4615,7 +4615,7 @@
     "fr_FR": "Cuirasse quartius",
     "it_IT": "Quartius Breastplate",
     "pt_BR": "Quartius Breastplate",
-    "ko_KO": "Quartius Breastplate",
+    "ko_KR": "Quartius Breastplate",
     "cn_CN": "第四胸甲",
     "ru_RU": "Quartius Breastplate"
   },
@@ -4626,7 +4626,7 @@
     "fr_FR": "Cuirasse pentius",
     "it_IT": "Pentius Breastplate",
     "pt_BR": "Pentius Breastplate",
-    "ko_KO": "Pentius Breastplate",
+    "ko_KR": "Pentius Breastplate",
     "cn_CN": "第五胸甲",
     "ru_RU": "Pentius Breastplate"
   }

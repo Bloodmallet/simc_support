@@ -6,7 +6,7 @@
     "fr_FR": "Talisman de My’das",
     "it_IT": "Talismano di My'das",
     "pt_BR": "Talismã de My'das",
-    "ko_KO": "마이다스의 부적",
+    "ko_KR": "마이다스의 부적",
     "cn_CN": "点金护符",
     "ru_RU": "Талисман Ми'даса"
   },
@@ -17,7 +17,7 @@
     "fr_FR": "Œil luisant de Rezan",
     "it_IT": "Occhio Luminoso di Rezan",
     "pt_BR": "Olho Brilhante de Rezan",
-    "ko_KO": "레잔의 번뜩이는 눈",
+    "ko_KR": "레잔의 번뜩이는 눈",
     "cn_CN": "莱赞的微光之眼",
     "ru_RU": "Сияющий глаз Резана"
   },
@@ -28,7 +28,7 @@
     "fr_FR": "Réceptacle d’ombres fourmillantes",
     "it_IT": "Vaso d'Ombre Striscianti",
     "pt_BR": "Receptáculo das Sombras Pateantes",
-    "ko_KO": "기어다니는 암흑의 유리병",
+    "ko_KR": "기어다니는 암흑의 유리병",
     "cn_CN": "飞掠之影容器",
     "ru_RU": "Сосуд ползучих теней"
   },
@@ -39,7 +39,7 @@
     "fr_FR": "Dé pipé d’Harlan",
     "it_IT": "Dadi Truccati di Harlan",
     "pt_BR": "Dados Viciados de Arlão",
-    "ko_KO": "할란의 납 주사위",
+    "ko_KR": "할란의 납 주사위",
     "cn_CN": "哈兰的注铅骰子",
     "ru_RU": "Шулерские кости Харлана"
   },
@@ -50,7 +50,7 @@
     "fr_FR": "Plumage doré satiné",
     "it_IT": "Piumaggio Dorato Lucido",
     "pt_BR": "Plumagem Dourada Lustrosa",
-    "ko_KO": "반짝이는 금빛 깃털",
+    "ko_KR": "반짝이는 금빛 깃털",
     "cn_CN": "金辉飞羽",
     "ru_RU": "Блестящий золотой плюмаж"
   },
@@ -61,7 +61,7 @@
     "fr_FR": "Bigorneau saumâtre",
     "it_IT": "Cirripede Salmastro",
     "pt_BR": "Craca Salmoura",
-    "ko_KO": "바닷물 따개비",
+    "ko_KR": "바닷물 따개비",
     "cn_CN": "咸水藤壶",
     "ru_RU": "Просоленная ракушка"
   },
@@ -72,7 +72,7 @@
     "fr_FR": "Faveur de mande-trombe",
     "it_IT": "Dono dell'Invocabrezza",
     "pt_BR": "Bênção do Chamatormenta",
-    "ko_KO": "강풍술사의 은혜",
+    "ko_KR": "강풍술사의 은혜",
     "cn_CN": "唤风者之赐",
     "ru_RU": "Дар призывательницы штормов"
   },
@@ -83,7 +83,7 @@
     "fr_FR": "Conque des sombres murmures",
     "it_IT": "Conchiglia dei Sussurri Oscuri",
     "pt_BR": "Concha dos Sussurros Sombrios",
-    "ko_KO": "어두운 속삭임의 소라",
+    "ko_KR": "어두운 속삭임의 소라",
     "cn_CN": "黑暗低语海螺",
     "ru_RU": "Раковина темного шепота"
   },
@@ -94,7 +94,7 @@
     "fr_FR": "Longue-vue d’œil-mort",
     "it_IT": "Cannocchiale Occhio di Falco",
     "pt_BR": "Luneta do Caolho",
-    "ko_KO": "Dead-Eye Spyglass",
+    "ko_KR": "Dead-Eye Spyglass",
     "cn_CN": "亡眼望远镜",
     "ru_RU": "Подзорная труба зоркого глаза"
   },
@@ -105,7 +105,7 @@
     "fr_FR": "Nautile de Hadal",
     "it_IT": "Nautilus di Hadal",
     "pt_BR": "Náutilo de Hadal",
-    "ko_KO": "하달의 앵무조개",
+    "ko_KR": "하달의 앵무조개",
     "cn_CN": "哈达尔的鹦鹉螺",
     "ru_RU": "Наутилус Хадала"
   },
@@ -116,7 +116,7 @@
     "fr_FR": "Petit électromentaire en bouteille",
     "it_IT": "Piccolo Elettromentale Sottovuoto",
     "pt_BR": "Eletromental Pequeno no Pote",
-    "ko_KO": "단지 안의 전자정령",
+    "ko_KR": "단지 안의 전자정령",
     "cn_CN": "瓶中的电荷元素",
     "ru_RU": "Крохотный электроменталь в банке"
   },
@@ -127,7 +127,7 @@
     "fr_FR": "Croc de Merekpha",
     "it_IT": "Zanna di Merektha",
     "pt_BR": "Presa de Merektha",
-    "ko_KO": "메레크타의 송곳니",
+    "ko_KR": "메레크타의 송곳니",
     "cn_CN": "米利克萨之牙",
     "ru_RU": "Клык Меректы"
   },
@@ -138,7 +138,7 @@
     "fr_FR": "Gros bouton rouge de Razzbam",
     "it_IT": "Grosso Pulsante Rosso di Trucirazzi",
     "pt_BR": "Grande Botão Vermelho de Frustrus",
-    "ko_KO": "라즈덩크의 큰 적색 단추",
+    "ko_KR": "라즈덩크의 큰 적색 단추",
     "cn_CN": "拉兹敦克的大红按钮",
     "ru_RU": "Большая красная кнопка Разданка"
   },
@@ -149,7 +149,7 @@
     "fr_FR": "Cœur résonnant d’Azerokk",
     "it_IT": "Cuore Risonante di Azerokk",
     "pt_BR": "Coração Ressoante de Azerokk",
-    "ko_KO": "아제로크의 공명하는 심장",
+    "ko_KR": "아제로크의 공명하는 심장",
     "cn_CN": "艾泽洛克的共鸣之心",
     "ru_RU": "Резонирующее сердце Азерокка"
   },
@@ -160,7 +160,7 @@
     "fr_FR": "Bogues de spores persistantes",
     "it_IT": "Baccelli Persistenti",
     "pt_BR": "Guarda-esporo Duradouro",
-    "ko_KO": "머무는 포자씨앗",
+    "ko_KR": "머무는 포자씨앗",
     "cn_CN": "萦索孢子囊",
     "ru_RU": "Коробочка с дремлющими спорами"
   },
@@ -171,7 +171,7 @@
     "fr_FR": "Rotcrusted Voodoo Doll",
     "it_IT": "Bambola Vudù Incrostata di Marcio",
     "pt_BR": "Boneca Vodu Apodrecida",
-    "ko_KO": "부패범벅 부두 인형",
+    "ko_KR": "부패범벅 부두 인형",
     "cn_CN": "朽烂外壳巫毒人偶",
     "ru_RU": "Подгнившая кукла вуду"
   },
@@ -182,7 +182,7 @@
     "fr_FR": "Fiole de sang animé",
     "it_IT": "Fiala di Sangue Animato",
     "pt_BR": "Ampola da Animação Sanguínea",
-    "ko_KO": "살아 움직이는 피가 든 약병",
+    "ko_KR": "살아 움직이는 피가 든 약병",
     "cn_CN": "活性血瓶",
     "ru_RU": "Пузырек с оживленной кровью"
   },
@@ -193,7 +193,7 @@
     "fr_FR": "Hurleur de Jes",
     "it_IT": "Belva di Jes",
     "pt_BR": "Uivador do Lou",
-    "ko_KO": "제스의 울부짖음",
+    "ko_KR": "제스의 울부짖음",
     "cn_CN": "杰斯的咆哮",
     "ru_RU": "Завывашка Джеса"
   },
@@ -204,7 +204,7 @@
     "fr_FR": "Mèche de la mageflamme",
     "it_IT": "Miccia della Maga dell'Ignizione",
     "pt_BR": "Estopim do Mago de Ignição",
-    "ko_KO": "점화 마법사의 도화선",
+    "ko_KR": "점화 마법사의 도화선",
     "cn_CN": "炎法师的引线",
     "ru_RU": "Запал мага-поджигателя"
   },
@@ -215,7 +215,7 @@
     "fr_FR": "Boîte à musique de dame Malvoie",
     "it_IT": "Carillon di Dama Crestabianca",
     "pt_BR": "Caixa de Música de Lady Capelo",
-    "ko_KO": "부인 웨이크레스트의 음악 상자",
+    "ko_KR": "부인 웨이크레스트의 음악 상자",
     "cn_CN": "维克雷斯夫人的音乐盒",
     "ru_RU": "Музыкальная шкатулка леди Уэйкрест"
   },
@@ -226,7 +226,7 @@
     "fr_FR": "Branche de bûcher",
     "it_IT": "Ramo della Maestra della Pira",
     "pt_BR": "Galho de Fogaréu",
-    "ko_KO": "재앙불꽃 가지",
+    "ko_KR": "재앙불꽃 가지",
     "cn_CN": "怨火柳枝",
     "ru_RU": "Ветвь гибельного огня"
   },
@@ -237,7 +237,7 @@
     "fr_FR": "Billot de boucher incrusté de sang",
     "it_IT": "Ceppo del Macellaio Sporco di Sangue",
     "pt_BR": "Bloco Ensanguentado do Açougueiro",
-    "ko_KO": "선혈껍질 도살자의 돌판",
+    "ko_KR": "선혈껍질 도살자의 돌판",
     "cn_CN": "血渍屠夫隔板",
     "ru_RU": "Залитый кровью блок мясника"
   },
@@ -248,7 +248,7 @@
     "fr_FR": "Charme du capitaine maudit",
     "it_IT": "Talismano del Capitano Maledetto",
     "pt_BR": "Patuá do Capitão Amaldiçoado",
-    "ko_KO": "저주받은 대장의 부적",
+    "ko_KR": "저주받은 대장의 부적",
     "cn_CN": "咒缚船长的护符",
     "ru_RU": "Оберег проклятого капитана"
   },
@@ -259,7 +259,7 @@
     "fr_FR": "Plumage roussi d’Azuréthos",
     "it_IT": "Piumaggio Bruciato di Azurethos",
     "pt_BR": "Plumagem Chamuscada de Lazureto",
-    "ko_KO": "아주레토스의 그을린 깃털",
+    "ko_KR": "아주레토스의 그을린 깃털",
     "cn_CN": "蔚索斯的焦灼飞羽",
     "ru_RU": "Опаленное перо Лазуретоса"
   },
@@ -270,7 +270,7 @@
     "fr_FR": "Fureur du Héraut",
     "it_IT": "Furia della Condanna",
     "pt_BR": "Fúria da Ruína",
-    "ko_KO": "파멸의 분노",
+    "ko_KR": "파멸의 분노",
     "cn_CN": "末日狂怒",
     "ru_RU": "Гибельная ярость"
   },
@@ -281,7 +281,7 @@
     "fr_FR": "Haine du Héraut",
     "it_IT": "Risentimento della Condanna",
     "pt_BR": "Ódio da Ruína",
-    "ko_KO": "파멸의 증오",
+    "ko_KR": "파멸의 증오",
     "cn_CN": "末日仇恨",
     "ru_RU": "Гибельная ненависть"
   },
@@ -292,7 +292,7 @@
     "fr_FR": "Sillage du malheur",
     "it_IT": "Risveglio della Condanna",
     "pt_BR": "Rastro da Ruína",
-    "ko_KO": "깨어난 파멸",
+    "ko_KR": "깨어난 파멸",
     "cn_CN": "末日余波",
     "ru_RU": "Гибельное эхо"
   },
@@ -303,7 +303,7 @@
     "fr_FR": "Glaçon orné de runes drust",
     "it_IT": "Frammento di Ghiaccio con Rune dei Drust",
     "pt_BR": "Sincelo com Runas Drustas",
-    "ko_KO": "드러스트 룬 고드름",
+    "ko_KR": "드러스트 룬 고드름",
     "cn_CN": "德鲁斯特符文冰锥",
     "ru_RU": "Покрытый рунами друстов кристалл льда"
   },
@@ -314,7 +314,7 @@
     "fr_FR": "Bec de mande-trombe",
     "it_IT": "Becco dell'Invocabrezza",
     "pt_BR": "Bico do Chamatormenta",
-    "ko_KO": "폭풍의 부리",
+    "ko_KR": "폭풍의 부리",
     "cn_CN": "唤风者之喙",
     "ru_RU": "Клюв призывателя штормов"
   },
@@ -325,7 +325,7 @@
     "fr_FR": "Griffe de Krolauk",
     "it_IT": "Artiglio di Kraulok",
     "pt_BR": "Garra de Kraulok",
-    "ko_KO": "Kraulok's Claw",
+    "ko_KR": "Kraulok's Claw",
     "cn_CN": "克劳洛克的利爪",
     "ru_RU": "Коготь Краулока"
   },
@@ -336,7 +336,7 @@
     "fr_FR": "Cœur incrusté de pergélisol",
     "it_IT": "Cuore Incrostato di Permagelo",
     "pt_BR": "Coração Incrustado de Permafrio",
-    "ko_KO": "영구적인 서리가 박힌 심장",
+    "ko_KR": "영구적인 서리가 박힌 심장",
     "cn_CN": "永冻护壳之心",
     "ru_RU": "Замерзшее окаменелое сердце"
   },
@@ -347,7 +347,7 @@
     "fr_FR": "Plume d’oiseau aquatique",
     "it_IT": "Piuma del Rapace Marino",
     "pt_BR": "Pluma da Ave Marítima",
-    "ko_KO": "바다새의 깃",
+    "ko_KR": "바다새의 깃",
     "cn_CN": "海栖飞鸟之羽",
     "ru_RU": "Перо морской птицы"
   },
@@ -358,7 +358,7 @@
     "fr_FR": "Prisme d’intensité ténébreuse",
     "it_IT": "Prisma dell'Intensità Oscura",
     "pt_BR": "Prisma da Intensidade Sombria",
-    "ko_KO": "Prism of Dark Intensity",
+    "ko_KR": "Prism of Dark Intensity",
     "cn_CN": "黑暗炽烈棱镜",
     "ru_RU": "Призма темной напряженности"
   },
@@ -369,7 +369,7 @@
     "fr_FR": "Nœud vaudou lié par les esprits",
     "it_IT": "Nodo Vudù Vincolato agli Spiriti",
     "pt_BR": "Cerne Vodu do Espírito Vinculado",
-    "ko_KO": "영혼결속 부두 옹이",
+    "ko_KR": "영혼결속 부두 옹이",
     "cn_CN": "缚魂巫毒瘤节",
     "ru_RU": "Узловатый тотем вуду"
   },
@@ -380,7 +380,7 @@
     "fr_FR": "Aiguillons d’écorce de T’zane",
     "it_IT": "Schegge di Corteccia di T'zane",
     "pt_BR": "Cascacúleos de T'zane",
-    "ko_KO": "티제인의 나무등뼈",
+    "ko_KR": "티제인의 나무등뼈",
     "cn_CN": "提赞的树脊",
     "ru_RU": "Шипы с коры Т'зейна"
   },
@@ -391,7 +391,7 @@
     "fr_FR": "Suite de Sombrelune : Bourrasques",
     "it_IT": "Mazzo delle Burrasche di Lunacupa",
     "pt_BR": "Baralho de Negraluna: Rajadas",
-    "ko_KO": "다크문 카드 한 벌: 돌풍",
+    "ko_KR": "다크문 카드 한 벌: 돌풍",
     "cn_CN": "暗月套牌：狂风",
     "ru_RU": "Колода карт Новолуния: Шквал"
   },
@@ -402,7 +402,7 @@
     "fr_FR": "Suite de Sombrelune : Fonds",
     "it_IT": "Mazzo degli Abissi di Lunacupa",
     "pt_BR": "Baralho de Negraluna: Profundezas",
-    "ko_KO": "다크문 카드 한 벌: 나락",
+    "ko_KR": "다크문 카드 한 벌: 나락",
     "cn_CN": "暗月套牌：深渊",
     "ru_RU": "Колода карт Новолуния: Глубины"
   },
@@ -413,7 +413,7 @@
     "fr_FR": "Pierre d’alchimiste déferlante",
     "it_IT": "Pietra Alchemica Eruttante",
     "pt_BR": "Pedra do Alquimista Jorrante",
-    "ko_KO": "솟구치는 연금술사 돌",
+    "ko_KR": "솟구치는 연금술사 돌",
     "cn_CN": "潮涌炼金石",
     "ru_RU": "Пульсирующий алхимический камень"
   },
@@ -424,7 +424,7 @@
     "fr_FR": "Flacon de Barbapille",
     "it_IT": "Fiasca di Fregabarba",
     "pt_BR": "Frasco de Barbapilha",
-    "ko_KO": "플런더비어드의 영약",
+    "ko_KR": "플런더비어드의 영약",
     "cn_CN": "普兰比尔德的合剂",
     "ru_RU": "Фляга Жадноборода"
   },
@@ -435,7 +435,7 @@
     "fr_FR": "Corpuscule frénétique",
     "it_IT": "Corpuscolo Frenetico",
     "pt_BR": "Corpúsculo Frenético",
-    "ko_KO": "Frenetic Corpuscle",
+    "ko_KR": "Frenetic Corpuscle",
     "cn_CN": "狂热血珠",
     "ru_RU": "Нестабильная частица"
   },
@@ -446,7 +446,7 @@
     "fr_FR": "Surchargeur d’assemblage",
     "it_IT": "Sovraccaricatore del Costrutto",
     "pt_BR": "Sobrecarregador do Constructo",
-    "ko_KO": "피조물 과부하기",
+    "ko_KR": "피조물 과부하기",
     "cn_CN": "构造体过载器",
     "ru_RU": "Нагнетатель голема"
   },
@@ -457,7 +457,7 @@
     "fr_FR": "Sculpte-sang du vigilant",
     "it_IT": "Plasmasangue del Vigilante",
     "pt_BR": "Moldassangue do Vigilante",
-    "ko_KO": "감시자의 피구체기",
+    "ko_KR": "감시자의 피구체기",
     "cn_CN": "戒卫的塑血者",
     "ru_RU": "Кроводел стража"
   },
@@ -468,7 +468,7 @@
     "fr_FR": "Canon mobile kultirassien",
     "it_IT": "Binario del Cannone di Kul Tiras",
     "pt_BR": "Fura-bloqueio Kultireno",
-    "ko_KO": "쿨 티란 포탄 주자",
+    "ko_KR": "쿨 티란 포탄 주자",
     "cn_CN": "库尔提拉斯便携火炮",
     "ru_RU": "Кул-тирасская мобильная пушка"
   },
@@ -479,7 +479,7 @@
     "fr_FR": "Tentacule de G’huun vaincu",
     "it_IT": "Tentacolo Sconfitto di G'huun",
     "pt_BR": "Tentáculo de G'huun Derrotado",
-    "ko_KO": "정복당한 그훈의 촉수",
+    "ko_KR": "정복당한 그훈의 촉수",
     "cn_CN": "被征服的戈霍恩的触须",
     "ru_RU": "Поверженное щупальце Г'ууна"
   },
@@ -490,7 +490,7 @@
     "fr_FR": "Regard scrutateur de Landoi",
     "it_IT": "Sguardo Indagatore di Landoi",
     "pt_BR": "Escrutínio de Landoi",
-    "ko_KO": "란도이의 철저",
+    "ko_KR": "란도이의 철저",
     "cn_CN": "兰多伊的审视",
     "ru_RU": "Дотошность Ландоя"
   },
@@ -501,7 +501,7 @@
     "fr_FR": "Almanach du « mielénaire »",
     "it_IT": "Almanacco \"Addio Api\"",
     "pt_BR": "Almanaque \"Abelhas de Outrora\"",
-    "ko_KO": "'한물간 철자법' 연감",
+    "ko_KR": "'한물간 철자법' 연감",
     "cn_CN": "“逝去之蜂”年鉴",
     "ru_RU": "Альманах \"Пчелы прошлого\""
   },
@@ -512,7 +512,7 @@
     "fr_FR": "Compilation ambitieuse du choc tellurique",
     "it_IT": "Gran Collezione della Folgore di Faglia",
     "pt_BR": "Grande Compilação do Choque Meridiânico",
-    "ko_KO": "리쇼크의 위대한 장치",
+    "ko_KR": "리쇼크의 위대한 장치",
     "cn_CN": "雷萧克的鸿篇汇编",
     "ru_RU": "Всеобъемлющая компиляция"
   },
@@ -523,7 +523,7 @@
     "fr_FR": "Banane kajafiée",
     "it_IT": "Banana Kajata",
     "pt_BR": "Banana Jakificada",
-    "ko_KO": "카자화된 바나나",
+    "ko_KR": "카자화된 바나나",
     "cn_CN": "灌注卡亚精华的香蕉",
     "ru_RU": "Каджабанан"
   },
@@ -534,7 +534,7 @@
     "fr_FR": "Seringue d’infirmité consanguine",
     "it_IT": "Siringa dell'Infermità del Sangue",
     "pt_BR": "Seringa da Enfermidade Sanguínea",
-    "ko_KO": "유전적 병약의 주사기",
+    "ko_KR": "유전적 병약의 주사기",
     "cn_CN": "血源疫病注射器",
     "ru_RU": "Распылитель зараженной крови"
   },
@@ -545,7 +545,7 @@
     "fr_FR": "Disque de régression systématique",
     "it_IT": "Disco della Regressione Sistematica",
     "pt_BR": "Disco da Regressão Sistemática",
-    "ko_KO": "구조적 역행의 원반",
+    "ko_KR": "구조적 역행의 원반",
     "cn_CN": "系统复原圆盘",
     "ru_RU": "Диск систематической регрессии"
   },
@@ -556,7 +556,7 @@
     "fr_FR": "Tentacule de Xalzaix frémissant",
     "it_IT": "Tentacolo Contorcente di Xalzaix",
     "pt_BR": "Tentáculo Agitado de Xalzaix",
-    "ko_KO": "잘자익스의 꿈틀거리는 촉수",
+    "ko_KR": "잘자익스의 꿈틀거리는 촉수",
     "cn_CN": "夏尔扎克斯的痉挛触须",
     "ru_RU": "Извивающееся щупальце Залзеикса"
   },
@@ -567,7 +567,7 @@
     "fr_FR": "Teinture infinie de puissance fractionnée",
     "it_IT": "Tintura Infinita del Potere Infinitesimale",
     "pt_BR": "Tintura de Poder Fracionado Infinita",
-    "ko_KO": "부분적인 힘의 무한한 용액",
+    "ko_KR": "부분적인 힘의 무한한 용액",
     "cn_CN": "分馏之力无穷酊剂",
     "ru_RU": "Бесконечная настойка поделенной мощи"
   },
@@ -578,7 +578,7 @@
     "fr_FR": "Carillon du grand vent",
     "it_IT": "Galewind Chimes",
     "pt_BR": "Sininhos da Ventania",
-    "ko_KO": "돌풍바람 풍경",
+    "ko_KR": "돌풍바람 풍경",
     "cn_CN": "狂风风铃",
     "ru_RU": "Песнь урагана"
   },
@@ -589,7 +589,7 @@
     "fr_FR": "Figurine de Loa dorée",
     "it_IT": "Statuetta del Loa Dorata",
     "pt_BR": "Estatueta Dourada de Loa",
-    "ko_KO": "화려한 로아 조각상",
+    "ko_KR": "화려한 로아 조각상",
     "cn_CN": "鎏金洛阿神像",
     "ru_RU": "Золоченая статуэтка лоа"
   },
@@ -600,7 +600,7 @@
     "fr_FR": "Emblème de Zandalar",
     "it_IT": "Emblema di Zandalar",
     "pt_BR": "Emblema de Zandalar",
-    "ko_KO": "잔달라의 문장",
+    "ko_KR": "잔달라의 문장",
     "cn_CN": "赞达拉纹章",
     "ru_RU": "Зандаларская эмблема"
   },
@@ -611,7 +611,7 @@
     "fr_FR": "Charme en os de dinosaure",
     "it_IT": "Talismano d'Ossa di Dinosauro",
     "pt_BR": "Patuá de Osso de Dino",
-    "ko_KO": "공룡뼈 부적",
+    "ko_KR": "공룡뼈 부적",
     "cn_CN": "恐龙骨护符",
     "ru_RU": "Амулет из кости ящера"
   },
@@ -622,7 +622,7 @@
     "fr_FR": "Boussole de pêcheur de perle",
     "it_IT": "Bussola del Cercatore di Perle",
     "pt_BR": "Bússola do Mergulhador Peroleiro",
-    "ko_KO": "진주 잠수부의 나침반",
+    "ko_KR": "진주 잠수부의 나침반",
     "cn_CN": "采珠人的罗盘",
     "ru_RU": "Компас ныряльщика за жемчугом"
   },
@@ -633,7 +633,7 @@
     "fr_FR": "Longue-vue de second",
     "it_IT": "Cannocchiale del Primo Ufficiale",
     "pt_BR": "Luneta do Imediato",
-    "ko_KO": "일등항해사의 망원경",
+    "ko_KR": "일등항해사의 망원경",
     "cn_CN": "大副的望远镜",
     "ru_RU": "Подзорная труба первого помощника"
   },
@@ -644,7 +644,7 @@
     "fr_FR": "Plumage d’Aile-du-Vent",
     "it_IT": "Piumaggio del Turbine",
     "pt_BR": "Plumagem de Espiralasa",
-    "ko_KO": "휘리릭날개의 깃털",
+    "ko_KR": "휘리릭날개의 깃털",
     "cn_CN": "旋风之翼飞羽",
     "ru_RU": "Перо Вихрекрыла"
   },
@@ -655,7 +655,7 @@
     "fr_FR": "Ampoule d’huile bouillonnante",
     "it_IT": "Contenitore d'Olio Vivente",
     "pt_BR": "Cilindro de Óleo Vivo",
-    "ko_KO": "살아있는 기름통",
+    "ko_KR": "살아있는 기름통",
     "cn_CN": "活油罐",
     "ru_RU": "Канистра с бурлящей нефтью"
   },
@@ -666,7 +666,7 @@
     "fr_FR": "Fiole des tempêtes",
     "it_IT": "Fiala delle Tempeste",
     "pt_BR": "Frasco das Tempestades",
-    "ko_KO": "폭풍의 약병",
+    "ko_KR": "폭풍의 약병",
     "cn_CN": "暴风之瓶",
     "ru_RU": "Фиал бури"
   },
@@ -677,7 +677,7 @@
     "fr_FR": "Champignon funeste",
     "it_IT": "Fungo della Rovina",
     "pt_BR": "Cogumelo da Ruína",
-    "ko_KO": "파멸의 버섯",
+    "ko_KR": "파멸의 버섯",
     "cn_CN": "毁灭蘑菇",
     "ru_RU": "Роковой гриб"
   },
@@ -688,7 +688,7 @@
     "fr_FR": "Billot de boucher incrusté de sang",
     "it_IT": "Ceppo del Macellaio Sporco di Sangue",
     "pt_BR": "Bloco Ensanguentado do Açougueiro",
-    "ko_KO": "선혈껍질 도살자의 돌판",
+    "ko_KR": "선혈껍질 도살자의 돌판",
     "cn_CN": "血渍屠夫隔板",
     "ru_RU": "Залитый кровью блок мясника"
   },
@@ -699,7 +699,7 @@
     "fr_FR": "Griffes de neigepoil",
     "it_IT": "Dilaniatore dei Pellenevosa",
     "pt_BR": "Mutilador Courofrio",
-    "ko_KO": "눈가죽 홰손자",
+    "ko_KR": "눈가죽 홰손자",
     "cn_CN": "雪毛嗥狼",
     "ru_RU": "Снегошкурый уничтожитель"
   },
@@ -710,7 +710,7 @@
     "fr_FR": "Tic-tac incessant",
     "it_IT": "Orologio del Ticchettio Incessante",
     "pt_BR": "Relógio de Tique-taque Incessante",
-    "ko_KO": "쉴 틈 없이 똑딱거리는 시계",
+    "ko_KR": "쉴 틈 없이 똑딱거리는 시계",
     "cn_CN": "永不间断的时钟",
     "ru_RU": "Беспрерывно тикающие часы"
   },
@@ -721,7 +721,7 @@
     "fr_FR": "Bijou en crâne de ravasaure",
     "it_IT": "Bijou con Teschio di Devasauro",
     "pt_BR": "Bijuteria de Caveira de Ravassauro",
-    "ko_KO": "라바사우루스 해골 비쥬",
+    "ko_KR": "라바사우루스 해골 비쥬",
     "cn_CN": "暴掠龙颅骨宝石",
     "ru_RU": "Украшение из черепа равазавра"
   },
@@ -732,7 +732,7 @@
     "fr_FR": "Fémur rongé par les croggs",
     "it_IT": "Femore di Crog Morsicato",
     "pt_BR": "Crawg Gnawed Femur",
-    "ko_KO": "크로그가 갉아먹은 다리뼈",
+    "ko_KR": "크로그가 갉아먹은 다리뼈",
     "cn_CN": "被抱齿兽咬过的大腿骨",
     "ru_RU": "Пожеванная бедренная кость крога"
   },
@@ -743,7 +743,7 @@
     "fr_FR": "Écusson de l’aspirant menaçant",
     "it_IT": "Distintivo del Pretendente Terrificante",
     "pt_BR": "Distintivo do Aspirante Medonho",
-    "ko_KO": "공포를 부르는 지원자의 표장",
+    "ko_KR": "공포를 부르는 지원자의 표장",
     "cn_CN": "悚然候选者的徽章",
     "ru_RU": "Жетон ужасающего претендента"
   }

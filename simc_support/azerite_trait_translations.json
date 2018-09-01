@@ -6,7 +6,7 @@
     "fr_FR": "Renforcé par l’azérite",
     "it_IT": "Potenziamento d'Azerite",
     "pt_BR": "Potencializado com Azerita",
-    "ko_KO": "강화된 아제라이트",
+    "ko_KR": "강화된 아제라이트",
     "cn_CN": "艾泽里特强化",
     "ru_RU": "Азеритовое усиление"
   },
@@ -17,7 +17,7 @@
     "fr_FR": "Tourbillon élémentaire",
     "it_IT": "Turbine Elementale",
     "pt_BR": "Redemoinho Elemental",
-    "ko_KO": "정령 소용돌이",
+    "ko_KR": "정령 소용돌이",
     "cn_CN": "元素回旋",
     "ru_RU": "Круговерть стихий"
   },
@@ -28,7 +28,7 @@
     "fr_FR": "Entendez mon appel",
     "it_IT": "Ascolto della Chiamata",
     "pt_BR": "Ouça Meu Chamado",
-    "ko_KO": "내 부름에 응하라",
+    "ko_KR": "내 부름에 응하라",
     "cn_CN": "听从我的召唤",
     "ru_RU": "Услышь мой зов"
   },
@@ -39,7 +39,7 @@
     "fr_FR": "Siphon de sang",
     "it_IT": "Aspirazione del Sangue",
     "pt_BR": "Sifão de Sangue",
-    "ko_KO": "피의 착취",
+    "ko_KR": "피의 착취",
     "cn_CN": "鲜血虹吸",
     "ru_RU": "Вытягивание крови"
   },
@@ -50,7 +50,7 @@
     "fr_FR": "Puissance accablante",
     "it_IT": "Potenza Opprimente",
     "pt_BR": "Poder Subjugador",
-    "ko_KO": "압도적인 힘",
+    "ko_KR": "압도적인 힘",
     "cn_CN": "压倒能量",
     "ru_RU": "Переполняющая мощь"
   },
@@ -61,7 +61,7 @@
     "fr_FR": "Globules d’azérite",
     "it_IT": "Globuli d'Azerite",
     "pt_BR": "Glóbulos de Azerita",
-    "ko_KO": "아제라이트 방울",
+    "ko_KR": "아제라이트 방울",
     "cn_CN": "艾泽里特液球",
     "ru_RU": "Капли азерита"
   },
@@ -72,7 +72,7 @@
     "fr_FR": "Arrache-tripes",
     "it_IT": "Sbudellamento",
     "pt_BR": "Rasgatripa",
-    "ko_KO": "내장 파열",
+    "ko_KR": "내장 파열",
     "cn_CN": "裂肠者",
     "ru_RU": "Вспарывание"
   },
@@ -83,7 +83,7 @@
     "fr_FR": "Vitesse vitale",
     "it_IT": "Velocità Vitale",
     "pt_BR": "Velocidade Vital",
-    "ko_KO": "활력의 속도",
+    "ko_KR": "활력의 속도",
     "cn_CN": "生命之速",
     "ru_RU": "Спасительная скорость"
   },
@@ -94,7 +94,7 @@
     "fr_FR": "Coupures profondes",
     "it_IT": "Tagli Profondi",
     "pt_BR": "Cortes Profundos",
-    "ko_KO": "깊은 상처",
+    "ko_KR": "깊은 상처",
     "cn_CN": "深可见骨",
     "ru_RU": "Глубокие порезы"
   },
@@ -105,7 +105,7 @@
     "fr_FR": "Cimetière de pointes d’os",
     "it_IT": "Cimitero di Aculei Ossei",
     "pt_BR": "Cemitério de Espigões Ósseos",
-    "ko_KO": "뼈 가시 무덤",
+    "ko_KR": "뼈 가시 무덤",
     "cn_CN": "天灾领主之刺",
     "ru_RU": "Костяной шип"
   },
@@ -116,7 +116,7 @@
     "fr_FR": "Éclair ruineux",
     "it_IT": "Dardo Rovinoso",
     "pt_BR": "Seta Ruinosa",
-    "ko_KO": "황폐의 화살",
+    "ko_KR": "황폐의 화살",
     "cn_CN": "毁灭箭",
     "ru_RU": "Губительная стрела"
   },
@@ -127,7 +127,7 @@
     "fr_FR": "Planification méticuleuse",
     "it_IT": "Intrigo Meticoloso",
     "pt_BR": "Maquinações Meticulosas",
-    "ko_KO": "절묘한 계획",
+    "ko_KR": "절묘한 계획",
     "cn_CN": "缜密计谋",
     "ru_RU": "Скрупулезное планирование"
   },
@@ -138,7 +138,7 @@
     "fr_FR": "Fureur de Rezan",
     "it_IT": "Furia di Rezan",
     "pt_BR": "Fúria de Rezan",
-    "ko_KO": "레잔의 격노",
+    "ko_KR": "레잔의 격노",
     "cn_CN": "莱赞之怒",
     "ru_RU": "Ярость Резана"
   },
@@ -149,7 +149,7 @@
     "fr_FR": "Infusion chancre-née",
     "it_IT": "Infusione della Piaga Nascente",
     "pt_BR": "Infusão Filha da Praga",
-    "ko_KO": "파멸뿌리 주입",
+    "ko_KR": "파멸뿌리 주입",
     "cn_CN": "枯败灌注",
     "ru_RU": "Насыщение гнилью"
   },
@@ -160,7 +160,7 @@
     "fr_FR": "Secrets des profondeurs",
     "it_IT": "Segreti del Profondo",
     "pt_BR": "Segredos das Profundezas",
-    "ko_KO": "심연의 비밀",
+    "ko_KR": "심연의 비밀",
     "cn_CN": "深渊秘密",
     "ru_RU": "Тайны глубин"
   },
@@ -171,7 +171,7 @@
     "fr_FR": "Transfusion contaminée",
     "it_IT": "Trasfusione Sudicia",
     "pt_BR": "Transfusão Imunda",
-    "ko_KO": "타락 주입",
+    "ko_KR": "타락 주입",
     "cn_CN": "污秽传输",
     "ru_RU": "Пагубное переливание"
   },
@@ -182,7 +182,7 @@
     "fr_FR": "Arme runique éternelle",
     "it_IT": "Arma Runica Eterna",
     "pt_BR": "Arma Rúnica Eterna",
-    "ko_KO": "영원한 룬 무기",
+    "ko_KR": "영원한 룬 무기",
     "cn_CN": "永恒符文武器",
     "ru_RU": "Вечное руническое оружие"
   },
@@ -193,7 +193,7 @@
     "fr_FR": "Flammes instables",
     "it_IT": "Fiamme Instabili",
     "pt_BR": "Chamas Instáveis",
-    "ko_KO": "불안정한 불길",
+    "ko_KR": "불안정한 불길",
     "cn_CN": "不稳定的烈焰",
     "ru_RU": "Нестабильное пламя"
   },
@@ -204,7 +204,7 @@
     "fr_FR": "Lien de terre",
     "it_IT": "Legame Terrestre",
     "pt_BR": "Vínculo Terreno",
-    "ko_KO": "대지연결",
+    "ko_KR": "대지연결",
     "cn_CN": "大地链接",
     "ru_RU": "Узы земли"
   },
@@ -215,7 +215,7 @@
     "fr_FR": "Barrage de bombes",
     "it_IT": "Raffica di Molte Bombe",
     "pt_BR": "Barragem de Muitas Bombas",
-    "ko_KO": "폭탄폭탄 포화",
+    "ko_KR": "폭탄폭탄 포화",
     "cn_CN": "分裂炸弹",
     "ru_RU": "Бомбы, бомбы и еще раз бомбы"
   },
@@ -226,7 +226,7 @@
     "fr_FR": "Robo-scie Imprévisible Pyromaniaque",
     "it_IT": "Rimbalzante Ingombante Pirosega",
     "pt_BR": "Rotosserra Inflável Pirotequicante",
-    "ko_KO": "잠시 드리우면 소각하는 서슬톱",
+    "ko_KR": "잠시 드리우면 소각하는 서슬톱",
     "cn_CN": "炽热弹射油锯",
     "ru_RU": "Гоблинская рикошетящая огненная бензопила"
   },
@@ -237,7 +237,7 @@
     "fr_FR": "Condensateur d’allumage synaptique",
     "it_IT": "Condensatore di Scintille Sinaptico",
     "pt_BR": "Capacitador de Centelhas Sinápticas",
-    "ko_KO": "신경계 전깃불 축전기",
+    "ko_KR": "신경계 전깃불 축전기",
     "cn_CN": "突触火花电容",
     "ru_RU": "Конденсатор синаптического разряда"
   },
@@ -248,7 +248,7 @@
     "fr_FR": "Bidule de normalisation relationnelle",
     "it_IT": "Ingranaggio Normalizzante Relazionale",
     "pt_BR": "Dispositivo de Normalização Relacional",
-    "ko_KO": "상대적 대상 표준화 장치",
+    "ko_KR": "상대적 대상 표준화 장치",
     "cn_CN": "相对性常态化装置",
     "ru_RU": "Релятивистский нормализационный гаджет"
   },
@@ -259,7 +259,7 @@
     "fr_FR": "Dague surprise",
     "it_IT": "Pugnalata alla Schiena",
     "pt_BR": "Adaga nas Costas",
-    "ko_KO": "등 뒤의 단도",
+    "ko_KR": "등 뒤의 단도",
     "cn_CN": "影中暗刃",
     "ru_RU": "Кинжал в спину"
   },
@@ -270,7 +270,7 @@
     "fr_FR": "Explosion tonitruante",
     "it_IT": "Detonazione Tonante",
     "pt_BR": "Impacto Trovejante",
-    "ko_KO": "천둥 작렬",
+    "ko_KR": "천둥 작렬",
     "cn_CN": "雷霆冲击",
     "ru_RU": "Раскатистый гром"
   },
@@ -281,7 +281,7 @@
     "fr_FR": "Reflux des marée",
     "it_IT": "Inoculazione Mareale",
     "pt_BR": "Surto das Marés",
-    "ko_KO": "굽이치는 파도",
+    "ko_KR": "굽이치는 파도",
     "cn_CN": "海潮涌动",
     "ru_RU": "Приливная волна"
   },
@@ -292,7 +292,7 @@
     "fr_FR": "Rite de sang",
     "it_IT": "Rito del Sangue",
     "pt_BR": "Rito de Sangue",
-    "ko_KO": "피의 의례",
+    "ko_KR": "피의 의례",
     "cn_CN": "血祭之力",
     "ru_RU": "Кровавый ритуал"
   },
@@ -303,7 +303,7 @@
     "fr_FR": "Provoquer la meute",
     "it_IT": "Incitamento del Branco",
     "pt_BR": "Incitar a Matilha",
-    "ko_KO": "무리 선동자",
+    "ko_KR": "무리 선동자",
     "cn_CN": "激励兽群",
     "ru_RU": "Азарт стаи"
   },
@@ -314,7 +314,7 @@
     "fr_FR": "Sables tourbillonnants",
     "it_IT": "Sabbie Vorticanti",
     "pt_BR": "Turbilhão de Areia",
-    "ko_KO": "소용돌이치는 모래",
+    "ko_KR": "소용돌이치는 모래",
     "cn_CN": "呼啸狂沙",
     "ru_RU": "Песчаный вихрь"
   },
@@ -325,7 +325,7 @@
     "fr_FR": "Archive des titans",
     "it_IT": "Archivio dei Titani",
     "pt_BR": "Arquivo dos Titãs",
-    "ko_KO": "티탄의 기록",
+    "ko_KR": "티탄의 기록",
     "cn_CN": "泰坦档案库",
     "ru_RU": "Архив титанов"
   },
@@ -336,7 +336,7 @@
     "fr_FR": "Matrice laser",
     "it_IT": "Matrice Laser",
     "pt_BR": "Matriz de Laser",
-    "ko_KO": "레이저 매트릭스",
+    "ko_KR": "레이저 매트릭스",
     "cn_CN": "激光矩阵",
     "ru_RU": "Лазерная решетка"
   },
@@ -347,7 +347,7 @@
     "fr_FR": "Gloire au combat",
     "it_IT": "Gloria in Battaglia",
     "pt_BR": "Glória em Combate",
-    "ko_KO": "전장의 영광",
+    "ko_KR": "전장의 영광",
     "cn_CN": "战斗荣耀",
     "ru_RU": "Боевая слава"
   },
@@ -358,7 +358,7 @@
     "fr_FR": "Fureur de représailles",
     "it_IT": "Furia di Rappresaglia",
     "pt_BR": "Fúria Retaliatória",
-    "ko_KO": "분노의 복수",
+    "ko_KR": "분노의 복수",
     "cn_CN": "反击之怒",
     "ru_RU": "Яростная контратака"
   },
@@ -369,7 +369,7 @@
     "fr_FR": "Puissance combinée",
     "it_IT": "Vigore Combinato",
     "pt_BR": "Força Combinada",
-    "ko_KO": "하나된 힘",
+    "ko_KR": "하나된 힘",
     "cn_CN": "团结之力",
     "ru_RU": "Объединенная мощь"
   },
@@ -380,7 +380,7 @@
     "fr_FR": "Volonté collective",
     "it_IT": "Volontà Collettiva",
     "pt_BR": "Vontade Coletiva",
-    "ko_KO": "단합된 의지",
+    "ko_KR": "단합된 의지",
     "cn_CN": "集体意志",
     "ru_RU": "Совместная воля"
   },
@@ -391,7 +391,7 @@
     "fr_FR": "Concentration du combattant",
     "it_IT": "Focus del Campo di Battaglia",
     "pt_BR": "Concentração no Campo de Batalha",
-    "ko_KO": "전장의 주목",
+    "ko_KR": "전장의 주목",
     "cn_CN": "战场集火",
     "ru_RU": "Боевое сосредоточение"
   },
@@ -402,7 +402,7 @@
     "fr_FR": "Résolution de Sylvanas",
     "it_IT": "Risolutezza di Sylvanas",
     "pt_BR": "Determinação de Sylvana",
-    "ko_KO": "실바나스의 결의",
+    "ko_KR": "실바나스의 결의",
     "cn_CN": "希尔瓦娜斯的决心",
     "ru_RU": "Непреклонность Сильваны"
   },
@@ -413,7 +413,7 @@
     "fr_FR": "Puissance du libérateur",
     "it_IT": "Vigore del Liberatore",
     "pt_BR": "Poder do Libertador",
-    "ko_KO": "해방자의 힘",
+    "ko_KR": "해방자의 힘",
     "cn_CN": "解放者之力",
     "ru_RU": "Мощь освободителя"
   },
@@ -424,7 +424,7 @@
     "fr_FR": "Dernière offrande",
     "it_IT": "Ultimo Dono",
     "pt_BR": "Última Dádiva",
-    "ko_KO": "마지막 선물",
+    "ko_KR": "마지막 선물",
     "cn_CN": "最终赠礼",
     "ru_RU": "Прощальный дар"
   },
@@ -435,7 +435,7 @@
     "fr_FR": "L’union fait la force",
     "it_IT": "Uniti si Vince",
     "pt_BR": "Juntos Somos Mais Fortes",
-    "ko_KO": "강인한 협력",
+    "ko_KR": "강인한 협력",
     "cn_CN": "众志成城",
     "ru_RU": "Сила в единстве"
   },
@@ -446,7 +446,7 @@
     "fr_FR": "Front uni",
     "it_IT": "Combattere Uniti",
     "pt_BR": "Todos Juntos",
-    "ko_KO": "하나된 결의",
+    "ko_KR": "하나된 결의",
     "cn_CN": "团结一致",
     "ru_RU": "Все за мной!"
   },
@@ -457,7 +457,7 @@
     "fr_FR": "Précision du champ de bataille",
     "it_IT": "Precisione del Campo di Battaglia",
     "pt_BR": "Precisão no Campo de Batalha",
-    "ko_KO": "전장의 치밀함",
+    "ko_KR": "전장의 치밀함",
     "cn_CN": "战场精准",
     "ru_RU": "Боевая точность"
   },
@@ -468,7 +468,7 @@
     "fr_FR": "Dévouement à Anduin",
     "it_IT": "Devozione di Anduin",
     "pt_BR": "Dedicação de Anduin",
-    "ko_KO": "안두인의 헌신",
+    "ko_KR": "안두인의 헌신",
     "cn_CN": "安杜因的奉献",
     "ru_RU": "Преданность Андуина"
   },
@@ -479,7 +479,7 @@
     "fr_FR": "Champion d’Azeroth",
     "it_IT": "Campione di Azeroth",
     "pt_BR": "Campeão de Azeroth",
-    "ko_KO": "아제로스의 용사",
+    "ko_KR": "아제로스의 용사",
     "cn_CN": "艾泽拉斯的勇士",
     "ru_RU": "Защитник Азерот"
   },
@@ -490,7 +490,7 @@
     "fr_FR": "Catalyseur instable",
     "it_IT": "Catalizzatore Instabile",
     "pt_BR": "Catalisador Instável",
-    "ko_KO": "불안정한 촉매",
+    "ko_KR": "불안정한 촉매",
     "cn_CN": "不稳定的催化剂",
     "ru_RU": "Неустойчивый катализатор"
   },
@@ -501,7 +501,7 @@
     "fr_FR": "Alizés",
     "it_IT": "Ventisaldi",
     "pt_BR": "Vento Mercante",
-    "ko_KO": "무역풍",
+    "ko_KR": "무역풍",
     "cn_CN": "汇帆",
     "ru_RU": "Семь Ветров"
   },
@@ -512,7 +512,7 @@
     "fr_FR": "Citadelle glacée",
     "it_IT": "Cittadella Ghiacciata",
     "pt_BR": "Cidadela de Gelo",
-    "ko_KO": "얼음 성채",
+    "ko_KR": "얼음 성채",
     "cn_CN": "冰霜堡垒",
     "ru_RU": "Ледяная цитадель"
   },
@@ -523,7 +523,7 @@
     "fr_FR": "Froid latent",
     "it_IT": "Brivido Latente",
     "pt_BR": "Frio Latente",
-    "ko_KO": "잠재된 한기",
+    "ko_KR": "잠재된 한기",
     "cn_CN": "潜藏冰冷",
     "ru_RU": "Затаившаяся стужа"
   },
@@ -534,7 +534,7 @@
     "fr_FR": "Contagion glaciale",
     "it_IT": "Contagio Glaciale",
     "pt_BR": "Contágio Glacial",
-    "ko_KO": "혹한 전염",
+    "ko_KR": "혹한 전염",
     "cn_CN": "冰冷蔓延",
     "ru_RU": "Ледяное заражение"
   },
@@ -545,7 +545,7 @@
     "fr_FR": "Hurlement résonnant",
     "it_IT": "Ululato Echeggiante",
     "pt_BR": "Uivo Ecoante",
-    "ko_KO": "메아리치는 울부짖음",
+    "ko_KR": "메아리치는 울부짖음",
     "cn_CN": "凛风怒号",
     "ru_RU": "Завывание ветра"
   },
@@ -556,7 +556,7 @@
     "fr_FR": "Givre funeste",
     "it_IT": "Sicario del Gelo",
     "pt_BR": "Gelo Matador",
-    "ko_KO": "죽이는 냉기",
+    "ko_KR": "죽이는 냉기",
     "cn_CN": "杀戮之冰",
     "ru_RU": "Мороз-убийца"
   },
@@ -567,7 +567,7 @@
     "fr_FR": "Tempête gelée",
     "it_IT": "Tempesta Congelata",
     "pt_BR": "Tempestade Congelada",
-    "ko_KO": "얼어붙은 폭풍우",
+    "ko_KR": "얼어붙은 폭풍우",
     "cn_CN": "寒冰暴雨",
     "ru_RU": "Ледяная буря"
   },
@@ -578,7 +578,7 @@
     "fr_FR": "Destin purulent",
     "it_IT": "Rovina Putrescente",
     "pt_BR": "Ruína Supurante",
-    "ko_KO": "썩어가는 파멸",
+    "ko_KR": "썩어가는 파멸",
     "cn_CN": "脓疮厄运",
     "ru_RU": "Разлагающая погибель"
   },
@@ -589,7 +589,7 @@
     "fr_FR": "Abjecte création",
     "it_IT": "Esperimento Orrido",
     "pt_BR": "Experimento Hórrido",
-    "ko_KO": "공포의 실험",
+    "ko_KR": "공포의 실험",
     "cn_CN": "恶臭排放",
     "ru_RU": "Чудовищный эксперимент"
   },
@@ -600,7 +600,7 @@
     "fr_FR": "Supérulence",
     "it_IT": "Morbo Putrido",
     "pt_BR": "Poder Purulento",
-    "ko_KO": "곪아 터진 힘",
+    "ko_KR": "곪아 터진 힘",
     "cn_CN": "溃烂之力",
     "ru_RU": "Гниение - сила"
   },
@@ -611,7 +611,7 @@
     "fr_FR": "Décomposition lancinante",
     "it_IT": "Decadimento Straziante",
     "pt_BR": "Decomposição Lancinante",
-    "ko_KO": "참혹한 부패",
+    "ko_KR": "참혹한 부패",
     "cn_CN": "苦痛衰败",
     "ru_RU": "Быстрое разложение"
   },
@@ -622,7 +622,7 @@
     "fr_FR": "Ulcérations",
     "it_IT": "Ferite Ulcerose",
     "pt_BR": "Feridas Gangrenantes",
-    "ko_KO": "지독한 상처",
+    "ko_KR": "지독한 상처",
     "cn_CN": "溃疡伤口",
     "ru_RU": "Смертельные язвы"
   },
@@ -633,7 +633,7 @@
     "fr_FR": "Ultime surprise",
     "it_IT": "Ultima Sorpresa",
     "pt_BR": "Última Surpresa",
-    "ko_KO": "마지막 선물",
+    "ko_KR": "마지막 선물",
     "cn_CN": "最后的惊喜",
     "ru_RU": "Последний сюрприз"
   },
@@ -644,7 +644,7 @@
     "fr_FR": "Regard furieux",
     "it_IT": "Sguardo Furioso",
     "pt_BR": "Olhar Furioso",
-    "ko_KO": "격노의 응시",
+    "ko_KR": "격노의 응시",
     "cn_CN": "狂怒凝视",
     "ru_RU": "Яростный взор"
   },
@@ -655,7 +655,7 @@
     "fr_FR": "Chaos délié",
     "it_IT": "Caos Indomabile",
     "pt_BR": "Caos Liberado",
-    "ko_KO": "풀려난 혼돈",
+    "ko_KR": "풀려난 혼돈",
     "cn_CN": "释放混沌",
     "ru_RU": "Необузданный хаос"
   },
@@ -666,7 +666,7 @@
     "fr_FR": "Puissance tumultueuse",
     "it_IT": "Potere Ribollente",
     "pt_BR": "Poder Fervente",
-    "ko_KO": "끓어오르는 힘",
+    "ko_KR": "끓어오르는 힘",
     "cn_CN": "沸腾之力",
     "ru_RU": "Бурлящая сила"
   },
@@ -677,7 +677,7 @@
     "fr_FR": "Lames assoiffées",
     "it_IT": "Lame Assetate",
     "pt_BR": "Espadas Sedentas",
-    "ko_KO": "목마른 칼날",
+    "ko_KR": "목마른 칼날",
     "cn_CN": "嗜血之刃",
     "ru_RU": "Ненасытные клинки"
   },
@@ -688,7 +688,7 @@
     "fr_FR": "Rayon de rage pure",
     "it_IT": "Occhi della Rabbia",
     "pt_BR": "Olhos da Fúria",
-    "ko_KO": "격노의 눈",
+    "ko_KR": "격노의 눈",
     "cn_CN": "狂怒之眼",
     "ru_RU": "Гневный взгляд"
   },
@@ -699,7 +699,7 @@
     "fr_FR": "Lames tournoyantes",
     "it_IT": "Lame Rotanti",
     "pt_BR": "Lâminas Revolventes",
-    "ko_KO": "회전 칼날",
+    "ko_KR": "회전 칼날",
     "cn_CN": "旋转之刃",
     "ru_RU": "Вращающиеся клинки"
   },
@@ -710,7 +710,7 @@
     "fr_FR": "Armure infernale",
     "it_IT": "Armatura Infernale",
     "pt_BR": "Armadura Infernal",
-    "ko_KO": "지옥불 갑옷",
+    "ko_KR": "지옥불 갑옷",
     "cn_CN": "地狱火护甲",
     "ru_RU": "Инфернальная броня"
   },
@@ -721,7 +721,7 @@
     "fr_FR": "Scission d’essence",
     "it_IT": "Squarto d'Essenza",
     "pt_BR": "Arrancar Essência",
-    "ko_KO": "정수 절단",
+    "ko_KR": "정수 절단",
     "cn_CN": "精华割裂",
     "ru_RU": "Рассечение сущности"
   },
@@ -732,7 +732,7 @@
     "fr_FR": "Cycle de liens",
     "it_IT": "Ciclo del Vincolo",
     "pt_BR": "Círculo da Vinculação",
-    "ko_KO": "속박의 순환",
+    "ko_KR": "속박의 순환",
     "cn_CN": "咒符之环",
     "ru_RU": "Цикл запечатывания"
   },
@@ -743,7 +743,7 @@
     "fr_FR": "En route",
     "it_IT": "Sulla Strada",
     "pt_BR": "A Caminho",
-    "ko_KO": "지금 갑니다",
+    "ko_KR": "지금 갑니다",
     "cn_CN": "正在赶来",
     "ru_RU": "Полный вперед"
   },
@@ -754,7 +754,7 @@
     "fr_FR": "Voie étoilée",
     "it_IT": "Scia di Stelle",
     "pt_BR": "Estrelas Sequentes",
-    "ko_KO": "별자취",
+    "ko_KR": "별자취",
     "cn_CN": "飞驰流星",
     "ru_RU": "Стремительные звезды"
   },
@@ -765,7 +765,7 @@
     "fr_FR": "Pouvoir de la lune",
     "it_IT": "Potenza della Luna",
     "pt_BR": "Poder da Lua",
-    "ko_KO": "달의 위력",
+    "ko_KR": "달의 위력",
     "cn_CN": "明月之力",
     "ru_RU": "Лунная сила"
   },
@@ -776,7 +776,7 @@
     "fr_FR": "Brasier solaire",
     "it_IT": "Fiammata Solare",
     "pt_BR": "Ardessol",
-    "ko_KO": "폭염",
+    "ko_KR": "폭염",
     "cn_CN": "烈日之焰",
     "ru_RU": "Солнечный ожог"
   },
@@ -787,7 +787,7 @@
     "fr_FR": "Point du jour",
     "it_IT": "Sole dell'Alba",
     "pt_BR": "Sol da Aurora",
-    "ko_KO": "여명의 태양",
+    "ko_KR": "여명의 태양",
     "cn_CN": "破晓之阳",
     "ru_RU": "Восходящее солнце"
   },
@@ -798,7 +798,7 @@
     "fr_FR": "Soleil de plomb",
     "it_IT": "Mezzogiorno di Fuoco",
     "pt_BR": "Zênite",
-    "ko_KO": "석양이 진다",
+    "ko_KR": "석양이 진다",
     "cn_CN": "午时已到",
     "ru_RU": "Ровно полдень"
   },
@@ -809,7 +809,7 @@
     "fr_FR": "Fragments lunaires",
     "it_IT": "Scheggia Lunare",
     "pt_BR": "Estilhaços Lunares",
-    "ko_KO": "달 파편",
+    "ko_KR": "달 파편",
     "cn_CN": "月光弹片",
     "ru_RU": "Лунные осколки"
   },
@@ -820,7 +820,7 @@
     "fr_FR": "Esprit décidé",
     "it_IT": "Spirito Vivace",
     "pt_BR": "Espírito Vivaz",
-    "ko_KO": "생기 넘치는 영혼",
+    "ko_KR": "생기 넘치는 영혼",
     "cn_CN": "活跃精神",
     "ru_RU": "Живость духа"
   },
@@ -831,7 +831,7 @@
     "fr_FR": "Griffure féroce",
     "it_IT": "Ferocia Graffiante",
     "pt_BR": "Ferocidade Estraçalhante",
-    "ko_KO": "흉포한 갈퀴 발톱",
+    "ko_KR": "흉포한 갈퀴 발톱",
     "cn_CN": "凶猛掠夺",
     "ru_RU": "Свирепое терзание"
   },
@@ -842,7 +842,7 @@
     "fr_FR": "Fureur lacérante",
     "it_IT": "Furia Tagliuzzante",
     "pt_BR": "Fúria Despedaçante",
-    "ko_KO": "분노의 할퀴기",
+    "ko_KR": "분노의 할퀴기",
     "cn_CN": "碎裂之怒",
     "ru_RU": "Когти ярости"
   },
@@ -853,7 +853,7 @@
     "fr_FR": "Griffes tordues",
     "it_IT": "Artigli Distorti",
     "pt_BR": "Garras Pervertidas",
-    "ko_KO": "뒤틀린 발톱",
+    "ko_KR": "뒤틀린 발톱",
     "cn_CN": "扭曲之爪",
     "ru_RU": "Изогнутые когти"
   },
@@ -864,7 +864,7 @@
     "fr_FR": "Mâchoires de fer",
     "it_IT": "Fauci di Ferro",
     "pt_BR": "Mandíbulas de Ferro",
-    "ko_KO": "무쇠 턱",
+    "ko_KR": "무쇠 턱",
     "cn_CN": "钢铁之颚",
     "ru_RU": "Стальные челюсти"
   },
@@ -875,7 +875,7 @@
     "fr_FR": "Lacérations frénétiques",
     "it_IT": "Lacerazioni Zampillanti",
     "pt_BR": "Lacerações Jorrantes",
-    "ko_KO": "참혹한 난도질",
+    "ko_KR": "참혹한 난도질",
     "cn_CN": "涌血裂伤",
     "ru_RU": "Кровоточащие разрывы"
   },
@@ -886,7 +886,7 @@
     "fr_FR": "Brume de sang",
     "it_IT": "Nebbia del Sangue",
     "pt_BR": "Névoa de Sangue",
-    "ko_KO": "핏빛 안개",
+    "ko_KR": "핏빛 안개",
     "cn_CN": "血腥之雾",
     "ru_RU": "Кровавая пелена"
   },
@@ -897,7 +897,7 @@
     "fr_FR": "Taillade sauvage",
     "it_IT": "Squartamento Selvaggio",
     "pt_BR": "Rasgação Selvagem",
-    "ko_KO": "야생의 살점분리",
+    "ko_KR": "야생의 살점분리",
     "cn_CN": "狂野撕裂",
     "ru_RU": "Неистовое раздирание"
   },
@@ -908,7 +908,7 @@
     "fr_FR": "Instincts magistraux",
     "it_IT": "Istinti Magistrali",
     "pt_BR": "Instintos Primorosos",
-    "ko_KO": "고수의 본능",
+    "ko_KR": "고수의 본능",
     "cn_CN": "精通本能",
     "ru_RU": "Отточенные инстинкты"
   },
@@ -919,7 +919,7 @@
     "fr_FR": "Courroux du gardien",
     "it_IT": "Ira del Guardiano",
     "pt_BR": "Ira do Guardião",
-    "ko_KO": "수호자의 분노",
+    "ko_KR": "수호자의 분노",
     "cn_CN": "守护者之怒",
     "ru_RU": "Гнев стража"
   },
@@ -930,7 +930,7 @@
     "fr_FR": "Crinière épaisse",
     "it_IT": "Manto a Strati",
     "pt_BR": "Juba Espessa",
-    "ko_KO": "겹갈기털",
+    "ko_KR": "겹갈기털",
     "cn_CN": "层叠鬃毛",
     "ru_RU": "Густая грива"
   },
@@ -941,7 +941,7 @@
     "fr_FR": "Mâchoire dentelée",
     "it_IT": "Morsa Seghettata",
     "pt_BR": "Mandíbulas Serrilhadas",
-    "ko_KO": "톱날 주둥이",
+    "ko_KR": "톱날 주둥이",
     "cn_CN": "锯齿利颚",
     "ru_RU": "Острые зубы"
   },
@@ -952,7 +952,7 @@
     "fr_FR": "Brouillard de rage",
     "it_IT": "Annebbiamento Rabbioso",
     "pt_BR": "Neblina de Ódio",
-    "ko_KO": "아른거리는 분노",
+    "ko_KR": "아른거리는 분노",
     "cn_CN": "怒火升腾",
     "ru_RU": "Дурманящий гнев"
   },
@@ -963,7 +963,7 @@
     "fr_FR": "Danse de mort",
     "it_IT": "Danza della Morte",
     "pt_BR": "Dança da Morte",
-    "ko_KO": "죽음의 무도",
+    "ko_KR": "죽음의 무도",
     "cn_CN": "死亡之舞",
     "ru_RU": "Танец смерти"
   },
@@ -974,7 +974,7 @@
     "fr_FR": "Chef de meute",
     "it_IT": "Alfa del Branco",
     "pt_BR": "Alfa da Matilha",
-    "ko_KO": "무리 우두머리",
+    "ko_KR": "무리 우두머리",
     "cn_CN": "领导兽群",
     "ru_RU": "Альфа-особь"
   },
@@ -985,7 +985,7 @@
     "fr_FR": "Frénésie dévorante",
     "it_IT": "Ferocia Famelica",
     "pt_BR": "Frenesi Predatório",
-    "ko_KO": "탐식의 광란",
+    "ko_KR": "탐식의 광란",
     "cn_CN": "吞食狂热",
     "ru_RU": "Бешеный аппетит"
   },
@@ -996,7 +996,7 @@
     "fr_FR": "Rechargement rapide",
     "it_IT": "Ricarica Rapida",
     "pt_BR": "Recarregamento Rápido",
-    "ko_KO": "빠른 장전",
+    "ko_KR": "빠른 장전",
     "cn_CN": "快速装填",
     "ru_RU": "Быстрая перезарядка"
   },
@@ -1007,7 +1007,7 @@
     "fr_FR": "Instincts primaux",
     "it_IT": "Istinti Primordiali",
     "pt_BR": "Instintos Primevos",
-    "ko_KO": "원시 본능",
+    "ko_KR": "원시 본능",
     "cn_CN": "原始本能",
     "ru_RU": "Первобытные инстинкты"
   },
@@ -1018,7 +1018,7 @@
     "fr_FR": "En rythme",
     "it_IT": "A Ritmo",
     "pt_BR": "No Ritmo",
-    "ko_KO": "리듬을 타고",
+    "ko_KR": "리듬을 타고",
     "cn_CN": "弦之韵律",
     "ru_RU": "Чувство ритма"
   },
@@ -1029,7 +1029,7 @@
     "fr_FR": "Déluge des Arcanes",
     "it_IT": "Vortice Arcano",
     "pt_BR": "Rajada Arcana",
-    "ko_KO": "신비한 질풍",
+    "ko_KR": "신비한 질풍",
     "cn_CN": "奥术飓风",
     "ru_RU": "Чародейский шквал"
   },
@@ -1040,7 +1040,7 @@
     "fr_FR": "Vision infaillible",
     "it_IT": "Visione Precisa",
     "pt_BR": "Visão Infalível",
-    "ko_KO": "또렷한 시야",
+    "ko_KR": "또렷한 시야",
     "cn_CN": "千里之目",
     "ru_RU": "Верный глаз"
   },
@@ -1051,7 +1051,7 @@
     "fr_FR": "Visée précise",
     "it_IT": "Mira Ferma",
     "pt_BR": "Mira Estável",
-    "ko_KO": "침착한 조준",
+    "ko_KR": "침착한 조준",
     "cn_CN": "稳固瞄准",
     "ru_RU": "Твердая рука"
   },
@@ -1062,7 +1062,7 @@
     "fr_FR": "Feu focalisé",
     "it_IT": "Fuoco Concentrato",
     "pt_BR": "Fogo Focalizado",
-    "ko_KO": "화력 집중",
+    "ko_KR": "화력 집중",
     "cn_CN": "集中火力",
     "ru_RU": "Средоточие огня"
   },
@@ -1073,7 +1073,7 @@
     "fr_FR": "Amas de feux de brousse",
     "it_IT": "Fascio di Fuocobrado",
     "pt_BR": "Dispersão de Fogo Indômito",
-    "ko_KO": "야생불 집속탄",
+    "ko_KR": "야생불 집속탄",
     "cn_CN": "野火弹簇",
     "ru_RU": "Кассетные огнебомбы"
   },
@@ -1084,7 +1084,7 @@
     "fr_FR": "Poison latent",
     "it_IT": "Veleno Latente",
     "pt_BR": "Veneno Latente",
-    "ko_KO": "잠재된 독",
+    "ko_KR": "잠재된 독",
     "cn_CN": "潜藏毒素",
     "ru_RU": "Медленный яд"
   },
@@ -1095,7 +1095,7 @@
     "fr_FR": "Crocs venimeux",
     "it_IT": "Zanne Velenose",
     "pt_BR": "Presas Envenenadas",
-    "ko_KO": "맹독 송곳니",
+    "ko_KR": "맹독 송곳니",
     "cn_CN": "剧毒之牙",
     "ru_RU": "Ядовитые клыки"
   },
@@ -1106,7 +1106,7 @@
     "fr_FR": "Bestialité",
     "it_IT": "Turbinio d'Artigli",
     "pt_BR": "Borrão de Garras",
-    "ko_KO": "발톱의 잔상",
+    "ko_KR": "발톱의 잔상",
     "cn_CN": "迅疾爪击",
     "ru_RU": "Молниеносные когти"
   },
@@ -1117,7 +1117,7 @@
     "fr_FR": "Survie en terre hostile",
     "it_IT": "Sopravvivenza nella Selva",
     "pt_BR": "Sobrevivência na Selva",
-    "ko_KO": "황야의 생존자",
+    "ko_KR": "황야의 생존자",
     "cn_CN": "荒野生存",
     "ru_RU": "Выживание в природе"
   },
@@ -1128,7 +1128,7 @@
     "fr_FR": "Combat singulier",
     "it_IT": "Da Vicino e Personalmente",
     "pt_BR": "Bem Pertinho",
-    "ko_KO": "개인 면담",
+    "ko_KR": "개인 면담",
     "cn_CN": "鱼叉连击",
     "ru_RU": "Лицом к лицу"
   },
@@ -1139,7 +1139,7 @@
     "fr_FR": "Correction arcanique",
     "it_IT": "Percussione Arcana",
     "pt_BR": "Surra Arcana",
-    "ko_KO": "비전 소나기",
+    "ko_KR": "비전 소나기",
     "cn_CN": "奥术连击",
     "ru_RU": "Чародейский разгром"
   },
@@ -1150,7 +1150,7 @@
     "fr_FR": "Tempête mentale",
     "it_IT": "Colpo di Genio",
     "pt_BR": "Tempestade Cerebral",
-    "ko_KO": "묘안",
+    "ko_KR": "묘안",
     "cn_CN": "头脑风暴",
     "ru_RU": "Мозговой шторм"
   },
@@ -1161,7 +1161,7 @@
     "fr_FR": "Pression des Arcanes",
     "it_IT": "Pressione Arcana",
     "pt_BR": "Pressão Arcana",
-    "ko_KO": "비전 압박",
+    "ko_KR": "비전 압박",
     "cn_CN": "奥术压力",
     "ru_RU": "Чародейский натиск"
   },
@@ -1172,7 +1172,7 @@
     "fr_FR": "Étincelle galvanisante",
     "it_IT": "Scintilla Galvanizzante",
     "pt_BR": "Centelha Galvanizadora",
-    "ko_KO": "자극하는 불똥",
+    "ko_KR": "자극하는 불똥",
     "cn_CN": "刺激火花",
     "ru_RU": "Заряжающая искра"
   },
@@ -1183,7 +1183,7 @@
     "fr_FR": "Écho explosif",
     "it_IT": "Eco Esplosiva",
     "pt_BR": "Eco Explosivo",
-    "ko_KO": "폭발의 메아리",
+    "ko_KR": "폭발의 메아리",
     "cn_CN": "爆炸回响",
     "ru_RU": "Эхо взрыва"
   },
@@ -1194,7 +1194,7 @@
     "fr_FR": "Impact anormal",
     "it_IT": "Impatto Anomalo",
     "pt_BR": "Impacto Anômalo",
-    "ko_KO": "변칙적 충돌",
+    "ko_KR": "변칙적 충돌",
     "cn_CN": "异常冲击",
     "ru_RU": "Аномальное воздействие"
   },
@@ -1205,7 +1205,7 @@
     "fr_FR": "Flammes d’empressement",
     "it_IT": "Fiamme dell'Alacrità",
     "pt_BR": "Chamas da Diligência",
-    "ko_KO": "기민한 불꽃",
+    "ko_KR": "기민한 불꽃",
     "cn_CN": "欣燃之焰",
     "ru_RU": "Пламя рвения"
   },
@@ -1216,7 +1216,7 @@
     "fr_FR": "Préchauffage",
     "it_IT": "Riscaldamento",
     "pt_BR": "Preaquecimento",
-    "ko_KO": "예열",
+    "ko_KR": "예열",
     "cn_CN": "预热",
     "ru_RU": "Прогрев"
   },
@@ -1227,7 +1227,7 @@
     "fr_FR": "Maître du feu",
     "it_IT": "Esperto in Esplosioni",
     "pt_BR": "Mestre dos Impactos",
-    "ko_KO": "작렬의 대가",
+    "ko_KR": "작렬의 대가",
     "cn_CN": "冲击大师",
     "ru_RU": "Взрыв искусности"
   },
@@ -1238,7 +1238,7 @@
     "fr_FR": "Sillon de braises",
     "it_IT": "Traccia di Braci",
     "pt_BR": "Rastro de Brasas",
-    "ko_KO": "잿불의 자취",
+    "ko_KR": "잿불의 자취",
     "cn_CN": "灰烬轨迹",
     "ru_RU": "Осколки глыбы"
   },
@@ -1249,7 +1249,7 @@
     "fr_FR": "Propagation enflammée",
     "it_IT": "Incenerimento Duplicativo",
     "pt_BR": "Incineração Duplicativa",
-    "ko_KO": "이중 소각",
+    "ko_KR": "이중 소각",
     "cn_CN": "复制焚化",
     "ru_RU": "Огненный дубль"
   },
@@ -1260,7 +1260,7 @@
     "fr_FR": "Esprit avivé",
     "it_IT": "Mente Infuocata",
     "pt_BR": "Mente Ígnea",
-    "ko_KO": "불꽃정신",
+    "ko_KR": "불꽃정신",
     "cn_CN": "烈火意志",
     "ru_RU": "Пылающий разум"
   },
@@ -1271,7 +1271,7 @@
     "fr_FR": "Glace compactée",
     "it_IT": "Ghiaccio Carico",
     "pt_BR": "Gelo Compactado",
-    "ko_KO": "빼곡한 얼음",
+    "ko_KR": "빼곡한 얼음",
     "cn_CN": "密集寒冰",
     "ru_RU": "Плотный лед"
   },
@@ -1282,7 +1282,7 @@
     "fr_FR": "Hiver sans fin",
     "it_IT": "Presa dell'Inverno",
     "pt_BR": "Alcance Invernal",
-    "ko_KO": "겨울의 손길",
+    "ko_KR": "겨울의 손길",
     "cn_CN": "寒冬蔓延",
     "ru_RU": "Прикосновение зимы"
   },
@@ -1293,7 +1293,7 @@
     "fr_FR": "Tunnel de glace",
     "it_IT": "Tunnel di Ghiaccio",
     "pt_BR": "Túnel de Gelo",
-    "ko_KO": "얼음 동굴",
+    "ko_KR": "얼음 동굴",
     "cn_CN": "寒冰隧道",
     "ru_RU": "Ледяной туннель"
   },
@@ -1304,7 +1304,7 @@
     "fr_FR": "Froid pénétrant",
     "it_IT": "Incubo Bianco",
     "pt_BR": "Tormento Gélido",
-    "ko_KO": "시야상실",
+    "ko_KR": "시야상실",
     "cn_CN": "霜降",
     "ru_RU": "Белая мгла"
   },
@@ -1315,7 +1315,7 @@
     "fr_FR": "Étreinte algide",
     "it_IT": "Presa Frigida",
     "pt_BR": "Aperto Gélido",
-    "ko_KO": "냉랭한 손아귀",
+    "ko_KR": "냉랭한 손아귀",
     "cn_CN": "霜寒之握",
     "ru_RU": "Ледяной захват"
   },
@@ -1326,7 +1326,7 @@
     "fr_FR": "Assaut glacial",
     "it_IT": "Assalto Glaciale",
     "pt_BR": "Ataque Glacial",
-    "ko_KO": "빙하 공격",
+    "ko_KR": "빙하 공격",
     "cn_CN": "冰河突击",
     "ru_RU": "Леденящий штурм"
   },
@@ -1337,7 +1337,7 @@
     "fr_FR": "Breuvage bouillant",
     "it_IT": "Miscuglio Bollente",
     "pt_BR": "Cerveja Fervente",
-    "ko_KO": "열탕주",
+    "ko_KR": "열탕주",
     "cn_CN": "滚烫美酒",
     "ru_RU": "Кипящий отвар"
   },
@@ -1348,7 +1348,7 @@
     "fr_FR": "Enseignements de Niuzao",
     "it_IT": "Addestramento di Niuzao",
     "pt_BR": "Treinamento de Niuzao",
-    "ko_KO": "니우짜오의 훈련",
+    "ko_KR": "니우짜오의 훈련",
     "cn_CN": "砮皂的试炼",
     "ru_RU": "Уроки Нюцзао"
   },
@@ -1359,7 +1359,7 @@
     "fr_FR": "Actions insaisissables",
     "it_IT": "Movimenti Inafferrabili",
     "pt_BR": "Movimentação Evasiva",
-    "ko_KO": "교묘한 발놀림",
+    "ko_KR": "교묘한 발놀림",
     "cn_CN": "醉踪步",
     "ru_RU": "Нокаутирующая верткость"
   },
@@ -1370,7 +1370,7 @@
     "fr_FR": "Point de pression",
     "it_IT": "Punto di Pressione",
     "pt_BR": "Ponto de Pressão",
-    "ko_KO": "혈점 포착",
+    "ko_KR": "혈점 포착",
     "cn_CN": "点穴踢",
     "ru_RU": "Уязвимая точка"
   },
@@ -1381,7 +1381,7 @@
     "fr_FR": "Poings de fer",
     "it_IT": "Pugni di Ferro",
     "pt_BR": "Punhos de Ferro",
-    "ko_KO": "철권",
+    "ko_KR": "철권",
     "cn_CN": "钢铁之拳",
     "ru_RU": "Железные кулаки"
   },
@@ -1392,7 +1392,7 @@
     "fr_FR": "Technique du lever de soleil",
     "it_IT": "Tecnica dell'Alba",
     "pt_BR": "Técnica do Sol Nascente",
-    "ko_KO": "해오름 비기",
+    "ko_KR": "해오름 비기",
     "cn_CN": "旭日功",
     "ru_RU": "Техника грядущего восхода"
   },
@@ -1403,7 +1403,7 @@
     "fr_FR": "Coup de pied circulaire fulgurant",
     "it_IT": "Calcio Rotante Rapido",
     "pt_BR": "Chute Giratório Veloz",
-    "ko_KO": "날랜 돌려차기",
+    "ko_KR": "날랜 돌려차기",
     "cn_CN": "神龙摆尾",
     "ru_RU": "Быстрый удар с разворота"
   },
@@ -1414,7 +1414,7 @@
     "fr_FR": "Frappes méridiennes",
     "it_IT": "Assalti Meridiani",
     "pt_BR": "Ataques Meridianos",
-    "ko_KO": "정점의 일격",
+    "ko_KR": "정점의 일격",
     "cn_CN": "精湛拳法",
     "ru_RU": "Удары зенита"
   },
@@ -1425,7 +1425,7 @@
     "fr_FR": "Frappes de la paume",
     "it_IT": "Colpo di Palmo Aperto",
     "pt_BR": "Golpe de Palma Aberta",
-    "ko_KO": "손바닥 강타",
+    "ko_KR": "손바닥 강타",
     "cn_CN": "开阖掌法",
     "ru_RU": "Удары ладонями"
   },
@@ -1436,7 +1436,7 @@
     "fr_FR": "Puissance du vengeur",
     "it_IT": "Vigore del Vendicatore",
     "pt_BR": "Poder do Vingador",
-    "ko_KO": "응징자의 힘",
+    "ko_KR": "응징자의 힘",
     "cn_CN": "复仇者之力",
     "ru_RU": "Мощь карателя"
   },
@@ -1447,7 +1447,7 @@
     "fr_FR": "Flammes vertueuses",
     "it_IT": "Fiamme Virtuose",
     "pt_BR": "Chamas Íntegras",
-    "ko_KO": "정의의 불길",
+    "ko_KR": "정의의 불길",
     "cn_CN": "正义烈焰",
     "ru_RU": "Пламя праведников"
   },
@@ -1458,7 +1458,7 @@
     "fr_FR": "Peine avec sursis",
     "it_IT": "Sentenza Rinviata",
     "pt_BR": "Sentença Preterida",
-    "ko_KO": "선고 유예",
+    "ko_KR": "선고 유예",
     "cn_CN": "缓刑",
     "ru_RU": "Отложенный приговор"
   },
@@ -1469,7 +1469,7 @@
     "fr_FR": "Lumière intérieure",
     "it_IT": "Luce Interiore",
     "pt_BR": "Luz Interior",
-    "ko_KO": "내면의 빛",
+    "ko_KR": "내면의 빛",
     "cn_CN": "内视之光",
     "ru_RU": "Внутренний свет"
   },
@@ -1480,7 +1480,7 @@
     "fr_FR": "Justice indomptable",
     "it_IT": "Giustizia Indomabile",
     "pt_BR": "Justiça Indomável",
-    "ko_KO": "불굴의 정의",
+    "ko_KR": "불굴의 정의",
     "cn_CN": "不屈审判",
     "ru_RU": "Неудержимое правосудие"
   },
@@ -1491,7 +1491,7 @@
     "fr_FR": "Poussée de bouclier",
     "it_IT": "Scudo Crescente",
     "pt_BR": "Escudo Pairante",
-    "ko_KO": "날아오르는 방패",
+    "ko_KR": "날아오르는 방패",
     "cn_CN": "飞舞之盾",
     "ru_RU": "Парящий щит"
   },
@@ -1502,7 +1502,7 @@
     "fr_FR": "Détermination de l’avant-garde",
     "it_IT": "Avanguardia Motivante",
     "pt_BR": "Vanguarda Inspiradora",
-    "ko_KO": "선봉대의 기상",
+    "ko_KR": "선봉대의 기상",
     "cn_CN": "激励勇士",
     "ru_RU": "Ободряющая стойкость"
   },
@@ -1513,7 +1513,7 @@
     "fr_FR": "Fanatisme",
     "it_IT": "Fanatismo",
     "pt_BR": "Fanatismo",
-    "ko_KO": "열광",
+    "ko_KR": "열광",
     "cn_CN": "狂热",
     "ru_RU": "Фанатизм"
   },
@@ -1524,7 +1524,7 @@
     "fr_FR": "Inquisiteur implacable",
     "it_IT": "Inquisitore Implacabile",
     "pt_BR": "Inquisidor Incansável",
-    "ko_KO": "냉혹한 심문관",
+    "ko_KR": "냉혹한 심문관",
     "cn_CN": "无情审讯",
     "ru_RU": "Непреклонный инквизитор"
   },
@@ -1535,7 +1535,7 @@
     "fr_FR": "Expurgation",
     "it_IT": "Censura",
     "pt_BR": "Expurgo",
-    "ko_KO": "정화",
+    "ko_KR": "정화",
     "cn_CN": "异端逐除",
     "ru_RU": "Огонь очищения"
   },
@@ -1546,7 +1546,7 @@
     "fr_FR": "Droit divin",
     "it_IT": "Diritto Divino",
     "pt_BR": "Direito Divino",
-    "ko_KO": "신권",
+    "ko_KR": "신권",
     "cn_CN": "神圣权利",
     "ru_RU": "Божественное право"
   },
@@ -1557,7 +1557,7 @@
     "fr_FR": "Flamme sacrée",
     "it_IT": "Fiamma Sacra",
     "pt_BR": "Chama Sagrada",
-    "ko_KO": "성스러운 불길",
+    "ko_KR": "성스러운 불길",
     "cn_CN": "神圣之焰",
     "ru_RU": "Священное пламя"
   },
@@ -1568,7 +1568,7 @@
     "fr_FR": "Dialogue brûlant",
     "it_IT": "Dialogo Rovente",
     "pt_BR": "Diálogo Calcinante",
-    "ko_KO": "불타는 대화",
+    "ko_KR": "불타는 대화",
     "cn_CN": "灼烧之言",
     "ru_RU": "Иссушающая речь"
   },
@@ -1579,7 +1579,7 @@
     "fr_FR": "Moissonneur de pensées",
     "it_IT": "Raccoglitore di Pensieri",
     "pt_BR": "Ceifador de Pensamentos",
-    "ko_KO": "정신 수확자",
+    "ko_KR": "정신 수확자",
     "cn_CN": "智慧收割者",
     "ru_RU": "Пожинатель мыслей"
   },
@@ -1590,7 +1590,7 @@
     "fr_FR": "Murmures des Damnés",
     "it_IT": "Sussurri dei Dannati",
     "pt_BR": "Sussurros dos Malditos",
-    "ko_KO": "저주받은 자의 속삭임",
+    "ko_KR": "저주받은 자의 속삭임",
     "cn_CN": "被诅咒者的低语",
     "ru_RU": "Шепот проклятых"
   },
@@ -1601,7 +1601,7 @@
     "fr_FR": "Apparitions malveillantes",
     "it_IT": "Apparizioni Adirate",
     "pt_BR": "Aparições Detestáveis",
-    "ko_KO": "악의에 찬 원혼",
+    "ko_KR": "악의에 찬 원혼",
     "cn_CN": "怨恨的魂影",
     "ru_RU": "Злобные призраки"
   },
@@ -1612,7 +1612,7 @@
     "fr_FR": "Affres de l’agonie",
     "it_IT": "Spasmi di Morte",
     "pt_BR": "Espasmos de Morte",
-    "ko_KO": "단말마",
+    "ko_KR": "단말마",
     "cn_CN": "死亡挣扎",
     "ru_RU": "Предсмертные муки"
   },
@@ -1623,7 +1623,7 @@
     "fr_FR": "Chœur dément",
     "it_IT": "Coro della Follia",
     "pt_BR": "Coro da Insanidade",
-    "ko_KO": "광기의 성가",
+    "ko_KR": "광기의 성가",
     "cn_CN": "狂乱合唱",
     "ru_RU": "Хор безумия"
   },
@@ -1634,7 +1634,7 @@
     "fr_FR": "Lames affûtées",
     "it_IT": "Lame Affilate",
     "pt_BR": "Lâminas Afiadas",
-    "ko_KO": "날카로운 날",
+    "ko_KR": "날카로운 날",
     "cn_CN": "尖锐利刃",
     "ru_RU": "Отточенные клинки"
   },
@@ -1645,7 +1645,7 @@
     "fr_FR": "Double dose",
     "it_IT": "Doppia Dose",
     "pt_BR": "Dose Dupla",
-    "ko_KO": "이중 중독",
+    "ko_KR": "이중 중독",
     "cn_CN": "双倍剂量",
     "ru_RU": "Двойная доза"
   },
@@ -1656,7 +1656,7 @@
     "fr_FR": "Tourner la lame",
     "it_IT": "Distorsione del Coltello",
     "pt_BR": "Torcer a Faca",
-    "ko_KO": "뒤틀리는 비수",
+    "ko_KR": "뒤틀리는 비수",
     "cn_CN": "利刃扭转",
     "ru_RU": "Поворот ножа"
   },
@@ -1667,7 +1667,7 @@
     "fr_FR": "Fil empoisonné",
     "it_IT": "Filo Avvelenato",
     "pt_BR": "Fio Envenenado",
-    "ko_KO": "독 바른 철사",
+    "ko_KR": "독 바른 철사",
     "cn_CN": "淬毒之线",
     "ru_RU": "Отравленный шнур"
   },
@@ -1678,7 +1678,7 @@
     "fr_FR": "Odeur du sang",
     "it_IT": "Odore del Sangue",
     "pt_BR": "Cheiro de Sangue",
-    "ko_KO": "피의 향기",
+    "ko_KR": "피의 향기",
     "cn_CN": "血之气息",
     "ru_RU": "Запах крови"
   },
@@ -1689,7 +1689,7 @@
     "fr_FR": "Éventail de lames",
     "it_IT": "Raffica di Lame",
     "pt_BR": "Leque de Lâminas",
-    "ko_KO": "칼날 뿌리기",
+    "ko_KR": "칼날 뿌리기",
     "cn_CN": "刀刃散射",
     "ru_RU": "Веер кинжалов"
   },
@@ -1700,7 +1700,7 @@
     "fr_FR": "Asphyxie sournoise",
     "it_IT": "Soffocamento Silenzioso",
     "pt_BR": "Sufocação Oculta",
-    "ko_KO": "장막 속의 질식",
+    "ko_KR": "장막 속의 질식",
     "cn_CN": "暗影窒息",
     "ru_RU": "Внезапное удушье"
   },
@@ -1711,7 +1711,7 @@
     "fr_FR": "Tir fatal",
     "it_IT": "Tiro Letale",
     "pt_BR": "Disparo Letal",
-    "ko_KO": "필살탄",
+    "ko_KR": "필살탄",
     "cn_CN": "神射手",
     "ru_RU": "Смертельный выстрел"
   },
@@ -1722,7 +1722,7 @@
     "fr_FR": "Tempête d’acier",
     "it_IT": "Tempesta d'Acciaio",
     "pt_BR": "Tempestade de Aço",
-    "ko_KO": "폭풍 강철",
+    "ko_KR": "폭풍 강철",
     "cn_CN": "钢铁风暴",
     "ru_RU": "Шквал стали"
   },
@@ -1733,7 +1733,7 @@
     "fr_FR": "Yeux de serpent",
     "it_IT": "Doppio Uno",
     "pt_BR": "Olhos de Cobra",
-    "ko_KO": "뱀의 눈",
+    "ko_KR": "뱀의 눈",
     "cn_CN": "蛇眼",
     "ru_RU": "Глаза змеи"
   },
@@ -1744,7 +1744,7 @@
     "fr_FR": "Incursion expéditive",
     "it_IT": "Incursione del Brigante",
     "pt_BR": "Ataque Relâmpago do Salteador",
-    "ko_KO": "약탈자의 대공세",
+    "ko_KR": "약탈자의 대공세",
     "cn_CN": "狂徒闪击",
     "ru_RU": "Бандитский блиц"
   },
@@ -1755,7 +1755,7 @@
     "fr_FR": "Paradis perdu",
     "it_IT": "Paradiso Perduto",
     "pt_BR": "Paraíso Perdido",
-    "ko_KO": "실낙원",
+    "ko_KR": "실낙원",
     "cn_CN": "祸兮福兮",
     "ru_RU": "Потерянный рай"
   },
@@ -1766,7 +1766,7 @@
     "fr_FR": "Botte secrète",
     "it_IT": "Asso nella Manica",
     "pt_BR": "Ás na Manga",
-    "ko_KO": "비장의 일격",
+    "ko_KR": "비장의 일격",
     "cn_CN": "袖里乾坤",
     "ru_RU": "Туз в рукаве"
   },
@@ -1777,7 +1777,7 @@
     "fr_FR": "Vengeance de la nuit",
     "it_IT": "Vendetta della Notte",
     "pt_BR": "Vingança Soturna",
-    "ko_KO": "밤의 복수",
+    "ko_KR": "밤의 복수",
     "cn_CN": "夜之复仇",
     "ru_RU": "Возмездие ночи"
   },
@@ -1788,7 +1788,7 @@
     "fr_FR": "Lame des ombres",
     "it_IT": "Lame nell'Ombra",
     "pt_BR": "Lâmina nas Sombras",
-    "ko_KO": "그림자 속 칼날",
+    "ko_KR": "그림자 속 칼날",
     "cn_CN": "影中利刃",
     "ru_RU": "Клинок во тьме"
   },
@@ -1799,7 +1799,7 @@
     "fr_FR": "Perforation",
     "it_IT": "Perforazione",
     "pt_BR": "Perfurar",
-    "ko_KO": "관통 급습",
+    "ko_KR": "관통 급습",
     "cn_CN": "洞穿",
     "ru_RU": "Пробивание"
   },
@@ -1810,7 +1810,7 @@
     "fr_FR": "Prélude à la danse",
     "it_IT": "Prima Danza",
     "pt_BR": "Primeira Dança",
-    "ko_KO": "첫 번째 춤",
+    "ko_KR": "첫 번째 춤",
     "cn_CN": "第一支舞",
     "ru_RU": "Первый танец"
   },
@@ -1821,7 +1821,7 @@
     "fr_FR": "Fatalité inexorable",
     "it_IT": "Inevitabilità",
     "pt_BR": "Inevitabilidade",
-    "ko_KO": "필연",
+    "ko_KR": "필연",
     "cn_CN": "命中注定",
     "ru_RU": "Неизбежность"
   },
@@ -1832,7 +1832,7 @@
     "fr_FR": "Horion de lave",
     "it_IT": "Folgore di Lava",
     "pt_BR": "Choque de Lava",
-    "ko_KO": "용암 충격",
+    "ko_KR": "용암 충격",
     "cn_CN": "熔岩震击",
     "ru_RU": "Лавовый шок"
   },
@@ -1843,7 +1843,7 @@
     "fr_FR": "Écho des élémentaires",
     "it_IT": "Eco degli Elementali",
     "pt_BR": "Eco dos Elementais",
-    "ko_KO": "정령의 메아리",
+    "ko_KR": "정령의 메아리",
     "cn_CN": "元素回响",
     "ru_RU": "Эхо элементаля"
   },
@@ -1854,7 +1854,7 @@
     "fr_FR": "Résonance ancestrale",
     "it_IT": "Risonanza Ancestrale",
     "pt_BR": "Ressonância Ancestral",
-    "ko_KO": "고대의 공명",
+    "ko_KR": "고대의 공명",
     "cn_CN": "先祖共鸣",
     "ru_RU": "Отголосок предков"
   },
@@ -1865,7 +1865,7 @@
     "fr_FR": "Choc synaptique",
     "it_IT": "Folgore delle Sinapsi",
     "pt_BR": "Choque Sináptico",
-    "ko_KO": "신경전달 충격",
+    "ko_KR": "신경전달 충격",
     "cn_CN": "神经电激",
     "ru_RU": "Подзарядка синапсов"
   },
@@ -1876,7 +1876,7 @@
     "fr_FR": "Harmonie naturelle",
     "it_IT": "Armonia Naturale",
     "pt_BR": "Harmonia Natural",
-    "ko_KO": "자연 친화",
+    "ko_KR": "자연 친화",
     "cn_CN": "自然和谐",
     "ru_RU": "Гармония стихий"
   },
@@ -1887,7 +1887,7 @@
     "fr_FR": "Tremblements grondants",
     "it_IT": "Tremori Rombanti",
     "pt_BR": "Tremores Estrondosos",
-    "ko_KO": "흔들리는 진동",
+    "ko_KR": "흔들리는 진동",
     "cn_CN": "撼地余震",
     "ru_RU": "Громыхающие толчки"
   },
@@ -1898,7 +1898,7 @@
     "fr_FR": "Potentiel igné",
     "it_IT": "Potenziale Igneo",
     "pt_BR": "Potencial Ígneo",
-    "ko_KO": "화성암의 잠재력",
+    "ko_KR": "화성암의 잠재력",
     "cn_CN": "火岩潜能",
     "ru_RU": "Горючий потенциал"
   },
@@ -1909,7 +1909,7 @@
     "fr_FR": "Amorce primordiale",
     "it_IT": "Innesco Primario",
     "pt_BR": "Detonador Primevo",
-    "ko_KO": "원시적 기본기",
+    "ko_KR": "원시적 기본기",
     "cn_CN": "原始知识",
     "ru_RU": "Дикий запал"
   },
@@ -1920,7 +1920,7 @@
     "fr_FR": "Force de la Terre",
     "it_IT": "Forza della Terra",
     "pt_BR": "Força da Terra",
-    "ko_KO": "대지력",
+    "ko_KR": "대지력",
     "cn_CN": "大地之力",
     "ru_RU": "Сила земли"
   },
@@ -1931,7 +1931,7 @@
     "fr_FR": "Conduit de foudre",
     "it_IT": "Elettroconduzione",
     "pt_BR": "Conduto de Raio",
-    "ko_KO": "번개 도관",
+    "ko_KR": "번개 도관",
     "cn_CN": "雷电导管",
     "ru_RU": "Проводник молний"
   },
@@ -1942,7 +1942,7 @@
     "fr_FR": "Tempête fracassante",
     "it_IT": "Tempesta Torbida",
     "pt_BR": "Tempestade Turbulenta",
-    "ko_KO": "미쳐 날뛰는 폭풍",
+    "ko_KR": "미쳐 날뛰는 폭풍",
     "cn_CN": "翻滚风暴",
     "ru_RU": "Бурлящая буря"
   },
@@ -1953,7 +1953,7 @@
     "fr_FR": "Illumination insupportable",
     "it_IT": "Acume Devastante",
     "pt_BR": "Lucidez Lancinante",
-    "ko_KO": "파멸의 광휘",
+    "ko_KR": "파멸의 광휘",
     "cn_CN": "毁灭之智",
     "ru_RU": "Разрушительная гениальность"
   },
@@ -1964,7 +1964,7 @@
     "fr_FR": "Trépas inévitable",
     "it_IT": "Disfatta Inevitabile",
     "pt_BR": "Óbito Inevitável",
-    "ko_KO": "피할 수 없는 죽음",
+    "ko_KR": "피할 수 없는 죽음",
     "cn_CN": "大难临头",
     "ru_RU": "Неизбежная расплата"
   },
@@ -1975,7 +1975,7 @@
     "fr_FR": "Calamité en cascade",
     "it_IT": "Calamità a Cascata",
     "pt_BR": "Calamidade Cascateante",
-    "ko_KO": "쏟아지는 재앙",
+    "ko_KR": "쏟아지는 재앙",
     "cn_CN": "灾难瀑流",
     "ru_RU": "Беда не приходит одна"
   },
@@ -1986,7 +1986,7 @@
     "fr_FR": "Mortelle floraison",
     "it_IT": "Fiore Mortale",
     "pt_BR": "Florescer da Morte",
-    "ko_KO": "죽음의 꽃",
+    "ko_KR": "죽음의 꽃",
     "cn_CN": "死亡之花",
     "ru_RU": "Бутон смерти"
   },
@@ -1997,7 +1997,7 @@
     "fr_FR": "Soubresaut fébrile",
     "it_IT": "Inizio Improvviso",
     "pt_BR": "Início Súbito",
-    "ko_KO": "급성 발병",
+    "ko_KR": "급성 발병",
     "cn_CN": "钻心剧痛",
     "ru_RU": "Внезапный приступ"
   },
@@ -2008,7 +2008,7 @@
     "fr_FR": "Appel effroyable",
     "it_IT": "Richiamo Truce",
     "pt_BR": "Chamado Pavoroso",
-    "ko_KO": "섬뜩한 부름",
+    "ko_KR": "섬뜩한 부름",
     "cn_CN": "恐惧召唤",
     "ru_RU": "Пугающий призыв"
   },
@@ -2019,7 +2019,7 @@
     "fr_FR": "Morsure d’ombre",
     "it_IT": "Morso d'Ombra",
     "pt_BR": "Mordida da Sombra",
-    "ko_KO": "어둠의 이빨",
+    "ko_KR": "어둠의 이빨",
     "cn_CN": "暗影之咬",
     "ru_RU": "Укус тени"
   },
@@ -2030,7 +2030,7 @@
     "fr_FR": "Brûlure ombreuse",
     "it_IT": "Fiammata Ombrosa",
     "pt_BR": "Flama Umbrática",
-    "ko_KO": "그림자 불꽃",
+    "ko_KR": "그림자 불꽃",
     "cn_CN": "暗燃之焰",
     "ru_RU": "Темный ожог"
   },
@@ -2041,7 +2041,7 @@
     "fr_FR": "Potentiel explosif",
     "it_IT": "Potenziale Esplosivo",
     "pt_BR": "Potencial Explosivo",
-    "ko_KO": "잠재력 폭발",
+    "ko_KR": "잠재력 폭발",
     "cn_CN": "爆破潜能",
     "ru_RU": "Имплозивный потенциал"
   },
@@ -2052,7 +2052,7 @@
     "fr_FR": "Écorchure",
     "it_IT": "Escoriazione",
     "pt_BR": "Escoriar",
-    "ko_KO": "피부 벗기기",
+    "ko_KR": "피부 벗기기",
     "cn_CN": "苛责",
     "ru_RU": "Изуверство"
   },
@@ -2063,7 +2063,7 @@
     "fr_FR": "Météore démoniaque",
     "it_IT": "Meteora Demoniaca",
     "pt_BR": "Meteoro Demoníaco",
-    "ko_KO": "악마의 유성",
+    "ko_KR": "악마의 유성",
     "cn_CN": "恶魔流星",
     "ru_RU": "Демонический метеорит"
   },
@@ -2074,7 +2074,7 @@
     "fr_FR": "Savoir interdit",
     "it_IT": "Conoscenza Proibita",
     "pt_BR": "Conhecimento Proibido",
-    "ko_KO": "금단의 지식",
+    "ko_KR": "금단의 지식",
     "cn_CN": "禁断知识",
     "ru_RU": "Запретное знание"
   },
@@ -2085,7 +2085,7 @@
     "fr_FR": "Commandant suprême",
     "it_IT": "Comandante Supremo",
     "pt_BR": "Comandante Supremo",
-    "ko_KO": "최고 사령관",
+    "ko_KR": "최고 사령관",
     "cn_CN": "最高指挥官",
     "ru_RU": "Владыка демонов"
   },
@@ -2096,7 +2096,7 @@
     "fr_FR": "Combustion accélérée",
     "it_IT": "Accelerante",
     "pt_BR": "Catalisador",
-    "ko_KO": "인화 촉진",
+    "ko_KR": "인화 촉진",
     "cn_CN": "催化之焰",
     "ru_RU": "Ускоренное разрушение"
   },
@@ -2107,7 +2107,7 @@
     "fr_FR": "Poudrière",
     "it_IT": "Punto di Rottura",
     "pt_BR": "Ponto de Fulgor",
-    "ko_KO": "발화점",
+    "ko_KR": "발화점",
     "cn_CN": "闪点",
     "ru_RU": "Точка возгорания"
   },
@@ -2118,7 +2118,7 @@
     "fr_FR": "Chaos absolu",
     "it_IT": "Caos Dirompente",
     "pt_BR": "Caos Estrondoso",
-    "ko_KO": "몰아치는 혼돈",
+    "ko_KR": "몰아치는 혼돈",
     "cn_CN": "粉碎混沌",
     "ru_RU": "Вихрь Хаоса"
   },
@@ -2129,7 +2129,7 @@
     "fr_FR": "Tumulte retentissant",
     "it_IT": "Rovina Graduale",
     "pt_BR": "Devastação Contínua",
-    "ko_KO": "격정의 대혼란",
+    "ko_KR": "격정의 대혼란",
     "cn_CN": "翻滚浩劫",
     "ru_RU": "Бурлящий хаос"
   },
@@ -2140,7 +2140,7 @@
     "fr_FR": "Enfer chaotique",
     "it_IT": "Inferno Caotico",
     "pt_BR": "Inferno Caótico",
-    "ko_KO": "혼돈의 불지옥",
+    "ko_KR": "혼돈의 불지옥",
     "cn_CN": "混乱狱火",
     "ru_RU": "Хаотичное испепеление"
   },
@@ -2151,7 +2151,7 @@
     "fr_FR": "Fusée détonante",
     "it_IT": "Bengala Detonante",
     "pt_BR": "Clarão Irruptivo",
-    "ko_KO": "폭발하는 섬광",
+    "ko_KR": "폭발하는 섬광",
     "cn_CN": "爆发耀斑",
     "ru_RU": "Взрыв и вспышка"
   },
@@ -2162,7 +2162,7 @@
     "fr_FR": "Précision du bourreau",
     "it_IT": "Precisione dell'Esecutore",
     "pt_BR": "Precisão do Carrasco",
-    "ko_KO": "집행자의 정밀함",
+    "ko_KR": "집행자의 정밀함",
     "cn_CN": "刽子手的精准",
     "ru_RU": "Точность палача"
   },
@@ -2173,7 +2173,7 @@
     "fr_FR": "Tempête grandissante",
     "it_IT": "Tempesta Incombente",
     "pt_BR": "Tempestade Iminente",
-    "ko_KO": "휘몰아치는 폭풍",
+    "ko_KR": "휘몰아치는 폭풍",
     "cn_CN": "聚焦风暴",
     "ru_RU": "Предвестие бури"
   },
@@ -2184,7 +2184,7 @@
     "fr_FR": "Epreuve de puissance",
     "it_IT": "Prova del Vigore",
     "pt_BR": "Prova do Poder",
-    "ko_KO": "힘의 시험",
+    "ko_KR": "힘의 시험",
     "cn_CN": "力量的考验",
     "ru_RU": "Испытание силы"
   },
@@ -2195,7 +2195,7 @@
     "fr_FR": "Onde sismique",
     "it_IT": "Onda Sismica",
     "pt_BR": "Onda Sísmica",
-    "ko_KO": "지진파",
+    "ko_KR": "지진파",
     "cn_CN": "地震波",
     "ru_RU": "Сейсмическая волна"
   },
@@ -2206,7 +2206,7 @@
     "fr_FR": "Assaut écrasant",
     "it_IT": "Assalto Frantumante",
     "pt_BR": "Ataque Esmagador",
-    "ko_KO": "맹공",
+    "ko_KR": "맹공",
     "cn_CN": "碾压突袭",
     "ru_RU": "Сокрушительный штурм"
   },
@@ -2217,7 +2217,7 @@
     "fr_FR": "Seigneur de guerre",
     "it_IT": "Signore della Guerra",
     "pt_BR": "Senhor da Guerra",
-    "ko_KO": "전쟁의 군주",
+    "ko_KR": "전쟁의 군주",
     "cn_CN": "战争之王",
     "ru_RU": "Владыка войны"
   },
@@ -2228,7 +2228,7 @@
     "fr_FR": "Piétiner les faibles",
     "it_IT": "Calpestamento dei Deboli",
     "pt_BR": "Massacrar os Fracos",
-    "ko_KO": "약자 짓밟기",
+    "ko_KR": "약자 짓밟기",
     "cn_CN": "欺凌弱小",
     "ru_RU": "Растоптать слабых"
   },
@@ -2239,7 +2239,7 @@
     "fr_FR": "Ivresse du sang",
     "it_IT": "Furia Sanguinaria",
     "pt_BR": "Loucura de Sangue",
-    "ko_KO": "피열풍",
+    "ko_KR": "피열풍",
     "cn_CN": "血腥疯狂",
     "ru_RU": "Кровавое безумие"
   },
@@ -2250,7 +2250,7 @@
     "fr_FR": "Coups pulvérisants",
     "it_IT": "Colpi Polverizzanti",
     "pt_BR": "Golpes Pulverizadores",
-    "ko_KO": "파쇄의 강타",
+    "ko_KR": "파쇄의 강타",
     "cn_CN": "碾压打击",
     "ru_RU": "Сокрушительные удары"
   },
@@ -2261,7 +2261,7 @@
     "fr_FR": "Fureur infinie",
     "it_IT": "Furia Infinita",
     "pt_BR": "Fúria Infinita",
-    "ko_KO": "무한한 분노",
+    "ko_KR": "무한한 분노",
     "cn_CN": "无尽怒火",
     "ru_RU": "Бесконечная ярость"
   },
@@ -2272,7 +2272,7 @@
     "fr_FR": "Rage débordante",
     "it_IT": "Rabbia Ribollente",
     "pt_BR": "Raiva Fervente",
-    "ko_KO": "이글거리는 분노",
+    "ko_KR": "이글거리는 분노",
     "cn_CN": "怒气冲天",
     "ru_RU": "Кипящая ярость"
   },
@@ -2283,7 +2283,7 @@
     "fr_FR": "Déluge intrépide",
     "it_IT": "Raffica Avventata",
     "pt_BR": "Saraivada Audaciosa",
-    "ko_KO": "무모한 난동",
+    "ko_KR": "무모한 난동",
     "cn_CN": "鲁莽劈砍",
     "ru_RU": "Шквал гнева"
   },
@@ -2294,7 +2294,7 @@
     "fr_FR": "Choc assourdissant",
     "it_IT": "Schianto Assordante",
     "pt_BR": "Ribombo Ensurdecedor",
-    "ko_KO": "고막파열 강타",
+    "ko_KR": "고막파열 강타",
     "cn_CN": "雷音贯耳",
     "ru_RU": "Оглушительный раскат"
   },
@@ -2305,7 +2305,7 @@
     "fr_FR": "Blindage renforcé",
     "it_IT": "Placche Rinforzate",
     "pt_BR": "Revestimento Reforçado",
-    "ko_KO": "강화 장갑",
+    "ko_KR": "강화 장갑",
     "cn_CN": "坚不可破",
     "ru_RU": "Усиленные латы"
   },
@@ -2316,7 +2316,7 @@
     "fr_FR": "Résistance à l’épreuve",
     "it_IT": "Pronto all'Impatto",
     "pt_BR": "Preparar para o Impacto",
-    "ko_KO": "충격 대비",
+    "ko_KR": "충격 대비",
     "cn_CN": "抵御冲击",
     "ru_RU": "Блокировка удара"
   },
@@ -2327,7 +2327,7 @@
     "fr_FR": "Représailles cruelles",
     "it_IT": "Rappresaglia Spietata",
     "pt_BR": "Represália Impiedosa",
-    "ko_KO": "냉혹한 보복",
+    "ko_KR": "냉혹한 보복",
     "cn_CN": "无情报复",
     "ru_RU": "Жесткий реванш"
   },
@@ -2338,7 +2338,7 @@
     "fr_FR": "Forteresse inébranlable",
     "it_IT": "Fortezza di Ferro",
     "pt_BR": "Fortaleza de Ferro",
-    "ko_KO": "철옹성",
+    "ko_KR": "철옹성",
     "cn_CN": "钢铁要塞",
     "ru_RU": "Железная крепость"
   }
