@@ -361,226 +361,25 @@ __races = {
 }
 
 __race_translations = {
-    "draenei": {
-        "de_DE": "Draenei",
-        "en_US": "Draenei",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "德莱尼"
-    },
-    "dwarf": {
-        "de_DE": "Zwerg",
-        "en_US": "Dwarf",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "矮人"
-    },
-    "gnome": {
-        "de_DE": "Gnom",
-        "en_US": "Gnome",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "侏儒"
-    },
-    "human": {
-        "de_DE": "Mensch",
-        "en_US": "Human",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "人类"
-    },
-    "night_elf": {
-        "de_DE": "Nachtelf",
-        "en_US": "Night Elf",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "暗夜精灵"
-    },
-    "pandaren": {
-        "de_DE": "",
-        "en_US": "",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": ""
-    },
-    "worgen": {
-        "de_DE": "Worgen",
-        "en_US": "Worgen",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "狼人"
-    },
-    "void_elf": {
-        "de_DE": "Leerenelf",
-        "en_US": "Void Elf",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "虚空精灵"
-    },
-    "lightforged_draenei": {
-        "de_DE": "",
-        "en_US": "Lightforged Draenei",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "光铸德莱尼"
-    },
-    "dark_iron_dwarf": {
-        "de_DE": "",
-        "en_US": "Dark Iron Dwarf",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "黑铁矮人"
-    },
-    "blood_elf": {
-        "de_DE": "Blutelf",
-        "en_US": "Blood Elf",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "血精灵"
-    },
-    "goblin": {
-        "de_DE": "Goblin",
-        "en_US": "Goblin",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "地精"
-    },
-    "orc": {
-        "de_DE": "Ork",
-        "en_US": "Orc",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "兽人"
-    },
-    "pandaren": {
-        "de_DE": "Pandaren",
-        "en_US": "Pandaren",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "熊猫人"
-    },
-    "tauren": {
-        "de_DE": "Tauren",
-        "en_US": "Tauren",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "牛头人"
-    },
-    "troll": {
-        "de_DE": "Troll",
-        "en_US": "Troll",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "巨魔"
-    },
-    "undead": {
-        "de_DE": "Untote",
-        "en_US": "Undead",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "亡灵"
-    },
-    "nightborne": {
-        "de_DE": "Nachtgeborene",
-        "en_US": "Nightborne",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "夜之子"
-    },
-    "highmountain_tauren": {
-        "de_DE": "Hochbergtauren",
-        "en_US": "Highmountain Tauren",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "至高岭牛头人"
-    },
-    "maghar_orc": {
-        "de_DE": "Maghar Ork",
-        "en_US": "Maghar Orc",
-        "es_ES": "",
-        "fr_FR": "",
-        "it_IT": "",
-        "pt_BR": "",
-        "ru_RU": "",
-        "ko_KO": "",
-        "cn_CN": "玛格汉兽人"
-    }
+    "draenei": {'en_GB': 'Draenei', 'it_IT': 'Draenei', 'de_DE': 'Draenei', 'fr_FR': 'Draeneï', 'ru_RU': 'Дреней', 'es_ES': 'Draenei', 'ko_KR': '드레나이', 'cn_CN': '德莱尼'},
+    "dwarf": {'en_GB': 'Dwarf', 'it_IT': 'Nano', 'de_DE': 'Zwerg', 'fr_FR': 'Nain', 'ru_RU': 'Дворф', 'es_ES': 'Enano', 'ko_KR': '드워프', 'cn_CN': '矮人'},
+    "gnome": {'en_GB': 'Gnome', 'it_IT': 'Gnomo', 'de_DE': 'Gnom', 'fr_FR': 'Gnome', 'ru_RU': 'Гном', 'es_ES': 'Gnomo', 'ko_KR': '노움', 'cn_CN': '侏儒'},
+    "human": {'en_GB': 'Human', 'it_IT': 'Umano', 'de_DE': 'Mensch', 'fr_FR': 'Humain', 'ru_RU': 'Человек', 'es_ES': 'Humano', 'ko_KR': '인간', 'cn_CN': '人类'},
+    "night_elf": {'en_GB': 'Night Elf', 'it_IT': 'Elfo della Notte', 'de_DE': 'Nachtelf', 'fr_FR': 'Elfe de la nuit', 'ru_RU': 'Ночной эльф', 'es_ES': 'Elfo de la noche', 'ko_KR': '나이트 엘프', 'cn_CN': '暗夜精灵'},
+    "worgen": {'en_GB': 'Worgen', 'it_IT': 'Worgen', 'de_DE': 'Worgen', 'fr_FR': 'Worgen', 'ru_RU': 'Ворген', 'es_ES': 'Huargen', 'ko_KR': '늑대인간', 'cn_CN': '狼人'},
+    "void_elf": {'en_GB': 'Void Elf', 'it_IT': 'Elfo del Vuoto', 'de_DE': 'Leerenelf', 'fr_FR': 'Elfe du Vide', 'ru_RU': 'Эльф Бездны', 'es_ES': 'Elfo del Vacío', 'ko_KR': '공허 엘프', 'cn_CN': '虚空精灵'},
+    "lightforged_draenei": {'en_GB': 'Lightforged Draenei', 'it_IT': 'Draenei Forgialuce', 'de_DE': 'Lichtgeschmiedeter Draenei', 'fr_FR': 'Draeneï sancteforge', 'ru_RU': 'Озаренный дреней', 'es_ES': 'Draenei forjado por la Luz', 'ko_KR': '빛벼림 드레나이', 'cn_CN': '光铸德莱尼'},
+    "dark_iron_dwarf": {'en_GB': 'Dark Iron Dwarf', 'it_IT': 'Nano Ferroscuro', 'de_DE': 'Dunkeleisenzwerg', 'fr_FR': 'Nain sombrefer', 'ru_RU': 'Дворф из клана Черного Железа', 'es_ES': 'Enano Hierro Negro', 'ko_KR': '검은무쇠 드워프', 'cn_CN': '黑铁矮人'},
+    "blood_elf": {'en_GB': 'Blood Elf', 'it_IT': 'Elfo del Sangue', 'de_DE': 'Blutelf', 'fr_FR': 'Elfe de sang', 'ru_RU': 'Эльф крови', 'es_ES': 'Elfo de sangre', 'ko_KR': '블러드 엘프', 'cn_CN': '血精灵'},
+    "goblin": {'en_GB': 'Goblin', 'it_IT': 'Goblin', 'de_DE': 'Goblin', 'fr_FR': 'Gobelin', 'ru_RU': 'Гоблин', 'es_ES': 'Goblin', 'ko_KR': '고블린', 'cn_CN': '地精'},
+    "orc": {'en_GB': 'Orc', 'it_IT': 'Orco', 'de_DE': 'Orc', 'fr_FR': 'Orc', 'ru_RU': 'Орк', 'es_ES': 'Orco', 'ko_KR': '오크', 'cn_CN': '兽人'},
+    "pandaren": {'en_GB': 'Pandaren', 'it_IT': 'Pandaren', 'de_DE': 'Pandaren', 'fr_FR': 'Pandaren', 'ru_RU': 'Пандарен', 'es_ES': 'Pandaren', 'ko_KR': '판다렌', 'cn_CN': '熊猫人'},
+    "tauren": {'en_GB': 'Tauren', 'it_IT': 'Tauren', 'de_DE': 'Tauren', 'fr_FR': 'Tauren', 'ru_RU': 'Таурен', 'es_ES': 'Tauren', 'ko_KR': '타우렌', 'cn_CN': '牛头人'},
+    "troll": {'en_GB': 'Troll', 'it_IT': 'Troll', 'de_DE': 'Troll', 'fr_FR': 'Troll', 'ru_RU': 'Тролль', 'es_ES': 'Trol', 'ko_KR': '트롤', 'cn_CN': '巨魔'},
+    "undead": {'en_GB': 'Undead', 'it_IT': 'Non Morto', 'de_DE': 'Untoter', 'fr_FR': 'Mort-vivant', 'ru_RU': 'Нежить', 'es_ES': 'No-muerto', 'ko_KR': '언데드', 'cn_CN': '亡灵'},
+    "nightborne": {'en_GB': 'Nightborne', 'it_IT': 'Nobile Oscuro', 'de_DE': 'Nachtgeborener', 'fr_FR': 'Sacrenuit', 'ru_RU': 'Ночнорожденный', 'es_ES': 'Nocheterna', 'ko_KR': '나이트본', 'cn_CN': '夜之子'},
+    "highmountain_tauren": {'en_GB': 'Highmountain Tauren', 'it_IT': 'Tauren di Alto Monte', 'de_DE': 'Hochbergtauren', 'fr_FR': 'Tauren de Haut-Roc', 'ru_RU': 'Таурен Крутогорья', 'es_ES': 'Tauren Monte Alto', 'ko_KR': '높은산 타우렌', 'cn_CN': '至高岭牛头人'},
+    "maghar_orc": {'en_GB': "Mag'har Orc", 'it_IT': "Orco Mag'har", 'de_DE': "Mag'har", 'fr_FR': 'Orc mag’har', 'ru_RU': "Маг'хар", 'es_ES': "Orco Mag'har", 'ko_KR': '마그하르 오크', 'cn_CN': '玛格汉兽人'}
 }
 
 # bfa data
