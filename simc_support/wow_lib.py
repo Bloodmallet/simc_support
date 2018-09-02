@@ -8,12 +8,12 @@ import json
 # these values are used throughout the code to determine itemlevel "borders" of items
 # usually used as a catch up mechanic, drops usually all items from previous content
 TRADER_TOKEN = 300
-WORLD_QUEST_ITEMLEVEL = 300
+WORLD_QUEST_ITEMLEVEL = 320
 # standard dungeon itemlevel (normal, max level dungeon)
 DUNGEON_ITEMLEVEL = 310
 # highest available itemlevel from m+ dungeons. weekly chest is NOT included here
 M_PLUS_ITEMLEVEL = 340
-TITANFORGE_CAP = 355  # currently highest itemlevel titanforging cap
+TITANFORGE_CAP = 410  # currently highest itemlevel titanforging cap
 EXPANSION_START_ITEMLEVEL = 280
 
 
@@ -665,6 +665,30 @@ __trinket_list = [
     Trinket(  # airdrop
         name="Dread Aspirant's Badge", item_id="162966", min_itemlevel=325, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
+    Trinket(  # warfront world boss
+        name="Lion's Grace", item_id="161472", min_itemlevel=370, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False
+    ),
+    Trinket(  # warfront world boss
+        name="Lion's Guile", item_id="161473", min_itemlevel=370, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False
+    ),
+    Trinket(  # warfront world boss
+        name="Lion's Strength", item_id="161474", min_itemlevel=370, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False
+    ),
+    Trinket(  # warfront world boss
+        name="Doom's Fury", item_id="161463", min_itemlevel=370, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False
+    ),
+    Trinket(  # warfront world boss
+        name="Doom's Hatred", item_id="161461", min_itemlevel=370, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False
+    ),
+    Trinket(  # warfront world boss
+        name="Doom's Wake", item_id="161462", min_itemlevel=370, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False
     ),
 
     # Trinket(
