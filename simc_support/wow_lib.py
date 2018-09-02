@@ -361,140 +361,294 @@ __races = {
 }
 
 __race_translations = {
-    "draenei": {'en_US': 'Draenei', 'it_IT': 'Draenei', 'de_DE': 'Draenei', 'fr_FR': 'Draeneï', 'ru_RU': 'Дреней', 'es_ES': 'Draenei', 'ko_KR': '드레나이', 'cn_CN': '德莱尼'},
-    "dwarf": {'en_US': 'Dwarf', 'it_IT': 'Nano', 'de_DE': 'Zwerg', 'fr_FR': 'Nain', 'ru_RU': 'Дворф', 'es_ES': 'Enano', 'ko_KR': '드워프', 'cn_CN': '矮人'},
-    "gnome": {'en_US': 'Gnome', 'it_IT': 'Gnomo', 'de_DE': 'Gnom', 'fr_FR': 'Gnome', 'ru_RU': 'Гном', 'es_ES': 'Gnomo', 'ko_KR': '노움', 'cn_CN': '侏儒'},
-    "human": {'en_US': 'Human', 'it_IT': 'Umano', 'de_DE': 'Mensch', 'fr_FR': 'Humain', 'ru_RU': 'Человек', 'es_ES': 'Humano', 'ko_KR': '인간', 'cn_CN': '人类'},
-    "night_elf": {'en_US': 'Night Elf', 'it_IT': 'Elfo della Notte', 'de_DE': 'Nachtelf', 'fr_FR': 'Elfe de la nuit', 'ru_RU': 'Ночной эльф', 'es_ES': 'Elfo de la noche', 'ko_KR': '나이트 엘프', 'cn_CN': '暗夜精灵'},
-    "worgen": {'en_US': 'Worgen', 'it_IT': 'Worgen', 'de_DE': 'Worgen', 'fr_FR': 'Worgen', 'ru_RU': 'Ворген', 'es_ES': 'Huargen', 'ko_KR': '늑대인간', 'cn_CN': '狼人'},
-    "void_elf": {'en_US': 'Void Elf', 'it_IT': 'Elfo del Vuoto', 'de_DE': 'Leerenelf', 'fr_FR': 'Elfe du Vide', 'ru_RU': 'Эльф Бездны', 'es_ES': 'Elfo del Vacío', 'ko_KR': '공허 엘프', 'cn_CN': '虚空精灵'},
-    "lightforged_draenei": {'en_US': 'Lightforged Draenei', 'it_IT': 'Draenei Forgialuce', 'de_DE': 'Lichtgeschmiedeter Draenei', 'fr_FR': 'Draeneï sancteforge', 'ru_RU': 'Озаренный дреней', 'es_ES': 'Draenei forjado por la Luz', 'ko_KR': '빛벼림 드레나이', 'cn_CN': '光铸德莱尼'},
-    "dark_iron_dwarf": {'en_US': 'Dark Iron Dwarf', 'it_IT': 'Nano Ferroscuro', 'de_DE': 'Dunkeleisenzwerg', 'fr_FR': 'Nain sombrefer', 'ru_RU': 'Дворф из клана Черного Железа', 'es_ES': 'Enano Hierro Negro', 'ko_KR': '검은무쇠 드워프', 'cn_CN': '黑铁矮人'},
-    "blood_elf": {'en_US': 'Blood Elf', 'it_IT': 'Elfo del Sangue', 'de_DE': 'Blutelf', 'fr_FR': 'Elfe de sang', 'ru_RU': 'Эльф крови', 'es_ES': 'Elfo de sangre', 'ko_KR': '블러드 엘프', 'cn_CN': '血精灵'},
-    "goblin": {'en_US': 'Goblin', 'it_IT': 'Goblin', 'de_DE': 'Goblin', 'fr_FR': 'Gobelin', 'ru_RU': 'Гоблин', 'es_ES': 'Goblin', 'ko_KR': '고블린', 'cn_CN': '地精'},
-    "orc": {'en_US': 'Orc', 'it_IT': 'Orco', 'de_DE': 'Orc', 'fr_FR': 'Orc', 'ru_RU': 'Орк', 'es_ES': 'Orco', 'ko_KR': '오크', 'cn_CN': '兽人'},
-    "pandaren": {'en_US': 'Pandaren', 'it_IT': 'Pandaren', 'de_DE': 'Pandaren', 'fr_FR': 'Pandaren', 'ru_RU': 'Пандарен', 'es_ES': 'Pandaren', 'ko_KR': '판다렌', 'cn_CN': '熊猫人'},
-    "tauren": {'en_US': 'Tauren', 'it_IT': 'Tauren', 'de_DE': 'Tauren', 'fr_FR': 'Tauren', 'ru_RU': 'Таурен', 'es_ES': 'Tauren', 'ko_KR': '타우렌', 'cn_CN': '牛头人'},
-    "troll": {'en_US': 'Troll', 'it_IT': 'Troll', 'de_DE': 'Troll', 'fr_FR': 'Troll', 'ru_RU': 'Тролль', 'es_ES': 'Trol', 'ko_KR': '트롤', 'cn_CN': '巨魔'},
-    "undead": {'en_US': 'Undead', 'it_IT': 'Non Morto', 'de_DE': 'Untoter', 'fr_FR': 'Mort-vivant', 'ru_RU': 'Нежить', 'es_ES': 'No-muerto', 'ko_KR': '언데드', 'cn_CN': '亡灵'},
-    "nightborne": {'en_US': 'Nightborne', 'it_IT': 'Nobile Oscuro', 'de_DE': 'Nachtgeborener', 'fr_FR': 'Sacrenuit', 'ru_RU': 'Ночнорожденный', 'es_ES': 'Nocheterna', 'ko_KR': '나이트본', 'cn_CN': '夜之子'},
-    "highmountain_tauren": {'en_US': 'Highmountain Tauren', 'it_IT': 'Tauren di Alto Monte', 'de_DE': 'Hochbergtauren', 'fr_FR': 'Tauren de Haut-Roc', 'ru_RU': 'Таурен Крутогорья', 'es_ES': 'Tauren Monte Alto', 'ko_KR': '높은산 타우렌', 'cn_CN': '至高岭牛头人'},
-    "maghar_orc": {'en_US': "Mag'har Orc", 'it_IT': "Orco Mag'har", 'de_DE': "Mag'har", 'fr_FR': 'Orc mag’har', 'ru_RU': "Маг'хар", 'es_ES': "Orco Mag'har", 'ko_KR': '마그하르 오크', 'cn_CN': '玛格汉兽人'}
+    "draenei": {
+        'en_US': 'Draenei',
+        'it_IT': 'Draenei',
+        'de_DE': 'Draenei',
+        'fr_FR': 'Draeneï',
+        'ru_RU': 'Дреней',
+        'es_ES': 'Draenei',
+        'ko_KR': '드레나이',
+        'cn_CN': '德莱尼'
+    },
+    "dwarf": {
+        'en_US': 'Dwarf',
+        'it_IT': 'Nano',
+        'de_DE': 'Zwerg',
+        'fr_FR': 'Nain',
+        'ru_RU': 'Дворф',
+        'es_ES': 'Enano',
+        'ko_KR': '드워프',
+        'cn_CN': '矮人'
+    },
+    "gnome": {
+        'en_US': 'Gnome',
+        'it_IT': 'Gnomo',
+        'de_DE': 'Gnom',
+        'fr_FR': 'Gnome',
+        'ru_RU': 'Гном',
+        'es_ES': 'Gnomo',
+        'ko_KR': '노움',
+        'cn_CN': '侏儒'
+    },
+    "human": {
+        'en_US': 'Human',
+        'it_IT': 'Umano',
+        'de_DE': 'Mensch',
+        'fr_FR': 'Humain',
+        'ru_RU': 'Человек',
+        'es_ES': 'Humano',
+        'ko_KR': '인간',
+        'cn_CN': '人类'
+    },
+    "night_elf": {
+        'en_US': 'Night Elf',
+        'it_IT': 'Elfo della Notte',
+        'de_DE': 'Nachtelf',
+        'fr_FR': 'Elfe de la nuit',
+        'ru_RU': 'Ночной эльф',
+        'es_ES': 'Elfo de la noche',
+        'ko_KR': '나이트 엘프',
+        'cn_CN': '暗夜精灵'
+    },
+    "worgen": {
+        'en_US': 'Worgen',
+        'it_IT': 'Worgen',
+        'de_DE': 'Worgen',
+        'fr_FR': 'Worgen',
+        'ru_RU': 'Ворген',
+        'es_ES': 'Huargen',
+        'ko_KR': '늑대인간',
+        'cn_CN': '狼人'
+    },
+    "void_elf": {
+        'en_US': 'Void Elf',
+        'it_IT': 'Elfo del Vuoto',
+        'de_DE': 'Leerenelf',
+        'fr_FR': 'Elfe du Vide',
+        'ru_RU': 'Эльф Бездны',
+        'es_ES': 'Elfo del Vacío',
+        'ko_KR': '공허 엘프',
+        'cn_CN': '虚空精灵'
+    },
+    "lightforged_draenei": {
+        'en_US': 'Lightforged Draenei',
+        'it_IT': 'Draenei Forgialuce',
+        'de_DE': 'Lichtgeschmiedeter Draenei',
+        'fr_FR': 'Draeneï sancteforge',
+        'ru_RU': 'Озаренный дреней',
+        'es_ES': 'Draenei forjado por la Luz',
+        'ko_KR': '빛벼림 드레나이',
+        'cn_CN': '光铸德莱尼'
+    },
+    "dark_iron_dwarf": {
+        'en_US': 'Dark Iron Dwarf',
+        'it_IT': 'Nano Ferroscuro',
+        'de_DE': 'Dunkeleisenzwerg',
+        'fr_FR': 'Nain sombrefer',
+        'ru_RU': 'Дворф из клана Черного Железа',
+        'es_ES': 'Enano Hierro Negro',
+        'ko_KR': '검은무쇠 드워프',
+        'cn_CN': '黑铁矮人'
+    },
+    "blood_elf": {
+        'en_US': 'Blood Elf',
+        'it_IT': 'Elfo del Sangue',
+        'de_DE': 'Blutelf',
+        'fr_FR': 'Elfe de sang',
+        'ru_RU': 'Эльф крови',
+        'es_ES': 'Elfo de sangre',
+        'ko_KR': '블러드 엘프',
+        'cn_CN': '血精灵'
+    },
+    "goblin": {
+        'en_US': 'Goblin',
+        'it_IT': 'Goblin',
+        'de_DE': 'Goblin',
+        'fr_FR': 'Gobelin',
+        'ru_RU': 'Гоблин',
+        'es_ES': 'Goblin',
+        'ko_KR': '고블린',
+        'cn_CN': '地精'
+    },
+    "orc": {
+        'en_US': 'Orc',
+        'it_IT': 'Orco',
+        'de_DE': 'Orc',
+        'fr_FR': 'Orc',
+        'ru_RU': 'Орк',
+        'es_ES': 'Orco',
+        'ko_KR': '오크',
+        'cn_CN': '兽人'
+    },
+    "pandaren": {
+        'en_US': 'Pandaren',
+        'it_IT': 'Pandaren',
+        'de_DE': 'Pandaren',
+        'fr_FR': 'Pandaren',
+        'ru_RU': 'Пандарен',
+        'es_ES': 'Pandaren',
+        'ko_KR': '판다렌',
+        'cn_CN': '熊猫人'
+    },
+    "tauren": {
+        'en_US': 'Tauren',
+        'it_IT': 'Tauren',
+        'de_DE': 'Tauren',
+        'fr_FR': 'Tauren',
+        'ru_RU': 'Таурен',
+        'es_ES': 'Tauren',
+        'ko_KR': '타우렌',
+        'cn_CN': '牛头人'
+    },
+    "troll": {
+        'en_US': 'Troll',
+        'it_IT': 'Troll',
+        'de_DE': 'Troll',
+        'fr_FR': 'Troll',
+        'ru_RU': 'Тролль',
+        'es_ES': 'Trol',
+        'ko_KR': '트롤',
+        'cn_CN': '巨魔'
+    },
+    "undead": {
+        'en_US': 'Undead',
+        'it_IT': 'Non Morto',
+        'de_DE': 'Untoter',
+        'fr_FR': 'Mort-vivant',
+        'ru_RU': 'Нежить',
+        'es_ES': 'No-muerto',
+        'ko_KR': '언데드',
+        'cn_CN': '亡灵'
+    },
+    "nightborne": {
+        'en_US': 'Nightborne',
+        'it_IT': 'Nobile Oscuro',
+        'de_DE': 'Nachtgeborener',
+        'fr_FR': 'Sacrenuit',
+        'ru_RU': 'Ночнорожденный',
+        'es_ES': 'Nocheterna',
+        'ko_KR': '나이트본',
+        'cn_CN': '夜之子'
+    },
+    "highmountain_tauren": {
+        'en_US': 'Highmountain Tauren',
+        'it_IT': 'Tauren di Alto Monte',
+        'de_DE': 'Hochbergtauren',
+        'fr_FR': 'Tauren de Haut-Roc',
+        'ru_RU': 'Таурен Крутогорья',
+        'es_ES': 'Tauren Monte Alto',
+        'ko_KR': '높은산 타우렌',
+        'cn_CN': '至高岭牛头人'
+    },
+    "maghar_orc": {
+        'en_US': "Mag'har Orc",
+        'it_IT': "Orco Mag'har",
+        'de_DE': "Mag'har",
+        'fr_FR': 'Orc mag’har',
+        'ru_RU': "Маг'хар",
+        'es_ES': "Orco Mag'har",
+        'ko_KR': '마그하르 오크',
+        'cn_CN': '玛格汉兽人'
+    }
 }
 
 # bfa data
 __trinket_list = [
     # dungeon trinkets
-    Trinket(
+    Trinket( # atal'dazar
         "My'das Talisman", "158319", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, True, False, False, False, False
     ),
-    Trinket(
+    Trinket( # atal'dazar
         "Rezan's Gleaming Eye", "158712", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, False, False, True, False, False
     ),
-    Trinket(
+    Trinket( # atal'dazar
         "Vessel of Skittering Shadows", "159610", DUNGEON_ITEMLEVEL,
         TITANFORGE_CAP, TRADER_TOKEN, False, True, False, False, False
     ),
-    Trinket(
+    Trinket( # freehold
         "Harlan's Loaded Dice", "155881", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, True, False, False, False, False
     ),
-    Trinket(
+    Trinket( # Kings' Rest
         "Lustrous Golden Plumage", "159617", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, True, False, False, False, False
     ),
-    Trinket(
+    Trinket( # Shrine of the Storm
         "Briny Barnacle", "159619", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, False, False, True, False, False
     ),
-    Trinket(
+    Trinket( # Shrine of the Storm
         "Galecaller's Boon", "159614", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, True, False, False, False, False
     ),
-    Trinket(
+    Trinket( # Shrine of the Storm
         "Conch of Dark Whispers", "159620", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, False, True, False, False, False
     ),
-    Trinket(
+    Trinket( # Siege of Boralus
         "Dead-Eye Spyglass", "159623", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, True, False, False, False, False
     ),
-    Trinket(
+    Trinket( # Siege of Boralus
         "Hadal's Nautilus", "159622", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, False, True, False, False, False
     ),
-    Trinket(
+    Trinket( # Temple of Sethraliss
         "Tiny Electromental in a Jar", "158374", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, True, False, False, False, False
     ),
-    Trinket(
+    Trinket( # Temple of Sethraliss
         "Merektha's Fang", "158367", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, False, False, True, False, False
     ),
-    Trinket(
+    Trinket( # The Motherlode
         "Razdunk's Big Red Button", "159611", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, False, False, True, False, False
     ),
-    Trinket(
+    Trinket( # The Motherlode
         "Azerokk's Resonating Heart", "159612", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, True, False, False, False, False
     ),
-    # The Underrot
-    Trinket(
+    Trinket( # The Underrot
         "Lingering Sporepods", "159626", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, True, False, True, False, False
     ),
-    Trinket(
+    Trinket( # The Underrot
         "Rotcrusted Voodoo Doll", "159624", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, False, True, False, False, False
     ),
-    Trinket(
+    Trinket( # The Underrot
         "Vial of Animated Blood", "159625", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, False, False, True, False, False
     ),
-    Trinket(
+    Trinket( # Tol Dagor
         "Jes' Howler", "159627", DUNGEON_ITEMLEVEL, TITANFORGE_CAP, TRADER_TOKEN,
         False, False, True, False, False
     ),
-    Trinket(
+    Trinket( # Tol Dagor
         "Ignition Mage's Fuse", "159615", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, False, True, False, False, False
     ),
-    Trinket(
+    Trinket( # Waycrest Manor
         "Lady Waycrest's Music Box", "159631", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, False, True, False, False, False
     ),
-    Trinket(
+    Trinket( # Waycrest Manor
         "Balefire Branch", "159630", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, False, True, False, False, False
     ),
-    Trinket(
-        "Gore-Crusted Butcher's Block", "159616", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, False, False, True, False, False
-    ),
-    Trinket(
-        "Cursed Captain's Charm", "161115", WORLD_QUEST_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, True, True, True, False, False
-    ),
-    Trinket(
+    # Trinket( # not obtainable
+    #     "Cursed Captain's Charm", "161115", 290, TITANFORGE_CAP,
+    #     TRADER_TOKEN, True, True, True, False, False
+    # ),
+    Trinket( # world boss
         "Azurethos' Singed Plumage", "161377", 355, TITANFORGE_CAP, TRADER_TOKEN,
         False, True, False, False, False
     ),
-    Trinket(
-        "Doom's Fury", "161463", 355, TITANFORGE_CAP, TRADER_TOKEN, False, False,
-        True, False, False
-    ),
-    Trinket(
-        "Doom's Hatred", "161461", 355, TITANFORGE_CAP, TRADER_TOKEN, False, True,
-        False, False, False
-    ),
-    Trinket(
-        "Doom's Wake", "161462", 355, TITANFORGE_CAP, TRADER_TOKEN, True, False,
-        False, False, False
-    ),
-    Trinket(
+    Trinket( # world boss
         "Drust-Runed Icicle", "161380", 355, TITANFORGE_CAP, TRADER_TOKEN, False,
         True, False, False, False
     ),
@@ -502,55 +656,55 @@ __trinket_list = [
     #     "Dunewalker's Survival Kit", "161418", 340, TITANFORGE_CAP, TRADER_TOKEN,
     #     True, False, False, False, False
     # ),
-    Trinket(
+    Trinket( # world boss
         "Galecaller's Beak", "161379", 355, TITANFORGE_CAP, TRADER_TOKEN, False,
         False, True, False, False
     ),
-    Trinket(
+    Trinket( # world boss
         "Kraulok's Claw", "161419", 355, TITANFORGE_CAP, TRADER_TOKEN, False,
         False, True, False, False
     ),
-    Trinket(
+    Trinket( # world boss
         "Permafrost-Encrusted Heart", "161381", 355, TITANFORGE_CAP, TRADER_TOKEN,
         True, False, False, False, False
     ),
-    Trinket(
+    Trinket( # world boss
         "Plume of the Seaborne Avian", "161378", 355, TITANFORGE_CAP, TRADER_TOKEN,
         True, False, False, False, False
     ),
-    Trinket(
+    Trinket( # world boss
         "Prism of Dark Intensity", "161376", 355, TITANFORGE_CAP, TRADER_TOKEN,
         False, False, True, False, False
     ),
-    Trinket(
+    Trinket( # world boss
         "Spiritbound Voodoo Burl", "161412", 355, TITANFORGE_CAP, TRADER_TOKEN, True,
         False, False, False, False
     ),
-    Trinket(
+    Trinket( # world boss
         "T'zane's Barkspines", "161411", 340, TITANFORGE_CAP, TRADER_TOKEN, False,
         True, False, False, False
     ),
-    Trinket(
+    Trinket( # inscription
         "Darkmoon Deck: Squalls", "159126", 355, 355,
         355, False, True, False, False, False
     ),
-    Trinket(
+    Trinket( # inscription
         "Darkmoon Deck: Fathoms", "159125", 355, 355,
         355, True, False, True, False, False
     ),
-    Trinket(
+    Trinket( # alchemy
         "Surging Alchemist Stone", "152632", 300, 300,
         300, True, True, True, False, False
     ),
-    Trinket(
-        "Plunderbeard's Flask", "158164", 300, TITANFORGE_CAP,
+    Trinket( # world quest
+        "Plunderbeard's Flask", "158164", WORLD_QUEST_ITEMLEVEL, TITANFORGE_CAP,
         TRADER_TOKEN, True, True, True, False, False
     ),
-    Trinket(
+    Trinket( # Uldir
         "Frenetic Corpuscle", "160648", 340, TITANFORGE_CAP,
         TRADER_TOKEN, True, False, False, False, False
     ),
-    Trinket(
+    Trinket( # Uldir
         "Construct Overcharger", "160652", 340, TITANFORGE_CAP,
         TRADER_TOKEN, True, False, False, False, False
     ),
@@ -558,7 +712,7 @@ __trinket_list = [
         "Vigilant's Bloodshaper", "160651", 340, TITANFORGE_CAP,
         TRADER_TOKEN, False, True, False, False, False
     ),
-    Trinket(
+    Trinket( # Tol Dagor
         name="Kul Tiran Cannonball Runner", item_id="159628", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False
     ),
@@ -566,22 +720,22 @@ __trinket_list = [
         name="Vanquished Tendril of G'huun", item_id="160654", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
     ),
-    Trinket(  # world drop?, strange itemlevel
+    Trinket(  # world drop
         name="Landoi's Scrutiny", item_id="163935", min_itemlevel=350, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False
     ),
-    Trinket(  # world drop?, strange itemlevel
+    Trinket(  # world drop
         name="'Bygone Bee' Almanac", item_id="163936", min_itemlevel=350, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False
     ),
-    Trinket(  # world drop?, strange itemlevel
+    Trinket(  # world drop
         name="Leyshock's Grand Compilation", item_id="163937", min_itemlevel=350, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False
     ),
-    Trinket(
-        name="Kaja-fied Banana", item_id="161125", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
-    ),
+    # Trinket( # rare enemy in uldazar, no WQ known
+    #     name="Kaja-fied Banana", item_id="161125", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
+    #     max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    # ),
     Trinket(  # uldir
         name="Syringe of Bloodborne Infirmity", item_id="160655", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False
