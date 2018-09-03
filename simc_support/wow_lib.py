@@ -732,10 +732,10 @@ __trinket_list = [
         name="Leyshock's Grand Compilation", item_id="163937", min_itemlevel=350, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False
     ),
-    # Trinket( # rare enemy in uldazar, no WQ known
-    #     name="Kaja-fied Banana", item_id="161125", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
-    #     max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
-    # ),
+    Trinket( # wq
+        name="Kaja-fied Banana", item_id="161125", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
     Trinket(  # uldir
         name="Syringe of Bloodborne Infirmity", item_id="160655", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False
