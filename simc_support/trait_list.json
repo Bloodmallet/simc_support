@@ -2744,6 +2744,15 @@
                 "spell_id": "273338",
                 "trait_id": "169"
             },
+            "273367": {
+                "description": "Moonfire deals $s2 additional damage instantly, and has a $273389h% chance to grant you Lunar Empowerment.",
+                "max_itemlevel": -1,
+                "max_stack": 1,
+                "min_itemlevel": -1,
+                "name": "Power of the Moon",
+                "spell_id": "273367",
+                "trait_id": "173"
+            },
             "273682": {
                 "description": "Your spells and abilities have a chance to grant you Meticulous Scheming for $273685d, which transforms into Seize the Moment! after you cast $s3 different spells, granting you $s4 Haste for $273714d.",
                 "max_itemlevel": -1,

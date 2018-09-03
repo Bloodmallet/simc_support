@@ -1916,7 +1916,8 @@
     "273367": {
         "class": {
             "Druid": [
-                "Balance"
+                "Balance",
+                "Feral"
             ]
         },
         "description": "Moonfire deals $s2 additional damage instantly, and has a $273389h% chance to grant you Lunar Empowerment.",
