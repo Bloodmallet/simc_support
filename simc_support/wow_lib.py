@@ -844,6 +844,10 @@ __trinket_list = [
         name="Doom's Wake", item_id="161462", min_itemlevel=370, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False
     ),
+    Trinket(  # pvp
+        name="Dread Gladiator's Insignia", item_id="161676", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+    ),
 
     # Trinket(
     #     name="", item_id="", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
