@@ -1341,30 +1341,21 @@ def get_azerite_items(wow_class: str, wow_spec: str) -> dict:
     return response
 
 
-def get_azerite_tier(wow_class: str, wow_spec: str, trait: str) -> int:
-    """Get the tier number of an azerite trait. Very costly search!
+def get_azerite_tier(wow_class: str, wow_spec: str, trait_id: str) -> int:
+    """Get the tier number of an azerite trait.
 
     Arguments:
         wow_class {str} -- [description]
         wow_spec {str} -- [description]
-        trait {str} -- [description]
+        trait_id {str} -- [description]
 
     Returns:
         int -- [description]
     """
 
-    items = get_azerite_items(wow_class, wow_spec)
+    traits = get_azerite_traits(wow_class, wow_spec)
 
-    for slot in items:
-        for item in items[slot]:
-            for tmp_trait in item["azeriteTraits"]:
-                #apparently there are bugged (?) traits without a name or proper spell id
-                try:
-                    if tmp_trait["name"] == trait:
-                        return tmp_trait["tier"]
-                except Exception:
-                    pass
-    return None
+    return traits[trait_id]["tier"]
 
 
 def get_all_trinkets():

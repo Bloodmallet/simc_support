@@ -115,12 +115,26 @@ def update_map(trait_dict):
         )
 
 
+def get_tier(azerite_id, power_sets):
+  for set_id in power_sets:
+    trait_list = power_sets[set_id]
+    for trait in trait_list:
+      if int(trait["spellId"]) == int(azerite_id):
+        return trait["tier"]
+
 def update_list(trait_dict):
     try:
         with open("trait_map.json", "r") as r:
             LOADED_MAP = json.load(r)
     except Exception as e:
         LOADED_MAP = {}
+        logger.error(e)
+
+    try:
+        with open("azerite-power-sets.json", "r") as r:
+            power_sets = json.load(r)
+    except Exception as e:
+        power_sets = {}
         logger.error(e)
 
     trait_classes = {}
@@ -147,7 +161,8 @@ def update_list(trait_dict):
                             "spell_id":
                             trait_dict[wow_class][wow_spec][trait_id]["spell_id"],
                             "trait_id":
-                            trait_dict[wow_class][wow_spec][trait_id]["trait_id"]
+                            trait_dict[wow_class][wow_spec][trait_id]["trait_id"],
+                            "tier": get_tier(trait_id, power_sets)
                         }
                 except KeyError:
                     logger.error(
