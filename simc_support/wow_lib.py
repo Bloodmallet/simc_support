@@ -1158,7 +1158,12 @@ def get_trait_translation(trait_name: str = "", translation_dict: dict = None) -
     try:
         return loaded_translations[trait_name]
     except Exception:
-        raise LookupError("Translation not found for {}".format(trait_name))
+        for name in loaded_translations:
+            if name in trait_name:
+                try:
+                    return loaded_translations[name]
+                except Exception:
+                    raise LookupError("Translation not found for {}".format(trait_name))
 
 
 def get_second_trinket_for_spec(wow_class, wow_spec):
