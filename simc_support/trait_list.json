@@ -13980,6 +13980,16 @@
                 "tier": 3,
                 "trait_id": "435"
             },
+            "278758": {
+                "description": "Auto attacks deal $s2 additional damage and reduce the cooldown of Recklessness by ${$s1/1000}.1 sec.",
+                "max_itemlevel": -1,
+                "max_stack": 3,
+                "min_itemlevel": -1,
+                "name": "Reckless Flurry",
+                "spell_id": "278758",
+                "tier": 3,
+                "trait_id": "438"
+            },
             "279899": {
                 "description": "Your damaging abilities have a chance to grant $s1 critical strike rating for $279902d. This effect stacks up to $279902u times.",
                 "max_itemlevel": -1,

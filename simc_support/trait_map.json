@@ -4304,6 +4304,7 @@
     "278758": {
         "class": {
             "Warrior": [
+                "Arms",
                 "Fury"
             ]
         },
