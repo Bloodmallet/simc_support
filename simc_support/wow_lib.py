@@ -32,7 +32,8 @@ class Trinket(object):
         strength,
         melee,
         ranged,
-        legendary=False
+        legendary=False,
+        source=None
     ):
         super(Trinket, self).__init__()
         self.name: str = str(name)
@@ -46,12 +47,16 @@ class Trinket(object):
         self.melee: bool = bool(melee)
         self.ranged: bool = bool(ranged)
         self.legendary: bool = bool(legendary)
+        self.source: str = str(source)
 
     def get_name(self):
         return self.name
 
     def get_id(self):
         return self.item_id
+
+    def get_source(self):
+        return self.source
 
 
 __class_data = {
@@ -558,87 +563,87 @@ __trinket_list = [
     # dungeon trinkets
     Trinket( # atal'dazar
         "My'das Talisman", "158319", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, True, False, False, False, False
+        TRADER_TOKEN, True, False, False, False, False, source="Dungeon"
     ),
     Trinket( # atal'dazar
         "Rezan's Gleaming Eye", "158712", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, False, False, True, False, False
+        TRADER_TOKEN, False, False, True, False, False, source="Dungeon"
     ),
     Trinket( # atal'dazar
         "Vessel of Skittering Shadows", "159610", DUNGEON_ITEMLEVEL,
-        TITANFORGE_CAP, TRADER_TOKEN, False, True, False, False, False
+        TITANFORGE_CAP, TRADER_TOKEN, False, True, False, False, False, source="Dungeon"
     ),
     Trinket( # freehold
         "Harlan's Loaded Dice", "155881", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, True, False, False, False, False
+        TRADER_TOKEN, True, False, False, False, False, source="Dungeon"
     ),
     Trinket( # Kings' Rest
         "Lustrous Golden Plumage", "159617", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, True, False, False, False, False
+        TRADER_TOKEN, True, False, False, False, False, source="Dungeon"
     ),
     Trinket( # Shrine of the Storm
         "Briny Barnacle", "159619", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, False, False, True, False, False
+        TRADER_TOKEN, False, False, True, False, False, source="Dungeon"
     ),
     Trinket( # Shrine of the Storm
         "Galecaller's Boon", "159614", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, True, False, False, False, False
+        TRADER_TOKEN, True, False, False, False, False, source="Dungeon"
     ),
     Trinket( # Shrine of the Storm
         "Conch of Dark Whispers", "159620", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, False, True, False, False, False
+        TRADER_TOKEN, False, True, False, False, False, source="Dungeon"
     ),
     Trinket( # Siege of Boralus
         "Dead-Eye Spyglass", "159623", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, True, False, False, False, False
+        TRADER_TOKEN, True, False, False, False, False, source="Dungeon"
     ),
     Trinket( # Siege of Boralus
         "Hadal's Nautilus", "159622", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, False, True, False, False, False
+        TRADER_TOKEN, False, True, False, False, False, source="Dungeon"
     ),
     Trinket( # Temple of Sethraliss
         "Tiny Electromental in a Jar", "158374", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, True, False, False, False, False
+        TRADER_TOKEN, True, False, False, False, False, source="Dungeon"
     ),
     Trinket( # Temple of Sethraliss
         "Merektha's Fang", "158367", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, False, False, True, False, False
+        TRADER_TOKEN, False, False, True, False, False, source="Dungeon"
     ),
     Trinket( # The Motherlode
         "Razdunk's Big Red Button", "159611", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, False, False, True, False, False
+        TRADER_TOKEN, False, False, True, False, False, source="Dungeon"
     ),
     Trinket( # The Motherlode
         "Azerokk's Resonating Heart", "159612", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, True, False, False, False, False
+        TRADER_TOKEN, True, False, False, False, False, source="Dungeon"
     ),
     Trinket( # The Underrot
         "Lingering Sporepods", "159626", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, True, False, True, False, False
+        TRADER_TOKEN, True, False, True, False, False, source="Dungeon"
     ),
     Trinket( # The Underrot
         "Rotcrusted Voodoo Doll", "159624", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, False, True, False, False, False
+        TRADER_TOKEN, False, True, False, False, False, source="Dungeon"
     ),
     Trinket( # The Underrot
         "Vial of Animated Blood", "159625", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, False, False, True, False, False
+        TRADER_TOKEN, False, False, True, False, False, source="Dungeon"
     ),
     Trinket( # Tol Dagor
         "Jes' Howler", "159627", DUNGEON_ITEMLEVEL, TITANFORGE_CAP, TRADER_TOKEN,
-        False, False, True, False, False
+        False, False, True, False, False, source="Dungeon"
     ),
     Trinket( # Tol Dagor
         "Ignition Mage's Fuse", "159615", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, False, True, False, False, False
+        TRADER_TOKEN, False, True, False, False, False, source="Dungeon"
     ),
     Trinket( # Waycrest Manor
         "Lady Waycrest's Music Box", "159631", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, False, True, False, False, False
+        TRADER_TOKEN, False, True, False, False, False, source="Dungeon"
     ),
     Trinket( # Waycrest Manor
         "Balefire Branch", "159630", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, False, True, False, False, False
+        TRADER_TOKEN, False, True, False, False, False, source="Dungeon"
     ),
     # Trinket( # not obtainable
     #     "Cursed Captain's Charm", "161115", 290, TITANFORGE_CAP,
@@ -646,11 +651,11 @@ __trinket_list = [
     # ),
     Trinket( # world boss
         "Azurethos' Singed Plumage", "161377", 355, TITANFORGE_CAP, TRADER_TOKEN,
-        False, True, False, False, False
+        False, True, False, False, False, source="World Boss"
     ),
     Trinket( # world boss
         "Drust-Runed Icicle", "161380", 355, TITANFORGE_CAP, TRADER_TOKEN, False,
-        True, False, False, False
+        True, False, False, False, source="World Boss"
     ),
     # Trinket( # ???
     #     "Dunewalker's Survival Kit", "161418", 340, TITANFORGE_CAP, TRADER_TOKEN,
@@ -658,131 +663,131 @@ __trinket_list = [
     # ),
     Trinket( # world boss
         "Galecaller's Beak", "161379", 355, TITANFORGE_CAP, TRADER_TOKEN, False,
-        False, True, False, False
+        False, True, False, False, source="World Boss"
     ),
     Trinket( # world boss
         "Kraulok's Claw", "161419", 355, TITANFORGE_CAP, TRADER_TOKEN, False,
-        False, True, False, False
+        False, True, False, False, source="World Boss"
     ),
     Trinket( # world boss
         "Permafrost-Encrusted Heart", "161381", 355, TITANFORGE_CAP, TRADER_TOKEN,
-        True, False, False, False, False
+        True, False, False, False, False, source="World Boss"
     ),
     Trinket( # world boss
         "Plume of the Seaborne Avian", "161378", 355, TITANFORGE_CAP, TRADER_TOKEN,
-        True, False, False, False, False
+        True, False, False, False, False, source="World Boss"
     ),
     Trinket( # world boss
         "Prism of Dark Intensity", "161376", 355, TITANFORGE_CAP, TRADER_TOKEN,
-        False, False, True, False, False
+        False, False, True, False, False, source="World Boss"
     ),
     Trinket( # world boss
         "Spiritbound Voodoo Burl", "161412", 355, TITANFORGE_CAP, TRADER_TOKEN, True,
-        False, False, False, False
+        False, False, False, False, source="World Boss"
     ),
     Trinket( # world boss
         "T'zane's Barkspines", "161411", 340, TITANFORGE_CAP, TRADER_TOKEN, False,
-        True, False, False, False
+        True, False, False, False, source="World Boss"
     ),
     Trinket( # inscription
         "Darkmoon Deck: Squalls", "159126", 355, 355,
-        355, False, True, False, False, False
+        355, False, True, False, False, False, source="Profession"
     ),
     Trinket( # inscription
         "Darkmoon Deck: Fathoms", "159125", 355, 355,
-        355, True, False, True, False, False
+        355, True, False, True, False, False, source="Profession"
     ),
     Trinket( # alchemy
         "Surging Alchemist Stone", "152632", 300, 300,
-        300, True, True, True, False, False
+        300, True, True, True, False, False, source="Profession"
     ),
     Trinket( # world quest
         "Plunderbeard's Flask", "158164", WORLD_QUEST_ITEMLEVEL, TITANFORGE_CAP,
-        TRADER_TOKEN, True, True, True, False, False
+        TRADER_TOKEN, True, True, True, False, False, source="World Quest"
     ),
     Trinket( # Uldir
         "Frenetic Corpuscle", "160648", 340, TITANFORGE_CAP,
-        TRADER_TOKEN, True, False, False, False, False
+        TRADER_TOKEN, True, False, False, False, False, source="Raid"
     ),
     Trinket( # Uldir
         "Construct Overcharger", "160652", 340, TITANFORGE_CAP,
-        TRADER_TOKEN, True, False, False, False, False
+        TRADER_TOKEN, True, False, False, False, False, source="Raid"
     ),
     Trinket(  # Uldir
         "Vigilant's Bloodshaper", "160651", 340, TITANFORGE_CAP,
-        TRADER_TOKEN, False, True, False, False, False
+        TRADER_TOKEN, False, True, False, False, False, source="Raid"
     ),
     Trinket( # Tol Dagor
         name="Kul Tiran Cannonball Runner", item_id="159628", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False, source="Dungeon"
     ),
     Trinket(  # Uldir
         name="Vanquished Tendril of G'huun", item_id="160654", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="Raid"
     ),
     Trinket(  # world drop
         name="Landoi's Scrutiny", item_id="163935", min_itemlevel=350, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False, source="World Drop"
     ),
     Trinket(  # world drop
         name="'Bygone Bee' Almanac", item_id="163936", min_itemlevel=350, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False, source="World Drop"
     ),
     Trinket(  # world drop
         name="Leyshock's Grand Compilation", item_id="163937", min_itemlevel=350, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False, source="World Drop"
     ),
     Trinket( # wq
         name="Kaja-fied Banana", item_id="161125", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
     Trinket(  # uldir
         name="Syringe of Bloodborne Infirmity", item_id="160655", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False, source="Raid"
     ),
     Trinket(  # uldir
         name="Disc of Systematic Regression", item_id="160650", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False, source="Raid"
     ),
     Trinket(  # uldir
         name="Twitching Tentacle of Xalzaix", item_id="160656", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False, source="Raid"
     ),
     Trinket(  # alchemy
         name="Endless Tincture of Fractional Power", item_id="152636", min_itemlevel=300, max_itemlevel=300,
-        max_itemlevel_drop=300, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=300, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="Profession"
     ),
     Trinket(  # stormsong valley
         name="Galewind Chimes", item_id="155568", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
     Trinket(  # wq
         name="Gilded Loa Figurine", item_id="158153", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
     Trinket(  # wq
         name="Emblem of Zandalar", item_id="158154", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
     Trinket(  # wq
         name="Dinobone Charm", item_id="158155", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
     Trinket(  # wq
         name="Pearl Diver's Compass", item_id="158162", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
     Trinket(  # wq
         name="First Mate's Spyglass", item_id="158163", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
     Trinket(  # stormsong valley
         name="Whirlwing's Plumage", item_id="158215", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
     Trinket(  # stormsong valley
         name="Living Oil Cannister", item_id="158216", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
     # Trinket(  # stormsong valley - tank
     #     name="Dadalea's Wing", item_id="158218", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
@@ -790,67 +795,67 @@ __trinket_list = [
     # ),
     Trinket(  # stormsong valley
         name="Vial of Storms", item_id="158224", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
     Trinket(  # stormsong valley
         name="Doom Shroom", item_id="158555", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
     Trinket(  # waycrest manor
         name="Gore-Crusted Butcher's Block", item_id="159616", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False, source="Dungeon"
     ),
     Trinket(  # stormsong valley
         name="Snowpelt Mangler", item_id="160263", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
     Trinket(  # nazmir
         name="Incessantly Ticking Clock", item_id="161113", min_itemlevel=325, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
    Trinket(  # vol'dun
         name="Ravasaur Skull Bijou", item_id="161119", min_itemlevel=325, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
     Trinket(  # nazmir
         name="Crawg Gnawed Femur", item_id="163703", min_itemlevel=325, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
     Trinket(  # airdrop
         name="Dread Aspirant's Badge", item_id="162966", min_itemlevel=325, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="PvP"
     ),
     Trinket(  # warfront world boss
         name="Lion's Grace", item_id="161472", min_itemlevel=370, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False, source="World Boss"
     ),
     Trinket(  # warfront world boss
         name="Lion's Guile", item_id="161473", min_itemlevel=370, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False, source="World Boss"
     ),
     Trinket(  # warfront world boss
         name="Lion's Strength", item_id="161474", min_itemlevel=370, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False, source="World Boss"
     ),
     Trinket(  # warfront world boss
         name="Doom's Fury", item_id="161463", min_itemlevel=370, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False, source="World Boss"
     ),
     Trinket(  # warfront world boss
         name="Doom's Hatred", item_id="161461", min_itemlevel=370, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False
+        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False, source="World Boss"
     ),
     Trinket(  # warfront world boss
         name="Doom's Wake", item_id="161462", min_itemlevel=370, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False, source="World Boss"
     ),
     Trinket(  # pvp
         name="Dread Gladiator's Insignia", item_id="161676", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="PvP"
     ),
     Trinket(  # pvp
         name="Dread Aspirant's Medallion", item_id="162897", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="PvP"
     ),
 
     # Trinket(
