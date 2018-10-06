@@ -779,5 +779,16 @@
     "ko_KR": "공포를 부르는 지원자의 메달",
     "cn_CN": "悚然候选者的勋章",
     "ru_RU": "Медальон ужасающего претендента"
+  },
+  "Berserker's Juju": {
+    "de_DE": "Juju des Berserkers",
+    "en_US": "Berserker's Juju",
+    "es_ES": "Juju de rabioso",
+    "fr_FR": "Juju du berserker",
+    "it_IT": "Juju del Berserker",
+    "pt_BR": "Urucubaca do Berserker",
+    "ko_KR": "광전사의 부적",
+    "cn_CN": "狂战士的魂能战符",
+    "ru_RU": "Джуджу берсерка"
   }
 }

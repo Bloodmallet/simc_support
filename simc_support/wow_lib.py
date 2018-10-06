@@ -13,7 +13,7 @@ WORLD_QUEST_ITEMLEVEL = 320
 DUNGEON_ITEMLEVEL = 310
 # highest available itemlevel from m+ dungeons. weekly chest is NOT included here
 M_PLUS_ITEMLEVEL = 340
-TITANFORGE_CAP = 410  # currently highest itemlevel titanforging cap
+TITANFORGE_CAP = 400  # currently highest itemlevel titanforging cap
 EXPANSION_START_ITEMLEVEL = 280
 
 
@@ -856,6 +856,10 @@ __trinket_list = [
     Trinket(  # pvp
         name="Dread Aspirant's Medallion", item_id="162897", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="PvP"
+    ),
+    Trinket(  # wq
+        name="Berserker's Juju", item_id="161117", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
 
     # Trinket(
