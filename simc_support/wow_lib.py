@@ -822,7 +822,7 @@ __trinket_list = [
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
     Trinket(  # airdrop
-        name="Dread Aspirant's Badge", item_id="162966", min_itemlevel=325, max_itemlevel=TITANFORGE_CAP,
+        name="Dread Gladiator's Badge", item_id="161902", min_itemlevel=325, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="PvP"
     ),
     Trinket(  # warfront world boss
@@ -854,7 +854,7 @@ __trinket_list = [
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="PvP"
     ),
     Trinket(  # pvp
-        name="Dread Aspirant's Medallion", item_id="162897", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
+        name="Dread Gladiator's Medallion", item_id="161674", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="PvP"
     ),
     Trinket(  # wq

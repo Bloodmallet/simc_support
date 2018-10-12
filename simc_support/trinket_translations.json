@@ -681,16 +681,16 @@
     "cn_CN": "被抱齿兽咬过的大腿骨",
     "ru_RU": "Пожеванная бедренная кость крога"
   },
-  "Dread Aspirant's Badge": {
-    "de_DE": "Abzeichen des gefürchteten Aspiranten",
-    "en_US": "Dread Aspirant's Badge",
-    "es_ES": "Distintivo de aspirante aterrador",
-    "fr_FR": "Écusson de l’aspirant menaçant",
-    "it_IT": "Distintivo del Pretendente Terrificante",
-    "pt_BR": "Distintivo do Aspirante Medonho",
-    "ko_KR": "공포를 부르는 지원자의 표장",
-    "cn_CN": "悚然候选者的徽章",
-    "ru_RU": "Жетон ужасающего претендента"
+  "Dread Gladiator's Badge": {
+    "de_DE": "Abzeichen des gefürchteten Gladiators",
+    "en_US": "Dread Gladiator's Badge",
+    "es_ES": "Distintivo de Gladiador aterrador",
+    "fr_FR": "Écusson du gladiateur menaçant",
+    "it_IT": "Distintivo del Gladiatore Terrificante",
+    "pt_BR": "Distintivo do Gladiador Medonho",
+    "ko_KR": "공포를 부르는 검투사의 표장",
+    "cn_CN": "悚然角斗士的徽章",
+    "ru_RU": "Жетон ужасающего гладиатора"
   },
   "Lion's Grace": {
     "de_DE": "Anmut des Löwen",
@@ -769,16 +769,16 @@
     "cn_CN": "悚然角斗士的徽记",
     "ru_RU": "Знак ужасающего гладиатора"
   },
-  "Dread Aspirant's Medallion": {
-    "de_DE": "Medaillon des gefürchteten Aspiranten",
-    "en_US": "Dread Aspirant's Medallion",
-    "es_ES": "Medallón de aspirante aterrador",
-    "fr_FR": "Médaillon de l’aspirant menaçant",
-    "it_IT": "Medaglione del Pretendente Terrificante",
-    "pt_BR": "Medalhão do Aspirante Medonho",
-    "ko_KR": "공포를 부르는 지원자의 메달",
-    "cn_CN": "悚然候选者的勋章",
-    "ru_RU": "Медальон ужасающего претендента"
+  "Dread Gladiator's Medallion": {
+    "de_DE": "Medaillon des gefürchteten Gladiators",
+    "en_US": "Dread Gladiator's Medallion",
+    "es_ES": "Medallón de Gladiador aterrador",
+    "fr_FR": "Médaillon du gladiateur menaçant",
+    "it_IT": "Medaglione del Gladiatore Terrificante",
+    "pt_BR": "Medalhão do Gladiador Medonho",
+    "ko_KR": "공포를 부르는 검투사의 메달",
+    "cn_CN": "悚然角斗士的勋章",
+    "ru_RU": "Медальон ужасающего гладиатора"
   },
   "Berserker's Juju": {
     "de_DE": "Juju des Berserkers",
