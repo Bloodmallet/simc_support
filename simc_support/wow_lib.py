@@ -1059,6 +1059,23 @@ def get_trinket_translation(trinket_name) -> dict:
     except Exception as e:
         raise LookupError("Translation not found for {}. {}".format(trinket_name, e))
 
+
+def get_talent_blueprint(wow_class: str, wow_spec: str = "") -> str:
+    """Returns a talent blueprint for the wow_class. 0 means non-dps relevant talents. 1 means dps relevant talent.
+
+    Arguments:
+        wow_class {string} -- [description]
+
+    Keyword Arguments:
+        wow_spec {str} -- [description] (default: {""})
+
+    Returns:
+        string -- 7 digits decsribing possible talent combinations. 0...non dps talent, 1...dps-talent
+    """
+
+    return __class_data[wow_class]["talents"]
+
+
 def get_azerite_item_translation(item_name) -> dict:
     """Returns the translation dict for a trinket
 
