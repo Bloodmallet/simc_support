@@ -1073,7 +1073,7 @@ def get_talent_blueprint(wow_class: str, wow_spec: str = "") -> str:
         string -- 7 digits decsribing possible talent combinations. 0...non dps talent, 1...dps-talent
     """
 
-    return __class_data[wow_class]["talents"]
+    return __class_data[wow_class.title()]["talents"]
 
 
 def get_azerite_item_translation(item_name) -> dict:
