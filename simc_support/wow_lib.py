@@ -214,7 +214,7 @@ __class_data = {
         }
     },
     "Rogue": {
-        "talents": "1110111",
+        "talents": "1110011",
         "id": 4,
         "specs": {
             "Assassination": {
