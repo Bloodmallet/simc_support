@@ -1402,6 +1402,23 @@ def get_all_trinkets():
     return all_trinkets
 
 
+def get_talent_dict(wow_class: str, wow_spec: str)->dict:
+    """Return the dict of all talents available to this spec. Structur: row -> column -> name, spell_id
+
+    Arguments:
+        wow_class {str} -- [description]
+        wow_spec {str} -- [description]
+
+    Returns:
+        dict -- row -> column -> name, spell_id
+    """
+    import pkg_resources
+
+    with open(pkg_resources.resource_filename(__name__, "talent_list.json"), 'r', encoding="UTF-8") as f:
+        talents = json.load(f, encoding="UTF-8")
+
+    return talents[wow_class.title(), wow_spec.title()]
+
 def __generate_talent_combinations(blueprint, wow_class, wow_spec):
     """Generate all talent combinations matching blueprint. You're an enduser? Use get_talent_combinations(...).
 

@@ -1,0 +1,2692 @@
+{
+    "Death_Knight": {
+        "Blood": {
+            "1": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            }
+        },
+        "Frost": {
+            "1": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            }
+        },
+        "Unholy": {
+            "1": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "2": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            }
+        }
+    },
+    "Demon_Hunter": {
+        "Havoc": {
+            "1": {
+                "1": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "2": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "3": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "2": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "3": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "2": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "3": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "2": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "3": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "2": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "3": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "2": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "3": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "2": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "3": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                }
+            }
+        },
+        "Vengeance": {
+            "1": {
+                "1": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "2": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "3": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "2": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "3": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "2": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "3": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "2": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "3": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "2": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "3": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "2": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "3": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "2": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "3": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                }
+            }
+        }
+    },
+    "Druid": {
+        "Balance": {
+            "1": {
+                "1": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "2": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "3": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                }
+            },
+            "2": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "3": {
+                "1": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "2": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "3": {}
+            },
+            "4": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "5": {
+                "1": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "2": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "2": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "3": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "2": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "3": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                }
+            }
+        },
+        "Feral": {
+            "1": {
+                "1": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "2": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "3": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                }
+            },
+            "2": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "3": {
+                "1": {},
+                "2": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "3": {}
+            },
+            "4": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "5": {
+                "1": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "2": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "3": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "2": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "3": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "2": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "3": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                }
+            }
+        },
+        "Guardian": {
+            "1": {
+                "1": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "2": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "3": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                }
+            },
+            "2": {
+                "1": {},
+                "2": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "3": {}
+            },
+            "3": {
+                "1": {},
+                "2": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "3": {}
+            },
+            "4": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "5": {
+                "1": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "2": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "3": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "2": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "3": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "2": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                },
+                "3": {
+                    "name": "Intimidating Roar",
+                    "spell_id": "236748"
+                }
+            }
+        }
+    },
+    "Hunter": {
+        "Beast_Mastery": {
+            "1": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "2": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "3": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "4": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "5": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "6": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "7": {
+                "1": {},
+                "2": {},
+                "3": {}
+            }
+        },
+        "Marksmanship": {
+            "1": {
+                "1": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "2": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "3": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "2": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "3": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                }
+            },
+            "3": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "4": {
+                "1": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "2": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "3": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                }
+            },
+            "5": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "2": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "3": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "2": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "3": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                }
+            }
+        },
+        "Survival": {
+            "1": {
+                "1": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "2": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "3": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "2": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "3": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                }
+            },
+            "3": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "4": {
+                "1": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "2": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "3": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                }
+            },
+            "5": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "2": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "3": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "2": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                },
+                "3": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                }
+            }
+        }
+    },
+    "Mage": {
+        "Arcane": {
+            "1": {
+                "1": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "2": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "3": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "2": {},
+                "3": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                }
+            },
+            "3": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "4": {
+                "1": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "2": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "3": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "2": {},
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "2": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "3": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                }
+            },
+            "7": {
+                "1": {},
+                "2": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "3": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                }
+            }
+        },
+        "Fire": {
+            "1": {
+                "1": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "2": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "3": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "2": {},
+                "3": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                }
+            },
+            "3": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "4": {
+                "1": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "2": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "3": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "2": {},
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "2": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "3": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "2": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "3": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                }
+            }
+        },
+        "Frost": {
+            "1": {
+                "1": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "2": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "3": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "2": {},
+                "3": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                }
+            },
+            "3": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "4": {
+                "1": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "2": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "3": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "2": {},
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "2": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "3": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "2": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "3": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                }
+            }
+        }
+    },
+    "Monk": {
+        "Brewmaster": {
+            "1": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "2": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "3": {
+                "1": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                },
+                "2": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                },
+                "3": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                }
+            },
+            "4": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "5": {
+                "1": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                },
+                "2": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                },
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                },
+                "2": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                },
+                "3": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                },
+                "2": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                },
+                "3": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                }
+            }
+        },
+        "Windwalker": {
+            "1": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "2": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "3": {
+                "1": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                },
+                "2": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                },
+                "3": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                }
+            },
+            "4": {
+                "1": {},
+                "2": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                },
+                "3": {}
+            },
+            "5": {
+                "1": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                },
+                "2": {},
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                },
+                "2": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                },
+                "3": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                },
+                "2": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                },
+                "3": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                }
+            }
+        }
+    },
+    "Paladin": {
+        "Protection": {
+            "1": {
+                "1": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "2": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "3": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "2": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "3": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                }
+            },
+            "3": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "4": {
+                "1": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "2": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "3": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "2": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "3": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                }
+            },
+            "6": {
+                "1": {},
+                "2": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "3": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "2": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "3": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                }
+            }
+        },
+        "Retribution": {
+            "1": {
+                "1": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "2": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "3": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "2": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "3": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "2": {},
+                "3": {}
+            },
+            "4": {
+                "1": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "2": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "3": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "2": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "3": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "2": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "3": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "2": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                },
+                "3": {
+                    "name": "Sanctified Wrath",
+                    "spell_id": "53376"
+                }
+            }
+        }
+    },
+    "Priest": {
+        "Discipline": {
+            "1": {
+                "1": {},
+                "2": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "3": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                }
+            },
+            "2": {
+                "1": {},
+                "2": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "3": {}
+            },
+            "3": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "4": {
+                "1": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "2": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "3": {}
+            },
+            "5": {
+                "1": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "2": {},
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "2": {},
+                "3": {}
+            },
+            "7": {
+                "1": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "2": {},
+                "3": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                }
+            }
+        },
+        "Holy": {
+            "1": {
+                "1": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "2": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "3": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "2": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "3": {}
+            },
+            "3": {
+                "1": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "2": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "3": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "2": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "3": {}
+            },
+            "5": {
+                "1": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "2": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "3": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                }
+            },
+            "6": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "7": {
+                "1": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "2": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "3": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                }
+            }
+        },
+        "Shadow": {
+            "1": {
+                "1": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "2": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "3": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                }
+            },
+            "2": {
+                "1": {},
+                "2": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "3": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "2": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "3": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "2": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "3": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "2": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "3": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "2": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "3": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "2": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "3": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                }
+            }
+        }
+    },
+    "Rogue": {
+        "Assassination": {
+            "1": {
+                "1": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "2": {},
+                "3": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                }
+            },
+            "2": {
+                "1": {},
+                "2": {},
+                "3": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                }
+            },
+            "3": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "4": {
+                "1": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "2": {},
+                "3": {}
+            },
+            "5": {
+                "1": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "2": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "2": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "3": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "2": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "3": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                }
+            }
+        },
+        "Outlaw": {
+            "1": {
+                "1": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "2": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "3": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "2": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "3": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                }
+            },
+            "3": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "4": {
+                "1": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "2": {},
+                "3": {}
+            },
+            "5": {
+                "1": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "2": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "2": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "3": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "2": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "3": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                }
+            }
+        },
+        "Subtlety": {
+            "1": {
+                "1": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "2": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "3": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                }
+            },
+            "2": {
+                "1": {},
+                "2": {},
+                "3": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                }
+            },
+            "3": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "4": {
+                "1": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "2": {},
+                "3": {}
+            },
+            "5": {
+                "1": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "2": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "2": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "3": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "2": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "3": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                }
+            }
+        }
+    },
+    "Shaman": {
+        "Elemental": {
+            "1": {
+                "1": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "2": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "3": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "2": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "3": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "2": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "3": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "2": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "3": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                }
+            },
+            "5": {
+                "1": {},
+                "2": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "2": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "3": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "2": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "3": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                }
+            }
+        },
+        "Enhancement": {
+            "1": {
+                "1": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "2": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "3": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "2": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "3": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "2": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "3": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "2": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "3": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                }
+            },
+            "5": {
+                "1": {},
+                "2": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "2": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "3": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "2": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                },
+                "3": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                }
+            }
+        }
+    },
+    "Warlock": {
+        "Affliction": {
+            "1": {
+                "1": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "2": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "3": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "2": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "3": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                }
+            },
+            "3": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "4": {
+                "1": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "2": {},
+                "3": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                }
+            },
+            "5": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "2": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "3": {}
+            },
+            "7": {
+                "1": {},
+                "2": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "3": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                }
+            }
+        },
+        "Demonology": {
+            "1": {
+                "1": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "2": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "3": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "2": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "3": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                }
+            },
+            "3": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "4": {
+                "1": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "2": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "3": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                }
+            },
+            "5": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "2": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "3": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "2": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "3": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                }
+            }
+        },
+        "Destruction": {
+            "1": {
+                "1": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "2": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "3": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "2": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "3": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                }
+            },
+            "3": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "4": {
+                "1": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "2": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "3": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                }
+            },
+            "5": {
+                "1": {},
+                "2": {},
+                "3": {}
+            },
+            "6": {
+                "1": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "2": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "3": {}
+            },
+            "7": {
+                "1": {},
+                "2": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "3": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                }
+            }
+        }
+    },
+    "Warrior": {
+        "Arms": {
+            "1": {
+                "1": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "2": {
+                "1": {},
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "4": {
+                "1": {},
+                "2": {},
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "7": {
+                "1": {},
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            }
+        },
+        "Fury": {
+            "1": {
+                "1": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "2": {
+                "1": {},
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "2": {},
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            }
+        },
+        "Protection": {
+            "1": {
+                "1": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "7": {
+                "1": {},
+                "2": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            }
+        }
+    }
+}
