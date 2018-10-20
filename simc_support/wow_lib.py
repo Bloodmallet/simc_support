@@ -1417,7 +1417,7 @@ def get_talent_dict(wow_class: str, wow_spec: str)->dict:
     with open(pkg_resources.resource_filename(__name__, "talent_list.json"), 'r', encoding="UTF-8") as f:
         talents = json.load(f, encoding="UTF-8")
 
-    return talents[wow_class.title(), wow_spec.title()]
+    return talents[wow_class.title()][wow_spec.title()]
 
 def __generate_talent_combinations(blueprint, wow_class, wow_spec):
     """Generate all talent combinations matching blueprint. You're an enduser? Use get_talent_combinations(...).
