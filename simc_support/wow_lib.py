@@ -61,20 +61,22 @@ class Trinket(object):
 
 __class_data = {
     "Death_Knight": {
-        "talents": "1101011",
         "id": 6,
         "specs": {
             "Blood": {
+                "talents": "1101011",
                 "role": "melee",
                 "stat": "str",
                 "id": 250,
             },
             "Frost": {
+                "talents": "1101011",
                 "role": "melee",
                 "stat": "str",
                 "id": 251,
             },
             "Unholy": {
+                "talents": "1101011",
                 "role": "melee",
                 "stat": "str",
                 "id": 252,
@@ -82,15 +84,16 @@ __class_data = {
         }
     },
     "Demon_Hunter": {
-        "talents": "1110111",
         "id": 12,
         "specs": {
             "Havoc": {
+                "talents": "1110111",
                 "role": "melee",
                 "stat": "agi",
                 "id": 577,
             },
             "Vengeance": {
+                "talents": "1110111",
                 "role": "melee",
                 "stat": "agi",
                 "id": 581,
@@ -98,20 +101,22 @@ __class_data = {
         }
     },
     "Druid": {
-        "talents": "1000111",
         "id": 11,
         "specs": {
             "Balance": {
+                "talents": "1000111",
                 "role": "ranged",
                 "stat": "int",
                 "id": 102,
             },
             "Feral": {
+                "talents": "1000111",
                 "role": "melee",
                 "stat": "agi",
                 "id": 103,
             },
             "Guardian": {
+                "talents": "1000111",
                 "role": "melee",
                 "stat": "agi",
                 "id": 104,
@@ -119,20 +124,22 @@ __class_data = {
         }
     },
     "Hunter": {
-        "talents": "1101011",
         "id": 3,
         "specs": {
             "Beast_Mastery": {
+                "talents": "1101011",
                 "role": "ranged",
                 "stat": "agi",
                 "id": 253,
             },
             "Marksmanship": {
+                "talents": "1101011",
                 "role": "ranged",
                 "stat": "agi",
                 "id": 254,
             },
             "Survival": {
+                "talents": "1101011",
                 "role": "melee",
                 "stat": "agi",
                 "id": 255,
@@ -140,20 +147,22 @@ __class_data = {
         }
     },
     "Mage": {
-        "talents": "1011011",
         "id": 8,
         "specs": {
             "Arcane": {
+                "talents": "1011011",
                 "role": "ranged",
                 "stat": "int",
                 "id": 62,
             },
             "Fire": {
+                "talents": "1011011",
                 "role": "ranged",
                 "stat": "int",
                 "id": 63,
             },
             "Frost": {
+                "talents": "1011011",
                 "role": "ranged",
                 "stat": "int",
                 "id": 64,
@@ -161,15 +170,16 @@ __class_data = {
         }
     },
     "Monk": {
-        "talents": "1010011",
         "id": 10,
         "specs": {
             "Brewmaster": {
+                "talents": "1010011",
                 "role": "melee",
                 "stat": "agi",
                 "id": 268,
             },
             "Windwalker": {
+                "talents": "1010011",
                 "role": "melee",
                 "stat": "agi",
                 "id": 269,
@@ -177,15 +187,16 @@ __class_data = {
         }
     },
     "Paladin": {
-        "talents": "1101001",
         "id": 2,
         "specs": {
             "Protection": {
+                "talents": "1101001",
                 "role": "melee",
                 "stat": "str",
                 "id": 66,
             },
             "Retribution": {
+                "talents": "1101001",
                 "role": "melee",
                 "stat": "str",
                 "id": 70,
@@ -193,20 +204,22 @@ __class_data = {
         }
     },
     "Priest": {
-        "talents": "1010111",
         "id": 5,
         "specs": {
             "Discipline": {
+                "talents": "1010111",
                 "role": "ranged",
                 "stat": "int",
                 "id": 257,
             },
             "Holy": {
+                "talents": "1010111",
                 "role": "ranged",
                 "stat": "int",
                 "id": 257,
             },
             "Shadow": {
+                "talents": "1010111",
                 "role": "ranged",
                 "stat": "int",
                 "id": 258,
@@ -214,20 +227,22 @@ __class_data = {
         }
     },
     "Rogue": {
-        "talents": "1110011",
         "id": 4,
         "specs": {
             "Assassination": {
+                "talents": "1110011",
                 "role": "melee",
                 "stat": "agi",
                 "id": 259,
             },
             "Outlaw": {
+                "talents": "1010011",
                 "role": "melee",
                 "stat": "agi",
                 "id": 260,
             },
             "Subtlety": {
+                "talents": "1110011",
                 "role": "melee",
                 "stat": "agi",
                 "id": 261,
@@ -235,15 +250,16 @@ __class_data = {
         }
     },
     "Shaman": {
-        "talents": "1101011",
         "id": 7,
         "specs": {
             "Elemental": {
+                "talents": "1101011",
                 "role": "ranged",
                 "stat": "int",
                 "id": 262,
             },
             "Enhancement": {
+                "talents": "1101011",
                 "role": "melee",
                 "stat": "agi",
                 "id": 263,
@@ -251,20 +267,22 @@ __class_data = {
         }
     },
     "Warlock": {
-        "talents": "1101011",
         "id": 9,
         "specs": {
             "Affliction": {
+                "talents": "1101011",
                 "role": "ranged",
                 "stat": "int",
                 "id": 265,
             },
             "Demonology": {
+                "talents": "1101011",
                 "role": "ranged",
                 "stat": "int",
                 "id": 266,
             },
             "Destruction": {
+                "talents": "1101011",
                 "role": "ranged",
                 "stat": "int",
                 "id": 267,
@@ -272,20 +290,22 @@ __class_data = {
         }
     },
     "Warrior": {
-        "talents": "1010111",
         "id": 1,
         "specs": {
             "Arms": {
+                "talents": "1010111",
                 "role": "melee",
                 "stat": "str",
                 "id": 71,
             },
             "Fury": {
+                "talents": "1010111",
                 "role": "melee",
                 "stat": "str",
                 "id": 72,
             },
             "Protection": {
+                "talents": "1010111",
                 "role": "melee",
                 "stat": "str",
                 "id": 73,
@@ -1060,7 +1080,7 @@ def get_trinket_translation(trinket_name) -> dict:
         raise LookupError("Translation not found for {}. {}".format(trinket_name, e))
 
 
-def get_talent_blueprint(wow_class: str, wow_spec: str = "") -> str:
+def get_talent_blueprint(wow_class: str, wow_spec: str) -> str:
     """Returns a talent blueprint for the wow_class. 0 means non-dps relevant talents. 1 means dps relevant talent.
 
     Arguments:
@@ -1073,7 +1093,7 @@ def get_talent_blueprint(wow_class: str, wow_spec: str = "") -> str:
         string -- 7 digits decsribing possible talent combinations. 0...non dps talent, 1...dps-talent
     """
 
-    return __class_data[wow_class.title()]["talents"]
+    return __class_data[wow_class.title()]["specs"][wow_spec.title()]["talents"]
 
 
 def get_azerite_item_translation(item_name) -> dict:
@@ -1433,7 +1453,7 @@ def __generate_talent_combinations(blueprint, wow_class, wow_spec):
 
     if not ("x" in blueprint or "-" in blueprint):
         return [blueprint]
-    data_talents = get_dps_talents(wow_class)
+    data_talents = get_dps_talents(wow_class, wow_spec)
     pattern = ""
 
     for i in range(0, 7):
@@ -1670,7 +1690,7 @@ def get_main_stat(wow_class, wow_spec):
     return __class_data[wow_class.title()]["specs"][wow_spec.title()]["stat"]
 
 
-def get_dps_talents(wow_class, wow_spec=""):
+def get_dps_talents(wow_class, wow_spec):
     """Return the dps talent mask for a spec. DPS talents are represented by a '1', non-DPS talent are represented by a '0' (zero).
 
     Arguments:
@@ -1683,7 +1703,7 @@ def get_dps_talents(wow_class, wow_spec=""):
       str -- talent mask, e.g. '1011101'
     """
 
-    return __class_data[wow_class.title()]["talents"]
+    return __class_data[wow_class.title()]["specs"][wow_spec.title()]["talents"]
 
 
 def get_specs(wow_class):
