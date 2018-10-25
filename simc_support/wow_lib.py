@@ -1438,7 +1438,7 @@ def get_talent_dict(wow_class: str, wow_spec: str, ptr: bool = False)->dict:
     if ptr:
         file_name = "talent_list_ptr.json"
 
-    with open(pkg_resources.resource_filename(__name__, "talent_list.json"), 'r', encoding="UTF-8") as f:
+    with open(pkg_resources.resource_filename(__name__, file_name), 'r', encoding="UTF-8") as f:
         talents = json.load(f, encoding="UTF-8")
 
     return talents[wow_class.title()][wow_spec.title()]
