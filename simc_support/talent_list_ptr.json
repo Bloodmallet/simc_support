@@ -1,0 +1,3226 @@
+{
+    "Death_Knight": {
+        "Blood": {
+            "1": {
+                "1": {
+                    "name": "Heartbreaker",
+                    "spell_id": "221536"
+                },
+                "2": {
+                    "name": "Blooddrinker",
+                    "spell_id": "206931"
+                },
+                "3": {
+                    "name": "Rune Strike",
+                    "spell_id": "210764"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Rapid Decomposition",
+                    "spell_id": "194662"
+                },
+                "2": {
+                    "name": "Hemostasis",
+                    "spell_id": "273946"
+                },
+                "3": {
+                    "name": "Consumption",
+                    "spell_id": "274156"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Foul Bulwark",
+                    "spell_id": "206974"
+                },
+                "2": {
+                    "name": "Ossuary",
+                    "spell_id": "219786"
+                },
+                "3": {
+                    "name": "Tombstone",
+                    "spell_id": "219809"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Will of the Necropolis",
+                    "spell_id": "206967"
+                },
+                "2": {
+                    "name": "Anti-Magic Barrier",
+                    "spell_id": "205727"
+                },
+                "3": {
+                    "name": "Rune Tap",
+                    "spell_id": "194679"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Grip of the Dead",
+                    "spell_id": "273952"
+                },
+                "2": {
+                    "name": "Tightening Grasp",
+                    "spell_id": "206970"
+                },
+                "3": {
+                    "name": "Wraith Walk",
+                    "spell_id": "212552"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Voracious",
+                    "spell_id": "273953"
+                },
+                "2": {
+                    "name": "Bloodworms",
+                    "spell_id": "195679"
+                },
+                "3": {
+                    "name": "Mark of Blood",
+                    "spell_id": "206940"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Purgatory",
+                    "spell_id": "114556"
+                },
+                "2": {
+                    "name": "Red Thirst",
+                    "spell_id": "205723"
+                },
+                "3": {
+                    "name": "Bonestorm",
+                    "spell_id": "194844"
+                }
+            }
+        },
+        "Frost": {
+            "1": {
+                "1": {
+                    "name": "Inexorable Assault",
+                    "spell_id": "253593"
+                },
+                "2": {
+                    "name": "Icy Talons",
+                    "spell_id": "194878"
+                },
+                "3": {
+                    "name": "Cold Heart",
+                    "spell_id": "281208"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Runic Attenuation",
+                    "spell_id": "207104"
+                },
+                "2": {
+                    "name": "Murderous Efficiency",
+                    "spell_id": "207061"
+                },
+                "3": {
+                    "name": "Horn of Winter",
+                    "spell_id": "57330"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Death's Reach",
+                    "spell_id": "276079"
+                },
+                "2": {
+                    "name": "Asphyxiate",
+                    "spell_id": "108194"
+                },
+                "3": {
+                    "name": "Blinding Sleet",
+                    "spell_id": "207167"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Avalanche",
+                    "spell_id": "207142"
+                },
+                "2": {
+                    "name": "Frozen Pulse",
+                    "spell_id": "194909"
+                },
+                "3": {
+                    "name": "Frostscythe",
+                    "spell_id": "207230"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Permafrost",
+                    "spell_id": "207200"
+                },
+                "2": {
+                    "name": "Wraith Walk",
+                    "spell_id": "212552"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Gathering Storm",
+                    "spell_id": "194912"
+                },
+                "2": {
+                    "name": "Glacial Advance",
+                    "spell_id": "194913"
+                },
+                "3": {
+                    "name": "Frostwyrm's Fury",
+                    "spell_id": "279302"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Icecap",
+                    "spell_id": "207126"
+                },
+                "2": {
+                    "name": "Obliteration",
+                    "spell_id": "281238"
+                },
+                "3": {
+                    "name": "Breath of Sindragosa",
+                    "spell_id": "152279"
+                }
+            }
+        },
+        "Unholy": {
+            "1": {
+                "1": {
+                    "name": "Infected Claws",
+                    "spell_id": "207272"
+                },
+                "2": {
+                    "name": "All Will Serve",
+                    "spell_id": "194916"
+                },
+                "3": {
+                    "name": "Clawing Shadows",
+                    "spell_id": "207311"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Bursting Sores",
+                    "spell_id": "207264"
+                },
+                "2": {
+                    "name": "Ebon Fever",
+                    "spell_id": "207269"
+                },
+                "3": {
+                    "name": "Unholy Blight",
+                    "spell_id": "115989"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Grip of the Dead",
+                    "spell_id": "273952"
+                },
+                "2": {
+                    "name": "Death's Reach",
+                    "spell_id": "276079"
+                },
+                "3": {
+                    "name": "Asphyxiate",
+                    "spell_id": "108194"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Pestilent Pustules",
+                    "spell_id": "194917"
+                },
+                "2": {
+                    "name": "Harbinger of Doom",
+                    "spell_id": "276023"
+                },
+                "3": {
+                    "name": "Soul Reaper",
+                    "spell_id": "130736"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Spell Eater",
+                    "spell_id": "207321"
+                },
+                "2": {
+                    "name": "Wraith Walk",
+                    "spell_id": "212552"
+                },
+                "3": {
+                    "name": "Death Pact",
+                    "spell_id": "48743"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Pestilence",
+                    "spell_id": "277234"
+                },
+                "2": {
+                    "name": "Defile",
+                    "spell_id": "152280"
+                },
+                "3": {
+                    "name": "Epidemic",
+                    "spell_id": "207317"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Army of the Damned",
+                    "spell_id": "276837"
+                },
+                "2": {
+                    "name": "Unholy Frenzy",
+                    "spell_id": "207289"
+                },
+                "3": {
+                    "name": "Summon Gargoyle",
+                    "spell_id": "49206"
+                }
+            }
+        }
+    },
+    "Demon_Hunter": {
+        "Havoc": {
+            "1": {
+                "1": {
+                    "name": "Blind Fury",
+                    "spell_id": "203550"
+                },
+                "2": {
+                    "name": "Demonic Appetite",
+                    "spell_id": "206478"
+                },
+                "3": {
+                    "name": "Felblade",
+                    "spell_id": "232893"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Insatiable Hunger",
+                    "spell_id": "258876"
+                },
+                "2": {
+                    "name": "Demon Blades",
+                    "spell_id": "203555"
+                },
+                "3": {
+                    "name": "Immolation Aura",
+                    "spell_id": "258920"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Trail of Ruin",
+                    "spell_id": "258881"
+                },
+                "2": {
+                    "name": "Fel Mastery",
+                    "spell_id": "192939"
+                },
+                "3": {
+                    "name": "Fel Barrage",
+                    "spell_id": "258925"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Soul Rending",
+                    "spell_id": "204909"
+                },
+                "2": {
+                    "name": "Desperate Instincts",
+                    "spell_id": "205411"
+                },
+                "3": {
+                    "name": "Netherwalk",
+                    "spell_id": "196555"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Cycle of Hatred",
+                    "spell_id": "258887"
+                },
+                "2": {
+                    "name": "First Blood",
+                    "spell_id": "206416"
+                },
+                "3": {
+                    "name": "Dark Slash",
+                    "spell_id": "258860"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Unleashed Power",
+                    "spell_id": "206477"
+                },
+                "2": {
+                    "name": "Master of the Glaive",
+                    "spell_id": "203556"
+                },
+                "3": {
+                    "name": "Fel Eruption",
+                    "spell_id": "211881"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Demonic",
+                    "spell_id": "213410"
+                },
+                "2": {
+                    "name": "Momentum",
+                    "spell_id": "206476"
+                },
+                "3": {
+                    "name": "Nemesis",
+                    "spell_id": "206491"
+                }
+            }
+        },
+        "Vengeance": {
+            "1": {
+                "1": {
+                    "name": "Abyssal Strike",
+                    "spell_id": "207550"
+                },
+                "2": {
+                    "name": "Agonizing Flames",
+                    "spell_id": "207548"
+                },
+                "3": {
+                    "name": "Razor Spikes",
+                    "spell_id": "209400"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Feast of Souls",
+                    "spell_id": "207697"
+                },
+                "2": {
+                    "name": "Fallout",
+                    "spell_id": "227174"
+                },
+                "3": {
+                    "name": "Burning Alive",
+                    "spell_id": "207739"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Flame Crash",
+                    "spell_id": "227322"
+                },
+                "2": {
+                    "name": "Charred Flesh",
+                    "spell_id": "264002"
+                },
+                "3": {
+                    "name": "Felblade",
+                    "spell_id": "232893"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Soul Rending",
+                    "spell_id": "217996"
+                },
+                "2": {
+                    "name": "Feed the Demon",
+                    "spell_id": "218612"
+                },
+                "3": {
+                    "name": "Fracture",
+                    "spell_id": "263642"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Concentrated Sigils",
+                    "spell_id": "207666"
+                },
+                "2": {
+                    "name": "Quickened Sigils",
+                    "spell_id": "209281"
+                },
+                "3": {
+                    "name": "Sigil of Chains",
+                    "spell_id": "202138"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Gluttony",
+                    "spell_id": "264004"
+                },
+                "2": {
+                    "name": "Spirit Bomb",
+                    "spell_id": "247454"
+                },
+                "3": {
+                    "name": "Fel Devastation",
+                    "spell_id": "212084"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Last Resort",
+                    "spell_id": "209258"
+                },
+                "2": {
+                    "name": "Void Reaver",
+                    "spell_id": "268175"
+                },
+                "3": {
+                    "name": "Soul Barrier",
+                    "spell_id": "263648"
+                }
+            }
+        }
+    },
+    "Druid": {
+        "Balance": {
+            "1": {
+                "1": {
+                    "name": "Nature's Balance",
+                    "spell_id": "202430"
+                },
+                "2": {
+                    "name": "Warrior of Elune",
+                    "spell_id": "202425"
+                },
+                "3": {
+                    "name": "Force of Nature",
+                    "spell_id": "205636"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Tiger Dash",
+                    "spell_id": "252216"
+                },
+                "2": {
+                    "name": "Renewal",
+                    "spell_id": "108238"
+                },
+                "3": {
+                    "name": "Wild Charge",
+                    "spell_id": "102401"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Feral Affinity",
+                    "spell_id": "202157"
+                },
+                "2": {
+                    "name": "Guardian Affinity",
+                    "spell_id": "197491"
+                },
+                "3": {
+                    "name": "Restoration Affinity",
+                    "spell_id": "197492"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Mighty Bash",
+                    "spell_id": "5211"
+                },
+                "2": {
+                    "name": "Mass Entanglement",
+                    "spell_id": "102359"
+                },
+                "3": {
+                    "name": "Typhoon",
+                    "spell_id": "132469"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Soul of the Forest",
+                    "spell_id": "114107"
+                },
+                "2": {
+                    "name": "Starlord",
+                    "spell_id": "202345"
+                },
+                "3": {
+                    "name": "Incarnation",
+                    "spell_id": "102560"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Stellar Drift",
+                    "spell_id": "202354"
+                },
+                "2": {
+                    "name": "Twin Moons",
+                    "spell_id": "279620"
+                },
+                "3": {
+                    "name": "Stellar Flare",
+                    "spell_id": "202347"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Shooting Stars",
+                    "spell_id": "202342"
+                },
+                "2": {
+                    "name": "Fury of Elune",
+                    "spell_id": "202770"
+                },
+                "3": {
+                    "name": "New Moon",
+                    "spell_id": "274281"
+                }
+            }
+        },
+        "Feral": {
+            "1": {
+                "1": {
+                    "name": "Predator",
+                    "spell_id": "202021"
+                },
+                "2": {
+                    "name": "Sabertooth",
+                    "spell_id": "202031"
+                },
+                "3": {
+                    "name": "Lunar Inspiration",
+                    "spell_id": "155580"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Tiger Dash",
+                    "spell_id": "252216"
+                },
+                "2": {
+                    "name": "Renewal",
+                    "spell_id": "108238"
+                },
+                "3": {
+                    "name": "Wild Charge",
+                    "spell_id": "102401"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Balance Affinity",
+                    "spell_id": "197488"
+                },
+                "2": {
+                    "name": "Guardian Affinity",
+                    "spell_id": "217615"
+                },
+                "3": {
+                    "name": "Restoration Affinity",
+                    "spell_id": "197492"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Mighty Bash",
+                    "spell_id": "5211"
+                },
+                "2": {
+                    "name": "Mass Entanglement",
+                    "spell_id": "102359"
+                },
+                "3": {
+                    "name": "Typhoon",
+                    "spell_id": "132469"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Soul of the Forest",
+                    "spell_id": "158476"
+                },
+                "2": {
+                    "name": "Savage Roar",
+                    "spell_id": "52610"
+                },
+                "3": {
+                    "name": "Incarnation",
+                    "spell_id": "102543"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Scent of Blood",
+                    "spell_id": "285564"
+                },
+                "2": {
+                    "name": "Brutal Slash",
+                    "spell_id": "202028"
+                },
+                "3": {
+                    "name": "Primal Wrath",
+                    "spell_id": "285381"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Moment of Clarity",
+                    "spell_id": "236068"
+                },
+                "2": {
+                    "name": "Bloodtalons",
+                    "spell_id": "155672"
+                },
+                "3": {
+                    "name": "Feral Frenzy",
+                    "spell_id": "274837"
+                }
+            }
+        },
+        "Guardian": {
+            "1": {
+                "1": {
+                    "name": "Brambles",
+                    "spell_id": "203953"
+                },
+                "2": {
+                    "name": "Blood Frenzy",
+                    "spell_id": "203962"
+                },
+                "3": {
+                    "name": "Bristling Fur",
+                    "spell_id": "155835"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Tiger Dash",
+                    "spell_id": "252216"
+                },
+                "2": {
+                    "name": "Ursol's Vortex",
+                    "spell_id": "102793"
+                },
+                "3": {
+                    "name": "Wild Charge",
+                    "spell_id": "102401"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Balance Affinity",
+                    "spell_id": "197488"
+                },
+                "2": {
+                    "name": "Feral Affinity",
+                    "spell_id": "202155"
+                },
+                "3": {
+                    "name": "Restoration Affinity",
+                    "spell_id": "197492"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Mighty Bash",
+                    "spell_id": "5211"
+                },
+                "2": {
+                    "name": "Mass Entanglement",
+                    "spell_id": "102359"
+                },
+                "3": {
+                    "name": "Typhoon",
+                    "spell_id": "132469"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Soul of the Forest",
+                    "spell_id": "158477"
+                },
+                "2": {
+                    "name": "Galactic Guardian",
+                    "spell_id": "203964"
+                },
+                "3": {
+                    "name": "Incarnation",
+                    "spell_id": "102558"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Earthwarden",
+                    "spell_id": "203974"
+                },
+                "2": {
+                    "name": "Survival of the Fittest",
+                    "spell_id": "203965"
+                },
+                "3": {
+                    "name": "Guardian of Elune",
+                    "spell_id": "155578"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Rend and Tear",
+                    "spell_id": "204053"
+                },
+                "2": {
+                    "name": "Lunar Beam",
+                    "spell_id": "204066"
+                },
+                "3": {
+                    "name": "Pulverize",
+                    "spell_id": "80313"
+                }
+            }
+        }
+    },
+    "Hunter": {
+        "Beast_Mastery": {
+            "1": {
+                "1": {
+                    "name": "Killer Instinct",
+                    "spell_id": "273887"
+                },
+                "2": {
+                    "name": "Animal Companion",
+                    "spell_id": "267116"
+                },
+                "3": {
+                    "name": "Dire Beast",
+                    "spell_id": "120679"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Scent of Blood",
+                    "spell_id": "193532"
+                },
+                "2": {
+                    "name": "One with the Pack",
+                    "spell_id": "199528"
+                },
+                "3": {
+                    "name": "Chimaera Shot",
+                    "spell_id": "53209"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Trailblazer",
+                    "spell_id": "199921"
+                },
+                "2": {
+                    "name": "Natural Mending",
+                    "spell_id": "270581"
+                },
+                "3": {
+                    "name": "Camouflage",
+                    "spell_id": "199483"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Venomous Bite",
+                    "spell_id": "257891"
+                },
+                "2": {
+                    "name": "Thrill of the Hunt",
+                    "spell_id": "257944"
+                },
+                "3": {
+                    "name": "A Murder of Crows",
+                    "spell_id": "131894"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Born To Be Wild",
+                    "spell_id": "266921"
+                },
+                "2": {
+                    "name": "Posthaste",
+                    "spell_id": "109215"
+                },
+                "3": {
+                    "name": "Binding Shot",
+                    "spell_id": "109248"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Stomp",
+                    "spell_id": "199530"
+                },
+                "2": {
+                    "name": "Barrage",
+                    "spell_id": "120360"
+                },
+                "3": {
+                    "name": "Stampede",
+                    "spell_id": "201430"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Aspect of the Beast",
+                    "spell_id": "191384"
+                },
+                "2": {
+                    "name": "Killer Cobra",
+                    "spell_id": "199532"
+                },
+                "3": {
+                    "name": "Spitting Cobra",
+                    "spell_id": "194407"
+                }
+            }
+        },
+        "Marksmanship": {
+            "1": {
+                "1": {
+                    "name": "Master Marksman",
+                    "spell_id": "260309"
+                },
+                "2": {
+                    "name": "Serpent Sting",
+                    "spell_id": "271788"
+                },
+                "3": {
+                    "name": "A Murder of Crows",
+                    "spell_id": "131894"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Careful Aim",
+                    "spell_id": "260228"
+                },
+                "2": {
+                    "name": "Volley",
+                    "spell_id": "260243"
+                },
+                "3": {
+                    "name": "Explosive Shot",
+                    "spell_id": "212431"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Trailblazer",
+                    "spell_id": "199921"
+                },
+                "2": {
+                    "name": "Natural Mending",
+                    "spell_id": "270581"
+                },
+                "3": {
+                    "name": "Camouflage",
+                    "spell_id": "199483"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Steady Focus",
+                    "spell_id": "193533"
+                },
+                "2": {
+                    "name": "Streamline",
+                    "spell_id": "260367"
+                },
+                "3": {
+                    "name": "Hunter's Mark",
+                    "spell_id": "257284"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Born To Be Wild",
+                    "spell_id": "266921"
+                },
+                "2": {
+                    "name": "Posthaste",
+                    "spell_id": "109215"
+                },
+                "3": {
+                    "name": "Binding Shot",
+                    "spell_id": "109248"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Lethal Shots",
+                    "spell_id": "260393"
+                },
+                "2": {
+                    "name": "Barrage",
+                    "spell_id": "120360"
+                },
+                "3": {
+                    "name": "Double Tap",
+                    "spell_id": "260402"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Calling the Shots",
+                    "spell_id": "260404"
+                },
+                "2": {
+                    "name": "Lock and Load",
+                    "spell_id": "194595"
+                },
+                "3": {
+                    "name": "Piercing Shot",
+                    "spell_id": "198670"
+                }
+            }
+        },
+        "Survival": {
+            "1": {
+                "1": {
+                    "name": "Viper's Venom",
+                    "spell_id": "268501"
+                },
+                "2": {
+                    "name": "Terms of Engagement",
+                    "spell_id": "265895"
+                },
+                "3": {
+                    "name": "Alpha Predator",
+                    "spell_id": "269737"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Guerrilla Tactics",
+                    "spell_id": "264332"
+                },
+                "2": {
+                    "name": "Hydra's Bite",
+                    "spell_id": "260241"
+                },
+                "3": {
+                    "name": "Butchery",
+                    "spell_id": "212436"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Trailblazer",
+                    "spell_id": "199921"
+                },
+                "2": {
+                    "name": "Natural Mending",
+                    "spell_id": "270581"
+                },
+                "3": {
+                    "name": "Camouflage",
+                    "spell_id": "199483"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Bloodseeker",
+                    "spell_id": "260248"
+                },
+                "2": {
+                    "name": "Steel Trap",
+                    "spell_id": "162488"
+                },
+                "3": {
+                    "name": "A Murder of Crows",
+                    "spell_id": "131894"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Born To Be Wild",
+                    "spell_id": "266921"
+                },
+                "2": {
+                    "name": "Posthaste",
+                    "spell_id": "109215"
+                },
+                "3": {
+                    "name": "Binding Shot",
+                    "spell_id": "109248"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Tip of the Spear",
+                    "spell_id": "260285"
+                },
+                "2": {
+                    "name": "Mongoose Bite",
+                    "spell_id": "259387"
+                },
+                "3": {
+                    "name": "Flanking Strike",
+                    "spell_id": "269751"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Birds of Prey",
+                    "spell_id": "260331"
+                },
+                "2": {
+                    "name": "Wildfire Infusion",
+                    "spell_id": "271014"
+                },
+                "3": {
+                    "name": "Chakrams",
+                    "spell_id": "259391"
+                }
+            }
+        }
+    },
+    "Mage": {
+        "Arcane": {
+            "1": {
+                "1": {
+                    "name": "Amplification",
+                    "spell_id": "236628"
+                },
+                "2": {
+                    "name": "Rule of Threes",
+                    "spell_id": "264354"
+                },
+                "3": {
+                    "name": "Arcane Familiar",
+                    "spell_id": "205022"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Mana Shield",
+                    "spell_id": "235463"
+                },
+                "2": {
+                    "name": "Shimmer",
+                    "spell_id": "212653"
+                },
+                "3": {
+                    "name": "Slipstream",
+                    "spell_id": "236457"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Incanter's Flow",
+                    "spell_id": "1463"
+                },
+                "2": {
+                    "name": "Mirror Image",
+                    "spell_id": "55342"
+                },
+                "3": {
+                    "name": "Rune of Power",
+                    "spell_id": "116011"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Resonance",
+                    "spell_id": "205028"
+                },
+                "2": {
+                    "name": "Charged Up",
+                    "spell_id": "205032"
+                },
+                "3": {
+                    "name": "Supernova",
+                    "spell_id": "157980"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Chrono Shift",
+                    "spell_id": "235711"
+                },
+                "2": {
+                    "name": "Ice Ward",
+                    "spell_id": "205036"
+                },
+                "3": {
+                    "name": "Ring of Frost",
+                    "spell_id": "113724"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Reverberate",
+                    "spell_id": "281482"
+                },
+                "2": {
+                    "name": "Touch of the Magi",
+                    "spell_id": "210725"
+                },
+                "3": {
+                    "name": "Nether Tempest",
+                    "spell_id": "114923"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Overpowered",
+                    "spell_id": "155147"
+                },
+                "2": {
+                    "name": "Time Anomaly",
+                    "spell_id": "210805"
+                },
+                "3": {
+                    "name": "Arcane Orb",
+                    "spell_id": "153626"
+                }
+            }
+        },
+        "Fire": {
+            "1": {
+                "1": {
+                    "name": "Firestarter",
+                    "spell_id": "205026"
+                },
+                "2": {
+                    "name": "Pyromaniac",
+                    "spell_id": "205020"
+                },
+                "3": {
+                    "name": "Searing Touch",
+                    "spell_id": "269644"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Blazing Soul",
+                    "spell_id": "235365"
+                },
+                "2": {
+                    "name": "Shimmer",
+                    "spell_id": "212653"
+                },
+                "3": {
+                    "name": "Blast Wave",
+                    "spell_id": "157981"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Incanter's Flow",
+                    "spell_id": "1463"
+                },
+                "2": {
+                    "name": "Mirror Image",
+                    "spell_id": "55342"
+                },
+                "3": {
+                    "name": "Rune of Power",
+                    "spell_id": "116011"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Flame On",
+                    "spell_id": "205029"
+                },
+                "2": {
+                    "name": "Alexstrasza's Fury",
+                    "spell_id": "235870"
+                },
+                "3": {
+                    "name": "Phoenix Flames",
+                    "spell_id": "257541"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Frenetic Speed",
+                    "spell_id": "236058"
+                },
+                "2": {
+                    "name": "Ice Ward",
+                    "spell_id": "205036"
+                },
+                "3": {
+                    "name": "Ring of Frost",
+                    "spell_id": "113724"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Flame Patch",
+                    "spell_id": "205037"
+                },
+                "2": {
+                    "name": "Conflagration",
+                    "spell_id": "205023"
+                },
+                "3": {
+                    "name": "Living Bomb",
+                    "spell_id": "44457"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Kindling",
+                    "spell_id": "155148"
+                },
+                "2": {
+                    "name": "Pyroclasm",
+                    "spell_id": "269650"
+                },
+                "3": {
+                    "name": "Meteor",
+                    "spell_id": "153561"
+                }
+            }
+        },
+        "Frost": {
+            "1": {
+                "1": {
+                    "name": "Bone Chilling",
+                    "spell_id": "205027"
+                },
+                "2": {
+                    "name": "Lonely Winter",
+                    "spell_id": "205024"
+                },
+                "3": {
+                    "name": "Ice Nova",
+                    "spell_id": "157997"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Glacial Insulation",
+                    "spell_id": "235297"
+                },
+                "2": {
+                    "name": "Shimmer",
+                    "spell_id": "212653"
+                },
+                "3": {
+                    "name": "Ice Floes",
+                    "spell_id": "108839"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Incanter's Flow",
+                    "spell_id": "1463"
+                },
+                "2": {
+                    "name": "Mirror Image",
+                    "spell_id": "55342"
+                },
+                "3": {
+                    "name": "Rune of Power",
+                    "spell_id": "116011"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Frozen Touch",
+                    "spell_id": "205030"
+                },
+                "2": {
+                    "name": "Chain Reaction",
+                    "spell_id": "278309"
+                },
+                "3": {
+                    "name": "Ebonbolt",
+                    "spell_id": "257537"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Frigid Winds",
+                    "spell_id": "235224"
+                },
+                "2": {
+                    "name": "Ice Ward",
+                    "spell_id": "205036"
+                },
+                "3": {
+                    "name": "Ring of Frost",
+                    "spell_id": "113724"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Freezing Rain",
+                    "spell_id": "270233"
+                },
+                "2": {
+                    "name": "Splitting Ice",
+                    "spell_id": "56377"
+                },
+                "3": {
+                    "name": "Comet Storm",
+                    "spell_id": "153595"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Thermal Void",
+                    "spell_id": "155149"
+                },
+                "2": {
+                    "name": "Ray of Frost",
+                    "spell_id": "205021"
+                },
+                "3": {
+                    "name": "Glacial Spike",
+                    "spell_id": "199786"
+                }
+            }
+        }
+    },
+    "Monk": {
+        "Brewmaster": {
+            "1": {
+                "1": {
+                    "name": "Eye of the Tiger",
+                    "spell_id": "196607"
+                },
+                "2": {
+                    "name": "Chi Wave",
+                    "spell_id": "115098"
+                },
+                "3": {
+                    "name": "Chi Burst",
+                    "spell_id": "123986"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Celerity",
+                    "spell_id": "115173"
+                },
+                "2": {
+                    "name": "Chi Torpedo",
+                    "spell_id": "115008"
+                },
+                "3": {
+                    "name": "Tiger's Lust",
+                    "spell_id": "116841"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Light Brewing",
+                    "spell_id": "196721"
+                },
+                "2": {
+                    "name": "Spitfire",
+                    "spell_id": "242580"
+                },
+                "3": {
+                    "name": "Black Ox Brew",
+                    "spell_id": "115399"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Tiger Tail Sweep",
+                    "spell_id": "264348"
+                },
+                "2": {
+                    "name": "Summon Black Ox Statue",
+                    "spell_id": "115315"
+                },
+                "3": {
+                    "name": "Ring of Peace",
+                    "spell_id": "116844"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Bob and Weave",
+                    "spell_id": "280515"
+                },
+                "2": {
+                    "name": "Healing Elixir",
+                    "spell_id": "122281"
+                },
+                "3": {
+                    "name": "Dampen Harm",
+                    "spell_id": "122278"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Special Delivery",
+                    "spell_id": "196730"
+                },
+                "2": {
+                    "name": "Rushing Jade Wind",
+                    "spell_id": "116847"
+                },
+                "3": {
+                    "name": "Invoke Niuzao, the Black Ox",
+                    "spell_id": "132578"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "High Tolerance",
+                    "spell_id": "196737"
+                },
+                "2": {
+                    "name": "Guard",
+                    "spell_id": "115295"
+                },
+                "3": {
+                    "name": "Blackout Combo",
+                    "spell_id": "196736"
+                }
+            }
+        },
+        "Windwalker": {
+            "1": {
+                "1": {
+                    "name": "Eye of the Tiger",
+                    "spell_id": "196607"
+                },
+                "2": {
+                    "name": "Chi Wave",
+                    "spell_id": "115098"
+                },
+                "3": {
+                    "name": "Chi Burst",
+                    "spell_id": "123986"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Celerity",
+                    "spell_id": "115173"
+                },
+                "2": {
+                    "name": "Chi Torpedo",
+                    "spell_id": "115008"
+                },
+                "3": {
+                    "name": "Tiger's Lust",
+                    "spell_id": "116841"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Ascension",
+                    "spell_id": "115396"
+                },
+                "2": {
+                    "name": "Fist of the White Tiger",
+                    "spell_id": "261947"
+                },
+                "3": {
+                    "name": "Energizing Elixir",
+                    "spell_id": "115288"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Tiger Tail Sweep",
+                    "spell_id": "264348"
+                },
+                "2": {
+                    "name": "Good Karma",
+                    "spell_id": "280195"
+                },
+                "3": {
+                    "name": "Ring of Peace",
+                    "spell_id": "116844"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Inner Strength",
+                    "spell_id": "261767"
+                },
+                "2": {
+                    "name": "Diffuse Magic",
+                    "spell_id": "122783"
+                },
+                "3": {
+                    "name": "Dampen Harm",
+                    "spell_id": "122278"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Hit Combo",
+                    "spell_id": "196740"
+                },
+                "2": {
+                    "name": "Rushing Jade Wind",
+                    "spell_id": "116847"
+                },
+                "3": {
+                    "name": "Invoke Xuen, the White Tiger",
+                    "spell_id": "123904"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Spiritual Focus",
+                    "spell_id": "280197"
+                },
+                "2": {
+                    "name": "Whirling Dragon Punch",
+                    "spell_id": "152175"
+                },
+                "3": {
+                    "name": "Serenity",
+                    "spell_id": "152173"
+                }
+            }
+        }
+    },
+    "Paladin": {
+        "Protection": {
+            "1": {
+                "1": {
+                    "name": "Holy Shield",
+                    "spell_id": "152261"
+                },
+                "2": {
+                    "name": "Redoubt",
+                    "spell_id": "280373"
+                },
+                "3": {
+                    "name": "Blessed Hammer",
+                    "spell_id": "204019"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "First Avenger",
+                    "spell_id": "203776"
+                },
+                "2": {
+                    "name": "Crusader's Judgment",
+                    "spell_id": "204023"
+                },
+                "3": {
+                    "name": "Bastion of Light",
+                    "spell_id": "204035"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Fist of Justice",
+                    "spell_id": "198054"
+                },
+                "2": {
+                    "name": "Repentance",
+                    "spell_id": "20066"
+                },
+                "3": {
+                    "name": "Blinding Light",
+                    "spell_id": "115750"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Retribution Aura",
+                    "spell_id": "203797"
+                },
+                "2": {
+                    "name": "Cavalier",
+                    "spell_id": "230332"
+                },
+                "3": {
+                    "name": "Blessing of Spellwarding",
+                    "spell_id": "204018"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Unbreakable Spirit",
+                    "spell_id": "114154"
+                },
+                "2": {
+                    "name": "Final Stand",
+                    "spell_id": "204077"
+                },
+                "3": {
+                    "name": "Hand of the Protector",
+                    "spell_id": "213652"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Judgment of Light",
+                    "spell_id": "183778"
+                },
+                "2": {
+                    "name": "Consecrated Ground",
+                    "spell_id": "204054"
+                },
+                "3": {
+                    "name": "Aegis of Light",
+                    "spell_id": "204150"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Last Defender",
+                    "spell_id": "203791"
+                },
+                "2": {
+                    "name": "Righteous Protector",
+                    "spell_id": "204074"
+                },
+                "3": {
+                    "name": "Seraphim",
+                    "spell_id": "152262"
+                }
+            }
+        },
+        "Retribution": {
+            "1": {
+                "1": {
+                    "name": "Zeal",
+                    "spell_id": "269569"
+                },
+                "2": {
+                    "name": "Righteous Verdict",
+                    "spell_id": "267610"
+                },
+                "3": {
+                    "name": "Execution Sentence",
+                    "spell_id": "267798"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Fires of Justice",
+                    "spell_id": "203316"
+                },
+                "2": {
+                    "name": "Blade of Wrath",
+                    "spell_id": "231832"
+                },
+                "3": {
+                    "name": "Hammer of Wrath",
+                    "spell_id": "24275"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Fist of Justice",
+                    "spell_id": "234299"
+                },
+                "2": {
+                    "name": "Repentance",
+                    "spell_id": "20066"
+                },
+                "3": {
+                    "name": "Blinding Light",
+                    "spell_id": "115750"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Divine Judgment",
+                    "spell_id": "271580"
+                },
+                "2": {
+                    "name": "Consecration",
+                    "spell_id": "205228"
+                },
+                "3": {
+                    "name": "Wake of Ashes",
+                    "spell_id": "255937"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Unbreakable Spirit",
+                    "spell_id": "114154"
+                },
+                "2": {
+                    "name": "Cavalier",
+                    "spell_id": "230332"
+                },
+                "3": {
+                    "name": "Eye for an Eye",
+                    "spell_id": "205191"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Selfless Healer",
+                    "spell_id": "85804"
+                },
+                "2": {
+                    "name": "Justicar's Vengeance",
+                    "spell_id": "215661"
+                },
+                "3": {
+                    "name": "Word of Glory",
+                    "spell_id": "210191"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Divine Purpose",
+                    "spell_id": "223817"
+                },
+                "2": {
+                    "name": "Crusade",
+                    "spell_id": "231895"
+                },
+                "3": {
+                    "name": "Inquisition",
+                    "spell_id": "84963"
+                }
+            }
+        }
+    },
+    "Priest": {
+        "Discipline": {
+            "1": {
+                "1": {
+                    "name": "Castigation",
+                    "spell_id": "193134"
+                },
+                "2": {
+                    "name": "Twist of Fate",
+                    "spell_id": "265259"
+                },
+                "3": {
+                    "name": "Schism",
+                    "spell_id": "214621"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Body and Soul",
+                    "spell_id": "64129"
+                },
+                "2": {
+                    "name": "Masochism",
+                    "spell_id": "193063"
+                },
+                "3": {
+                    "name": "Angelic Feather",
+                    "spell_id": "121536"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Shield Discipline",
+                    "spell_id": "197045"
+                },
+                "2": {
+                    "name": "Mindbender",
+                    "spell_id": "123040"
+                },
+                "3": {
+                    "name": "Power Word",
+                    "spell_id": "129250"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Psychic Voice",
+                    "spell_id": "196704"
+                },
+                "2": {
+                    "name": "Dominant Mind",
+                    "spell_id": "205367"
+                },
+                "3": {
+                    "name": "Shining Force",
+                    "spell_id": "204263"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Sins of the Many",
+                    "spell_id": "280391"
+                },
+                "2": {
+                    "name": "Contrition",
+                    "spell_id": "197419"
+                },
+                "3": {
+                    "name": "Shadow Covenant",
+                    "spell_id": "204065"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Purge the Wicked",
+                    "spell_id": "204197"
+                },
+                "2": {
+                    "name": "Divine Star",
+                    "spell_id": "110744"
+                },
+                "3": {
+                    "name": "Halo",
+                    "spell_id": "120517"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Lenience",
+                    "spell_id": "238063"
+                },
+                "2": {
+                    "name": "Luminous Barrier",
+                    "spell_id": "271466"
+                },
+                "3": {
+                    "name": "Evangelism",
+                    "spell_id": "246287"
+                }
+            }
+        },
+        "Holy": {
+            "1": {
+                "1": {
+                    "name": "Enlightenment",
+                    "spell_id": "193155"
+                },
+                "2": {
+                    "name": "Trail of Light",
+                    "spell_id": "200128"
+                },
+                "3": {
+                    "name": "Enduring Renewal",
+                    "spell_id": "200153"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Angel's Mercy",
+                    "spell_id": "238100"
+                },
+                "2": {
+                    "name": "Perseverance",
+                    "spell_id": "235189"
+                },
+                "3": {
+                    "name": "Angelic Feather",
+                    "spell_id": "121536"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Cosmic Ripple",
+                    "spell_id": "238136"
+                },
+                "2": {
+                    "name": "Guardian Angel",
+                    "spell_id": "200209"
+                },
+                "3": {
+                    "name": "Afterlife",
+                    "spell_id": "196707"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Psychic Voice",
+                    "spell_id": "196704"
+                },
+                "2": {
+                    "name": "Censure",
+                    "spell_id": "200199"
+                },
+                "3": {
+                    "name": "Shining Force",
+                    "spell_id": "204263"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Surge of Light",
+                    "spell_id": "109186"
+                },
+                "2": {
+                    "name": "Binding Heal",
+                    "spell_id": "32546"
+                },
+                "3": {
+                    "name": "Circle of Healing",
+                    "spell_id": "204883"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Benediction",
+                    "spell_id": "193157"
+                },
+                "2": {
+                    "name": "Divine Star",
+                    "spell_id": "110744"
+                },
+                "3": {
+                    "name": "Halo",
+                    "spell_id": "120517"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Light of the Naaru",
+                    "spell_id": "196985"
+                },
+                "2": {
+                    "name": "Apotheosis",
+                    "spell_id": "200183"
+                },
+                "3": {
+                    "name": "Holy Word",
+                    "spell_id": "265202"
+                }
+            }
+        },
+        "Shadow": {
+            "1": {
+                "1": {
+                    "name": "Fortress of the Mind",
+                    "spell_id": "193195"
+                },
+                "2": {
+                    "name": "Shadowy Insight",
+                    "spell_id": "162452"
+                },
+                "3": {
+                    "name": "Shadow Word",
+                    "spell_id": "205351"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Body and Soul",
+                    "spell_id": "64129"
+                },
+                "2": {
+                    "name": "San'layn",
+                    "spell_id": "199855"
+                },
+                "3": {
+                    "name": "Intangibility",
+                    "spell_id": "288733"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Twist of Fate",
+                    "spell_id": "109142"
+                },
+                "2": {
+                    "name": "Misery",
+                    "spell_id": "238558"
+                },
+                "3": {
+                    "name": "Dark Void",
+                    "spell_id": "263346"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Last Word",
+                    "spell_id": "263716"
+                },
+                "2": {
+                    "name": "Mind Bomb",
+                    "spell_id": "205369"
+                },
+                "3": {
+                    "name": "Psychic Horror",
+                    "spell_id": "64044"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Auspicious Spirits",
+                    "spell_id": "155271"
+                },
+                "2": {
+                    "name": "Shadow Word",
+                    "spell_id": "32379"
+                },
+                "3": {
+                    "name": "Shadow Crash",
+                    "spell_id": "205385"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Lingering Insanity",
+                    "spell_id": "199849"
+                },
+                "2": {
+                    "name": "Mindbender",
+                    "spell_id": "200174"
+                },
+                "3": {
+                    "name": "Void Torrent",
+                    "spell_id": "263165"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Legacy of the Void",
+                    "spell_id": "193225"
+                },
+                "2": {
+                    "name": "Dark Ascension",
+                    "spell_id": "280711"
+                },
+                "3": {
+                    "name": "Surrender to Madness",
+                    "spell_id": "193223"
+                }
+            }
+        }
+    },
+    "Rogue": {
+        "Assassination": {
+            "1": {
+                "1": {
+                    "name": "Master Poisoner",
+                    "spell_id": "196864"
+                },
+                "2": {
+                    "name": "Elaborate Planning",
+                    "spell_id": "193640"
+                },
+                "3": {
+                    "name": "Blindside",
+                    "spell_id": "111240"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Nightstalker",
+                    "spell_id": "14062"
+                },
+                "2": {
+                    "name": "Subterfuge",
+                    "spell_id": "108208"
+                },
+                "3": {
+                    "name": "Master Assassin",
+                    "spell_id": "255989"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Vigor",
+                    "spell_id": "14983"
+                },
+                "2": {
+                    "name": "Deeper Stratagem",
+                    "spell_id": "193531"
+                },
+                "3": {
+                    "name": "Marked for Death",
+                    "spell_id": "137619"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Leeching Poison",
+                    "spell_id": "280716"
+                },
+                "2": {
+                    "name": "Cheat Death",
+                    "spell_id": "31230"
+                },
+                "3": {
+                    "name": "Elusiveness",
+                    "spell_id": "79008"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Internal Bleeding",
+                    "spell_id": "154904"
+                },
+                "2": {
+                    "name": "Iron Wire",
+                    "spell_id": "196861"
+                },
+                "3": {
+                    "name": "Prey on the Weak",
+                    "spell_id": "131511"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Venom Rush",
+                    "spell_id": "152152"
+                },
+                "2": {
+                    "name": "Toxic Blade",
+                    "spell_id": "245388"
+                },
+                "3": {
+                    "name": "Exsanguinate",
+                    "spell_id": "200806"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Poison Bomb",
+                    "spell_id": "255544"
+                },
+                "2": {
+                    "name": "Hidden Blades",
+                    "spell_id": "270061"
+                },
+                "3": {
+                    "name": "Crimson Tempest",
+                    "spell_id": "121411"
+                }
+            }
+        },
+        "Outlaw": {
+            "1": {
+                "1": {
+                    "name": "Weaponmaster",
+                    "spell_id": "200733"
+                },
+                "2": {
+                    "name": "Quick Draw",
+                    "spell_id": "196938"
+                },
+                "3": {
+                    "name": "Ghostly Strike",
+                    "spell_id": "196937"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Acrobatic Strikes",
+                    "spell_id": "196924"
+                },
+                "2": {
+                    "name": "Retractable Hook",
+                    "spell_id": "256188"
+                },
+                "3": {
+                    "name": "Hit and Run",
+                    "spell_id": "196922"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Vigor",
+                    "spell_id": "14983"
+                },
+                "2": {
+                    "name": "Deeper Stratagem",
+                    "spell_id": "193531"
+                },
+                "3": {
+                    "name": "Marked for Death",
+                    "spell_id": "137619"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Iron Stomach",
+                    "spell_id": "193546"
+                },
+                "2": {
+                    "name": "Cheat Death",
+                    "spell_id": "31230"
+                },
+                "3": {
+                    "name": "Elusiveness",
+                    "spell_id": "79008"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Dirty Tricks",
+                    "spell_id": "108216"
+                },
+                "2": {
+                    "name": "Blinding Powder",
+                    "spell_id": "256165"
+                },
+                "3": {
+                    "name": "Prey on the Weak",
+                    "spell_id": "131511"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Loaded Dice",
+                    "spell_id": "256170"
+                },
+                "2": {
+                    "name": "Alacrity",
+                    "spell_id": "193539"
+                },
+                "3": {
+                    "name": "Slice and Dice",
+                    "spell_id": "5171"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Dancing Steel",
+                    "spell_id": "272026"
+                },
+                "2": {
+                    "name": "Blade Rush",
+                    "spell_id": "271877"
+                },
+                "3": {
+                    "name": "Killing Spree",
+                    "spell_id": "51690"
+                }
+            }
+        },
+        "Subtlety": {
+            "1": {
+                "1": {
+                    "name": "Weaponmaster",
+                    "spell_id": "193537"
+                },
+                "2": {
+                    "name": "Find Weakness",
+                    "spell_id": "91023"
+                },
+                "3": {
+                    "name": "Gloomblade",
+                    "spell_id": "200758"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Nightstalker",
+                    "spell_id": "14062"
+                },
+                "2": {
+                    "name": "Subterfuge",
+                    "spell_id": "108208"
+                },
+                "3": {
+                    "name": "Shadow Focus",
+                    "spell_id": "108209"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Vigor",
+                    "spell_id": "14983"
+                },
+                "2": {
+                    "name": "Deeper Stratagem",
+                    "spell_id": "193531"
+                },
+                "3": {
+                    "name": "Marked for Death",
+                    "spell_id": "137619"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Soothing Darkness",
+                    "spell_id": "200759"
+                },
+                "2": {
+                    "name": "Cheat Death",
+                    "spell_id": "31230"
+                },
+                "3": {
+                    "name": "Elusiveness",
+                    "spell_id": "79008"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Shot in the Dark",
+                    "spell_id": "257505"
+                },
+                "2": {
+                    "name": "Night Terrors",
+                    "spell_id": "277953"
+                },
+                "3": {
+                    "name": "Prey on the Weak",
+                    "spell_id": "131511"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Dark Shadow",
+                    "spell_id": "245687"
+                },
+                "2": {
+                    "name": "Alacrity",
+                    "spell_id": "193539"
+                },
+                "3": {
+                    "name": "Enveloping Shadows",
+                    "spell_id": "238104"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Master of Shadows",
+                    "spell_id": "196976"
+                },
+                "2": {
+                    "name": "Secret Technique",
+                    "spell_id": "280719"
+                },
+                "3": {
+                    "name": "Shuriken Tornado",
+                    "spell_id": "277925"
+                }
+            }
+        }
+    },
+    "Shaman": {
+        "Elemental": {
+            "1": {
+                "1": {
+                    "name": "Earthen Rage",
+                    "spell_id": "170374"
+                },
+                "2": {
+                    "name": "Echo of the Elements",
+                    "spell_id": "108283"
+                },
+                "3": {
+                    "name": "Elemental Blast",
+                    "spell_id": "117014"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Aftershock",
+                    "spell_id": "273221"
+                },
+                "2": {
+                    "name": "Call the Thunder",
+                    "spell_id": "260897"
+                },
+                "3": {
+                    "name": "Totem Mastery",
+                    "spell_id": "210643"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Spirit Wolf",
+                    "spell_id": "260878"
+                },
+                "2": {
+                    "name": "Earth Shield",
+                    "spell_id": "974"
+                },
+                "3": {
+                    "name": "Static Charge",
+                    "spell_id": "265046"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Master of the Elements",
+                    "spell_id": "16166"
+                },
+                "2": {
+                    "name": "Storm Elemental",
+                    "spell_id": "192249"
+                },
+                "3": {
+                    "name": "Liquid Magma Totem",
+                    "spell_id": "192222"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Nature's Guardian",
+                    "spell_id": "30884"
+                },
+                "2": {
+                    "name": "Ancestral Guidance",
+                    "spell_id": "108281"
+                },
+                "3": {
+                    "name": "Wind Rush Totem",
+                    "spell_id": "192077"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Surge of Power",
+                    "spell_id": "262303"
+                },
+                "2": {
+                    "name": "Primal Elementalist",
+                    "spell_id": "117013"
+                },
+                "3": {
+                    "name": "Icefury",
+                    "spell_id": "210714"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Unlimited Power",
+                    "spell_id": "260895"
+                },
+                "2": {
+                    "name": "Stormkeeper",
+                    "spell_id": "191634"
+                },
+                "3": {
+                    "name": "Ascendance",
+                    "spell_id": "114050"
+                }
+            }
+        },
+        "Enhancement": {
+            "1": {
+                "1": {
+                    "name": "Boulderfist",
+                    "spell_id": "246035"
+                },
+                "2": {
+                    "name": "Hot Hand",
+                    "spell_id": "201900"
+                },
+                "3": {
+                    "name": "Lightning Shield",
+                    "spell_id": "192106"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Landslide",
+                    "spell_id": "197992"
+                },
+                "2": {
+                    "name": "Forceful Winds",
+                    "spell_id": "262647"
+                },
+                "3": {
+                    "name": "Totem Mastery",
+                    "spell_id": "262395"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Spirit Wolf",
+                    "spell_id": "260878"
+                },
+                "2": {
+                    "name": "Earth Shield",
+                    "spell_id": "974"
+                },
+                "3": {
+                    "name": "Static Charge",
+                    "spell_id": "265046"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Searing Assault",
+                    "spell_id": "192087"
+                },
+                "2": {
+                    "name": "Hailstorm",
+                    "spell_id": "210853"
+                },
+                "3": {
+                    "name": "Overcharge",
+                    "spell_id": "210727"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Nature's Guardian",
+                    "spell_id": "30884"
+                },
+                "2": {
+                    "name": "Feral Lunge",
+                    "spell_id": "196884"
+                },
+                "3": {
+                    "name": "Wind Rush Totem",
+                    "spell_id": "192077"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Crashing Storm",
+                    "spell_id": "192246"
+                },
+                "2": {
+                    "name": "Fury of Air",
+                    "spell_id": "197211"
+                },
+                "3": {
+                    "name": "Sundering",
+                    "spell_id": "197214"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Elemental Spirits",
+                    "spell_id": "262624"
+                },
+                "2": {
+                    "name": "Earthen Spike",
+                    "spell_id": "188089"
+                },
+                "3": {
+                    "name": "Ascendance",
+                    "spell_id": "114051"
+                }
+            }
+        }
+    },
+    "Warlock": {
+        "Affliction": {
+            "1": {
+                "1": {
+                    "name": "Nightfall",
+                    "spell_id": "108558"
+                },
+                "2": {
+                    "name": "Drain Soul",
+                    "spell_id": "198590"
+                },
+                "3": {
+                    "name": "Deathbolt",
+                    "spell_id": "264106"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Writhe in Agony",
+                    "spell_id": "196102"
+                },
+                "2": {
+                    "name": "Absolute Corruption",
+                    "spell_id": "196103"
+                },
+                "3": {
+                    "name": "Siphon Life",
+                    "spell_id": "63106"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Demon Skin",
+                    "spell_id": "219272"
+                },
+                "2": {
+                    "name": "Burning Rush",
+                    "spell_id": "111400"
+                },
+                "3": {
+                    "name": "Dark Pact",
+                    "spell_id": "108416"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Sow the Seeds",
+                    "spell_id": "196226"
+                },
+                "2": {
+                    "name": "Phantom Singularity",
+                    "spell_id": "205179"
+                },
+                "3": {
+                    "name": "Vile Taint",
+                    "spell_id": "278350"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Darkfury",
+                    "spell_id": "264874"
+                },
+                "2": {
+                    "name": "Mortal Coil",
+                    "spell_id": "6789"
+                },
+                "3": {
+                    "name": "Demonic Circle",
+                    "spell_id": "268358"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Shadow Embrace",
+                    "spell_id": "32388"
+                },
+                "2": {
+                    "name": "Haunt",
+                    "spell_id": "48181"
+                },
+                "3": {
+                    "name": "Grimoire of Sacrifice",
+                    "spell_id": "108503"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Soul Conduit",
+                    "spell_id": "215941"
+                },
+                "2": {
+                    "name": "Creeping Death",
+                    "spell_id": "264000"
+                },
+                "3": {
+                    "name": "Dark Soul",
+                    "spell_id": "113860"
+                }
+            }
+        },
+        "Demonology": {
+            "1": {
+                "1": {
+                    "name": "Dreadlash",
+                    "spell_id": "264078"
+                },
+                "2": {
+                    "name": "Demonic Strength",
+                    "spell_id": "267171"
+                },
+                "3": {
+                    "name": "Bilescourge Bombers",
+                    "spell_id": "267211"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Demonic Calling",
+                    "spell_id": "205145"
+                },
+                "2": {
+                    "name": "Power Siphon",
+                    "spell_id": "264130"
+                },
+                "3": {
+                    "name": "Doom",
+                    "spell_id": "265412"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Demon Skin",
+                    "spell_id": "219272"
+                },
+                "2": {
+                    "name": "Burning Rush",
+                    "spell_id": "111400"
+                },
+                "3": {
+                    "name": "Dark Pact",
+                    "spell_id": "108416"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "From the Shadows",
+                    "spell_id": "267170"
+                },
+                "2": {
+                    "name": "Soul Strike",
+                    "spell_id": "264057"
+                },
+                "3": {
+                    "name": "Summon Vilefiend",
+                    "spell_id": "264119"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Darkfury",
+                    "spell_id": "264874"
+                },
+                "2": {
+                    "name": "Mortal Coil",
+                    "spell_id": "6789"
+                },
+                "3": {
+                    "name": "Demonic Circle",
+                    "spell_id": "268358"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Soul Conduit",
+                    "spell_id": "215941"
+                },
+                "2": {
+                    "name": "Inner Demons",
+                    "spell_id": "267216"
+                },
+                "3": {
+                    "name": "Grimoire",
+                    "spell_id": "111898"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Sacrificed Souls",
+                    "spell_id": "267214"
+                },
+                "2": {
+                    "name": "Demonic Consumption",
+                    "spell_id": "267215"
+                },
+                "3": {
+                    "name": "Nether Portal",
+                    "spell_id": "267217"
+                }
+            }
+        },
+        "Destruction": {
+            "1": {
+                "1": {
+                    "name": "Flashover",
+                    "spell_id": "267115"
+                },
+                "2": {
+                    "name": "Eradication",
+                    "spell_id": "196412"
+                },
+                "3": {
+                    "name": "Soul Fire",
+                    "spell_id": "6353"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Reverse Entropy",
+                    "spell_id": "205148"
+                },
+                "2": {
+                    "name": "Internal Combustion",
+                    "spell_id": "266134"
+                },
+                "3": {
+                    "name": "Shadowburn",
+                    "spell_id": "17877"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Demon Skin",
+                    "spell_id": "219272"
+                },
+                "2": {
+                    "name": "Burning Rush",
+                    "spell_id": "111400"
+                },
+                "3": {
+                    "name": "Dark Pact",
+                    "spell_id": "108416"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Inferno",
+                    "spell_id": "270545"
+                },
+                "2": {
+                    "name": "Fire and Brimstone",
+                    "spell_id": "196408"
+                },
+                "3": {
+                    "name": "Cataclysm",
+                    "spell_id": "152108"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Darkfury",
+                    "spell_id": "264874"
+                },
+                "2": {
+                    "name": "Mortal Coil",
+                    "spell_id": "6789"
+                },
+                "3": {
+                    "name": "Demonic Circle",
+                    "spell_id": "268358"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Roaring Blaze",
+                    "spell_id": "205184"
+                },
+                "2": {
+                    "name": "Grimoire of Supremacy",
+                    "spell_id": "266086"
+                },
+                "3": {
+                    "name": "Grimoire of Sacrifice",
+                    "spell_id": "108503"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Soul Conduit",
+                    "spell_id": "215941"
+                },
+                "2": {
+                    "name": "Channel Demonfire",
+                    "spell_id": "196447"
+                },
+                "3": {
+                    "name": "Dark Soul",
+                    "spell_id": "113858"
+                }
+            }
+        }
+    },
+    "Warrior": {
+        "Arms": {
+            "1": {
+                "1": {
+                    "name": "War Machine",
+                    "spell_id": "262231"
+                },
+                "2": {
+                    "name": "Sudden Death",
+                    "spell_id": "29725"
+                },
+                "3": {
+                    "name": "Skullsplitter",
+                    "spell_id": "260643"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Double Time",
+                    "spell_id": "103827"
+                },
+                "2": {
+                    "name": "Impending Victory",
+                    "spell_id": "202168"
+                },
+                "3": {
+                    "name": "Storm Bolt",
+                    "spell_id": "107570"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Massacre",
+                    "spell_id": "281001"
+                },
+                "2": {
+                    "name": "Fervor of Battle",
+                    "spell_id": "202316"
+                },
+                "3": {
+                    "name": "Rend",
+                    "spell_id": "772"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Second Wind",
+                    "spell_id": "29838"
+                },
+                "2": {
+                    "name": "Bounding Stride",
+                    "spell_id": "202163"
+                },
+                "3": {
+                    "name": "Defensive Stance",
+                    "spell_id": "197690"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Collateral Damage",
+                    "spell_id": "268243"
+                },
+                "2": {
+                    "name": "Warbreaker",
+                    "spell_id": "262161"
+                },
+                "3": {
+                    "name": "Cleave",
+                    "spell_id": "845"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "In For The Kill",
+                    "spell_id": "248621"
+                },
+                "2": {
+                    "name": "Avatar",
+                    "spell_id": "107574"
+                },
+                "3": {
+                    "name": "Deadly Calm",
+                    "spell_id": "262228"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Anger Management",
+                    "spell_id": "152278"
+                },
+                "2": {
+                    "name": "Dreadnaught",
+                    "spell_id": "262150"
+                },
+                "3": {
+                    "name": "Ravager",
+                    "spell_id": "152277"
+                }
+            }
+        },
+        "Fury": {
+            "1": {
+                "1": {
+                    "name": "War Machine",
+                    "spell_id": "262231"
+                },
+                "2": {
+                    "name": "Endless Rage",
+                    "spell_id": "202296"
+                },
+                "3": {
+                    "name": "Fresh Meat",
+                    "spell_id": "215568"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Double Time",
+                    "spell_id": "103827"
+                },
+                "2": {
+                    "name": "Impending Victory",
+                    "spell_id": "202168"
+                },
+                "3": {
+                    "name": "Storm Bolt",
+                    "spell_id": "107570"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Inner Rage",
+                    "spell_id": "215573"
+                },
+                "2": {
+                    "name": "Sudden Death",
+                    "spell_id": "280721"
+                },
+                "3": {
+                    "name": "Furious Slash",
+                    "spell_id": "100130"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Furious Charge",
+                    "spell_id": "202224"
+                },
+                "2": {
+                    "name": "Bounding Stride",
+                    "spell_id": "202163"
+                },
+                "3": {
+                    "name": "Warpaint",
+                    "spell_id": "208154"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Carnage",
+                    "spell_id": "202922"
+                },
+                "2": {
+                    "name": "Massacre",
+                    "spell_id": "206315"
+                },
+                "3": {
+                    "name": "Frothing Berserker",
+                    "spell_id": "215571"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Meat Cleaver",
+                    "spell_id": "280392"
+                },
+                "2": {
+                    "name": "Dragon Roar",
+                    "spell_id": "118000"
+                },
+                "3": {
+                    "name": "Bladestorm",
+                    "spell_id": "46924"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Reckless Abandon",
+                    "spell_id": "202751"
+                },
+                "2": {
+                    "name": "Anger Management",
+                    "spell_id": "152278"
+                },
+                "3": {
+                    "name": "Siegebreaker",
+                    "spell_id": "280772"
+                }
+            }
+        },
+        "Protection": {
+            "1": {
+                "1": {
+                    "name": "Into the Fray",
+                    "spell_id": "202603"
+                },
+                "2": {
+                    "name": "Punish",
+                    "spell_id": "275334"
+                },
+                "3": {
+                    "name": "Impending Victory",
+                    "spell_id": "202168"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Crackling Thunder",
+                    "spell_id": "203201"
+                },
+                "2": {
+                    "name": "Bounding Stride",
+                    "spell_id": "202163"
+                },
+                "3": {
+                    "name": "Safeguard",
+                    "spell_id": "223657"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Best Served Cold",
+                    "spell_id": "202560"
+                },
+                "2": {
+                    "name": "Unstoppable Force",
+                    "spell_id": "275336"
+                },
+                "3": {
+                    "name": "Dragon Roar",
+                    "spell_id": "118000"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Indomitable",
+                    "spell_id": "202095"
+                },
+                "2": {
+                    "name": "Never Surrender",
+                    "spell_id": "202561"
+                },
+                "3": {
+                    "name": "Bolster",
+                    "spell_id": "280001"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Menace",
+                    "spell_id": "275338"
+                },
+                "2": {
+                    "name": "Rumbling Earth",
+                    "spell_id": "275339"
+                },
+                "3": {
+                    "name": "Storm Bolt",
+                    "spell_id": "107570"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Booming Voice",
+                    "spell_id": "202743"
+                },
+                "2": {
+                    "name": "Vengeance",
+                    "spell_id": "202572"
+                },
+                "3": {
+                    "name": "Devastator",
+                    "spell_id": "236279"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Anger Management",
+                    "spell_id": "152278"
+                },
+                "2": {
+                    "name": "Heavy Repercussions",
+                    "spell_id": "203177"
+                },
+                "3": {
+                    "name": "Ravager",
+                    "spell_id": "228920"
+                }
+            }
+        }
+    }
+}

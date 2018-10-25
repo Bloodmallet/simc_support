@@ -1422,7 +1422,7 @@ def get_all_trinkets():
     return all_trinkets
 
 
-def get_talent_dict(wow_class: str, wow_spec: str)->dict:
+def get_talent_dict(wow_class: str, wow_spec: str, ptr: bool = False)->dict:
     """Return the dict of all talents available to this spec. Structur: row -> column -> name, spell_id
 
     Arguments:
@@ -1433,6 +1433,10 @@ def get_talent_dict(wow_class: str, wow_spec: str)->dict:
         dict -- row -> column -> name, spell_id
     """
     import pkg_resources
+
+    file_name = "talent_list.json"
+    if ptr:
+        file_name = "talent_list_ptr.json"
 
     with open(pkg_resources.resource_filename(__name__, "talent_list.json"), 'r', encoding="UTF-8") as f:
         talents = json.load(f, encoding="UTF-8")
