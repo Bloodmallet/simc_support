@@ -93,7 +93,7 @@ __class_data = {
                 "id": 577,
             },
             "Vengeance": {
-                "talents": "1110111",
+                "talents": "1111111",
                 "role": "melee",
                 "stat": "agi",
                 "id": 581,
