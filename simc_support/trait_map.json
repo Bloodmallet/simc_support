@@ -2516,7 +2516,9 @@
     "274070": {
         "class": {
             "Death_Knight": [
-                "Frost"
+                "Blood",
+                "Frost",
+                "Unholy"
             ]
         },
         "description": "Your autoattacks have a chance to apply Glacial Contagion, dealing ${$s1*($274074d/$274074t1)} Frost damage over $274074d. Obliterate deals an additional $s2 damage to targets infected with Glacial Contagion.",

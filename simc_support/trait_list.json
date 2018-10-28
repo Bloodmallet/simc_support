@@ -161,6 +161,16 @@
                 "tier": 3,
                 "trait_id": "194"
             },
+            "274070": {
+                "description": "Your autoattacks have a chance to apply Glacial Contagion, dealing ${$s1*($274074d/$274074t1)} Frost damage over $274074d. Obliterate deals an additional $s2 damage to targets infected with Glacial Contagion.",
+                "max_itemlevel": -1,
+                "max_stack": 3,
+                "min_itemlevel": -1,
+                "name": "Glacial Contagion",
+                "spell_id": "274070",
+                "tier": 3,
+                "trait_id": "198"
+            },
             "278479": {
                 "description": "Dancing Rune Weapon grants you $s1 Strength, and each rune spent increases its duration by ${$s2/10}.1 sec, up to a maximum of $s3 sec.",
                 "max_itemlevel": -1,
@@ -1124,6 +1134,16 @@
                 "spell_id": "273834",
                 "tier": 3,
                 "trait_id": "194"
+            },
+            "274070": {
+                "description": "Your autoattacks have a chance to apply Glacial Contagion, dealing ${$s1*($274074d/$274074t1)} Frost damage over $274074d. Obliterate deals an additional $s2 damage to targets infected with Glacial Contagion.",
+                "max_itemlevel": -1,
+                "max_stack": 3,
+                "min_itemlevel": -1,
+                "name": "Glacial Contagion",
+                "spell_id": "274070",
+                "tier": 3,
+                "trait_id": "198"
             },
             "274081": {
                 "description": "Bursting a Festering Wound grants you $s1 Strength for 20 sec, stacking. Stacking this effect does not extend its duration.",
