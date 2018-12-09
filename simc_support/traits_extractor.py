@@ -5,13 +5,16 @@
 import json
 import logging
 import subprocess
-from simc_support import wow_lib
+import wow_lib
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 ch = logging.StreamHandler()
 ch.setLevel(logging.INFO)
 logger.addHandler(ch)
+
+
+PTR = True
 
 
 def update_map(trait_dict):
@@ -190,13 +193,19 @@ def main():
         for spec in wow_lib.get_specs(wow_class):
             trait_dict[wow_class][spec] = {}
 
+    if PTR:
+        ptr_input = "ptr=1"
+    else:
+        ptr_input = "ptr=0"
+
     for wow_class in class_list:
         try:
             simc_output = subprocess.run([
                 "../../SimulationCraft/simc.exe",
                 "spell_query=azerite.class={}".format(
                     wow_class.lower().replace("_", "")
-                )
+                ),
+                ptr_input
             ],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,

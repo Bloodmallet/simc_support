@@ -145,7 +145,7 @@
                 "Protection"
             ]
         },
-        "description": "Increases the item level of this item by 5.",
+        "description": "Increases Item Level by 5 and increases the potency of all Azerite powers granted by this item.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -779,7 +779,7 @@
             "Priest": [],
             "Shaman": []
         },
-        "description": "Casting a healing spell restores ${$s1*($272572d/$272572t1)} mana over $272572d. Stacks up to $272572u times.",
+        "description": "When you go below $272570s1% mana, you gain $s1 mana. Can occur once every $289362d.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -809,7 +809,7 @@
             "Priest": [],
             "Shaman": []
         },
-        "description": "Casting $?a137009[Wild Growth]?a137022[Essence Font]?a137030[Prayer of Healing or Power Word: Radiance]?a137026[Light of Dawn]?a137038[Chain Heal][your multi-target healing spell] grants you $s1 Mastery for $272090d sec. This cannot occur more than once every $272089proccooldown sec.",
+        "description": "Casting $?a137009[Wild Growth]?a137022[Essence Font]?a137030[Prayer of Healing or Power Word: Radiance]?a137026[Light of Dawn]?a137038[Chain Heal][your multi-target healing spell] grants you $s1 Mastery for $272090d. This cannot occur more than once every $272089proccooldown sec.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -1051,7 +1051,7 @@
                 "Arcane"
             ]
         },
-        "description": "Each wave of Arcane Missiles deals $s1 more damage than the previous one.",
+        "description": "Clearcasting procs $s2% more often, and each wave of a Clearcast Arcane Missiles deals $s1 more damage than the previous.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -1216,7 +1216,7 @@
                 "Shadow"
             ]
         },
-        "description": "Mind Sear deals an additional $s1 damage to enemies suffering from your Shadow Word: Pain.",
+        "description": "Mind Sear deals an additional $s1 damage to enemies suffering from your Shadow Word: Pain and snares all enemies hit by $288371s1%.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -1266,7 +1266,7 @@
                 "Protection"
             ]
         },
-        "description": "Thunder Clap deals an additional $s2 damage and extends the duration of your Demoralizing Shout on affected enemies by ${$s1/1000} sec.",
+        "description": "Thunder Clap deals an additional $s2 damage and extends the duration of your Demoralizing Shout on affected enemies by ${$s1/1000} sec, up to $s3 sec.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -1332,7 +1332,7 @@
                 "Retribution"
             ]
         },
-        "description": "While Avenging Wrath is active, your Mastery is increased by $s1.",
+        "description": "While $?<s231895>[Crusade][Avenging Wrath] is active, your Mastery is increased by $s1.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -1445,7 +1445,7 @@
         "class": {
             "Demon_Hunter": []
         },
-        "description": "When Fiery Brand expires on your primary target, you gain a shield that absorbs up to $s1 damage for $272987d, based on your damage dealt to them while Fiery Brand was active. ",
+        "description": "Fiery Brand now lasts $<duration> sec. When Fiery Brand expires on your primary target, you gain a shield that absorbs up to $s1 damage for $272987d, based on your damage dealt to them while Fiery Brand was active. ",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -1482,7 +1482,7 @@
                 "Assassination"
             ]
         },
-        "description": "When Mutilate applies Lethal Poison with both daggers, it poisons the target for an additional $s1 damage.",
+        "description": "When Mutilate applies Lethal Poison with both daggers, it poisons the target for an additional ${$s1*$<assassinationMastery>} damage.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -1843,7 +1843,7 @@
                 "Arcane"
             ]
         },
-        "description": "While channeling Evocation, your Intellect is increased by $s1 every $273329t1 sec. Lasts $273330d.",
+        "description": "Evocation grants $288466s1 Arcane $lCharge:Charges;, and while channeling Evocation, your Intellect is increased by $s1 every $273329t1 sec. Lasts $273330d.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -1880,11 +1880,11 @@
                 "Feral"
             ]
         },
-        "description": "Rake increases damage of your next Ferocious Bite by $s1.",
+        "description": "Combo-point generating abilities deal $s2 additional instant damage and reduce the cooldown of $?s102543[Incarnation: King of the Jungle by ${$s4/1000}.1][Berserk by ${$s3/1000}.1] sec.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
-        "name": "Raking Ferocity",
+        "name": "Untamed Ferocity",
         "trait_id": "169"
     },
     "273344": {
@@ -1920,7 +1920,7 @@
                 "Feral"
             ]
         },
-        "description": "Moonfire deals $s2 additional damage instantly, and has a $273389h% chance to grant you Lunar Empowerment.",
+        "description": "Moonfire deals $s2 additional periodic damage, and has a chance to grant Lunar Empowerment.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -1933,7 +1933,7 @@
                 "Arms"
             ]
         },
-        "description": "While $?s152277[Ravager is active][Bladestorming], every $273414t1 sec you gain $s2 Speed and $?s152277[Ravager's][Bladestorm's] damage increases by $s1. Lasts $273415d.",
+        "description": "While $?s152277[Ravager is active][Bladestorming], every $?c2[$288131t1][$273414t1] sec you gain $s2% movement speed and $s1 Strength, stacking. Lasts $273415d.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -1946,7 +1946,7 @@
                 "Subtlety"
             ]
         },
-        "description": "Nightblade increases the damage of your next Eviscerate within 8 sec by $s1. ",
+        "description": "Nightblade increases the damage of your next Eviscerate within 8 sec by $s1 per combo point.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -2035,7 +2035,7 @@
                 "Assassination"
             ]
         },
-        "description": "Envenom deals $s1 additional damage per combo point, and Envenom lasts for ${$s2/1000}.1 sec longer when it critically strikes.",
+        "description": "Envenom deals ${$s1*$<assassinationMastery>} additional damage per combo point, and Envenom lasts for ${$s2/1000}.1 sec longer when it critically strikes.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -2071,7 +2071,7 @@
                 "Affliction"
             ]
         },
-        "description": "Damaging an enemy with Corruption increases the damage of your next Drain Life by $s1. This effect stacks up to $273525u times.",
+        "description": "Damaging an enemy with Agony increases the damage of your next Drain Life by $s1. This effect stacks up to $273525u times.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -2534,7 +2534,7 @@
                 "Unholy"
             ]
         },
-        "description": "Bursting a Festering Wound grants you $s1 Strength for 20 sec, stacking. Stacking this effect does not extend its duration.",
+        "description": "Bursting a Festering Wound grants you $s1 Strength for $274373d, stacking. Stacking this effect does not extend its duration.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -2624,7 +2624,7 @@
         "class": {
             "Warlock": []
         },
-        "description": "When you use a Healthstone, gain $s1 Leech for $274420d",
+        "description": "When you use a Healthstone, gain $s1 Leech for $274420d.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -2637,18 +2637,18 @@
                 "Feral"
             ]
         },
-        "description": "Tiger's Fury increases the damage of your next four Shreds by $s1.",
+        "description": "Tiger's Fury increases your critical strike by $s1 and lasts $?s202021[${$s3+$274425s2/1000}][${$s2+$274425s2/1000}] sec.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
-        "name": "Shredding Fury",
+        "name": "Jungle Fury",
         "trait_id": "209"
     },
     "274432": {
         "class": {
             "Druid": []
         },
-        "description": "If Rejuvenation is your only heal over time effect on the target, increase the healing of Rejuvenation by $s1. ",
+        "description": "Rejuvenation's duration is increased by ${$287247s1/1000} sec, and it heals for an additional $s1 when it is your only heal over time on the target.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -2723,7 +2723,7 @@
                 "Fire"
             ]
         },
-        "description": "Fire Blast increases your Mastery by $s1 for 3 sec.",
+        "description": "Fire Blast increases your Mastery by $s1 for 3 sec. This effect stacks.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -2756,7 +2756,7 @@
         "class": {
             "Druid": []
         },
-        "description": "When you resurrect an ally with Rebirth, they absorb $s1 damage over $274814d.",
+        "description": "When you resurrect an ally with Rebirth, they absorb $s1 damage for $274814d and gain Well Fed, increasing their Agility, Intellect, or Strength by $285719s1 for $285719d.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -2856,7 +2856,7 @@
         "class": {
             "Paladin": []
         },
-        "description": "Healing an ally with Holy Light while empowered by Infusion of Light refunds $s1 mana.",
+        "description": "While empowered by Infusion of Light, Flash of Light heals for an additional $s2, and Holy Light refunds $s1 mana.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -2880,7 +2880,7 @@
         "class": {
             "Shaman": []
         },
-        "description": "Every $275495t1 sec your Healing Stream Totem releases a lesser chain heal, restoring $s1 health to up to $275499x1 injured allies. Healing is reduced by ${(1-$275499f1)*100)}% after each jump.",
+        "description": "Every $275495t1 sec your $?s157153[Cloudburst Totem][Healing Stream Totem] releases a lesser chain heal, restoring $s1 health to up to $275499x1 injured allies. Healing is reduced by ${(1-$275499f1)*100)}% after each jump.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -2918,7 +2918,7 @@
         "class": {
             "Priest": []
         },
-        "description": "Each time $?s204197[Purge the Wicked][Shadow Word: Pain] deals damage, the healing of your next Shadow Mend is increased by $s1, up to a maximum of ${$s1*30}.",
+        "description": "Each time $?s204197[Purge the Wicked][Shadow Word: Pain] deals damage, the healing of your next Shadow Mend is increased by $s1, up to a maximum of ${$s1*$275544u}.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -2955,7 +2955,7 @@
                 "Shadow"
             ]
         },
-        "description": "Void Bolt increases the damage of $?s205351[Shadow Word: Void][Mind Blast] by $s1 for $275726d, stacking up to 6 times.",
+        "description": "$?s205351[Shadow Word: Void][Mind Blast] deals $s2 additional damage and generates ${$275726s1/100} additional Insanity on critical strikes.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -3005,7 +3005,7 @@
                 "Subtlety"
             ]
         },
-        "description": "Shadowstrike increases the damage your Shadowstrike deals by $s1 for $279754d, stacking up to $279754u times.",
+        "description": "Shadowstrike increases the damage your Shadowstrike deals by $s1, stacking up to $279754u times, and costs $279752s2 less Energy.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -3270,7 +3270,7 @@
         "class": {
             "Shaman": []
         },
-        "description": "Your Healing Rain is $s2% larger, and casting Healing Rain instantly restores $s1 health to allies within its area.",
+        "description": "Healing Rain instantly restores $s1 health to allies within its area, and its radius is increased to $s2 yds.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -3308,7 +3308,7 @@
                 "Enhancement"
             ]
         },
-        "description": "When you cast $?<s2825>[Bloodlust][Heroism], your Mastery increases by $s1 every second, stacking up to $277943u times.",
+        "description": "Your spells and abilities have a chance to increase your Mastery by $s1 for $277943d. $?<s2825>[Bloodlust][Heroism]'s duration is increased to $s2 seconds on you, and Ancestral Resonance's chance to activate is greatly increased during $?<s2825>[Bloodlust][Heroism].",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -3319,7 +3319,7 @@
         "class": {
             "Monk": []
         },
-        "description": "When Life Cocoon expires, it releases a burst of mist that restores $s1 health split among the target and nearby allies.",
+        "description": "Life Cocoon's cooldown is reduced by ${$287472s1/-1000} sec.  When Life Cocoon expires, it releases a burst of mist that restores $s1 health split among the target and nearby allies.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -3359,7 +3359,7 @@
                 "Subtlety"
             ]
         },
-        "description": "$?S200758[Using Gloomblade on][Backstabbing] an enemy from behind increases the damage of $?S200758[Gloomblade][Backstab] by $s1 for $277720d, stacking up to $s2 times.",
+        "description": "$?S200758[Using Gloomblade on][Backstabbing] an enemy from behind increases the damage of $?S200758[Gloomblade][Backstab] by $s1 for $277720d, stacking up to $277720u times, and reduces the cooldown of Shadow Blades by ${$s2/1000}.1 sec.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -3370,7 +3370,7 @@
         "class": {
             "Paladin": []
         },
-        "description": "Your Holy Shock criticals deal an additional $s1 damage, or an additional $s2 healing, over $278147d.",
+        "description": "Your Holy Shock criticals deal an additional ${$s1*3} damage, or an additional ${$s2*3} healing, over $278147d.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -3596,7 +3596,7 @@
                 "Balance"
             ]
         },
-        "description": "Sunfire's radius is increased to $<radius> yds, and it deals $s2 additional damage to its primary target. ",
+        "description": "Sunfire's radius is increased to $<radius> yds, and it deals $s2 additional periodic damage.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -3622,7 +3622,7 @@
                 "Feral"
             ]
         },
-        "description": "Rip deals ${$s2*12} additional damage per combo point, and has a $279468h% chance to award a combo point each time it deals damage.",
+        "description": "Rip deals $s2 additional periodic damage, and has a $279468h% chance to award a combo point each time it deals damage.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -3633,7 +3633,7 @@
         "class": {
             "Druid": []
         },
-        "description": "Mangle extends the duration of your active Frenzied Regeneration by ${$s2/1000}.1 sec, and Frenzied Regeneration restores an additional $s1 health every sec. ",
+        "description": "Mangle extends the duration of your active Frenzied Regeneration by ${$s2/1000}.1 sec, up to $s3 sec, and Frenzied Regeneration restores an additional $s1 health every sec.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -3721,7 +3721,7 @@
                 "Marksmanship"
             ]
         },
-        "description": "Rapid Fire deals an additional ${$s2*($257044d/$257044t2)} damage over its duration, and each shot has a $279636h% chance to generate $s1 additional Focus.",
+        "description": "Rapid Fire deals an additional $<damage> damage over its duration, and each shot has a $279636h% chance to generate $s1 additional Focus.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -3901,7 +3901,7 @@
         "class": {
             "Paladin": []
         },
-        "description": "Judging a foe heals all allies within $s2 yards of that enemy for $s1.",
+        "description": "Judging a foe heals up to $s3 allies within $s2 yards of that enemy for $s1.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -4025,7 +4025,7 @@
                 "Shadow"
             ]
         },
-        "description": "Shadow Word: Pain deals an additional ${$s1*($589d/$589t2)} damage. When an enemy dies while afflicted by your Shadow Word: Pain, you gain ${$s2/100} Insanity.",
+        "description": "Shadow Word: Pain deals an additional ${$s1*($589d/$589t2)} damage over its duration. When an enemy dies while afflicted by your Shadow Word: Pain, you gain ${$s2/100} Insanity.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -4064,7 +4064,7 @@
                 "Assassination"
             ]
         },
-        "description": "Garrote cast from Stealth generates $s2 additional Combo Points and deals $s1 additional damage. ",
+        "description": "Garrote cast from Stealth generates $s2 additional Combo Points and deals ${$s1*$<assassinationMastery>} additional damage. ",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -4103,7 +4103,7 @@
                 "Subtlety"
             ]
         },
-        "description": "Shadow Dance grants an additional $s1 critical strike rating to the first Eviscerate, Shadowstrike, or Shuriken Storm used during it.",
+        "description": "Activating Shadow Dance grants you $s2 Combo Points and increases your Haste by $s1 for its duration.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -4130,7 +4130,7 @@
                 "Enhancement"
             ]
         },
-        "description": "Dealing Fire damage grants $s1 critical strike for $279028d. ",
+        "description": "Dealing Fire damage grants $s1 Critical Strike for $279028d. ",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -4155,7 +4155,7 @@
         "class": {
             "Shaman": []
         },
-        "description": "If the target of your Riptide is below $s2% of their maximum health, Riptide causes them to absorb up to $s1 damage for $279187d.",
+        "description": "If the target of your Riptide is below $s2% of their maximum health, Riptide causes them to absorb up to ${$s1*(1+$@versadmg)} damage for $279187d.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -4166,7 +4166,7 @@
         "class": {
             "Shaman": []
         },
-        "description": "Spirit Link Totem restores $s1 health to all nearby allies $m2 $Lsecond:seconds; after it is dropped.",
+        "description": "Spirit Link Totem's radius is increased by $279504s2%, and it restores $s1 health to all nearby allies $m2 $Lsecond:seconds; after it is dropped.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -4283,7 +4283,7 @@
                 "Arms"
             ]
         },
-        "description": "$?s262161[Warbreaker][Colossus Smash] deals an additional $s2 damage and generates ${$s1/10} Rage.",
+        "description": "$?s262161[Warbreaker][Colossus Smash] deals an additional $s2 damage and generates ${$279203s1/10} Rage.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -4413,7 +4413,7 @@
                 "Balance"
             ]
         },
-        "description": "When Innervate expires, your Intellect is increased by $s1 for each spell the target cast using Innervate. Lasts $279648d.",
+        "description": "When Innervate expires, for each spell the target cast using Innervate, you gain $s1 Intellect for $279648d and ${$289335s1/100}.1% mana.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -4450,7 +4450,7 @@
                 "Elemental"
             ]
         },
-        "description": "Your Lava Burst deals $s2 additional damage, and your Lava Surge chance is increased to $s3%.",
+        "description": "Your Lava Burst deals $s2 additional damage, and your Lava Surge chance is increased to $?c3[$s4%][$s3%].",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -4656,7 +4656,7 @@
                 "Protection"
             ]
         },
-        "description": "Azerite energy courses through you, reaching ${$s1*6} $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] and then diminishing down to $s1 $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat], cycling every 6 sec.",
+        "description": "Azerite energy courses through you, reaching ${$s1*6} $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] and then diminishing down to $s1 $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat], cycling every 12 sec.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -4755,7 +4755,7 @@
         "class": {
             "Priest": []
         },
-        "description": "When you successfully Dispel Magic, heal yourself and $s2 injured allies for $s1.",
+        "description": "When you successfully Dispel Magic, heal yourself and $s2 injured allies within $280198A1 yds for $s1.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -4766,7 +4766,7 @@
         "class": {
             "Rogue": []
         },
-        "description": "Cloak of Shadows heals you for $s1 every $280200t sec, plus an additional $s2 for each effect it negates.",
+        "description": "Cloak of Shadows heals you for $s1 every $280200t1 sec, plus an additional $s2 for each effect it negates.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -5829,7 +5829,7 @@
                 "Protection"
             ]
         },
-        "description": "Your abilities have a chance to plant a factional banner for $280841d, empowering yourself and up to $s2 allies with the spirit of the Horde.",
+        "description": "Your abilities have a chance to plant a banner representing a Horde race for $280841d, granting you and up to $s2 allies $s3 of their primary stat or $s1 of a secondary stat.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -5894,7 +5894,7 @@
                 "Protection"
             ]
         },
-        "description": "Your abilities have a chance to drop a Horde Banner for $280830d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+        "description": "Your abilities have a chance to drop a Horde Banner for $280830d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stats] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -6219,7 +6219,7 @@
                 "Protection"
             ]
         },
-        "description": "Your abilities have a chance to plant a factional banner for $280866d, empowering yourself and up to $s2 allies with the spirit of the Alliance.",
+        "description": "Your abilities have a chance to plant a banner representing an Alliance race for $280866d, granting you and up to $s2 allies $s3 of their primary stat or $s1 of a secondary stat.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -6284,7 +6284,7 @@
                 "Protection"
             ]
         },
-        "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stat] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
+        "description": "Your abilities have a chance to drop an Alliance Banner for $280858d, increasing $?a162700[Agility]?a162702[Strength]?a162697[Agility]?a162698[Strength]?a162699[Intellect]?a162701[Intellect][primary stats] by $s1 and maximum health by $s2 for yourself and up to 4 allies.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -6615,5 +6615,1184 @@
         "min_itemlevel": -1,
         "name": "Tradewinds",
         "trait_id": "505"
+    },
+    "285958": {
+        "class": {
+            "Monk": []
+        },
+        "description": "Ironskin Brew increases your Armor by $s1, and has a $s2% chance to not consume a charge.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Straight, No Chaser",
+        "trait_id": "382"
+    },
+    "286027": {
+        "class": {
+            "Mage": [
+                "Arcane"
+            ]
+        },
+        "description": "While you are above $264351s1% mana, Arcane Blast deals $s1 additional damage.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Equipoise",
+        "trait_id": "127"
+    },
+    "286121": {
+        "class": {
+            "Rogue": [
+                "Subtlety"
+            ]
+        },
+        "description": "Each combo point spent has an $s2% chance to cause your Nightblade to deal $s1 Shadow damage and replicate to a nearby enemy.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Replicating Shadows",
+        "trait_id": "124"
+    },
+    "286229": {
+        "class": {
+            "Paladin": [
+                "Retribution"
+            ]
+        },
+        "description": "Spending Holy Power during $?<s231895>[Crusade][Avenging Wrath] causes you to explode with Holy light for $s1 damage per Holy Power spent to nearby enemies. $?<s231895>[Crusade][Avenging Wrath]'s duration is increased by ${$286231s2/1000} sec.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Light's Decree",
+        "trait_id": "396"
+    },
+    "286390": {
+        "class": {
+            "Paladin": [
+                "Retribution"
+            ]
+        },
+        "description": "Your attacks have a chance to make your next Divine Storm free and deal $s1 additional damage.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Empyrean Power",
+        "trait_id": "453"
+    },
+    "286573": {
+        "class": {
+            "Rogue": [
+                "Assassination"
+            ]
+        },
+        "description": "Vendetta poisons the target, dealing ${$s1*10*$<assassinationMastery>} Nature damage over $286581d, and grants you $s2 energy over $286581d.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Nothing Personal",
+        "trait_id": "249"
+    },
+    "286585": {
+        "class": {
+            "Monk": [
+                "Windwalker"
+            ]
+        },
+        "description": "Spending Chi has a chance to make your next Spinning Crane Kick free and deal $s1 additional damage.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Dance of Chi-Ji",
+        "trait_id": "391"
+    },
+    "286832": {
+        "class": {
+            "Death_Knight": [
+                "Unholy"
+            ]
+        },
+        "description": "Dark Transformations ignites you and your pet with flaming chains that deal $s1 Fire damage every sec to enemies between you for $s2 sec. ",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Helchains",
+        "trait_id": "142"
+    },
+    "286949": {
+        "class": {
+            "Shaman": [
+                "Elemental"
+            ]
+        },
+        "description": "Earthquake deals $s1 Physical damage instantly, and has a $s2% chance to make your next Chain Lightning be instant cast.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Tectonic Thunder",
+        "trait_id": "417"
+    },
+    "287055": {
+        "class": {
+            "Monk": [
+                "Windwalker"
+            ]
+        },
+        "description": "Your Combo Strikes grant a stacking $287062s3% chance for your next Fists of Fury to grant $s1 Haste and invoke Xuen, The White Tiger for $287063d.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Fury of Xuen",
+        "trait_id": "117"
+    },
+    "287059": {
+        "class": {
+            "Warlock": [
+                "Demonology"
+            ]
+        },
+        "description": "Your Demonic Tyrant's Demonfire deals $s1 additional damage, and summoning your Demonic Tyrant instantly generates ${$287060s1/10} Soul Shards.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Baleful Invocation",
+        "trait_id": "429"
+    },
+    "287093": {
+        "class": {
+            "Hunter": [
+                "Beast_Mastery"
+            ]
+        },
+        "description": "Kill Command deals $<damage> additional damage, and has a chance to summon a Dire Beast.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Dire Consequences",
+        "trait_id": "365"
+    },
+    "287126": {
+        "class": {
+            "Paladin": []
+        },
+        "description": "Your Light of the Protector heals for $s1 additional healing, and is always increased by 200% during Avenging Wrath.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Righteous Conviction",
+        "trait_id": "189"
+    },
+    "287251": {
+        "class": {
+            "Druid": []
+        },
+        "description": "When Wild Growth expires, it heals the target for $s1 if they are injured, or it reduces the cooldown of Innervate by $<reduction> sec if they are not.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Early Harvest",
+        "trait_id": "120"
+    },
+    "287268": {
+        "class": {
+            "Paladin": []
+        },
+        "description": "Holy Shock leaves a Glimmer of Light on the target for $287280d.  When you Holy Shock, all targets with Glimmer of Light are damaged for $s1 or healed for $s2.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Glimmer of Light",
+        "trait_id": "139"
+    },
+    "287283": {
+        "class": {
+            "Death_Knight": [
+                "Frost"
+            ]
+        },
+        "description": "Pillar of Frost summons a Frostwhelp who breathes on all enemies within 20 yards in front of you for $s1 Frost damage. Each unique enemy hit by Frostwhelp's Indignation grants you $s2 Mastery for $287338d, up to ${$s2*$s3}.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Frostwhelp's Indignation",
+        "trait_id": "198"
+    },
+    "287300": {
+        "class": {
+            "Shaman": []
+        },
+        "description": "Both bonuses of Tidal Waves are increased by $287302s1%, and spells affected by it heal for an additional $s1.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Turn of the Tide",
+        "trait_id": "191"
+    },
+    "287336": {
+        "class": {
+            "Priest": []
+        },
+        "description": "For $287340d after you cast Holy Word: Serenity, Heal and Flash Heal heal for an additional $s1, and reduce the cooldown of Holy Word: Serenity by an additional $<duration> sec.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Promise of Deliverance",
+        "trait_id": "402"
+    },
+    "287355": {
+        "class": {
+            "Priest": [
+                "Holy"
+            ]
+        },
+        "description": "Power Word: Radiance has a $287356h% chance to cause your next Holy Nova to deal $s1 additional damage and reduce the cooldown of Power Word: Radiance by ${$287356s2/1000} sec.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Sudden Revelation",
+        "trait_id": "397"
+    },
+    "287377": {
+        "class": {
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
+        },
+        "description": "Avatar increases your Mastery by $s1 for $287379d, and instantly grants you Ignore Pain.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Bastion of Might",
+        "trait_id": "237"
+    },
+    "287467": {
+        "class": {
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Discipline",
+                "Holy",
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
+        },
+        "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Shadow of Elune",
+        "trait_id": "521"
+    },
+    "287604": {
+        "class": {
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Discipline",
+                "Holy",
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
+        },
+        "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Ancients' Bulwark",
+        "trait_id": "522"
+    },
+    "287631": {
+        "class": {
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Discipline",
+                "Holy",
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
+        },
+        "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Apothecary's Concoctions",
+        "trait_id": "523"
+    },
+    "287637": {
+        "class": {
+            "Warlock": [
+                "Destruction"
+            ]
+        },
+        "description": "Incinerate damage is increased by $s2, and when you fill up a Soul Shard, you have a ${$m1/10}.1% chance to generate an additional full Soul Shard over $287660d.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Chaos Shards",
+        "trait_id": "131"
+    },
+    "287649": {
+        "class": {
+            "Rogue": [
+                "Assassination"
+            ]
+        },
+        "description": "Fan of Knives damage is increased by ${$s2*$<assassinationNoMastery>}. For each of the first $s4 critical strikes, it will fire a second spray of knives at that location, dealing ${$s3*$<assassinationNoMastery>} damage to enemies within $s5 yards.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Echoing Blades",
+        "trait_id": "407"
+    },
+    "287662": {
+        "class": {
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Discipline",
+                "Holy",
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
+        },
+        "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Endless Hunger",
+        "trait_id": "526"
+    },
+    "287707": {
+        "class": {
+            "Hunter": [
+                "Marksmanship"
+            ]
+        },
+        "description": "Rapid Fire damage is increased by up to ${$m2*1.5} per shot fired, this damage starts lower and increases per shot of Rapid Fire. Aimed Shot has a $s1% chance to reset the cooldown of Rapid Fire.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Surging Shots",
+        "trait_id": "162"
+    },
+    "287717": {
+        "class": {
+            "Priest": []
+        },
+        "description": "Leap of Faith absorbs the next $s1 damage to the target within $287722d. While the shield holds, Leap of Faith cools down $287723s1% faster.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Death Denied",
+        "trait_id": "537"
+    },
+    "287729": {
+        "class": {
+            "Paladin": []
+        },
+        "description": "Lay on Hands grants the target $s1 armor for $287731d.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Empyreal Ward",
+        "trait_id": "538"
+    },
+    "287768": {
+        "class": {
+            "Shaman": [
+                "Enhancement"
+            ]
+        },
+        "description": "Stormstrike deals ${$m2+($m2*0.5)} additional damage, and has a $287801h% chance to summon Thunderaan's Fury Totem, doubling the chance to activate Windfury Weapon for $287802d.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Thunderaan's Fury",
+        "trait_id": "530"
+    },
+    "287773": {
+        "class": {
+            "Druid": [
+                "Balance"
+            ]
+        },
+        "description": "Starsurge's damage is increased by $s2. Every $s4 Starsurges, gain Celestial Alignment for $s3 sec.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Arcanic Pulsar",
+        "trait_id": "200"
+    },
+    "287774": {
+        "class": {
+            "Shaman": []
+        },
+        "description": "While Reincarnation is off cooldown, your maximum health is increased by $s1.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Ancient Ankh Talisman",
+        "trait_id": "539"
+    },
+    "287803": {
+        "class": {
+            "Druid": []
+        },
+        "description": "An ability from your chosen Affinity grants an additional bonus for $287808d:",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Switch Hitter",
+        "trait_id": "540"
+    },
+    "287818": {
+        "class": {
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Discipline",
+                "Holy",
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
+        },
+        "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Fight or Flight",
+        "trait_id": "541"
+    },
+    "287822": {
+        "class": {
+            "Warlock": []
+        },
+        "description": "Soul Leech gains $s2 absorption every $287828t1 sec while a target is affected by Fear.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Terror of the Mind",
+        "trait_id": "531"
+    },
+    "287829": {
+        "class": {
+            "Monk": []
+        },
+        "description": "After using Thunder Focus Tea, your next spell gives $s1 of a stat for $287831d:",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Secret Infusion",
+        "trait_id": "76"
+    },
+    "287938": {
+        "class": {
+            "Hunter": []
+        },
+        "description": "Exhilaration heals you for an additional $s2 health, and the cooldown is reduced by ${$287940m1/-1000}.1 sec.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Nature's Salve",
+        "trait_id": "543"
+    },
+    "288056": {
+        "class": {
+            "Warrior": [
+                "Fury"
+            ]
+        },
+        "description": "Rampage deals an additional ${$184367s1*$s2} damage and has a $288060h% chance to grant you Recklessness for ${$s1/1000} sec.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Unbridled Ferocity",
+        "trait_id": "119"
+    },
+    "288079": {
+        "class": {
+            "Rogue": []
+        },
+        "description": "While no enemy is within $s3 yds, heal for $s1 every sec. While any enemy is within $s3 yds, gain $s2 Speed.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Lying In Wait",
+        "trait_id": "548"
+    },
+    "288080": {
+        "class": {
+            "Warrior": [
+                "Fury"
+            ]
+        },
+        "description": "Bloodthirst critical strikes generate $<rage> additional Rage, and inflict a Gushing Wound that leeches $<damage> health over $288091d.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Cold Steel, Hot Blood",
+        "trait_id": "176"
+    },
+    "288121": {
+        "class": {
+            "Mage": []
+        },
+        "description": "Your instant cast damaging spells heal you for $?C1[$s2]?C2[$s3][$s4].",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Quick Thinking",
+        "trait_id": "546"
+    },
+    "288164": {
+        "class": {
+            "Mage": [
+                "Frost"
+            ]
+        },
+        "description": "Each of your Icicles deals $s2 additional damage, and when an Icicle deals damage you have a $s1% chance to gain the Fingers of Frost effect.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Flash Freeze",
+        "trait_id": "170"
+    },
+    "288340": {
+        "class": {
+            "Priest": [
+                "Shadow"
+            ]
+        },
+        "description": "Vampiric Touch damage is increased by $s2, and each time Vampiric Touch deals damage you have a chance to increase the damage of your next Mind Sear within $288343d by $288343s1%.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Thought Harvester",
+        "trait_id": "166"
+    },
+    "288417": {
+        "class": {
+            "Death_Knight": [
+                "Unholy"
+            ]
+        },
+        "description": "Apocalypse and Army of the Damned additionally summon a Magus of the Dead for $288544d who hurls Frostbolts and Shadow Bolts at your foes, dealing $s1 damage each. ",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Magus of the Dead",
+        "trait_id": "109"
+    },
+    "288424": {
+        "class": {
+            "Death_Knight": []
+        },
+        "description": "Icebound Fortitude heals for $s1 every sec and its cooldown is reduced by $s2 seconds.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Cold Hearted",
+        "trait_id": "549"
+    },
+    "288452": {
+        "class": {
+            "Warrior": [
+                "Arms"
+            ]
+        },
+        "description": "The Tactician effect improves your next Overpower, causing it to deal $s1 additional damage and reduce the remaining cooldown of Mortal Strike by ${$s2/1000}.1 sec.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Striking the Anvil",
+        "trait_id": "121"
+    },
+    "288570": {
+        "class": {
+            "Hunter": [
+                "Survival"
+            ]
+        },
+        "description": "Your maximum Focus is increased to $<focus>, and $?s259387[Mongoose Bite][Raptor Strike] increases your Critical Strike by $s1 for $288573d, stacking up to $288573u times.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Primeval Intuition",
+        "trait_id": "373"
+    },
+    "288634": {
+        "class": {
+            "Monk": [
+                "Windwalker"
+            ]
+        },
+        "description": "Rising Sun Kick has a $s3% chance to trigger a second time, dealing $s1 Physical damage and restoring $s2 Chi.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Glory of the Dawn",
+        "trait_id": "388"
+    },
+    "288641": {
+        "class": {
+            "Warrior": []
+        },
+        "description": "Intimidating Shout reduces the movement speed of affected enemies by $288644s1%, and prevents the next $s1 damage they deal after Intimidating Shout ends.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Intimidating Presence",
+        "trait_id": "554"
+    },
+    "288749": {
+        "class": {
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Discipline",
+                "Holy",
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
+        },
+        "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Seductive Power",
+        "trait_id": "561"
+    },
+    "288754": {
+        "class": {
+            "Demon_Hunter": [
+                "Havoc"
+            ]
+        },
+        "description": "$?s203555[Demon Blades][Demon's Bite] deals $s2 additional damage. When you activate Metamorphosis, the cooldown of Eye Beam and Blade Dance is immediately reset.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Chaotic Transformation",
+        "trait_id": "220"
+    },
+    "288755": {
+        "class": {
+            "Mage": [
+                "Fire"
+            ]
+        },
+        "description": "Pyroblast deals $s2 additional damage. When you activate Combustion, you gain $288800s1 Critical Strike, and up to $288803I nearby allies gain $288803s1 Critical Strike for $288800d.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Wildfire",
+        "trait_id": "168"
+    },
+    "288802": {
+        "class": {
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Discipline",
+                "Holy",
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
+        },
+        "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Bonded Souls",
+        "trait_id": "560"
+    },
+    "288878": {
+        "class": {
+            "Demon_Hunter": []
+        },
+        "description": "Lesser Soul Fragments restore $s1 additional health, and every $288882u Soul Fragments you consume causes your next Soul Cleave to grant you a Soul Barrier.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Hour of Reaping",
+        "trait_id": "246"
+    },
+    "288953": {
+        "class": {
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Discipline",
+                "Holy",
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
+        },
+        "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Treacherous Covenant",
+        "trait_id": "562"
+    },
+    "288973": {
+        "class": {
+            "Demon_Hunter": []
+        },
+        "description": "Each $?s185164[Fury][Pain] spent heals you for $?s185164[$s2][$s3] Health.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Thrive in Chaos",
+        "trait_id": "564"
+    },
+    "288979": {
+        "class": {
+            "Rogue": [
+                "Outlaw"
+            ]
+        },
+        "description": "Each time an attack Blade Flurries,  increase the chance for Sinister Strike to strike again by $s1%. Additional strikes of Sinister Strike deal $s2 more damage.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Keep Your Wits About You",
+        "trait_id": "180"
+    },
+    "289314": {
+        "class": {
+            "Druid": [
+                "Guardian"
+            ]
+        },
+        "description": "Consuming Gore grants you $s1 mastery for $289315d and has a $s2% chance to activate Gore.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Burst of Savagery",
+        "trait_id": "251"
+    },
+    "289322": {
+        "class": {
+            "Monk": []
+        },
+        "description": "Rolling grants you $s1 Avoidance for $289324d. Taking non-periodic damage in this time reduces the cooldown of Roll by $289324s3 sec.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Exit Strategy",
+        "trait_id": "566"
+    },
+    "289339": {
+        "class": {
+            "Death_Knight": [
+                "Blood"
+            ]
+        },
+        "description": "When Crimson Scourge activates, you gain $s2 Haste for $289349d, and immediately gain ${$289348m3/10} Runic Power.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Bloody Runeblade",
+        "trait_id": "243"
+    },
+    "289364": {
+        "class": {
+            "Warlock": [
+                "Affliction"
+            ]
+        },
+        "description": "Refreshing Corruption, Agony, or Siphon Life with less than ${$s2/1000} seconds remaining will deal $s1 Shadow damage and has a ${$s3/100}.2% chance to grant you a Soul Shard.",
+        "max_itemlevel": -1,
+        "max_stack": 1,
+        "min_itemlevel": -1,
+        "name": "Pandemic Invocation",
+        "trait_id": "442"
     }
 }

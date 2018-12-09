@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
+"""Exports trinkets from simc_support to three copy= .simc files for testing purpose.
+"""
 
-from simc_support import wow_lib
+
+import wow_lib
 
 
 def print_simc_file(trinket_list, name):

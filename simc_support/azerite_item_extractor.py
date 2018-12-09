@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Extract all traits from seriallos equipable-items and azerite-power-sets files and write a file with their content for simc_support"""
+"""Extract all traits from seriallos equipable-items and azerite-power-sets files and write a file with their content for simc_support
+  Link: https://www.raidbots.com/static/data/equippable-items.json
+        https://www.raidbots.com/static/data/azerite-power-sets.json
+  Link PTR/Beta: https://www.raidbots.com/static/data/equippable-items-beta.json
+                https://www.raidbots.com/static/data/azerite-power-sets-beta.json
+"""
 
 import json
 import logging
@@ -21,7 +26,7 @@ def load_azerite_items() -> dict:
     dict -- Items sorted by itemslot
   """
 
-  with open('equippable-items.json', 'r', encoding='utf-8') as f:
+  with open('equippable-items-beta.json', 'r', encoding='utf-8') as f:
     items = json.load(f)
 
   sorted_items = {
@@ -97,7 +102,7 @@ def main():
   # logger.info(enriched_azerite_items_list)
 
   with open('azerite_items.json', 'w', encoding='utf-8') as f:
-    json.dump(enriched_azerite_items_list, f, indent=2)
+    json.dump(enriched_azerite_items_list, f, indent=2, ensure_ascii=False)
 
 
 
