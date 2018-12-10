@@ -881,6 +881,10 @@ __trinket_list = [
         name="Berserker's Juju", item_id="161117", min_itemlevel=280, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
+    Trinket(  # profession alchemy
+        name="Emblazoned Alchemist Stone", item_id="166976", min_itemlevel=385, max_itemlevel=385,
+        max_itemlevel_drop=385, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="Profession"
+    ),
 
     # Trinket(
     #     name="", item_id="", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
