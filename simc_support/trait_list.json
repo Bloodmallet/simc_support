@@ -464,7 +464,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -474,7 +474,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -484,7 +484,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -494,7 +494,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -504,7 +504,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -514,7 +514,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -524,7 +524,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -534,7 +534,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -544,7 +544,7 @@
             "289339": {
                 "description": "When Crimson Scourge activates, you gain $s2 Haste for $289349d, and immediately gain ${$289348m3/10} Runic Power.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bloody Runeblade",
                 "spell_id": "289339",
@@ -1036,7 +1036,7 @@
             "287283": {
                 "description": "Pillar of Frost summons a Frostwhelp who breathes on all enemies within 20 yards in front of you for $s1 Frost damage. Each unique enemy hit by Frostwhelp's Indignation grants you $s2 Mastery for $287338d, up to ${$s2*$s3}.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Frostwhelp's Indignation",
                 "spell_id": "287283",
@@ -1046,7 +1046,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -1056,7 +1056,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -1066,7 +1066,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -1076,7 +1076,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -1086,7 +1086,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -1096,7 +1096,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -1106,7 +1106,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -1116,7 +1116,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -1608,7 +1608,7 @@
             "286832": {
                 "description": "Dark Transformations ignites you and your pet with flaming chains that deal $s1 Fire damage every sec to enemies between you for $s2 sec. ",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Helchains",
                 "spell_id": "286832",
@@ -1618,7 +1618,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -1628,7 +1628,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -1638,7 +1638,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -1648,7 +1648,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -1658,7 +1658,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -1668,7 +1668,7 @@
             "288417": {
                 "description": "Apocalypse and Army of the Damned additionally summon a Magus of the Dead for $288544d who hurls Frostbolts and Shadow Bolts at your foes, dealing $s1 damage each. ",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Magus of the Dead",
                 "spell_id": "288417",
@@ -1678,7 +1678,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -1688,7 +1688,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -1698,7 +1698,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -2192,7 +2192,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -2202,7 +2202,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -2212,7 +2212,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -2222,7 +2222,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -2232,7 +2232,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -2242,7 +2242,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -2252,7 +2252,7 @@
             "288754": {
                 "description": "$?s203555[Demon Blades][Demon's Bite] deals $s2 additional damage. When you activate Metamorphosis, the cooldown of Eye Beam and Blade Dance is immediately reset.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Chaotic Transformation",
                 "spell_id": "288754",
@@ -2262,7 +2262,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -2272,7 +2272,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -2754,7 +2754,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -2764,7 +2764,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -2774,7 +2774,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -2784,7 +2784,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -2794,7 +2794,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -2804,7 +2804,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -2814,7 +2814,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -2824,7 +2824,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -3338,7 +3338,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -3348,7 +3348,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -3358,7 +3358,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -3368,7 +3368,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -3378,7 +3378,7 @@
             "287773": {
                 "description": "Starsurge's damage is increased by $s2. Every $s4 Starsurges, gain Celestial Alignment for $s3 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Arcanic Pulsar",
                 "spell_id": "287773",
@@ -3388,7 +3388,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -3398,7 +3398,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -3408,7 +3408,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -3418,7 +3418,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -3950,7 +3950,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -3960,7 +3960,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -3970,7 +3970,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -3980,7 +3980,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -3990,7 +3990,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -4000,7 +4000,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -4010,7 +4010,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -4020,7 +4020,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -4522,7 +4522,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -4532,7 +4532,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -4542,7 +4542,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -4552,7 +4552,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -4562,7 +4562,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -4572,7 +4572,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -4582,7 +4582,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -4592,7 +4592,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -4602,7 +4602,7 @@
             "289314": {
                 "description": "Consuming Gore grants you $s1 mastery for $289315d and has a $s2% chance to activate Gore.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Burst of Savagery",
                 "spell_id": "289314",
@@ -5096,7 +5096,7 @@
             "287093": {
                 "description": "Kill Command deals $<damage> additional damage, and has a chance to summon a Dire Beast.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Dire Consequences",
                 "spell_id": "287093",
@@ -5106,7 +5106,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -5116,7 +5116,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -5126,7 +5126,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -5136,7 +5136,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -5146,7 +5146,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -5156,7 +5156,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -5166,7 +5166,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -5176,7 +5176,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -5658,7 +5658,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -5668,7 +5668,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -5678,7 +5678,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -5688,7 +5688,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -5698,7 +5698,7 @@
             "287707": {
                 "description": "Rapid Fire damage is increased by up to ${$m2*1.5} per shot fired, this damage starts lower and increases per shot of Rapid Fire. Aimed Shot has a $s1% chance to reset the cooldown of Rapid Fire.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Surging Shots",
                 "spell_id": "287707",
@@ -5708,7 +5708,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -5718,7 +5718,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -5728,7 +5728,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -5738,7 +5738,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -6230,7 +6230,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -6240,7 +6240,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -6250,7 +6250,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -6260,7 +6260,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -6270,7 +6270,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -6280,7 +6280,7 @@
             "288570": {
                 "description": "Your maximum Focus is increased to $<focus>, and $?s259387[Mongoose Bite][Raptor Strike] increases your Critical Strike by $s1 for $288573d, stacking up to $288573u times.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Primeval Intuition",
                 "spell_id": "288570",
@@ -6290,7 +6290,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -6300,7 +6300,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -6310,7 +6310,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -6794,7 +6794,7 @@
             "286027": {
                 "description": "While you are above $264351s1% mana, Arcane Blast deals $s1 additional damage.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Equipoise",
                 "spell_id": "286027",
@@ -6804,7 +6804,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -6814,7 +6814,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -6824,7 +6824,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -6834,7 +6834,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -6844,7 +6844,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -6854,7 +6854,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -6864,7 +6864,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -6874,7 +6874,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -7356,7 +7356,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -7366,7 +7366,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -7376,7 +7376,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -7386,7 +7386,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -7396,7 +7396,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -7406,7 +7406,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -7416,7 +7416,7 @@
             "288755": {
                 "description": "Pyroblast deals $s2 additional damage. When you activate Combustion, you gain $288800s1 Critical Strike, and up to $288803I nearby allies gain $288803s1 Critical Strike for $288800d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Wildfire",
                 "spell_id": "288755",
@@ -7426,7 +7426,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -7436,7 +7436,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -7918,7 +7918,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -7928,7 +7928,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -7938,7 +7938,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -7948,7 +7948,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -7958,7 +7958,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -7968,7 +7968,7 @@
             "288164": {
                 "description": "Each of your Icicles deals $s2 additional damage, and when an Icicle deals damage you have a $s1% chance to gain the Fingers of Frost effect.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Flash Freeze",
                 "spell_id": "288164",
@@ -7978,7 +7978,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -7988,7 +7988,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -7998,7 +7998,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -8492,7 +8492,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -8502,7 +8502,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -8512,7 +8512,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -8522,7 +8522,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -8532,7 +8532,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -8542,7 +8542,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -8552,7 +8552,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -8562,7 +8562,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -9054,7 +9054,7 @@
             "286585": {
                 "description": "Spending Chi has a chance to make your next Spinning Crane Kick free and deal $s1 additional damage.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Dance of Chi-Ji",
                 "spell_id": "286585",
@@ -9064,7 +9064,7 @@
             "287055": {
                 "description": "Your Combo Strikes grant a stacking $287062s3% chance for your next Fists of Fury to grant $s1 Haste and invoke Xuen, The White Tiger for $287063d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fury of Xuen",
                 "spell_id": "287055",
@@ -9074,7 +9074,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -9084,7 +9084,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -9094,7 +9094,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -9104,7 +9104,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -9114,7 +9114,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -9124,7 +9124,7 @@
             "288634": {
                 "description": "Rising Sun Kick has a $s3% chance to trigger a second time, dealing $s1 Physical damage and restoring $s2 Chi.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Glory of the Dawn",
                 "spell_id": "288634",
@@ -9134,7 +9134,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -9144,7 +9144,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -9154,7 +9154,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -9678,7 +9678,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -9688,7 +9688,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -9698,7 +9698,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -9708,7 +9708,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -9718,7 +9718,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -9728,7 +9728,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -9738,7 +9738,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -9748,7 +9748,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -10240,7 +10240,7 @@
             "286229": {
                 "description": "Spending Holy Power during $?<s231895>[Crusade][Avenging Wrath] causes you to explode with Holy light for $s1 damage per Holy Power spent to nearby enemies. $?<s231895>[Crusade][Avenging Wrath]'s duration is increased by ${$286231s2/1000} sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Light's Decree",
                 "spell_id": "286229",
@@ -10250,7 +10250,7 @@
             "286390": {
                 "description": "Your attacks have a chance to make your next Divine Storm free and deal $s1 additional damage.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Empyrean Power",
                 "spell_id": "286390",
@@ -10260,7 +10260,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -10270,7 +10270,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -10280,7 +10280,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -10290,7 +10290,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -10300,7 +10300,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -10310,7 +10310,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -10320,7 +10320,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -10330,7 +10330,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -10344,7 +10344,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -10354,7 +10354,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -10364,7 +10364,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -10374,7 +10374,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -10384,7 +10384,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -10394,7 +10394,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -10404,7 +10404,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -10414,7 +10414,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -10856,7 +10856,7 @@
             "287355": {
                 "description": "Power Word: Radiance has a $287356h% chance to cause your next Holy Nova to deal $s1 additional damage and reduce the cooldown of Power Word: Radiance by ${$287356s2/1000} sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Sudden Revelation",
                 "spell_id": "287355",
@@ -10866,7 +10866,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -10876,7 +10876,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -10886,7 +10886,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -10896,7 +10896,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -10906,7 +10906,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -10916,7 +10916,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -10926,7 +10926,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -10936,7 +10936,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -11428,7 +11428,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -11438,7 +11438,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -11448,7 +11448,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -11458,7 +11458,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -11468,7 +11468,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -11478,7 +11478,7 @@
             "288340": {
                 "description": "Vampiric Touch damage is increased by $s2, and each time Vampiric Touch deals damage you have a chance to increase the damage of your next Mind Sear within $288343d by $288343s1%.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Thought Harvester",
                 "spell_id": "288340",
@@ -11488,7 +11488,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -11498,7 +11498,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -11508,7 +11508,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -11982,7 +11982,7 @@
             "286573": {
                 "description": "Vendetta poisons the target, dealing ${$s1*10*$<assassinationMastery>} Nature damage over $286581d, and grants you $s2 energy over $286581d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Nothing Personal",
                 "spell_id": "286573",
@@ -11992,7 +11992,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -12002,7 +12002,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -12012,7 +12012,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -12022,7 +12022,7 @@
             "287649": {
                 "description": "Fan of Knives damage is increased by ${$s2*$<assassinationNoMastery>}. For each of the first $s4 critical strikes, it will fire a second spray of knives at that location, dealing ${$s3*$<assassinationNoMastery>} damage to enemies within $s5 yards.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Echoing Blades",
                 "spell_id": "287649",
@@ -12032,7 +12032,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -12042,7 +12042,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -12052,7 +12052,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -12062,7 +12062,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -12072,7 +12072,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -12554,7 +12554,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -12564,7 +12564,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -12574,7 +12574,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -12584,7 +12584,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -12594,7 +12594,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -12604,7 +12604,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -12614,7 +12614,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -12624,7 +12624,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -12634,7 +12634,7 @@
             "288979": {
                 "description": "Each time an attack Blade Flurries,  increase the chance for Sinister Strike to strike again by $s1%. Additional strikes of Sinister Strike deal $s2 more damage.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Keep Your Wits About You",
                 "spell_id": "288979",
@@ -13116,7 +13116,7 @@
             "286121": {
                 "description": "Each combo point spent has an $s2% chance to cause your Nightblade to deal $s1 Shadow damage and replicate to a nearby enemy.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Replicating Shadows",
                 "spell_id": "286121",
@@ -13126,7 +13126,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -13136,7 +13136,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -13146,7 +13146,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -13156,7 +13156,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -13166,7 +13166,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -13176,7 +13176,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -13186,7 +13186,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -13196,7 +13196,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -13700,7 +13700,7 @@
             "286949": {
                 "description": "Earthquake deals $s1 Physical damage instantly, and has a $s2% chance to make your next Chain Lightning be instant cast.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Tectonic Thunder",
                 "spell_id": "286949",
@@ -13710,7 +13710,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -13720,7 +13720,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -13730,7 +13730,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -13740,7 +13740,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -13750,7 +13750,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -13760,7 +13760,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -13770,7 +13770,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -13780,7 +13780,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -14292,7 +14292,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -14302,7 +14302,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -14312,7 +14312,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -14322,7 +14322,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -14332,7 +14332,7 @@
             "287768": {
                 "description": "Stormstrike deals ${$m2+($m2*0.5)} additional damage, and has a $287801h% chance to summon Thunderaan's Fury Totem, doubling the chance to activate Windfury Weapon for $287802d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Thunderaan's Fury",
                 "spell_id": "287768",
@@ -14342,7 +14342,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -14352,7 +14352,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -14362,7 +14362,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -14372,7 +14372,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -14856,7 +14856,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -14866,7 +14866,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -14876,7 +14876,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -14886,7 +14886,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -14896,7 +14896,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -14906,7 +14906,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -14916,7 +14916,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -14926,7 +14926,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -14936,7 +14936,7 @@
             "289364": {
                 "description": "Refreshing Corruption, Agony, or Siphon Life with less than ${$s2/1000} seconds remaining will deal $s1 Shadow damage and has a ${$s3/100}.2% chance to grant you a Soul Shard.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Pandemic Invocation",
                 "spell_id": "289364",
@@ -15418,7 +15418,7 @@
             "287059": {
                 "description": "Your Demonic Tyrant's Demonfire deals $s1 additional damage, and summoning your Demonic Tyrant instantly generates ${$287060s1/10} Soul Shards.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Baleful Invocation",
                 "spell_id": "287059",
@@ -15428,7 +15428,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -15438,7 +15438,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -15448,7 +15448,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -15458,7 +15458,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -15468,7 +15468,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -15478,7 +15478,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -15488,7 +15488,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -15498,7 +15498,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -15980,7 +15980,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -15990,7 +15990,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -16000,7 +16000,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -16010,7 +16010,7 @@
             "287637": {
                 "description": "Incinerate damage is increased by $s2, and when you fill up a Soul Shard, you have a ${$m1/10}.1% chance to generate an additional full Soul Shard over $287660d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Chaos Shards",
                 "spell_id": "287637",
@@ -16020,7 +16020,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -16030,7 +16030,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -16040,7 +16040,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -16050,7 +16050,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -16060,7 +16060,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -16564,7 +16564,7 @@
             "287377": {
                 "description": "Avatar increases your Mastery by $s1 for $287379d, and instantly grants you Ignore Pain.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bastion of Might",
                 "spell_id": "287377",
@@ -16574,7 +16574,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -16584,7 +16584,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -16594,7 +16594,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -16604,7 +16604,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -16614,7 +16614,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -16624,7 +16624,7 @@
             "288452": {
                 "description": "The Tactician effect improves your next Overpower, causing it to deal $s1 additional damage and reduce the remaining cooldown of Mortal Strike by ${$s2/1000}.1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Striking the Anvil",
                 "spell_id": "288452",
@@ -16634,7 +16634,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -16644,7 +16644,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -16654,7 +16654,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -17136,7 +17136,7 @@
             "287377": {
                 "description": "Avatar increases your Mastery by $s1 for $287379d, and instantly grants you Ignore Pain.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bastion of Might",
                 "spell_id": "287377",
@@ -17146,7 +17146,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -17156,7 +17156,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -17166,7 +17166,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -17176,7 +17176,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -17186,7 +17186,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -17196,7 +17196,7 @@
             "288056": {
                 "description": "Rampage deals an additional ${$184367s1*$s2} damage and has a $288060h% chance to grant you Recklessness for ${$s1/1000} sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Unbridled Ferocity",
                 "spell_id": "288056",
@@ -17206,7 +17206,7 @@
             "288080": {
                 "description": "Bloodthirst critical strikes generate $<rage> additional Rage, and inflict a Gushing Wound that leeches $<damage> health over $288091d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Cold Steel, Hot Blood",
                 "spell_id": "288080",
@@ -17216,7 +17216,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -17226,7 +17226,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -17236,7 +17236,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
@@ -17718,7 +17718,7 @@
             "287377": {
                 "description": "Avatar increases your Mastery by $s1 for $287379d, and instantly grants you Ignore Pain.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bastion of Might",
                 "spell_id": "287377",
@@ -17728,7 +17728,7 @@
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
@@ -17738,7 +17738,7 @@
             "287604": {
                 "description": "Standing still grants you Deep Roots, increasing your Versatility by $s2. Moving instead grants you Uprooted, healing you for $s1 every $287608t1 sec.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
@@ -17748,7 +17748,7 @@
             "287631": {
                 "description": "Your damaging abilities have a chance to deal $<dmg> Plague damage over $287638d, and your healing abilities have a chance to restore $<heal> health over $287639d. These effects are increased by up to $s3% based on the target's missing health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
@@ -17758,7 +17758,7 @@
             "287662": {
                 "description": "Your Versatility is increased by $s2. Moving near an enemy's corpse consumes their essence, restoring $s1 health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
@@ -17768,7 +17768,7 @@
             "287818": {
                 "description": "When you damage an enemy who is below $287821s1% health, or fall below $287821s1% health yourself, gain $s1 primary stat and $287827s5% movement speed for $287827d. Can only occur once every $287825d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
@@ -17778,7 +17778,7 @@
             "288749": {
                 "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
@@ -17788,7 +17788,7 @@
             "288802": {
                 "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
@@ -17798,7 +17798,7 @@
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
                 "max_itemlevel": -1,
-                "max_stack": 1,
+                "max_stack": 3,
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",

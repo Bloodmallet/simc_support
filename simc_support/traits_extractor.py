@@ -126,6 +126,7 @@ def get_tier(azerite_id, power_sets):
         return trait["tier"]
 
 def update_list(trait_dict):
+    logger.info("Updating list.")
     try:
         with open("trait_map.json", "r") as r:
             LOADED_MAP = json.load(r)
@@ -267,7 +268,7 @@ def main():
                     trait_dict[spec[0]][spec[1]
                                         ][trait_spell_id]["max_itemlevel"] = -1
                     trait_dict[spec[0]][spec[1]
-                                        ][trait_spell_id]["max_stack"] = 1
+                                        ][trait_spell_id]["max_stack"] = 3
                     trait_dict[spec[0]][spec[1]][trait_spell_id]["description"
                                                                  ] = trait_description
 
