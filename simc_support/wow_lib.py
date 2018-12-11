@@ -882,8 +882,8 @@ __trinket_list = [
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="World Quest"
     ),
     Trinket(  # profession alchemy
-        name="Emblazoned Alchemist Stone", item_id="166976", min_itemlevel=385, max_itemlevel=385,
-        max_itemlevel_drop=385, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="Profession"
+        name="Emblazoned Alchemist Stone", item_id="166976", min_itemlevel=355, max_itemlevel=415,
+        max_itemlevel_drop=355, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="Profession"
     ),
 
     # Trinket(
