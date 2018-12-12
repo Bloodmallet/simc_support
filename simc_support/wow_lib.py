@@ -885,6 +885,18 @@ __trinket_list = [
         name="Emblazoned Alchemist Stone", item_id="166976", min_itemlevel=355, max_itemlevel=415,
         max_itemlevel_drop=355, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="Profession"
     ),
+    Trinket(  # World Boss Dark Shore
+        name="Ancient Knot of Wisdom", item_id="161417", min_itemlevel=355, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=355, agility=False, intellect=True, strength=False, melee=False, ranged=False, source="World Boss"
+    ),
+    Trinket(  # World Boss Dark Shore
+        name="Forest Lord's Razorleaf", item_id="166794", min_itemlevel=355, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=355, agility=True, intellect=False, strength=False, melee=False, ranged=False, source="World Boss"
+    ),
+    Trinket(  # World Boss Dark Shore
+        name="Knot of Ancient Fury", item_id="161413", min_itemlevel=355, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=355, agility=False, intellect=False, strength=True, melee=False, ranged=False, source="World Boss"
+    ),
 
     # Trinket(
     #     name="", item_id="", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
