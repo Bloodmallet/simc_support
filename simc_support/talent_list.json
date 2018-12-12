@@ -607,12 +607,12 @@
         "Feral": {
             "1": {
                 "1": {
-                    "name": "Blood Scent",
-                    "spell_id": "202022"
-                },
-                "2": {
                     "name": "Predator",
                     "spell_id": "202021"
+                },
+                "2": {
+                    "name": "Sabertooth",
+                    "spell_id": "202031"
                 },
                 "3": {
                     "name": "Lunar Inspiration",
@@ -667,8 +667,8 @@
                     "spell_id": "158476"
                 },
                 "2": {
-                    "name": "Jagged Wounds",
-                    "spell_id": "202032"
+                    "name": "Savage Roar",
+                    "spell_id": "52610"
                 },
                 "3": {
                     "name": "Incarnation",
@@ -677,16 +677,16 @@
             },
             "6": {
                 "1": {
-                    "name": "Sabertooth",
-                    "spell_id": "202031"
+                    "name": "Scent of Blood",
+                    "spell_id": "285564"
                 },
                 "2": {
                     "name": "Brutal Slash",
                     "spell_id": "202028"
                 },
                 "3": {
-                    "name": "Savage Roar",
-                    "spell_id": "52610"
+                    "name": "Primal Wrath",
+                    "spell_id": "285381"
                 }
             },
             "7": {
@@ -725,8 +725,8 @@
                     "spell_id": "252216"
                 },
                 "2": {
-                    "name": "Intimidating Roar",
-                    "spell_id": "236748"
+                    "name": "Ursol's Vortex",
+                    "spell_id": "102793"
                 },
                 "3": {
                     "name": "Wild Charge",
@@ -1588,7 +1588,7 @@
                 },
                 "2": {
                     "name": "Rushing Jade Wind",
-                    "spell_id": "261715"
+                    "spell_id": "116847"
                 },
                 "3": {
                     "name": "Invoke Xuen, the White Tiger",
@@ -2039,8 +2039,8 @@
                     "spell_id": "199855"
                 },
                 "3": {
-                    "name": "Mania",
-                    "spell_id": "193173"
+                    "name": "Intangibility",
+                    "spell_id": "288733"
                 }
             },
             "3": {
@@ -2421,8 +2421,8 @@
         "Elemental": {
             "1": {
                 "1": {
-                    "name": "Exposed Elements",
-                    "spell_id": "260694"
+                    "name": "Earthen Rage",
+                    "spell_id": "170374"
                 },
                 "2": {
                     "name": "Echo of the Elements",
@@ -2439,8 +2439,8 @@
                     "spell_id": "273221"
                 },
                 "2": {
-                    "name": "Master of the Elements",
-                    "spell_id": "16166"
+                    "name": "Call the Thunder",
+                    "spell_id": "260897"
                 },
                 "3": {
                     "name": "Totem Mastery",
@@ -2463,8 +2463,8 @@
             },
             "4": {
                 "1": {
-                    "name": "High Voltage",
-                    "spell_id": "260890"
+                    "name": "Master of the Elements",
+                    "spell_id": "16166"
                 },
                 "2": {
                     "name": "Storm Elemental",
@@ -2491,8 +2491,8 @@
             },
             "6": {
                 "1": {
-                    "name": "Earthen Rage",
-                    "spell_id": "170374"
+                    "name": "Surge of Power",
+                    "spell_id": "262303"
                 },
                 "2": {
                     "name": "Primal Elementalist",

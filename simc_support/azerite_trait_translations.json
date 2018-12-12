@@ -505,6 +505,105 @@
     "cn_CN": "汇帆",
     "ru_RU": "Семь Ветров"
   },
+  "Shadow of Elune": {
+    "de_DE": "Shadow of Elune",
+    "en_US": "Shadow of Elune",
+    "es_ES": "Shadow of Elune",
+    "fr_FR": "Shadow of Elune",
+    "it_IT": "Shadow of Elune",
+    "pt_BR": "Shadow of Elune",
+    "ko_KR": "Shadow of Elune",
+    "cn_CN": "Shadow of Elune",
+    "ru_RU": "Shadow of Elune"
+  },
+  "Ancients' Bulwark": {
+    "de_DE": "Ancients' Bulwark",
+    "en_US": "Ancients' Bulwark",
+    "es_ES": "Ancients' Bulwark",
+    "fr_FR": "Ancients' Bulwark",
+    "it_IT": "Ancients' Bulwark",
+    "pt_BR": "Ancients' Bulwark",
+    "ko_KR": "Ancients' Bulwark",
+    "cn_CN": "Ancients' Bulwark",
+    "ru_RU": "Ancients' Bulwark"
+  },
+  "Apothecary's Concoctions": {
+    "de_DE": "Apothecary's Concoctions",
+    "en_US": "Apothecary's Concoctions",
+    "es_ES": "Apothecary's Concoctions",
+    "fr_FR": "Apothecary's Concoctions",
+    "it_IT": "Apothecary's Concoctions",
+    "pt_BR": "Apothecary's Concoctions",
+    "ko_KR": "Apothecary's Concoctions",
+    "cn_CN": "Apothecary's Concoctions",
+    "ru_RU": "Apothecary's Concoctions"
+  },
+  "Endless Hunger": {
+    "de_DE": "Endless Hunger",
+    "en_US": "Endless Hunger",
+    "es_ES": "Endless Hunger",
+    "fr_FR": "Endless Hunger",
+    "it_IT": "Endless Hunger",
+    "pt_BR": "Endless Hunger",
+    "ko_KR": "Endless Hunger",
+    "cn_CN": "Endless Hunger",
+    "ru_RU": "Endless Hunger"
+  },
+  "Fight or Flight": {
+    "de_DE": "Fight or Flight",
+    "en_US": "Fight or Flight",
+    "es_ES": "Fight or Flight",
+    "fr_FR": "Fight or Flight",
+    "it_IT": "Fight or Flight",
+    "pt_BR": "Fight or Flight",
+    "ko_KR": "Fight or Flight",
+    "cn_CN": "Fight or Flight",
+    "ru_RU": "Fight or Flight"
+  },
+  "Seductive Power": {
+    "de_DE": "Seductive Power",
+    "en_US": "Seductive Power",
+    "es_ES": "Seductive Power",
+    "fr_FR": "Seductive Power",
+    "it_IT": "Seductive Power",
+    "pt_BR": "Seductive Power",
+    "ko_KR": "Seductive Power",
+    "cn_CN": "Seductive Power",
+    "ru_RU": "Seductive Power"
+  },
+  "Bonded Souls": {
+    "de_DE": "Bonded Souls",
+    "en_US": "Bonded Souls",
+    "es_ES": "Bonded Souls",
+    "fr_FR": "Bonded Souls",
+    "it_IT": "Bonded Souls",
+    "pt_BR": "Bonded Souls",
+    "ko_KR": "Bonded Souls",
+    "cn_CN": "Bonded Souls",
+    "ru_RU": "Bonded Souls"
+  },
+  "Treacherous Covenant": {
+    "de_DE": "Treacherous Covenant",
+    "en_US": "Treacherous Covenant",
+    "es_ES": "Treacherous Covenant",
+    "fr_FR": "Treacherous Covenant",
+    "it_IT": "Treacherous Covenant",
+    "pt_BR": "Treacherous Covenant",
+    "ko_KR": "Treacherous Covenant",
+    "cn_CN": "Treacherous Covenant",
+    "ru_RU": "Treacherous Covenant"
+  },
+  "Bloody Runeblade": {
+    "de_DE": "Bloody Runeblade",
+    "en_US": "Bloody Runeblade",
+    "es_ES": "Bloody Runeblade",
+    "fr_FR": "Bloody Runeblade",
+    "it_IT": "Bloody Runeblade",
+    "pt_BR": "Bloody Runeblade",
+    "ko_KR": "Bloody Runeblade",
+    "cn_CN": "Bloody Runeblade",
+    "ru_RU": "Bloody Runeblade"
+  },
   "Icy Citadel": {
     "de_DE": "Eisige Zitadelle",
     "en_US": "Icy Citadel",
@@ -526,17 +625,6 @@
     "ko_KR": "잠재된 한기",
     "cn_CN": "潜藏冰冷",
     "ru_RU": "Затаившаяся стужа"
-  },
-  "Glacial Contagion": {
-    "de_DE": "Eisige Ansteckung",
-    "en_US": "Glacial Contagion",
-    "es_ES": "Contagio glacial",
-    "fr_FR": "Contagion glaciale",
-    "it_IT": "Contagio Glaciale",
-    "pt_BR": "Contágio Glacial",
-    "ko_KR": "혹한 전염",
-    "cn_CN": "冰冷蔓延",
-    "ru_RU": "Ледяное заражение"
   },
   "Echoing Howl": {
     "de_DE": "Hallendes Geheule",
@@ -582,17 +670,6 @@
     "cn_CN": "脓疮厄运",
     "ru_RU": "Разлагающая погибель"
   },
-  "Horrid Experimentation": {
-    "de_DE": "Entsetzliches Experiment",
-    "en_US": "Horrid Experimentation",
-    "es_ES": "Experimentación horrible",
-    "fr_FR": "Abjecte création",
-    "it_IT": "Esperimento Orrido",
-    "pt_BR": "Experimento Hórrido",
-    "ko_KR": "공포의 실험",
-    "cn_CN": "恶臭排放",
-    "ru_RU": "Чудовищный эксперимент"
-  },
   "Festermight": {
     "de_DE": "Eitermacht",
     "en_US": "Festermight",
@@ -637,6 +714,28 @@
     "cn_CN": "最后的惊喜",
     "ru_RU": "Последний сюрприз"
   },
+  "Helchains": {
+    "de_DE": "Helchains",
+    "en_US": "Helchains",
+    "es_ES": "Helchains",
+    "fr_FR": "Helchains",
+    "it_IT": "Helchains",
+    "pt_BR": "Helchains",
+    "ko_KR": "Helchains",
+    "cn_CN": "Helchains",
+    "ru_RU": "Helchains"
+  },
+  "Magus of the Dead": {
+    "de_DE": "Magus of the Dead",
+    "en_US": "Magus of the Dead",
+    "es_ES": "Magus de los muertos",
+    "fr_FR": "Magus of the Dead",
+    "it_IT": "Magus dei Morti",
+    "pt_BR": "Magus dos Mortos",
+    "ko_KR": "죽은 자의 학자",
+    "cn_CN": "Magus of the Dead",
+    "ru_RU": "Magus of the Dead"
+  },
   "Furious Gaze": {
     "de_DE": "Wildes Starren",
     "en_US": "Furious Gaze",
@@ -647,17 +746,6 @@
     "ko_KR": "격노의 응시",
     "cn_CN": "狂怒凝视",
     "ru_RU": "Яростный взор"
-  },
-  "Unbound Chaos": {
-    "de_DE": "Entfesseltes Chaos",
-    "en_US": "Unbound Chaos",
-    "es_ES": "Caos desatado",
-    "fr_FR": "Chaos délié",
-    "it_IT": "Caos Indomabile",
-    "pt_BR": "Caos Liberado",
-    "ko_KR": "풀려난 혼돈",
-    "cn_CN": "释放混沌",
-    "ru_RU": "Необузданный хаос"
   },
   "Seething Power": {
     "de_DE": "Brodelnde Macht",
@@ -702,6 +790,17 @@
     "ko_KR": "회전 칼날",
     "cn_CN": "旋转之刃",
     "ru_RU": "Вращающиеся клинки"
+  },
+  "Chaotic Transformation": {
+    "de_DE": "Chaotic Transformation",
+    "en_US": "Chaotic Transformation",
+    "es_ES": "Chaotic Transformation",
+    "fr_FR": "Chaotic Transformation",
+    "it_IT": "Chaotic Transformation",
+    "pt_BR": "Chaotic Transformation",
+    "ko_KR": "Chaotic Transformation",
+    "cn_CN": "Chaotic Transformation",
+    "ru_RU": "Chaotic Transformation"
   },
   "Infernal Armor": {
     "de_DE": "Höllische Rüstung",
@@ -769,17 +868,6 @@
     "cn_CN": "明月之力",
     "ru_RU": "Лунная сила"
   },
-  "Sunblaze": {
-    "de_DE": "Sonnenflamme",
-    "en_US": "Sunblaze",
-    "es_ES": "Llamarada solar",
-    "fr_FR": "Brasier solaire",
-    "it_IT": "Fiammata Solare",
-    "pt_BR": "Ardessol",
-    "ko_KR": "폭염",
-    "cn_CN": "烈日之焰",
-    "ru_RU": "Солнечный ожог"
-  },
   "Dawning Sun": {
     "de_DE": "Aufgehende Sonne",
     "en_US": "Dawning Sun",
@@ -835,7 +923,7 @@
     "cn_CN": "凶猛掠夺",
     "ru_RU": "Свирепое терзание"
   },
-  "Shredding Fury": {
+  "Jungle Fury": {
     "de_DE": "Schredderfuror",
     "en_US": "Shredding Fury",
     "es_ES": "Furia trituradora",
@@ -934,6 +1022,17 @@
     "cn_CN": "层叠鬃毛",
     "ru_RU": "Густая грива"
   },
+  "Burst of Savagery": {
+    "de_DE": "Burst of Savagery",
+    "en_US": "Burst of Savagery",
+    "es_ES": "Burst of Savagery",
+    "fr_FR": "Burst of Savagery",
+    "it_IT": "Burst of Savagery",
+    "pt_BR": "Burst of Savagery",
+    "ko_KR": "Burst of Savagery",
+    "cn_CN": "Burst of Savagery",
+    "ru_RU": "Burst of Savagery"
+  },
   "Serrated Jaws": {
     "de_DE": "Gezackte Kiefer",
     "en_US": "Serrated Jaws",
@@ -966,17 +1065,6 @@
     "ko_KR": "죽음의 무도",
     "cn_CN": "死亡之舞",
     "ru_RU": "Танец смерти"
-  },
-  "Pack Alpha": {
-    "de_DE": "Rudelalpha",
-    "en_US": "Pack Alpha",
-    "es_ES": "Alfa de la manada",
-    "fr_FR": "Chef de meute",
-    "it_IT": "Alfa del Branco",
-    "pt_BR": "Alfa da Matilha",
-    "ko_KR": "무리 우두머리",
-    "cn_CN": "领导兽群",
-    "ru_RU": "Альфа-особь"
   },
   "Feeding Frenzy": {
     "de_DE": "Fressrausch",
@@ -1011,6 +1099,17 @@
     "cn_CN": "原始本能",
     "ru_RU": "Первобытные инстинкты"
   },
+  "Dire Consequences": {
+    "de_DE": "Dire Consequences",
+    "en_US": "Dire Consequences",
+    "es_ES": "Dire Consequences",
+    "fr_FR": "Dire Consequences",
+    "it_IT": "Dire Consequences",
+    "pt_BR": "Dire Consequences",
+    "ko_KR": "Dire Consequences",
+    "cn_CN": "Dire Consequences",
+    "ru_RU": "Dire Consequences"
+  },
   "In The Rhythm": {
     "de_DE": "Im Rhythmus",
     "en_US": "In The Rhythm",
@@ -1021,17 +1120,6 @@
     "ko_KR": "리듬을 타고",
     "cn_CN": "弦之韵律",
     "ru_RU": "Чувство ритма"
-  },
-  "Arcane Flurry": {
-    "de_DE": "Arkanhagel",
-    "en_US": "Arcane Flurry",
-    "es_ES": "Aluvión Arcano",
-    "fr_FR": "Déluge des Arcanes",
-    "it_IT": "Vortice Arcano",
-    "pt_BR": "Rajada Arcana",
-    "ko_KR": "신비한 질풍",
-    "cn_CN": "奥术飓风",
-    "ru_RU": "Чародейский шквал"
   },
   "Unerring Vision": {
     "de_DE": "Unfehlbare Sicht",
@@ -1065,6 +1153,17 @@
     "ko_KR": "화력 집중",
     "cn_CN": "集中火力",
     "ru_RU": "Средоточие огня"
+  },
+  "Surging Shots": {
+    "de_DE": "Surging Shots",
+    "en_US": "Surging Shots",
+    "es_ES": "Surging Shots",
+    "fr_FR": "Surging Shots",
+    "it_IT": "Surging Shots",
+    "pt_BR": "Surging Shots",
+    "ko_KR": "Surging Shots",
+    "cn_CN": "Surging Shots",
+    "ru_RU": "Surging Shots"
   },
   "Wildfire Cluster": {
     "de_DE": "Lauffeuerstreubombe",
@@ -1121,16 +1220,16 @@
     "cn_CN": "荒野生存",
     "ru_RU": "Выживание в природе"
   },
-  "Up Close And Personal": {
-    "de_DE": "Aufdringlich nah",
-    "en_US": "Up Close And Personal",
-    "es_ES": "Cara a cara",
-    "fr_FR": "Combat singulier",
-    "it_IT": "Da Vicino e Personalmente",
-    "pt_BR": "Bem Pertinho",
-    "ko_KR": "개인 면담",
-    "cn_CN": "鱼叉连击",
-    "ru_RU": "Лицом к лицу"
+  "Primeval Intuition": {
+    "de_DE": "Primeval Intuition",
+    "en_US": "Primeval Intuition",
+    "es_ES": "Primeval Intuition",
+    "fr_FR": "Primeval Intuition",
+    "it_IT": "Primeval Intuition",
+    "pt_BR": "Primeval Intuition",
+    "ko_KR": "Primeval Intuition",
+    "cn_CN": "Primeval Intuition",
+    "ru_RU": "Primeval Intuition"
   },
   "Arcane Pummeling": {
     "de_DE": "Arkandresche",
@@ -1187,16 +1286,16 @@
     "cn_CN": "爆炸回响",
     "ru_RU": "Эхо взрыва"
   },
-  "Anomalous Impact": {
-    "de_DE": "Anomaler Einschlag",
-    "en_US": "Anomalous Impact",
-    "es_ES": "Impacto anómalo",
-    "fr_FR": "Impact anormal",
-    "it_IT": "Impatto Anomalo",
-    "pt_BR": "Impacto Anômalo",
-    "ko_KR": "변칙적 충돌",
-    "cn_CN": "异常冲击",
-    "ru_RU": "Аномальное воздействие"
+  "Equipoise": {
+    "de_DE": "Equipoise",
+    "en_US": "Equipoise",
+    "es_ES": "Equipoise",
+    "fr_FR": "Equipoise",
+    "it_IT": "Equipoise",
+    "pt_BR": "Equipoise",
+    "ko_KR": "Equipoise",
+    "cn_CN": "Equipoise",
+    "ru_RU": "Equipoise"
   },
   "Flames of Alacrity": {
     "de_DE": "Flammen des Eifers",
@@ -1208,17 +1307,6 @@
     "ko_KR": "기민한 불꽃",
     "cn_CN": "欣燃之焰",
     "ru_RU": "Пламя рвения"
-  },
-  "Preheat": {
-    "de_DE": "Vorheizen",
-    "en_US": "Preheat",
-    "es_ES": "Precalentar",
-    "fr_FR": "Préchauffage",
-    "it_IT": "Riscaldamento",
-    "pt_BR": "Preaquecimento",
-    "ko_KR": "예열",
-    "cn_CN": "预热",
-    "ru_RU": "Прогрев"
   },
   "Blaster Master": {
     "de_DE": "Meisterlicher Feuerschlag",
@@ -1264,6 +1352,17 @@
     "cn_CN": "烈火意志",
     "ru_RU": "Пылающий разум"
   },
+  "Wildfire": {
+    "de_DE": "Wildfire",
+    "en_US": "Wildfire",
+    "es_ES": "Wildfire",
+    "fr_FR": "Wildfire",
+    "it_IT": "Wildfire",
+    "pt_BR": "Wildfire",
+    "ko_KR": "Wildfire",
+    "cn_CN": "Wildfire",
+    "ru_RU": "Wildfire"
+  },
   "Packed Ice": {
     "de_DE": "Gebündeltes Eis",
     "en_US": "Packed Ice",
@@ -1274,17 +1373,6 @@
     "ko_KR": "빼곡한 얼음",
     "cn_CN": "密集寒冰",
     "ru_RU": "Плотный лед"
-  },
-  "Winter's Reach": {
-    "de_DE": "Griff des Winters",
-    "en_US": "Winter's Reach",
-    "es_ES": "Alcance del invierno",
-    "fr_FR": "Hiver sans fin",
-    "it_IT": "Presa dell'Inverno",
-    "pt_BR": "Alcance Invernal",
-    "ko_KR": "겨울의 손길",
-    "cn_CN": "寒冬蔓延",
-    "ru_RU": "Прикосновение зимы"
   },
   "Tunnel of Ice": {
     "de_DE": "Eistunnel",
@@ -1330,6 +1418,17 @@
     "cn_CN": "冰河突击",
     "ru_RU": "Леденящий штурм"
   },
+  "Flash Freeze": {
+    "de_DE": "Flash Freeze",
+    "en_US": "Flash Freeze",
+    "es_ES": "Flash Freeze",
+    "fr_FR": "Flash Freeze",
+    "it_IT": "Flash Freeze",
+    "pt_BR": "Flash Freeze",
+    "ko_KR": "Flash Freeze",
+    "cn_CN": "Flash Freeze",
+    "ru_RU": "Flash Freeze"
+  },
   "Boiling Brew": {
     "de_DE": "Kochendes Bräu",
     "en_US": "Boiling Brew",
@@ -1374,17 +1473,6 @@
     "cn_CN": "点穴踢",
     "ru_RU": "Уязвимая точка"
   },
-  "Iron Fists": {
-    "de_DE": "Eiserne Fäuste",
-    "en_US": "Iron Fists",
-    "es_ES": "Puños de hierro",
-    "fr_FR": "Poings de fer",
-    "it_IT": "Pugni di Ferro",
-    "pt_BR": "Punhos de Ferro",
-    "ko_KR": "철권",
-    "cn_CN": "钢铁之拳",
-    "ru_RU": "Железные кулаки"
-  },
   "Sunrise Technique": {
     "de_DE": "Technik des Sonnenaufgangs",
     "en_US": "Sunrise Technique",
@@ -1396,28 +1484,6 @@
     "cn_CN": "旭日功",
     "ru_RU": "Техника грядущего восхода"
   },
-  "Swift Roundhouse": {
-    "de_DE": "Schneller Rundumtritt",
-    "en_US": "Swift Roundhouse",
-    "es_ES": "Patada circular presta",
-    "fr_FR": "Coup de pied circulaire fulgurant",
-    "it_IT": "Calcio Rotante Rapido",
-    "pt_BR": "Chute Giratório Veloz",
-    "ko_KR": "날랜 돌려차기",
-    "cn_CN": "神龙摆尾",
-    "ru_RU": "Быстрый удар с разворота"
-  },
-  "Meridian Strikes": {
-    "de_DE": "Meridianschläge",
-    "en_US": "Meridian Strikes",
-    "es_ES": "Golpes meridianos",
-    "fr_FR": "Frappes méridiennes",
-    "it_IT": "Assalti Meridiani",
-    "pt_BR": "Ataques Meridianos",
-    "ko_KR": "정점의 일격",
-    "cn_CN": "精湛拳法",
-    "ru_RU": "Удары зенита"
-  },
   "Open Palm Strikes": {
     "de_DE": "Handflächenschläge",
     "en_US": "Open Palm Strikes",
@@ -1428,6 +1494,39 @@
     "ko_KR": "손바닥 강타",
     "cn_CN": "开阖掌法",
     "ru_RU": "Удары ладонями"
+  },
+  "Dance of Chi-Ji": {
+    "de_DE": "Dance of Chi-Ji",
+    "en_US": "Dance of Chi-Ji",
+    "es_ES": "Dance of Chi-Ji",
+    "fr_FR": "Dance of Chi-Ji",
+    "it_IT": "Danza di Chi-Ji",
+    "pt_BR": "Dance of Chi-Ji",
+    "ko_KR": "Dance of Chi-Ji",
+    "cn_CN": "Dance of Chi-Ji",
+    "ru_RU": "Dance of Chi-Ji"
+  },
+  "Fury of Xuen": {
+    "de_DE": "Fury of Xuen",
+    "en_US": "Fury of Xuen",
+    "es_ES": "Fury of Xuen",
+    "fr_FR": "Fury of Xuen",
+    "it_IT": "Fury of Xuen",
+    "pt_BR": "Fury of Xuen",
+    "ko_KR": "Fury of Xuen",
+    "cn_CN": "Fury of Xuen",
+    "ru_RU": "Fury of Xuen"
+  },
+  "Glory of the Dawn": {
+    "de_DE": "Glory of the Dawn",
+    "en_US": "Glory of the Dawn",
+    "es_ES": "Glory of the Dawn",
+    "fr_FR": "Glory of the Dawn",
+    "it_IT": "Gloria dell'Alba",
+    "pt_BR": "Glory of the Dawn",
+    "ko_KR": "Glory of the Dawn",
+    "cn_CN": "Glory of the Dawn",
+    "ru_RU": "Glory of the Dawn"
   },
   "Avenger's Might": {
     "de_DE": "Macht des Rächers",
@@ -1450,17 +1549,6 @@
     "ko_KR": "정의의 불길",
     "cn_CN": "正义烈焰",
     "ru_RU": "Пламя праведников"
-  },
-  "Deferred Sentence": {
-    "de_DE": "Aufgeschobener Richtspruch",
-    "en_US": "Deferred Sentence",
-    "es_ES": "Sentencia aplazada",
-    "fr_FR": "Peine avec sursis",
-    "it_IT": "Sentenza Rinviata",
-    "pt_BR": "Sentença Preterida",
-    "ko_KR": "선고 유예",
-    "cn_CN": "缓刑",
-    "ru_RU": "Отложенный приговор"
   },
   "Inner Light": {
     "de_DE": "Inneres Licht",
@@ -1506,17 +1594,6 @@
     "cn_CN": "激励勇士",
     "ru_RU": "Ободряющая стойкость"
   },
-  "Zealotry": {
-    "de_DE": "Unermüdlichkeit",
-    "en_US": "Zealotry",
-    "es_ES": "Fanatismo",
-    "fr_FR": "Fanatisme",
-    "it_IT": "Fanatismo",
-    "pt_BR": "Fanatismo",
-    "ko_KR": "열광",
-    "cn_CN": "狂热",
-    "ru_RU": "Фанатизм"
-  },
   "Relentless Inquisitor": {
     "de_DE": "Unnachgiebiger Inquisitor",
     "en_US": "Relentless Inquisitor",
@@ -1539,27 +1616,38 @@
     "cn_CN": "异端逐除",
     "ru_RU": "Огонь очищения"
   },
-  "Divine Right": {
-    "de_DE": "Göttliches Recht",
-    "en_US": "Divine Right",
-    "es_ES": "Derecho divino",
-    "fr_FR": "Droit divin",
-    "it_IT": "Diritto Divino",
-    "pt_BR": "Direito Divino",
-    "ko_KR": "신권",
-    "cn_CN": "神圣权利",
-    "ru_RU": "Божественное право"
+  "Light's Decree": {
+    "de_DE": "Light's Decree",
+    "en_US": "Light's Decree",
+    "es_ES": "Light's Decree",
+    "fr_FR": "Light's Decree",
+    "it_IT": "Light's Decree",
+    "pt_BR": "Light's Decree",
+    "ko_KR": "Light's Decree",
+    "cn_CN": "Light's Decree",
+    "ru_RU": "Light's Decree"
   },
-  "Sacred Flame": {
-    "de_DE": "Heilige Flamme",
-    "en_US": "Sacred Flame",
-    "es_ES": "Llama sagrada",
-    "fr_FR": "Flamme sacrée",
-    "it_IT": "Fiamma Sacra",
-    "pt_BR": "Chama Sagrada",
-    "ko_KR": "성스러운 불길",
-    "cn_CN": "神圣之焰",
-    "ru_RU": "Священное пламя"
+  "Empyrean Power": {
+    "de_DE": "Empyrean Power",
+    "en_US": "Empyrean Power",
+    "es_ES": "Empyrean Power",
+    "fr_FR": "Empyrean Power",
+    "it_IT": "Empyrean Power",
+    "pt_BR": "Empyrean Power",
+    "ko_KR": "Empyrean Power",
+    "cn_CN": "Empyrean Power",
+    "ru_RU": "Empyrean Power"
+  },
+  "Sudden Revelation": {
+    "de_DE": "Sudden Revelation",
+    "en_US": "Sudden Revelation",
+    "es_ES": "Sudden Revelation",
+    "fr_FR": "Sudden Revelation",
+    "it_IT": "Sudden Revelation",
+    "pt_BR": "Sudden Revelation",
+    "ko_KR": "Sudden Revelation",
+    "cn_CN": "Sudden Revelation",
+    "ru_RU": "Sudden Revelation"
   },
   "Searing Dialogue": {
     "de_DE": "Sengender Dialog",
@@ -1571,17 +1659,6 @@
     "ko_KR": "불타는 대화",
     "cn_CN": "灼烧之言",
     "ru_RU": "Иссушающая речь"
-  },
-  "Thought Harvester": {
-    "de_DE": "Gedankenernter",
-    "en_US": "Thought Harvester",
-    "es_ES": "Cosechador de pensamientos",
-    "fr_FR": "Moissonneur de pensées",
-    "it_IT": "Raccoglitore di Pensieri",
-    "pt_BR": "Ceifador de Pensamentos",
-    "ko_KR": "정신 수확자",
-    "cn_CN": "智慧收割者",
-    "ru_RU": "Пожинатель мыслей"
   },
   "Whispers of the Damned": {
     "de_DE": "Flüstern der Verdammten",
@@ -1627,16 +1704,16 @@
     "cn_CN": "狂乱合唱",
     "ru_RU": "Хор безумия"
   },
-  "Sharpened Blades": {
-    "de_DE": "Geschärfte Klingen",
-    "en_US": "Sharpened Blades",
-    "es_ES": "Hojas afiladas",
-    "fr_FR": "Lames affûtées",
-    "it_IT": "Lame Affilate",
-    "pt_BR": "Lâminas Afiadas",
-    "ko_KR": "날카로운 날",
-    "cn_CN": "尖锐利刃",
-    "ru_RU": "Отточенные клинки"
+  "Thought Harvester": {
+    "de_DE": "Thought Harvester",
+    "en_US": "Thought Harvester",
+    "es_ES": "Thought Harvester",
+    "fr_FR": "Thought Harvester",
+    "it_IT": "Thought Harvester",
+    "pt_BR": "Thought Harvester",
+    "ko_KR": "Thought Harvester",
+    "cn_CN": "Thought Harvester",
+    "ru_RU": "Thought Harvester"
   },
   "Double Dose": {
     "de_DE": "Doppelte Dosis",
@@ -1660,17 +1737,6 @@
     "cn_CN": "利刃扭转",
     "ru_RU": "Поворот ножа"
   },
-  "Poisoned Wire": {
-    "de_DE": "Vergifteter Draht",
-    "en_US": "Poisoned Wire",
-    "es_ES": "Alambre envenenado",
-    "fr_FR": "Fil empoisonné",
-    "it_IT": "Filo Avvelenato",
-    "pt_BR": "Fio Envenenado",
-    "ko_KR": "독 바른 철사",
-    "cn_CN": "淬毒之线",
-    "ru_RU": "Отравленный шнур"
-  },
   "Scent of Blood": {
     "de_DE": "Blutgeruch",
     "en_US": "Scent of Blood",
@@ -1681,17 +1747,6 @@
     "ko_KR": "피의 향기",
     "cn_CN": "血之气息",
     "ru_RU": "Запах крови"
-  },
-  "Fan of Blades": {
-    "de_DE": "Klingenfächer",
-    "en_US": "Fan of Blades",
-    "es_ES": "Abanico de hojas",
-    "fr_FR": "Éventail de lames",
-    "it_IT": "Raffica di Lame",
-    "pt_BR": "Leque de Lâminas",
-    "ko_KR": "칼날 뿌리기",
-    "cn_CN": "刀刃散射",
-    "ru_RU": "Веер кинжалов"
   },
   "Shrouded Suffocation": {
     "de_DE": "Verborgenes Ersticken",
@@ -1704,6 +1759,28 @@
     "cn_CN": "暗影窒息",
     "ru_RU": "Внезапное удушье"
   },
+  "Nothing Personal": {
+    "de_DE": "Nothing Personal",
+    "en_US": "Nothing Personal",
+    "es_ES": "Nothing Personal",
+    "fr_FR": "Nothing Personal",
+    "it_IT": "Nothing Personal",
+    "pt_BR": "Nothing Personal",
+    "ko_KR": "Nothing Personal",
+    "cn_CN": "Nothing Personal",
+    "ru_RU": "Nothing Personal"
+  },
+  "Echoing Blades": {
+    "de_DE": "Echoing Blades",
+    "en_US": "Echoing Blades",
+    "es_ES": "Echoing Blades",
+    "fr_FR": "Echoing Blades",
+    "it_IT": "Echoing Blades",
+    "pt_BR": "Echoing Blades",
+    "ko_KR": "Echoing Blades",
+    "cn_CN": "Echoing Blades",
+    "ru_RU": "Echoing Blades"
+  },
   "Deadshot": {
     "de_DE": "Volltreffer",
     "en_US": "Deadshot",
@@ -1714,17 +1791,6 @@
     "ko_KR": "필살탄",
     "cn_CN": "神射手",
     "ru_RU": "Смертельный выстрел"
-  },
-  "Storm of Steel": {
-    "de_DE": "Stählerner Sturm",
-    "en_US": "Storm of Steel",
-    "es_ES": "Tormenta de acero",
-    "fr_FR": "Tempête d’acier",
-    "it_IT": "Tempesta d'Acciaio",
-    "pt_BR": "Tempestade de Aço",
-    "ko_KR": "폭풍 강철",
-    "cn_CN": "钢铁风暴",
-    "ru_RU": "Шквал стали"
   },
   "Snake Eyes": {
     "de_DE": "Schlangenaugen",
@@ -1769,6 +1835,17 @@
     "ko_KR": "비장의 일격",
     "cn_CN": "袖里乾坤",
     "ru_RU": "Туз в рукаве"
+  },
+  "Keep Your Wits About You": {
+    "de_DE": "Keep Your Wits About You",
+    "en_US": "Keep Your Wits About You",
+    "es_ES": "Mantener la cabeza fría",
+    "fr_FR": "Keep Your Wits About You",
+    "it_IT": "Keep Your Wits About You",
+    "pt_BR": "Keep Your Wits About You",
+    "ko_KR": "Keep Your Wits About You",
+    "cn_CN": "Keep Your Wits About You",
+    "ru_RU": "Keep Your Wits About You"
   },
   "Night's Vengeance": {
     "de_DE": "Rache der Nacht",
@@ -1825,6 +1902,17 @@
     "cn_CN": "命中注定",
     "ru_RU": "Неизбежность"
   },
+  "Replicating Shadows": {
+    "de_DE": "Replicating Shadows",
+    "en_US": "Replicating Shadows",
+    "es_ES": "Replicating Shadows",
+    "fr_FR": "Ombres réplicantes",
+    "it_IT": "Ombre Replicanti",
+    "pt_BR": "Sombras Replicantes",
+    "ko_KR": "Replicating Shadows",
+    "cn_CN": "Replicating Shadows",
+    "ru_RU": "Replicating Shadows"
+  },
   "Lava Shock": {
     "de_DE": "Lavaschock",
     "en_US": "Lava Shock",
@@ -1880,17 +1968,6 @@
     "cn_CN": "自然和谐",
     "ru_RU": "Гармония стихий"
   },
-  "Rumbling Tremors": {
-    "de_DE": "Bedrohliche Beben",
-    "en_US": "Rumbling Tremors",
-    "es_ES": "Temblores resonantes",
-    "fr_FR": "Tremblements grondants",
-    "it_IT": "Tremori Rombanti",
-    "pt_BR": "Tremores Estrondosos",
-    "ko_KR": "흔들리는 진동",
-    "cn_CN": "撼地余震",
-    "ru_RU": "Громыхающие толчки"
-  },
   "Igneous Potential": {
     "de_DE": "Eruptives Potenzial",
     "en_US": "Igneous Potential",
@@ -1901,6 +1978,17 @@
     "ko_KR": "화성암의 잠재력",
     "cn_CN": "火岩潜能",
     "ru_RU": "Горючий потенциал"
+  },
+  "Tectonic Thunder": {
+    "de_DE": "Tectonic Thunder",
+    "en_US": "Tectonic Thunder",
+    "es_ES": "Tectonic Thunder",
+    "fr_FR": "Tectonic Thunder",
+    "it_IT": "Tectonic Thunder",
+    "pt_BR": "Tectonic Thunder",
+    "ko_KR": "Tectonic Thunder",
+    "cn_CN": "Tectonic Thunder",
+    "ru_RU": "Tectonic Thunder"
   },
   "Primal Primer": {
     "de_DE": "Zündende Zunge",
@@ -1946,6 +2034,17 @@
     "cn_CN": "翻滚风暴",
     "ru_RU": "Бурлящая буря"
   },
+  "Thunderaan's Fury": {
+    "de_DE": "Thunderaan's Fury",
+    "en_US": "Thunderaan's Fury",
+    "es_ES": "Furia de Thunderaan",
+    "fr_FR": "Fureur de Tonneraan",
+    "it_IT": "Thunderaan's Fury",
+    "pt_BR": "Thunderaan's Fury",
+    "ko_KR": "Thunderaan's Fury",
+    "cn_CN": "Thunderaan's Fury",
+    "ru_RU": "Thunderaan's Fury"
+  },
   "Wracking Brilliance": {
     "de_DE": "Zermürbende Brillanz",
     "en_US": "Wracking Brilliance",
@@ -1979,17 +2078,6 @@
     "cn_CN": "灾难瀑流",
     "ru_RU": "Беда не приходит одна"
   },
-  "Deathbloom": {
-    "de_DE": "Todesblüte",
-    "en_US": "Deathbloom",
-    "es_ES": "Flor de muerte",
-    "fr_FR": "Mortelle floraison",
-    "it_IT": "Fiore Mortale",
-    "pt_BR": "Florescer da Morte",
-    "ko_KR": "죽음의 꽃",
-    "cn_CN": "死亡之花",
-    "ru_RU": "Бутон смерти"
-  },
   "Sudden Onset": {
     "de_DE": "Plötzlicher Ausbruch",
     "en_US": "Sudden Onset",
@@ -2011,6 +2099,17 @@
     "ko_KR": "섬뜩한 부름",
     "cn_CN": "恐惧召唤",
     "ru_RU": "Пугающий призыв"
+  },
+  "Pandemic Invocation": {
+    "de_DE": "Pandemic Invocation",
+    "en_US": "Pandemic Invocation",
+    "es_ES": "Pandemic Invocation",
+    "fr_FR": "Pandemic Invocation",
+    "it_IT": "Pandemic Invocation",
+    "pt_BR": "Pandemic Invocation",
+    "ko_KR": "Pandemic Invocation",
+    "cn_CN": "Pandemic Invocation",
+    "ru_RU": "Pandemic Invocation"
   },
   "Shadow's Bite": {
     "de_DE": "Biss des Schattens",
@@ -2045,17 +2144,6 @@
     "cn_CN": "爆破潜能",
     "ru_RU": "Имплозивный потенциал"
   },
-  "Excoriate": {
-    "de_DE": "Missbilligen",
-    "en_US": "Excoriate",
-    "es_ES": "Excoriar",
-    "fr_FR": "Écorchure",
-    "it_IT": "Escoriazione",
-    "pt_BR": "Escoriar",
-    "ko_KR": "피부 벗기기",
-    "cn_CN": "苛责",
-    "ru_RU": "Изуверство"
-  },
   "Demonic Meteor": {
     "de_DE": "Dämonischer Meteor",
     "en_US": "Demonic Meteor",
@@ -2066,17 +2154,6 @@
     "ko_KR": "악마의 유성",
     "cn_CN": "恶魔流星",
     "ru_RU": "Демонический метеорит"
-  },
-  "Forbidden Knowledge": {
-    "de_DE": "Verbotenes Wissen",
-    "en_US": "Forbidden Knowledge",
-    "es_ES": "Conocimiento prohibido",
-    "fr_FR": "Savoir interdit",
-    "it_IT": "Conoscenza Proibita",
-    "pt_BR": "Conhecimento Proibido",
-    "ko_KR": "금단의 지식",
-    "cn_CN": "禁断知识",
-    "ru_RU": "Запретное знание"
   },
   "Supreme Commander": {
     "de_DE": "Oberkommandant",
@@ -2089,16 +2166,16 @@
     "cn_CN": "最高指挥官",
     "ru_RU": "Владыка демонов"
   },
-  "Accelerant": {
-    "de_DE": "Brandbeschleuniger",
-    "en_US": "Accelerant",
-    "es_ES": "Acelerante",
-    "fr_FR": "Combustion accélérée",
-    "it_IT": "Accelerante",
-    "pt_BR": "Catalisador",
-    "ko_KR": "인화 촉진",
-    "cn_CN": "催化之焰",
-    "ru_RU": "Ускоренное разрушение"
+  "Baleful Invocation": {
+    "de_DE": "Baleful Invocation",
+    "en_US": "Baleful Invocation",
+    "es_ES": "Baleful Invocation",
+    "fr_FR": "Baleful Invocation",
+    "it_IT": "Baleful Invocation",
+    "pt_BR": "Baleful Invocation",
+    "ko_KR": "Baleful Invocation",
+    "cn_CN": "Baleful Invocation",
+    "ru_RU": "Baleful Invocation"
   },
   "Flashpoint": {
     "de_DE": "Brennpunkt",
@@ -2155,16 +2232,16 @@
     "cn_CN": "爆发耀斑",
     "ru_RU": "Взрыв и вспышка"
   },
-  "Executioner's Precision": {
-    "de_DE": "Präzision des Scharfrichters",
-    "en_US": "Executioner's Precision",
-    "es_ES": "Precisión de verdugo",
-    "fr_FR": "Précision du bourreau",
-    "it_IT": "Precisione dell'Esecutore",
-    "pt_BR": "Precisão do Carrasco",
-    "ko_KR": "집행자의 정밀함",
-    "cn_CN": "刽子手的精准",
-    "ru_RU": "Точность палача"
+  "Chaos Shards": {
+    "de_DE": "Chaos Shards",
+    "en_US": "Chaos Shards",
+    "es_ES": "Chaos Shards",
+    "fr_FR": "Chaos Shards",
+    "it_IT": "Chaos Shards",
+    "pt_BR": "Chaos Shards",
+    "ko_KR": "Chaos Shards",
+    "cn_CN": "Chaos Shards",
+    "ru_RU": "Chaos Shards"
   },
   "Gathering Storm": {
     "de_DE": "Aufziehender Sturm",
@@ -2221,27 +2298,38 @@
     "cn_CN": "战争之王",
     "ru_RU": "Владыка войны"
   },
-  "Trample the Weak": {
-    "de_DE": "Die Schwachen niedertrampeln",
-    "en_US": "Trample the Weak",
-    "es_ES": "Pisotear a los débiles",
-    "fr_FR": "Piétiner les faibles",
-    "it_IT": "Calpestamento dei Deboli",
-    "pt_BR": "Massacrar os Fracos",
-    "ko_KR": "약자 짓밟기",
-    "cn_CN": "欺凌弱小",
-    "ru_RU": "Растоптать слабых"
+  "Reckless Flurry": {
+    "de_DE": "Tollkühner Wirbel",
+    "en_US": "Reckless Flurry",
+    "es_ES": "Aluvión temerario",
+    "fr_FR": "Déluge intrépide",
+    "it_IT": "Raffica Avventata",
+    "pt_BR": "Saraivada Audaciosa",
+    "ko_KR": "무모한 난동",
+    "cn_CN": "鲁莽劈砍",
+    "ru_RU": "Шквал гнева"
   },
-  "Bloodcraze": {
-    "de_DE": "Blutwahnsinn",
-    "en_US": "Bloodcraze",
-    "es_ES": "Afán de sangre",
-    "fr_FR": "Ivresse du sang",
-    "it_IT": "Furia Sanguinaria",
-    "pt_BR": "Loucura de Sangue",
-    "ko_KR": "피열풍",
-    "cn_CN": "血腥疯狂",
-    "ru_RU": "Кровавое безумие"
+  "Bastion of Might": {
+    "de_DE": "Bastion of Might",
+    "en_US": "Bastion of Might",
+    "es_ES": "Bastion of Might",
+    "fr_FR": "Bastion of Might",
+    "it_IT": "Bastion of Might",
+    "pt_BR": "Bastion of Might",
+    "ko_KR": "Bastion of Might",
+    "cn_CN": "Bastion of Might",
+    "ru_RU": "Bastion of Might"
+  },
+  "Striking the Anvil": {
+    "de_DE": "Striking the Anvil",
+    "en_US": "Striking the Anvil",
+    "es_ES": "Striking the Anvil",
+    "fr_FR": "Striking the Anvil",
+    "it_IT": "Striking the Anvil",
+    "pt_BR": "Striking the Anvil",
+    "ko_KR": "Striking the Anvil",
+    "cn_CN": "Striking the Anvil",
+    "ru_RU": "Striking the Anvil"
   },
   "Pulverizing Blows": {
     "de_DE": "Pulverisierende Schläge",
@@ -2276,16 +2364,27 @@
     "cn_CN": "怒气冲天",
     "ru_RU": "Кипящая ярость"
   },
-  "Reckless Flurry": {
-    "de_DE": "Tollkühner Wirbel",
-    "en_US": "Reckless Flurry",
-    "es_ES": "Aluvión temerario",
-    "fr_FR": "Déluge intrépide",
-    "it_IT": "Raffica Avventata",
-    "pt_BR": "Saraivada Audaciosa",
-    "ko_KR": "무모한 난동",
-    "cn_CN": "鲁莽劈砍",
-    "ru_RU": "Шквал гнева"
+  "Unbridled Ferocity": {
+    "de_DE": "Unbridled Ferocity",
+    "en_US": "Unbridled Ferocity",
+    "es_ES": "Unbridled Ferocity",
+    "fr_FR": "Unbridled Ferocity",
+    "it_IT": "Unbridled Ferocity",
+    "pt_BR": "Unbridled Ferocity",
+    "ko_KR": "Unbridled Ferocity",
+    "cn_CN": "Unbridled Ferocity",
+    "ru_RU": "Unbridled Ferocity"
+  },
+  "Cold Steel, Hot Blood": {
+    "de_DE": "Cold Steel, Hot Blood",
+    "en_US": "Cold Steel, Hot Blood",
+    "es_ES": "Cold Steel, Hot Blood",
+    "fr_FR": "Cold Steel, Hot Blood",
+    "it_IT": "Cold Steel, Hot Blood",
+    "pt_BR": "Cold Steel, Hot Blood",
+    "ko_KR": "Cold Steel, Hot Blood",
+    "cn_CN": "Cold Steel, Hot Blood",
+    "ru_RU": "Cold Steel, Hot Blood"
   },
   "Deafening Crash": {
     "de_DE": "Ohrenbetäubender Aufprall",
@@ -2297,17 +2396,6 @@
     "ko_KR": "고막파열 강타",
     "cn_CN": "雷音贯耳",
     "ru_RU": "Оглушительный раскат"
-  },
-  "Reinforced Plating": {
-    "de_DE": "Verstärkte Panzerung",
-    "en_US": "Reinforced Plating",
-    "es_ES": "Blindaje reforzado",
-    "fr_FR": "Blindage renforcé",
-    "it_IT": "Placche Rinforzate",
-    "pt_BR": "Revestimento Reforçado",
-    "ko_KR": "강화 장갑",
-    "cn_CN": "坚不可破",
-    "ru_RU": "Усиленные латы"
   },
   "Brace for Impact": {
     "de_DE": "Gefasst machen",
