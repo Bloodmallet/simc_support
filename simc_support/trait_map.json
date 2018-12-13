@@ -4876,9 +4876,9 @@
             ]
         },
         "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-        "max_itemlevel": 340,
+        "max_itemlevel": -1,
         "max_stack": 1,
-        "min_itemlevel": 340,
+        "min_itemlevel": -1,
         "name": "Barrage Of Many Bombs",
         "trait_id": "498"
     },
@@ -4941,9 +4941,9 @@
             ]
         },
         "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-        "max_itemlevel": 340,
+        "max_itemlevel": -1,
         "max_stack": 1,
-        "min_itemlevel": 340,
+        "min_itemlevel": -1,
         "name": "Ricocheting Inflatable Pyrosaw",
         "trait_id": "499"
     },
@@ -5028,9 +5028,9 @@
             ]
         },
         "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-        "max_itemlevel": 340,
+        "max_itemlevel": -1,
         "max_stack": 1,
-        "min_itemlevel": 340,
+        "min_itemlevel": -1,
         "name": "Synaptic Spark Capacitor",
         "trait_id": "500"
     },
@@ -5093,9 +5093,9 @@
             ]
         },
         "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-        "max_itemlevel": 340,
+        "max_itemlevel": -1,
         "max_stack": 1,
-        "min_itemlevel": 340,
+        "min_itemlevel": -1,
         "name": "Relational Normalization Gizmo",
         "trait_id": "501"
     },

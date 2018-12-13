@@ -193,9 +193,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -203,9 +203,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -213,9 +213,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -223,9 +223,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -468,7 +468,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -478,7 +478,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -488,7 +488,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -498,7 +498,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -508,7 +508,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -518,7 +518,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -528,7 +528,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -538,7 +538,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             },
             "289339": {
@@ -548,7 +548,7 @@
                 "min_itemlevel": -1,
                 "name": "Bloody Runeblade",
                 "spell_id": "289339",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "243"
             }
         },
@@ -765,9 +765,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -775,9 +775,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -785,9 +785,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -795,9 +795,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -1040,7 +1040,7 @@
                 "min_itemlevel": -1,
                 "name": "Frostwhelp's Indignation",
                 "spell_id": "287283",
-                "tier": null,
+                "tier": 4,
                 "trait_id": "198"
             },
             "287467": {
@@ -1050,7 +1050,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -1060,7 +1060,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -1070,7 +1070,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -1080,7 +1080,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -1090,7 +1090,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -1100,7 +1100,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -1110,7 +1110,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -1120,7 +1120,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         },
@@ -1292,7 +1292,7 @@
                 "min_itemlevel": -1,
                 "name": "Harrowing Decay",
                 "spell_id": "275929",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "244"
             },
             "278482": {
@@ -1337,9 +1337,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -1347,9 +1347,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -1357,9 +1357,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -1367,9 +1367,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -1612,7 +1612,7 @@
                 "min_itemlevel": -1,
                 "name": "Helchains",
                 "spell_id": "286832",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "142"
             },
             "287467": {
@@ -1622,7 +1622,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -1632,7 +1632,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -1642,7 +1642,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -1652,7 +1652,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -1662,7 +1662,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288417": {
@@ -1672,7 +1672,7 @@
                 "min_itemlevel": -1,
                 "name": "Magus of the Dead",
                 "spell_id": "288417",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "109"
             },
             "288749": {
@@ -1682,7 +1682,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -1692,7 +1692,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -1702,7 +1702,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         }
@@ -1921,9 +1921,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -1931,9 +1931,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -1941,9 +1941,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -1951,9 +1951,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -2196,7 +2196,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -2206,7 +2206,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -2216,7 +2216,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -2226,7 +2226,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -2236,7 +2236,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -2246,7 +2246,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288754": {
@@ -2256,7 +2256,7 @@
                 "min_itemlevel": -1,
                 "name": "Chaotic Transformation",
                 "spell_id": "288754",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "220"
             },
             "288802": {
@@ -2266,7 +2266,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -2276,7 +2276,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         },
@@ -2483,9 +2483,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -2493,9 +2493,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -2503,9 +2503,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -2513,9 +2513,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -2758,7 +2758,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -2768,7 +2768,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -2778,7 +2778,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -2788,7 +2788,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -2798,7 +2798,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -2808,7 +2808,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -2818,7 +2818,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -2828,7 +2828,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         }
@@ -2952,7 +2952,7 @@
                 "min_itemlevel": -1,
                 "name": "Power of the Moon",
                 "spell_id": "273367",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "173"
             },
             "273682": {
@@ -3042,7 +3042,7 @@
                 "min_itemlevel": -1,
                 "name": "Lively Spirit",
                 "spell_id": "279642",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "364"
             },
             "279899": {
@@ -3067,9 +3067,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -3077,9 +3077,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -3087,9 +3087,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -3097,9 +3097,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -3342,7 +3342,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -3352,7 +3352,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -3362,7 +3362,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -3372,7 +3372,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287773": {
@@ -3382,7 +3382,7 @@
                 "min_itemlevel": -1,
                 "name": "Arcanic Pulsar",
                 "spell_id": "287773",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "200"
             },
             "287818": {
@@ -3392,7 +3392,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -3402,7 +3402,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -3412,7 +3412,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -3422,7 +3422,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         },
@@ -3544,7 +3544,7 @@
                 "min_itemlevel": -1,
                 "name": "Power of the Moon",
                 "spell_id": "273367",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "173"
             },
             "273682": {
@@ -3654,7 +3654,7 @@
                 "min_itemlevel": -1,
                 "name": "Wild Fleshrending",
                 "spell_id": "279527",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "359"
             },
             "279899": {
@@ -3679,9 +3679,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -3689,9 +3689,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -3699,9 +3699,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -3709,9 +3709,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -3954,7 +3954,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -3964,7 +3964,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -3974,7 +3974,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -3984,7 +3984,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -3994,7 +3994,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -4004,7 +4004,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -4014,7 +4014,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -4024,7 +4024,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         },
@@ -4216,7 +4216,7 @@
                 "min_itemlevel": -1,
                 "name": "Wild Fleshrending",
                 "spell_id": "279527",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "359"
             },
             "279552": {
@@ -4251,9 +4251,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -4261,9 +4261,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -4271,9 +4271,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -4281,9 +4281,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -4526,7 +4526,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -4536,7 +4536,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -4546,7 +4546,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -4556,7 +4556,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -4566,7 +4566,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -4576,7 +4576,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -4586,7 +4586,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -4596,7 +4596,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             },
             "289314": {
@@ -4606,7 +4606,7 @@
                 "min_itemlevel": -1,
                 "name": "Burst of Savagery",
                 "spell_id": "289314",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "251"
             }
         }
@@ -4825,9 +4825,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -4835,9 +4835,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -4845,9 +4845,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -4855,9 +4855,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -5100,7 +5100,7 @@
                 "min_itemlevel": -1,
                 "name": "Dire Consequences",
                 "spell_id": "287093",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "365"
             },
             "287467": {
@@ -5110,7 +5110,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -5120,7 +5120,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -5130,7 +5130,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -5140,7 +5140,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -5150,7 +5150,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -5160,7 +5160,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -5170,7 +5170,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -5180,7 +5180,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         },
@@ -5332,7 +5332,7 @@
                 "min_itemlevel": -1,
                 "name": "Unerring Vision",
                 "spell_id": "274444",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "212"
             },
             "277651": {
@@ -5387,9 +5387,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -5397,9 +5397,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -5407,9 +5407,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -5417,9 +5417,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -5662,7 +5662,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -5672,7 +5672,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -5682,7 +5682,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -5692,7 +5692,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287707": {
@@ -5702,7 +5702,7 @@
                 "min_itemlevel": -1,
                 "name": "Surging Shots",
                 "spell_id": "287707",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "162"
             },
             "287818": {
@@ -5712,7 +5712,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -5722,7 +5722,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -5732,7 +5732,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -5742,7 +5742,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         },
@@ -5854,7 +5854,7 @@
                 "min_itemlevel": -1,
                 "name": "Latent Poison",
                 "spell_id": "273283",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "163"
             },
             "273682": {
@@ -5959,9 +5959,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -5969,9 +5969,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -5979,9 +5979,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -5989,9 +5989,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -6234,7 +6234,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -6244,7 +6244,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -6254,7 +6254,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -6264,7 +6264,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -6274,7 +6274,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288570": {
@@ -6284,7 +6284,7 @@
                 "min_itemlevel": -1,
                 "name": "Primeval Intuition",
                 "spell_id": "288570",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "373"
             },
             "288749": {
@@ -6294,7 +6294,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -6304,7 +6304,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -6314,7 +6314,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         }
@@ -6488,7 +6488,7 @@
                 "min_itemlevel": -1,
                 "name": "Galvanizing Spark",
                 "spell_id": "278536",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "374"
             },
             "278537": {
@@ -6498,7 +6498,7 @@
                 "min_itemlevel": -1,
                 "name": "Explosive Echo",
                 "spell_id": "278537",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "375"
             },
             "279899": {
@@ -6523,9 +6523,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -6533,9 +6533,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -6543,9 +6543,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -6553,9 +6553,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -6798,7 +6798,7 @@
                 "min_itemlevel": -1,
                 "name": "Equipoise",
                 "spell_id": "286027",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "127"
             },
             "287467": {
@@ -6808,7 +6808,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -6818,7 +6818,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -6828,7 +6828,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -6838,7 +6838,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -6848,7 +6848,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -6858,7 +6858,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -6868,7 +6868,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -6878,7 +6878,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         },
@@ -7060,7 +7060,7 @@
                 "min_itemlevel": -1,
                 "name": "Firemind",
                 "spell_id": "278539",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "378"
             },
             "279899": {
@@ -7085,9 +7085,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -7095,9 +7095,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -7105,9 +7105,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -7115,9 +7115,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -7360,7 +7360,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -7370,7 +7370,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -7380,7 +7380,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -7390,7 +7390,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -7400,7 +7400,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -7410,7 +7410,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288755": {
@@ -7420,7 +7420,7 @@
                 "min_itemlevel": -1,
                 "name": "Wildfire",
                 "spell_id": "288755",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "168"
             },
             "288802": {
@@ -7430,7 +7430,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -7440,7 +7440,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         },
@@ -7647,9 +7647,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -7657,9 +7657,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -7667,9 +7667,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -7677,9 +7677,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -7922,7 +7922,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -7932,7 +7932,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -7942,7 +7942,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -7952,7 +7952,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -7962,7 +7962,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288164": {
@@ -7972,7 +7972,7 @@
                 "min_itemlevel": -1,
                 "name": "Flash Freeze",
                 "spell_id": "288164",
-                "tier": null,
+                "tier": 4,
                 "trait_id": "170"
             },
             "288749": {
@@ -7982,7 +7982,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -7992,7 +7992,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -8002,7 +8002,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         }
@@ -8176,7 +8176,7 @@
                 "min_itemlevel": -1,
                 "name": "Training of Niuzao",
                 "spell_id": "278569",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "383"
             },
             "278571": {
@@ -8221,9 +8221,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -8231,9 +8231,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -8241,9 +8241,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -8251,9 +8251,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -8496,7 +8496,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -8506,7 +8506,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -8516,7 +8516,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -8526,7 +8526,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -8536,7 +8536,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -8546,7 +8546,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -8556,7 +8556,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -8566,7 +8566,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         },
@@ -8783,9 +8783,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -8793,9 +8793,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -8803,9 +8803,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -8813,9 +8813,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -9058,7 +9058,7 @@
                 "min_itemlevel": -1,
                 "name": "Dance of Chi-Ji",
                 "spell_id": "286585",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "391"
             },
             "287055": {
@@ -9068,7 +9068,7 @@
                 "min_itemlevel": -1,
                 "name": "Fury of Xuen",
                 "spell_id": "287055",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "117"
             },
             "287467": {
@@ -9078,7 +9078,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -9088,7 +9088,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -9098,7 +9098,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -9108,7 +9108,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -9118,7 +9118,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288634": {
@@ -9128,7 +9128,7 @@
                 "min_itemlevel": -1,
                 "name": "Glory of the Dawn",
                 "spell_id": "288634",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "388"
             },
             "288749": {
@@ -9138,7 +9138,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -9148,7 +9148,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -9158,7 +9158,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         }
@@ -9407,9 +9407,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -9417,9 +9417,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -9427,9 +9427,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -9437,9 +9437,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -9682,7 +9682,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -9692,7 +9692,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -9702,7 +9702,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -9712,7 +9712,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -9722,7 +9722,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -9732,7 +9732,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -9742,7 +9742,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -9752,7 +9752,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         },
@@ -9969,9 +9969,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -9979,9 +9979,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -9989,9 +9989,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -9999,9 +9999,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -10244,7 +10244,7 @@
                 "min_itemlevel": -1,
                 "name": "Light's Decree",
                 "spell_id": "286229",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "396"
             },
             "286390": {
@@ -10254,7 +10254,7 @@
                 "min_itemlevel": -1,
                 "name": "Empyrean Power",
                 "spell_id": "286390",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "453"
             },
             "287467": {
@@ -10264,7 +10264,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -10274,7 +10274,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -10284,7 +10284,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -10294,7 +10294,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -10304,7 +10304,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -10314,7 +10314,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -10324,7 +10324,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -10334,7 +10334,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         }
@@ -10348,7 +10348,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -10358,7 +10358,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -10368,7 +10368,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -10378,7 +10378,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -10388,7 +10388,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -10398,7 +10398,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -10408,7 +10408,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -10418,7 +10418,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         },
@@ -10585,9 +10585,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -10595,9 +10595,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -10605,9 +10605,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -10615,9 +10615,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -10860,7 +10860,7 @@
                 "min_itemlevel": -1,
                 "name": "Sudden Revelation",
                 "spell_id": "287355",
-                "tier": null,
+                "tier": 4,
                 "trait_id": "397"
             },
             "287467": {
@@ -10870,7 +10870,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -10880,7 +10880,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -10890,7 +10890,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -10900,7 +10900,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -10910,7 +10910,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -10920,7 +10920,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -10930,7 +10930,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -10940,7 +10940,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         },
@@ -11032,7 +11032,7 @@
                 "min_itemlevel": -1,
                 "name": "Searing Dialogue",
                 "spell_id": "272788",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "115"
             },
             "273150": {
@@ -11157,9 +11157,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -11167,9 +11167,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -11177,9 +11177,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -11187,9 +11187,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -11432,7 +11432,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -11442,7 +11442,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -11452,7 +11452,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -11462,7 +11462,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -11472,7 +11472,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288340": {
@@ -11482,7 +11482,7 @@
                 "min_itemlevel": -1,
                 "name": "Thought Harvester",
                 "spell_id": "288340",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "166"
             },
             "288749": {
@@ -11492,7 +11492,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -11502,7 +11502,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -11512,7 +11512,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         }
@@ -11711,9 +11711,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -11721,9 +11721,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -11731,9 +11731,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -11741,9 +11741,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -11986,7 +11986,7 @@
                 "min_itemlevel": -1,
                 "name": "Nothing Personal",
                 "spell_id": "286573",
-                "tier": null,
+                "tier": 4,
                 "trait_id": "249"
             },
             "287467": {
@@ -11996,7 +11996,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -12006,7 +12006,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -12016,7 +12016,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287649": {
@@ -12026,7 +12026,7 @@
                 "min_itemlevel": -1,
                 "name": "Echoing Blades",
                 "spell_id": "287649",
-                "tier": null,
+                "tier": 4,
                 "trait_id": "407"
             },
             "287662": {
@@ -12036,7 +12036,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -12046,7 +12046,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -12056,7 +12056,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -12066,7 +12066,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -12076,7 +12076,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         },
@@ -12228,7 +12228,7 @@
                 "min_itemlevel": -1,
                 "name": "Snake Eyes",
                 "spell_id": "275846",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "239"
             },
             "277676": {
@@ -12283,9 +12283,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -12293,9 +12293,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -12303,9 +12303,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -12313,9 +12313,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -12558,7 +12558,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -12568,7 +12568,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -12578,7 +12578,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -12588,7 +12588,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -12598,7 +12598,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -12608,7 +12608,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -12618,7 +12618,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -12628,7 +12628,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             },
             "288979": {
@@ -12638,7 +12638,7 @@
                 "min_itemlevel": -1,
                 "name": "Keep Your Wits About You",
                 "spell_id": "288979",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "180"
             }
         },
@@ -12845,9 +12845,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -12855,9 +12855,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -12865,9 +12865,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -12875,9 +12875,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -13120,7 +13120,7 @@
                 "min_itemlevel": -1,
                 "name": "Replicating Shadows",
                 "spell_id": "286121",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "124"
             },
             "287467": {
@@ -13130,7 +13130,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -13140,7 +13140,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -13150,7 +13150,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -13160,7 +13160,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -13170,7 +13170,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -13180,7 +13180,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -13190,7 +13190,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -13200,7 +13200,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         }
@@ -13429,9 +13429,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -13439,9 +13439,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -13449,9 +13449,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -13459,9 +13459,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -13704,7 +13704,7 @@
                 "min_itemlevel": -1,
                 "name": "Tectonic Thunder",
                 "spell_id": "286949",
-                "tier": null,
+                "tier": 4,
                 "trait_id": "417"
             },
             "287467": {
@@ -13714,7 +13714,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -13724,7 +13724,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -13734,7 +13734,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -13744,7 +13744,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -13754,7 +13754,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -13764,7 +13764,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -13774,7 +13774,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -13784,7 +13784,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         },
@@ -13956,7 +13956,7 @@
                 "min_itemlevel": -1,
                 "name": "Lightning Conduit",
                 "spell_id": "275388",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "223"
             },
             "277666": {
@@ -14021,9 +14021,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -14031,9 +14031,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -14041,9 +14041,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -14051,9 +14051,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -14296,7 +14296,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -14306,7 +14306,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -14316,7 +14316,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -14326,7 +14326,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287768": {
@@ -14336,7 +14336,7 @@
                 "min_itemlevel": -1,
                 "name": "Thunderaan's Fury",
                 "spell_id": "287768",
-                "tier": null,
+                "tier": 4,
                 "trait_id": "530"
             },
             "287818": {
@@ -14346,7 +14346,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -14356,7 +14356,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -14366,7 +14366,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -14376,7 +14376,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         }
@@ -14540,7 +14540,7 @@
                 "min_itemlevel": -1,
                 "name": "Cascading Calamity",
                 "spell_id": "275372",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "230"
             },
             "278721": {
@@ -14560,7 +14560,7 @@
                 "min_itemlevel": -1,
                 "name": "Dreadful Calling",
                 "spell_id": "278727",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "426"
             },
             "279899": {
@@ -14585,9 +14585,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -14595,9 +14595,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -14605,9 +14605,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -14615,9 +14615,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -14860,7 +14860,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -14870,7 +14870,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -14880,7 +14880,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -14890,7 +14890,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -14900,7 +14900,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -14910,7 +14910,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -14920,7 +14920,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -14930,7 +14930,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             },
             "289364": {
@@ -14940,7 +14940,7 @@
                 "min_itemlevel": -1,
                 "name": "Pandemic Invocation",
                 "spell_id": "289364",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "442"
             }
         },
@@ -15102,7 +15102,7 @@
                 "min_itemlevel": -1,
                 "name": "Explosive Potential",
                 "spell_id": "275395",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "231"
             },
             "278737": {
@@ -15147,9 +15147,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -15157,9 +15157,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -15167,9 +15167,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -15177,9 +15177,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -15422,7 +15422,7 @@
                 "min_itemlevel": -1,
                 "name": "Baleful Invocation",
                 "spell_id": "287059",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "429"
             },
             "287467": {
@@ -15432,7 +15432,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -15442,7 +15442,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -15452,7 +15452,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -15462,7 +15462,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -15472,7 +15472,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -15482,7 +15482,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -15492,7 +15492,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -15502,7 +15502,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         },
@@ -15694,7 +15694,7 @@
                 "min_itemlevel": -1,
                 "name": "Bursting Flare",
                 "spell_id": "279909",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "460"
             },
             "279926": {
@@ -15709,9 +15709,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -15719,9 +15719,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -15729,9 +15729,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -15739,9 +15739,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -15984,7 +15984,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -15994,7 +15994,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -16004,7 +16004,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287637": {
@@ -16014,7 +16014,7 @@
                 "min_itemlevel": -1,
                 "name": "Chaos Shards",
                 "spell_id": "287637",
-                "tier": null,
+                "tier": 4,
                 "trait_id": "131"
             },
             "287662": {
@@ -16024,7 +16024,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -16034,7 +16034,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -16044,7 +16044,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -16054,7 +16054,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -16064,7 +16064,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         }
@@ -16293,9 +16293,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -16303,9 +16303,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -16313,9 +16313,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -16323,9 +16323,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -16568,7 +16568,7 @@
                 "min_itemlevel": -1,
                 "name": "Bastion of Might",
                 "spell_id": "287377",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "237"
             },
             "287467": {
@@ -16578,7 +16578,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -16588,7 +16588,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -16598,7 +16598,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -16608,7 +16608,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -16618,7 +16618,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288452": {
@@ -16628,7 +16628,7 @@
                 "min_itemlevel": -1,
                 "name": "Striking the Anvil",
                 "spell_id": "288452",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "121"
             },
             "288749": {
@@ -16638,7 +16638,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -16648,7 +16648,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -16658,7 +16658,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         },
@@ -16820,7 +16820,7 @@
                 "min_itemlevel": -1,
                 "name": "Infinite Fury",
                 "spell_id": "277638",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "451"
             },
             "278757": {
@@ -16830,7 +16830,7 @@
                 "min_itemlevel": -1,
                 "name": "Simmering Rage",
                 "spell_id": "278757",
-                "tier": 3,
+                "tier": 4,
                 "trait_id": "437"
             },
             "278758": {
@@ -16865,9 +16865,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -16875,9 +16875,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -16885,9 +16885,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -16895,9 +16895,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -17140,7 +17140,7 @@
                 "min_itemlevel": -1,
                 "name": "Bastion of Might",
                 "spell_id": "287377",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "237"
             },
             "287467": {
@@ -17150,7 +17150,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -17160,7 +17160,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -17170,7 +17170,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -17180,7 +17180,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -17190,7 +17190,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288056": {
@@ -17200,7 +17200,7 @@
                 "min_itemlevel": -1,
                 "name": "Unbridled Ferocity",
                 "spell_id": "288056",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "119"
             },
             "288080": {
@@ -17210,7 +17210,7 @@
                 "min_itemlevel": -1,
                 "name": "Cold Steel, Hot Blood",
                 "spell_id": "288080",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "176"
             },
             "288749": {
@@ -17220,7 +17220,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -17230,7 +17230,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -17240,7 +17240,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         },
@@ -17447,9 +17447,9 @@
             },
             "280163": {
                 "description": "Your spells and abilities have a chance to fire a bomb at your target, which when in proximity breaks into $s3 smaller bombs. Upon hitting the ground, each smaller bomb deals $280984s1 damage to all nearby enemies.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Barrage Of Many Bombs",
                 "spell_id": "280163",
                 "tier": 3,
@@ -17457,9 +17457,9 @@
             },
             "280168": {
                 "description": "Your spells and abilities have a chance to hurl a R.I.P that bounces among $s2 enemies, dealing $280656s1 Fire damage to each. ",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Ricocheting Inflatable Pyrosaw",
                 "spell_id": "280168",
                 "tier": 3,
@@ -17467,9 +17467,9 @@
             },
             "280174": {
                 "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Synaptic Spark Capacitor",
                 "spell_id": "280174",
                 "tier": 3,
@@ -17477,9 +17477,9 @@
             },
             "280178": {
                 "description": "Your spells and abilities have a chance to grow or shrink the world. Shrinking the world grants you $280654s4 primary stat and $280654s6 maximum health for $280654d. Growing the world grants you $280653s1 Haste and $280653s3% movement speed for $280653d.",
-                "max_itemlevel": 340,
+                "max_itemlevel": -1,
                 "max_stack": 1,
-                "min_itemlevel": 340,
+                "min_itemlevel": -1,
                 "name": "Relational Normalization Gizmo",
                 "spell_id": "280178",
                 "tier": 3,
@@ -17722,7 +17722,7 @@
                 "min_itemlevel": -1,
                 "name": "Bastion of Might",
                 "spell_id": "287377",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "237"
             },
             "287467": {
@@ -17732,7 +17732,7 @@
                 "min_itemlevel": -1,
                 "name": "Shadow of Elune",
                 "spell_id": "287467",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "521"
             },
             "287604": {
@@ -17742,7 +17742,7 @@
                 "min_itemlevel": -1,
                 "name": "Ancients' Bulwark",
                 "spell_id": "287604",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "522"
             },
             "287631": {
@@ -17752,7 +17752,7 @@
                 "min_itemlevel": -1,
                 "name": "Apothecary's Concoctions",
                 "spell_id": "287631",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "523"
             },
             "287662": {
@@ -17762,7 +17762,7 @@
                 "min_itemlevel": -1,
                 "name": "Endless Hunger",
                 "spell_id": "287662",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "526"
             },
             "287818": {
@@ -17772,7 +17772,7 @@
                 "min_itemlevel": -1,
                 "name": "Fight or Flight",
                 "spell_id": "287818",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "541"
             },
             "288749": {
@@ -17782,7 +17782,7 @@
                 "min_itemlevel": -1,
                 "name": "Seductive Power",
                 "spell_id": "288749",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "561"
             },
             "288802": {
@@ -17792,7 +17792,7 @@
                 "min_itemlevel": -1,
                 "name": "Bonded Souls",
                 "spell_id": "288802",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "560"
             },
             "288953": {
@@ -17802,7 +17802,7 @@
                 "min_itemlevel": -1,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
-                "tier": null,
+                "tier": 3,
                 "trait_id": "562"
             }
         }
