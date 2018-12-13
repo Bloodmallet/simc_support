@@ -26,7 +26,7 @@ def load_azerite_items() -> dict:
     dict -- Items sorted by itemslot
   """
 
-  with open('equippable-items-beta.json', 'r', encoding='utf-8') as f:
+  with open('equippable-items.json', 'r', encoding='utf-8') as f:
     items = json.load(f)
 
   sorted_items = {
@@ -60,7 +60,7 @@ def load_azerite_traits() -> dict:
     dict -- [description]
   """
 
-  with open('azerite-power-sets-beta.json', 'r', encoding='utf-8') as f:
+  with open('azerite-power-sets.json', 'r', encoding='utf-8') as f:
     azerite_traits = json.load(f)
 
   return azerite_traits
