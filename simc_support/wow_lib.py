@@ -897,6 +897,30 @@ __trinket_list = [
         name="Knot of Ancient Fury", item_id="161413", min_itemlevel=355, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=355, agility=False, intellect=False, strength=True, melee=False, ranged=False, source="World Boss"
     ),
+    Trinket(  # Emissary
+        name="Razzashi Tooth Medallion", item_id="165667", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=370, agility=True, intellect=False, strength=False, melee=False, ranged=False, source="World Quest"
+    ),
+    Trinket(  # Emissary
+        name="Moonstone of Zin-Azshari", item_id="165666", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=370, agility=False, intellect=True, strength=False, melee=False, ranged=False, source="World Quest"
+    ),
+    Trinket(  # Emissary
+        name="Ancient Tuskarr Sea Charm", item_id="165661", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=370, agility=False, intellect=False, strength=True, melee=False, ranged=False, source="World Quest"
+    ),
+    Trinket(  # Emissary
+        name="Sea Giant's Tidestone", item_id="165664", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=370, agility=False, intellect=True, strength=False, melee=False, ranged=False, source="World Quest"
+    ),
+    Trinket(  # Emissary
+        name="Kezan Stamped Bijou", item_id="165662", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=370, agility=True, intellect=False, strength=False, melee=False, ranged=False, source="World Quest"
+    ),
+    Trinket(  # Emissary
+        name="Chargestone of the Thunder King's Court", item_id="165660", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=370, agility=True, intellect=False, strength=False, melee=False, ranged=False, source="World Quest"
+    ),
 
     # Trinket(
     #     name="", item_id="", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
@@ -1134,7 +1158,6 @@ def get_azerite_item_translation(item_name) -> dict:
         return loaded_items[item_name]
     except Exception as e:
         raise LookupError("Translation not found for {}. {}".format(item_name, e))
-
 
 
 
