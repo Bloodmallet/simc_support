@@ -800,7 +800,7 @@
     "pt_BR": "Pedra do Alquimista Brasonada",
     "ko_KR": "문장장식 연금술사 돌",
     "cn_CN": "纹饰炼金石",
-    "ru_RU": "Emblazoned Alchemist Stone"
+    "ru_RU": "Украшенный гербом алхимический камень"
   },
   "Ancient Knot of Wisdom": {
     "de_DE": "Uralter Knorren der Weisheit",
@@ -825,15 +825,15 @@
     "ru_RU": "Бритволист лесного властелина"
   },
   "Knot of Ancient Fury": {
-    "de_DE": "Knot of Spiritual Fury",
-    "en_US": "Knot of Spiritual Fury",
+    "de_DE": "Knoten der urzeitlichen Wut",
+    "en_US": "Knot of Ancient Fury",
     "es_ES": "Nudo de furia antigua",
     "fr_FR": "Nœud de la fureur des anciens",
     "it_IT": "Nodo della Furia Antica",
     "pt_BR": "Nó da Fúria Antiga",
     "ko_KR": "고대의 분노 매듭",
     "cn_CN": "远古愤怒之结",
-    "ru_RU": "Knot of Spiritual Fury"
+    "ru_RU": "Сучок древней ярости"
   },
   "Razzashi Tooth Medallion": {
     "de_DE": "Razzashizahnmedaillon",
@@ -866,7 +866,7 @@
     "pt_BR": "Patuá Marítimo Morsano Antigo",
     "ko_KR": "고대의 투스카르 바다 부적",
     "cn_CN": "古代海象人的海波护符",
-    "ru_RU": "Ancient Tuskarr Sea Charm"
+    "ru_RU": "Древний клыкаррский оберег"
   },
   "Sea Giant's Tidestone": {
     "de_DE": "Gezeitenstein des Meeresriesen",
@@ -900,5 +900,16 @@
     "ko_KR": "천둥왕 궁정의 충전석",
     "cn_CN": "雷电王廷的充能石",
     "ru_RU": "Камень из двора Властелина Грома"
+  },
+  "Ritual Feather of Unng Ak": {
+    "de_DE": "Ritualfeder von Unng Ak",
+    "en_US": "Ritual Feather of Unng Ak",
+    "es_ES": "Pluma de ritual de Unng Ak",
+    "fr_FR": "Plume rituelle d’Unng Ak",
+    "it_IT": "Piuma Rituale di Unng Ak",
+    "pt_BR": "Pena Ritual de Unng Ak",
+    "ko_KR": "웅 아크의 의식용 깃털",
+    "cn_CN": "昂克的仪式之羽",
+    "ru_RU": "Ритуальное перо Уннг Ака"
   }
 }
