@@ -921,6 +921,10 @@ __trinket_list = [
         name="Chargestone of the Thunder King's Court", item_id="165660", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=370, agility=True, intellect=False, strength=False, melee=False, ranged=False, source="World Quest"
     ),
+    Trinket(  # Emissary
+        name="Ritual Feather of Unng Ak", item_id="165665", min_itemlevel=340, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=370, agility=False, intellect=False, strength=True, melee=False, ranged=False, source="World Quest"
+    ),
 
     # Trinket(
     #     name="", item_id="", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
