@@ -354,9 +354,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -366,9 +366,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -1046,9 +1046,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -1058,9 +1058,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -1738,9 +1738,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -1750,9 +1750,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -2445,9 +2445,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -2457,9 +2457,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -3124,9 +3124,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -3136,9 +3136,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -3830,9 +3830,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -3842,9 +3842,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -4573,9 +4573,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -4585,9 +4585,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -5264,9 +5264,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -5276,9 +5276,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -5959,9 +5959,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -5971,9 +5971,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -6639,9 +6639,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -6651,9 +6651,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -7332,9 +7332,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -7344,9 +7344,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -8014,9 +8014,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -8026,9 +8026,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -8694,9 +8694,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -8706,9 +8706,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -9374,9 +9374,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -9386,9 +9386,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -10067,9 +10067,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -10079,9 +10079,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -10745,9 +10745,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -10757,9 +10757,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -11502,9 +11502,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -11514,9 +11514,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -12180,9 +12180,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -12192,9 +12192,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -12920,9 +12920,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -12932,9 +12932,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -13612,9 +13612,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -13624,9 +13624,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -14281,9 +14281,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -14293,9 +14293,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -14974,9 +14974,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -14986,9 +14986,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -15654,9 +15654,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -15666,9 +15666,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -16361,9 +16361,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -16373,9 +16373,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -17079,9 +17079,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -17091,9 +17091,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -17761,9 +17761,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -17773,9 +17773,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -18441,9 +18441,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -18453,9 +18453,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -19121,9 +19121,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -19133,9 +19133,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -19828,9 +19828,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -19840,9 +19840,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -20520,9 +20520,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -20532,9 +20532,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [
@@ -21225,9 +21225,9 @@
             },
             "280555": {
                 "description": "Your armor gathers and analyzes combat data every $280708t1 sec, increasing your primary stat by $s1, stacking up to $280709u times. The data decays while out of combat.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Archive of the Titans",
                 "spell_id": "280555",
                 "tiers": [
@@ -21237,9 +21237,9 @@
             },
             "280559": {
                 "description": "Your spells and abilities have a chance to release a barrage of lasers, dealing $s1 Arcane damage split among all enemies and restoring $s2 health split among injured allies.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 385,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 340,
                 "name": "Laser Matrix",
                 "spell_id": "280559",
                 "tiers": [

@@ -1331,7 +1331,6 @@ def get_azerite_traits(wow_class: str, wow_spec: str) -> dict:
     path = "trait_list.json"
 
     with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
-
         traits = json.load(f, encoding="UTF-8")
 
     try:
