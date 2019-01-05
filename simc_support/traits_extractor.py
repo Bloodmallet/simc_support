@@ -133,8 +133,8 @@ def get_tiers(azerite_id: int, power_sets: dict):
     for set_id in power_sets:
         trait_list = power_sets[set_id]
         for trait in trait_list:
-        if int(trait["spellId"]) == int(azerite_id):
-            trait_tiers.add(trait["tier"])
+            if int(trait["spellId"]) == int(azerite_id):
+                trait_tiers.add(trait["tier"])
 
     trait_tier_list = []
     for tier in trait_tiers:
