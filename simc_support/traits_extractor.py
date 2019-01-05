@@ -118,12 +118,29 @@ def update_map(trait_dict):
         )
 
 
-def get_tier(azerite_id, power_sets):
-  for set_id in power_sets:
-    trait_list = power_sets[set_id]
-    for trait in trait_list:
-      if int(trait["spellId"]) == int(azerite_id):
-        return trait["tier"]
+def get_tiers(azerite_id: int, power_sets: dict):
+    """Collect all tiers available to a trait.
+
+    Arguments:
+        azerite_id {int} -- [description]
+        power_sets {dict} -- [description]
+
+    Returns:
+        [type] -- [description]
+    """
+
+    trait_tiers = set()
+    for set_id in power_sets:
+        trait_list = power_sets[set_id]
+        for trait in trait_list:
+        if int(trait["spellId"]) == int(azerite_id):
+            trait_tiers.add(trait["tier"])
+
+    trait_tier_list = []
+    for tier in trait_tiers:
+        trait_tier_list.append(tier)
+    sorted(trait_tier_list)
+    return trait_tier_list
 
 def update_list(trait_dict):
     logger.info("Updating list.")
@@ -143,6 +160,7 @@ def update_list(trait_dict):
 
     trait_classes = {}
     for wow_class in wow_lib.get_classes():
+        logger.info(wow_class)
         trait_classes[wow_class] = {}
         for wow_spec in wow_lib.get_specs(wow_class):
             trait_classes[wow_class][wow_spec] = {}
@@ -166,7 +184,7 @@ def update_list(trait_dict):
                             trait_dict[wow_class][wow_spec][trait_id]["spell_id"],
                             "trait_id":
                             trait_dict[wow_class][wow_spec][trait_id]["trait_id"],
-                            "tier": get_tier(trait_id, power_sets)
+                            "tiers": get_tiers(trait_id, power_sets)
                         }
                 except KeyError:
                     logger.error(

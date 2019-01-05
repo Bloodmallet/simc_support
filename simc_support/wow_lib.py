@@ -1391,7 +1391,6 @@ def get_azerite_items(wow_class: str, wow_spec: str) -> dict:
     path = "azerite-power-sets.json"
 
     with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
-
         azerite_traits = json.load(f, encoding="UTF-8")
 
     for slot in items:
@@ -1435,7 +1434,7 @@ def get_azerite_items(wow_class: str, wow_spec: str) -> dict:
     return response
 
 
-def get_azerite_tier(wow_class: str, wow_spec: str, trait_id: str) -> int:
+def get_azerite_tiers(wow_class: str, wow_spec: str, trait_id: str) -> int:
     """Get the tier number of an azerite trait.
 
     Arguments:
@@ -1449,7 +1448,7 @@ def get_azerite_tier(wow_class: str, wow_spec: str, trait_id: str) -> int:
 
     traits = get_azerite_traits(wow_class, wow_spec)
 
-    return traits[trait_id]["tier"]
+    return traits[trait_id]["tiers"]
 
 
 def get_all_trinkets():
