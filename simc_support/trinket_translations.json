@@ -911,5 +911,104 @@
     "ko_KR": "웅 아크의 의식용 깃털",
     "cn_CN": "昂克的仪式之羽",
     "ru_RU": "Ритуальное перо Уннг Ака"
+  },
+  "Crest of Pa'ku": {
+    "de_DE": "Pa'kus Wappen",
+    "en_US": "Crest of Pa'ku",
+    "es_ES": "Blasón de Pa'ku",
+    "fr_FR": "Écu de Pa’ku",
+    "it_IT": "Pennacchio di Pa'ku",
+    "pt_BR": "Brasão de Pa'kul",
+    "ko_KR": "파쿠의 문장",
+    "cn_CN": "帕库冠羽",
+    "ru_RU": "Гребень Па'ку"
+  },
+  "Everchill Anchor": {
+    "de_DE": "Anker der ewigen Kälte",
+    "en_US": "Everchill Anchor",
+    "es_ES": "Ancla de escalofrío eterno",
+    "fr_FR": "Ancre de froidure éternelle",
+    "it_IT": "Ancora del Brivido Eterno",
+    "pt_BR": "Âncora do Frio Perene",
+    "ko_KR": "영원한기 닻",
+    "cn_CN": "永冻之锚",
+    "ru_RU": "Якорь обжигающего холода"
+  },
+  "Grong's Primal Rage": {
+    "de_DE": "Grongs Urfuror",
+    "en_US": "Grong's Primal Rage",
+    "es_ES": "Rabia primigenia de Grong",
+    "fr_FR": "Rage primordiale de Grong",
+    "it_IT": "Rabbia Primordiale di Grong",
+    "pt_BR": "Raiva Primeva de Grong",
+    "ko_KR": "그롱의 원초적 분노",
+    "cn_CN": "格洛恩的原始暴怒",
+    "ru_RU": "Звериная ярость Гронга"
+  },
+  "Incandescent Sliver": {
+    "de_DE": "Strahlender Span",
+    "en_US": "Incandescent Sliver",
+    "es_ES": "Esquirla incandescente",
+    "fr_FR": "Esquille incandescente",
+    "it_IT": "Scheggia Incandescente",
+    "pt_BR": "Lasca Incandescente",
+    "ko_KR": "빛나는 조각",
+    "cn_CN": "耀辉裂片",
+    "ru_RU": "Сияющий осколок"
+  },
+  "Invocation of Yu'lon": {
+    "de_DE": "Anrufung von Yu'lon",
+    "en_US": "Invocation of Yu'lon",
+    "es_ES": "Invocación de Yu'lon",
+    "fr_FR": "Invocation de Yu’lon",
+    "it_IT": "Invocazione di Yu'lon",
+    "pt_BR": "Invocação de Yu'lon",
+    "ko_KR": "위론의 기원",
+    "cn_CN": "玉珑之祈",
+    "ru_RU": "Молитва к Юй-лун"
+  },
+  "Kimbul's Razor Claw": {
+    "de_DE": "Kimbuls messerscharfe Kralle",
+    "en_US": "Kimbul's Razor Claw",
+    "es_ES": "Zarpa cortante de Kimbul",
+    "fr_FR": "Griffe rasoir de Kimbul",
+    "it_IT": "Artiglio Affilato di Kimbul",
+    "pt_BR": "Garra Pontiaguda de Kimbul",
+    "ko_KR": "킴불의 서슬 발톱",
+    "cn_CN": "吉布尔的利爪",
+    "ru_RU": "Острый коготь Кимбула"
+  },
+  "Rampaging Amplitude Gigavolt Engine": {
+    "de_DE": "Rasant ausschlagende gigavoltgeladene Erfindung",
+    "en_US": "Ramping Amplitude Gigavolt Engine",
+    "es_ES": "Fabricador ultraespecial de reacciones e interacciones arcovoltaicas",
+    "fr_FR": "Réacteur Amplifié à Gigavoltaïsation Extrême",
+    "it_IT": "Rabbioso Amplificatore Bipolare Bisonoro Instabile Automatico",
+    "pt_BR": "Motor Gigavolt de Amplitude Crescente",
+    "ko_KR": "정격 말소식 격리 분석기",
+    "cn_CN": "增幅千兆怒火引擎",
+    "ru_RU": "Гигавольтный радиатор огромной мощности"
+  },
+  "Tidestorm Codex": {
+    "de_DE": "Kodex des Gezeitensturms",
+    "en_US": "Tidestorm Codex",
+    "es_ES": "Códice de tormenta de las mareas",
+    "fr_FR": "Codex vaguerage",
+    "it_IT": "Codice della Tempesta Mareale",
+    "pt_BR": "Códice da Borrasca",
+    "ko_KR": "파도폭풍 전서",
+    "cn_CN": "潮风法典",
+    "ru_RU": "Гримуар морских штормов"
+  },
+  "Variable Intensity Gigavolt Oscillating Reactor": {
+    "de_DE": "Piepsender oszillierender Wirbelenergiereaktor",
+    "en_US": "Variable Intensity Gigavolt Oscillating Reactor",
+    "es_ES": "Reactor oscilante de gigavoltios de intensidad variable",
+    "fr_FR": "Appendice Gigavoltaïque à Intensité Longitudinale",
+    "it_IT": "Validatore Instabile a Gigavolt Oscillante del Reattore Esterno",
+    "pt_BR": "Reator Gigavolt Oscilante de Intensidade Variável",
+    "ko_KR": "원자 기폭형 촉매 진화기",
+    "cn_CN": "变频千兆振荡反应堆",
+    "ru_RU": "Гигавольтный осциллирующий реактор аннигиляции"
   }
 }
