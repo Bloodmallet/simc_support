@@ -1930,7 +1930,8 @@
     "273409": {
         "class": {
             "Warrior": [
-                "Arms"
+                "Arms",
+                "Fury"
             ]
         },
         "description": "While $?s152277[Ravager is active][Bladestorming], every $?c2[$288131t1][$273414t1] sec you gain $s2% movement speed and $s1 Strength, stacking. Lasts $273415d.",
@@ -6760,7 +6761,8 @@
     "287093": {
         "class": {
             "Hunter": [
-                "Beast_Mastery"
+                "Beast_Mastery",
+                "Survival"
             ]
         },
         "description": "Kill Command deals $<damage> additional damage, and has a chance to summon a Dire Beast.",

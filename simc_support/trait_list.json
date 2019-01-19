@@ -7534,6 +7534,19 @@
                 ],
                 "trait_id": "505"
             },
+            "287093": {
+                "description": "Kill Command deals $<damage> additional damage, and has a chance to summon a Dire Beast.",
+                "max_itemlevel": -1,
+                "max_stack": 3,
+                "min_itemlevel": -1,
+                "name": "Dire Consequences",
+                "spell_id": "287093",
+                "tiers": [
+                    3,
+                    4
+                ],
+                "trait_id": "365"
+            },
             "287467": {
                 "description": "Your spells and abilities have a chance to increase your Haste by $s1 for $287471d. At night, you also gain $287471s2% movement speed for the duration.",
                 "max_itemlevel": -1,
@@ -20261,6 +20274,19 @@
                     3
                 ],
                 "trait_id": "156"
+            },
+            "273409": {
+                "description": "While $?s152277[Ravager is active][Bladestorming], every $?c2[$288131t1][$273414t1] sec you gain $s2% movement speed and $s1 Strength, stacking. Lasts $273415d.",
+                "max_itemlevel": -1,
+                "max_stack": 3,
+                "min_itemlevel": -1,
+                "name": "Gathering Storm",
+                "spell_id": "273409",
+                "tiers": [
+                    3,
+                    4
+                ],
+                "trait_id": "174"
             },
             "273682": {
                 "description": "Your spells and abilities have a chance to grant you Meticulous Scheming for $273685d, which transforms into Seize the Moment! after you cast $s3 different spells, granting you $s4 Haste for $273714d.",
