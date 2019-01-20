@@ -356,8 +356,15 @@ __races = {
         "void_elf": (
             "warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk"
         ),
-        "lightforged_draenei": ("warrior", "paladin", "hunter", "priest", "mage"),
-        "dark_iron_dwarf": ("warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage", "warlock", "monk")
+        "lightforged_draenei": (
+            "warrior", "paladin", "hunter", "priest", "mage"
+        ),
+        "dark_iron_dwarf": (
+            "warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage", "warlock", "monk"
+        ),
+        # "kurl_tiran": (
+        #     "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk", "druid"
+        # )
     },
     "horde": {
         "blood_elf": (
@@ -390,8 +397,15 @@ __races = {
         "nightborne": (
             "warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk"
         ),
-        "highmountain_tauren": ("warrior", "hunter", "shaman", "monk", "druid"),
-        "maghar_orc": ("warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk")
+        "highmountain_tauren": (
+            "warrior", "hunter", "shaman", "monk", "druid"
+        ),
+        "maghar_orc": (
+            "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk"
+        ),
+        # "zandalari_troll": (
+        #     "warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage", "monk", "druid"
+        # )
     }
 }
 
