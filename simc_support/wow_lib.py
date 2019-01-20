@@ -1495,6 +1495,19 @@ def get_azerite_tiers(wow_class: str, wow_spec: str, trait_id: str) -> int:
 
     return traits[trait_id]["tiers"]
 
+def get_azerite_trait_max_ilevel(wow_class: str, wow_spec, trait_id: str) -> int:
+
+    traits = get_azerite_traits(wow_class, wow_spec)
+
+    try:
+        ilvl: int = traits[trait_id]['max_itemlevel']
+    except Exception:
+        ilvl = -1
+
+    if ilvl == -1:
+        ilvl = TITANFORGE_CAP - 10
+
+    return ilvl
 
 def get_all_trinkets():
     """Get a list of all known trinket names.
