@@ -1917,7 +1917,8 @@
         "class": {
             "Druid": [
                 "Balance",
-                "Feral"
+                "Feral",
+                "Guardian"
             ]
         },
         "description": "Moonfire deals $s2 additional periodic damage, and has a chance to grant Lunar Empowerment.",
@@ -6738,7 +6739,7 @@
                 "Windwalker"
             ]
         },
-        "description": "Your Combo Strikes grant a stacking $287062s3% chance for your next Fists of Fury to grant $s1 Haste and invoke Xuen, The White Tiger for $287063d.",
+        "description": "Your Combo Strikes grant a stacking ${$287062s3/100}.1% chance for your next Fists of Fury to grant $s1 Haste and invoke Xuen, The White Tiger for $287063d.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,

@@ -5006,6 +5006,19 @@
                 ],
                 "trait_id": "171"
             },
+            "273367": {
+                "description": "Moonfire deals $s2 additional periodic damage, and has a chance to grant Lunar Empowerment.",
+                "max_itemlevel": -1,
+                "max_stack": 3,
+                "min_itemlevel": -1,
+                "name": "Power of the Moon",
+                "spell_id": "273367",
+                "tiers": [
+                    3,
+                    4
+                ],
+                "trait_id": "173"
+            },
             "273682": {
                 "description": "Your spells and abilities have a chance to grant you Meticulous Scheming for $273685d, which transforms into Seize the Moment! after you cast $s3 different spells, granting you $s4 Haste for $273714d.",
                 "max_itemlevel": -1,
@@ -10974,7 +10987,7 @@
                 "trait_id": "391"
             },
             "287055": {
-                "description": "Your Combo Strikes grant a stacking $287062s3% chance for your next Fists of Fury to grant $s1 Haste and invoke Xuen, The White Tiger for $287063d.",
+                "description": "Your Combo Strikes grant a stacking ${$287062s3/100}.1% chance for your next Fists of Fury to grant $s1 Haste and invoke Xuen, The White Tiger for $287063d.",
                 "max_itemlevel": -1,
                 "max_stack": 3,
                 "min_itemlevel": -1,
