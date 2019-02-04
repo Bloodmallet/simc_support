@@ -27,6 +27,7 @@ class Sources(object):
     WORLD_DROP = "World Drop"
     WORLD_QUEST = "World Quest"
 
+
 class Trinket(object):
     """docstring for trinket"""
 
@@ -1124,6 +1125,7 @@ def get_trinkets_for_spec(wow_class: str, wow_spec: str) -> list:
             ))
     return return_list
 
+
 def get_race_translation(race:str ) -> dict:
     """Return the translation dict for a race.
 
@@ -1135,6 +1137,7 @@ def get_race_translation(race:str ) -> dict:
     """
 
     return __race_translations[race.lower().replace(" ", "_")]
+
 
 def get_trinket_list() -> list:
     """Get a full trinket list for the ongoing expansion from equippable-items.json.
@@ -1224,7 +1227,6 @@ def get_azerite_item_translation(item_name) -> dict:
         raise LookupError("Translation not found for {}. {}".format(item_name, e))
 
 
-
 def get_item_translation(item_name: str = "", item_id: int = None, item_list: list = None) -> dict:
     """Get the translation dictionary for an item. If item_list is provided, the lookup time is quicker.
 
@@ -1259,6 +1261,7 @@ def get_item_translation(item_name: str = "", item_id: int = None, item_list: li
             return item["names"]
 
     raise LookupError("Translation not found for {}{}".format(item_name, item_id))
+
 
 def get_trait_translation_dict():
     """Return the dict of all azerite trait translations.
@@ -1509,6 +1512,7 @@ def get_azerite_tiers(wow_class: str, wow_spec: str, trait_id: str) -> int:
 
     return traits[trait_id]["tiers"]
 
+
 def get_azerite_trait_max_ilevel(wow_class: str, wow_spec, trait_id: str) -> int:
 
     traits = get_azerite_traits(wow_class, wow_spec)
@@ -1522,6 +1526,7 @@ def get_azerite_trait_max_ilevel(wow_class: str, wow_spec, trait_id: str) -> int
         ilvl = TITANFORGE_CAP - 10
 
     return ilvl
+
 
 def get_all_trinkets():
     """Get a list of all known trinket names.
@@ -1556,6 +1561,7 @@ def get_talent_dict(wow_class: str, wow_spec: str, ptr: bool = False)->dict:
         talents = json.load(f, encoding="UTF-8")
 
     return talents[wow_class.title()][wow_spec.title()]
+
 
 def __generate_talent_combinations(blueprint, wow_class, wow_spec):
     """Generate all talent combinations matching blueprint. You're an enduser? Use get_talent_combinations(...).
