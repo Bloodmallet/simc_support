@@ -1103,27 +1103,27 @@ def get_trinkets_for_spec(wow_class: str, wow_spec: str) -> list:
         if melee and trinket.melee:
             return_list.append((
                 trinket.name, trinket.item_id, trinket.min_itemlevel,
-                trinket.max_itemlevel, trinket.max_itemlevel_drop
+                trinket.max_itemlevel, trinket.max_itemlevel_drop, trinket.active
             ))
         elif ranged and trinket.ranged:
             return_list.append((
                 trinket.name, trinket.item_id, trinket.min_itemlevel,
-                trinket.max_itemlevel, trinket.max_itemlevel_drop
+                trinket.max_itemlevel, trinket.max_itemlevel_drop, trinket.active
             ))
         elif agility and trinket.agility:
             return_list.append((
                 trinket.name, trinket.item_id, trinket.min_itemlevel,
-                trinket.max_itemlevel, trinket.max_itemlevel_drop
+                trinket.max_itemlevel, trinket.max_itemlevel_drop, trinket.active
             ))
         elif intellect and trinket.intellect:
             return_list.append((
                 trinket.name, trinket.item_id, trinket.min_itemlevel,
-                trinket.max_itemlevel, trinket.max_itemlevel_drop
+                trinket.max_itemlevel, trinket.max_itemlevel_drop, trinket.active
             ))
         elif strength and trinket.strength:
             return_list.append((
                 trinket.name, trinket.item_id, trinket.min_itemlevel,
-                trinket.max_itemlevel, trinket.max_itemlevel_drop
+                trinket.max_itemlevel, trinket.max_itemlevel_drop, trinket.active
             ))
     return return_list
 
