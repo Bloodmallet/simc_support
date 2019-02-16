@@ -988,6 +988,10 @@ __trinket_list = [
         name="Variable Intensity Gigavolt Oscillating Reactor", item_id="165572", min_itemlevel=370, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=415, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Sources.RAID, active=True
     ),
+    Trinket(  # PvP
+        name="Sinister Gladiator's Maledict", item_id="165806", min_itemlevel=370, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=400, agility=True, intellect=True, strength=True, melee=False, ranged=False, source=Sources.PVP, active=True
+    ),
 
     # Trinket(
     #     name="", item_id="", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
