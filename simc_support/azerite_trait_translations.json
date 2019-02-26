@@ -924,15 +924,15 @@
     "ru_RU": "Свирепое терзание"
   },
   "Jungle Fury": {
-    "de_DE": "Schredderfuror",
-    "en_US": "Shredding Fury",
-    "es_ES": "Furia trituradora",
-    "fr_FR": "Fureur lacérante",
-    "it_IT": "Furia Tagliuzzante",
-    "pt_BR": "Fúria Despedaçante",
-    "ko_KR": "분노의 할퀴기",
-    "cn_CN": "碎裂之怒",
-    "ru_RU": "Когти ярости"
+    "de_DE": "Dschungelfuror",
+    "en_US": "Jungle Fury",
+    "es_ES": "Furia de la selva",
+    "fr_FR": "Fureur de la jungle",
+    "it_IT": "Furia della Giungla",
+    "pt_BR": "Fúria da Selva",
+    "ko_KR": "밀림의 분노",
+    "cn_CN": "丛林之怒",
+    "ru_RU": "Ярость джунглей"
   },
   "Twisted Claws": {
     "de_DE": "Gekrümmte Klauen",
