@@ -1142,8 +1142,10 @@ def get_race_translation(race:str ) -> dict:
         dict -- [description]
     """
 
-    return __race_translations[race.lower().replace(" ", "_")]
-
+    try:
+        return __race_translations[race.lower().replace(" ", "_")]
+    except Exception:
+        return None
 
 def get_trinket_list() -> list:
     """Get a full trinket list for the ongoing expansion from equippable-items.json.
