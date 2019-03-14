@@ -365,9 +365,9 @@ __races = {
         "dark_iron_dwarf": (
             "warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage", "warlock", "monk"
         ),
-        # "kurl_tiran": (
-        #     "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk", "druid"
-        # )
+        "kurl_tiran": (
+            "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk", "druid"
+        )
     },
     "horde": {
         "blood_elf": (
@@ -406,9 +406,9 @@ __races = {
         "maghar_orc": (
             "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk"
         ),
-        # "zandalari_troll": (
-        #     "warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage", "monk", "druid"
-        # )
+        "zandalari_troll": (
+            "warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage", "monk", "druid"
+        )
     }
 }
 
