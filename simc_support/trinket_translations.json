@@ -1032,5 +1032,27 @@
     "ko_KR": "검투사의 저주",
     "cn_CN": "角斗士的咒徽",
     "ru_RU": "Темный фетиш гладиатора"
+  },
+  "Lurker's Insidious Gift": {
+    "de_DE": "Des Lauerers tückisches Geschenk",
+    "en_US": "Lurker's Insidious Gift",
+    "es_ES": "Obsequio insidioso del merodeador",
+    "fr_FR": "Don insidieux de rôdeur",
+    "it_IT": "Dono Insidioso del Guardingo",
+    "pt_BR": "Dádiva Insidiosa do Tocaieiro",
+    "ko_KR": "잠복자의 은밀한 선물",
+    "cn_CN": "潜伏者的险恶赐福",
+    "ru_RU": "Коварный дар сокрытого"
+  },
+  "Harbinger's Inscrutable Will": {
+    "de_DE": "Unergründlicher Wille des Vorboten",
+    "en_US": "Harbinger's Inscrutable Will",
+    "es_ES": "Voluntad inescrutable del presagista",
+    "fr_FR": "Volonté insondable de messager",
+    "it_IT": "Volontà Imperscrutabile dell'Araldo",
+    "pt_BR": "Vontade Inescrutável do Emissário",
+    "ko_KR": "전령의 불가해한 의지",
+    "cn_CN": "先锋的晦密意志",
+    "ru_RU": "Непостижимая воля глашатая"
   }
 }
