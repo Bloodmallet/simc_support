@@ -996,6 +996,14 @@ __trinket_list = [
         name="Sinister Gladiator's Maledict", item_id="165806", min_itemlevel=370, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=400, agility=True, intellect=True, strength=True, melee=False, ranged=False, source=Source.PVP, active=True
     ),
+    Trinket(  # Crucible of Storms
+        name="Lurker's Insidious Gift", item_id="167866", min_itemlevel=380, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=425, agility=True, intellect=False, strength=True, melee=False, ranged=False, source=Source.RAID, active=True
+    ),
+    Trinket(  # Crucible of Storms
+        name="Harbinger's Inscrutable Will", item_id="167867", min_itemlevel=380, max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=425, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.RAID, active=True
+    ),
 
     # Trinket(
     #     name="", item_id="", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
