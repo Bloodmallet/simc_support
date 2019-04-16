@@ -1002,7 +1002,7 @@ __trinket_list = [
     ),
     Trinket(  # Crucible of Storms
         name="Harbinger's Inscrutable Will", item_id="167867", min_itemlevel=380, max_itemlevel=TITANFORGE_CAP,
-        max_itemlevel_drop=425, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.RAID, active=True
+        max_itemlevel_drop=425, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.RAID, active=False
     ),
 
     # Trinket(
