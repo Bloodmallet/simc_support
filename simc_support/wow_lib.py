@@ -276,6 +276,12 @@ __class_data = {
                 "role": "melee",
                 "stat": "agi",
                 "id": 263,
+            },
+            "Restoration": {
+                "talents": "0100000",
+                "role": "ranged",
+                "stat": "int",
+                "id": 264,
             }
         }
     },

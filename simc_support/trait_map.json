@@ -132,7 +132,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -197,7 +198,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -262,7 +264,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -327,7 +330,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -394,7 +398,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ]
         },
         "description": "Critical strikes by your abilities have a chance to create a localized Sandstorm, damaging enemies and healing allies within 10 yards for ${$s1*4} every 2 sec for 6 sec.",
@@ -448,7 +453,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -513,7 +519,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -578,7 +585,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -701,7 +709,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ]
         },
         "description": "Increases your Versatility by $s1 and your Speed by $s2.",
@@ -1026,7 +1035,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -1692,7 +1702,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -2160,7 +2171,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -2225,7 +2237,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -2290,7 +2303,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -2355,7 +2369,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -2420,7 +2435,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -2485,7 +2501,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -2639,7 +2656,7 @@
                 "Feral"
             ]
         },
-        "description": "Tiger's Fury increases your critical strike by $s1 and lasts $?s202021[${$s3+$274425s2/1000}][${$s2+$274425s2/1000}] sec.",
+        "description": "Tiger's Fury increases your Critical Strike by $s1 and lasts $?s202021[${$s3+$274425s2/1000}][${$s2+$274425s2/1000}] sec.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -2970,7 +2987,7 @@
                 "Outlaw"
             ]
         },
-        "description": "For each combo point spent on $?s5171[Slice and Dice][Roll the Bones], it causes your next $275863n Sinister Strikes to deal $s1 additional damage.",
+        "description": "When you spend Combo Points on $?s5171[Slice and Dice][Roll the Bones], your next $275863n Sinister Strikes will deal $s1 additional damage for each Combo Point spent.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -3307,7 +3324,8 @@
         "class": {
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ]
         },
         "description": "Your spells and abilities have a chance to increase your Mastery by $s1 for $277943d. $?<s2825>[Bloodlust][Heroism]'s duration is increased to $s2 seconds on you, and Ancestral Resonance's chance to activate is greatly increased during $?<s2825>[Bloodlust][Heroism].",
@@ -3345,7 +3363,8 @@
         "class": {
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ]
         },
         "description": "Lightning Bolt and Chain Lightning increase your $?c2[Agility][Intellect] by $s1 per target hit for $277960d, stacking up to $277960u times.",
@@ -4066,7 +4085,7 @@
                 "Assassination"
             ]
         },
-        "description": "Garrote cast from Stealth generates $s2 additional Combo Points and deals ${$s1*$<assassinationMastery>} additional damage. ",
+        "description": "Garrote cast from Stealth generates $s2 additional Combo Points and deals ${$s1*$<assassinationMastery>} additional damage every $703t1 sec for $703d. ",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -4129,7 +4148,8 @@
         "class": {
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ]
         },
         "description": "Dealing Fire damage grants $s1 Critical Strike for $279028d. ",
@@ -4181,7 +4201,7 @@
                 "Enhancement"
             ]
         },
-        "description": "Every $m2 $lsecond:seconds;, reduce the cost of your next Stormstrike by $s3 Maelstrom and increase its damage by $s1. This effect stacks up to 15 times.",
+        "description": "Your Stormbringer-empowered Stormstrikes deal $s1 additional damage. Every $s2 seconds, gain Stormbringer.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -4449,7 +4469,8 @@
     "279829": {
         "class": {
             "Shaman": [
-                "Elemental"
+                "Elemental",
+                "Restoration"
             ]
         },
         "description": "Your Lava Burst deals $s2 additional damage, and your Lava Surge chance is increased to $?c3[$s4%][$s3%].",
@@ -4554,7 +4575,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -4645,7 +4667,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -4864,7 +4887,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -4929,7 +4953,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -5016,7 +5041,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -5029,7 +5055,7 @@
                 "Protection"
             ]
         },
-        "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $s1 yards of the Spark Coil take $280847s2 damage every 2 seconds and deal $280847s1% reduced damage to you.",
+        "description": "Your spells and abilities have a chance to cause the target to become a Spark Coil for $280655d. Enemies within $280847s2 yards of the Spark Coil take $s3 damage every 2 seconds and deal $280847s1% reduced damage to you.",
         "max_itemlevel": -1,
         "max_stack": 1,
         "min_itemlevel": -1,
@@ -5081,7 +5107,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -5116,7 +5143,7 @@
             "Warlock": [],
             "Warrior": []
         },
-        "description": "Taking damage has a chance to call your Personal Absorb-o-Tron, absorbing the next $280660s1 damage you take over $280660d.",
+        "description": "Taking damage has a chance to call your Personal Absorb-o-Tron, absorbing $280661s1% of damage taken over $280660d, up to $280660s1.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -5168,7 +5195,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -5233,7 +5261,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -5298,7 +5327,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -5363,7 +5393,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -5428,7 +5459,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -5493,7 +5525,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -5558,7 +5591,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -5623,7 +5657,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -5688,7 +5723,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -5753,7 +5789,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -5818,7 +5855,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -5883,7 +5921,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -5948,7 +5987,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -6013,7 +6053,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -6078,7 +6119,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -6143,7 +6185,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -6208,7 +6251,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -6273,7 +6317,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -6338,7 +6383,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -6403,7 +6449,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -6468,7 +6515,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -6533,7 +6581,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -6598,7 +6647,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -6648,7 +6698,7 @@
                 "Subtlety"
             ]
         },
-        "description": "Each combo point spent has an $s2% chance to cause your Nightblade to deal $s1 Shadow damage and replicate to a nearby enemy.",
+        "description": "Each combo point spent has a $s2% chance to cause your Nightblade to deal $s1 Shadow damage and replicate to a nearby enemy.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -6777,7 +6827,7 @@
         "class": {
             "Paladin": []
         },
-        "description": "Your Light of the Protector heals for $s1 additional healing, and is always increased by 200% during Avenging Wrath.",
+        "description": "Your $?s213652[Hand of the Protector][Light of the Protector] heals for $s1 additional healing, and is always increased by 200% during Avenging Wrath.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -6812,7 +6862,7 @@
                 "Frost"
             ]
         },
-        "description": "Pillar of Frost summons a Frostwhelp who breathes on all enemies within 20 yards in front of you for $s1 Frost damage. Each unique enemy hit by Frostwhelp's Indignation grants you $s2 Mastery for $287338d, up to ${$s2*$s3}.",
+        "description": "Pillar of Frost summons a Frostwhelp who breathes on all enemies within $s4 yards in front of you for $s1 Frost damage. Each unique enemy hit by Frostwhelp's Indignation grants you $s2 Mastery for $287338d, up to ${$s2*$s3}.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -6915,7 +6965,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -6981,7 +7032,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -7047,7 +7099,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -7086,7 +7139,7 @@
                 "Assassination"
             ]
         },
-        "description": "Fan of Knives damage is increased by ${$s2*$<assassinationNoMastery>}. For each of the first $s4 critical strikes, it will fire a second spray of knives at that location, dealing ${$s3*$<assassinationNoMastery>} damage to enemies within $s5 yards.",
+        "description": "Fan of Knives damage is increased by ${$s2*$<assassinationNoMastery>}. For each of the first $s4 critical strikes, it will fire a second spray of knives at that location, dealing ${$s3*$<assassinationNoMastery>*2} damage to enemies within $s5 yards. This second spray of knives always critically hits.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -7139,7 +7192,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -7288,7 +7342,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -7421,7 +7476,7 @@
                 "Unholy"
             ]
         },
-        "description": "Apocalypse and Army of the Damned additionally summon a Magus of the Dead for $288544d who hurls Frostbolts and Shadow Bolts at your foes, dealing $s1 damage each. ",
+        "description": "Apocalypse and Army of the Dead additionally summon a Magus of the Dead for $288544d who hurls Frostbolts and Shadow Bolts at your foes, dealing $s1 damage each. ",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -7535,7 +7590,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -7627,7 +7683,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -7704,7 +7761,8 @@
             ],
             "Shaman": [
                 "Elemental",
-                "Enhancement"
+                "Enhancement",
+                "Restoration"
             ],
             "Warlock": [
                 "Affliction",
@@ -7741,7 +7799,7 @@
                 "Outlaw"
             ]
         },
-        "description": "Each time an attack Blade Flurries,  increase the chance for Sinister Strike to strike again by $s1%. Additional strikes of Sinister Strike deal $s2 more damage.",
+        "description": "Each time an attack Blade Flurries, increase the chance for Sinister Strike to strike again by $s1%. Additional strikes of Sinister Strike deal $s2 more damage.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
