@@ -14,7 +14,7 @@ ch.setLevel(logging.INFO)
 logger.addHandler(ch)
 
 
-PTR = True
+PTR = False
 
 
 def update_map(trait_dict):

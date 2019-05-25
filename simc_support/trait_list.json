@@ -4276,6 +4276,19 @@
                 ],
                 "trait_id": "169"
             },
+            "273344": {
+                "description": "Increases your Mastery by $s1 and Armor by $s2 for $273349d after Survival Instincts expires.",
+                "max_itemlevel": -1,
+                "max_stack": 3,
+                "min_itemlevel": -1,
+                "name": "Masterful Instincts",
+                "spell_id": "273344",
+                "tiers": [
+                    3,
+                    4
+                ],
+                "trait_id": "171"
+            },
             "273367": {
                 "description": "Moonfire deals $s2 additional periodic damage, and has a chance to grant Lunar Empowerment.",
                 "max_itemlevel": -1,
