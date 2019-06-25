@@ -1,0 +1,632 @@
+{
+    "2": {
+        "1": {
+            "azeriteEssencePowerId": 5,
+            "majorSpellId": 293019,
+            "minorSpellId": 294668,
+            "majorDiffSpellId": 293019,
+            "minorDiffSpellId": 294668
+        },
+        "2": {
+            "azeriteEssencePowerId": 6,
+            "majorSpellId": 298080,
+            "minorSpellId": 298082,
+            "majorDiffSpellId": 294653,
+            "minorDiffSpellId": 294687
+        },
+        "3": {
+            "azeriteEssencePowerId": 7,
+            "majorSpellId": 298081,
+            "minorSpellId": 298083,
+            "majorDiffSpellId": 294650,
+            "minorDiffSpellId": 294688
+        },
+        "4": {
+            "azeriteEssencePowerId": 8,
+            "majorSpellId": 298081,
+            "minorSpellId": 298083,
+            "majorDiffSpellId": 294655,
+            "minorDiffSpellId": 294689
+        }
+    },
+    "3": {
+        "1": {
+            "azeriteEssencePowerId": 9,
+            "majorSpellId": 293031,
+            "minorSpellId": 294910,
+            "majorDiffSpellId": 293031,
+            "minorDiffSpellId": 294910
+        },
+        "2": {
+            "azeriteEssencePowerId": 10,
+            "majorSpellId": 300009,
+            "minorSpellId": 300012,
+            "majorDiffSpellId": 294906,
+            "minorDiffSpellId": 294919
+        },
+        "3": {
+            "azeriteEssencePowerId": 11,
+            "majorSpellId": 300010,
+            "minorSpellId": 300013,
+            "majorDiffSpellId": 294907,
+            "minorDiffSpellId": 294920
+        },
+        "4": {
+            "azeriteEssencePowerId": 12,
+            "majorSpellId": 300010,
+            "minorSpellId": 300013,
+            "majorDiffSpellId": 294908,
+            "minorDiffSpellId": 294922
+        }
+    },
+    "4": {
+        "1": {
+            "azeriteEssencePowerId": 13,
+            "majorSpellId": 295186,
+            "minorSpellId": 295078,
+            "majorDiffSpellId": 295186,
+            "minorDiffSpellId": 295078
+        },
+        "2": {
+            "azeriteEssencePowerId": 14,
+            "majorSpellId": 298628,
+            "minorSpellId": 298627,
+            "majorDiffSpellId": 295209,
+            "minorDiffSpellId": 295208
+        },
+        "3": {
+            "azeriteEssencePowerId": 15,
+            "majorSpellId": 299334,
+            "minorSpellId": 299333,
+            "majorDiffSpellId": 295160,
+            "minorDiffSpellId": 295165
+        },
+        "4": {
+            "azeriteEssencePowerId": 16,
+            "majorSpellId": 299334,
+            "minorSpellId": 299333,
+            "majorDiffSpellId": 295210,
+            "minorDiffSpellId": 295166
+        }
+    },
+    "5": {
+        "1": {
+            "azeriteEssencePowerId": 17,
+            "majorSpellId": 295258,
+            "minorSpellId": 295246,
+            "majorDiffSpellId": 295258,
+            "minorDiffSpellId": 295246
+        },
+        "2": {
+            "azeriteEssencePowerId": 18,
+            "majorSpellId": 299336,
+            "minorSpellId": 299335,
+            "majorDiffSpellId": 295262,
+            "minorDiffSpellId": 295251
+        },
+        "3": {
+            "azeriteEssencePowerId": 19,
+            "majorSpellId": 299338,
+            "minorSpellId": 299337,
+            "majorDiffSpellId": 295263,
+            "minorDiffSpellId": 295252
+        },
+        "4": {
+            "azeriteEssencePowerId": 20,
+            "majorSpellId": 299338,
+            "minorSpellId": 299337,
+            "majorDiffSpellId": 295264,
+            "minorDiffSpellId": 295253
+        }
+    },
+    "7": {
+        "1": {
+            "azeriteEssencePowerId": 21,
+            "majorSpellId": 294926,
+            "minorSpellId": 294964,
+            "majorDiffSpellId": 294926,
+            "minorDiffSpellId": 294964
+        },
+        "2": {
+            "azeriteEssencePowerId": 22,
+            "majorSpellId": 300002,
+            "minorSpellId": 300004,
+            "majorDiffSpellId": 295307,
+            "minorDiffSpellId": 294970
+        },
+        "4": {
+            "azeriteEssencePowerId": 23,
+            "majorSpellId": 300003,
+            "minorSpellId": 300005,
+            "majorDiffSpellId": 295306,
+            "minorDiffSpellId": 294972
+        },
+        "3": {
+            "azeriteEssencePowerId": 24,
+            "majorSpellId": 300003,
+            "minorSpellId": 300005,
+            "majorDiffSpellId": 294945,
+            "minorDiffSpellId": 294969
+        }
+    },
+    "6": {
+        "1": {
+            "azeriteEssencePowerId": 29,
+            "majorSpellId": 295337,
+            "minorSpellId": 295293,
+            "majorDiffSpellId": 295337,
+            "minorDiffSpellId": 295293
+        },
+        "2": {
+            "azeriteEssencePowerId": 30,
+            "majorSpellId": 299345,
+            "minorSpellId": 299343,
+            "majorDiffSpellId": 295364,
+            "minorDiffSpellId": 295363
+        },
+        "3": {
+            "azeriteEssencePowerId": 31,
+            "majorSpellId": 299347,
+            "minorSpellId": 299346,
+            "majorDiffSpellId": 295352,
+            "minorDiffSpellId": 295351
+        },
+        "4": {
+            "azeriteEssencePowerId": 32,
+            "majorSpellId": 299347,
+            "minorSpellId": 299346,
+            "majorDiffSpellId": 295358,
+            "minorDiffSpellId": 295333
+        }
+    },
+    "12": {
+        "1": {
+            "azeriteEssencePowerId": 45,
+            "majorSpellId": 295373,
+            "minorSpellId": 295365,
+            "majorDiffSpellId": 295373,
+            "minorDiffSpellId": 295365
+        },
+        "2": {
+            "azeriteEssencePowerId": 46,
+            "majorSpellId": 299349,
+            "minorSpellId": 299348,
+            "majorDiffSpellId": 295377,
+            "minorDiffSpellId": 295372
+        },
+        "3": {
+            "azeriteEssencePowerId": 47,
+            "majorSpellId": 299353,
+            "minorSpellId": 299350,
+            "majorDiffSpellId": 295379,
+            "minorDiffSpellId": 295369
+        },
+        "4": {
+            "azeriteEssencePowerId": 48,
+            "majorSpellId": 299353,
+            "minorSpellId": 299350,
+            "majorDiffSpellId": 295380,
+            "minorDiffSpellId": 295381
+        }
+    },
+    "13": {
+        "1": {
+            "azeriteEssencePowerId": 49,
+            "majorSpellId": 295746,
+            "minorSpellId": 295750,
+            "majorDiffSpellId": 295746,
+            "minorDiffSpellId": 295750
+        },
+        "2": {
+            "azeriteEssencePowerId": 50,
+            "majorSpellId": 300015,
+            "minorSpellId": 300018,
+            "majorDiffSpellId": 295747,
+            "minorDiffSpellId": 295844
+        },
+        "3": {
+            "azeriteEssencePowerId": 51,
+            "majorSpellId": 300016,
+            "minorSpellId": 300020,
+            "majorDiffSpellId": 295748,
+            "minorDiffSpellId": 295846
+        },
+        "4": {
+            "azeriteEssencePowerId": 52,
+            "majorSpellId": 300016,
+            "minorSpellId": 300020,
+            "majorDiffSpellId": 295749,
+            "minorDiffSpellId": 295845
+        }
+    },
+    "14": {
+        "1": {
+            "azeriteEssencePowerId": 53,
+            "majorSpellId": 295840,
+            "minorSpellId": 295834,
+            "majorDiffSpellId": 295840,
+            "minorDiffSpellId": 295834
+        },
+        "2": {
+            "azeriteEssencePowerId": 54,
+            "majorSpellId": 299355,
+            "minorSpellId": 299354,
+            "majorDiffSpellId": 295841,
+            "minorDiffSpellId": 295836
+        },
+        "3": {
+            "azeriteEssencePowerId": 55,
+            "majorSpellId": 299358,
+            "minorSpellId": 299357,
+            "majorDiffSpellId": 295843,
+            "minorDiffSpellId": 295837
+        },
+        "4": {
+            "azeriteEssencePowerId": 56,
+            "majorSpellId": 299358,
+            "minorSpellId": 299357,
+            "majorDiffSpellId": 295892,
+            "minorDiffSpellId": 295839
+        }
+    },
+    "15": {
+        "1": {
+            "azeriteEssencePowerId": 57,
+            "majorSpellId": 302731,
+            "minorSpellId": 302916,
+            "majorDiffSpellId": 302731,
+            "minorDiffSpellId": 302916
+        },
+        "2": {
+            "azeriteEssencePowerId": 58,
+            "majorSpellId": 302982,
+            "minorSpellId": 302984,
+            "majorDiffSpellId": 302778,
+            "minorDiffSpellId": 302957
+        },
+        "3": {
+            "azeriteEssencePowerId": 59,
+            "majorSpellId": 302983,
+            "minorSpellId": 302985,
+            "majorDiffSpellId": 302780,
+            "minorDiffSpellId": 302961
+        },
+        "4": {
+            "azeriteEssencePowerId": 60,
+            "majorSpellId": 302983,
+            "minorSpellId": 302985,
+            "majorDiffSpellId": 302910,
+            "minorDiffSpellId": 302962
+        }
+    },
+    "17": {
+        "1": {
+            "azeriteEssencePowerId": 64,
+            "majorSpellId": 296072,
+            "minorSpellId": 296050,
+            "majorDiffSpellId": 296072,
+            "minorDiffSpellId": 296050
+        },
+        "2": {
+            "azeriteEssencePowerId": 65,
+            "majorSpellId": 299875,
+            "minorSpellId": 299878,
+            "majorDiffSpellId": 296074,
+            "minorDiffSpellId": 296067
+        },
+        "3": {
+            "azeriteEssencePowerId": 66,
+            "majorSpellId": 299876,
+            "minorSpellId": 299879,
+            "majorDiffSpellId": 296075,
+            "minorDiffSpellId": 296062
+        },
+        "4": {
+            "azeriteEssencePowerId": 112,
+            "majorSpellId": 299876,
+            "minorSpellId": 299879,
+            "majorDiffSpellId": 299522,
+            "minorDiffSpellId": 299523
+        }
+    },
+    "18": {
+        "1": {
+            "azeriteEssencePowerId": 67,
+            "majorSpellId": 296094,
+            "minorSpellId": 296081,
+            "majorDiffSpellId": 296094,
+            "minorDiffSpellId": 296081
+        },
+        "2": {
+            "azeriteEssencePowerId": 68,
+            "majorSpellId": 299882,
+            "minorSpellId": 299885,
+            "majorDiffSpellId": 296102,
+            "minorDiffSpellId": 296091
+        },
+        "3": {
+            "azeriteEssencePowerId": 69,
+            "majorSpellId": 299883,
+            "minorSpellId": 299887,
+            "majorDiffSpellId": 296103,
+            "minorDiffSpellId": 296089
+        },
+        "4": {
+            "azeriteEssencePowerId": 110,
+            "majorSpellId": 299883,
+            "minorSpellId": 299887,
+            "majorDiffSpellId": 299518,
+            "minorDiffSpellId": 299519
+        }
+    },
+    "19": {
+        "1": {
+            "azeriteEssencePowerId": 70,
+            "majorSpellId": 296197,
+            "minorSpellId": 296136,
+            "majorDiffSpellId": 296197,
+            "minorDiffSpellId": 296136
+        },
+        "2": {
+            "azeriteEssencePowerId": 71,
+            "majorSpellId": 299932,
+            "minorSpellId": 299935,
+            "majorDiffSpellId": 296200,
+            "minorDiffSpellId": 296192
+        },
+        "3": {
+            "azeriteEssencePowerId": 72,
+            "majorSpellId": 299933,
+            "minorSpellId": 299936,
+            "majorDiffSpellId": 296201,
+            "minorDiffSpellId": 296193
+        },
+        "4": {
+            "azeriteEssencePowerId": 113,
+            "majorSpellId": 299933,
+            "minorSpellId": 299936,
+            "majorDiffSpellId": 299529,
+            "minorDiffSpellId": 299530
+        }
+    },
+    "20": {
+        "1": {
+            "azeriteEssencePowerId": 73,
+            "majorSpellId": 293032,
+            "minorSpellId": 296207,
+            "majorDiffSpellId": 293032,
+            "minorDiffSpellId": 296207
+        },
+        "2": {
+            "azeriteEssencePowerId": 74,
+            "majorSpellId": 299943,
+            "minorSpellId": 299939,
+            "majorDiffSpellId": 296220,
+            "minorDiffSpellId": 296213
+        },
+        "3": {
+            "azeriteEssencePowerId": 75,
+            "majorSpellId": 299944,
+            "minorSpellId": 299940,
+            "majorDiffSpellId": 296221,
+            "minorDiffSpellId": 296214
+        },
+        "4": {
+            "azeriteEssencePowerId": 111,
+            "majorSpellId": 299944,
+            "minorSpellId": 299940,
+            "majorDiffSpellId": 299520,
+            "minorDiffSpellId": 299521
+        }
+    },
+    "21": {
+        "1": {
+            "azeriteEssencePowerId": 76,
+            "majorSpellId": 296230,
+            "minorSpellId": 303448,
+            "majorDiffSpellId": 296230,
+            "minorDiffSpellId": 303448
+        },
+        "2": {
+            "azeriteEssencePowerId": 77,
+            "majorSpellId": 299958,
+            "minorSpellId": 303474,
+            "majorDiffSpellId": 303472,
+            "minorDiffSpellId": 303463
+        },
+        "3": {
+            "azeriteEssencePowerId": 78,
+            "majorSpellId": 299959,
+            "minorSpellId": 303476,
+            "majorDiffSpellId": 296232,
+            "minorDiffSpellId": 303460
+        },
+        "4": {
+            "azeriteEssencePowerId": 115,
+            "majorSpellId": 299959,
+            "minorSpellId": 303476,
+            "majorDiffSpellId": 299559,
+            "minorDiffSpellId": 299560
+        }
+    },
+    "22": {
+        "1": {
+            "azeriteEssencePowerId": 79,
+            "majorSpellId": 296325,
+            "minorSpellId": 296320,
+            "majorDiffSpellId": 296325,
+            "minorDiffSpellId": 296320
+        },
+        "2": {
+            "azeriteEssencePowerId": 80,
+            "majorSpellId": 299368,
+            "minorSpellId": 299367,
+            "majorDiffSpellId": 296326,
+            "minorDiffSpellId": 296321
+        },
+        "3": {
+            "azeriteEssencePowerId": 81,
+            "majorSpellId": 299370,
+            "minorSpellId": 299369,
+            "majorDiffSpellId": 303342,
+            "minorDiffSpellId": 296322
+        },
+        "4": {
+            "azeriteEssencePowerId": 82,
+            "majorSpellId": 299370,
+            "minorSpellId": 299369,
+            "majorDiffSpellId": 296328,
+            "minorDiffSpellId": 296324
+        }
+    },
+    "23": {
+        "1": {
+            "azeriteEssencePowerId": 83,
+            "majorSpellId": 297108,
+            "minorSpellId": 297147,
+            "majorDiffSpellId": 297108,
+            "minorDiffSpellId": 297147
+        },
+        "2": {
+            "azeriteEssencePowerId": 84,
+            "majorSpellId": 298273,
+            "minorSpellId": 298274,
+            "majorDiffSpellId": 297120,
+            "minorDiffSpellId": 297177
+        },
+        "3": {
+            "azeriteEssencePowerId": 85,
+            "majorSpellId": 298277,
+            "minorSpellId": 298275,
+            "majorDiffSpellId": 297122,
+            "minorDiffSpellId": 297178
+        },
+        "4": {
+            "azeriteEssencePowerId": 99,
+            "majorSpellId": 298277,
+            "minorSpellId": 298275,
+            "majorDiffSpellId": 298182,
+            "minorDiffSpellId": 298183
+        }
+    },
+    "25": {
+        "1": {
+            "azeriteEssencePowerId": 96,
+            "majorSpellId": 298168,
+            "minorSpellId": 298193,
+            "majorDiffSpellId": 298168,
+            "minorDiffSpellId": 298193
+        },
+        "2": {
+            "azeriteEssencePowerId": 97,
+            "majorSpellId": 299273,
+            "minorSpellId": 299274,
+            "majorDiffSpellId": 298169,
+            "minorDiffSpellId": 298351
+        },
+        "3": {
+            "azeriteEssencePowerId": 98,
+            "majorSpellId": 299275,
+            "minorSpellId": 299277,
+            "majorDiffSpellId": 298174,
+            "minorDiffSpellId": 298352
+        },
+        "4": {
+            "azeriteEssencePowerId": 101,
+            "majorSpellId": 299275,
+            "minorSpellId": 299277,
+            "majorDiffSpellId": 298186,
+            "minorDiffSpellId": 298353
+        }
+    },
+    "27": {
+        "1": {
+            "azeriteEssencePowerId": 102,
+            "majorSpellId": 298357,
+            "minorSpellId": 298268,
+            "majorDiffSpellId": 298357,
+            "minorDiffSpellId": 298268
+        },
+        "2": {
+            "azeriteEssencePowerId": 103,
+            "majorSpellId": 299372,
+            "minorSpellId": 299371,
+            "majorDiffSpellId": 298376,
+            "minorDiffSpellId": 298337
+        },
+        "3": {
+            "azeriteEssencePowerId": 104,
+            "majorSpellId": 299374,
+            "minorSpellId": 299373,
+            "majorDiffSpellId": 298377,
+            "minorDiffSpellId": 298339
+        },
+        "4": {
+            "azeriteEssencePowerId": 105,
+            "majorSpellId": 299374,
+            "minorSpellId": 299373,
+            "majorDiffSpellId": 298405,
+            "minorDiffSpellId": 298404
+        }
+    },
+    "28": {
+        "1": {
+            "azeriteEssencePowerId": 106,
+            "majorSpellId": 298452,
+            "minorSpellId": 298407,
+            "majorDiffSpellId": 298452,
+            "minorDiffSpellId": 298407
+        },
+        "2": {
+            "azeriteEssencePowerId": 107,
+            "majorSpellId": 299376,
+            "minorSpellId": 299375,
+            "majorDiffSpellId": 298455,
+            "minorDiffSpellId": 298448
+        },
+        "3": {
+            "azeriteEssencePowerId": 108,
+            "majorSpellId": 299378,
+            "minorSpellId": 299377,
+            "majorDiffSpellId": 298456,
+            "minorDiffSpellId": 298449
+        },
+        "4": {
+            "azeriteEssencePowerId": 109,
+            "majorSpellId": 299378,
+            "minorSpellId": 299377,
+            "majorDiffSpellId": 298457,
+            "minorDiffSpellId": 298450
+        }
+    },
+    "32": {
+        "1": {
+            "azeriteEssencePowerId": 121,
+            "majorSpellId": 303823,
+            "minorSpellId": 304081,
+            "majorDiffSpellId": 303823,
+            "minorDiffSpellId": 304081
+        },
+        "2": {
+            "azeriteEssencePowerId": 122,
+            "majorSpellId": 304088,
+            "minorSpellId": 304089,
+            "majorDiffSpellId": 304086,
+            "minorDiffSpellId": 304055
+        },
+        "3": {
+            "azeriteEssencePowerId": 123,
+            "majorSpellId": 304121,
+            "minorSpellId": 304123,
+            "majorDiffSpellId": 303892,
+            "minorDiffSpellId": 304125
+        },
+        "4": {
+            "azeriteEssencePowerId": 124,
+            "majorSpellId": 304121,
+            "minorSpellId": 304123,
+            "majorDiffSpellId": 303894,
+            "minorDiffSpellId": 304533
+        }
+    }
+}

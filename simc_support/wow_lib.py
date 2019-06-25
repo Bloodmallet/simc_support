@@ -2248,3 +2248,17 @@ def get_essences() -> dict:
         [type] -- [description]
     """
     return __essences
+
+def get_essence_power_id(essence_id: int) -> int:
+    """Returns powerID of rank 3 of an essence.
+
+    Arguments:
+        essence_id {int} -- [description]
+
+    Returns:
+        int -- [description]
+    """
+    with open('azerite_essence-power-spell-map.json', 'r') as f:
+        essences = json.load(f)
+
+    return essences[str(essence_id)]["3"]["azeriteEssencePowerId"]
