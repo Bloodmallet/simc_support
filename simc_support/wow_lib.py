@@ -2258,7 +2258,12 @@ def get_essence_power_id(essence_id: int) -> int:
     Returns:
         int -- [description]
     """
-    with open('azerite_essence-power-spell-map.json', 'r') as f:
-        essences = json.load(f)
+
+    import pkg_resources
+
+    file_name = "azerite_essence-power-spell-map.json"
+
+    with open(pkg_resources.resource_filename(__name__, file_name), 'r', encoding="UTF-8") as f:
+        essences = json.load(f, encoding="UTF-8")
 
     return essences[str(essence_id)]["3"]["azeriteEssencePowerId"]
