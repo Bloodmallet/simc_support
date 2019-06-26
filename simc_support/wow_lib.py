@@ -78,18 +78,21 @@ __class_data = {
         "specs": {
             "Blood": {
                 "talents": "1101011",
+                "raid_role": "tank",
                 "role": "melee",
                 "stat": "str",
                 "id": 250,
             },
             "Frost": {
                 "talents": "1101011",
+                "raid_role": "dd",
                 "role": "melee",
                 "stat": "str",
                 "id": 251,
             },
             "Unholy": {
                 "talents": "1101011",
+                "raid_role": "dd",
                 "role": "melee",
                 "stat": "str",
                 "id": 252,
@@ -101,12 +104,14 @@ __class_data = {
         "specs": {
             "Havoc": {
                 "talents": "1110111",
+                "raid_role": "dd",
                 "role": "melee",
                 "stat": "agi",
                 "id": 577,
             },
             "Vengeance": {
                 "talents": "1111111",
+                "raid_role": "tank",
                 "role": "melee",
                 "stat": "agi",
                 "id": 581,
@@ -118,18 +123,21 @@ __class_data = {
         "specs": {
             "Balance": {
                 "talents": "1000111",
+                "raid_role": "dd",
                 "role": "ranged",
                 "stat": "int",
                 "id": 102,
             },
             "Feral": {
                 "talents": "1000111",
+                "raid_role": "dd",
                 "role": "melee",
                 "stat": "agi",
                 "id": 103,
             },
             "Guardian": {
                 "talents": "1000111",
+                "raid_role": "tank",
                 "role": "melee",
                 "stat": "agi",
                 "id": 104,
@@ -141,18 +149,21 @@ __class_data = {
         "specs": {
             "Beast_Mastery": {
                 "talents": "1101011",
+                "raid_role": "dd",
                 "role": "ranged",
                 "stat": "agi",
                 "id": 253,
             },
             "Marksmanship": {
                 "talents": "1101011",
+                "raid_role": "dd",
                 "role": "ranged",
                 "stat": "agi",
                 "id": 254,
             },
             "Survival": {
                 "talents": "1101011",
+                "raid_role": "dd",
                 "role": "melee",
                 "stat": "agi",
                 "id": 255,
@@ -164,18 +175,21 @@ __class_data = {
         "specs": {
             "Arcane": {
                 "talents": "1011011",
+                "raid_role": "dd",
                 "role": "ranged",
                 "stat": "int",
                 "id": 62,
             },
             "Fire": {
                 "talents": "1011011",
+                "raid_role": "dd",
                 "role": "ranged",
                 "stat": "int",
                 "id": 63,
             },
             "Frost": {
                 "talents": "1011011",
+                "raid_role": "dd",
                 "role": "ranged",
                 "stat": "int",
                 "id": 64,
@@ -187,12 +201,14 @@ __class_data = {
         "specs": {
             "Brewmaster": {
                 "talents": "1010011",
+                "raid_role": "tank",
                 "role": "melee",
                 "stat": "agi",
                 "id": 268,
             },
             "Windwalker": {
                 "talents": "1010011",
+                "raid_role": "dd",
                 "role": "melee",
                 "stat": "agi",
                 "id": 269,
@@ -204,12 +220,14 @@ __class_data = {
         "specs": {
             "Protection": {
                 "talents": "1101001",
+                "raid_role": "tank",
                 "role": "melee",
                 "stat": "str",
                 "id": 66,
             },
             "Retribution": {
                 "talents": "1101001",
+                "raid_role": "dd",
                 "role": "melee",
                 "stat": "str",
                 "id": 70,
@@ -221,18 +239,21 @@ __class_data = {
         "specs": {
             "Discipline": {
                 "talents": "1010111",
+                "raid_role": "heal",
                 "role": "ranged",
                 "stat": "int",
                 "id": 257,
             },
             "Holy": {
                 "talents": "1010111",
+                "raid_role": "heal",
                 "role": "ranged",
                 "stat": "int",
                 "id": 257,
             },
             "Shadow": {
                 "talents": "1010111",
+                "raid_role": "dd",
                 "role": "ranged",
                 "stat": "int",
                 "id": 258,
@@ -244,18 +265,21 @@ __class_data = {
         "specs": {
             "Assassination": {
                 "talents": "1110011",
+                "raid_role": "dd",
                 "role": "melee",
                 "stat": "agi",
                 "id": 259,
             },
             "Outlaw": {
                 "talents": "1010011",
+                "raid_role": "dd",
                 "role": "melee",
                 "stat": "agi",
                 "id": 260,
             },
             "Subtlety": {
                 "talents": "1110011",
+                "raid_role": "dd",
                 "role": "melee",
                 "stat": "agi",
                 "id": 261,
@@ -267,18 +291,21 @@ __class_data = {
         "specs": {
             "Elemental": {
                 "talents": "1101011",
+                "raid_role": "dd",
                 "role": "ranged",
                 "stat": "int",
                 "id": 262,
             },
             "Enhancement": {
                 "talents": "1101011",
+                "raid_role": "dd",
                 "role": "melee",
                 "stat": "agi",
                 "id": 263,
             },
             "Restoration": {
                 "talents": "0100000",
+                "raid_role": "heal",
                 "role": "ranged",
                 "stat": "int",
                 "id": 264,
@@ -290,18 +317,21 @@ __class_data = {
         "specs": {
             "Affliction": {
                 "talents": "1101011",
+                "raid_role": "dd",
                 "role": "ranged",
                 "stat": "int",
                 "id": 265,
             },
             "Demonology": {
                 "talents": "1101011",
+                "raid_role": "dd",
                 "role": "ranged",
                 "stat": "int",
                 "id": 266,
             },
             "Destruction": {
                 "talents": "1101011",
+                "raid_role": "dd",
                 "role": "ranged",
                 "stat": "int",
                 "id": 267,
@@ -313,18 +343,21 @@ __class_data = {
         "specs": {
             "Arms": {
                 "talents": "1010111",
+                "raid_role": "dd",
                 "role": "melee",
                 "stat": "str",
                 "id": 71,
             },
             "Fury": {
                 "talents": "1010111",
+                "raid_role": "dd",
                 "role": "melee",
                 "stat": "str",
                 "id": 72,
             },
             "Protection": {
                 "talents": "1010111",
+                "raid_role": "tank",
                 "role": "melee",
                 "stat": "str",
                 "id": 73,
@@ -1055,7 +1088,12 @@ __essences = {
             'spell_id': 299333
         },
         'item_name': "Fluctuating Worldvein",
-        'item_id': 168617
+        'item_id': 168617,
+        'raid_roles': [
+            'dd',
+            'heal',
+            'tank'
+        ]
     },
     "5": { # done
         'name': "Essence of the Focusing Iris",
@@ -1068,7 +1106,10 @@ __essences = {
             'spell_id': 299337
         },
         'item_name': "Stabilizing Lens of the Focusing Iris",
-        'item_id': 168622
+        'item_id': 168622,
+        'raid_roles': [
+            'dd'
+        ]
     },
     "6": { # done
         'name': "Purification Protocol",
@@ -1081,21 +1122,27 @@ __essences = {
             'spell_id': 299346
         },
         'item_name': "Enhanced Purification Protocols",
-        'item_id': 168860
+        'item_id': 168860,
+        'raid_roles': [
+            'dd'
+        ]
     },
-    # "7": { # done tank
-    #     'name': "Anima of Death",
-    #     'major': {
-    #         'name': "Anima of Death",
-    #         'spell_id': 300003
-    #     },
-    #     'minor':{
-    #         'name': "Anima of Life",
-    #         'spell_id': 300005
-    #     },
-    #     'item_name': "Fetish of the Hidden Labyrinths",
-    #     'item_id': 168559
-    # },
+    "7": { # done tank
+        'name': "Anima of Death",
+        'major': {
+            'name': "Anima of Death",
+            'spell_id': 300003
+        },
+        'minor':{
+            'name': "Anima of Life",
+            'spell_id': 300005
+        },
+        'item_name': "Fetish of the Hidden Labyrinths",
+        'item_id': 168559,
+        'raid_roles': [
+            'tank'
+        ]
+    },
     "12": { # done
         'name': "The Crucible of Flame",
         'major': {
@@ -1107,7 +1154,12 @@ __essences = {
             'spell_id': 299350
         },
         'item_name': "Tempered Scale of the Scarlet Broodmother",
-        'item_id': 168613
+        'item_id': 168613,
+        'raid_roles': [
+            'dd',
+            'heal',
+            'tank'
+        ]
     },
     # "13": { # done tank
     #     'name': "Empowered Null Barrier",
@@ -1120,7 +1172,10 @@ __essences = {
     #         'spell_id': 300020
     #     },
     #     'item_name': "Null Force Nullifier",
-    #     'item_id': 168568
+    #     'item_id': 168568,
+    #     'raid_roles': [
+    #         'tank'
+    #     ]
     # },
     "14": { # done
         'name': "Condensed Life-Force",
@@ -1133,7 +1188,10 @@ __essences = {
             'spell_id': 299357
         },
         'item_name': "Resonating Elemental Heart",
-        'item_id': 168856
+        'item_id': 168856,
+        'raid_roles': [
+            'dd'
+        ]
     },
     "15": { # done
         'name': "Ripple in Space",
@@ -1146,47 +1204,61 @@ __essences = {
             'spell_id': 302985
         },
         'item_name': "Stalwart Battlefield Memento",
-        'item_id': 168852
+        'item_id': 168852,
+        'raid_roles': [
+            'dd',
+            'heal',
+            'tank'
+        ]
     },
-    # "17": { # done
-    #     'name': "The Ever-Rising Tide",
-    #     'major': {
-    #         'name': "Overcharge Mana",
-    #         'spell_id': 299876
-    #     },
-    #     'minor':{
-    #         'name': "The Ever-Rising Tide",
-    #         'spell_id': 299879
-    #     },
-    #     'item_name': "Tome of the Quickening Tides",
-    #     'item_id': 168930
-    # },
-    # "18": { # done
-    #     'name': "Artifice of Time",
-    #     'major': {
-    #         'name': "Standstill",
-    #         'spell_id': 299883
-    #     },
-    #     'minor':{
-    #         'name': "Artifice of Time",
-    #         'spell_id': 299887
-    #     },
-    #     'item_name': "Azerite-Fueled Timequartz",
-    #     'item_id': 168922
-    # },
-    # "19": { # done
-    #     'name': "The Well of Existence",
-    #     'major': {
-    #         'name': "Refreshment",
-    #         'spell_id': 299933
-    #     },
-    #     'minor':{
-    #         'name': "The Well of Existence",
-    #         'spell_id': 299936
-    #     },
-    #     'item_name': "Calibrated Existence Gauge",
-    #     'item_id': 168934
-    # },
+    "17": { # done
+        'name': "The Ever-Rising Tide",
+        'major': {
+            'name': "Overcharge Mana",
+            'spell_id': 299876
+        },
+        'minor':{
+            'name': "The Ever-Rising Tide",
+            'spell_id': 299879
+        },
+        'item_name': "Tome of the Quickening Tides",
+        'item_id': 168930,
+        'raid_roles': [
+            'heal'
+        ]
+    },
+    "18": { # done
+        'name': "Artifice of Time",
+        'major': {
+            'name': "Standstill",
+            'spell_id': 299883
+        },
+        'minor':{
+            'name': "Artifice of Time",
+            'spell_id': 299887
+        },
+        'item_name': "Azerite-Fueled Timequartz",
+        'item_id': 168922,
+        'raid_roles': [
+            'heal'
+        ]
+    },
+    "19": { # done
+        'name': "The Well of Existence",
+        'major': {
+            'name': "Refreshment",
+            'spell_id': 299933
+        },
+        'minor':{
+            'name': "The Well of Existence",
+            'spell_id': 299936
+        },
+        'item_name': "Calibrated Existence Gauge",
+        'item_id': 168934,
+        'raid_roles': [
+            'heal'
+        ]
+    },
     # "20": { # done
     #     'name': "Life-Binder's Invocation",
     #     'major': {
@@ -1198,7 +1270,10 @@ __essences = {
     #         'spell_id': 299940
     #     },
     #     'item_name': "Lingering Seed of Renewal",
-    #     'item_id': 168926
+    #     'item_id': 168926,
+    #     'raid_roles': [
+    #         'heal',
+    #     ]
     # },
     # "21": { # done
     #     'name': "Vitality Conduit",
@@ -1211,7 +1286,10 @@ __essences = {
     #         'spell_id': 303476
     #     },
     #     'item_name': "Grid of Bursting Vitality",
-    #     'item_id': 168943
+    #     'item_id': 168943,
+    #     'raid_roles': [
+    #         'heal'
+    #     ]
     # },
     "22": { # done
         'name': "Vision of Perfection",
@@ -1224,7 +1302,12 @@ __essences = {
             'spell_id': 299369
         },
         'item_name': "Perfection-Enhancing Gearbox",
-        'item_id': 168844
+        'item_id': 168844,
+        'raid_roles': [
+            'dd',
+            'heal',
+            'tank'
+        ]
     },
     "23": { # done
         'name': "Blood of the Enemy",
@@ -1237,21 +1320,27 @@ __essences = {
             'spell_id': 298275
         },
         'item_name': "Churned Blood of the Conquered",
-        'item_id': 168444
+        'item_id': 168444,
+        'raid_roles': [
+            'dd'
+        ]
     },
-    # "25": { # done tank
-    #     'name': "Aegis of the Deep",
-    #     'major': {
-    #         'name': "Aegis of the Deep",
-    #         'spell_id': 299275
-    #     },
-    #     'minor':{
-    #         'name': "Stand Your Ground",
-    #         'spell_id': 299277
-    #     },
-    #     'item_name': "Regenerating Barrier of the Depths",
-    #     'item_id': 168839
-    # },
+    "25": { # done tank
+        'name': "Aegis of the Deep",
+        'major': {
+            'name': "Aegis of the Deep",
+            'spell_id': 299275
+        },
+        'minor':{
+            'name': "Stand Your Ground",
+            'spell_id': 299277
+        },
+        'item_name': "Regenerating Barrier of the Depths",
+        'item_id': 168839,
+        'raid_roles': [
+            'tank'
+        ]
+    },
     "27": { # done
         'name': "Memory of Lucid Dreams",
         'major': {
@@ -1263,7 +1352,12 @@ __essences = {
             'spell_id': 299373
         },
         'item_name': "Pearl of Perspicuous Intentions",
-        'item_id': 168848
+        'item_id': 168848,
+        'raid_roles': [
+            'dd',
+            'heal',
+            'tank'
+        ]
     },
     "28": { # done
         'name': "The Unbound Force",
@@ -1276,7 +1370,10 @@ __essences = {
             'spell_id': 299377
         },
         'item_name': "Polarized Azerite Slivershards",
-        'item_id': 168865
+        'item_id': 168865,
+        'raid_roles': [
+            'dd'
+        ]
     },
     "32": { # done
         'name': "Conflict and Strife",
@@ -1289,7 +1386,12 @@ __essences = {
             'spell_id': 304123
         },
         'item_name': "Rib-Bone Choker of Dominance",
-        'item_id': 169900
+        'item_id': 169900,
+        'raid_roles': [
+            'dd',
+            'heal',
+            'tank'
+        ]
     }
 }
 
@@ -2241,13 +2343,22 @@ def is_dps_talent_combination(talent_combination, wow_class):
             return False
     return True
 
-def get_essences() -> dict:
+def get_essences(wow_class: str, wow_spec: str) -> dict:
     """Returns a dictionary of all available dps essences.
 
     Returns:
         [type] -- [description]
     """
-    return __essences
+
+    essences = {}
+
+    raid_role = __class_data[wow_class][wow_spec]['raid_role']
+
+    for key, value in __essences.items():
+        if raid_role in value['raid_roles']:
+            essences[key] = value
+
+    return essences
 
 def get_essence_power_id(essence_id: int) -> int:
     """Returns powerID of rank 3 of an essence.
