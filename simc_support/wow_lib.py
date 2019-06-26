@@ -2352,7 +2352,7 @@ def get_essences(wow_class: str, wow_spec: str) -> dict:
 
     essences = {}
 
-    raid_role = __class_data[wow_class][wow_spec]['raid_role']
+    raid_role = __class_data[wow_class]['specs'][wow_spec]['raid_role']
 
     for key, value in __essences.items():
         if raid_role in value['raid_roles']:
