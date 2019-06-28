@@ -899,7 +899,7 @@ __trinket_list = [
         name="Incessantly Ticking Clock", item_id="161113", min_itemlevel=325, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
     ),
-   Trinket(  # vol'dun
+    Trinket(  # vol'dun
         name="Ravasaur Skull Bijou", item_id="161119", min_itemlevel=325, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
     ),
@@ -1042,6 +1042,48 @@ __trinket_list = [
     Trinket(  # Crucible of Storms
         name="Harbinger's Inscrutable Will", item_id="167867", min_itemlevel=380, max_itemlevel=TITANFORGE_CAP,
         max_itemlevel_drop=425, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.RAID, active=False
+    ),
+    Trinket(  # Profession
+        name="Highborne Compendium of Sundering",
+        item_id="169321",
+        min_itemlevel=400,
+        max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=400,
+        agility=True,
+        intellect=False,
+        strength=True,
+        melee=False,
+        ranged=False,
+        source=Source.PROFESSION,
+        active=False
+    ),
+    Trinket(  # Profession
+        name="Highborne Compendium of Storms",
+        item_id="169328",
+        min_itemlevel=400,
+        max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=400,
+        agility=False,
+        intellect=True,
+        strength=False,
+        melee=False,
+        ranged=False,
+        source=Source.PROFESSION,
+        active=False
+    ),
+    Trinket(  # World Boss
+        name="Enthraller's Bindstone",
+        item_id="169317",
+        min_itemlevel=415,
+        max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TITANFORGE_CAP,
+        agility=True,
+        intellect=True,
+        strength=True,
+        melee=False,
+        ranged=False,
+        source=Source.WORLD_BOSS,
+        active=False
     ),
 
     # Trinket(
