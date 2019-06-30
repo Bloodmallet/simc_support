@@ -948,12 +948,24 @@ __trinket_list = [
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
     ),
     Trinket(  # profession alchemy
-        name="Emblazoned Alchemist Stone", item_id="166976", min_itemlevel=355, max_itemlevel=355,
+        name="Sanguinated Alchemist Stone", item_id="166974", min_itemlevel=355, max_itemlevel=355,
         max_itemlevel_drop=355, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=False
     ),
     Trinket(  # profession alchemy
-        name="Eternal Alchemist Stone", item_id="165928", min_itemlevel=355, max_itemlevel=415,
+        name="Tidal Alchemist Stone", item_id="165926", min_itemlevel=385, max_itemlevel=385,
+        max_itemlevel_drop=385, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=False
+    ),
+    Trinket(  # profession alchemy
+        name="Spirited Alchemist Stone", item_id="165927", min_itemlevel=400, max_itemlevel=400,
+        max_itemlevel_drop=385, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=False
+    ),
+    Trinket(  # profession alchemy
+        name="Eternal Alchemist Stone", item_id="165928", min_itemlevel=415, max_itemlevel=415,
         max_itemlevel_drop=415, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=False
+    ),
+    Trinket(  # profession alchemy
+        name="Crushing Alchemist Stone", item_id="168675", min_itemlevel=425, max_itemlevel=425,
+        max_itemlevel_drop=425, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=False
     ),
     Trinket(  # World Boss Dark Shore
         name="Ancient Knot of Wisdom", item_id="161417", min_itemlevel=355, max_itemlevel=TITANFORGE_CAP,
@@ -1047,7 +1059,7 @@ __trinket_list = [
         name="Highborne Compendium of Sundering",
         item_id="169321",
         min_itemlevel=400,
-        max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel=400,
         max_itemlevel_drop=400,
         agility=True,
         intellect=False,
@@ -1061,7 +1073,7 @@ __trinket_list = [
         name="Highborne Compendium of Storms",
         item_id="169328",
         min_itemlevel=400,
-        max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel=400,
         max_itemlevel_drop=400,
         agility=False,
         intellect=True,
