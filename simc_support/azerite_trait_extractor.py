@@ -15,17 +15,17 @@ logger.addHandler(ch)
 
 
 PTR = False
-
+AZERITE_TRAIT_MAP = 'azerite_trait_map.json'
 
 def update_map(trait_dict):
 
     try:
-        with open("trait_map.json", "r") as r:
+        with open(AZERITE_TRAIT_MAP, "r") as r:
             LOADED_MAP = json.load(r)
     except Exception as e:
         LOADED_MAP = {}
         logger.error(e)
-        logger.error("trait_map.json will be created.")
+        logger.error("azerite_trait_map.json will be created.")
 
     updated_map = LOADED_MAP
 
@@ -107,7 +107,7 @@ def update_map(trait_dict):
                     for to_delete in to_delete_list:
                         updated_map[trait_id]["class"].pop(to_delete)
 
-    with open("trait_map.json", "w") as f:
+    with open(AZERITE_TRAIT_MAP, "w") as f:
         f.write(json.dumps(updated_map, sort_keys=True, indent=4))
 
     if newly_created:
@@ -145,7 +145,7 @@ def get_tiers(azerite_id: int, power_sets: dict):
 def update_list(trait_dict):
     logger.info("Updating list.")
     try:
-        with open("trait_map.json", "r") as r:
+        with open(AZERITE_TRAIT_MAP, "r") as r:
             LOADED_MAP = json.load(r)
     except Exception as e:
         LOADED_MAP = {}
@@ -195,7 +195,7 @@ def update_list(trait_dict):
                         )
                     )
 
-    with open("trait_list.json", "w") as f:
+    with open("azerite_trait_list.json", "w") as f:
         f.write(json.dumps(trait_classes, sort_keys=True, indent=4))
 
 

@@ -16,7 +16,7 @@ def print_simc_file(trinket_list, name):
         f.write("# No appropriate drop itemlevel required.\n\n\n")
 
         for trinket in trinket_list:
-            t_name, t_id, _, t_ilevel, _ = trinket
+            t_name, t_id, _, t_ilevel, _, _ = trinket
             f.write("copy=\"{}\"\n".format(t_name))
             f.write("trinket1=,id={},ilevel={}\n\n".format(t_id, t_ilevel))
 
