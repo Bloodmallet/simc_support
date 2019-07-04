@@ -1097,6 +1097,20 @@ __trinket_list = [
         source=Source.WORLD_BOSS,
         active=False
     ),
+    Trinket(  # World Quest
+        name="Oxidized Refuse Remover",
+        item_id="170273",
+        min_itemlevel=380,
+        max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=TITANFORGE_CAP,
+        agility=True,
+        intellect=True,
+        strength=True,
+        melee=False,
+        ranged=False,
+        source=Source.WORLD_QUEST,
+        active=False
+    ),
 
     # Trinket(
     #     name="", item_id="", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
@@ -1849,7 +1863,7 @@ def get_azerite_traits(wow_class: str, wow_spec: str) -> dict:
 
     import pkg_resources
 
-    path = "trait_list.json"
+    path = "azerite_trait_list.json"
 
     with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
         traits = json.load(f, encoding="UTF-8")
