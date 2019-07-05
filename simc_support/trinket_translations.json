@@ -535,7 +535,7 @@
     "it_IT": "Statuetta del Loa Dorata",
     "pt_BR": "Estatueta Dourada de Loa",
     "ko_KR": "화려한 로아 조각상",
-    "cn_CN": "鎏金洛阿神像",
+    "cn_CN": "鎏金洛阿神灵造像",
     "ru_RU": "Золоченая статуэтка лоа"
   },
   "Emblem of Zandalar": {
@@ -572,7 +572,7 @@
     "ru_RU": "Компас ныряльщика за жемчугом"
   },
   "First Mate's Spyglass": {
-    "de_DE": "Fernrohr des ersten Maats",
+    "de_DE": "Fernrohr des Ersten Maats",
     "en_US": "First Mate's Spyglass",
     "es_ES": "Catalejo de contramaestre",
     "fr_FR": "Longue-vue de second",
@@ -804,7 +804,7 @@
   },
   "Eternal Alchemist Stone": {
     "de_DE": "Ewiger Alchemistenstein",
-    "en_US": "Emblazoned Alchemist Stone",
+    "en_US": "Eternal Alchemist Stone",
     "es_ES": "Piedra de alquimista eterna",
     "fr_FR": "Pierre d’alchimiste éternelle",
     "it_IT": "Pietra Alchemica Eterna",
@@ -1023,15 +1023,15 @@
     "ru_RU": "Гигавольтный осциллирующий реактор аннигиляции"
   },
   "Sinister Gladiator's Maledict": {
-    "de_DE": "Verhängnis des Gladiators",
+    "de_DE": "Verhängnis des düsteren Gladiators",
     "en_US": "Sinister Gladiator's Maledict",
-    "es_ES": "Maldición de Gladiador",
-    "fr_FR": "Bijou maudit du gladiateur",
-    "it_IT": "Maledizione del Gladiatore",
-    "pt_BR": "Imprecação do Gladiador",
-    "ko_KR": "검투사의 저주",
-    "cn_CN": "角斗士的咒徽",
-    "ru_RU": "Темный фетиш гладиатора"
+    "es_ES": "Maldición de Gladiador siniestro",
+    "fr_FR": "Bijou maudit du gladiateur sinistre",
+    "it_IT": "Maledizione del Gladiatore Sinistro",
+    "pt_BR": "Imprecação do Gladiador Sinistro",
+    "ko_KR": "사악한 검투사의 저주",
+    "cn_CN": "惊恶角斗士的咒徽",
+    "ru_RU": "Темный фетиш зловещего гладиатора"
   },
   "Lurker's Insidious Gift": {
     "de_DE": "Des Lauerers tückisches Geschenk",
