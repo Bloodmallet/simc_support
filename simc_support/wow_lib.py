@@ -1182,7 +1182,7 @@ __trinket_list = [
         active=False
     ),
     Trinket(  # Eternal Palace
-        name="Ascane's Razor Coral",
+        name="Ashvane's Razor Coral",
         item_id="169311",
         min_itemlevel=400,
         max_itemlevel=TITANFORGE_CAP,
@@ -1224,7 +1224,7 @@ __trinket_list = [
         active=False
     ),
     Trinket(  # Eternal Palace
-        name="Viison of Demise",
+        name="Vision of Demise",
         item_id="169307",
         min_itemlevel=400,
         max_itemlevel=TITANFORGE_CAP,
