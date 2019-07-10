@@ -964,7 +964,7 @@ __trinket_list = [
         max_itemlevel_drop=415, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=False
     ),
     Trinket(  # profession alchemy
-        name="Crushing Alchemist Stone", item_id="168675", min_itemlevel=425, max_itemlevel=425,
+        name="Crushing Alchemist Stone", item_id="168675", min_itemlevel=425, max_itemlevel=430,
         max_itemlevel_drop=425, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=False
     ),
     Trinket(  # World Boss Dark Shore
