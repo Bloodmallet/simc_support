@@ -1237,6 +1237,20 @@ __trinket_list = [
         source=Source.RAID,
         active=True
     ),
+    Trinket(  # Eternal Palace
+        name="Clockwork Re-Sharpener",
+        item_id="161375",
+        min_itemlevel=415,
+        max_itemlevel=TITANFORGE_CAP,
+        max_itemlevel_drop=415,
+        agility=True,
+        intellect=False,
+        strength=False,
+        melee=False,
+        ranged=False,
+        source=Source.DUNGEON,
+        active=True
+    ),
     # Trinket(
     #     name="", item_id="", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
     #     max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=False, melee=False, ranged=False, active=False
