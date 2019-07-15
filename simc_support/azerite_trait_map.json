@@ -8401,7 +8401,7 @@
         },
         "description": "$?$a303590[Critical Strike increased by $s1.]?$a303592[Haste increased by $s2.]?$a303595[Mastery increased by $s3.]?$a303596[Versatility increased by $s4.][A secondary stat of your choice is increased by $s1 while using the Pocket-Sized Computation Device.] Stat is chosen based on equipped Logic Board.",
         "max_itemlevel": -1,
-        "max_stack": 1,
+        "max_stack": 3,
         "min_itemlevel": -1,
         "name": "Person-Computer Interface",
         "trait_id": "568"
@@ -8535,7 +8535,7 @@
         },
         "description": "Every $s1 damage and healing done you gain Omnipotence, increasing your highest stat by $s2 for $303212d. You heal for $s3% of all Arcane damage taken.",
         "max_itemlevel": -1,
-        "max_stack": 1,
+        "max_stack": 3,
         "min_itemlevel": -1,
         "name": "Arcane Heart",
         "trait_id": "577"
@@ -8602,7 +8602,7 @@
         },
         "description": "Your Mastery is increased by $s1, plus an additional $s2 for each ally also affected by Loyal to the End, up to $s3.",
         "max_itemlevel": -1,
-        "max_stack": 1,
+        "max_stack": 3,
         "min_itemlevel": -1,
         "name": "Loyal to the End",
         "trait_id": "576"
@@ -8669,7 +8669,7 @@
         },
         "description": "Your damaging spells and abilities have a chance to crash a wave upon your target for $s1 Frost damage.",
         "max_itemlevel": -1,
-        "max_stack": 1,
+        "max_stack": 3,
         "min_itemlevel": -1,
         "name": "Undulating Tides",
         "trait_id": "575"
