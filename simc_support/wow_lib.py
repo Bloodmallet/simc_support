@@ -1265,7 +1265,7 @@ __trinket_list = [
         source=Source.WORLD_BOSS,
         active=True
     ),
-    Trinket(  # World Boss
+    Trinket(  # Craftable
         name="Galvanic Turbo-Charger",
         item_id="161416",
         min_itemlevel=415,
@@ -1273,6 +1273,20 @@ __trinket_list = [
         max_itemlevel_drop=415,
         agility=False,
         intellect=False,
+        strength=True,
+        melee=False,
+        ranged=False,
+        source=Source.PROFESSION,
+        active=False
+    ),
+    Trinket(  # Profession
+        name="Ascended Alchemist Stone",
+        item_id="168676",
+        min_itemlevel=440,
+        max_itemlevel=450,
+        max_itemlevel_drop=415,
+        agility=True,
+        intellect=True,
         strength=True,
         melee=False,
         ranged=False,
