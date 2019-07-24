@@ -8088,9 +8088,9 @@
             ]
         },
         "description": "Your spells and abilities have a chance to conjure Bwonsamdi's spectral visage, beckoning you closer. If you approach him, gain $s1 to all stats for $288777d, stacking up to $288777u times. If you fail to heed his call, lose $s2 $Lstack:stacks;.",
-        "max_itemlevel": -1,
+        "max_itemlevel": 415,
         "max_stack": 3,
-        "min_itemlevel": -1,
+        "min_itemlevel": 370,
         "name": "Seductive Power",
         "trait_id": "561"
     },
@@ -8181,9 +8181,9 @@
             ]
         },
         "description": "Your spells and abilities have a chance to trigger a Soulbond for $288841d. During Soulbond, every $288841t1 sec you and your nearest ally are both healed for $s2 and gain $s1 Haste for $288839d.",
-        "max_itemlevel": -1,
+        "max_itemlevel": 415,
         "max_stack": 3,
-        "min_itemlevel": -1,
+        "min_itemlevel": 370,
         "name": "Bonded Souls",
         "trait_id": "560"
     },
@@ -8534,9 +8534,9 @@
             ]
         },
         "description": "Every $s1 damage and healing done you gain Omnipotence, increasing your highest stat by $s2 for $303212d. You heal for $s3% of all Arcane damage taken.",
-        "max_itemlevel": -1,
+        "max_itemlevel": 445,
         "max_stack": 3,
-        "min_itemlevel": -1,
+        "min_itemlevel": 400,
         "name": "Arcane Heart",
         "trait_id": "577"
     },
@@ -8601,9 +8601,9 @@
             ]
         },
         "description": "Your Mastery is increased by $s1, plus an additional $s2 for each ally also affected by Loyal to the End, up to $s3.",
-        "max_itemlevel": -1,
+        "max_itemlevel": 445,
         "max_stack": 3,
-        "min_itemlevel": -1,
+        "min_itemlevel": 400,
         "name": "Loyal to the End",
         "trait_id": "576"
     },
@@ -8668,9 +8668,9 @@
             ]
         },
         "description": "Your damaging spells and abilities have a chance to crash a wave upon your target for $s1 Frost damage.",
-        "max_itemlevel": -1,
+        "max_itemlevel": 445,
         "max_stack": 3,
-        "min_itemlevel": -1,
+        "min_itemlevel": 400,
         "name": "Undulating Tides",
         "trait_id": "575"
     }
