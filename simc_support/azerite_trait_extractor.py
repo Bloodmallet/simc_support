@@ -60,7 +60,7 @@ def update_map(trait_dict):
                         "max_itemlevel":
                         -1,
                         "max_stack":
-                        1
+                        -1
                     }
 
                     newly_created += 1
