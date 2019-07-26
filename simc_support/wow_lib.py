@@ -653,87 +653,87 @@ __race_translations = {
 __trinket_list = [
     # dungeon trinkets
     Trinket( # atal'dazar
-        "My'das Talisman", "158319", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "My'das Talisman", "158319", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, True, False, False, False, False, source=Source.DUNGEON, active=True
     ),
     Trinket( # atal'dazar
-        "Rezan's Gleaming Eye", "158712", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Rezan's Gleaming Eye", "158712", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, False, False, True, False, False, source=Source.DUNGEON, active=False
     ),
     Trinket( # atal'dazar
         "Vessel of Skittering Shadows", "159610", DUNGEON_ITEMLEVEL,
-        TITANFORGE_CAP, TRADER_TOKEN, False, True, False, False, False, source=Source.DUNGEON, active=False
+        M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF, TRADER_TOKEN, False, True, False, False, False, source=Source.DUNGEON, active=False
     ),
     Trinket( # freehold
-        "Harlan's Loaded Dice", "155881", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Harlan's Loaded Dice", "155881", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, True, False, False, False, False, source=Source.DUNGEON, active=False
     ),
     Trinket( # Kings' Rest
-        "Lustrous Golden Plumage", "159617", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Lustrous Golden Plumage", "159617", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, True, False, False, False, False, source=Source.DUNGEON, active=True
     ),
     Trinket( # Shrine of the Storm
-        "Briny Barnacle", "159619", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Briny Barnacle", "159619", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, False, False, True, False, False, source=Source.DUNGEON, active=False
     ),
     Trinket( # Shrine of the Storm
-        "Galecaller's Boon", "159614", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Galecaller's Boon", "159614", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, True, False, False, False, False, source=Source.DUNGEON, active=True
     ),
     Trinket( # Shrine of the Storm
-        "Conch of Dark Whispers", "159620", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Conch of Dark Whispers", "159620", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, False, True, False, False, False, source=Source.DUNGEON, active=False
     ),
     Trinket( # Siege of Boralus
-        "Dead-Eye Spyglass", "159623", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Dead-Eye Spyglass", "159623", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, True, False, False, False, False, source=Source.DUNGEON, active=False
     ),
     Trinket( # Siege of Boralus
-        "Hadal's Nautilus", "159622", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Hadal's Nautilus", "159622", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, False, True, False, False, False, source=Source.DUNGEON, active=False
     ),
     Trinket( # Temple of Sethraliss
-        "Tiny Electromental in a Jar", "158374", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Tiny Electromental in a Jar", "158374", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, True, False, False, False, False, source=Source.DUNGEON, active=False
     ),
     Trinket( # Temple of Sethraliss
-        "Merektha's Fang", "158367", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Merektha's Fang", "158367", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, False, False, True, False, False, source=Source.DUNGEON, active=True
     ),
     Trinket( # The Motherlode
-        "Razdunk's Big Red Button", "159611", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Razdunk's Big Red Button", "159611", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, False, False, True, False, False, source=Source.DUNGEON, active=True
     ),
     Trinket( # The Motherlode
-        "Azerokk's Resonating Heart", "159612", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Azerokk's Resonating Heart", "159612", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, True, False, False, False, False, source=Source.DUNGEON, active=False
     ),
     Trinket( # The Underrot
-        "Lingering Sporepods", "159626", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Lingering Sporepods", "159626", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, True, False, True, False, False, source=Source.DUNGEON, active=False
     ),
     Trinket( # The Underrot
-        "Rotcrusted Voodoo Doll", "159624", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Rotcrusted Voodoo Doll", "159624", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, False, True, False, False, False, source=Source.DUNGEON, active=True
     ),
     Trinket( # The Underrot
-        "Vial of Animated Blood", "159625", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Vial of Animated Blood", "159625", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, False, False, True, False, False, source=Source.DUNGEON, active=True
     ),
     Trinket( # Tol Dagor
-        "Jes' Howler", "159627", DUNGEON_ITEMLEVEL, TITANFORGE_CAP, TRADER_TOKEN,
+        "Jes' Howler", "159627", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF, TRADER_TOKEN,
         False, False, True, False, False, source=Source.DUNGEON, active=True
     ),
     Trinket( # Tol Dagor
-        "Ignition Mage's Fuse", "159615", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Ignition Mage's Fuse", "159615", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, False, True, False, False, False, source=Source.DUNGEON, active=True
     ),
     Trinket( # Waycrest Manor
-        "Lady Waycrest's Music Box", "159631", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Lady Waycrest's Music Box", "159631", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, False, True, False, False, False, source=Source.DUNGEON, active=False
     ),
     Trinket( # Waycrest Manor
-        "Balefire Branch", "159630", DUNGEON_ITEMLEVEL, TITANFORGE_CAP,
+        "Balefire Branch", "159630", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         TRADER_TOKEN, False, True, False, False, False, source=Source.DUNGEON, active=True
     ),
     # Trinket( # not obtainable
@@ -809,7 +809,7 @@ __trinket_list = [
         TRADER_TOKEN, False, True, False, False, False, source=Source.RAID, active=False
     ),
     Trinket( # Tol Dagor
-        name="Kul Tiran Cannonball Runner", item_id="159628", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=DUNGEON_ITEMLEVEL+TITANFORGING_CUT_OFF,
+        name="Kul Tiran Cannonball Runner", item_id="159628", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.DUNGEON, active=False
     ),
     Trinket(  # Uldir
@@ -893,7 +893,7 @@ __trinket_list = [
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
     ),
     Trinket(  # waycrest manor
-        name="Gore-Crusted Butcher's Block", item_id="159616", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=DUNGEON_ITEMLEVEL+TITANFORGING_CUT_OFF,
+        name="Gore-Crusted Butcher's Block", item_id="159616", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.DUNGEON, active=False
     ),
     Trinket(  # stormsong valley
