@@ -146,6 +146,13 @@ __class_data = {
                 "role": "melee",
                 "stat": "agi",
                 "id": 104,
+            },
+            "Restoration": {
+                "talents": "0010000",
+                "raid_role": "dd",
+                "role": "melee",
+                "stat": "int",
+                "id": 105,
             }
         }
     },
@@ -913,7 +920,7 @@ __trinket_list = [
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
     ),
     Trinket(  # airdrop
-        name="Dread Gladiator's Badge", item_id="161902", min_itemlevel=325, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
+        name="Dread Gladiator's Badge", item_id="161902", min_itemlevel=325, max_itemlevel=M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="PvP", active=True
     ),
     Trinket(  # warfront world boss
@@ -941,11 +948,11 @@ __trinket_list = [
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_BOSS, active=True
     ),
     Trinket(  # pvp
-        name="Dread Gladiator's Insignia", item_id="161676", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
+        name="Dread Gladiator's Insignia", item_id="161676", min_itemlevel=280, max_itemlevel=M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="PvP", active=False
     ),
     Trinket(  # pvp
-        name="Dread Gladiator's Medallion", item_id="161674", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
+        name="Dread Gladiator's Medallion", item_id="161674", min_itemlevel=280, max_itemlevel=M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="PvP", active=True
     ),
     Trinket(  # wq
@@ -1049,7 +1056,7 @@ __trinket_list = [
         max_itemlevel_drop=DAZARALOR, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.RAID, active=True
     ),
     Trinket(  # PvP
-        name="Sinister Gladiator's Maledict", item_id="165806", min_itemlevel=370, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
+        name="Sinister Gladiator's Maledict", item_id="165806", min_itemlevel=370, max_itemlevel=M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
         max_itemlevel_drop=400, agility=True, intellect=True, strength=True, melee=False, ranged=False, source=Source.PVP, active=True
     ),
     Trinket(  # Crucible of Storms
