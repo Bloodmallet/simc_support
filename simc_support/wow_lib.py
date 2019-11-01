@@ -401,23 +401,23 @@ __races = {
             "death_knight", "demon_hunter"
         ),
         "pandaren": (
-            "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk"
+            "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk", "death_knight"
         ),
         "worgen": (
             "warrior", "hunter", "rogue", "priest", "mage", "warlock", "druid",
             "death_knight"
         ),
         "void_elf": (
-            "warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk"
+            "warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk", "death_knight"
         ),
         "lightforged_draenei": (
-            "warrior", "paladin", "hunter", "priest", "mage"
+            "warrior", "paladin", "hunter", "priest", "mage", "death_knight"
         ),
         "dark_iron_dwarf": (
-            "warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage", "warlock", "monk"
+            "warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage", "warlock", "monk", "death_knight"
         ),
         "kul_tiran": (
-            "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk", "druid"
+            "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk", "druid", "death_knight"
         )
     },
     "horde": {
@@ -434,7 +434,7 @@ __races = {
             "death_knight"
         ),
         "pandaren": (
-            "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk"
+            "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk", "death_knight"
         ),
         "tauren": (
             "warrior", "paladin", "hunter", "priest", "shaman", "monk", "druid",
@@ -449,16 +449,16 @@ __races = {
             "death_knight"
         ),
         "nightborne": (
-            "warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk"
+            "warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk", "death_knight"
         ),
         "highmountain_tauren": (
-            "warrior", "hunter", "shaman", "monk", "druid"
+            "warrior", "hunter", "shaman", "monk", "druid", "death_knight"
         ),
         "maghar_orc": (
-            "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk"
+            "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk", "death_knight"
         ),
         "zandalari_troll": (
-            "warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage", "monk", "druid"
+            "warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage", "monk", "druid", "death_knight"
         )
     }
 }
