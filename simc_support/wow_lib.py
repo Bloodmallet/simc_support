@@ -1,12 +1,10 @@
-# -*- coding: utf-8 -*-
-# Utility file for class specialisations
-# Contains wow classes, specs, dps talent rows,
-## races, trinkets
+"""File contains an interface to get wow data.
+"""
 
 import json
 
 from .game_data import Source
-from .game_data.ItemLevel import *
+from .game_data.ItemLevel import *     # pylint: disable=unused-wildcard-import
 from .game_data.Trinket import Trinket
 from .game_data.Trinket import trinket_list as __trinket_list
 from .game_data.AzeriteEssence import essences as __essences
