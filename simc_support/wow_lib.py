@@ -4,12 +4,13 @@
 import json
 
 from .game_data import Source
-from .game_data.ItemLevel import *     # pylint: disable=unused-wildcard-import
-from .game_data.Trinket import Trinket
-from .game_data.Trinket import trinket_list as __trinket_list
 from .game_data.AzeriteEssence import essences as __essences
+from .game_data.AzeriteItem import itemlevel_dict as __azerite_item_max_level
+from .game_data.ItemLevel import *     # pylint: disable=unused-wildcard-import
 from .game_data.Race import races as __races
 from .game_data.Race import translations as __race_translations
+from .game_data.Trinket import Trinket
+from .game_data.Trinket import trinket_list as __trinket_list
 from .game_data.WowClass import class_data as __class_data
 
 
@@ -985,3 +986,18 @@ def get_essence_power_id(essence_id: int) -> int:
         essences = json.load(f, encoding="UTF-8")
 
     return essences[str(essence_id)]["3"]["azeriteEssencePowerId"]
+
+
+def get_azerite_item_max_itemlevel(item_name: str) -> int:
+    """Look up the maximum possible itemlevel for an Azerite Item, or -1.
+
+    Args:
+        item_name (str): full name with spaces and special characters
+
+    Returns:
+        int: e.g. 380
+    """
+    try:
+        return __azerite_item_max_level[item_name]
+    except KeyError:
+        return -1
