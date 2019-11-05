@@ -187,3 +187,8 @@ for item in dazaralor:
 
 for item in darkshore:
     itemlevel_dict[item] = DARKSHORE
+
+pvp_examples = {
+    'Sinister': 415,
+    'Dread': 385,
+}

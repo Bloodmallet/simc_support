@@ -6,6 +6,7 @@ import json
 from .game_data import Source
 from .game_data.AzeriteEssence import essences as __essences
 from .game_data.AzeriteItem import itemlevel_dict as __azerite_item_max_level
+from .game_data.AzeriteItem import pvp_examples as __azerite_item_pvp_itemlevel
 from .game_data.ItemLevel import *     # pylint: disable=unused-wildcard-import
 from .game_data.Race import races as __races
 from .game_data.Race import translations as __race_translations
@@ -1000,4 +1001,7 @@ def get_azerite_item_max_itemlevel(item_name: str) -> int:
     try:
         return __azerite_item_max_level[item_name]
     except KeyError:
+        for key in __azerite_item_pvp_itemlevel:
+            if item_name.startswith(key):
+                return __azerite_item_max_level[key]
         return -1
