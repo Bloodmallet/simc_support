@@ -1003,5 +1003,5 @@ def get_azerite_item_max_itemlevel(item_name: str) -> int:
     except KeyError:
         for key in __azerite_item_pvp_itemlevel:
             if item_name.startswith(key):
-                return __azerite_item_max_level[key]
+                return __azerite_item_pvp_itemlevel[key]
         return -1
