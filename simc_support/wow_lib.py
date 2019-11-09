@@ -1,1702 +1,18 @@
-# -*- coding: utf-8 -*-
-# Utility file for class specialisations
-# Contains wow classes, specs, dps talent rows,
-## races, trinkets
+"""File contains an interface to get wow data.
+"""
 
 import json
 
-# these values are used throughout the code to determine itemlevel "borders" of items
-# usually used as a catch up mechanic, drops usually all items from previous content
-TRADER_TOKEN = 300
-WORLD_QUEST_ITEMLEVEL = 385
-# standard dungeon itemlevel (normal, max level dungeon)
-DUNGEON_ITEMLEVEL = 340
-# highest available itemlevel from m+ dungeons. weekly chest is NOT included here
-M_PLUS_ITEMLEVEL = 430
-# currently highest itemlevel titanforging cap
-TITANFORGE_CAP = 455
-EXPANSION_START_ITEMLEVEL = 280
-TITANFORGING_CUT_OFF = 15
-ULDIR = 385
-DAZARALOR = 415
-CRUCIBLE_OF_THE_STORMS = 425
-ETERNAL_PALACE = 445
-EMISSARY = 415
-
-class Source(object):
-    DUNGEON = "Dungeon"
-    PROFESSION = "Profession"
-    PVP = "PvP"
-    RAID = "Raid"
-    WORLD_BOSS = "World Boss"
-    WORLD_DROP = "World Drop"
-    WORLD_QUEST = "World Quest"
-
-
-class Trinket(object):
-    """docstring for trinket"""
-
-    def __init__(
-        self,
-        name,
-        item_id,
-        min_itemlevel,
-        max_itemlevel,
-        max_itemlevel_drop,
-        agility,
-        intellect,
-        strength,
-        melee,
-        ranged,
-        legendary=False,
-        source=None,
-        active=False
-    ):
-        super(Trinket, self).__init__()
-        self.name: str = str(name)
-        self.item_id: str = str(item_id)
-        self.min_itemlevel: int = int(min_itemlevel)
-        self.max_itemlevel: int = int(max_itemlevel)
-        self.max_itemlevel_drop: int = int(max_itemlevel_drop)
-        self.agility: bool = bool(agility)
-        self.intellect: bool = bool(intellect)
-        self.strength: bool = bool(strength)
-        self.melee: bool = bool(melee)
-        self.ranged: bool = bool(ranged)
-        self.legendary: bool = bool(legendary)
-        self.source: str = str(source)
-        self.active: bool = bool(active)
-
-    def get_name(self):
-        return self.name
-
-    def get_id(self):
-        return self.item_id
-
-    def get_source(self):
-        return self.source
-
-
-__class_data = {
-    "Death_Knight": {
-        "id": 6,
-        "specs": {
-            "Blood": {
-                "talents": "1101011",
-                "raid_role": "tank",
-                "role": "melee",
-                "stat": "str",
-                "id": 250,
-            },
-            "Frost": {
-                "talents": "1101011",
-                "raid_role": "dd",
-                "role": "melee",
-                "stat": "str",
-                "id": 251,
-            },
-            "Unholy": {
-                "talents": "1101011",
-                "raid_role": "dd",
-                "role": "melee",
-                "stat": "str",
-                "id": 252,
-            }
-        }
-    },
-    "Demon_Hunter": {
-        "id": 12,
-        "specs": {
-            "Havoc": {
-                "talents": "1110111",
-                "raid_role": "dd",
-                "role": "melee",
-                "stat": "agi",
-                "id": 577,
-            },
-            "Vengeance": {
-                "talents": "1111111",
-                "raid_role": "tank",
-                "role": "melee",
-                "stat": "agi",
-                "id": 581,
-            }
-        }
-    },
-    "Druid": {
-        "id": 11,
-        "specs": {
-            "Balance": {
-                "talents": "1000111",
-                "raid_role": "dd",
-                "role": "ranged",
-                "stat": "int",
-                "id": 102,
-            },
-            "Feral": {
-                "talents": "1000111",
-                "raid_role": "dd",
-                "role": "melee",
-                "stat": "agi",
-                "id": 103,
-            },
-            "Guardian": {
-                "talents": "1000111",
-                "raid_role": "tank",
-                "role": "melee",
-                "stat": "agi",
-                "id": 104,
-            },
-            "Restoration": {
-                "talents": "0010000",
-                "raid_role": "dd",
-                "role": "melee",
-                "stat": "int",
-                "id": 105,
-            }
-        }
-    },
-    "Hunter": {
-        "id": 3,
-        "specs": {
-            "Beast_Mastery": {
-                "talents": "1101011",
-                "raid_role": "dd",
-                "role": "ranged",
-                "stat": "agi",
-                "id": 253,
-            },
-            "Marksmanship": {
-                "talents": "1101011",
-                "raid_role": "dd",
-                "role": "ranged",
-                "stat": "agi",
-                "id": 254,
-            },
-            "Survival": {
-                "talents": "1101011",
-                "raid_role": "dd",
-                "role": "melee",
-                "stat": "agi",
-                "id": 255,
-            }
-        }
-    },
-    "Mage": {
-        "id": 8,
-        "specs": {
-            "Arcane": {
-                "talents": "1011011",
-                "raid_role": "dd",
-                "role": "ranged",
-                "stat": "int",
-                "id": 62,
-            },
-            "Fire": {
-                "talents": "1011011",
-                "raid_role": "dd",
-                "role": "ranged",
-                "stat": "int",
-                "id": 63,
-            },
-            "Frost": {
-                "talents": "1011011",
-                "raid_role": "dd",
-                "role": "ranged",
-                "stat": "int",
-                "id": 64,
-            }
-        }
-    },
-    "Monk": {
-        "id": 10,
-        "specs": {
-            "Brewmaster": {
-                "talents": "1010011",
-                "raid_role": "tank",
-                "role": "melee",
-                "stat": "agi",
-                "id": 268,
-            },
-            "Windwalker": {
-                "talents": "1010011",
-                "raid_role": "dd",
-                "role": "melee",
-                "stat": "agi",
-                "id": 269,
-            }
-        }
-    },
-    "Paladin": {
-        "id": 2,
-        "specs": {
-            "Protection": {
-                "talents": "1101001",
-                "raid_role": "tank",
-                "role": "melee",
-                "stat": "str",
-                "id": 66,
-            },
-            "Retribution": {
-                "talents": "1101001",
-                "raid_role": "dd",
-                "role": "melee",
-                "stat": "str",
-                "id": 70,
-            }
-        }
-    },
-    "Priest": {
-        "id": 5,
-        "specs": {
-            "Discipline": {
-                "talents": "1010111",
-                "raid_role": "heal",
-                "role": "ranged",
-                "stat": "int",
-                "id": 257,
-            },
-            "Holy": {
-                "talents": "1010111",
-                "raid_role": "heal",
-                "role": "ranged",
-                "stat": "int",
-                "id": 257,
-            },
-            "Shadow": {
-                "talents": "1010111",
-                "raid_role": "dd",
-                "role": "ranged",
-                "stat": "int",
-                "id": 258,
-            }
-        }
-    },
-    "Rogue": {
-        "id": 4,
-        "specs": {
-            "Assassination": {
-                "talents": "1110011",
-                "raid_role": "dd",
-                "role": "melee",
-                "stat": "agi",
-                "id": 259,
-            },
-            "Outlaw": {
-                "talents": "1010011",
-                "raid_role": "dd",
-                "role": "melee",
-                "stat": "agi",
-                "id": 260,
-            },
-            "Subtlety": {
-                "talents": "1110011",
-                "raid_role": "dd",
-                "role": "melee",
-                "stat": "agi",
-                "id": 261,
-            }
-        }
-    },
-    "Shaman": {
-        "id": 7,
-        "specs": {
-            "Elemental": {
-                "talents": "1101011",
-                "raid_role": "dd",
-                "role": "ranged",
-                "stat": "int",
-                "id": 262,
-            },
-            "Enhancement": {
-                "talents": "1101011",
-                "raid_role": "dd",
-                "role": "melee",
-                "stat": "agi",
-                "id": 263,
-            },
-            "Restoration": {
-                "talents": "0100000",
-                "raid_role": "heal",
-                "role": "ranged",
-                "stat": "int",
-                "id": 264,
-            }
-        }
-    },
-    "Warlock": {
-        "id": 9,
-        "specs": {
-            "Affliction": {
-                "talents": "1101011",
-                "raid_role": "dd",
-                "role": "ranged",
-                "stat": "int",
-                "id": 265,
-            },
-            "Demonology": {
-                "talents": "1101011",
-                "raid_role": "dd",
-                "role": "ranged",
-                "stat": "int",
-                "id": 266,
-            },
-            "Destruction": {
-                "talents": "1101011",
-                "raid_role": "dd",
-                "role": "ranged",
-                "stat": "int",
-                "id": 267,
-            }
-        }
-    },
-    "Warrior": {
-        "id": 1,
-        "specs": {
-            "Arms": {
-                "talents": "1010111",
-                "raid_role": "dd",
-                "role": "melee",
-                "stat": "str",
-                "id": 71,
-            },
-            "Fury": {
-                "talents": "1010111",
-                "raid_role": "dd",
-                "role": "melee",
-                "stat": "str",
-                "id": 72,
-            },
-            "Protection": {
-                "talents": "1010111",
-                "raid_role": "tank",
-                "role": "melee",
-                "stat": "str",
-                "id": 73,
-            }
-        }
-    }
-}
-
-__races = {
-    "alliance": {
-        "draenei": (
-            "warrior", "paladin", "hunter", "priest", "shaman", "mage", "monk",
-            "death_knight"
-        ),
-        "dwarf": (
-            "warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage",
-            "warlock", "monk", "death_knight"
-        ),
-        "gnome": (
-            "warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk",
-            "death_knight"
-        ),
-        "human": (
-            "warrior", "paladin", "hunter", "rogue", "priest", "mage", "warlock",
-            "monk", "death_knight"
-        ),
-        "night_elf": (
-            "warrior", "hunter", "rogue", "priest", "mage", "monk", "druid",
-            "death_knight", "demon_hunter"
-        ),
-        "pandaren": (
-            "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk", "death_knight"
-        ),
-        "worgen": (
-            "warrior", "hunter", "rogue", "priest", "mage", "warlock", "druid",
-            "death_knight"
-        ),
-        "void_elf": (
-            "warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk", "death_knight"
-        ),
-        "lightforged_draenei": (
-            "warrior", "paladin", "hunter", "priest", "mage", "death_knight"
-        ),
-        "dark_iron_dwarf": (
-            "warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage", "warlock", "monk", "death_knight"
-        ),
-        "kul_tiran": (
-            "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk", "druid", "death_knight"
-        )
-    },
-    "horde": {
-        "blood_elf": (
-            "warrior", "paladin", "hunter", "rogue", "priest", "mage", "warlock",
-            "monk", "death_knight", "demon_hunter"
-        ),
-        "goblin": (
-            "warrior", "hunter", "rogue", "priest", "shaman", "mage", "warlock",
-            "death_knight"
-        ),
-        "orc": (
-            "warrior", "hunter", "rogue", "shaman", "mage", "warlock", "monk",
-            "death_knight"
-        ),
-        "pandaren": (
-            "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk", "death_knight"
-        ),
-        "tauren": (
-            "warrior", "paladin", "hunter", "priest", "shaman", "monk", "druid",
-            "death_knight"
-        ),
-        "troll": (
-            "warrior", "hunter", "rogue", "priest", "shaman", "mage", "warlock",
-            "monk", "druid", "death_knight"
-        ),
-        "undead": (
-            "warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk",
-            "death_knight"
-        ),
-        "nightborne": (
-            "warrior", "hunter", "rogue", "priest", "mage", "warlock", "monk", "death_knight"
-        ),
-        "highmountain_tauren": (
-            "warrior", "hunter", "shaman", "monk", "druid", "death_knight"
-        ),
-        "maghar_orc": (
-            "warrior", "hunter", "rogue", "priest", "shaman", "mage", "monk", "death_knight"
-        ),
-        "zandalari_troll": (
-            "warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage", "monk", "druid", "death_knight"
-        )
-    }
-}
-
-__race_translations = {
-    "draenei": {
-        'en_US': 'Draenei',
-        'it_IT': 'Draenei',
-        'de_DE': 'Draenei',
-        'fr_FR': 'Draeneï',
-        'ru_RU': 'Дреней',
-        'es_ES': 'Draenei',
-        'ko_KR': '드레나이',
-        'cn_CN': '德莱尼'
-    },
-    "dwarf": {
-        'en_US': 'Dwarf',
-        'it_IT': 'Nano',
-        'de_DE': 'Zwerg',
-        'fr_FR': 'Nain',
-        'ru_RU': 'Дворф',
-        'es_ES': 'Enano',
-        'ko_KR': '드워프',
-        'cn_CN': '矮人'
-    },
-    "gnome": {
-        'en_US': 'Gnome',
-        'it_IT': 'Gnomo',
-        'de_DE': 'Gnom',
-        'fr_FR': 'Gnome',
-        'ru_RU': 'Гном',
-        'es_ES': 'Gnomo',
-        'ko_KR': '노움',
-        'cn_CN': '侏儒'
-    },
-    "human": {
-        'en_US': 'Human',
-        'it_IT': 'Umano',
-        'de_DE': 'Mensch',
-        'fr_FR': 'Humain',
-        'ru_RU': 'Человек',
-        'es_ES': 'Humano',
-        'ko_KR': '인간',
-        'cn_CN': '人类'
-    },
-    "night_elf": {
-        'en_US': 'Night Elf',
-        'it_IT': 'Elfo della Notte',
-        'de_DE': 'Nachtelf',
-        'fr_FR': 'Elfe de la nuit',
-        'ru_RU': 'Ночной эльф',
-        'es_ES': 'Elfo de la noche',
-        'ko_KR': '나이트 엘프',
-        'cn_CN': '暗夜精灵'
-    },
-    "worgen": {
-        'en_US': 'Worgen',
-        'it_IT': 'Worgen',
-        'de_DE': 'Worgen',
-        'fr_FR': 'Worgen',
-        'ru_RU': 'Ворген',
-        'es_ES': 'Huargen',
-        'ko_KR': '늑대인간',
-        'cn_CN': '狼人'
-    },
-    "void_elf": {
-        'en_US': 'Void Elf',
-        'it_IT': 'Elfo del Vuoto',
-        'de_DE': 'Leerenelf',
-        'fr_FR': 'Elfe du Vide',
-        'ru_RU': 'Эльф Бездны',
-        'es_ES': 'Elfo del Vacío',
-        'ko_KR': '공허 엘프',
-        'cn_CN': '虚空精灵'
-    },
-    "lightforged_draenei": {
-        'en_US': 'Lightforged Draenei',
-        'it_IT': 'Draenei Forgialuce',
-        'de_DE': 'Lichtgeschmiedeter Draenei',
-        'fr_FR': 'Draeneï sancteforge',
-        'ru_RU': 'Озаренный дреней',
-        'es_ES': 'Draenei forjado por la Luz',
-        'ko_KR': '빛벼림 드레나이',
-        'cn_CN': '光铸德莱尼'
-    },
-    "dark_iron_dwarf": {
-        'en_US': 'Dark Iron Dwarf',
-        'it_IT': 'Nano Ferroscuro',
-        'de_DE': 'Dunkeleisenzwerg',
-        'fr_FR': 'Nain sombrefer',
-        'ru_RU': 'Дворф из клана Черного Железа',
-        'es_ES': 'Enano Hierro Negro',
-        'ko_KR': '검은무쇠 드워프',
-        'cn_CN': '黑铁矮人'
-    },
-    "blood_elf": {
-        'en_US': 'Blood Elf',
-        'it_IT': 'Elfo del Sangue',
-        'de_DE': 'Blutelf',
-        'fr_FR': 'Elfe de sang',
-        'ru_RU': 'Эльф крови',
-        'es_ES': 'Elfo de sangre',
-        'ko_KR': '블러드 엘프',
-        'cn_CN': '血精灵'
-    },
-    "goblin": {
-        'en_US': 'Goblin',
-        'it_IT': 'Goblin',
-        'de_DE': 'Goblin',
-        'fr_FR': 'Gobelin',
-        'ru_RU': 'Гоблин',
-        'es_ES': 'Goblin',
-        'ko_KR': '고블린',
-        'cn_CN': '地精'
-    },
-    "orc": {
-        'en_US': 'Orc',
-        'it_IT': 'Orco',
-        'de_DE': 'Orc',
-        'fr_FR': 'Orc',
-        'ru_RU': 'Орк',
-        'es_ES': 'Orco',
-        'ko_KR': '오크',
-        'cn_CN': '兽人'
-    },
-    "pandaren": {
-        'en_US': 'Pandaren',
-        'it_IT': 'Pandaren',
-        'de_DE': 'Pandaren',
-        'fr_FR': 'Pandaren',
-        'ru_RU': 'Пандарен',
-        'es_ES': 'Pandaren',
-        'ko_KR': '판다렌',
-        'cn_CN': '熊猫人'
-    },
-    "tauren": {
-        'en_US': 'Tauren',
-        'it_IT': 'Tauren',
-        'de_DE': 'Tauren',
-        'fr_FR': 'Tauren',
-        'ru_RU': 'Таурен',
-        'es_ES': 'Tauren',
-        'ko_KR': '타우렌',
-        'cn_CN': '牛头人'
-    },
-    "troll": {
-        'en_US': 'Troll',
-        'it_IT': 'Troll',
-        'de_DE': 'Troll',
-        'fr_FR': 'Troll',
-        'ru_RU': 'Тролль',
-        'es_ES': 'Trol',
-        'ko_KR': '트롤',
-        'cn_CN': '巨魔'
-    },
-    "undead": {
-        'en_US': 'Undead',
-        'it_IT': 'Non Morto',
-        'de_DE': 'Untoter',
-        'fr_FR': 'Mort-vivant',
-        'ru_RU': 'Нежить',
-        'es_ES': 'No-muerto',
-        'ko_KR': '언데드',
-        'cn_CN': '亡灵'
-    },
-    "nightborne": {
-        'en_US': 'Nightborne',
-        'it_IT': 'Nobile Oscuro',
-        'de_DE': 'Nachtgeborener',
-        'fr_FR': 'Sacrenuit',
-        'ru_RU': 'Ночнорожденный',
-        'es_ES': 'Nocheterna',
-        'ko_KR': '나이트본',
-        'cn_CN': '夜之子'
-    },
-    "highmountain_tauren": {
-        'en_US': 'Highmountain Tauren',
-        'it_IT': 'Tauren di Alto Monte',
-        'de_DE': 'Hochbergtauren',
-        'fr_FR': 'Tauren de Haut-Roc',
-        'ru_RU': 'Таурен Крутогорья',
-        'es_ES': 'Tauren Monte Alto',
-        'ko_KR': '높은산 타우렌',
-        'cn_CN': '至高岭牛头人'
-    },
-    "maghar_orc": {
-        'en_US': "Mag'har Orc",
-        'it_IT': "Orco Mag'har",
-        'de_DE': "Mag'har",
-        'fr_FR': 'Orc mag’har',
-        'ru_RU': "Маг'хар",
-        'es_ES': "Orco Mag'har",
-        'ko_KR': '마그하르 오크',
-        'cn_CN': '玛格汉兽人'
-    }
-}
-
-# bfa data
-__trinket_list = [
-    # dungeon trinkets
-    Trinket( # atal'dazar
-        "My'das Talisman", "158319", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, True, False, False, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # atal'dazar
-        "Rezan's Gleaming Eye", "158712", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, False, False, True, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # atal'dazar
-        "Vessel of Skittering Shadows", "159610", DUNGEON_ITEMLEVEL,
-        M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF, TRADER_TOKEN, False, True, False, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # freehold
-        "Harlan's Loaded Dice", "155881", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, True, False, False, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # Kings' Rest
-        "Lustrous Golden Plumage", "159617", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, True, False, False, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # Shrine of the Storm
-        "Briny Barnacle", "159619", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, False, False, True, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # Shrine of the Storm
-        "Galecaller's Boon", "159614", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, True, False, False, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # Shrine of the Storm
-        "Conch of Dark Whispers", "159620", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, False, True, False, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # Siege of Boralus
-        "Dead-Eye Spyglass", "159623", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, True, False, False, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # Siege of Boralus
-        "Hadal's Nautilus", "159622", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, False, True, False, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # Temple of Sethraliss
-        "Tiny Electromental in a Jar", "158374", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, True, False, False, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # Temple of Sethraliss
-        "Merektha's Fang", "158367", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, False, False, True, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # The Motherlode
-        "Razdunk's Big Red Button", "159611", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, False, False, True, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # The Motherlode
-        "Azerokk's Resonating Heart", "159612", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, True, False, False, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # The Underrot
-        "Lingering Sporepods", "159626", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, True, False, True, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # The Underrot
-        "Rotcrusted Voodoo Doll", "159624", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, False, True, False, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # The Underrot
-        "Vial of Animated Blood", "159625", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, False, False, True, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # Tol Dagor
-        "Jes' Howler", "159627", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF, TRADER_TOKEN,
-        False, False, True, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # Tol Dagor
-        "Ignition Mage's Fuse", "159615", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, False, True, False, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # Waycrest Manor
-        "Lady Waycrest's Music Box", "159631", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, False, True, False, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # Waycrest Manor
-        "Balefire Branch", "159630", DUNGEON_ITEMLEVEL, M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, False, True, False, False, False, source=Source.DUNGEON, active=True
-    ),
-    # Trinket( # not obtainable
-    #     "Cursed Captain's Charm", "161115", 290, TITANFORGE_CAP,
-    #     TRADER_TOKEN, True, True, True, False, False, active=False
-    # ),
-    Trinket( # world boss
-        "Azurethos' Singed Plumage", "161377", 355, 355+TITANFORGING_CUT_OFF, TRADER_TOKEN,
-        False, True, False, False, False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket( # world boss
-        "Drust-Runed Icicle", "161380", 355, 355+TITANFORGING_CUT_OFF, TRADER_TOKEN, False,
-        True, False, False, False, source=Source.WORLD_BOSS, active=False
-    ),
-    # Trinket( # ???
-    #     "Dunewalker's Survival Kit", "161418", 340, TITANFORGE_CAP, TRADER_TOKEN,
-    #     True, False, False, False, False, active=True
-    # ),
-    Trinket( # world boss
-        "Galecaller's Beak", "161379", 355, 355+TITANFORGING_CUT_OFF, TRADER_TOKEN, False,
-        False, True, False, False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket( # world boss
-        "Kraulok's Claw", "161419", 355, 355+TITANFORGING_CUT_OFF, TRADER_TOKEN, False,
-        False, True, False, False, source=Source.WORLD_BOSS, active=False
-    ),
-    Trinket( # world boss
-        "Permafrost-Encrusted Heart", "161381", 355, 355+TITANFORGING_CUT_OFF, TRADER_TOKEN,
-        True, False, False, False, False, source=Source.WORLD_BOSS, active=False
-    ),
-    Trinket( # world boss
-        "Plume of the Seaborne Avian", "161378", 355, 355+TITANFORGING_CUT_OFF, TRADER_TOKEN,
-        True, False, False, False, False, source=Source.WORLD_BOSS, active=False
-    ),
-    Trinket( # world boss
-        "Prism of Dark Intensity", "161376", 355, 355+TITANFORGING_CUT_OFF, TRADER_TOKEN,
-        False, False, True, False, False, source=Source.WORLD_BOSS, active=False
-    ),
-    Trinket( # world boss
-        "Spiritbound Voodoo Burl", "161412", 355, 355+TITANFORGING_CUT_OFF, TRADER_TOKEN, True,
-        False, False, False, False, source=Source.WORLD_BOSS, active=False
-    ),
-    Trinket( # world boss
-        "T'zane's Barkspines", "161411", 355, 355+TITANFORGING_CUT_OFF, TRADER_TOKEN, False,
-        True, False, False, False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket( # inscription
-        "Darkmoon Deck: Squalls", "159126", 355, 355,
-        355, False, True, False, False, False, source=Source.PROFESSION, active=False
-    ),
-    Trinket( # inscription
-        "Darkmoon Deck: Fathoms", "159125", 355, 355,
-        355, True, False, True, False, False, source=Source.PROFESSION, active=False
-    ),
-    Trinket( # alchemy
-        "Surging Alchemist Stone", "152632", 300, 300,
-        300, True, True, True, False, False, source=Source.PROFESSION, active=False
-    ),
-    Trinket( # world quest
-        "Plunderbeard's Flask", "158164", WORLD_QUEST_ITEMLEVEL, WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, True, True, True, False, False, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket( # Uldir
-        "Frenetic Corpuscle", "160648", 340, ULDIR+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, True, False, False, False, False, source=Source.RAID, active=False
-    ),
-    Trinket( # Uldir
-        "Construct Overcharger", "160652", 340, ULDIR+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, True, False, False, False, False, source=Source.RAID, active=False
-    ),
-    Trinket(  # Uldir
-        "Vigilant's Bloodshaper", "160651", 340, ULDIR+TITANFORGING_CUT_OFF,
-        TRADER_TOKEN, False, True, False, False, False, source=Source.RAID, active=False
-    ),
-    Trinket( # Tol Dagor
-        name="Kul Tiran Cannonball Runner", item_id="159628", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.DUNGEON, active=False
-    ),
-    Trinket(  # Uldir
-        name="Vanquished Tendril of G'huun", item_id="160654", min_itemlevel=340, max_itemlevel=ULDIR+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.RAID, active=False
-    ),
-    Trinket(  # world drop
-        name="Landoi's Scrutiny", item_id="163935", min_itemlevel=350, max_itemlevel=350+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_DROP, active=False
-    ),
-    Trinket(  # world drop
-        name="'Bygone Bee' Almanac", item_id="163936", min_itemlevel=350, max_itemlevel=350+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.WORLD_DROP, active=True
-    ),
-    Trinket(  # world drop
-        name="Leyshock's Grand Compilation", item_id="163937", min_itemlevel=350, max_itemlevel=350+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.WORLD_DROP, active=False
-    ),
-    Trinket( # wq
-        name="Kaja-fied Banana", item_id="161125", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # uldir
-        name="Syringe of Bloodborne Infirmity", item_id="160655", min_itemlevel=340, max_itemlevel=ULDIR+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.RAID, active=False
-    ),
-    Trinket(  # uldir
-        name="Disc of Systematic Regression", item_id="160650", min_itemlevel=340, max_itemlevel=ULDIR+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.RAID, active=False
-    ),
-    Trinket(  # uldir
-        name="Twitching Tentacle of Xalzaix", item_id="160656", min_itemlevel=340, max_itemlevel=ULDIR+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.RAID, active=False
-    ),
-    Trinket(  # alchemy
-        name="Endless Tincture of Fractional Power", item_id="152636", min_itemlevel=300, max_itemlevel=300,
-        max_itemlevel_drop=300, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=True
-    ),
-    Trinket(  # stormsong valley
-        name="Galewind Chimes", item_id="155568", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # wq
-        name="Gilded Loa Figurine", item_id="158153", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # wq
-        name="Emblem of Zandalar", item_id="158154", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # wq
-        name="Dinobone Charm", item_id="158155", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # wq
-        name="Pearl Diver's Compass", item_id="158162", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket(  # wq
-        name="First Mate's Spyglass", item_id="158163", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket(  # stormsong valley
-        name="Whirlwing's Plumage", item_id="158215", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket(  # stormsong valley
-        name="Living Oil Cannister", item_id="158216", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
-    ),
-    # Trinket(  # stormsong valley - tank
-    #     name="Dadalea's Wing", item_id="158218", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
-    #     max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, active=False
-    # ),
-    Trinket(  # stormsong valley
-        name="Vial of Storms", item_id="158224", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket(  # stormsong valley
-        name="Doom Shroom", item_id="158555", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # waycrest manor
-        name="Gore-Crusted Butcher's Block", item_id="159616", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.DUNGEON, active=False
-    ),
-    Trinket(  # stormsong valley
-        name="Snowpelt Mangler", item_id="160263", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # nazmir
-        name="Incessantly Ticking Clock", item_id="161113", min_itemlevel=325, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # vol'dun
-        name="Ravasaur Skull Bijou", item_id="161119", min_itemlevel=325, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # nazmir
-        name="Crawg Gnawed Femur", item_id="163703", min_itemlevel=325, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # airdrop
-        name="Dread Gladiator's Badge", item_id="161902", min_itemlevel=325, max_itemlevel=M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="PvP", active=True
-    ),
-    Trinket(  # warfront world boss
-        name="Lion's Grace", item_id="161472", min_itemlevel=370, max_itemlevel=370+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.WORLD_BOSS, active=False
-    ),
-    Trinket(  # warfront world boss
-        name="Lion's Guile", item_id="161473", min_itemlevel=370, max_itemlevel=370+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket(  # warfront world boss
-        name="Lion's Strength", item_id="161474", min_itemlevel=370, max_itemlevel=370+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket(  # warfront world boss
-        name="Doom's Fury", item_id="161463", min_itemlevel=370, max_itemlevel=370+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket(  # warfront world boss
-        name="Doom's Hatred", item_id="161461", min_itemlevel=370, max_itemlevel=370+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.WORLD_BOSS, active=False
-    ),
-    Trinket(  # warfront world boss
-        name="Doom's Wake", item_id="161462", min_itemlevel=370, max_itemlevel=370+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket(  # pvp
-        name="Dread Gladiator's Insignia", item_id="161676", min_itemlevel=280, max_itemlevel=M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="PvP", active=False
-    ),
-    Trinket(  # pvp
-        name="Dread Gladiator's Medallion", item_id="161674", min_itemlevel=280, max_itemlevel=M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="PvP", active=True
-    ),
-    Trinket(  # wq
-        name="Berserker's Juju", item_id="161117", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=TRADER_TOKEN, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket(  # profession alchemy
-        name="Sanguinated Alchemist Stone", item_id="166974", min_itemlevel=355, max_itemlevel=355,
-        max_itemlevel_drop=355, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=False
-    ),
-    Trinket(  # profession alchemy
-        name="Tidal Alchemist Stone", item_id="165926", min_itemlevel=385, max_itemlevel=385,
-        max_itemlevel_drop=385, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=False
-    ),
-    Trinket(  # profession alchemy
-        name="Spirited Alchemist Stone", item_id="165927", min_itemlevel=400, max_itemlevel=400,
-        max_itemlevel_drop=385, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=False
-    ),
-    Trinket(  # profession alchemy
-        name="Eternal Alchemist Stone", item_id="165928", min_itemlevel=415, max_itemlevel=415,
-        max_itemlevel_drop=415, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=False
-    ),
-    Trinket(  # profession alchemy
-        name="Crushing Alchemist Stone", item_id="168675", min_itemlevel=425, max_itemlevel=430,
-        max_itemlevel_drop=425, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=False
-    ),
-    Trinket(  # World Boss Dark Shore
-        name="Ancient Knot of Wisdom", item_id="161417", min_itemlevel=355, max_itemlevel=355+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=355, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket(  # World Boss Dark Shore
-        name="Forest Lord's Razorleaf", item_id="166794", min_itemlevel=355, max_itemlevel=355+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=355, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_BOSS, active=False
-    ),
-    Trinket(  # World Boss Dark Shore
-        name="Knot of Ancient Fury", item_id="161413", min_itemlevel=355, max_itemlevel=355+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=355, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket(  # Emissary
-        name="Razzashi Tooth Medallion", item_id="165667", min_itemlevel=EMISSARY, max_itemlevel=EMISSARY+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=EMISSARY, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # Emissary
-        name="Moonstone of Zin-Azshari", item_id="165666", min_itemlevel=EMISSARY, max_itemlevel=EMISSARY+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=EMISSARY, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # Emissary
-        name="Ancient Tuskarr Sea Charm", item_id="165661", min_itemlevel=EMISSARY, max_itemlevel=EMISSARY+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=EMISSARY, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # Emissary
-        name="Sea Giant's Tidestone", item_id="165664", min_itemlevel=EMISSARY, max_itemlevel=EMISSARY+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=EMISSARY, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket(  # Emissary
-        name="Kezan Stamped Bijou", item_id="165662", min_itemlevel=EMISSARY, max_itemlevel=EMISSARY+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=EMISSARY, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket(  # Emissary
-        name="Chargestone of the Thunder King's Court", item_id="165660", min_itemlevel=EMISSARY, max_itemlevel=EMISSARY+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=EMISSARY, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # Emissary
-        name="Ritual Feather of Unng Ak", item_id="165665", min_itemlevel=EMISSARY, max_itemlevel=EMISSARY+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=EMISSARY, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket(  # Dazar'Alor
-        name="Crest of Pa'ku", item_id="166418", min_itemlevel=370, max_itemlevel=DAZARALOR+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=DAZARALOR, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.RAID, active=False
-    ),
-    Trinket(  # Dazar'Alor
-        name="Everchill Anchor", item_id="165570", min_itemlevel=370, max_itemlevel=DAZARALOR+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=DAZARALOR, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.RAID, active=False
-    ),
-    Trinket(  # Dazar'Alor
-        name="Grong's Primal Rage", item_id="165574", min_itemlevel=370, max_itemlevel=DAZARALOR+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=DAZARALOR, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.RAID, active=True
-    ),
-    Trinket(  # Dazar'Alor
-        name="Incandescent Sliver", item_id="165571", min_itemlevel=370, max_itemlevel=DAZARALOR+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=DAZARALOR, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.RAID, active=False
-    ),
-    Trinket(  # Dazar'Alor
-        name="Invocation of Yu'lon", item_id="165568", min_itemlevel=370, max_itemlevel=DAZARALOR+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=DAZARALOR, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.RAID, active=True
-    ),
-    Trinket(  # Dazar'Alor
-        name="Kimbul's Razor Claw", item_id="165579", min_itemlevel=370, max_itemlevel=DAZARALOR+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=DAZARALOR, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.RAID, active=False
-    ),
-    Trinket(  # Dazar'Alor
-        name="Rampaging Amplitude Gigavolt Engine", item_id="165580", min_itemlevel=370, max_itemlevel=DAZARALOR+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=DAZARALOR, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.RAID, active=True
-    ),
-    Trinket(  # Dazar'Alor
-        name="Tidestorm Codex", item_id="165576", min_itemlevel=370, max_itemlevel=DAZARALOR+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=DAZARALOR, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.RAID, active=True
-    ),
-    Trinket(  # Dazar'Alor
-        name="Variable Intensity Gigavolt Oscillating Reactor", item_id="165572", min_itemlevel=370, max_itemlevel=DAZARALOR+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=DAZARALOR, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.RAID, active=True
-    ),
-    Trinket(  # PvP
-        name="Sinister Gladiator's Maledict", item_id="165806", min_itemlevel=370, max_itemlevel=M_PLUS_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=400, agility=True, intellect=True, strength=True, melee=False, ranged=False, source=Source.PVP, active=True
-    ),
-    Trinket(  # Crucible of Storms
-        name="Lurker's Insidious Gift", item_id="167866", min_itemlevel=380, max_itemlevel=CRUCIBLE_OF_THE_STORMS+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=CRUCIBLE_OF_THE_STORMS, agility=True, intellect=False, strength=True, melee=False, ranged=False, source=Source.RAID, active=True
-    ),
-    Trinket(  # Crucible of Storms
-        name="Harbinger's Inscrutable Will", item_id="167867", min_itemlevel=380, max_itemlevel=CRUCIBLE_OF_THE_STORMS+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=CRUCIBLE_OF_THE_STORMS, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.RAID, active=False
-    ),
-    Trinket(  # Profession
-        name="Highborne Compendium of Sundering",
-        item_id="169321",
-        min_itemlevel=400,
-        max_itemlevel=400,
-        max_itemlevel_drop=400,
-        agility=True,
-        intellect=False,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.PROFESSION,
-        active=False
-    ),
-    Trinket(  # Profession
-        name="Highborne Compendium of Storms",
-        item_id="169328",
-        min_itemlevel=400,
-        max_itemlevel=400,
-        max_itemlevel_drop=400,
-        agility=False,
-        intellect=True,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.PROFESSION,
-        active=False
-    ),
-    Trinket(  # World Boss
-        name="Enthraller's Bindstone",
-        item_id="169317",
-        min_itemlevel=415,
-        max_itemlevel=415+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=415,
-        agility=True,
-        intellect=True,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.WORLD_BOSS,
-        active=False
-    ),
-    Trinket(  # World Quest
-        name="Oxidized Refuse Remover",
-        item_id="170273",
-        min_itemlevel=390,
-        max_itemlevel=420+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=420,
-        agility=True,
-        intellect=True,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.WORLD_QUEST,
-        active=False
-    ),
-    Trinket(  # Eternal Palace
-        name="Aquipotent Nautilus",
-        item_id="169305",
-        min_itemlevel=400,
-        max_itemlevel=ETERNAL_PALACE+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=ETERNAL_PALACE,
-        agility=False,
-        intellect=True,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=True
-    ),
-    Trinket(  # Eternal Palace
-        name="Azshara's Font of Power",
-        item_id="169314",
-        min_itemlevel=400,
-        max_itemlevel=ETERNAL_PALACE+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=ETERNAL_PALACE,
-        agility=True,
-        intellect=True,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=True
-    ),
-    Trinket(  # Eternal Palace
-        name="Leviathan's Lure",
-        item_id="169304",
-        min_itemlevel=400,
-        max_itemlevel=ETERNAL_PALACE+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=ETERNAL_PALACE,
-        agility=False,
-        intellect=True,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=False
-    ),
-    Trinket(  # Eternal Palace
-        name="Shiver Venom Relic",
-        item_id="168905",
-        min_itemlevel=400,
-        max_itemlevel=ETERNAL_PALACE+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=ETERNAL_PALACE,
-        agility=False,
-        intellect=True,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=True
-    ),
-    Trinket(  # Eternal Palace
-        name="Za'qul's Portal Key",
-        item_id="169306",
-        min_itemlevel=400,
-        max_itemlevel=ETERNAL_PALACE+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=ETERNAL_PALACE,
-        agility=False,
-        intellect=True,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=False
-    ),
-    Trinket(  # Eternal Palace
-        name="Ashvane's Razor Coral",
-        item_id="169311",
-        min_itemlevel=400,
-        max_itemlevel=ETERNAL_PALACE+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=ETERNAL_PALACE,
-        agility=True,
-        intellect=False,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=True
-    ),
-    Trinket(  # Eternal Palace
-        name="Dribbling Inkpod",
-        item_id="169319",
-        min_itemlevel=400,
-        max_itemlevel=ETERNAL_PALACE+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=ETERNAL_PALACE,
-        agility=True,
-        intellect=False,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=False
-    ),
-    Trinket(  # Eternal Palace
-        name="Phial of the Arcane Tempest",
-        item_id="169313",
-        min_itemlevel=400,
-        max_itemlevel=ETERNAL_PALACE+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=ETERNAL_PALACE,
-        agility=True,
-        intellect=False,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=False
-    ),
-    Trinket(  # Eternal Palace
-        name="Vision of Demise",
-        item_id="169307",
-        min_itemlevel=400,
-        max_itemlevel=ETERNAL_PALACE+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=ETERNAL_PALACE,
-        agility=True,
-        intellect=False,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=True
-    ),
-    Trinket(  # Mechagon
-        name="Clockwork Re-Sharpener",
-        item_id="161375",
-        min_itemlevel=415,
-        max_itemlevel=415+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=415,
-        agility=True,
-        intellect=False,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.DUNGEON,
-        active=True
-    ),
-    Trinket(  # World Boss
-        name="Shockbiter's Fang",
-        item_id="169318",
-        min_itemlevel=415,
-        max_itemlevel=415+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=415,
-        agility=True,
-        intellect=True,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.WORLD_BOSS,
-        active=True
-    ),
-    Trinket(  # Craftable
-        name="Galvanic Turbo-Charger",
-        item_id="161416",
-        min_itemlevel=415,
-        max_itemlevel=415,
-        max_itemlevel_drop=415,
-        agility=False,
-        intellect=False,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.PROFESSION,
-        active=False
-    ),
-    Trinket(  # Profession
-        name="Ascended Alchemist Stone",
-        item_id="168676",
-        min_itemlevel=440,
-        max_itemlevel=450,
-        max_itemlevel_drop=450,
-        agility=True,
-        intellect=True,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.PROFESSION,
-        active=False
-    ),
-    Trinket(  # Profession
-        name="Ruthlessness Protocol Augment",
-        item_id="161374",
-        min_itemlevel=390,
-        max_itemlevel=420+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=420,
-        agility=False,
-        intellect=True,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.PROFESSION,
-        active=False
-    ),
-    Trinket(  # Profession
-        name="Self-Accelerating Drive Shaft",
-        item_id="161414",
-        min_itemlevel=390,
-        max_itemlevel=420+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=420,
-        agility=False,
-        intellect=True,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.PROFESSION,
-        active=False
-    ),
-    Trinket(  # Worldquest
-        name="Trunksy",
-        item_id="155565",
-        min_itemlevel=WORLD_QUEST_ITEMLEVEL,
-        max_itemlevel=WORLD_QUEST_ITEMLEVEL+TITANFORGING_CUT_OFF,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL,
-        agility=True,
-        intellect=True,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.WORLD_QUEST,
-        active=False
-    ),
-    # Trinket(
-    #     name="", item_id="", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
-    #     max_itemlevel_drop=TRADER_TOKEN, agility=False, intellect=False, strength=False, melee=False, ranged=False, active=False
-    # ),
-]
-
-__essences = {
-    # "2": { # done tank
-    #     'name': "Azeroth's Undying Gift",
-    #     'major': {
-    #         'name': "Azeroth's Undying Gift",
-    #         'spell_id': 298081
-    #     },
-    #     'minor':{
-    #         'name': "Hardened Azerite",
-    #         'spell_id': 298083
-    #     },
-    #     'item_name': "Tempered Azerite Formation",
-    #     'item_id': 168537
-    # },
-    # "3": { # done tank
-    #     'name': "Suppressing Pulse",
-    #     'major': {
-    #         'name': "Suppressing Pulse",
-    #         'spell_id': 300010
-    #     },
-    #     'minor':{
-    #         'name': "Sphere of Suppression",
-    #         'spell_id': 300013
-    #     },
-    #     'item_name': "Sphere of Leeched Mobility",
-    #     'item_id': 168580
-    # },
-    "4": { # done
-        'name': "Worldvein Resonance",
-        'major': {
-            'name': "Worldvein Resonance",
-            'spell_id': 299334
-        },
-        'minor':{
-            'name': "Lifeblood",
-            'spell_id': 299333
-        },
-        'item_name': "Fluctuating Worldvein",
-        'item_id': 168617,
-        'raid_roles': [
-            'dd',
-            'heal',
-            'tank'
-        ]
-    },
-    "5": { # done
-        'name': "Essence of the Focusing Iris",
-        'major': {
-            'name': "Focused Azerite Beam",
-            'spell_id': 299338
-        },
-        'minor':{
-            'name': "Focused Energy",
-            'spell_id': 299337
-        },
-        'item_name': "Stabilizing Lens of the Focusing Iris",
-        'item_id': 168622,
-        'raid_roles': [
-            'dd'
-        ]
-    },
-    "6": { # done
-        'name': "Purification Protocol",
-        'major': {
-            'name': "Purifying Blast",
-            'spell_id': 299347
-        },
-        'minor':{
-            'name': "Purification Protocol",
-            'spell_id': 299346
-        },
-        'item_name': "Enhanced Purification Protocols",
-        'item_id': 168860,
-        'raid_roles': [
-            'dd'
-        ]
-    },
-    "7": { # done tank
-        'name': "Anima of Death",
-        'major': {
-            'name': "Anima of Death",
-            'spell_id': 300003
-        },
-        'minor':{
-            'name': "Anima of Life",
-            'spell_id': 300005
-        },
-        'item_name': "Fetish of the Hidden Labyrinths",
-        'item_id': 168559,
-        'raid_roles': [
-            'tank'
-        ]
-    },
-    "12": { # done
-        'name': "The Crucible of Flame",
-        'major': {
-            'name': "Concentrated Flame",
-            'spell_id': 299353
-        },
-        'minor':{
-            'name': "Ancient Flame",
-            'spell_id': 299350
-        },
-        'item_name': "Tempered Scale of the Scarlet Broodmother",
-        'item_id': 168613,
-        'raid_roles': [
-            'dd',
-            'heal',
-            'tank'
-        ]
-    },
-    # "13": { # done tank
-    #     'name': "Empowered Null Barrier",
-    #     'major': {
-    #         'name': "Empowered Null Barrier",
-    #         'spell_id': 300016
-    #     },
-    #     'minor':{
-    #         'name': "Null Barrier",
-    #         'spell_id': 300020
-    #     },
-    #     'item_name': "Null Force Nullifier",
-    #     'item_id': 168568,
-    #     'raid_roles': [
-    #         'tank'
-    #     ]
-    # },
-    "14": { # done
-        'name': "Condensed Life-Force",
-        'major': {
-            'name': "Guardian of Azeroth",
-            'spell_id': 299358
-        },
-        'minor':{
-            'name': "Condensed Life-Force",
-            'spell_id': 299357
-        },
-        'item_name': "Resonating Elemental Heart",
-        'item_id': 168856,
-        'raid_roles': [
-            'dd'
-        ]
-    },
-    "15": { # done
-        'name': "Ripple in Space",
-        'major': {
-            'name': "Ripple in Space",
-            'spell_id': 302983
-        },
-        'minor':{
-            'name': "Reality Shift",
-            'spell_id': 302985
-        },
-        'item_name': "Stalwart Battlefield Memento",
-        'item_id': 168852,
-        'raid_roles': [
-            'dd',
-            'heal',
-            'tank'
-        ]
-    },
-    "17": { # done
-        'name': "The Ever-Rising Tide",
-        'major': {
-            'name': "Overcharge Mana",
-            'spell_id': 299876
-        },
-        'minor':{
-            'name': "The Ever-Rising Tide",
-            'spell_id': 299879
-        },
-        'item_name': "Tome of the Quickening Tides",
-        'item_id': 168930,
-        'raid_roles': [
-            'heal'
-        ]
-    },
-    "18": { # done
-        'name': "Artifice of Time",
-        'major': {
-            'name': "Standstill",
-            'spell_id': 299883
-        },
-        'minor':{
-            'name': "Artifice of Time",
-            'spell_id': 299887
-        },
-        'item_name': "Azerite-Fueled Timequartz",
-        'item_id': 168922,
-        'raid_roles': [
-            'heal'
-        ]
-    },
-    "19": { # done
-        'name': "The Well of Existence",
-        'major': {
-            'name': "Refreshment",
-            'spell_id': 299933
-        },
-        'minor':{
-            'name': "The Well of Existence",
-            'spell_id': 299936
-        },
-        'item_name': "Calibrated Existence Gauge",
-        'item_id': 168934,
-        'raid_roles': [
-            'heal'
-        ]
-    },
-    # "20": { # done
-    #     'name': "Life-Binder's Invocation",
-    #     'major': {
-    #         'name': "Life-Binder's Invocation",
-    #         'spell_id': 299944
-    #     },
-    #     'minor':{
-    #         'name': "Seed of Eonar",
-    #         'spell_id': 299940
-    #     },
-    #     'item_name': "Lingering Seed of Renewal",
-    #     'item_id': 168926,
-    #     'raid_roles': [
-    #         'heal',
-    #     ]
-    # },
-    # "21": { # done
-    #     'name': "Vitality Conduit",
-    #     'major': {
-    #         'name': "Vitality Conduit",
-    #         'spell_id': 299959
-    #     },
-    #     'minor':{
-    #         'name': "Transference",
-    #         'spell_id': 303476
-    #     },
-    #     'item_name': "Grid of Bursting Vitality",
-    #     'item_id': 168943,
-    #     'raid_roles': [
-    #         'heal'
-    #     ]
-    # },
-    "22": { # done
-        'name': "Vision of Perfection",
-        'major': {
-            'name': "Vision of Perfection",
-            'spell_id': 299370
-        },
-        'minor':{
-            'name': "Strive for Perfection",
-            'spell_id': 299369
-        },
-        'item_name': "Perfection-Enhancing Gearbox",
-        'item_id': 168844,
-        'raid_roles': [
-            'dd',
-            'heal',
-            'tank'
-        ]
-    },
-    "23": { # done
-        'name': "Blood of the Enemy",
-        'major': {
-            'name': "Blood of the Enemy",
-            'spell_id': 298277
-        },
-        'minor':{
-            'name': "Blood-Soaked",
-            'spell_id': 298275
-        },
-        'item_name': "Churned Blood of the Conquered",
-        'item_id': 168444,
-        'raid_roles': [
-            'dd'
-        ]
-    },
-    "25": { # done tank
-        'name': "Aegis of the Deep",
-        'major': {
-            'name': "Aegis of the Deep",
-            'spell_id': 299275
-        },
-        'minor':{
-            'name': "Stand Your Ground",
-            'spell_id': 299277
-        },
-        'item_name': "Regenerating Barrier of the Depths",
-        'item_id': 168839,
-        'raid_roles': [
-            'tank'
-        ]
-    },
-    "27": { # done
-        'name': "Memory of Lucid Dreams",
-        'major': {
-            'name': "Memory of Lucid Dreams",
-            'spell_id': 299374
-        },
-        'minor':{
-            'name': "Lucid Dreams",
-            'spell_id': 299373
-        },
-        'item_name': "Pearl of Perspicuous Intentions",
-        'item_id': 168848,
-        'raid_roles': [
-            'dd',
-            'heal',
-            'tank'
-        ]
-    },
-    "28": { # done
-        'name': "The Unbound Force",
-        'major': {
-            'name': "The Unbound Force",
-            'spell_id': 299378
-        },
-        'minor':{
-            'name': "Reckless Force",
-            'spell_id': 299377
-        },
-        'item_name': "Polarized Azerite Slivershards",
-        'item_id': 168865,
-        'raid_roles': [
-            'dd'
-        ]
-    },
-    "32": { # done
-        'name': "Conflict and Strife",
-        'major': {
-            'name': "Conflict",
-            'spell_id': 304121
-        },
-        'minor':{
-            'name': "Strife",
-            'spell_id': 304123
-        },
-        'item_name': "Rib-Bone Choker of Dominance",
-        'item_id': 169900,
-        'raid_roles': [
-            'dd',
-            'heal',
-            'tank'
-        ]
-    }
-}
+from .game_data import Source
+from .game_data.AzeriteEssence import essences as __essences
+from .game_data.AzeriteItem import itemlevel_dict as __azerite_item_max_level
+from .game_data.AzeriteItem import pvp_examples as __azerite_item_pvp_itemlevel
+from .game_data.ItemLevel import *     # pylint: disable=unused-wildcard-import
+from .game_data.Race import races as __races
+from .game_data.Race import translations as __race_translations
+from .game_data.Trinket import Trinket
+from .game_data.Trinket import trinket_list as __trinket_list
+from .game_data.WowClass import class_data as __class_data
 
 
 def is_melee(wow_class, wow_spec):
@@ -1769,8 +85,7 @@ def _compare_trinket_lists():
 
             if not found:
                 missing += 1
-                print(
-                    f"  {item['name']} not found in local list! id: {item['id']}")
+                print(f"  {item['name']} not found in local list! id: {item['id']}")
     if missing:
         print(f"{missing} trinkets are missing.\n")
 
@@ -1783,8 +98,7 @@ def _compare_trinket_lists():
                 found = True
 
         if not found:
-            print(
-                f"  {trinket.get_name()} not found in equippable-items.json! id: {trinket.get_id()}")
+            print(f"  {trinket.get_name()} not found in equippable-items.json! id: {trinket.get_id()}")
 
 
 def get_trinkets_for_spec(wow_class: str, wow_spec: str) -> list:
@@ -1798,40 +112,38 @@ def get_trinkets_for_spec(wow_class: str, wow_spec: str) -> list:
       list[Trinket] -- List of all Trinkets
     """
 
-    agility, intellect, strength, melee, ranged = get_mask_for_spec(
-        wow_class, wow_spec
-    )
+    agility, intellect, strength, melee, ranged = get_mask_for_spec(wow_class, wow_spec)
     return_list = []
     for trinket in __trinket_list:
         if melee and trinket.melee:
             return_list.append((
-                trinket.name, trinket.item_id, trinket.min_itemlevel,
-                trinket.max_itemlevel, trinket.max_itemlevel_drop, trinket.active
+                trinket.name, trinket.item_id, trinket.min_itemlevel, trinket.max_itemlevel,
+                trinket.max_itemlevel_drop, trinket.active
             ))
         elif ranged and trinket.ranged:
             return_list.append((
-                trinket.name, trinket.item_id, trinket.min_itemlevel,
-                trinket.max_itemlevel, trinket.max_itemlevel_drop, trinket.active
+                trinket.name, trinket.item_id, trinket.min_itemlevel, trinket.max_itemlevel,
+                trinket.max_itemlevel_drop, trinket.active
             ))
         elif agility and trinket.agility:
             return_list.append((
-                trinket.name, trinket.item_id, trinket.min_itemlevel,
-                trinket.max_itemlevel, trinket.max_itemlevel_drop, trinket.active
+                trinket.name, trinket.item_id, trinket.min_itemlevel, trinket.max_itemlevel,
+                trinket.max_itemlevel_drop, trinket.active
             ))
         elif intellect and trinket.intellect:
             return_list.append((
-                trinket.name, trinket.item_id, trinket.min_itemlevel,
-                trinket.max_itemlevel, trinket.max_itemlevel_drop, trinket.active
+                trinket.name, trinket.item_id, trinket.min_itemlevel, trinket.max_itemlevel,
+                trinket.max_itemlevel_drop, trinket.active
             ))
         elif strength and trinket.strength:
             return_list.append((
-                trinket.name, trinket.item_id, trinket.min_itemlevel,
-                trinket.max_itemlevel, trinket.max_itemlevel_drop, trinket.active
+                trinket.name, trinket.item_id, trinket.min_itemlevel, trinket.max_itemlevel,
+                trinket.max_itemlevel_drop, trinket.active
             ))
     return return_list
 
 
-def get_race_translation(race:str ) -> dict:
+def get_race_translation(race: str) -> dict:
     """Return the translation dict for a race.
 
     Arguments:
@@ -1845,6 +157,7 @@ def get_race_translation(race:str ) -> dict:
         return __race_translations[race.lower().replace(" ", "_")]
     except Exception:
         return None
+
 
 def get_trinket_list() -> list:
     """Get a full trinket list for the ongoing expansion from equippable-items.json.
@@ -2002,7 +315,6 @@ def get_trait_translation(trait_name: str = "", translation_dict: dict = None) -
         dict -- [description]
     """
 
-
     if translation_dict:
         loaded_translations = translation_dict
     else:
@@ -2064,7 +376,7 @@ def get_trinket_id(trinket_name):
             return trinket.item_id
 
 
-def get_trinket(name: str ="", item_id: str ="") -> Trinket:
+def get_trinket(name: str = "", item_id: str = "") -> Trinket:
     """Return Trinket of matching name or item_id. One must be provided. Else None will be returned.
 
     Keyword Arguments:
@@ -2136,16 +448,12 @@ def get_azerite_items(wow_class: str, wow_spec: str) -> dict:
 
         loaded_items = json.load(f, encoding="UTF-8")
 
-    items: dict = {
-        "head": [],
-        "shoulders": [],
-        "chest": []
-    }
+    items: dict = {"head": [], "shoulders": [], "chest": []}
     item_type = {
         1: "head",
         3: "shoulders",
-        5: "chest",  # ???
-        20: "chest"  # ???
+        5: "chest",     # ???
+        20: "chest"     # ???
     }
 
     for item in loaded_items:
@@ -2166,9 +474,8 @@ def get_azerite_items(wow_class: str, wow_spec: str) -> dict:
         for i in range(len(items[slot])):
             item = items[slot][i]
             try:
-                items[slot][i]["azeriteTraits"] = azerite_traits[str(
-                    items[slot][i]["azeritePowerSetId"])]
-            except Exception:  # as e:
+                items[slot][i]["azeriteTraits"] = azerite_traits[str(items[slot][i]["azeritePowerSetId"])]
+            except Exception:     # as e:
                 # logger.error(e)
                 # logger.error("slot: {}".format(slot))
                 # logger.error("item: {}".format(item))
@@ -2180,7 +487,7 @@ def get_azerite_items(wow_class: str, wow_spec: str) -> dict:
     # create a new itemlist with only items for the wow spec/class
     response: dict = {}
     class_id = get_class_id(wow_class)
-    spec_id = get_spec_id(wow_class, wow_spec)  # unused...for now
+    spec_id = get_spec_id(wow_class, wow_spec)     # unused...for now
 
     for slot in items:
         # create slot in new dict
@@ -2248,7 +555,7 @@ def get_all_trinkets():
     return all_trinkets
 
 
-def get_talent_dict(wow_class: str, wow_spec: str, ptr: bool = False)->dict:
+def get_talent_dict(wow_class: str, wow_spec: str, ptr: bool = False) -> dict:
     """Return the dict of all talents available to this spec. Structur: row -> column -> name, spell_id
 
     Arguments:
@@ -2301,19 +608,17 @@ def __generate_talent_combinations(blueprint, wow_class, wow_spec):
                     for fivth in range(4):
                         for sixth in range(4):
                             for seventh in range(4):
-                                combination = str(first) + str(second) + str(third) + str(
-                                    forth
-                                ) + str(fivth) + str(sixth) + str(seventh)
+                                combination = str(first) + str(second) + str(third) + str(forth) + str(fivth) + str(
+                                    sixth
+                                ) + str(seventh)
                                 add_it = True
 
                                 # check whether the generated talent combination fits the wanted blueprint
                                 for i in range(7):
-                                    if (not (pattern[i] == "-" or pattern[i] == "x")
-                                        ) and not combination[i] == pattern[i]:
+                                    if (not (pattern[i] == "-" or
+                                             pattern[i] == "x")) and not combination[i] == pattern[i]:
                                         add_it = False
-                                    if combination[i] == "0" and (
-                                        pattern[i] == "-" or pattern[i] == "x"
-                                    ):
+                                    if combination[i] == "0" and (pattern[i] == "-" or pattern[i] == "x"):
                                         add_it = False
                                 if add_it:
                                     combinations += [combination]
@@ -2340,16 +645,13 @@ def is_talent_combination(talent_combination):
     if len(talent_combination) == 7:
         for letter in talent_combination:
             if not (
-                letter == "0" or letter == "1" or letter == "2" or letter == "3" or
-                letter == "-" or letter == "x"
+                letter == "0" or letter == "1" or letter == "2" or letter == "3" or letter == "-" or letter == "x"
             ):
                 return False
         return True
     elif len(talent_combination) == 2:
         for letter in talent_combination:
-            if not (
-                letter == "0" or letter == "1" or letter == "2" or letter == "3"
-            ):
+            if not (letter == "0" or letter == "1" or letter == "2" or letter == "3"):
                 return False
         return True
     # Would've been for talent combinations that set certain rows to a value without declaring anything else.
@@ -2383,17 +685,23 @@ def get_talent_combinations(wow_class, wow_spec, user_input=""):
 
     if user_input == "" or user_input == None:
         combinations = __generate_talent_combinations(
-            "xxxxxxx", wow_class, wow_spec
+            "xxxxxxx",
+            wow_class,
+            wow_spec,
         )
 
     elif len(user_input) == 2:
         combinations = __generate_talent_combinations(
-            "xxxxx" + user_input, wow_class, wow_spec
+            "xxxxx" + user_input,
+            wow_class,
+            wow_spec,
         )
 
     elif len(user_input) == 7:
         combinations = __generate_talent_combinations(
-            user_input, wow_class, wow_spec
+            user_input,
+            wow_class,
+            wow_spec,
         )
 
     else:
@@ -2460,8 +768,7 @@ def get_races_for_class(wow_class: str) -> list:
     for faction in __races.keys():
         for race in __races[faction].keys():
             # additionally prevent double races like pandaren
-            if str(wow_class).lower() in __races[faction][race
-                                                          ] and not race in race_list:
+            if str(wow_class).lower() in __races[faction][race] and not race in race_list:
                 race_list.append(race)
     return race_list
 
@@ -2477,7 +784,7 @@ def get_role(wow_class: str, wow_spec: str) -> str:
       str -- role ('ranged'/'melee')
     """
 
-    return __class_data[wow_class.title()]["specs"][wow_spec.title()]["role"] # type: ignore
+    return __class_data[wow_class.title()]["specs"][wow_spec.title()]["role"]     # type: ignore
 
 
 def get_class_id(wow_class: str) -> int:
@@ -2490,7 +797,7 @@ def get_class_id(wow_class: str) -> int:
       int -- wow_class_id
     """
 
-    return __class_data[wow_class.title()]["id"] # type: ignore
+    return __class_data[wow_class.title()]["id"]     # type: ignore
 
 
 def get_spec_id(wow_class: str, wow_spec: str) -> int:
@@ -2504,7 +811,7 @@ def get_spec_id(wow_class: str, wow_spec: str) -> int:
       int -- wow_spec_id
     """
 
-    return __class_data[wow_class.title()]["specs"][wow_spec.title()]["id"] # type: ignore
+    return __class_data[wow_class.title()]["specs"][wow_spec.title()]["id"]     # type: ignore
 
 
 def get_main_stat(wow_class, wow_spec):
@@ -2637,14 +944,12 @@ def is_dps_talent_combination(talent_combination, wow_class):
     """
 
     for i in range(0, 7):
-        if talent_combination[i] == "0" and __class_data[wow_class]["talents"
-                                                                    ][i] == "1":
+        if talent_combination[i] == "0" and __class_data[wow_class]["talents"][i] == "1":
             return False
-        elif not talent_combination[i] == "0" and __class_data[wow_class][
-            "talents"
-        ][i] == "0":
+        elif not talent_combination[i] == "0" and __class_data[wow_class]["talents"][i] == "0":
             return False
     return True
+
 
 def get_essences(wow_class: str, wow_spec: str) -> dict:
     """Returns a dictionary of all available dps essences.
@@ -2662,6 +967,7 @@ def get_essences(wow_class: str, wow_spec: str) -> dict:
             essences[key] = value
 
     return essences
+
 
 def get_essence_power_id(essence_id: int) -> int:
     """Returns powerID of rank 3 of an essence.
@@ -2681,3 +987,21 @@ def get_essence_power_id(essence_id: int) -> int:
         essences = json.load(f, encoding="UTF-8")
 
     return essences[str(essence_id)]["3"]["azeriteEssencePowerId"]
+
+
+def get_azerite_item_max_itemlevel(item_name: str) -> int:
+    """Look up the maximum possible itemlevel for an Azerite Item, or -1.
+
+    Args:
+        item_name (str): full name with spaces and special characters
+
+    Returns:
+        int: e.g. 380
+    """
+    try:
+        return __azerite_item_max_level[item_name]
+    except KeyError:
+        for key in __azerite_item_pvp_itemlevel:
+            if item_name.startswith(key):
+                return __azerite_item_pvp_itemlevel[key]
+        return -1
