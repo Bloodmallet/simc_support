@@ -126,9 +126,6 @@ darkshore = [
     "Garments of the Forest Lord",
 ]
 
-# Sinister: 415?
-# Dread: 385?
-
 itemlevel_dict = {
     "Chestguard of Virulent Mutagens": 385,
     "Chestplate of Apocalyptic Machinations": 385,
@@ -189,6 +186,7 @@ for item in darkshore:
     itemlevel_dict[item] = DARKSHORE
 
 pvp_examples = {
-    'Sinister': 415,
     'Dread': 385,
+    'Notorious': 430,
+    'Sinister': 415,
 }
