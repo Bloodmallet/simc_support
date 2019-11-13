@@ -2,6 +2,7 @@ from .ItemLevel import DAZARALOR
 from .ItemLevel import M_PLUS_ITEMLEVEL
 from .ItemLevel import TITANFORGING_CUT_OFF
 from .ItemLevel import DARKSHORE
+from .ItemLevel import NAZJATAR
 
 dungeon = [
     "Ashvane Warden's Cuirass",
@@ -126,6 +127,21 @@ darkshore = [
     "Garments of the Forest Lord",
 ]
 
+nazjatar = [
+    "Zanj'ir Scaleguard Faceguard",
+    "Zanj'ir Scaleguard Shoulderplates",
+    "Zanj'ir Scaleguard Chestplate",
+    "Azsh'ari Stormsurger Helm",
+    "Azsh'ari Stormsurger Shoulderguards",
+    "Azsh'ari Stormsurger Vest",
+    "Shirakess Headdress",
+    "Shirakess Mantle",
+    "Shirakess Wraps",
+    "Fathomstalker Headcover",
+    "Fathomstalker Shoulderpads",
+    "Fathomstalker Wraps",
+]
+
 itemlevel_dict = {
     "Chestguard of Virulent Mutagens": 385,
     "Chestplate of Apocalyptic Machinations": 385,
@@ -184,6 +200,9 @@ for item in dazaralor:
 
 for item in darkshore:
     itemlevel_dict[item] = DARKSHORE
+
+for item in nazjatar:
+    itemlevel_dict[item] = NAZJATAR
 
 pvp_examples = {
     'Dread': 385,
