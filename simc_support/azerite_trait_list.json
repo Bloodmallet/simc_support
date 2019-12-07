@@ -6561,7 +6561,8 @@
                 ],
                 "trait_id": "575"
             }
-        }
+        },
+        "Restoration": {}
     },
     "Hunter": {
         "Beast_Mastery": {
@@ -22712,7 +22713,7 @@
                 "trait_id": "425"
             },
             "278727": {
-                "description": "Unstable Affliction deals ${$s2*($233490d/$233490t1)} additional damage, and casting Unstable Affliction reduce the cooldown of Summon Darkglare by ${$s1/1000} sec.",
+                "description": "Unstable Affliction deals ${$s2*($233490d/$233490t1)} additional damage, and casting Unstable Affliction reduces the cooldown of Summon Darkglare by ${$s1/1000} sec.",
                 "max_itemlevel": -1,
                 "max_stack": 3,
                 "min_itemlevel": -1,
@@ -27122,6 +27123,19 @@
                     4
                 ],
                 "trait_id": "450"
+            },
+            "278758": {
+                "description": "Auto attacks deal $s2 additional damage and reduce the cooldown of Recklessness by ${$s1/1000}.1 sec.",
+                "max_itemlevel": -1,
+                "max_stack": 3,
+                "min_itemlevel": -1,
+                "name": "Reckless Flurry",
+                "spell_id": "278758",
+                "tiers": [
+                    3,
+                    4
+                ],
+                "trait_id": "438"
             },
             "278760": {
                 "description": "Revenge deals $s2 additional damage and reduces the damage enemies deal to you by ${-$s1/100}.1% for $278999d, stacking up to $278999u times.",

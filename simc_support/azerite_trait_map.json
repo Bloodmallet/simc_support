@@ -4710,7 +4710,7 @@
                 "Affliction"
             ]
         },
-        "description": "Unstable Affliction deals ${$s2*($233490d/$233490t1)} additional damage, and casting Unstable Affliction reduce the cooldown of Summon Darkglare by ${$s1/1000} sec.",
+        "description": "Unstable Affliction deals ${$s2*($233490d/$233490t1)} additional damage, and casting Unstable Affliction reduces the cooldown of Summon Darkglare by ${$s1/1000} sec.",
         "max_itemlevel": -1,
         "max_stack": 3,
         "min_itemlevel": -1,
@@ -4812,7 +4812,8 @@
         "class": {
             "Warrior": [
                 "Arms",
-                "Fury"
+                "Fury",
+                "Protection"
             ]
         },
         "description": "Auto attacks deal $s2 additional damage and reduce the cooldown of Recklessness by ${$s1/1000}.1 sec.",
