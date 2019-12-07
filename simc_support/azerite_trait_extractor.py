@@ -5,7 +5,7 @@
 import json
 import logging
 import subprocess
-import wow_lib
+from . import wow_lib
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -13,9 +13,9 @@ ch = logging.StreamHandler()
 ch.setLevel(logging.INFO)
 logger.addHandler(ch)
 
-
 PTR = False
-AZERITE_TRAIT_MAP = 'azerite_trait_map.json'
+AZERITE_TRAIT_MAP = 'simc_support/azerite_trait_map.json'
+
 
 def update_map(trait_dict):
 
@@ -48,51 +48,33 @@ def update_map(trait_dict):
             for trait_id in trait_dict[wow_class][wow_spec]:
                 if not trait_id in updated_map:
                     updated_map[trait_id] = {
-                        "name":
-                        trait_dict[wow_class][wow_spec][trait_id]["name"],
+                        "name": trait_dict[wow_class][wow_spec][trait_id]["name"],
                         "trait_id": trait_dict[wow_class][wow_spec][trait_id]["trait_id"],
-                        "class":
-                        trait_classes[trait_id],
-                        "description":
-                        trait_dict[wow_class][wow_spec][trait_id]["description"],
-                        "min_itemlevel":
-                        -1,
-                        "max_itemlevel":
-                        -1,
-                        "max_stack":
-                        -1
+                        "class": trait_classes[trait_id],
+                        "description": trait_dict[wow_class][wow_spec][trait_id]["description"],
+                        "min_itemlevel": -1,
+                        "max_itemlevel": -1,
+                        "max_stack": -1
                     }
 
                     newly_created += 1
 
                 else:
                     logger.debug(
-                        "Trait {} (id={}) was already found in MAP. Only name and description will be updated.".
-                        format(
+                        "Trait {} (id={}) was already found in MAP. Only name and description will be updated.".format(
                             trait_dict[wow_class][wow_spec][trait_id]["name"], trait_id
                         )
                     )
-                    updated_map[trait_id]["name"] = trait_dict[wow_class][wow_spec][
-                        trait_id
-                    ]["name"]
-                    updated_map[trait_id]["trait_id"] = trait_dict[wow_class][wow_spec][
-                        trait_id
-                    ]["trait_id"]
-                    updated_map[trait_id]["description"] = trait_dict[wow_class][
-                        wow_spec
-                    ][trait_id]["description"]
+                    updated_map[trait_id]["name"] = trait_dict[wow_class][wow_spec][trait_id]["name"]
+                    updated_map[trait_id]["trait_id"] = trait_dict[wow_class][wow_spec][trait_id]["trait_id"]
+                    updated_map[trait_id]["description"] = trait_dict[wow_class][wow_spec][trait_id]["description"]
                     # add wow_class if class wasn't present before
                     if not wow_class in updated_map[trait_id]["class"]:
                         logger.info(
-                            "Class {} was added to trait {} (id={}) in MAP. If you want to disable a trait, delete only the specs from MAP.".
-                            format(
-                                wow_class, trait_dict[wow_class][wow_spec][trait_id]["name"],
-                                trait_id
-                            )
+                            "Class {} was added to trait {} (id={}) in MAP. If you want to disable a trait, delete only the specs from MAP."
+                            .format(wow_class, trait_dict[wow_class][wow_spec][trait_id]["name"], trait_id)
                         )
-                        updated_map[trait_id]["class"][wow_class] = trait_classes[
-                            trait_id
-                        ][wow_class]
+                        updated_map[trait_id]["class"][wow_class] = trait_classes[trait_id][wow_class]
 
                     # delete old class if class is no longer in the list of the trait
                     to_delete_list = []
@@ -113,9 +95,7 @@ def update_map(trait_dict):
     if newly_created:
         logger.info("Added {} entries to MAP.".format(newly_created))
     else:
-        logger.info(
-            "All traits were already known. No new traits were added to MAP."
-        )
+        logger.info("All traits were already known. No new traits were added to MAP.")
 
 
 def get_tiers(azerite_id: int, power_sets: dict):
@@ -142,6 +122,7 @@ def get_tiers(azerite_id: int, power_sets: dict):
     sorted(trait_tier_list)
     return trait_tier_list
 
+
 def update_list(trait_dict):
     logger.info("Updating list.")
     try:
@@ -152,7 +133,7 @@ def update_list(trait_dict):
         logger.error(e)
 
     try:
-        with open("azerite-power-sets.json", "r") as r:
+        with open("simc_support/azerite-power-sets.json", "r") as r:
             power_sets = json.load(r)
     except Exception as e:
         power_sets = {}
@@ -170,32 +151,23 @@ def update_list(trait_dict):
                     # if trait is in map for the spec
                     if wow_spec in LOADED_MAP[trait_id]["class"][wow_class]:
                         trait_classes[wow_class][wow_spec][trait_id] = {
-                            "name":
-                            trait_dict[wow_class][wow_spec][trait_id]["name"],
-                            "description":
-                            trait_dict[wow_class][wow_spec][trait_id]["description"],
-                            "max_itemlevel":
-                            LOADED_MAP[trait_id]["max_itemlevel"],
-                            "max_stack":
-                            LOADED_MAP[trait_id]["max_stack"],
-                            "min_itemlevel":
-                            LOADED_MAP[trait_id]["min_itemlevel"],
-                            "spell_id":
-                            trait_dict[wow_class][wow_spec][trait_id]["spell_id"],
-                            "trait_id":
-                            trait_dict[wow_class][wow_spec][trait_id]["trait_id"],
+                            "name": trait_dict[wow_class][wow_spec][trait_id]["name"],
+                            "description": trait_dict[wow_class][wow_spec][trait_id]["description"],
+                            "max_itemlevel": LOADED_MAP[trait_id]["max_itemlevel"],
+                            "max_stack": LOADED_MAP[trait_id]["max_stack"],
+                            "min_itemlevel": LOADED_MAP[trait_id]["min_itemlevel"],
+                            "spell_id": trait_dict[wow_class][wow_spec][trait_id]["spell_id"],
+                            "trait_id": trait_dict[wow_class][wow_spec][trait_id]["trait_id"],
                             "tiers": get_tiers(trait_id, power_sets)
                         }
                 except KeyError:
                     logger.error(
-                        "Class {} for trait {} (id={}) wasn't in MAP. Try updating MAP first.".
-                        format(
-                            wow_class, trait_dict[wow_class][wow_spec][trait_id]["name"],
-                            trait_id
+                        "Class {} for trait {} (id={}) wasn't in MAP. Try updating MAP first.".format(
+                            wow_class, trait_dict[wow_class][wow_spec][trait_id]["name"], trait_id
                         )
                     )
 
-    with open("azerite_trait_list.json", "w") as f:
+    with open("simc_support/azerite_trait_list.json", "w") as f:
         f.write(json.dumps(trait_classes, sort_keys=True, indent=4))
 
 
@@ -220,15 +192,12 @@ def main():
     for wow_class in class_list:
         try:
             simc_output = subprocess.run([
-                "../../SimulationCraft/simc.exe",
-                "spell_query=azerite.class={}".format(
-                    wow_class.lower().replace("_", "")
-                ),
-                ptr_input
+                "../SimulationCraft/simc.exe",
+                "spell_query=azerite.class={}".format(wow_class.lower().replace("_", "")), ptr_input
             ],
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                universal_newlines=True)
+                                         stdout=subprocess.PIPE,
+                                         stderr=subprocess.STDOUT,
+                                         universal_newlines=True)
         except Exception as e:
             logger.info("{} failed to load. {}".format(wow_class, e))
             continue
@@ -246,10 +215,8 @@ def main():
             # logger.info(line)
 
             if "Name             : " in line:
-                trait_name = line.split(
-                    "Name             : ")[1].split(" (id=")[0]
-                trait_spell_id = line.split("Name             : "
-                                            )[1].split(" (id=")[1].split(") ")[0]
+                trait_name = line.split("Name             : ")[1].split(" (id=")[0]
+                trait_spell_id = line.split("Name             : ")[1].split(" (id=")[1].split(") ")[0]
 
                 if trait_name in trait_list:
                     new_trait = False
@@ -258,13 +225,11 @@ def main():
                     trait_list.append(trait_name)
 
             if "Class            : " in line and new_trait:
-                trait_classes = line.split("Class            : ")[
-                    1].split(", ")
+                trait_classes = line.split("Class            : ")[1].split(", ")
                 trait_specs = []
                 for trait_class in trait_classes:
                     for spec in wow_lib.get_specs(trait_class.replace(" ", "_")):
-                        trait_specs.append(
-                            (trait_class.replace(" ", "_"), spec))
+                        trait_specs.append((trait_class.replace(" ", "_"), spec))
 
             if "Azerite Power Id : " in line and new_trait:
                 trait_id = line.split("Azerite Power Id : ")[1]
@@ -275,20 +240,13 @@ def main():
                 for spec in trait_specs:
 
                     trait_dict[spec[0]][spec[1]][trait_spell_id] = {}
-                    trait_dict[spec[0]][spec[1]
-                                        ][trait_spell_id]["name"] = trait_name
-                    trait_dict[spec[0]][spec[1]][trait_spell_id]["spell_id"
-                                                                 ] = trait_spell_id
-                    trait_dict[spec[0]][spec[1]
-                                        ][trait_spell_id]["trait_id"] = trait_id
-                    trait_dict[spec[0]][spec[1]
-                                        ][trait_spell_id]["min_itemlevel"] = -1
-                    trait_dict[spec[0]][spec[1]
-                                        ][trait_spell_id]["max_itemlevel"] = -1
-                    trait_dict[spec[0]][spec[1]
-                                        ][trait_spell_id]["max_stack"] = 3
-                    trait_dict[spec[0]][spec[1]][trait_spell_id]["description"
-                                                                 ] = trait_description
+                    trait_dict[spec[0]][spec[1]][trait_spell_id]["name"] = trait_name
+                    trait_dict[spec[0]][spec[1]][trait_spell_id]["spell_id"] = trait_spell_id
+                    trait_dict[spec[0]][spec[1]][trait_spell_id]["trait_id"] = trait_id
+                    trait_dict[spec[0]][spec[1]][trait_spell_id]["min_itemlevel"] = -1
+                    trait_dict[spec[0]][spec[1]][trait_spell_id]["max_itemlevel"] = -1
+                    trait_dict[spec[0]][spec[1]][trait_spell_id]["max_stack"] = 3
+                    trait_dict[spec[0]][spec[1]][trait_spell_id]["description"] = trait_description
 
         logger.info("{} unique traits found.".format(len(trait_list)))
 
