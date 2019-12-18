@@ -1,6 +1,6 @@
-
 from .ItemLevel import *
 from . import Source
+
 
 class Trinket(object):
     """docstring for trinket"""
@@ -736,6 +736,20 @@ trinket_list = [
         ranged=False,
         source=Source.WORLD_QUEST,
         active=False
+    ),
+    Trinket(  # Mechagon
+        name="Remote Guidance Device",
+        item_id="169769",
+        min_itemlevel=MECHAGON,
+        max_itemlevel=MECHAGON+TITANFORGING_CUT_OFF,
+        max_itemlevel_drop=MECHAGON,
+        agility=True,
+        intellect=False,
+        strength=True,
+        melee=False,
+        ranged=False,
+        source=Source.DUNGEON,
+        active=True
     ),
     # Trinket(
     #     name="", item_id="", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=TITANFORGE_CAP,
