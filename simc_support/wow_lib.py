@@ -7,6 +7,7 @@ from .game_data import Source
 from .game_data.AzeriteEssence import essences as __essences
 from .game_data.AzeriteItem import itemlevel_dict as __azerite_item_max_level
 from .game_data.AzeriteItem import pvp_examples as __azerite_item_pvp_itemlevel
+from .game_data.Corruption import corruptions, blacklist as corruption_blacklist
 from .game_data.ItemLevel import *     # pylint: disable=unused-wildcard-import
 from .game_data.Race import races as __races
 from .game_data.Race import translations as __race_translations
@@ -1005,3 +1006,45 @@ def get_azerite_item_max_itemlevel(item_name: str) -> int:
             if item_name.startswith(key):
                 return __azerite_item_pvp_itemlevel[key]
         return -1
+
+
+def get_corruptions(wow_class: str, wow_spec: str) -> dict:
+    """Return available corruptions for the provided wow_class + wow_spec.
+
+    Args:
+        wow_class (str): [description]
+        wow_spec (str): [description]
+
+    Returns:
+        dict: {
+            'NAME': {
+                'LEVEL': {
+                    'bonus_id': 123,
+                    'spell_id': 123,
+                    'corruption': 123
+                }
+            }
+        }
+    """
+
+    wow_class = str(wow_class).lower().title()
+    wow_spec = str(wow_spec).lower().title()
+
+    # crafting return dictionary by hand...could probably be done by a lib
+    new_dict = {}
+
+    for corruption in corruptions:
+
+        # filter out clacklisted corruptions for the provided
+        # wow_class and wow_spec
+        if corruption in corruption_blacklist[wow_class][wow_spec]:
+            continue
+
+        new_dict[corruption] = {}
+
+        for level in corruptions[corruption]:
+            new_dict[corruption][level] = {}
+            for key in corruptions[corruption][level]:
+                new_dict[corruption][level][key] = corruptions[corruption][level][key]
+
+    return new_dict
