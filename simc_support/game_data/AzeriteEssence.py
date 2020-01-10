@@ -361,6 +361,10 @@ essences = {
     },
     "36": {
         'name': "Spark of Inspiration",
+        "major": {
+            "name": "Moment of Glory",
+            "spell_id": "311303",
+        },
         "minor": {
             "spell_id": "311306",
             "name": "Unified Strength"
@@ -373,6 +377,10 @@ essences = {
     },
     "37": {
         'name': "The Formless Void",
+        "major": {
+            "name": "Replica of Knowledge",
+            "spell_id": "313922",
+        },
         "minor": {
             "spell_id": "313920",
             "name": "Symbiotic Presence"
