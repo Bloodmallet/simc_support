@@ -628,5 +628,20 @@
             "majorDiffSpellId": 303894,
             "minorDiffSpellId": 304533
         }
+    },
+    "35": {
+        "3": {
+            "azeriteEssencePowerId": 135
+        }
+    },
+    "36": {
+        "3": {
+            "azeriteEssencePowerId": 139
+        }
+    },
+    "37": {
+        "3": {
+            "azeriteEssencePowerId": 143
+        }
     }
 }
