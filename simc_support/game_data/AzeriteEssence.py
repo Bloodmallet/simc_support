@@ -31,7 +31,7 @@ essences = {
             'name': "Worldvein Resonance",
             'spell_id': 299334
         },
-        'minor':{
+        'minor': {
             'name': "Lifeblood",
             'spell_id': 299333
         },
@@ -49,7 +49,7 @@ essences = {
             'name': "Focused Azerite Beam",
             'spell_id': 299338
         },
-        'minor':{
+        'minor': {
             'name': "Focused Energy",
             'spell_id': 299337
         },
@@ -65,7 +65,7 @@ essences = {
             'name': "Purifying Blast",
             'spell_id': 299347
         },
-        'minor':{
+        'minor': {
             'name': "Purification Protocol",
             'spell_id': 299346
         },
@@ -81,7 +81,7 @@ essences = {
             'name': "Anima of Death",
             'spell_id': 300003
         },
-        'minor':{
+        'minor': {
             'name': "Anima of Life",
             'spell_id': 300005
         },
@@ -97,7 +97,7 @@ essences = {
             'name': "Concentrated Flame",
             'spell_id': 299353
         },
-        'minor':{
+        'minor': {
             'name': "Ancient Flame",
             'spell_id': 299350
         },
@@ -131,7 +131,7 @@ essences = {
             'name': "Guardian of Azeroth",
             'spell_id': 299358
         },
-        'minor':{
+        'minor': {
             'name': "Condensed Life-Force",
             'spell_id': 299357
         },
@@ -147,7 +147,7 @@ essences = {
             'name': "Ripple in Space",
             'spell_id': 302983
         },
-        'minor':{
+        'minor': {
             'name': "Reality Shift",
             'spell_id': 302985
         },
@@ -165,7 +165,7 @@ essences = {
             'name': "Overcharge Mana",
             'spell_id': 299876
         },
-        'minor':{
+        'minor': {
             'name': "The Ever-Rising Tide",
             'spell_id': 299879
         },
@@ -181,7 +181,7 @@ essences = {
             'name': "Standstill",
             'spell_id': 299883
         },
-        'minor':{
+        'minor': {
             'name': "Artifice of Time",
             'spell_id': 299887
         },
@@ -197,7 +197,7 @@ essences = {
             'name': "Refreshment",
             'spell_id': 299933
         },
-        'minor':{
+        'minor': {
             'name': "The Well of Existence",
             'spell_id': 299936
         },
@@ -245,7 +245,7 @@ essences = {
             'name': "Vision of Perfection",
             'spell_id': 299370
         },
-        'minor':{
+        'minor': {
             'name': "Strive for Perfection",
             'spell_id': 299369
         },
@@ -263,7 +263,7 @@ essences = {
             'name': "Blood of the Enemy",
             'spell_id': 298277
         },
-        'minor':{
+        'minor': {
             'name': "Blood-Soaked",
             'spell_id': 298275
         },
@@ -279,7 +279,7 @@ essences = {
             'name': "Aegis of the Deep",
             'spell_id': 299275
         },
-        'minor':{
+        'minor': {
             'name': "Stand Your Ground",
             'spell_id': 299277
         },
@@ -295,7 +295,7 @@ essences = {
             'name': "Memory of Lucid Dreams",
             'spell_id': 299374
         },
-        'minor':{
+        'minor': {
             'name': "Lucid Dreams",
             'spell_id': 299373
         },
@@ -313,7 +313,7 @@ essences = {
             'name': "The Unbound Force",
             'spell_id': 299378
         },
-        'minor':{
+        'minor': {
             'name': "Reckless Force",
             'spell_id': 299377
         },
@@ -329,7 +329,7 @@ essences = {
             'name': "Conflict",
             'spell_id': 304121
         },
-        'minor':{
+        'minor': {
             'name': "Strife",
             'spell_id': 304123
         },
@@ -339,6 +339,48 @@ essences = {
             'dd',
             'heal',
             'tank'
+        ]
+    },
+    # "33": {}, # tank
+    # "34": {}, # tank
+    "35": {
+        'name': 'Breath of the Dying',
+        "major": {
+            "name": "Reaping Flames",
+            "spell_id": "311195",
+        },
+        "minor": {
+            "name": "Lethal Strikes",
+            "spell_id": "311198",
+        },
+        'item_name': "Token of Death's Glee",
+        'item_id': 173282,
+        'raid_roles': [
+            'dd'
+        ]
+    },
+    "36": {
+        'name': "Spark of Inspiration",
+        "Minor": {
+            "spell_id": "311306",
+            "name": "Unified Strength"
+        },
+        'item_name': "Quickening Azerite Geode",
+        'item_id': 173290,
+        'raid_roles': [
+            'dd'
+        ]
+    },
+    "37": {
+        'name': "The Formless Void",
+        "Minor": {
+            "spell_id": "313920",
+            "name": "Symbiotic Presence"
+        },
+        'item_name': "Volatile Void Droplet",
+        'item_id': 173885,
+        'raid_roles': [
+            'dd'
         ]
     }
 }
