@@ -5,7 +5,7 @@ corruptions = {
         '1': {
             'bonus_id': 6434,
             'spell_id': 13518,
-            'corruption': 1,
+            'corruption': 1,     # ??
         }
     },
     'Strikethrough': {
@@ -194,12 +194,12 @@ corruptions = {
         '1': {
             'bonus_id': 6547,
             'spell_id': 318303,
-            'corruption': 30,
+            'corruption': 15,
         },
         '2': {
             'bonus_id': 6548,
             'spell_id': 318484,
-            'corruption': 50,
+            'corruption': 33,
         }
     },
     'Echoing Void': {
@@ -216,7 +216,7 @@ corruptions = {
         '3': {
             'bonus_id': 6551,
             'spell_id': 318486,
-            'corruption': 50,
+            'corruption': 66,
         }
     },
     'Infinite Stars': {
@@ -308,7 +308,7 @@ corruptions = {
         '1': {
             'bonus_id': 6567,
             'spell_id': 318294,
-            'corruption': 25,
+            'corruption': 35,
         }
     },
     'Whispered Truths': {
@@ -329,21 +329,21 @@ corruptions = {
         '1': {
             'bonus_id': 6570,
             'spell_id': 318299,
-            'corruption': 25,
+            'corruption': 20,
         }
     },
     'Searing Flames': {
         '1': {
             'bonus_id': 6571,
             'spell_id': 318293,
-            'corruption': 25,
+            'corruption': 30,
         }
     },
     'Obsidian Skin': {
         '1': {
             'bonus_id': 6572,
             'spell_id': 316651,
-            'corruption': 25,
+            'corruption': 50,
         }
     },
     'Gushing Wound': {
