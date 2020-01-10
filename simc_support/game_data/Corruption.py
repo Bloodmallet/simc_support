@@ -206,17 +206,17 @@ corruptions = {
         '1': {
             'bonus_id': 6549,
             'spell_id': 318280,
-            'corruption': 15,
+            'corruption': 25,
         },
         '2': {
             'bonus_id': 6550,
             'spell_id': 318485,
-            'corruption': 25,
+            'corruption': 35,
         },
         '3': {
             'bonus_id': 6551,
             'spell_id': 318486,
-            'corruption': 66,
+            'corruption': 60,
         }
     },
     'Infinite Stars': {
