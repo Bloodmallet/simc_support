@@ -7,7 +7,8 @@ DUNGEON_ITEMLEVEL = 340
 # highest available itemlevel from m+ dungeons. weekly chest is NOT included here
 M_PLUS_ITEMLEVEL = 430
 # currently highest itemlevel titanforging cap
-TITANFORGE_CAP = 455
+# titanforging is dead, this now reflects the weekly chest
+TITANFORGE_CAP = 475
 EXPANSION_START_ITEMLEVEL = 280
 TITANFORGING_CUT_OFF = 15
 ULDIR = 385
@@ -18,3 +19,6 @@ EMISSARY = 415
 DARKSHORE = 385
 NAZJATAR = 430
 MECHAGON = 415
+NYALOTHA = 430
+# usual itemlevel increase over the difficulties of a raid
+CONTENT_INCREASE = 45
