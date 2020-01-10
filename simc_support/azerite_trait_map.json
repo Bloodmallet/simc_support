@@ -8674,5 +8674,73 @@
         "min_itemlevel": 400,
         "name": "Undulating Tides",
         "trait_id": "575"
+    },
+    "317137": {
+        "class": {
+            "Death_Knight": [
+                "Blood",
+                "Frost",
+                "Unholy"
+            ],
+            "Demon_Hunter": [
+                "Havoc",
+                "Vengeance"
+            ],
+            "Druid": [
+                "Balance",
+                "Feral",
+                "Guardian",
+                "Restoration"
+            ],
+            "Hunter": [
+                "Beast_Mastery",
+                "Marksmanship",
+                "Survival"
+            ],
+            "Mage": [
+                "Arcane",
+                "Fire",
+                "Frost"
+            ],
+            "Monk": [
+                "Brewmaster",
+                "Windwalker"
+            ],
+            "Paladin": [
+                "Protection",
+                "Retribution"
+            ],
+            "Priest": [
+                "Discipline",
+                "Holy",
+                "Shadow"
+            ],
+            "Rogue": [
+                "Assassination",
+                "Outlaw",
+                "Subtlety"
+            ],
+            "Shaman": [
+                "Elemental",
+                "Enhancement",
+                "Restoration"
+            ],
+            "Warlock": [
+                "Affliction",
+                "Demonology",
+                "Destruction"
+            ],
+            "Warrior": [
+                "Arms",
+                "Fury",
+                "Protection"
+            ]
+        },
+        "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+        "max_itemlevel": -1,
+        "max_stack": -1,
+        "min_itemlevel": -1,
+        "name": "Heart of Darkness",
+        "trait_id": "582"
     }
 }

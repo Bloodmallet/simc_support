@@ -820,6 +820,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Frost": {
@@ -1668,6 +1678,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Unholy": {
@@ -2529,6 +2549,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         }
     },
@@ -3379,6 +3409,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Vengeance": {
@@ -4201,6 +4241,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         }
     },
@@ -4980,6 +5030,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Feral": {
@@ -5783,6 +5843,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Guardian": {
@@ -6560,9 +6630,30 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
-        "Restoration": {}
+        "Restoration": {
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
+            }
+        }
     },
     "Hunter": {
         "Beast_Mastery": {
@@ -7496,6 +7587,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Marksmanship": {
@@ -8416,6 +8517,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Survival": {
@@ -9362,6 +9473,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         }
     },
@@ -10284,6 +10405,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Fire": {
@@ -11204,6 +11335,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Frost": {
@@ -12124,6 +12265,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         }
     },
@@ -12864,6 +13015,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Windwalker": {
@@ -13641,6 +13802,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         }
     },
@@ -14419,6 +14590,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Retribution": {
@@ -15183,6 +15364,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         }
     },
@@ -15427,6 +15618,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Holy": {
@@ -16198,6 +16399,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Shadow": {
@@ -17034,6 +17245,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         }
     },
@@ -17956,6 +18177,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Outlaw": {
@@ -18876,6 +19107,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Subtlety": {
@@ -19796,6 +20037,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         }
     },
@@ -20647,6 +20898,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Enhancement": {
@@ -21509,6 +21770,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Restoration": {
@@ -22319,6 +22590,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         }
     },
@@ -23241,6 +23522,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Demonology": {
@@ -24161,6 +24452,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Destruction": {
@@ -25081,6 +25382,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         }
     },
@@ -25957,6 +26268,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Fury": {
@@ -26831,6 +27152,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         },
         "Protection": {
@@ -27679,6 +28010,16 @@
                     3
                 ],
                 "trait_id": "575"
+            },
+            "317137": {
+                "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
+                "max_itemlevel": -1,
+                "max_stack": -1,
+                "min_itemlevel": -1,
+                "name": "Heart of Darkness",
+                "spell_id": "317137",
+                "tiers": [],
+                "trait_id": "582"
             }
         }
     }
