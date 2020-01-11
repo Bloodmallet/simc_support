@@ -803,6 +803,106 @@
                     "spell_id": "80313"
                 }
             }
+        },
+        "Restoration": {
+            "1": {
+                "1": {
+                    "name": "Abundance",
+                    "spell_id": "207383"
+                },
+                "2": {
+                    "name": "Prosperity",
+                    "spell_id": "200383"
+                },
+                "3": {
+                    "name": "Cenarion Ward",
+                    "spell_id": "102351"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Tiger Dash",
+                    "spell_id": "252216"
+                },
+                "2": {
+                    "name": "Renewal",
+                    "spell_id": "108238"
+                },
+                "3": {
+                    "name": "Wild Charge",
+                    "spell_id": "102401"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Balance Affinity",
+                    "spell_id": "197632"
+                },
+                "2": {
+                    "name": "Feral Affinity",
+                    "spell_id": "197490"
+                },
+                "3": {
+                    "name": "Guardian Affinity",
+                    "spell_id": "197491"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Mighty Bash",
+                    "spell_id": "5211"
+                },
+                "2": {
+                    "name": "Mass Entanglement",
+                    "spell_id": "102359"
+                },
+                "3": {
+                    "name": "Typhoon",
+                    "spell_id": "132469"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Soul of the Forest",
+                    "spell_id": "158478"
+                },
+                "2": {
+                    "name": "Cultivation",
+                    "spell_id": "200390"
+                },
+                "3": {
+                    "name": "Incarnation",
+                    "spell_id": "33891"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Inner Peace",
+                    "spell_id": "197073"
+                },
+                "2": {
+                    "name": "Stonebark",
+                    "spell_id": "197061"
+                },
+                "3": {
+                    "name": "Spring Blossoms",
+                    "spell_id": "207385"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Photosynthesis",
+                    "spell_id": "274902"
+                },
+                "2": {
+                    "name": "Germination",
+                    "spell_id": "155675"
+                },
+                "3": {
+                    "name": "Flourish",
+                    "spell_id": "197721"
+                }
+            }
         }
     },
     "Hunter": {
@@ -2615,6 +2715,106 @@
                 "3": {
                     "name": "Ascendance",
                     "spell_id": "114051"
+                }
+            }
+        },
+        "Restoration": {
+            "1": {
+                "1": {
+                    "name": "Torrent",
+                    "spell_id": "200072"
+                },
+                "2": {
+                    "name": "Undulation",
+                    "spell_id": "200071"
+                },
+                "3": {
+                    "name": "Unleash Life",
+                    "spell_id": "73685"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Echo of the Elements",
+                    "spell_id": "108283"
+                },
+                "2": {
+                    "name": "Deluge",
+                    "spell_id": "200076"
+                },
+                "3": {
+                    "name": "Earth Shield",
+                    "spell_id": "974"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Spirit Wolf",
+                    "spell_id": "260878"
+                },
+                "2": {
+                    "name": "Earthgrab Totem",
+                    "spell_id": "51485"
+                },
+                "3": {
+                    "name": "Static Charge",
+                    "spell_id": "265046"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Ancestral Vigor",
+                    "spell_id": "207401"
+                },
+                "2": {
+                    "name": "Earthen Wall Totem",
+                    "spell_id": "198838"
+                },
+                "3": {
+                    "name": "Ancestral Protection Totem",
+                    "spell_id": "207399"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Nature's Guardian",
+                    "spell_id": "30884"
+                },
+                "2": {
+                    "name": "Graceful Spirit",
+                    "spell_id": "192088"
+                },
+                "3": {
+                    "name": "Wind Rush Totem",
+                    "spell_id": "192077"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Flash Flood",
+                    "spell_id": "280614"
+                },
+                "2": {
+                    "name": "Downpour",
+                    "spell_id": "207778"
+                },
+                "3": {
+                    "name": "Cloudburst Totem",
+                    "spell_id": "157153"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "High Tide",
+                    "spell_id": "157154"
+                },
+                "2": {
+                    "name": "Wellspring",
+                    "spell_id": "197995"
+                },
+                "3": {
+                    "name": "Ascendance",
+                    "spell_id": "114052"
                 }
             }
         }

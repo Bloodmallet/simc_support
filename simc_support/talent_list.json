@@ -803,6 +803,106 @@
                     "spell_id": "80313"
                 }
             }
+        },
+        "Restoration": {
+            "1": {
+                "1": {
+                    "name": "Abundance",
+                    "spell_id": "207383"
+                },
+                "2": {
+                    "name": "Prosperity",
+                    "spell_id": "200383"
+                },
+                "3": {
+                    "name": "Cenarion Ward",
+                    "spell_id": "102351"
+                }
+            },
+            "2": {
+                "1": {
+                    "name": "Tiger Dash",
+                    "spell_id": "252216"
+                },
+                "2": {
+                    "name": "Renewal",
+                    "spell_id": "108238"
+                },
+                "3": {
+                    "name": "Wild Charge",
+                    "spell_id": "102401"
+                }
+            },
+            "3": {
+                "1": {
+                    "name": "Balance Affinity",
+                    "spell_id": "197632"
+                },
+                "2": {
+                    "name": "Feral Affinity",
+                    "spell_id": "197490"
+                },
+                "3": {
+                    "name": "Guardian Affinity",
+                    "spell_id": "197491"
+                }
+            },
+            "4": {
+                "1": {
+                    "name": "Mighty Bash",
+                    "spell_id": "5211"
+                },
+                "2": {
+                    "name": "Mass Entanglement",
+                    "spell_id": "102359"
+                },
+                "3": {
+                    "name": "Typhoon",
+                    "spell_id": "132469"
+                }
+            },
+            "5": {
+                "1": {
+                    "name": "Soul of the Forest",
+                    "spell_id": "158478"
+                },
+                "2": {
+                    "name": "Cultivation",
+                    "spell_id": "200390"
+                },
+                "3": {
+                    "name": "Incarnation",
+                    "spell_id": "33891"
+                }
+            },
+            "6": {
+                "1": {
+                    "name": "Inner Peace",
+                    "spell_id": "197073"
+                },
+                "2": {
+                    "name": "Stonebark",
+                    "spell_id": "197061"
+                },
+                "3": {
+                    "name": "Spring Blossoms",
+                    "spell_id": "207385"
+                }
+            },
+            "7": {
+                "1": {
+                    "name": "Photosynthesis",
+                    "spell_id": "274902"
+                },
+                "2": {
+                    "name": "Germination",
+                    "spell_id": "155675"
+                },
+                "3": {
+                    "name": "Flourish",
+                    "spell_id": "197721"
+                }
+            }
         }
     },
     "Hunter": {
