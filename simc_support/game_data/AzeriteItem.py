@@ -1,6 +1,6 @@
 from .ItemLevel import DAZARALOR
-from .ItemLevel import M_PLUS_ITEMLEVEL
-from .ItemLevel import TITANFORGING_CUT_OFF
+from .ItemLevel import WEEKLY_CHEST
+from .ItemLevel import RAID_INCREASE
 from .ItemLevel import DARKSHORE
 from .ItemLevel import NAZJATAR
 
@@ -193,16 +193,16 @@ itemlevel_dict = {
 }
 
 for item in dungeon:
-    itemlevel_dict[item] = M_PLUS_ITEMLEVEL + TITANFORGING_CUT_OFF
+    itemlevel_dict[item] = WEEKLY_CHEST
 
 for item in dazaralor:
-    itemlevel_dict[item] = DAZARALOR
+    itemlevel_dict[item] = DAZARALOR + RAID_INCREASE
 
 for item in darkshore:
     itemlevel_dict[item] = DARKSHORE
 
 for item in nazjatar:
-    itemlevel_dict[item] = NAZJATAR
+    itemlevel_dict[item] = NAZJATAR + RAID_INCREASE
 
 pvp_examples = {
     'Dread': 385,

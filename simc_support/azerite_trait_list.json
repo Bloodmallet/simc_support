@@ -738,9 +738,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -823,9 +823,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -1609,9 +1609,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -1681,9 +1681,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -2480,9 +2480,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -2552,9 +2552,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -3340,9 +3340,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -3412,9 +3412,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -4172,9 +4172,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -4244,9 +4244,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -4961,9 +4961,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -5033,9 +5033,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -5774,9 +5774,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -5846,9 +5846,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -6548,9 +6548,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -6633,9 +6633,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -6645,9 +6645,9 @@
         "Restoration": {
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -7518,9 +7518,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -7590,9 +7590,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -8448,9 +8448,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -8520,9 +8520,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -9404,9 +9404,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -9476,9 +9476,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -10336,9 +10336,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -10408,9 +10408,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -11266,9 +11266,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -11338,9 +11338,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -12196,9 +12196,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -12268,9 +12268,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -12946,9 +12946,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -13018,9 +13018,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -13733,9 +13733,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -13805,9 +13805,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -14521,9 +14521,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -14593,9 +14593,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -15295,9 +15295,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -15367,9 +15367,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -15549,9 +15549,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -15621,9 +15621,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -16330,9 +16330,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -16402,9 +16402,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -17176,9 +17176,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -17248,9 +17248,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -18108,9 +18108,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -18180,9 +18180,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -19025,9 +19025,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -19110,9 +19110,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -19968,9 +19968,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -20040,9 +20040,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -20829,9 +20829,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -20901,9 +20901,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -21701,9 +21701,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -21773,9 +21773,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -22521,9 +22521,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -22593,9 +22593,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -23440,9 +23440,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -23525,9 +23525,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -24383,9 +24383,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -24455,9 +24455,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -25313,9 +25313,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -25385,9 +25385,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -26199,9 +26199,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -26271,9 +26271,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -27083,9 +27083,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -27155,9 +27155,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
@@ -27941,9 +27941,9 @@
             },
             "288953": {
                 "description": "Your primary stat is increased by $s1 while you are above $s2% health. You take $s3% increased damage while below $s4% health.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 415,
                 "max_stack": 3,
-                "min_itemlevel": -1,
+                "min_itemlevel": 370,
                 "name": "Treacherous Covenant",
                 "spell_id": "288953",
                 "tiers": [
@@ -28013,9 +28013,9 @@
             },
             "317137": {
                 "description": "Your secondary stats are all increased by $s1 while your Corruption Level is 25 or higher.",
-                "max_itemlevel": -1,
+                "max_itemlevel": 485,
                 "max_stack": -1,
-                "min_itemlevel": -1,
+                "min_itemlevel": 430,
                 "name": "Heart of Darkness",
                 "spell_id": "317137",
                 "tiers": [],
