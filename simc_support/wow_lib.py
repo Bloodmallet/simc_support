@@ -78,7 +78,7 @@ def _compare_trinket_lists():
     print("Searching through equippable-items.json:")
     missing = 0
     for item in loaded_items:
-        if item["inventoryType"] == 12 and item["itemLevel"] >= EXPANSION_START_ITEMLEVEL:
+        if item["inventoryType"] == 12 and item["itemLevel"] >= 280:
             found = False
             for trinket in __trinket_list:
                 if trinket.get_name() == item["name"]:
@@ -538,7 +538,7 @@ def get_azerite_trait_max_ilevel(wow_class: str, wow_spec, trait_id: str) -> int
         ilvl = -1
 
     if ilvl == -1:
-        ilvl = TITANFORGE_CAP - 10
+        ilvl = WEEKLY_CHEST
 
     return ilvl
 
