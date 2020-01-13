@@ -1,13 +1,13 @@
 # https://ptr.wowhead.com/guides/corrupted-items-overview-titan-purification-corruption-resistance
 
 corruptions = {
-    'Poison': {
-        '1': {
-            'bonus_id': 6434,
-            'spell_id': 13518,
-            'corruption': 1,     # ??
-        }
-    },
+     # 'Poison': {
+     #     '1': {
+     #         'bonus_id': 6434,
+     #         'spell_id': 13518,
+     #         'corruption': 1,     # ??
+     #     }
+     # },
     'Strikethrough': {
         '1': {
             'bonus_id': 6437,
