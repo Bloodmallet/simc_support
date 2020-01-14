@@ -177,7 +177,7 @@ corruptions = {
         '1': {
             'bonus_id': 6543,
             'spell_id': 318481,
-            'corruption': 15,
+            'corruption': 10,
         },
         '2': {
             'bonus_id': 6544,
