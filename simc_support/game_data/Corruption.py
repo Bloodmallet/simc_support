@@ -93,23 +93,23 @@ corruptions = {
             'corruption': 20,
         }
     },
-    'Avoidant': {
-        '1': {
-            'bonus_id': 6483,
-            'spell_id': 315607,
-            'corruption': 10,
-        },
-        '2': {
-            'bonus_id': 6484,
-            'spell_id': 315608,
-            'corruption': 15,
-        },
-        '3': {
-            'bonus_id': 6485,
-            'spell_id': 315609,
-            'corruption': 20,
-        }
-    },
+     # 'Avoidant': {
+     #     '1': {
+     #         'bonus_id': 6483,
+     #         'spell_id': 315607,
+     #         'corruption': 10,
+     #     },
+     #     '2': {
+     #         'bonus_id': 6484,
+     #         'spell_id': 315608,
+     #         'corruption': 15,
+     #     },
+     #     '3': {
+     #         'bonus_id': 6485,
+     #         'spell_id': 315609,
+     #         'corruption': 20,
+     #     }
+     # },
     'Glimpse of Clarity': {
         '1': {
             'bonus_id': 6486,
