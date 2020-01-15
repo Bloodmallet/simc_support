@@ -115,16 +115,16 @@ races = {
             "druid",
             "death_knight",
         ),
-     # "mecha_gnome": (
-     #     "warrior",
-     #     "hunter",
-     #     "rogue",
-     #     "priest",
-     #     "mage",
-     #     "warlock",
-     #     "monk",
-     #     "death_knight",
-     # )
+        "mechagnome": (
+            "warrior",
+            "hunter",
+            "rogue",
+            "priest",
+            "mage",
+            "warlock",
+            "monk",
+            "death_knight",
+        ),
     },
     "horde": {
         "blood_elf": (
@@ -241,16 +241,16 @@ races = {
             "druid",
             "death_knight",
         ),
-     # "vulpera": (
-     #     "warrior",
-     #     "hunter",
-     #     "priest",
-     #     "shaman",
-     #     "mage",
-     #     "warlock",
-     #     "monk",
-     #     "death_knight",
-     # )
+        "vulpera": (
+            "warrior",
+            "hunter",
+            "priest",
+            "shaman",
+            "mage",
+            "warlock",
+            "monk",
+            "death_knight",
+        ),
     }
 }
 
