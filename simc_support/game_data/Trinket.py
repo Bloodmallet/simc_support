@@ -417,7 +417,7 @@ trinket_list = [
         max_itemlevel_drop=DAZARALOR, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.RAID, active=False
     ),
     Trinket(  # Dazar'Alor
-        name="Grong's Primal Rage", item_id="165574", min_itemlevel=DAZARALOR, max_itemlevel=DAZARALOR+RAID_INCREASE,
+        name="Grong's Primal Rage", item_id="165574", min_itemlevel=DAZARALOR, max_itemlevel=430,
         max_itemlevel_drop=DAZARALOR, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.RAID, active=True
     ),
     Trinket(  # Dazar'Alor
