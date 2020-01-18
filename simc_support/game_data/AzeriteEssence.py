@@ -109,22 +109,22 @@ essences = {
             'tank'
         ]
     },
-    # "13": { # done tank
-    #     'name': "Empowered Null Barrier",
-    #     'major': {
-    #         'name': "Empowered Null Barrier",
-    #         'spell_id': 300016
-    #     },
-    #     'minor':{
-    #         'name': "Null Barrier",
-    #         'spell_id': 300020
-    #     },
-    #     'item_name': "Null Force Nullifier",
-    #     'item_id': 168568,
-    #     'raid_roles': [
-    #         'tank'
-    #     ]
-    # },
+    "13": { # done tank
+        'name': "Empowered Null Barrier",
+        'major': {
+            'name': "Empowered Null Barrier",
+            'spell_id': 300016
+        },
+        'minor': {
+            'name': "Null Barrier",
+            'spell_id': 300020
+        },
+        'item_name': "Null Force Nullifier",
+        'item_id': 168568,
+        'raid_roles': [
+            'tank'
+        ]
+    },
     "14": { # done
         'name': "Condensed Life-Force",
         'major': {
