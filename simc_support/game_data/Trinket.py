@@ -874,5 +874,18 @@ trinket_list = [
         ranged=False,
         source=Source.RAID,
         active=True
+    ),Trinket(  # Alchemy
+        name="Awakened Alchemist Stone",
+        item_id="171087",
+        min_itemlevel=455,
+        max_itemlevel=460,
+        max_itemlevel_drop=455,
+        agility=True,
+        intellect=True,
+        strength=True,
+        melee=False,
+        ranged=False,
+        source=Source.PROFESSION,
+        active=False
     ),
 ]
