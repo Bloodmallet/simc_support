@@ -388,7 +388,8 @@ essences = {
         'item_name': "Volatile Void Droplet",
         'item_id': 173885,
         'raid_roles': [
-            'dd'
+            'dd',
+            'tank',
         ]
     }
 }
