@@ -381,31 +381,31 @@ trinket_list = [
         max_itemlevel_drop=355, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.WORLD_BOSS, active=True
     ),
     Trinket(  # Emissary
-        name="Razzashi Tooth Medallion", item_id="165667", min_itemlevel=EMISSARY, max_itemlevel=EMISSARY,
+        name="Razzashi Tooth Medallion", item_id="165667", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=EMISSARY,
         max_itemlevel_drop=EMISSARY, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_QUEST, active=False
     ),
     Trinket(  # Emissary
-        name="Moonstone of Zin-Azshari", item_id="165666", min_itemlevel=EMISSARY, max_itemlevel=EMISSARY,
+        name="Moonstone of Zin-Azshari", item_id="165666", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=EMISSARY,
         max_itemlevel_drop=EMISSARY, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.WORLD_QUEST, active=False
     ),
     Trinket(  # Emissary
-        name="Ancient Tuskarr Sea Charm", item_id="165661", min_itemlevel=EMISSARY, max_itemlevel=EMISSARY,
+        name="Ancient Tuskarr Sea Charm", item_id="165661", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=EMISSARY,
         max_itemlevel_drop=EMISSARY, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.WORLD_QUEST, active=False
     ),
     Trinket(  # Emissary
-        name="Sea Giant's Tidestone", item_id="165664", min_itemlevel=EMISSARY, max_itemlevel=EMISSARY,
+        name="Sea Giant's Tidestone", item_id="165664", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=EMISSARY,
         max_itemlevel_drop=EMISSARY, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.WORLD_QUEST, active=True
     ),
     Trinket(  # Emissary
-        name="Kezan Stamped Bijou", item_id="165662", min_itemlevel=EMISSARY, max_itemlevel=EMISSARY,
+        name="Kezan Stamped Bijou", item_id="165662", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=EMISSARY,
         max_itemlevel_drop=EMISSARY, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_QUEST, active=True
     ),
     Trinket(  # Emissary
-        name="Chargestone of the Thunder King's Court", item_id="165660", min_itemlevel=EMISSARY, max_itemlevel=EMISSARY,
+        name="Chargestone of the Thunder King's Court", item_id="165660", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=EMISSARY,
         max_itemlevel_drop=EMISSARY, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_QUEST, active=False
     ),
     Trinket(  # Emissary
-        name="Ritual Feather of Unng Ak", item_id="165665", min_itemlevel=EMISSARY, max_itemlevel=EMISSARY,
+        name="Ritual Feather of Unng Ak", item_id="165665", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=EMISSARY,
         max_itemlevel_drop=EMISSARY, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.WORLD_QUEST, active=True
     ),
     Trinket(  # Dazar'Alor
