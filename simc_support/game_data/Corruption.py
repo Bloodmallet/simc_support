@@ -358,271 +358,153 @@ corruptions = {
 blacklist = {
     "Death_Knight": {
         "Blood": [
-            "Searing Flames",
-            "Devour Vitality",
             "Whispered Truths",
             "Flash of Insight",
-            "Lash of the Void",
         ],
         "Frost": [
-            "Obsidian Skin",
-            "Devour Vitality",
             "Whispered Truths",
             "Flash of Insight",
-            "Lash of the Void",
         ],
         "Unholy": [
-            "Searing Flames",
-            "Devour Vitality",
             "Whispered Truths",
             "Flash of Insight",
-            "Lash of the Void",
         ]
     },
     "Demon_Hunter": {
         "Havoc": [
-            "Obsidian Skin",
-            "Devour Vitality",
             "Whispered Truths",
             "Flash of Insight",
         ],
         "Vengeance": [
-            "Obsidian Skin",
-            "Devour Vitality",
             "Whispered Truths",
             "Flash of Insight",
         ]
     },
     "Druid": {
         "Balance": [
-            "Searing Flames",
-            "Obsidian Skin",
             "Devour Vitality",
             "Whispered Truths",
-            "Flash of Insight",
-            "Lash of the Void",
         ],
         "Feral": [
-            "Searing Flames",
-            "Obsidian Skin",
             "Whispered Truths",
             "Flash of Insight",
-            "Lash of the Void",
         ],
         "Guardian": [
-            "Searing Flames",
-            "Obsidian Skin",
             "Whispered Truths",
             "Flash of Insight",
-            "Lash of the Void",
         ],
         "Restoration": [
-            "Searing Flames",
-            "Obsidian Skin",
             "Devour Vitality",
             "Whispered Truths",
-            "Flash of Insight",
-            "Lash of the Void",
         ]
     },
     "Hunter": {
-        "Beast_Mastery": [
-            "Searing Flames",
-            "Obsidian Skin",
-            "Devour Vitality",
-            "Flash of Insight",
-            "Lash of the Void",
-        ],
-        "Marksmanship": [
-            "Searing Flames",
-            "Obsidian Skin",
-            "Devour Vitality",
-            "Flash of Insight",
-            "Lash of the Void",
-        ],
-        "Survival": [
-            "Searing Flames",
-            "Obsidian Skin",
-            "Whispered Truths",
-            "Flash of Insight",
-            "Lash of the Void",
-        ]
+        "Beast_Mastery": ["Flash of Insight",],
+        "Marksmanship": ["Flash of Insight",],
+        "Survival": ["Flash of Insight",]
     },
     "Mage": {
         "Arcane": [
-            "Searing Flames",
-            "Obsidian Skin",
             "Devour Vitality",
             "Whispered Truths",
-            "Flash of Insight",
-            "Lash of the Void",
         ],
         "Fire": [
-            "Searing Flames",
-            "Obsidian Skin",
             "Devour Vitality",
             "Whispered Truths",
-            "Flash of Insight",
-            "Lash of the Void",
         ],
         "Frost": [
-            "Searing Flames",
-            "Obsidian Skin",
             "Devour Vitality",
             "Whispered Truths",
-            "Flash of Insight",
-            "Lash of the Void",
         ]
     },
     "Monk": {
         "Brewmaster": [
-            "Searing Flames",
             "Whispered Truths",
             "Flash of Insight",
-            "Lash of the Void",
         ],
         "Windwalker": [
-            "Obsidian Skin",
             "Devour Vitality",
             "Whispered Truths",
-            "Flash of Insight",
         ]
     },
     "Paladin": {
         "Protection": [
-            "Obsidian Skin",
-            "Devour Vitality",
             "Whispered Truths",
             "Flash of Insight",
-            "Lash of the Void",
         ],
         "Retribution": [
-            "Searing Flames",
-            "Devour Vitality",
             "Whispered Truths",
             "Flash of Insight",
-            "Lash of the Void",
         ]
     },
     "Priest": {
         "Discipline": [
-            "Searing Flames",
-            "Obsidian Skin",
             "Devour Vitality",
             "Whispered Truths",
-            "Flash of Insight",
-            "Lash of the Void",
         ],
         "Holy": [
-            "Searing Flames",
-            "Obsidian Skin",
             "Devour Vitality",
             "Whispered Truths",
-            "Flash of Insight",
-            "Lash of the Void",
         ],
         "Shadow": [
-            "Searing Flames",
-            "Obsidian Skin",
             "Devour Vitality",
             "Whispered Truths",
-            "Flash of Insight",
-            "Lash of the Void",
         ]
     },
     "Rogue": {
         "Assassination": [
-            "Searing Flames",
-            "Obsidian Skin",
-            "Devour Vitality",
             "Whispered Truths",
             "Flash of Insight",
-            "Lash of the Void",
         ],
         "Outlaw": [
-            "Obsidian Skin",
-            "Devour Vitality",
             "Whispered Truths",
             "Flash of Insight",
         ],
         "Subtlety": [
-            "Searing Flames",
-            "Obsidian Skin",
-            "Devour Vitality",
             "Whispered Truths",
             "Flash of Insight",
-            "Lash of the Void",
         ]
     },
     "Shaman": {
         "Elemental": [
-            "Searing Flames",
-            "Obsidian Skin",
             "Devour Vitality",
             "Whispered Truths",
-            "Lash of the Void",
         ],
         "Enhancement": [
-            "Searing Flames",
-            "Obsidian Skin",
-            "Devour Vitality",
             "Whispered Truths",
             "Flash of Insight",
         ],
         "Restoration": [
-            "Searing Flames",
-            "Obsidian Skin",
             "Devour Vitality",
             "Whispered Truths",
-            "Lash of the Void",
         ]
     },
     "Warlock": {
         "Affliction": [
-            "Searing Flames",
-            "Obsidian Skin",
             "Devour Vitality",
             "Whispered Truths",
-            "Flash of Insight",
-            "Lash of the Void",
         ],
         "Demonology": [
-            "Searing Flames",
-            "Obsidian Skin",
             "Devour Vitality",
             "Whispered Truths",
-            "Flash of Insight",
-            "Lash of the Void",
         ],
         "Destruction": [
-            "Searing Flames",
-            "Obsidian Skin",
             "Devour Vitality",
             "Whispered Truths",
-            "Flash of Insight",
-            "Lash of the Void",
         ]
     },
     "Warrior": {
         "Arms": [
-            "Searing Flames",
-            "Devour Vitality",
             "Whispered Truths",
             "Flash of Insight",
-            "Lash of the Void",
         ],
         "Fury": [
-            "Searing Flames",
             "Whispered Truths",
             "Flash of Insight",
-            "Lash of the Void",
         ],
         "Protection": [
-            "Obsidian Skin",
-            "Devour Vitality",
             "Whispered Truths",
             "Flash of Insight",
-            "Lash of the Void",
         ]
     }
 }
