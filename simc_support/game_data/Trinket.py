@@ -887,5 +887,18 @@ trinket_list = [
         ranged=False,
         source=Source.PROFESSION,
         active=False
+    ),Trinket(  # Alchemy
+        name="Peerless Alchemist Stone",
+        item_id="171085",
+        min_itemlevel=470,
+        max_itemlevel=470,
+        max_itemlevel_drop=470,
+        agility=True,
+        intellect=True,
+        strength=True,
+        melee=False,
+        ranged=False,
+        source=Source.PROFESSION,
+        active=False
     ),
 ]
