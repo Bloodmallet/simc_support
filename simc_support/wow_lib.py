@@ -788,6 +788,20 @@ def get_role(wow_class: str, wow_spec: str) -> str:
     return __class_data[wow_class.title()]["specs"][wow_spec.title()]["role"]     # type: ignore
 
 
+def get_raid_role(wow_class: str, wow_spec: str) -> str:
+    """Get the raid role of the given wow class and wow spec.
+
+    Arguments:
+      wow_class {str} -- [description]
+      wow_spec {str} -- [description]
+
+    Returns:
+      str -- role ('tank'/'dd')
+    """
+
+    return __class_data[wow_class.title()]["specs"][wow_spec.title()]["raid_role"]     # type: ignore
+
+
 def get_class_id(wow_class: str) -> int:
     """Get the wow ID of the given class.
 
