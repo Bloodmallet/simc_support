@@ -360,14 +360,17 @@ blacklist = {
         "Blood": [
             "Whispered Truths",
             "Flash of Insight",
+            "Lash of the Void",
         ],
         "Frost": [
             "Whispered Truths",
             "Flash of Insight",
+            "Lash of the Void",
         ],
         "Unholy": [
             "Whispered Truths",
             "Flash of Insight",
+            "Lash of the Void",
         ]
     },
     "Demon_Hunter": {
@@ -384,37 +387,53 @@ blacklist = {
         "Balance": [
             "Devour Vitality",
             "Whispered Truths",
+            "Lash of the Void",
         ],
         "Feral": [
             "Whispered Truths",
             "Flash of Insight",
+            "Lash of the Void",
         ],
         "Guardian": [
             "Whispered Truths",
             "Flash of Insight",
+            "Lash of the Void",
         ],
         "Restoration": [
             "Devour Vitality",
             "Whispered Truths",
+            "Lash of the Void",
         ]
     },
     "Hunter": {
-        "Beast_Mastery": ["Flash of Insight",],
-        "Marksmanship": ["Flash of Insight",],
-        "Survival": ["Flash of Insight",]
+        "Beast_Mastery": [
+            "Flash of Insight",
+            "Lash of the Void",
+        ],
+        "Marksmanship": [
+            "Flash of Insight",
+            "Lash of the Void",
+        ],
+        "Survival": [
+            "Flash of Insight",
+            "Lash of the Void",
+        ]
     },
     "Mage": {
         "Arcane": [
             "Devour Vitality",
             "Whispered Truths",
+            "Lash of the Void",
         ],
         "Fire": [
             "Devour Vitality",
             "Whispered Truths",
+            "Lash of the Void",
         ],
         "Frost": [
             "Devour Vitality",
             "Whispered Truths",
+            "Lash of the Void",
         ]
     },
     "Monk": {
@@ -431,30 +450,36 @@ blacklist = {
         "Protection": [
             "Whispered Truths",
             "Flash of Insight",
+            "Lash of the Void",
         ],
         "Retribution": [
             "Whispered Truths",
             "Flash of Insight",
+            "Lash of the Void",
         ]
     },
     "Priest": {
         "Discipline": [
             "Devour Vitality",
             "Whispered Truths",
+            "Lash of the Void",
         ],
         "Holy": [
             "Devour Vitality",
             "Whispered Truths",
+            "Lash of the Void",
         ],
         "Shadow": [
             "Devour Vitality",
             "Whispered Truths",
+            "Lash of the Void",
         ]
     },
     "Rogue": {
         "Assassination": [
             "Whispered Truths",
             "Flash of Insight",
+            "Lash of the Void",
         ],
         "Outlaw": [
             "Whispered Truths",
@@ -463,12 +488,14 @@ blacklist = {
         "Subtlety": [
             "Whispered Truths",
             "Flash of Insight",
+            "Lash of the Void",
         ]
     },
     "Shaman": {
         "Elemental": [
             "Devour Vitality",
             "Whispered Truths",
+            "Lash of the Void",
         ],
         "Enhancement": [
             "Whispered Truths",
@@ -477,34 +504,41 @@ blacklist = {
         "Restoration": [
             "Devour Vitality",
             "Whispered Truths",
+            "Lash of the Void",
         ]
     },
     "Warlock": {
         "Affliction": [
             "Devour Vitality",
             "Whispered Truths",
+            "Lash of the Void",
         ],
         "Demonology": [
             "Devour Vitality",
             "Whispered Truths",
+            "Lash of the Void",
         ],
         "Destruction": [
             "Devour Vitality",
             "Whispered Truths",
+            "Lash of the Void",
         ]
     },
     "Warrior": {
         "Arms": [
             "Whispered Truths",
             "Flash of Insight",
+            "Lash of the Void",
         ],
         "Fury": [
             "Whispered Truths",
             "Flash of Insight",
+            "Lash of the Void",
         ],
         "Protection": [
             "Whispered Truths",
             "Flash of Insight",
+            "Lash of the Void",
         ]
     }
 }
