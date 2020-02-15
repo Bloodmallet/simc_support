@@ -362,12 +362,13 @@ blacklist = {
             "Flash of Insight",
             "Lash of the Void",
             "Searing Flames",
+            "Devour Vitality",
         ],
         "Frost": [
             "Whispered Truths",
             "Flash of Insight",
             "Lash of the Void",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Devour Vitality",
         ],
         "Unholy": [
@@ -375,6 +376,7 @@ blacklist = {
             "Flash of Insight",
             "Lash of the Void",
             "Searing Flames",
+            "Devour Vitality",
         ]
     },
     "Demon_Hunter": {
@@ -382,14 +384,14 @@ blacklist = {
             "Whispered Truths",
             "Flash of Insight",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Devour Vitality",
         ],
         "Vengeance": [
             "Whispered Truths",
             "Flash of Insight",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Devour Vitality",
         ]
     },
@@ -399,7 +401,7 @@ blacklist = {
             "Whispered Truths",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Flash of Insight",
         ],
         "Feral": [
@@ -407,21 +409,21 @@ blacklist = {
             "Flash of Insight",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
         ],
         "Guardian": [
             "Whispered Truths",
             "Flash of Insight",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
         ],
         "Restoration": [
             "Devour Vitality",
             "Whispered Truths",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Flash of Insight",
         ]
     },
@@ -430,21 +432,21 @@ blacklist = {
             "Flash of Insight",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Devour Vitality",
         ],
         "Marksmanship": [
             "Flash of Insight",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Devour Vitality",
         ],
         "Survival": [
             "Flash of Insight",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Whispered Truths",
         ]
     },
@@ -454,7 +456,7 @@ blacklist = {
             "Whispered Truths",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Flash of Insight",
         ],
         "Fire": [
@@ -462,7 +464,7 @@ blacklist = {
             "Whispered Truths",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Flash of Insight",
         ],
         "Frost": [
@@ -470,7 +472,7 @@ blacklist = {
             "Whispered Truths",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Flash of Insight",
         ]
     },
@@ -479,13 +481,14 @@ blacklist = {
             "Whispered Truths",
             "Flash of Insight",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
+            "Lash of the Void",
         ],
         "Windwalker": [
             "Devour Vitality",
             "Whispered Truths",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Flash of Insight",
         ]
     },
@@ -494,7 +497,7 @@ blacklist = {
             "Whispered Truths",
             "Flash of Insight",
             "Lash of the Void",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Devour Vitality",
         ],
         "Retribution": [
@@ -502,6 +505,7 @@ blacklist = {
             "Flash of Insight",
             "Lash of the Void",
             "Searing Flames",
+            "Devour Vitality",
         ]
     },
     "Priest": {
@@ -510,7 +514,7 @@ blacklist = {
             "Whispered Truths",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Flash of Insight",
         ],
         "Holy": [
@@ -518,7 +522,7 @@ blacklist = {
             "Whispered Truths",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Flash of Insight",
         ],
         "Shadow": [
@@ -526,7 +530,7 @@ blacklist = {
             "Whispered Truths",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Flash of Insight",
         ]
     },
@@ -536,14 +540,14 @@ blacklist = {
             "Flash of Insight",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Devour Vitality",
         ],
         "Outlaw": [
             "Whispered Truths",
             "Flash of Insight",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Devour Vitality",
         ],
         "Subtlety": [
@@ -551,7 +555,7 @@ blacklist = {
             "Flash of Insight",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Devour Vitality",
         ]
     },
@@ -561,13 +565,13 @@ blacklist = {
             "Whispered Truths",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
         ],
         "Enhancement": [
             "Whispered Truths",
             "Flash of Insight",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Devour Vitality",
         ],
         "Restoration": [
@@ -575,7 +579,7 @@ blacklist = {
             "Whispered Truths",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
         ]
     },
     "Warlock": {
@@ -584,7 +588,7 @@ blacklist = {
             "Whispered Truths",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Flash of Insight",
         ],
         "Demonology": [
@@ -592,7 +596,7 @@ blacklist = {
             "Whispered Truths",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Flash of Insight",
         ],
         "Destruction": [
@@ -600,7 +604,7 @@ blacklist = {
             "Whispered Truths",
             "Lash of the Void",
             "Searing Flames",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Flash of Insight",
         ]
     },
@@ -623,7 +627,7 @@ blacklist = {
             "Whispered Truths",
             "Flash of Insight",
             "Lash of the Void",
-            "Obsidian Destruction",
+            "Obsidian Skin",
             "Devour Vitality",
         ]
     }
