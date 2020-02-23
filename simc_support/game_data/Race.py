@@ -244,6 +244,7 @@ races = {
         "vulpera": (
             "warrior",
             "hunter",
+            "rogue",
             "priest",
             "shaman",
             "mage",
