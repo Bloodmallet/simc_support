@@ -1,7 +1,7 @@
 # these values are used throughout the code to determine itemlevel "borders" of items
 # usually used as a catch up mechanic, drops usually all items from previous content
 TRADER_TOKEN = -1
-WORLD_QUEST_ITEMLEVEL = 420
+WORLD_QUEST_ITEMLEVEL = 445
 # standard dungeon itemlevel (normal, max level dungeon)
 DUNGEON_ITEMLEVEL = 400
 MECHAGON = 415
@@ -13,7 +13,7 @@ TITANFORGE_CAP = -1
 WEEKLY_CHEST = 475
 
 # world related
-EMISSARY = WORLD_QUEST_ITEMLEVEL + 15
+EMISSARY = 445
 DARKSHORE = 385
 NAZJATAR = 385
 
