@@ -1,7 +1,8 @@
 # these values are used throughout the code to determine itemlevel "borders" of items
 # usually used as a catch up mechanic, drops usually all items from previous content
 TRADER_TOKEN = -1
-WORLD_QUEST_ITEMLEVEL = 445
+WORLD_QUEST_ITEMLEVEL = 300
+WORLD_QUEST_ITEMLEVEL_MAX = 430
 # standard dungeon itemlevel (normal, max level dungeon)
 DUNGEON_ITEMLEVEL = 400
 MECHAGON = 415

@@ -189,8 +189,8 @@ trinket_list = [
         300, True, True, True, False, False, source=Source.PROFESSION, active=False
     ),
     Trinket( # world quest
-        "Plunderbeard's Flask", "158164", WORLD_QUEST_ITEMLEVEL, WORLD_QUEST_ITEMLEVEL,
-        WORLD_QUEST_ITEMLEVEL, True, True, True, False, False, source=Source.WORLD_QUEST, active=True
+        "Plunderbeard's Flask", "158164", WORLD_QUEST_ITEMLEVEL, EMISSARY,
+        EMISSARY, True, True, True, False, False, source=Source.WORLD_QUEST, active=True
     ),
     Trinket( # Uldir
         "Frenetic Corpuscle", "160648", ULDIR, ULDIR+RAID_INCREASE,
@@ -225,8 +225,8 @@ trinket_list = [
         max_itemlevel_drop=350, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.WORLD_DROP, active=False
     ),
     Trinket( # wq
-        name="Kaja-fied Banana", item_id="161125", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=WORLD_QUEST_ITEMLEVEL,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
+        name="Kaja-fied Banana", item_id="161125", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
+        max_itemlevel_drop=EMISSARY, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
     ),
     Trinket(  # uldir
         name="Syringe of Bloodborne Infirmity", item_id="160655", min_itemlevel=ULDIR, max_itemlevel=ULDIR+RAID_INCREASE,
@@ -249,31 +249,31 @@ trinket_list = [
         max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
     ),
     Trinket(  # wq
-        name="Gilded Loa Figurine", item_id="158153", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=WORLD_QUEST_ITEMLEVEL,
+        name="Gilded Loa Figurine", item_id="158153", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
         max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
     ),
     Trinket(  # wq
-        name="Emblem of Zandalar", item_id="158154", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL,
+        name="Emblem of Zandalar", item_id="158154", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
         max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
     ),
     Trinket(  # wq
-        name="Dinobone Charm", item_id="158155", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL,
+        name="Dinobone Charm", item_id="158155", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
         max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
     ),
     Trinket(  # wq
-        name="Pearl Diver's Compass", item_id="158162", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL,
+        name="Pearl Diver's Compass", item_id="158162", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
         max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
     ),
     Trinket(  # wq
-        name="First Mate's Spyglass", item_id="158163", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket(  # stormsong valley
-        name="Whirlwing's Plumage", item_id="158215", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL,
+        name="First Mate's Spyglass", item_id="158163", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
         max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
     ),
     Trinket(  # stormsong valley
-        name="Living Oil Cannister", item_id="158216", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL,
+        name="Whirlwing's Plumage", item_id="158215", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
+        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
+    ),
+    Trinket(  # stormsong valley
+        name="Living Oil Cannister", item_id="158216", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
         max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
     ),
     # Trinket(  # stormsong valley - tank
@@ -281,11 +281,11 @@ trinket_list = [
     #     max_itemlevel_drop=M_PLUS_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, active=False
     # ),
     Trinket(  # stormsong valley
-        name="Vial of Storms", item_id="158224", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL,
+        name="Vial of Storms", item_id="158224", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
         max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
     ),
     Trinket(  # stormsong valley
-        name="Doom Shroom", item_id="158555", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL,
+        name="Doom Shroom", item_id="158555", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
         max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
     ),
     Trinket(  # waycrest manor
@@ -293,19 +293,19 @@ trinket_list = [
         max_itemlevel_drop=M_PLUS_ITEMLEVEL, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.DUNGEON, active=False
     ),
     Trinket(  # stormsong valley
-        name="Snowpelt Mangler", item_id="160263", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL,
+        name="Snowpelt Mangler", item_id="160263", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
         max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
     ),
     Trinket(  # nazmir
-        name="Incessantly Ticking Clock", item_id="161113", min_itemlevel=325, max_itemlevel=WORLD_QUEST_ITEMLEVEL,
+        name="Incessantly Ticking Clock", item_id="161113", min_itemlevel=325, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
         max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
     ),
     Trinket(  # vol'dun
-        name="Ravasaur Skull Bijou", item_id="161119", min_itemlevel=325, max_itemlevel=WORLD_QUEST_ITEMLEVEL,
+        name="Ravasaur Skull Bijou", item_id="161119", min_itemlevel=325, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
         max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
     ),
     Trinket(  # nazmir
-        name="Crawg Gnawed Femur", item_id="163703", min_itemlevel=325, max_itemlevel=WORLD_QUEST_ITEMLEVEL,
+        name="Crawg Gnawed Femur", item_id="163703", min_itemlevel=325, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
         max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
     ),
     Trinket(  # airdrop
@@ -503,7 +503,7 @@ trinket_list = [
         item_id="170273",
         min_itemlevel=390,
         max_itemlevel=WORLD_QUEST_ITEMLEVEL,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL,
+        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL_MAX,
         agility=True,
         intellect=True,
         strength=True,
@@ -726,7 +726,7 @@ trinket_list = [
         name="Trunksy",
         item_id="155565",
         min_itemlevel=WORLD_QUEST_ITEMLEVEL,
-        max_itemlevel=WORLD_QUEST_ITEMLEVEL,
+        max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
         max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL,
         agility=True,
         intellect=True,
@@ -760,9 +760,8 @@ trinket_list = [
         intellect=True,
         strength=False,
         melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=True
+        ranged=False, source=Source.RAID,
+        active=True,
     ),
     Trinket(  # Ny'alotha
         name="Humming Black Dragonscale",
@@ -861,7 +860,8 @@ trinket_list = [
         ranged=False,
         source=Source.RAID,
         active=False
-    ),Trinket(  # Ny'alotha
+    ),
+    Trinket(  # Ny'alotha
         name="Writhing Segment of Drest'agath",
         item_id="173946",
         min_itemlevel=NYALOTHA,
@@ -874,7 +874,8 @@ trinket_list = [
         ranged=False,
         source=Source.RAID,
         active=True
-    ),Trinket(  # Alchemy
+    ),
+    Trinket(  # Alchemy
         name="Awakened Alchemist Stone",
         item_id="171087",
         min_itemlevel=455,
@@ -887,7 +888,8 @@ trinket_list = [
         ranged=False,
         source=Source.PROFESSION,
         active=False
-    ),Trinket(  # Alchemy
+    ),
+    Trinket(  # Alchemy
         name="Peerless Alchemist Stone",
         item_id="171085",
         min_itemlevel=470,
