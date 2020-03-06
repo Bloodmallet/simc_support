@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """ Lib to check simc_options input values
 """
 from typing import Union

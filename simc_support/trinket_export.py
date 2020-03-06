@@ -1,7 +1,5 @@
-# -*- coding: utf-8 -*-
 """Exports trinkets from simc_support to three copy= .simc files for testing purpose.
 """
-
 
 import wow_lib
 
@@ -9,10 +7,8 @@ import wow_lib
 def print_simc_file(trinket_list, name):
     with open("trinkets_bfa_" + name + ".simc", 'w') as f:
         f.write("# PROFILE FOR TESTING ONLY!\n")
-        f.write(
-            "# This file provides all available trinkets for {}s.\n".format(name.upper()))
-        f.write(
-            "# Use this file to verify whether all trinkets are functioning as expected after changes.\n")
+        f.write("# This file provides all available trinkets for {}s.\n".format(name.upper()))
+        f.write("# Use this file to verify whether all trinkets are functioning as expected after changes.\n")
         f.write("# No appropriate drop itemlevel required.\n\n\n")
 
         for trinket in trinket_list:
