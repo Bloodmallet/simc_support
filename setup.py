@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 from setuptools import setup
 
 
@@ -10,7 +8,7 @@ def readme():
 
 setup(
     name='simc_support',
-    version='8.3.0.0',
+    version='9.0.0.0',
     author='Bloodmallet(EU)',
     author_email='kruse.peter.1990@gmail.com',
     description='This package offers some World of Warcraft related ingame data regularly used for simulations and some basic input test for standard values of SimulationCraft.',

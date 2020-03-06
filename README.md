@@ -1,2 +1,2 @@
 # simc_support
-libs to support with wow data and simc data
+Data to support simulations for World of Warcraft with SimulationCraft.
