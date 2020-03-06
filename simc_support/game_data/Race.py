@@ -2,25 +2,30 @@ from simc_support.game_data import Faction
 from simc_support.game_data.Faction import ALLIANCE
 from simc_support.game_data.Faction import HORDE
 from simc_support.game_data import Language
+from simc_support.game_data.SimcObject import SimcObject
 
 
-class Race(object):
+class Race(SimcObject):
     """Race defines how your character looks, moves, and what racial ability you have.
     """
 
     def __init__(
-        self, faction: Faction, full_name: str, simc_input: str, translations: Language.Translation, *args, **kwargs
+        self,
+        faction: Faction,
+        full_name: str,
+        simc_name: str,
+        translations: Language.Translation,
+        *args,
+        **kwargs,
     ) -> None:
-        super().__init__(*args, **kwargs)
+        super().__init__(full_name, simc_name, *args, **kwargs)
+
         self.faction = faction
-        self.full_name = full_name
-        self.simc_input = simc_input
 
-    def __repr__(self):
-        return self.simc_input
-
-    def __str__(self):
-        return self.full_name
+        if type(translations) == Language.Translation:
+            self.translations = translations
+        else:
+            self.translations = Language.Translation(translations)
 
 
 # Alliance
