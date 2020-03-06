@@ -1,3 +1,33 @@
+from simc_support.game_data.SimcObject import SimcObject
+from simc_support.game_data import Race
+from simc_support.game_data.Language import Translation
+from simc_support.game_data.Language import LANGUAGES
+
+
+class WowClass(SimcObject):
+
+    def __init__(self, id: int, races: list, translations: Translation, *args, **kwargs) -> None:
+        super().__init__(*args, **kwargs)
+        self.id = int(id)
+        # double check input to be of Race class
+        for race in races:
+            if type(race) != Race.Race:
+                raise TypeError("Expected races to be of Race type. Got {} instead.".format(type(race)))
+            if race not in Race.RACES:
+                raise ValueError("Unknown race {}.".format(race))
+        self.races = races
+        if type(translations) == Translation:
+            self.translations = translations
+        else:
+            self.translations = Translation(translations)
+
+
+empty_translation = {}
+for lang in LANGUAGES:
+    empty_translation[lang] = ""
+
+DEATHKNIGHT = WowClass(6, Race.RACES, empty_translation, "Death Knight", 'death_knight')
+
 class_data = {
     "Death_Knight": {
         "id": 6,
