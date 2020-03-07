@@ -177,7 +177,7 @@ corruptions = {
         '1': {
             'bonus_id': 6543,
             'spell_id': 318481,
-            'corruption': 10,
+            'corruption': 15,
         },
         '2': {
             'bonus_id': 6544,
@@ -194,19 +194,19 @@ corruptions = {
         '1': {
             'bonus_id': 6547,
             'spell_id': 318303,
-            'corruption': 15,
+            'corruption': 12,
         },
         '2': {
             'bonus_id': 6548,
             'spell_id': 318484,
-            'corruption': 33,
+            'corruption': 30,
         }
     },
     'Echoing Void': {
         '1': {
             'bonus_id': 6549,
             'spell_id': 318280,
-            'corruption': 25,
+            'corruption': 15,
         },
         '2': {
             'bonus_id': 6550,
