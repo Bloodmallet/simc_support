@@ -27,6 +27,176 @@ for lang in LANGUAGES:
     empty_translation[lang] = ""
 
 DEATHKNIGHT = WowClass(6, Race.RACES, empty_translation, "Death Knight", 'death_knight')
+DEMONHUNTER = WowClass(12, [
+    Race.NIGHTELF,
+    Race.BLOODELF,
+], empty_translation, "Demon Hunter", 'demon_hunter')
+DEMONHUNTER = WowClass(12, [
+    Race.NIGHTELF,
+    Race.BLOODELF,
+], empty_translation, "Demon Hunter", 'demon_hunter')
+DRUID = WowClass(
+    11, [
+        Race.NIGHTELF,
+        Race.WORGEN,
+        Race.KULTIRAN,
+        Race.TAUREN,
+        Race.TROLL,
+        Race.HIGHMOUNTAINTAUREN,
+        Race.ZANDALARITROLL,
+    ], empty_translation, "Druid", 'druid'
+)
+HUNTER = WowClass(3, Race.RACES, empty_translation, "Hunter", 'hunter')
+MAGE = WowClass(
+    8, [
+        Race.DRAENEI,
+        Race.DWARF,
+        Race.GNOME,
+        Race.HUMAN,
+        Race.NIGHTELF,
+        Race.PANDAREN_ALLIANCE,
+        Race.WORGEN,
+        Race.VOIDELF,
+        Race.LIGHTFORGEDDRAENEI,
+        Race.DARKIRONDWARF,
+        Race.KULTIRAN,
+        Race.MECHAGNOME,
+        Race.BLOODELF,
+        Race.GOBLIN,
+        Race.ORC,
+        Race.PANDAREN_HORDE,
+        Race.TROLL,
+        Race.UNDEAD,
+        Race.NIGHTBORNE,
+        Race.MAGHARORC,
+        Race.ZANDALARITROLL,
+        Race.VULPERA,
+    ], empty_translation, "Mage", 'mage'
+)
+MONK = WowClass(
+    10, [
+        Race.DRAENEI,
+        Race.DWARF,
+        Race.GNOME,
+        Race.HUMAN,
+        Race.NIGHTELF,
+        Race.PANDAREN_ALLIANCE,
+        Race.VOIDELF,
+        Race.DARKIRONDWARF,
+        Race.KULTIRAN,
+        Race.MECHAGNOME,
+        Race.BLOODELF,
+        Race.ORC,
+        Race.PANDAREN_HORDE,
+        Race.TAUREN,
+        Race.TROLL,
+        Race.UNDEAD,
+        Race.NIGHTBORNE,
+        Race.HIGHMOUNTAINTAUREN,
+        Race.MAGHARORC,
+        Race.ZANDALARITROLL,
+        Race.VULPERA,
+    ], empty_translation, "Monk", 'monk'
+)
+PALADIN = WowClass(
+    2, [
+        Race.DRAENEI,
+        Race.DWARF,
+        Race.HUMAN,
+        Race.LIGHTFORGEDDRAENEI,
+        Race.DARKIRONDWARF,
+        Race.BLOODELF,
+        Race.TAUREN,
+        Race.ZANDALARITROLL,
+    ], empty_translation, "Paladin", 'paladin'
+)
+PRIEST = WowClass(
+    5, [
+        Race.DRAENEI,
+        Race.DWARF,
+        Race.GNOME,
+        Race.HUMAN,
+        Race.NIGHTELF,
+        Race.PANDAREN_ALLIANCE,
+        Race.WORGEN,
+        Race.VOIDELF,
+        Race.LIGHTFORGEDDRAENEI,
+        Race.DARKIRONDWARF,
+        Race.KULTIRAN,
+        Race.MECHAGNOME,
+        Race.BLOODELF,
+        Race.GOBLIN,
+        Race.PANDAREN_HORDE,
+        Race.TAUREN,
+        Race.TROLL,
+        Race.UNDEAD,
+        Race.NIGHTBORNE,
+        Race.MAGHARORC,
+        Race.ZANDALARITROLL,
+        Race.VULPERA,
+    ], empty_translation, "Priest", 'priest'
+)
+ROGUE = WowClass(
+    4, [
+        Race.DWARF,
+        Race.GNOME,
+        Race.HUMAN,
+        Race.NIGHTELF,
+        Race.PANDAREN_ALLIANCE,
+        Race.WORGEN,
+        Race.VOIDELF,
+        Race.DARKIRONDWARF,
+        Race.KULTIRAN,
+        Race.MECHAGNOME,
+        Race.BLOODELF,
+        Race.GOBLIN,
+        Race.ORC,
+        Race.PANDAREN_HORDE,
+        Race.TROLL,
+        Race.UNDEAD,
+        Race.NIGHTBORNE,
+        Race.MAGHARORC,
+        Race.ZANDALARITROLL,
+        Race.VULPERA,
+    ], empty_translation, "Rogue", 'rogue'
+)
+SHAMAN = WowClass(
+    7, [
+        Race.DRAENEI,
+        Race.DWARF,
+        Race.PANDAREN_ALLIANCE,
+        Race.DARKIRONDWARF,
+        Race.KULTIRAN,
+        Race.GOBLIN,
+        Race.ORC,
+        Race.PANDAREN_HORDE,
+        Race.TAUREN,
+        Race.TROLL,
+        Race.HIGHMOUNTAINTAUREN,
+        Race.MAGHARORC,
+        Race.ZANDALARITROLL,
+        Race.VULPERA,
+    ], empty_translation, "Shaman", 'shaman'
+)
+WARLOCK = WowClass(
+    9, [
+        Race.DWARF,
+        Race.GNOME,
+        Race.HUMAN,
+        Race.WORGEN,
+        Race.VOIDELF,
+        Race.DARKIRONDWARF,
+        Race.MECHAGNOME,
+        Race.BLOODELF,
+        Race.GOBLIN,
+        Race.ORC,
+        Race.TROLL,
+        Race.UNDEAD,
+        Race.NIGHTBORNE,
+        Race.VULPERA,
+    ], empty_translation, "Warlock", 'warlock'
+)
+WARRIOR = WowClass(1, Race.RACES, empty_translation, "Warrior", 'warrior')
 
 class_data = {
     "Death_Knight": {
