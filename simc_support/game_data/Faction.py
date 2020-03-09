@@ -2,8 +2,8 @@ from simc_support.game_data.SimcObject import SimcObject
 
 
 class Faction(SimcObject):
-    """Factions divide the player base, usually have differences in storylines,
-    and quests.
+    """Factions divide the player base, usually have differences in
+    storylines, and quests.
     """
 
     @property

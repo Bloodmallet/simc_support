@@ -1,4 +1,7 @@
 class SimcObject(object):
+    """Base class to enforce the usage of full_name for the User and
+    simc_names in the background for SimulationCraft.
+    """
 
     def __init__(self, full_name: str, simc_name: str, *args, **kwargs):
         super().__init__(*args, **kwargs)

@@ -66,4 +66,6 @@ class Translation(object):
             self.RU = ru_RU
             self.US = en_US
         else:
-            raise ValueError('Expected more information. Please make sure you have translations for all languages.')
+            raise ValueError(
+                'Expected more information. Please make sure you have translations for all languages.'
+            )
