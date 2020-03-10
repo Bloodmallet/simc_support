@@ -4,7 +4,7 @@ class SimcObject(object):
     """
 
     def __init__(self, full_name: str, simc_name: str, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+        super().__init__()
         self.full_name = full_name
         self.simc_name = simc_name
 

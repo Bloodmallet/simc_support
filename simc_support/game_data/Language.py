@@ -3,7 +3,7 @@ class Language(object):
     """
 
     def __init__(self, abbreviation: str, *args, **kwargs) -> None:
-        super().__init__(*args, **kwargs)
+        super().__init__()
         self.abbreviation = abbreviation
 
     def __str__(self) -> str:
@@ -52,10 +52,11 @@ class Translation(object):
         *args,
         **kwargs,
     ):
-        super().__init__(*args, **kwargs)
-        if len(set(translations.keys()).intersection(LANGUAGES)) == len(LANGUAGES):
-            for language in translations:
-                self.language = translations[language]
+        super().__init__()
+        if translations:
+            if len(set(translations.keys()).intersection(LANGUAGES)) == len(LANGUAGES):
+                for language in translations:
+                    self.language = translations[language]
         elif cn_CN and de_DE and es_ES and fr_FR and it_IT and ko_KR and ru_RU and en_US:
             self.CN = cn_CN
             self.DE = de_DE
