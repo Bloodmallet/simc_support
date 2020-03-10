@@ -25,7 +25,7 @@ class Race(SimcObject):
         if type(translations) == Language.Translation:
             self.translations = translations
         else:
-            self.translations = Language.Translation(translations)
+            self.translations = Language.Translation(translations=translations)
 
 
 # Alliance
