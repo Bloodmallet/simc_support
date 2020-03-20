@@ -7,19 +7,19 @@ class Trinket(object):
 
     def __init__(
         self,
-        name,
-        item_id,
-        min_itemlevel,
-        max_itemlevel,
-        max_itemlevel_drop,
-        agility,
-        intellect,
-        strength,
-        melee,
-        ranged,
-        legendary=False,
-        source=None,
-        active=False
+        name: str,
+        item_id: str,
+        min_itemlevel: int,
+        max_itemlevel: int,
+        max_itemlevel_drop: int,
+        agility: bool,
+        intellect: bool,
+        strength: bool,
+        melee: bool,
+        ranged: bool,
+        legendary: bool = False,
+        source: str = None,
+        active: bool = False
     ):
         super(Trinket, self).__init__()
         self.name: str = str(name)
@@ -46,11 +46,13 @@ class Trinket(object):
         return self.source
 
 
-trinket_list = [
-    # dungeon trinkets
+trinket_list = []
+
+# dungeon trinkets
+trinket_list += [
     Trinket( # atal'dazar
         "My'das Talisman", "158319", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, True, False, False, False, False, source=Source.DUNGEON, active=True
+        M_PLUS_ITEMLEVEL, True, False, False, False, False, source=Source.DUNGEON, active=True,
     ),
     Trinket( # atal'dazar
         "Rezan's Gleaming Eye", "158712", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,

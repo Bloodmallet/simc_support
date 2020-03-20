@@ -36,12 +36,6 @@ DEMONHUNTER = WowClass(
         Race.BLOODELF,
     ], empty_translation, "Demon Hunter", 'demon_hunter'
 )
-DEMONHUNTER = WowClass(
-    12, [
-        Race.NIGHTELF,
-        Race.BLOODELF,
-    ], empty_translation, "Demon Hunter", 'demon_hunter'
-)
 DRUID = WowClass(
     11, [
         Race.NIGHTELF,
@@ -204,3 +198,18 @@ WARLOCK = WowClass(
     ], empty_translation, "Warlock", 'warlock'
 )
 WARRIOR = WowClass(1, Race.RACES, empty_translation, "Warrior", 'warrior')
+
+WOWCLASSES = [
+    DEATHKNIGHT,
+    DEMONHUNTER,
+    DRUID,
+    HUNTER,
+    MAGE,
+    MONK,
+    PALADIN,
+    PRIEST,
+    ROGUE,
+    SHAMAN,
+    WARLOCK,
+    WARRIOR,
+]
