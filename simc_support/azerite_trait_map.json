@@ -678,38 +678,14 @@
             "Death_Knight": [],
             "Demon_Hunter": [],
             "Druid": [],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
+            "Hunter": [],
+            "Mage": [],
             "Monk": [],
             "Paladin": [],
-            "Priest": [
-                "Discipline",
-                "Holy",
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement",
-                "Restoration"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
             "Warrior": []
         },
         "description": "Taking damage grants you $s1 Dodge for $269214d, stacking up to $269214u times.",
@@ -737,38 +713,14 @@
             "Death_Knight": [],
             "Demon_Hunter": [],
             "Druid": [],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
+            "Hunter": [],
+            "Mage": [],
             "Monk": [],
             "Paladin": [],
-            "Priest": [
-                "Discipline",
-                "Holy",
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement",
-                "Restoration"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
             "Warrior": []
         },
         "description": "Taking damage has a chance to grant you Azerite Veins, healing you for $s1 every $270674t1 sec. Lasts $270674d or until you are fully healed.",
@@ -846,45 +798,18 @@
     },
     "267880": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengeance"
-            ],
+            "Death_Knight": [],
+            "Demon_Hunter": [],
             "Druid": [],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
+            "Hunter": [],
+            "Mage": [],
             "Monk": [],
             "Paladin": [],
             "Priest": [],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
+            "Rogue": [],
             "Shaman": [],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "Your healing effects have a chance to increase your Haste by up to $s1 for $269085d. Healing lower health targets will grant you more Haste.",
         "max_itemlevel": -1,
@@ -895,45 +820,18 @@
     },
     "267882": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengeance"
-            ],
+            "Death_Knight": [],
+            "Demon_Hunter": [],
             "Druid": [],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
+            "Hunter": [],
+            "Mage": [],
             "Monk": [],
             "Paladin": [],
             "Priest": [],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
+            "Rogue": [],
             "Shaman": [],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "Your healing effects have a chance to grant the target ${$s1*2} additional healing every $272260t1 sec for $272260d. This effect doubles every $272260t1 sec. ",
         "max_itemlevel": -1,
@@ -944,45 +842,18 @@
     },
     "267883": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengeance"
-            ],
+            "Death_Knight": [],
+            "Demon_Hunter": [],
             "Druid": [],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
+            "Hunter": [],
+            "Mage": [],
             "Monk": [],
             "Paladin": [],
             "Priest": [],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
+            "Rogue": [],
             "Shaman": [],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "Your heals on targets below $s2% health have a chance to heal for an additional $s1.",
         "max_itemlevel": -1,
@@ -993,45 +864,18 @@
     },
     "267884": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengeance"
-            ],
+            "Death_Knight": [],
+            "Demon_Hunter": [],
             "Druid": [],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
+            "Hunter": [],
+            "Mage": [],
             "Monk": [],
             "Paladin": [],
             "Priest": [],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
+            "Rogue": [],
             "Shaman": [],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "Your heals have a chance to apply Bracing Chill. Healing a target with Bracing Chill will heal for an additional $s1 and move Bracing Chill to a nearby ally (up to $272276u times).",
         "max_itemlevel": -1,
@@ -1042,45 +886,18 @@
     },
     "267886": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengeance"
-            ],
+            "Death_Knight": [],
+            "Demon_Hunter": [],
             "Druid": [],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
+            "Hunter": [],
+            "Mage": [],
             "Monk": [],
             "Paladin": [],
             "Priest": [],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
+            "Rogue": [],
             "Shaman": [],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "When you go below $272570s1% mana, you gain $s1 mana. Can occur once every $289362d.",
         "max_itemlevel": -1,
@@ -1091,45 +908,18 @@
     },
     "267889": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengeance"
-            ],
+            "Death_Knight": [],
+            "Demon_Hunter": [],
             "Druid": [],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
+            "Hunter": [],
+            "Mage": [],
             "Monk": [],
             "Paladin": [],
             "Priest": [],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
+            "Rogue": [],
             "Shaman": [],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "Your healing spells have a chance to apply Blessed Portents for $271843d. When the ally falls below $s2% health, Blessed Portents is consumed and instantly restores $s1 health.",
         "max_itemlevel": -1,
@@ -1140,45 +930,18 @@
     },
     "267892": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengeance"
-            ],
+            "Death_Knight": [],
+            "Demon_Hunter": [],
             "Druid": [],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
+            "Hunter": [],
+            "Mage": [],
             "Monk": [],
             "Paladin": [],
             "Priest": [],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
+            "Rogue": [],
             "Shaman": [],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "Casting $?a137009[Wild Growth]?a137022[Essence Font]?a137030[Prayer of Healing or Power Word: Radiance]?a137026[Light of Dawn]?a137038[Chain Heal][your multi-target healing spell] grants you $s1 Mastery for $272090d. This cannot occur more than once every $272089proccooldown sec.",
         "max_itemlevel": -1,
@@ -1354,62 +1117,18 @@
     },
     "270583": {
         "class": {
-            "Death_Knight": [
-                "Blood",
-                "Frost",
-                "Unholy"
-            ],
-            "Demon_Hunter": [
-                "Havoc",
-                "Vengeance"
-            ],
-            "Druid": [
-                "Balance",
-                "Feral",
-                "Guardian"
-            ],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
-            "Monk": [
-                "Brewmaster",
-                "Windwalker"
-            ],
-            "Paladin": [
-                "Protection",
-                "Retribution"
-            ],
-            "Priest": [
-                "Holy",
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement",
-                "Restoration"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
-            "Warrior": [
-                "Arms",
-                "Fury",
-                "Protection"
-            ]
+            "Death_Knight": [],
+            "Demon_Hunter": [],
+            "Druid": [],
+            "Hunter": [],
+            "Mage": [],
+            "Monk": [],
+            "Paladin": [],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
+            "Warrior": []
         },
         "description": "Contributing to the death of an enemy of Azeroth heals you for $s1 and grants you $s2 Versatility for $270586d, stacking up to $270586u times.",
         "max_itemlevel": -1,
@@ -1435,38 +1154,14 @@
             "Death_Knight": [],
             "Demon_Hunter": [],
             "Druid": [],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
+            "Hunter": [],
+            "Mage": [],
             "Monk": [],
             "Paladin": [],
-            "Priest": [
-                "Discipline",
-                "Holy",
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement",
-                "Restoration"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
             "Warrior": []
         },
         "description": "When dealt damage greater than $s3% of your maximum health, gain $s2 Armor and cause melee attackers to suffer $s1 Physical damage. Lasts $271538d.",
@@ -1481,38 +1176,14 @@
             "Death_Knight": [],
             "Demon_Hunter": [],
             "Druid": [],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
+            "Hunter": [],
+            "Mage": [],
             "Monk": [],
             "Paladin": [],
-            "Priest": [
-                "Discipline",
-                "Holy",
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement",
-                "Restoration"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
             "Warrior": []
         },
         "description": "Falling below $271542s1% health grants you $s1 Armor for $271543d. Taking further Physical damage reduces the Armor granted. May only occur every $271544d.",
@@ -1527,38 +1198,14 @@
             "Death_Knight": [],
             "Demon_Hunter": [],
             "Druid": [],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
+            "Hunter": [],
+            "Mage": [],
             "Monk": [],
             "Paladin": [],
-            "Priest": [
-                "Discipline",
-                "Holy",
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement",
-                "Restoration"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
             "Warrior": []
         },
         "description": "Taking damage has a chance to increase your maximum health by $s1 for each enemy within $271548A1 yds, up to $271550u enemies. Lasts $271550d.",
@@ -1573,38 +1220,14 @@
             "Death_Knight": [],
             "Demon_Hunter": [],
             "Druid": [],
-            "Hunter": [
-                "Beast_Mastery",
-                "Marksmanship",
-                "Survival"
-            ],
-            "Mage": [
-                "Arcane",
-                "Fire",
-                "Frost"
-            ],
+            "Hunter": [],
+            "Mage": [],
             "Monk": [],
             "Paladin": [],
-            "Priest": [
-                "Discipline",
-                "Holy",
-                "Shadow"
-            ],
-            "Rogue": [
-                "Assassination",
-                "Outlaw",
-                "Subtlety"
-            ],
-            "Shaman": [
-                "Elemental",
-                "Enhancement",
-                "Restoration"
-            ],
-            "Warlock": [
-                "Affliction",
-                "Demonology",
-                "Destruction"
-            ],
+            "Priest": [],
+            "Rogue": [],
+            "Shaman": [],
+            "Warlock": [],
             "Warrior": []
         },
         "description": "Taking damage has a chance to create an upwelling of Azerite beneath your feet, increasing your Health by $s1 and your Armor by $s2 while you stand within it. Lasts $271560d.",
