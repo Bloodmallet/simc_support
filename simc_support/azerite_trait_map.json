@@ -8092,7 +8092,7 @@
         },
         "description": "Once per minute while in combat, gain $s1 Haste, Critical Strike, Mastery, and Versatility for $300174d.",
         "max_itemlevel": 485,
-        "max_stack": 1,
+        "max_stack": 2,
         "min_itemlevel": 400,
         "name": "Clockwork Heart",
         "trait_id": "569"
