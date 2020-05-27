@@ -1,13 +1,13 @@
 # https://ptr.wowhead.com/guides/corrupted-items-overview-titan-purification-corruption-resistance
 
 corruptions = {
-     # 'Poison': {
-     #     '1': {
-     #         'bonus_id': 6434,
-     #         'spell_id': 13518,
-     #         'corruption': 1,     # ??
-     #     }
-     # },
+    # 'Poison': {
+    #     '1': {
+    #         'bonus_id': 6434,
+    #         'spell_id': 13518,
+    #         'corruption': 1,     # ??
+    #     }
+    # },
     'Strikethrough': {
         '1': {
             'bonus_id': 6437,
@@ -93,52 +93,52 @@ corruptions = {
             'corruption': 20,
         }
     },
-     # 'Avoidant': {
-     #     '1': {
-     #         'bonus_id': 6483,
-     #         'spell_id': 315607,
-     #         'corruption': 10,
-     #     },
-     #     '2': {
-     #         'bonus_id': 6484,
-     #         'spell_id': 315608,
-     #         'corruption': 15,
-     #     },
-     #     '3': {
-     #         'bonus_id': 6485,
-     #         'spell_id': 315609,
-     #         'corruption': 20,
-     #     }
-     # },
+    # 'Avoidant': {
+    #     '1': {
+    #         'bonus_id': 6483,
+    #         'spell_id': 315607,
+    #         'corruption': 10,
+    #     },
+    #     '2': {
+    #         'bonus_id': 6484,
+    #         'spell_id': 315608,
+    #         'corruption': 15,
+    #     },
+    #     '3': {
+    #         'bonus_id': 6485,
+    #         'spell_id': 315609,
+    #         'corruption': 20,
+    #     }
+    # },
     'Glimpse of Clarity': {
-        '1': {
-            'bonus_id': 6486,
-            'spell_id': 315574,
-            'corruption': 10,
-        },
+        # '1': {
+        #     'bonus_id': 6486,
+        #     'spell_id': 315574,
+        #     'corruption': 10,
+        # },
         '2': {
             'bonus_id': 6546,
             'spell_id': 318239,
             'corruption': 15,
         }
     },
-     # 'Siphoner': {
-     #     '1': {
-     #         'bonus_id': 6493,
-     #         'spell_id': 315590,
-     #         'corruption': 10,
-     #     },
-     #     '2': {
-     #         'bonus_id': 6494,
-     #         'spell_id': 315591,
-     #         'corruption': 15,
-     #     },
-     #     '3': {
-     #         'bonus_id': 6495,
-     #         'spell_id': 315592,
-     #         'corruption': 20,
-     #     }
-     # },
+    # 'Siphoner': {
+    #     '1': {
+    #         'bonus_id': 6493,
+    #         'spell_id': 315590,
+    #         'corruption': 10,
+    #     },
+    #     '2': {
+    #         'bonus_id': 6494,
+    #         'spell_id': 315591,
+    #         'corruption': 15,
+    #     },
+    #     '3': {
+    #         'bonus_id': 6495,
+    #         'spell_id': 315592,
+    #         'corruption': 20,
+    #     }
+    # },
     'Twilight Devastation': {
         '1': {
             'bonus_id': 6537,
