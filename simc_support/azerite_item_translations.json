@@ -4916,4 +4916,190 @@
     "cn_CN": "阳魂头饰",
     "ru_RU": "Головной убор солнечной души"
   }
-Sunsoul Faceguard
+  "Sunsoul Faceguard": {
+    "de_DE": "Sonnenseelengesichtsschutz",
+    "en_US": "Sunsoul Faceguard",
+    "es_ES": "Visera de alma solar",
+    "fr_FR": "Ventaille d’âme solaire",
+    "it_IT": "Elmo Foderato dell'Anima Luminosa",
+    "pt_BR": "Viseira Almassol",
+    "ko_KR": "태양영혼 얼굴보호대",
+    "cn_CN": "阳魂面甲",
+    "ru_RU": "Большой шлем солнечной души"
+  }
+  "Oathsworn Helm": {
+    "de_DE": "Eidschwörerhelm",
+    "en_US": "Oathsworn Helm",
+    "es_ES": "Yelmo juramentado",
+    "fr_FR": "Heaume de jureur",
+    "it_IT": "Elmo del Giuramento Leale",
+    "pt_BR": "Elmo do Jurado",
+    "ko_KR": "맹세의 투구",
+    "cn_CN": "誓约者战盔",
+    "ru_RU": "Шлем принесенной клятвы"
+  }
+  "Oathsworn Faceguard": {
+    "de_DE": "Eidschwörergesichtsschutz",
+    "en_US": "Oathsworn Faceguard",
+    "es_ES": "Visera juramentada",
+    "fr_FR": "Ventaille de jureur",
+    "it_IT": "Elmo Foderato del Giuramento Leale",
+    "pt_BR": "Viseira do Jurado",
+    "ko_KR": "맹세의 얼굴보호대",
+    "cn_CN": "誓约者面甲",
+    "ru_RU": "Большой шлем принесенной клятвы"
+  }
+  "Corrupted Gladiator's Plate Helm": {
+    "de_DE": "Plattenhelm des verderbten Gladiators",
+    "en_US": "Corrupted Gladiator's Plate Helm",
+    "es_ES": "Yelmo de placas de Gladiador corrupto",
+    "fr_FR": "Heaume du gladiateur corrompu en plaques",
+    "it_IT": "Elmo a Piastre del Gladiatore Corrotto",
+    "pt_BR": "Elmo de Placa do Gladiador Corrompido",
+    "ko_KR": "타락한 검투사의 판금 투구",
+    "cn_CN": "腐化角斗士的板甲头盔",
+    "ru_RU": "Латный шлем падшего гладиатора"
+  }
+  "Corrupted Gladiator's Plate Skullguard": {
+    "de_DE": "Plattenschädelschutz des verderbten Gladiators",
+    "en_US": "Corrupted Gladiator's Plate Skullguard",
+    "es_ES": "Guardacráneo de placas de Gladiador corrupto",
+    "fr_FR": "Garde-crâne du gladiateur corrompu en plaques",
+    "it_IT": "Copriteschio a Piastre del Gladiatore Corrotto",
+    "pt_BR": "Guarda-crânio de Placas do Gladiador Corrompido",
+    "ko_KR": "타락한 검투사의 판금 해골 머리보호구",
+    "cn_CN": "腐化角斗士的板甲护颅",
+    "ru_RU": "Латный защитный шлем падшего гладиатора"
+  }
+  "Corrupted Aspirant's Plate Helm": {
+    "de_DE": "Plattenhelm des verderbten Aspiranten",
+    "en_US": "Corrupted Aspirant's Plate Helm",
+    "es_ES": "Yelmo de placas de aspirante corrupto",
+    "fr_FR": "Heaume de l’aspirant corrompu en plaques",
+    "it_IT": "Elmo a Piastre del Pretendente Corrotto",
+    "pt_BR": "Elmo de Placa do Aspirante Corrompido",
+    "ko_KR": "타락한 지원자의 판금 투구",
+    "cn_CN": "腐化候选者的板甲头盔",
+    "ru_RU": "Латный шлем падшего претендента"
+  }
+  "Corrupted Gladiator's Plate Warhelm": {
+    "de_DE": "Plattenkriegshelm des verderbten Gladiators",
+    "en_US": "Corrupted Gladiator's Plate Warhelm",
+    "es_ES": "Yelmo de guerra de placas de Gladiador corrupto",
+    "fr_FR": "Heaume de guerre du gladiateur corrompu en plaques",
+    "it_IT": "Elmo da Guerra a Piastre del Gladiatore Corrotto",
+    "pt_BR": "Elmo Bélico de Placa do Gladiador Corrompido",
+    "ko_KR": "타락한 검투사의 판금 전쟁투구",
+    "cn_CN": "腐化角斗士的板甲战盔",
+    "ru_RU": "Латный боевой шлем падшего гладиатора"
+  }
+  "Warhelm of Dread Waters": {
+    "de_DE": "Kriegshelm der Schreckensgewässer",
+    "en_US": "Warhelm of Dread Waters",
+    "es_ES": "Yelmo bélico de aguas aterradoras",
+    "fr_FR": "Heaume de guerre des eaux effroyables",
+    "it_IT": "Elmo da Guerra delle Acque del Terrore",
+    "pt_BR": "Elmo Bélico das Águas Temíveis",
+    "ko_KR": "두려운 바다의 전쟁투구",
+    "cn_CN": "恐惧水域战盔",
+    "ru_RU": "Боевой шлем ужасных глубин"
+  }
+  "Notorious Gladiator's Plate Headcover": {
+    "de_DE": "Plattenkopfbedeckung des berüchtigten Gladiators",
+    "en_US": "Notorious Gladiator's Plate Headcover",
+    "es_ES": "Cimera de placas de Gladiador déspota",
+    "fr_FR": "Bassinet du gladiateur notoire en plaques",
+    "it_IT": "Copricapo a Piastre del Gladiatore Famigerato",
+    "pt_BR": "Barrete de Placa do Gladiador Notório",
+    "ko_KR": "악명 높은 검투사의 판금 면갑",
+    "cn_CN": "罪邪角斗士的板甲护额",
+    "ru_RU": "Латный головной покров отъявленного гладиатора"
+  }
+  "Apogee Inventor's Goggles": {
+    "de_DE": "Brille des genialen Erfinders",
+    "en_US": "Apogee Inventor's Goggles",
+    "es_ES": "Gafas del inventor en apogeo",
+    "fr_FR": "Lunettes d’illustre inventeur",
+    "it_IT": "Occhiali dell'Apogeo dell'Inventore",
+    "pt_BR": "Óculos do Inventor Máximo",
+    "ko_KR": "원지점 발명가의 고글",
+    "cn_CN": "巅峰发明家的护目镜",
+    "ru_RU": "Очки гениального изобретателя"
+  }
+  "Zanj'ir Scaleguard Faceguard": {
+    "de_DE": "Schuppenwachengesichtsschutz der Zanj'ir",
+    "en_US": "Zanj'ir Scaleguard Faceguard",
+    "es_ES": "Visera de guardia escamado Zanj'ir",
+    "fr_FR": "Ventaille de gardécaille zanj’ir",
+    "it_IT": "Elmo della Guardia delle Scaglie Zanj'ir",
+    "pt_BR": "Viseira do Guarda Escamoso Zanj'ir",
+    "ko_KR": "잔지르 비늘경비병 얼굴보호대",
+    "cn_CN": "赞齐尔鳞卫护面",
+    "ru_RU": "Большой шлем занш'ирского стража"
+  }
+  "Notorious Gladiator's Plate Greathelm": {
+    "de_DE": "Plattengroßhelm des berüchtigten Gladiators",
+    "en_US": "Notorious Gladiator's Plate Greathelm",
+    "es_ES": "Gran yelmo de placas de Gladiador deshonrado",
+    "fr_FR": "Grand heaume du gladiateur notoire en plaques",
+    "it_IT": "Grandelmo a Piastre del Gladiatore Famigerato",
+    "pt_BR": "Grande Elmo de Placa do Gladiador Notório",
+    "ko_KR": "악명 높은 검투사의 판금 철갑투구",
+    "cn_CN": "罪邪角斗士的板甲重盔",
+    "ru_RU": "Латный большой шлем отъявленного гладиатора"
+  }
+  "Notorious Gladiator's Plate Helm": {
+    "de_DE": "Plattenhelm des berüchtigten Gladiators",
+    "en_US": "Notorious Gladiator's Plate Helm",
+    "es_ES": "Yelmo de placas de Gladiador déspota",
+    "fr_FR": "Heaume du gladiateur notoire en plaques",
+    "it_IT": "Elmo a Piastre del Gladiatore Famigerato",
+    "pt_BR": "Elmo de Placa do Gladiador Notório",
+    "ko_KR": "악명 높은 검투사의 판금 투구",
+    "cn_CN": "罪邪角斗士的板甲头盔",
+    "ru_RU": "Латный шлем отъявленного гладиатора"
+  }
+  "Notorious Gladiator's Plate Skullguard": {
+    "de_DE": "Plattenschädelschutz des berüchtigten Gladiators",
+    "en_US": "Notorious Gladiator's Plate Skullguard",
+    "es_ES": "Guardacráneo de placas de Gladiador deshonrado",
+    "fr_FR": "Garde-crâne du gladiateur notoire en plaques",
+    "it_IT": "Copriteschio a Piastre del Gladiatore Famigerato",
+    "pt_BR": "Guarda-crânio de Placa do Gladiador Notório",
+    "ko_KR": "악명 높은 검투사의 판금 머리보호구",
+    "cn_CN": "罪邪角斗士的板甲护颅",
+    "ru_RU": "Латный защитный шлем отъявленного гладиатора"
+  }
+  "Notorious Aspirant's Plate Helm": {
+    "de_DE": "Plattenhelm des berüchtigten Aspiranten",
+    "en_US": "Notorious Aspirant's Plate Helm",
+    "es_ES": "Yelmo de placas de aspirante déspota",
+    "fr_FR": "Heaume de l’aspirant notoire en plaques",
+    "it_IT": "Elmo a Piastre del Pretendente Famigerato",
+    "pt_BR": "Elmo de Placa do Aspirante Notório",
+    "ko_KR": "악명 높은 지원자의 판금 투구",
+    "cn_CN": "罪邪候选者的板甲头盔",
+    "ru_RU": "Латный шлем отъявленного претендента"
+  }  
+"Greathelm of the Tender": {
+    "de_DE": "Großhelm des Pflegers",
+    "en_US": "Greathelm of the Tender",
+    "es_ES": "Gran yelmo de El Cuidador",
+    "fr_FR": "Grand heaume de la Gardienne",
+    "it_IT": "Grandelmo del Guardialbero",
+    "pt_BR": "Grande Elmo do Conservador",
+    "ko_KR": "지키는 자의 철갑투구",
+    "cn_CN": "看护者的重盔",
+    "ru_RU": "Большой шлем хранителя инкубатора"
+  }  
+"Notorious Gladiator's Plate Warhelm": {
+    "de_DE": "Plattenkriegshelm des berüchtigten Gladiators",
+    "en_US": "Notorious Gladiator's Plate Warhelm",
+    "es_ES": "Yelmo de guerra de placas de Gladiador déspota",
+    "fr_FR": "Heaume de guerre du gladiateur notoire en plaques",
+    "it_IT": "Elmo da Guerra a Piastre del Gladiatore Famigerato",
+    "pt_BR": "Elmo Bélico de Placa do Gladiador Notório",
+    "ko_KR": "악명 높은 검투사의 판금 전쟁투구",
+    "cn_CN": "罪邪角斗士的板甲战盔",
+    "ru_RU": "Латный боевой шлем отъявленного гладиатора"
+  }
