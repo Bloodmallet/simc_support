@@ -5455,4 +5455,367 @@
     "cn_CN": "罪邪角斗士的板甲护肩",
     "ru_RU": "Латные наплечники отъявленного гладиатора"
   }
+"Mechanized Plate Chasse": {
+    "de_DE": "Mechanisierter Plattenpanzer",
+    "en_US": "Mechanized Plate Chasse",
+    "es_ES": "Coraza mecanizada",
+    "fr_FR": "Châssis mécanisé en plaques",
+    "it_IT": "Corazza di Piastre Meccanizzata",
+    "pt_BR": "Gradil de Placa Mecanizado",
+    "ko_KR": "기계화 판금 흉갑",
+    "cn_CN": "机械化板甲护胸",
+    "ru_RU": "Механизированный латный панцирь"
+  }
+"Breastplate of Twilight Decimation": {
+    "de_DE": "Brustplatte der Zwielichtdezimierung",
+    "en_US": "Breastplate of Twilight Decimation",
+    "es_ES": "Coraza de exterminio Crepuscular",
+    "fr_FR": "Cuirasse de décimation du Crépuscule",
+    "it_IT": "Pettorale Corazzato della Decimazione del Crepuscolo",
+    "pt_BR": "Peitoral da Dizimação do Crepúsculo",
+    "ko_KR": "황혼의 척살 가슴보호갑",
+    "cn_CN": "暮光灭绝胸甲",
+    "ru_RU": "Кираса сумеречного истребления"
+  }
+"Malignant Leviathan's Hauberk": {
+    "de_DE": "Halsberge des heimtückischen Leviathans",
+    "en_US": "Malignant Leviathan's Hauberk",
+    "es_ES": "Camisote del leviatán maligno",
+    "fr_FR": "Haubert du léviathan malveillant",
+    "it_IT": "Usbergo del Leviatano Maligno",
+    "pt_BR": "Cota do Leviatã Maligno",
+    "ko_KR": "악성 거대괴수의 갑옷",
+    "cn_CN": "凶残海兽半身甲",
+    "ru_RU": "Хауберк тлетворного левиафана"
+  }
+"Deathguard's Breastplate": {
+    "de_DE": "Brustschutz der Todeswache",
+    "en_US": "Deathguard's Breastplate",
+    "es_ES": "Coraza del guardia de la muerte",
+    "fr_FR": "Cuirasse de nécrogarde",
+    "it_IT": "Pettorale Corazzato del Guardiamorte",
+    "pt_BR": "Peitoral do Necroguarda",
+    "ko_KR": "죽음경비병의 가슴보호갑",
+    "cn_CN": "亡灵卫兵的胸铠",
+    "ru_RU": "Кираса стража смерти"
+  }
+"Wardenguard's Breastplate": {
+    "de_DE": "Brustschutz des Wächterinnenregiments",
+    "en_US": "Wardenguard's Breastplate",
+    "es_ES": "Coraza de guardia celador",
+    "fr_FR": "Cuirasse de la garde du front",
+    "it_IT": "Pettorale Corazzato della Veglia delle Custodi",
+    "pt_BR": "Peitoral da Guarda Vigilante",
+    "ko_KR": "감시경비병의 가슴보호갑",
+    "cn_CN": "守望者卫士的护胸",
+    "ru_RU": "Кираса боевого стража"
+  }
+"Corrupted Gladiator's Plate Chestguard": {
+    "de_DE": "Plattenbrustschutz des verderbten Gladiators",
+    "en_US": "Corrupted Gladiator's Plate Chestguard",
+    "es_ES": "Coselete de placas de Gladiador corrupto",
+    "fr_FR": "Corselet du gladiateur corrompu en plaques",
+    "it_IT": "Corazza Foderata a Piastre del Gladiatore Corrotto",
+    "pt_BR": "Couraça de Placa do Gladiador Corrompido",
+    "ko_KR": "타락한 검투사의 판금 가슴보호대",
+    "cn_CN": "腐化角斗士的板甲胸铠",
+    "ru_RU": "Латный нагрудный доспех падшего гладиатора"
+  }
+"Malignant Leviathan's Chestplate": {
+    "de_DE": "Brustplatte des heimtückischen Leviathans",
+    "en_US": "Malignant Leviathan's Chestplate",
+    "es_ES": "Peto del leviatán maligno",
+    "fr_FR": "Pansière du léviathan malveillant",
+    "it_IT": "Cotta del Leviatano Maligno",
+    "pt_BR": "Guarda-peito do Leviatã Maligno",
+    "ko_KR": "악성 거대괴수의 가슴갑옷",
+    "cn_CN": "凶残海兽胸铠",
+    "ru_RU": "Бригантина тлетворного левиафана"
+  }
+"Carapace of Pulsing Vita": {
+    "de_DE": "Panzer der pulsierenden Vita",
+    "en_US": "Carapace of Pulsing Vita",
+    "es_ES": "Caparazón de vita pulsante",
+    "fr_FR": "Carapace de vita vibrante",
+    "it_IT": "Carapace della Vita Pulsante",
+    "pt_BR": "Carapaça da Vita Pulsante",
+    "ko_KR": "약동하는 생령의 껍질",
+    "cn_CN": "生命脉动甲壳",
+    "ru_RU": "Панцирь жизненной силы"
+  }
+"Corrupted Gladiator's Plate Armor": {
+    "de_DE": "Plattenrüstung des verderbten Gladiators",
+    "en_US": "Corrupted Gladiator's Plate Armor",
+    "es_ES": "Armadura de placas de Gladiador corrupto",
+    "fr_FR": "Armure de plaques du gladiateur corrompu",
+    "it_IT": "Armatura a Piastre del Gladiatore Corrotto",
+    "pt_BR": "Armadura de Placa do Gladiador Corrompido",
+    "ko_KR": "타락한 검투사의 판금 갑옷",
+    "cn_CN": "腐化角斗士的胸胄",
+    "ru_RU": "Латный доспех падшего гладиатора"
+  }
+"Corrupted Gladiator's Plate Chestpiece": {
+    "de_DE": "Plattenbrustharnisch des verderbten Gladiators",
+    "en_US": "Corrupted Gladiator's Plate Chestpiece",
+    "es_ES": "Pechera de placas de Gladiador corrupto",
+    "fr_FR": "Plastron du gladiateur corrompu en plaques",
+    "it_IT": "Corazza a Piastre del Gladiatore Corrotto",
+    "pt_BR": "Peito d'Armas de Placa do Gladiador Corrompido",
+    "ko_KR": "타락한 검투사의 판금 가슴보호구",
+    "cn_CN": "腐化角斗士的板甲护胸",
+    "ru_RU": "Латный нагрудник падшего гладиатора"
+  }
+"Corrupted Gladiator's Plate Chestplate": {
+    "de_DE": "Plattenbrustpanzer des verderbten Gladiators",
+    "en_US": "Corrupted Gladiator's Plate Chestplate",
+    "es_ES": "Peto de placas de Gladiador corrupto",
+    "fr_FR": "Pansière du gladiateur corrompu en plaques",
+    "it_IT": "Cotta a Piastre del Gladiatore Corrotto",
+    "pt_BR": "Guarda-peito de Placa do Gladiador Corrompido",
+    "ko_KR": "타락한 검투사의 판금 가슴갑옷",
+    "cn_CN": "腐化角斗士的胸甲",
+    "ru_RU": "Латная бригантина падшего гладиатора"
+  }
+"Corrupted Aspirant's Plate Chestpiece": {
+    "de_DE": "Plattenbrustharnisch des verderbten Aspiranten",
+    "en_US": "Corrupted Aspirant's Plate Chestpiece",
+    "es_ES": "Pechera de placas de aspirante corrupto",
+    "fr_FR": "Plastron de l’aspirant corrompu en plaques",
+    "it_IT": "Corazza a Piastre del Pretendente Corrotto",
+    "pt_BR": "Peito d'Armas de Placa do Aspirante Corrompido",
+    "ko_KR": "타락한 지원자의 판금 가슴보호구",
+    "cn_CN": "腐化候选者的板甲护胸",
+    "ru_RU": "Латный нагрудник падшего претендента"
+  }
+"Deathguard's Chestplate": {
+    "de_DE": "Brustplatte der Todeswache",
+    "en_US": "Deathguard's Chestplate",
+    "es_ES": "Peto del guardia de la muerte",
+    "fr_FR": "Pansière de nécrograde",
+    "it_IT": "Cotta del Guardiamorte",
+    "pt_BR": "Guarda-peito do Necroguarda",
+    "ko_KR": "죽음경비병의 가슴갑옷",
+    "cn_CN": "亡灵卫兵的胸甲",
+    "ru_RU": "Бригантина стража смерти"
+  }
+"Wardenguard's Chestplate": {
+    "de_DE": "Brustplatte des Wächterinnenregiments",
+    "en_US": "Wardenguard's Chestplate",
+    "es_ES": "Peto de guardia celador",
+    "fr_FR": "Pansière de la garde du front",
+    "it_IT": "Cotta della Veglia delle Custodi",
+    "pt_BR": "Guarda-peito da Guarda Vigilante",
+    "ko_KR": "감시경비병의 가슴갑옷",
+    "cn_CN": "守望者卫士的胸铠",
+    "ru_RU": "Бригантина боевого стража"
+  }
+"Naga Centaur's Shellplate": {
+    "de_DE": "Schildplatte der Nagazentauren",
+    "en_US": "Naga Centaur's Shellplate",
+    "es_ES": "Coraza de conchas de centáuride naga",
+    "fr_FR": "Plastron chitineux de centaure naga",
+    "it_IT": "Corazza del Centauro Naga",
+    "pt_BR": "Placa-casco da Centaura Naga",
+    "ko_KR": "나가 켄타우로스의 껍질판금",
+    "cn_CN": "六足纳迦的贝壳铠甲",
+    "ru_RU": "Толстый панцирь наги-кентавра"
+  }
+"Heart-Lesion Breastplate": {
+    "de_DE": "Herzwundenbrustplatte",
+    "en_US": "Heart-Lesion Breastplate",
+    "es_ES": "Coraza de lesión cardíaca",
+    "fr_FR": "Cuirasse de la lésion cardiaque",
+    "it_IT": "Pettorale Corazzato del Cuore Ferito",
+    "pt_BR": "Peitoral da Lesão Cardíaca",
+    "ko_KR": "마음의 상처 흉갑",
+    "cn_CN": "摧心胸甲",
+    "ru_RU": "Кираса раненого сердца"
+  }
+"Heart-Lesion Chestguard": {
+    "de_DE": "Herzwundenbrustschutz",
+    "en_US": "Heart-Lesion Chestguard",
+    "es_ES": "Coselete de lesión cardíaca",
+    "fr_FR": "Corselet de la lésion cardiaque",
+    "it_IT": "Corazza Foderata del Cuore Ferito",
+    "pt_BR": "Couraça da Lesão Cardíaca",
+    "ko_KR": "마음의 상처 가슴보호대",
+    "cn_CN": "摧心胸铠",
+    "ru_RU": "Нагрудный доспех раненого сердца"
+  }
+"Sunsoul Battleplate": {
+    "de_DE": "Sonnenseelenkampfplatte",
+    "en_US": "Sunsoul Battleplate",
+    "es_ES": "Placa de batalla de alma solar",
+    "fr_FR": "Harnois de bataille d’âme solaire",
+    "it_IT": "Corazza Feroce dell'Anima Luminosa",
+    "pt_BR": "Loriga Almassol",
+    "ko_KR": "태양영혼 전투판금 흉갑",
+    "cn_CN": "阳魂战铠",
+    "ru_RU": "Боевой доспех солнечной души"
+  }
+"Sunsoul Breastplate": {
+    "de_DE": "Sonnenseelenbrustplatte",
+    "en_US": "Sunsoul Breastplate",
+    "es_ES": "Coraza de alma solar",
+    "fr_FR": "Cuirasse d’âme solaire",
+    "it_IT": "Pettorale Corazzato dell'Anima Luminosa",
+    "pt_BR": "Peitoral Almassol",
+    "ko_KR": "태양영혼 흉갑",
+    "cn_CN": "阳魂护胸",
+    "ru_RU": "Кираса солнечной души"
+  }
+"Sunsoul Chestguard": {
+    "de_DE": "Sonnenseelenbrustschutz",
+    "en_US": "Sunsoul Chestguard",
+    "es_ES": "Coselete de alma solar",
+    "fr_FR": "Corselet d’âme solaire",
+    "it_IT": "Corazza Foderata dell'Anima Luminosa",
+    "pt_BR": "Couraça Almassol",
+    "ko_KR": "태양영혼 가슴보호대",
+    "cn_CN": "阳魂胸甲",
+    "ru_RU": "Нагрудный доспех солнечной души"
+  }
+"Oathsworn Breastplate": {
+    "de_DE": "Eidschwörerbrustplatte",
+    "en_US": "Oathsworn Breastplate",
+    "es_ES": "Coraza juramentada",
+    "fr_FR": "Cuirasse de jureur",
+    "it_IT": "Pettorale Corazzato del Giuramento Leale",
+    "pt_BR": "Peitoral do Jurado",
+    "ko_KR": "맹세의 흉갑",
+    "cn_CN": "誓约者护胸",
+    "ru_RU": "Кираса принесенной клятвы"
+  }
+"Oathsworn Chestguard": {
+    "de_DE": "Eidschwörerbrustschutz",
+    "en_US": "Oathsworn Chestguard",
+    "es_ES": "Coselete juramentado",
+    "fr_FR": "Corselet de jureur",
+    "it_IT": "Corazza Foderata del Giuramento Leale",
+    "pt_BR": "Couraça do Jurado",
+    "ko_KR": "맹세의 가슴보호대",
+    "cn_CN": "誓约者胸铠",
+    "ru_RU": "Нагрудный доспех принесенной клятвы"
+  }
+"Corrupted Gladiator's Plate Breastplate": {
+    "de_DE": "Plattenbrustplatte des verderbten Gladiators",
+    "en_US": "Corrupted Gladiator's Plate Breastplate",
+    "es_ES": "Coraza de placas de Gladiador corrupto",
+    "fr_FR": "Cuirasse du gladiateur corrompu en plaques",
+    "it_IT": "Pettorale Corazzato a Piastre del Gladiatore Corrotto",
+    "pt_BR": "Peitoral de Placa do Gladiador Corrompido",
+    "ko_KR": "타락한 검투사의 판금 흉갑",
+    "cn_CN": "腐化角斗士的板甲胸甲",
+    "ru_RU": "Латная кираса падшего гладиатора"
+  }
+"Barnacle-Crusted Breastplate": {
+    "de_DE": "Muschelbewachsene Brustplatte",
+    "en_US": "Barnacle-Crusted Breastplate",
+    "es_ES": "Coraza incrustada de percebes",
+    "fr_FR": "Cuirasse incrustée de bigorneaux",
+    "it_IT": "Pettorale Corazzato Incrostato di Conchiglie",
+    "pt_BR": "Peitoral Coberto de Craca",
+    "ko_KR": "따개비 굳어붙은 가슴보호갑",
+    "cn_CN": "藤壶寄生护胸",
+    "ru_RU": "Покрытая ракушками кираса"
+  }
+"Notorious Gladiator's Plate Chestguard": {
+    "de_DE": "Plattenbrustschutz des berüchtigten Gladiators",
+    "en_US": "Notorious Gladiator's Plate Chestguard",
+    "es_ES": "Coselete de placas de Gladiador déspota",
+    "fr_FR": "Corselet du gladiateur notoire en plaques",
+    "it_IT": "Corazza Foderata a Piastre del Gladiatore Famigerato",
+    "pt_BR": "Couraça de Placa do Gladiador Notório",
+    "ko_KR": "악명 높은 검투사의 판금 가슴보호대",
+    "cn_CN": "罪邪角斗士的板甲胸铠",
+    "ru_RU": "Латный нагрудный доспех отъявленного гладиатора"
+  }
+"Waycrest Militia Battleplate": {
+    "de_DE": "Kampfplatte der Kronsteigmiliz",
+    "en_US": "Waycrest Militia Battleplate",
+    "es_ES": "Placa de batalla de la milicia Tarjasenda",
+    "fr_FR": "Harnois de bataille de la milice des Malvoie",
+    "it_IT": "Corazza Feroce della Milizia dei Crestabianca",
+    "pt_BR": "Loriga da Milícia Capelo",
+    "ko_KR": "웨이크레스트 민병대 전투판금",
+    "cn_CN": "维克雷斯民兵胸甲",
+    "ru_RU": "Нагрудник дружины Уэйкрестов"
+  }
+"Notorious Gladiator's Plate Armor": {
+    "de_DE": "Ensemble: Eliteplattenrüstung des berüchtigten Gladiators",
+    "en_US": "Notorious Gladiator's Plate Armor",
+    "es_ES": "Armadura de placas de Gladiador déspota",
+    "fr_FR": "Armure de plaques du gladiateur notoire",
+    "it_IT": "Armatura a Piastre del Gladiatore Famigerato",
+    "pt_BR": "Armadura de Placa do Gladiador Notório",
+    "ko_KR": "악명 높은 검투사의 판금 갑옷",
+    "cn_CN": "罪邪角斗士的胸胄",
+    "ru_RU": "Латный доспех отъявленного гладиатора"
+  }
+"Zanj'ir Scaleguard Chestplate": {
+    "de_DE": "Schuppenwachenbrustschutz der Zanj'ir",
+    "en_US": "Zanj'ir Scaleguard Chestplate",
+    "es_ES": "Peto del Guardián escamoso zanj'ir",
+    "fr_FR": "Pansière de gardécaille zanj’ir",
+    "it_IT": "Cotta della Guardia delle Scaglie Zanj'ir",
+    "pt_BR": "Guarda-peito do Guarda Escamoso Zanj'ir",
+    "ko_KR": "잔지르 비늘경비병 가슴갑옷",
+    "cn_CN": "赞齐尔鳞卫护胸",
+    "ru_RU": "Бригантина занш'ирского стража"
+  }
+"Dark Passenger's Breastplate": {
+    "de_DE": "Brustplatte des dunklen Passagiers",
+    "en_US": "Dark Passenger's Breastplate",
+    "es_ES": "Coraza de pasajero oscuro",
+    "fr_FR": "Cuirasse de sombre passager",
+    "it_IT": "Pettorale Corazzato del Passeggero Oscuro",
+    "pt_BR": "Peitoral do Passageiro Soturno",
+    "ko_KR": "어둠 탑승자의 가슴보호갑",
+    "cn_CN": "黑暗旅客的胸铠",
+    "ru_RU": "Кираса темного странника"
+  }
+"Notorious Gladiator's Plate Chestpiece": {
+    "de_DE": "Plattenbrustharnisch des berüchtigten Gladiators",
+    "en_US": "Notorious Gladiator's Plate Chestpiece",
+    "es_ES": "Pechera de placas de Gladiador déspota",
+    "fr_FR": "Plastron du gladiateur notoire en plaques",
+    "it_IT": "Corazza a Piastre del Gladiatore Famigerato",
+    "pt_BR": "Peito d'Armas de Placa do Gladiador Notório",
+    "ko_KR": "악명 높은 검투사의 판금 가슴보호구",
+    "cn_CN": "罪邪角斗士的板甲护胸",
+    "ru_RU": "Латный нагрудник отъявленного гладиатора"
+  }
+"Notorious Gladiator's Plate Chestplate": {
+    "de_DE": "Plattenbrustpanzer des berüchtigten Gladiators",
+    "en_US": "Notorious Gladiator's Plate Chestplate",
+    "es_ES": "Peto de placas de Gladiador déspota",
+    "fr_FR": "Pansière du gladiateur notoire en plaques",
+    "it_IT": "Cotta a Piastre del Gladiatore Famigerato",
+    "pt_BR": "Guarda-peito de Placa do Gladiador Notório",
+    "ko_KR": "악명 높은 검투사의 판금 가슴갑옷",
+    "cn_CN": "罪邪角斗士的胸甲",
+    "ru_RU": "Латная бригантина отъявленного гладиатора"
+  }
+"Notorious Aspirant's Plate Chestpiece": {
+    "de_DE": "Plattenbrustharnisch des berüchtigten Aspiranten",
+    "en_US": "Notorious Aspirant's Plate Chestpiece",
+    "es_ES": "Pechera de placas de aspirante déspota",
+    "fr_FR": "Plastron de l’aspirant notoire en plaques",
+    "it_IT": "Corazza a Piastre del Pretendente Famigerato",
+    "pt_BR": "Peito d'Armas de Placa do Aspirante Notório",
+    "ko_KR": "악명 높은 지원자의 판금 가슴보호구",
+    "cn_CN": "罪邪候选者的板甲护胸",
+    "ru_RU": "Латный нагрудник отъявленного претендента"
+  }
+"Notorious Gladiator's Plate Breastplate": {
+    "de_DE": "Brustplatte des berüchtigten Gladiators",
+    "en_US": "Notorious Gladiator's Plate Breastplate",
+    "es_ES": "Coraza de placas de Gladiador déspota",
+    "fr_FR": "Cuirasse du gladiateur notoire en plaques",
+    "it_IT": "Pettorale Corazzato a Piastre del Gladiatore Famigerato",
+    "pt_BR": "Peitoral de Placa do Gladiador Notório",
+    "ko_KR": "악명 높은 검투사의 판금 가슴보호갑",
+    "cn_CN": "罪邪角斗士的板甲胸甲",
+    "ru_RU": "Латная кираса отъявленного гладиатора"
+  }
 }
