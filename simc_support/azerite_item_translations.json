@@ -5103,4 +5103,356 @@
     "cn_CN": "罪邪角斗士的板甲战盔",
     "ru_RU": "Латный боевой шлем отъявленного гладиатора"
   }
+"Deathguard's Shoulderplates": {
+    "de_DE": "Schulterplatten der Todeswache",
+    "en_US": "Deathguard's Shoulderplates",
+    "es_ES": "Hombreras de guardia de la muerte",
+    "fr_FR": "Plaques d’épaules de nécrogarde",
+    "it_IT": "Spallacci Corazzati del Guardiamorte",
+    "pt_BR": "Placa d'Ombros do Necroguarda",
+    "ko_KR": "죽음경비병의 어깨철갑",
+    "cn_CN": "亡灵卫兵的肩甲",
+    "ru_RU": "Наплечные щитки стража смерти"
+  }
+"Wardenguard's Shoulderplates": {
+    "de_DE": "Schulterplatten des Wächterinnenregiments",
+    "en_US": "Wardenguard's Shoulderplates",
+    "es_ES": "Hombreras de guardia celador",
+    "fr_FR": "Plaques d’épaule de la garde du front",
+    "it_IT": "Spallacci Corazzati della Veglia delle Custodi",
+    "pt_BR": "Placa d'Ombros da Guarda Vigilante",
+    "ko_KR": "감시경비병의 어깨철갑",
+    "cn_CN": "守望者卫士的板甲护肩",
+    "ru_RU": "Наплечные щитки боевого стража"
+  }
+"Malignant Leviathan's Spaulders": {
+    "de_DE": "Schiftung des heimtückischen Leviathans",
+    "en_US": "Malignant Leviathan's Spaulders",
+    "es_ES": "Bufas del leviatán maligno",
+    "fr_FR": "Spallières du léviathan malveillant",
+    "it_IT": "Guardaspalle del Leviatano Maligno",
+    "pt_BR": "Espaldares do Leviatã Maligno",
+    "ko_KR": "악성 거대괴수의 어깨덮개",
+    "cn_CN": "凶残海兽护肩",
+    "ru_RU": "Наплечи тлетворного левиафана"
+  }
+"Writhing Spaulders of Madness": {
+    "de_DE": "Zuckende Schiftung des Wahnsinns",
+    "en_US": "Writhing Spaulders of Madness",
+    "es_ES": "Bufas aviesas de locura",
+    "fr_FR": "Spallières de démence grouillantes",
+    "it_IT": "Guardaspalle Inquieti della Follia",
+    "pt_BR": "Espaldares Convulsionantes da Loucura",
+    "ko_KR": "몸부림치는 광기의 어깨덮개",
+    "cn_CN": "蠕动疯狂肩甲",
+    "ru_RU": "Извивающиеся наплечи безумия"
+  }
+"Tank Buster Pauldrons": {
+    "de_DE": "Panzerbrecherschulterstücke",
+    "en_US": "Tank Buster Pauldrons",
+    "es_ES": "Espaldares tronchatanques",
+    "fr_FR": "Espauliers d’exploseur de tank",
+    "it_IT": "Paraspalle Anticarro",
+    "pt_BR": "Brafoneiras de Destruidor de Tanque",
+    "ko_KR": "전차 퇴치기 견장",
+    "cn_CN": "反坦克肩胄",
+    "ru_RU": "Наплечье танкоборца"
+  }
+"Corrupted Gladiator's Plate Shoulderguards": {
+    "de_DE": "Plattenschulterschützer des verderbten Gladiators",
+    "en_US": "Corrupted Gladiator's Plate Shoulderguards",
+    "es_ES": "Guardahombros de placas de Gladiador corrupto",
+    "fr_FR": "Garde-épaules du gladiateur corrompu en plaques",
+    "it_IT": "Spallacci Foderati a Piastre del Gladiatore Corrotto",
+    "pt_BR": "Guarda-ombros de Placa do Gladiador Corrompido",
+    "ko_KR": "타락한 검투사의 판금 어깨보호대",
+    "cn_CN": "腐化角斗士的板甲肩胄",
+    "ru_RU": "Латные наплечные щитки падшего гладиатора"
+  }
+"Pauldrons of Infinite Darkness": {
+    "de_DE": "Schulterstücke der unendlichen Finsternis",
+    "en_US": "Pauldrons of Infinite Darkness",
+    "es_ES": "Espaldares de oscuridad infinita",
+    "fr_FR": "Espauliers des ténèbres infinies",
+    "it_IT": "Paraspalle dell'Oscurità Infinita",
+    "pt_BR": "Brafoneiras das Trevas Infinitas",
+    "ko_KR": "무한한 암흑의 견갑",
+    "cn_CN": "无尽黑暗护肩",
+    "ru_RU": "Наплечье бесконечной тьмы"
+  }
+"Corrupted Gladiator's Plate Spaulders": {
+    "de_DE": "Plattenschiftung des verderbten Gladiators",
+    "en_US": "Corrupted Gladiator's Plate Spaulders",
+    "es_ES": "Bufas de placas de Gladiador corrupto",
+    "fr_FR": "Spallières du gladiateur corrompu en plaques",
+    "it_IT": "Guardaspalle a Piastre del Gladiatore Corrotto",
+    "pt_BR": "Espaldares de Placa do Gladiador Corrompido",
+    "ko_KR": "타락한 검투사의 판금 어깨덮개",
+    "cn_CN": "腐化角斗士的板甲肩饰",
+    "ru_RU": "Латные наплечи падшего гладиатора"
+  }
+"Malignant Leviathan's Pauldrons": {
+    "de_DE": "Schulterstücke des heimtückischen Leviathans",
+    "en_US": "Malignant Leviathan's Pauldrons",
+    "es_ES": "Espaldares del leviatán maligno",
+    "fr_FR": "Espauliers du léviathan malveillant",
+    "it_IT": "Paraspalle del Leviatano Maligno",
+    "pt_BR": "Brafoneiras do Leviatã Maligno",
+    "ko_KR": "악성 거대괴수의 견갑",
+    "cn_CN": "凶残海兽肩甲",
+    "ru_RU": "Наплечье тлетворного левиафана"
+  }
+"Deathguard's Pauldrons": {
+    "de_DE": "Schulterstücke der Todeswache",
+    "en_US": "Deathguard's Pauldrons",
+    "es_ES": "Espaldares de guardia de la muerte",
+    "fr_FR": "Espauliers de nécrograde",
+    "it_IT": "Paraspalle del Guardiamorte",
+    "pt_BR": "Brafoneiras do Necroguarda",
+    "ko_KR": "죽음경비병의 견갑",
+    "cn_CN": "亡灵卫兵的肩铠",
+    "ru_RU": "Наплечье стража смерти"
+  }
+"Wardenguard's Pauldrons": {
+    "de_DE": "Schulterstücke des Wächterinnenregiments",
+    "en_US": "Wardenguard's Pauldrons",
+    "es_ES": "Espaldares de guardia celador",
+    "fr_FR": "Espauliers de la garde du front",
+    "it_IT": "Paraspalle della Veglia delle Custodi",
+    "pt_BR": "Brafoneiras da Guarda Vigilante",
+    "ko_KR": "감시경비병의 견갑",
+    "cn_CN": "守望者卫士的肩铠",
+    "ru_RU": "Наплечье боевого стража"
+  }
+"Corrupted Gladiator's Plate Pauldrons": {
+    "de_DE": "Plattenschulterstücke des verderbten Gladiators",
+    "en_US": "Corrupted Gladiator's Plate Pauldrons",
+    "es_ES": "Espaldares de placas de Gladiador corrupto",
+    "fr_FR": "Espauliers du gladiateur corrompu en plaques",
+    "it_IT": "Paraspalle a Piastre del Gladiatore Corrotto",
+    "pt_BR": "Brafoneiras de Placa do Gladiador Corrompido",
+    "ko_KR": "타락한 검투사의 판금 견갑",
+    "cn_CN": "腐化角斗士的板甲肩铠",
+    "ru_RU": "Латное наплечье падшего гладиатора"
+  }
+"Corrupted Gladiator's Shoulderplates": {
+    "de_DE": "Schulterplatten des verderbten Gladiators",
+    "en_US": "Corrupted Gladiator's Shoulderplates",
+    "es_ES": "Hombreras de placas de Gladiador corrupto",
+    "fr_FR": "Plaques d’épaule du gladiateur corrompu",
+    "it_IT": "Spallacci Corazzati del Gladiatore Corrotto",
+    "pt_BR": "Placa d'Ombros do Gladiador Corrompido",
+    "ko_KR": "타락한 검투사의 어깨철갑",
+    "cn_CN": "腐化角斗士的肩胄",
+    "ru_RU": "Наплечные щитки падшего гладиатора"
+  }
+"Corrupted Aspirant's Plate Pauldrons": {
+    "de_DE": "Plattenschulterstücke des verderbten Aspiranten",
+    "en_US": "Corrupted Aspirant's Plate Pauldrons",
+    "es_ES": "Espaldares de placas de aspirante corrupto",
+    "fr_FR": "Espauliers de l’aspirant corrompu en plaques",
+    "it_IT": "Paraspalle a Piastre del Pretendente Corrotto",
+    "pt_BR": "Brafoneiras de Placa do Aspirante Corrompido",
+    "ko_KR": "타락한 지원자의 판금 견갑",
+    "cn_CN": "腐化候选者的板甲肩铠",
+    "ru_RU": "Латное наплечье падшего претендента"
+  }
+"Heart-Lesion Pauldrons": {
+    "de_DE": "Herzwundenschulterstücke",
+    "en_US": "Heart-Lesion Pauldrons",
+    "es_ES": "Espaldares de lesión cardíaca",
+    "fr_FR": "Espauliers de la lésion cardiaque",
+    "it_IT": "Paraspalle del Cuore Ferito",
+    "pt_BR": "Brafoneiras da Lesão Cardíaca",
+    "ko_KR": "마음의 상처 견갑",
+    "cn_CN": "摧心肩甲",
+    "ru_RU": "Наплечье раненого сердца"
+  }
+"Heart-Lesion Shoulderguards": {
+    "de_DE": "Herzwundenschulterschutz",
+    "en_US": "Heart-Lesion Shoulderguards",
+    "es_ES": "Guardahombros de lesión cardíaca",
+    "fr_FR": "Garde-épaules de la lésion cardiaque",
+    "it_IT": "Spallacci Foderati del Cuore Ferito",
+    "pt_BR": "Guarda-ombros da Lesão Cardíaca",
+    "ko_KR": "마음의 상처 어깨보호대",
+    "cn_CN": "摧心肩铠",
+    "ru_RU": "Наплечные щитки раненого сердца"
+  }
+"Sunsoul Pauldrons": {
+    "de_DE": "Sonnenseelenschulterstücke",
+    "en_US": "Sunsoul Pauldrons",
+    "es_ES": "Espaldares de alma solar",
+    "fr_FR": "Espauliers d’âme solaire",
+    "it_IT": "Paraspalle dell'Anima Luminosa",
+    "pt_BR": "Brafoneiras Almassol",
+    "ko_KR": "태양영혼 견갑",
+    "cn_CN": "阳魂肩甲",
+    "ru_RU": "Наплечье солнечной души"
+  }
+"Sunsoul Spaulders": {
+    "de_DE": "Sonnenseelenschiftung",
+    "en_US": "Sunsoul Spaulders",
+    "es_ES": "Bufas de alma solar",
+    "fr_FR": "Spallières d’âme solaire",
+    "it_IT": "Guardaspalle dell'Anima Luminosa",
+    "pt_BR": "Espaldares Almassol",
+    "ko_KR": "태양영혼 어깨덮개",
+    "cn_CN": "阳魂肩饰",
+    "ru_RU": "Наплеч солнечной души"
+  }
+"Sunsoul Shoulderguards": {
+    "de_DE": "Sonnenseelenschulterschützer",
+    "en_US": "Sunsoul Shoulderguards",
+    "es_ES": "Guardahombros de alma solar",
+    "fr_FR": "Garde-épaules d’âme solaire",
+    "it_IT": "Spallacci Foderati dell'Anima Luminosa",
+    "pt_BR": "Guarda-ombros Almassol",
+    "ko_KR": "태양영혼 어깨보호대",
+    "cn_CN": "阳魂护肩",
+    "ru_RU": "Наплечные щитки солнечной души"
+  }
+"Oathsworn Pauldrons": {
+    "de_DE": "Eidschwörerschulterstücke",
+    "en_US": "Oathsworn Pauldrons",
+    "es_ES": "Espaldares juramentados",
+    "fr_FR": "Espauliers de jureur",
+    "it_IT": "Paraspalle del Giuramento Leale",
+    "pt_BR": "Brafoneiras do Jurado",
+    "ko_KR": "맹세의 견갑",
+    "cn_CN": "誓约者肩甲",
+    "ru_RU": "Наплечье принесенной клятвы"
+  }
+"Oathsworn Shoulderguards": {
+    "de_DE": "Eidschwörerschulterschutz",
+    "en_US": "Oathsworn Shoulderguards",
+    "es_ES": "Guardahombros juramentados",
+    "fr_FR": "Garde-épaules de jureur",
+    "it_IT": "Spallacci Foderati del Giuramento Leale",
+    "pt_BR": "Guarda-ombros do Jurado",
+    "ko_KR": "맹세의 어깨보호대",
+    "cn_CN": "誓约者护肩",
+    "ru_RU": "Наплечные щитки принесенной клятвы"
+  }
+"Pauldrons of Fanatical Might": {
+    "de_DE": "Schulterstücke der fanatischen Macht",
+    "en_US": "Pauldrons of Fanatical Might",
+    "es_ES": "Espaldares de poderío fanático",
+    "fr_FR": "Espauliers de puissance fanatique",
+    "it_IT": "Paraspalle del Vigore Fanatico",
+    "pt_BR": "Brafoneiras do Poder Fanático",
+    "ko_KR": "광신적인 힘의 견갑",
+    "cn_CN": "狂热之力护肩",
+    "ru_RU": "Наплечье фанатичной мощи"
+  }
+"Corrupted Gladiator's Plate Shoulders": {
+    "de_DE": "Plattenschultern des verderbten Gladiators",
+    "en_US": "Corrupted Gladiator's Plate Shoulders",
+    "es_ES": "Sobrehombros de placas de Gladiador corrupto",
+    "fr_FR": "Épaulières du gladiateur corrompu en plaques",
+    "it_IT": "Spallacci a Piastre del Gladiatore Corrotto",
+    "pt_BR": "Omoplatas de Placa do Gladiador Corrompido",
+    "ko_KR": "타락한 검투사의 판금 어깨보호구",
+    "cn_CN": "腐化角斗士的板甲护肩",
+    "ru_RU": "Латные наплечники падшего гладиатора"
+  }
+"Trench Tyrant's Shoulderplates": {
+    "de_DE": "Schulterplatten des Grubentyrannen",
+    "en_US": "Trench Tyrant's Shoulderplates",
+    "es_ES": "Hombreras de placas de tirano de falla",
+    "fr_FR": "Plaques d’épaule de tyran des fosses",
+    "it_IT": "Spallacci Corazzati del Tiranno della Fossa",
+    "pt_BR": "Placa d'Ombros do Tirano das Trincheiras",
+    "ko_KR": "협곡 독재자의 어깨철갑",
+    "cn_CN": "海沟暴君的肩铠",
+    "ru_RU": "Наплечные щитки тирана глубин"
+  }
+"Pauldrons of Za'qul": {
+    "de_DE": "Za'quls Schulterstücke",
+    "en_US": "Pauldrons of Za'qul",
+    "es_ES": "Espaldares de Za'qul",
+    "fr_FR": "Espauliers de Za’qul",
+    "it_IT": "Paraspalle di Za'qul",
+    "pt_BR": "Brafoneiras de Za'qul",
+    "ko_KR": "자쿨의 견갑",
+    "cn_CN": "扎库尔的肩甲",
+    "ru_RU": "Наплечные щитки За'кула"
+  }
+"Notorious Gladiator's Plate Spaulders": {
+    "de_DE": "Plattenschiftung des berüchtigten Gladiators",
+    "en_US": "Notorious Gladiator's Plate Spaulders",
+    "es_ES": "Bufas de placas de Gladiador déspota",
+    "fr_FR": "Spallières du gladiateur notoire en plaques",
+    "it_IT": "Guardaspalle a Piastre del Gladiatore Famigerato",
+    "pt_BR": "Espaldares de Placa do Gladiador Notório",
+    "ko_KR": "악명 높은 검투사의 판금 어깨덮개",
+    "cn_CN": "罪邪角斗士的板甲肩饰",
+    "ru_RU": "Латные наплечи отъявленного гладиатора"
+  }
+"Notorious Gladiator's Plate Shoulderguards": {
+    "de_DE": "Plattenschulterschützer des berüchtigten Gladiators",
+    "en_US": "Notorious Gladiator's Plate Shoulderguards",
+    "es_ES": "Guardahombros de placas de Gladiador déspota",
+    "fr_FR": "Garde-épaules du gladiateur notoire en plaques",
+    "it_IT": "Spallacci Foderati a Piastre del Gladiatore Famigerato",
+    "pt_BR": "Guarda-ombros de Placa do Gladiador Notório",
+    "ko_KR": "악명 높은 검투사의 판금 어깨보호대",
+    "cn_CN": "罪邪角斗士的板甲肩胄",
+    "ru_RU": "Латные наплечные щитки отъявленного гладиатора"
+  }
+"Zanj'ir Scaleguard Shoulderplates": {
+    "de_DE": "Schuppenwachenschulterplatten der Zanj'ir",
+    "en_US": "Zanj'ir Scaleguard Shoulderplates",
+    "es_ES": "Hombreras de guardia escamado Zanj'ir",
+    "fr_FR": "Plaques d’épaule de gardécaille zanj’ir",
+    "it_IT": "Spallacci Corazzati della Guardia delle Scaglie Zanj'ir",
+    "pt_BR": "Placa d'Ombros do Guarda Escamoso Zanj'ir",
+    "ko_KR": "잔지르 비늘경비병 어깨철갑",
+    "cn_CN": "赞齐尔鳞卫护肩",
+    "ru_RU": "Наплечные щитки занш'ирского стража"
+  }
+"Notorious Gladiator's Plate Pauldrons": {
+    "de_DE": "Plattenschulterstücke des berüchtigten Gladiators",
+    "en_US": "Notorious Gladiator's Plate Pauldrons",
+    "es_ES": "Espaldares de placas de Gladiador déspota",
+    "fr_FR": "Espauliers du gladiateur notoire en plaques",
+    "it_IT": "Paraspalle a Piastre del Gladiatore Famigerato",
+    "pt_BR": "Brafoneiras de Placa do Gladiador Notório",
+    "ko_KR": "악명 높은 검투사의 판금 견갑",
+    "cn_CN": "罪邪角斗士的板甲肩铠",
+    "ru_RU": "Латное наплечье отъявленного гладиатора"
+  }
+"Notorious Gladiator's Shoulderplates": {
+    "de_DE": "Schulterplatten des berüchtigten Gladiators",
+    "en_US": "Notorious Gladiator's Shoulderplates",
+    "es_ES": "Hombreras de placas de Gladiador déspota",
+    "fr_FR": "Plaques d’épaule du gladiateur notoire en plaques",
+    "it_IT": "Spallacci Corazzati del Gladiatore Famigerato",
+    "pt_BR": "Placa d'Ombros do Gladiador Notório",
+    "ko_KR": "악명 높은 검투사의 어깨철갑",
+    "cn_CN": "罪邪角斗士的肩胄",
+    "ru_RU": "Наплечные щитки отъявленного гладиатора"
+  }
+"Notorious Aspirant's Plate Pauldrons": {
+    "de_DE": "Plattenschulterstücke des berüchtigten Aspiranten",
+    "en_US": "Notorious Aspirant's Plate Pauldrons",
+    "es_ES": "Espaldares de placas de Aspirante infame",
+    "fr_FR": "Espauliers de l’aspirant notoire en plaques",
+    "it_IT": "Paraspalle a Piastre del Pretendente Famigerato",
+    "pt_BR": "Brafoneiras de Placa do Aspirante Notório",
+    "ko_KR": "악명 높은 지원자의 판금 견갑",
+    "cn_CN": "罪邪候选者的板甲肩铠",
+    "ru_RU": "Латное наплечье отъявленного претендента"
+  }
+"Notorious Gladiator's Plate Shoulders": {
+    "de_DE": "Plattenschultern des berüchtigten Gladiators",
+    "en_US": "Notorious Gladiator's Plate Shoulders",
+    "es_ES": "Sobrehombros de placas de Gladiador déspota",
+    "fr_FR": "Épaulières du gladiateur notoire en plaques",
+    "it_IT": "Spallacci a Piastre del Gladiatore Famigerato",
+    "pt_BR": "Omoplatas de Placa do Gladiador Notório",
+    "ko_KR": "악명 높은 검투사의 판금 어깨보호구",
+    "cn_CN": "罪邪角斗士的板甲护肩",
+    "ru_RU": "Латные наплечники отъявленного гладиатора"
+  }
 }
