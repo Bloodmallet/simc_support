@@ -95,7 +95,9 @@ def update_map(trait_dict):
     if newly_created:
         logger.info("Added {} entries to MAP.".format(newly_created))
     else:
-        logger.info("All traits were already known. No new traits were added to MAP.")
+        logger.info(
+            "All traits were already known. No new traits were added to MAP."
+        )
 
 
 def get_tiers(azerite_id: int, power_sets: dict):
@@ -191,13 +193,18 @@ def main():
 
     for wow_class in class_list:
         try:
-            simc_output = subprocess.run([
-                "../SimulationCraft/simc.exe",
-                "spell_query=azerite.class={}".format(wow_class.lower().replace("_", "")), ptr_input
-            ],
-                                         stdout=subprocess.PIPE,
-                                         stderr=subprocess.STDOUT,
-                                         universal_newlines=True)
+            cleaned_wow_class = wow_class.lower().replace("_", "")
+            commands = [
+                "../SimulationCraft/engine/simc",
+                f"spell_query=azerite.class={cleaned_wow_class}",
+                ptr_input
+            ]
+            simc_output = subprocess.run(
+                commands,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                universal_newlines=True
+            )
         except Exception as e:
             logger.info("{} failed to load. {}".format(wow_class, e))
             continue
@@ -215,8 +222,10 @@ def main():
             # logger.info(line)
 
             if "Name             : " in line:
-                trait_name = line.split("Name             : ")[1].split(" (id=")[0]
-                trait_spell_id = line.split("Name             : ")[1].split(" (id=")[1].split(") ")[0]
+                trait_name = line.split("Name             : ")[1] \
+                    .split(" (id=")[0]
+                trait_spell_id = line.split("Name             : ")[1] \
+                    .split(" (id=")[1].split(") ")[0]
 
                 if trait_name in trait_list:
                     new_trait = False
@@ -225,11 +234,16 @@ def main():
                     trait_list.append(trait_name)
 
             if "Class            : " in line and new_trait:
-                trait_classes = line.split("Class            : ")[1].split(", ")
+                trait_classes = line.split("Class            : ")[1] \
+                    .split(", ")
                 trait_specs = []
                 for trait_class in trait_classes:
                     for spec in wow_lib.get_specs(trait_class.replace(" ", "_")):
-                        trait_specs.append((trait_class.replace(" ", "_"), spec))
+                        information = (
+                            trait_class.replace(" ", "_"),
+                            spec
+                        )
+                        trait_specs.append(information)
 
             if "Azerite Power Id : " in line and new_trait:
                 trait_id = line.split("Azerite Power Id : ")[1]
@@ -239,14 +253,16 @@ def main():
 
                 for spec in trait_specs:
 
-                    trait_dict[spec[0]][spec[1]][trait_spell_id] = {}
-                    trait_dict[spec[0]][spec[1]][trait_spell_id]["name"] = trait_name
-                    trait_dict[spec[0]][spec[1]][trait_spell_id]["spell_id"] = trait_spell_id
-                    trait_dict[spec[0]][spec[1]][trait_spell_id]["trait_id"] = trait_id
-                    trait_dict[spec[0]][spec[1]][trait_spell_id]["min_itemlevel"] = -1
-                    trait_dict[spec[0]][spec[1]][trait_spell_id]["max_itemlevel"] = -1
-                    trait_dict[spec[0]][spec[1]][trait_spell_id]["max_stack"] = 3
-                    trait_dict[spec[0]][spec[1]][trait_spell_id]["description"] = trait_description
+                    information = {}
+                    information["name"] = trait_name
+                    information["spell_id"] = trait_spell_id
+                    information["trait_id"] = trait_id
+                    information["min_itemlevel"] = -1
+                    information["max_itemlevel"] = -1
+                    information["max_stack"] = 3
+                    information["description"] = trait_description
+
+                    trait_dict[spec[0]][spec[1]][trait_spell_id] = information
 
         logger.info("{} unique traits found.".format(len(trait_list)))
 
