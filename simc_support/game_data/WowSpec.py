@@ -6,6 +6,7 @@ from simc_support.game_data.RaidRole import RaidRole
 from simc_support.game_data.Role import Role
 from simc_support.game_data.SimcObject import SimcObject
 from simc_support.game_data.Stat import Stat
+from simc_support.game_data.Trinket import Trinket
 
 
 class WowSpec(SimcObject):
@@ -20,7 +21,7 @@ class WowSpec(SimcObject):
         talents: str,
         raid_role: RaidRole,
         role: Role,
-        stat: typing.Union[Stat, typing.List[Stat]],
+        stat: Stat,
         *args,
         **kwargs,
     ):
@@ -42,15 +43,15 @@ class WowSpec(SimcObject):
             )
         self.talents = talents
 
-        if raid_role not in [k for k in RaidRole]:
+        if raid_role not in RaidRole:
             raise ValueError(f"Unknown raid_role '{raid_role}'")
         self.raid_role = raid_role
 
-        if role not in [k for k in Role]:
+        if role not in Role:
             raise ValueError(f"Unknown role '{role}'")
         self.role = role
 
-        if stat not in [k for k in Stat]:
+        if stat not in Stat:
             raise ValueError(f"Unknown stat '{stat}'")
         self.stat = stat
 
@@ -159,6 +160,26 @@ class WowSpec(SimcObject):
         )
 
         return tuple(filtered_combinations)
+
+    def get_versatility_trinket(self) -> Trinket:
+        """Returns a vers stat stick for the spec.
+
+        Returns:
+            Trinket -- Versatility Stat stick for the spec
+        """
+
+        if self.stat == Stat.AGILITY:
+            # "Stat Stick (Versatility)", "142506,bonus_id=607"
+            return Trinket("Versatility Stat Stick", "142506,bonus_id=607", -1, 9999, 9999, Stat.AGILITY, Role.MELEE)
+            # return ',id={}'.format("142506,bonus_id=607")
+        if self.stat == Stat.INTELLECT:
+            # "Stat Stick (Versatility)", "142507,bonus_id=607"
+            return Trinket("Versatility Stat Stick", "142507,bonus_id=607", -1, 9999, 9999, Stat.INTELLECT, Role.RANGED)
+            # return ',id={}'.format("142507,bonus_id=607")
+        if self.stat == Stat.STRENGTH:
+            # "Stat Stick (Versatility)", "142508,bonus_id=607"
+            return Trinket("Versatility Stat Stick", "142508,bonus_id=607", -1, 9999, 9999, Stat.STRENGTH, Role.RANGED)
+            # return ',id={}'.format("142508,bonus_id=607")
 
 
 # Spec data here
