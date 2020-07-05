@@ -14,7 +14,9 @@ class WowClass(SimcObject):
         for race in races:
             if type(race) != Race.Race:
                 raise TypeError(
-                    "Expected races to be of Race type. Got {} instead.".format(type(race))
+                    "Expected races to be of Race type. Got {} instead.".format(
+                        type(race)
+                    )
                 )
             if race not in Race.RACES:
                 raise ValueError("Unknown race {}.".format(race))
@@ -29,7 +31,9 @@ empty_translation = {}
 for lang in Language.LANGUAGES:
     empty_translation[lang] = ""
 
-DEATHKNIGHT = WowClass(6, Race.RACES, empty_translation, "Death Knight", 'death_knight')
+DEATHKNIGHT = WowClass(
+    6, Race.RACES, empty_translation, "Death Knight", 'death_knight',
+)
 DEMONHUNTER = WowClass(
     12, [
         Race.NIGHTELF,
@@ -199,7 +203,7 @@ WARLOCK = WowClass(
 )
 WARRIOR = WowClass(1, Race.RACES, empty_translation, "Warrior", 'warrior')
 
-WOWCLASSES = [
+WOWCLASSES = (
     DEATHKNIGHT,
     DEMONHUNTER,
     DRUID,
@@ -212,4 +216,4 @@ WOWCLASSES = [
     SHAMAN,
     WARLOCK,
     WARRIOR,
-]
+)
