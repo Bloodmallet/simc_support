@@ -1,37 +1,15 @@
-class Language(object):
-    """A language name.
-    """
-
-    def __init__(self, abbreviation: str, *args, **kwargs) -> None:
-        super().__init__()
-        self.abbreviation = abbreviation
-
-    def __str__(self) -> str:
-        return self.abbreviation
-
-    def __repr__(self) -> str:
-        return self.abbreviation
+import enum
 
 
-CN = Language('cn_CN')
-DE = Language('de_DE')
-ES = Language('es_ES')
-FR = Language('fr_FR')
-IT = Language('it_IT')
-KR = Language('ko_KR')
-RU = Language('ru_RU')
-US = Language('en_US')
-
-LANGUAGES = (
-    CN,
-    DE,
-    ES,
-    FR,
-    IT,
-    KR,
-    RU,
-    US,
-)
+class Language(enum.Enum):
+    CN = 'cn_CN'
+    DE = 'de_DE'
+    ES = 'es_ES'
+    FR = 'fr_FR'
+    IT = 'it_IT'
+    KR = 'ko_KR'
+    RU = 'ru_RU'
+    US = 'en_US'
 
 
 class Translation(object):
@@ -53,10 +31,13 @@ class Translation(object):
         **kwargs,
     ):
         super().__init__()
+
+        languages = [language.name for language in Language]
+
         if translations:
-            if len(set(translations.keys()).intersection(LANGUAGES)) == len(LANGUAGES):
+            if len(set(translations.keys()).intersection(languages)) == len(languages):
                 for language in translations:
-                    self.language = translations[language]
+                    setattr(self, language, translations[language])
         elif cn_CN and de_DE and es_ES and fr_FR and it_IT and ko_KR and ru_RU and en_US:
             self.CN = cn_CN
             self.DE = de_DE
@@ -70,3 +51,12 @@ class Translation(object):
             raise ValueError(
                 'Expected more information. Please make sure you have translations for all languages.'
             )
+
+
+class EmptyTranslation(Translation):
+    """If you don't have translations handy, but need to provide a translations object.
+    """
+
+    def __init__(self):
+        languages = {language.name: "" for language in Language}
+        super().__init__(self, translations=languages)

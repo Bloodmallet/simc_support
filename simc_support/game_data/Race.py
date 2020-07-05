@@ -1,3 +1,5 @@
+import typing
+
 from simc_support.game_data import Faction
 from simc_support.game_data.Faction import ALLIANCE
 from simc_support.game_data.Faction import HORDE
@@ -14,7 +16,7 @@ class Race(SimcObject):
         faction: Faction,
         full_name: str,
         simc_name: str,
-        translations: Language.Translation,
+        translations: typing.Union[typing.Dict, Language.Translation],
         *args,
         **kwargs,
     ) -> None:
@@ -22,10 +24,14 @@ class Race(SimcObject):
 
         self.faction = faction
 
-        if type(translations) == Language.Translation:
+        if isinstance(translations, Language.Translation):
             self.translations = translations
-        else:
+        elif isinstance(translations, dict):
             self.translations = Language.Translation(translations=translations)
+        else:
+            raise TypeError(
+                'translations must either be a dictionary or a Translaton object.'
+            )
 
 
 # Alliance

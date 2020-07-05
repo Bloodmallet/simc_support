@@ -6,7 +6,12 @@ from simc_support.game_data import Language
 class WowClass(SimcObject):
 
     def __init__(
-        self, id: int, races: list, translations: Language.Translation, *args, **kwargs
+        self,
+        id: int,
+        races: list,
+        translations: Language.Translation,
+        *args,
+        **kwargs
     ) -> None:
         super().__init__(*args, **kwargs)
         self.id = int(id)
@@ -27,18 +32,14 @@ class WowClass(SimcObject):
             self.translations = Language.Translation(translations=translations)
 
 
-empty_translation = {}
-for lang in Language.LANGUAGES:
-    empty_translation[lang] = ""
-
 DEATHKNIGHT = WowClass(
-    6, Race.RACES, empty_translation, "Death Knight", 'death_knight',
+    6, Race.RACES, Language.EmptyTranslation(), "Death Knight", 'death_knight',
 )
 DEMONHUNTER = WowClass(
     12, [
         Race.NIGHTELF,
         Race.BLOODELF,
-    ], empty_translation, "Demon Hunter", 'demon_hunter'
+    ], Language.EmptyTranslation(), "Demon Hunter", 'demon_hunter'
 )
 DRUID = WowClass(
     11, [
@@ -49,9 +50,10 @@ DRUID = WowClass(
         Race.TROLL,
         Race.HIGHMOUNTAINTAUREN,
         Race.ZANDALARITROLL,
-    ], empty_translation, "Druid", 'druid'
+    ], Language.EmptyTranslation(), "Druid", 'druid'
 )
-HUNTER = WowClass(3, Race.RACES, empty_translation, "Hunter", 'hunter')
+HUNTER = WowClass(3, Race.RACES, Language.EmptyTranslation(),
+                  "Hunter", 'hunter')
 MAGE = WowClass(
     8, [
         Race.DRAENEI,
@@ -76,7 +78,7 @@ MAGE = WowClass(
         Race.MAGHARORC,
         Race.ZANDALARITROLL,
         Race.VULPERA,
-    ], empty_translation, "Mage", 'mage'
+    ], Language.EmptyTranslation(), "Mage", 'mage'
 )
 MONK = WowClass(
     10, [
@@ -101,7 +103,7 @@ MONK = WowClass(
         Race.MAGHARORC,
         Race.ZANDALARITROLL,
         Race.VULPERA,
-    ], empty_translation, "Monk", 'monk'
+    ], Language.EmptyTranslation(), "Monk", 'monk'
 )
 PALADIN = WowClass(
     2, [
@@ -113,7 +115,7 @@ PALADIN = WowClass(
         Race.BLOODELF,
         Race.TAUREN,
         Race.ZANDALARITROLL,
-    ], empty_translation, "Paladin", 'paladin'
+    ], Language.EmptyTranslation(), "Paladin", 'paladin'
 )
 PRIEST = WowClass(
     5, [
@@ -139,7 +141,7 @@ PRIEST = WowClass(
         Race.MAGHARORC,
         Race.ZANDALARITROLL,
         Race.VULPERA,
-    ], empty_translation, "Priest", 'priest'
+    ], Language.EmptyTranslation(), "Priest", 'priest'
 )
 ROGUE = WowClass(
     4, [
@@ -163,7 +165,7 @@ ROGUE = WowClass(
         Race.MAGHARORC,
         Race.ZANDALARITROLL,
         Race.VULPERA,
-    ], empty_translation, "Rogue", 'rogue'
+    ], Language.EmptyTranslation(), "Rogue", 'rogue'
 )
 SHAMAN = WowClass(
     7, [
@@ -181,7 +183,7 @@ SHAMAN = WowClass(
         Race.MAGHARORC,
         Race.ZANDALARITROLL,
         Race.VULPERA,
-    ], empty_translation, "Shaman", 'shaman'
+    ], Language.EmptyTranslation(), "Shaman", 'shaman'
 )
 WARLOCK = WowClass(
     9, [
@@ -199,9 +201,10 @@ WARLOCK = WowClass(
         Race.UNDEAD,
         Race.NIGHTBORNE,
         Race.VULPERA,
-    ], empty_translation, "Warlock", 'warlock'
+    ], Language.EmptyTranslation(), "Warlock", 'warlock'
 )
-WARRIOR = WowClass(1, Race.RACES, empty_translation, "Warrior", 'warrior')
+WARRIOR = WowClass(
+    1, Race.RACES, Language.EmptyTranslation(), "Warrior", 'warrior')
 
 WOWCLASSES = (
     DEATHKNIGHT,
