@@ -5,7 +5,12 @@ from simc_support.game_data.ItemLevel import *  # pylint: disable=unused-wildcar
 from simc_support.game_data.Role import Role
 from simc_support.game_data.Source import Source
 from simc_support.game_data.Stat import Stat
-from simc_support.game_data.WowSpec import WowSpec
+
+try:
+    # import exists to enable type hinting
+    from simc_support.game_data.WowSpec import WowSpec
+except ImportError:
+    WowSpec = object
 
 
 class Trinket(object):
