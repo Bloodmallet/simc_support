@@ -9,7 +9,6 @@ from simc_support.game_data.WowSpec import WowSpec
 
 
 class Trinket(object):
-    """docstring for trinket"""
 
     def __init__(
         self,
@@ -24,6 +23,20 @@ class Trinket(object):
         source: str = None,
         active: bool = False
     ):
+        """Creates a Trinket instance
+
+        Args:
+            name (str): Name
+            item_id (str): Item ID
+            min_itemlevel (int): Minimal available itemlevel
+            max_itemlevel (int): maximum available itemlevel (warforged/upgrades)
+            max_itemlevel_drop (int): maximum dropping itemlevel
+            stat (typing.Union[Stat, typing.List[Stat]]): primary stats
+            role (Role): spec role
+            legendary (bool, optional): Flag to determine legendaries. Defaults to False.
+            source (str, optional): Drop source. Defaults to None.
+            active (bool, optional): Is the trinket on use? Defaults to False.
+        """
         super(Trinket, self).__init__()
         self.name: str = str(name)
         self.item_id: str = str(item_id)
