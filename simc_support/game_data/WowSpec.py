@@ -1,24 +1,11 @@
+import itertools
+import typing
+
+from simc_support.game_data import Language, WowClass
+from simc_support.game_data.RaidRole import RaidRole
+from simc_support.game_data.Role import Role
 from simc_support.game_data.SimcObject import SimcObject
-from simc_support.game_data import WowClass
-from simc_support.game_data import Language
-import enum
-
-
-class RaidRole(enum.Enum):
-    TANK = "tank"
-    DD = "dd"
-    HEAL = "heal"
-
-
-class Role(enum.Enum):
-    MELEE = "melee"
-    RANGED = "ranged"
-
-
-class Stat(enum.Enum):
-    STRENGTH = "str"
-    AGILITY = "agi"
-    INTELLECT = "int"
+from simc_support.game_data.Stat import Stat
 
 
 class WowSpec(SimcObject):
@@ -33,7 +20,7 @@ class WowSpec(SimcObject):
         talents: str,
         raid_role: RaidRole,
         role: Role,
-        stat: Stat,
+        stat: typing.Union[Stat, typing.List[Stat]],
         *args,
         **kwargs,
     ):
@@ -50,7 +37,9 @@ class WowSpec(SimcObject):
         if len(talents) != 7:
             raise ValueError("Wrong talent string length, expected 7")
         if len(talents.replace("1", "").replace("0", "")) != 0:
-            raise ValueError("Expected talent string to contain only '1' and '0' charcters")
+            raise ValueError(
+                "Expected talent string to contain only '1' and '0' charcters"
+            )
         self.talents = talents
 
         if raid_role not in [k for k in RaidRole]:
@@ -64,6 +53,112 @@ class WowSpec(SimcObject):
         if stat not in [k for k in Stat]:
             raise ValueError(f"Unknown stat '{stat}'")
         self.stat = stat
+
+    def is_dps_talent_combination(self, talent_combination: str) -> bool:
+        """Determines whether a given talent combination is a valid talent combination.
+
+        Arguments:
+        talent_combination {str} -- [description]
+
+        Returns:
+        bool -- True, if all dps talent rows have a talent selected and all utility rows have no talent selected.
+        """
+
+        if not all([talent in "0123" for talent in talent_combination]):
+            return ValueError("Unexpected talent value. Values can be 0, 1, 2, 3.")
+
+        for i, talent_type in enumerate(self.talents):
+            if talent_combination[i] == "0" and talent_type == "1":
+                return False
+            elif talent_combination[i] != "0" and talent_type == "0":
+                return False
+        return True
+
+    def get_talent_combinations(self, *, user_input: str = None) -> tuple:
+        """Get a list of all valid dps talent combinations for a wow_class and wow_spec. If user_input is given, the provided mask is used for this genertion and pruning of the talent combination list.
+
+        Arguments:
+
+        Keyword Arguments:
+            user_input {str} -- Mask to determine whether a combination is valid or not. Class inherent masks are used in addition to the user input. Input can either be empty, or len 7. len seven is understood as a mask for all talent rows. Write 'x' or '-' as a placeholder. Example: '201xx03' will generate 9 talent combinations if both x are dps talents. (default: {None})
+
+        Returns:
+            list[talent_combination{str}] -- List of all valied talent combinations for a class.
+        """
+
+        combinations = []
+
+        if not user_input:
+            combinations = self._get_talent_combinations(
+                "xxxxxxx",
+            )
+
+        elif len(user_input) == 7:
+            combinations = self._get_talent_combinations(
+                user_input,
+            )
+
+        else:
+            # something unexpected occured
+            raise ValueError(f"Unexpected user_input '{user_input}'.")
+
+        return tuple(combinations)
+
+    def _get_talent_combinations(self, blueprint: str) -> tuple:
+        """Generate all talent combinations matching blueprint. You're an enduser? Use get_talent_combinations(...).
+
+        Arguments:
+            blueprint {str} -- [description]
+
+        Returns:
+            list[talent_combination{str}] -- [description]
+        """
+
+        if not ("x" in blueprint or "-" in blueprint):
+            return tuple(blueprint)
+
+        blueprint = blueprint.replace("-", "x")
+
+        pattern = ""
+
+        for i, talent_type in enumerate(self.talents):
+            if blueprint[i] == "x" and talent_type == "0":
+                pattern += "0"
+            else:
+                pattern += blueprint[i]
+
+        combinations = itertools.product(
+            "0123",
+            repeat=len(self.talents),
+        )
+
+        combinations = map(
+            lambda combination: "".join(combination),
+            combinations,
+        )
+
+        def filter_combination(combination: str) -> bool:
+            """Return True if any combination position either doesn't match its pattern position or if any free position is not set to 1, 2, or 3.
+
+            Args:
+                combination (str): [description]
+
+            Returns:
+                bool: [description]
+            """
+            zipped = zip(pattern, combination)
+            mapped = map(
+                lambda t: t[0] in "0123" and t[0] != t[1] or t[0] == "x" and t[1] not in "123",
+                zipped
+            )
+            return any(mapped)
+
+        filtered_combinations = filter(
+            lambda combination: filter_combination(combination),
+            combinations
+        )
+
+        return tuple(filtered_combinations)
 
 
 empty_translation = {}
