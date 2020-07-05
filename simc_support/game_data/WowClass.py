@@ -17,7 +17,7 @@ class WowClass(SimcObject):
         self.id = int(id)
         # double check input to be of Race class
         for race in races:
-            if type(race) != Race.Race:
+            if isinstance(race, Race.Race):
                 raise TypeError(
                     "Expected races to be of Race type. Got {} instead.".format(
                         type(race)
@@ -26,7 +26,7 @@ class WowClass(SimcObject):
             if race not in Race.RACES:
                 raise ValueError("Unknown race {}.".format(race))
         self.races = races
-        if type(translations) == Language.Translation:
+        if isinstance(translations, Language.Translation):
             self.translations = translations
         else:
             self.translations = Language.Translation(translations=translations)
