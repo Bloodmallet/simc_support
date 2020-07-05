@@ -320,7 +320,7 @@ ZANDALARITROLL = Race(
     }
 )
 
-RACES = [
+RACES = (
     DARKIRONDWARF,
     DRAENEI,
     DWARF,
@@ -345,4 +345,4 @@ RACES = [
     UNDEAD,
     VULPERA,
     ZANDALARITROLL,
-]
+)

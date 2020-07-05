@@ -19,4 +19,4 @@ class Faction(SimcObject):
 ALLIANCE = Faction("Alliance", 'alliance')
 HORDE = Faction("Horde", 'horde')
 
-FACTIONS = [ALLIANCE, HORDE]
+FACTIONS = (ALLIANCE, HORDE)

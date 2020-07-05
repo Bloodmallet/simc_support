@@ -22,7 +22,7 @@ KR = Language('ko_KR')
 RU = Language('ru_RU')
 US = Language('en_US')
 
-LANGUAGES = [
+LANGUAGES = (
     CN,
     DE,
     ES,
@@ -31,7 +31,7 @@ LANGUAGES = [
     KR,
     RU,
     US,
-]
+)
 
 
 class Translation(object):
