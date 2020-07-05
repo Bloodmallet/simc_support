@@ -6,6 +6,7 @@ from simc_support.game_data.RaidRole import RaidRole
 from simc_support.game_data.Role import Role
 from simc_support.game_data.SimcObject import SimcObject
 from simc_support.game_data.Stat import Stat
+from simc_support.game_data.Talent import get_talent_dict
 from simc_support.game_data.Trinket import Trinket
 
 
@@ -22,6 +23,7 @@ class WowSpec(SimcObject):
         raid_role: RaidRole,
         role: Role,
         stat: Stat,
+        ptr=False,
         *args,
         **kwargs,
     ):
@@ -29,7 +31,7 @@ class WowSpec(SimcObject):
         self.id = int(id)
         self.wow_class = wow_class
 
-        if type(translations) == Language.Translation:
+        if isinstance(translations, Language.Translation):
             self.translations = translations
         else:
             self.translations = Language.Translation(translations=translations)
@@ -54,6 +56,8 @@ class WowSpec(SimcObject):
         if stat not in Stat:
             raise ValueError(f"Unknown stat '{stat}'")
         self.stat = stat
+
+        self.talents = get_talent_dict(self, ptr)
 
     def is_dps_talent_combination(self, talent_combination: str) -> bool:
         """Determines whether a given talent combination is a valid talent combination.
