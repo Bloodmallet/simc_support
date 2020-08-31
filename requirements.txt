@@ -2,3 +2,4 @@ black
 mypy
 fixedint
 requests
+bitarray
