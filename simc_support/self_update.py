@@ -5,9 +5,12 @@ Basically; execute this script once per patch.
 import argparse
 import json
 import logging
+import os
+import pathlib
+import subprocess
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 
 ch = logging.StreamHandler()
 ch.setLevel(logging.DEBUG)
@@ -28,29 +31,96 @@ def handle_arguments() -> argparse.ArgumentParser:
         "-s",
         "--simc",
         nargs="?",
-        default="../SimulationCraft",
-        help="Path to your local SimulationCraft version.",
+        default=None,
+        help="Absolute path to your local SimulationCraft version.",
     )
     parser.add_argument(
         "-o",
         "--output",
         nargs="?",
-        default="./tmp",
-        help="Path to the save location of DB files.",
+        default=os.path.join(pathlib.Path(__file__).parent.absolute(), "tmp"),
+        help="Absolute path to the save location of DB files.",
     )
     parser.add_argument(
         "-w",
         "--wow",
-        nargs=1,
-        help="Path to your World of Warcaft installation to get hotfixes. E.g. /games/World\ of\ Warcraft/_beta_",
+        nargs="?",
+        default=None,
+        help="Absolute path to your World of Warcaft installation to get hotfixes. E.g. /games/World\ of\ Warcraft/_beta_",
     )
-    # parser.add_argument(
-    #     "--no-load",
-    #     action="store_true",
-    #     help="Flag disables download from CDN. Instead only already present local files are used.",
-    # )
-
+    parser.add_argument(
+        "--no-load",
+        action="store_true",
+        help="Flag disables download from CDN. Instead only already present local files are used.",
+    )
+    parser.add_argument(
+        "--ptr",
+        action="store_true",
+        help="Download PTR files",
+    )
+    parser.add_argument(
+        "--beta",
+        action="store_true",
+        help="Download BETA files",
+    )
+    parser.add_argument(
+        "--debug",
+        action="store_true",
+        help="Enable debug output",
+    )
     return parser
+
+
+def is_python() -> bool:
+    output = subprocess.run(["python", "--version"], stdout=subprocess.PIPE)
+    return output.stdout.split()[1].startswith(b"3")
+
+
+def is_python3() -> bool:
+    output = subprocess.run(["python3", "--version"], stdout=subprocess.PIPE)
+    return output.stdout.split()[1].startswith(b"3")
+
+
+def casc(args) -> None:
+    if args.no_load:
+        return
+    logger.info("Downloading files (casc)")
+    if not (is_python() or is_python3()):
+        raise SystemError("Python 3 is required.")
+
+    python = "python" if is_python() else "python3"
+
+    command = [
+        python,
+        "casc_extract.py",
+        "--cdn",
+        "-m",
+        "batch",
+        "-o",
+        args.output,
+    ]
+    if args.ptr:
+        command.append("--ptr")
+    elif args.beta:
+        command.append("--beta")
+
+    # TODO: Add all locales
+
+    logger.debug(command)
+    process = subprocess.Popen(
+        command,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        cwd=os.path.join(args.simc, "casc_extract"),
+    )
+    while True:
+        output = process.stdout.readline()
+        if output == b"" and process.poll() is not None:
+            break
+        if output:
+            logger.debug(output.strip().decode("ascii"))
+    rc = process.poll()
+    logger.debug(rc)
 
 
 def update_trinkets(args: dict) -> None:
@@ -102,7 +172,9 @@ def update_trinkets(args: dict) -> None:
 
 def main() -> None:
     args = handle_arguments().parse_args()
-    logger.info(args)
+    if args.debug:
+        logger.setLevel(logging.DEBUG)
+    casc(args)
     # update_trinkets(args)
 
 
