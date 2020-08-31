@@ -124,6 +124,7 @@ def casc(args: object) -> None:
         SystemError: If Python 3+ is not available in commandline neither via 'python' nor 'python3'.
     """
     if args.no_load:
+        logger.info("Skipping download")
         return
     logger.info("Downloading files (casc)")
 
@@ -179,6 +180,7 @@ def dbc(args: object, files: typing.List[str]) -> None:
         files (typing.List[str]): [description]
     """
     if args.no_extract:
+        logger.info("Skipping extraction")
         return
     logger.info("Extracting files (dbc)")
 
@@ -218,7 +220,6 @@ def dbc(args: object, files: typing.List[str]) -> None:
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
                 cwd=os.path.join(args.simc, "dbc_extract3"),
-                universal_newlines=True,
             )
             if process.returncode != 0:
                 logger.error(
@@ -227,13 +228,23 @@ def dbc(args: object, files: typing.List[str]) -> None:
             else:
                 with open(
                     os.path.join(get_compiled_data_path(args, locale), f"{file}.json"),
-                    "w",
+                    "wb",
                 ) as f:
                     f.write(process.stdout)
 
 
 def update_trinkets(args: object) -> None:
+    """Update data_files/trinkets.json
 
+    Args:
+        args (object): [description]
+
+    Returns:
+        None
+    """
+
+    logger.info("Update trinkets")
+    # TODO: add ItemEffect to know which trinkets have on use effects
     DB_FILES = ["ItemSparse"]
 
     WHITELIST = []
@@ -248,7 +259,8 @@ def update_trinkets(args: object) -> None:
 
     def is_shadowlands(item: dict) -> bool:
         """Tests for itemlevel and chracter level requirement."""
-        return is_gte_ilevel(item) and is_gte_level(item)
+        # unbound changeling is somehow available for lvl 1
+        return is_gte_ilevel(item)  # and is_gte_level(item)
 
     def is_gte_level(item: dict) -> bool:
         """An Expansion starts at the last possible character level of the previous one."""
@@ -259,29 +271,72 @@ def update_trinkets(args: object) -> None:
         return item.get("ilevel") >= 155
 
     def is_whitelisted(item: dict) -> bool:
-        return item.get("id") in WHITELIST
+        return item.get("id") in WHITELIST or item.get("name") in WHITELIST
 
     dbc(args, DB_FILES)
 
-    with open(
-        os.path.join(get_compiled_data_path(args, _LOCALES[0]), f"{DB_FILES[0]}.json"),
-        "r",
-    ) as f:
-        items = json.load(f)
+    data = {}
 
-    trinkets = [
-        item
-        for item in items
-        if is_trinket(item)
-        and is_gte_rare(item)
-        and is_shadowlands(item)
-        or is_whitelisted(item)
+    for locale in _LOCALES:
+        with open(
+            os.path.join(get_compiled_data_path(args, locale), f"{DB_FILES[0]}.json"),
+            "r",
+        ) as f:
+            items = json.load(f)
+
+        data[locale] = [
+            item
+            for item in items
+            if is_trinket(item)
+            and is_gte_rare(item)
+            and is_shadowlands(item)
+            or is_whitelisted(item)
+        ]
+
+    trinkets = []
+    # TODO: research fields and possibly remove more
+    item_keys = [
+        "id",
+        "race_mask",
+        "desc",
+        "name",
+        "duration",
+        "bag_family",
+        "ranged_mod_range",
+        "ilevel",
+        "class_mask",
+        "id_expansion",
+        "req_level",
+        "inv_type",
+        "quality",
+        "translations",
     ]
+    for i in range(1, 11):
+        item_keys.append(f"stat_alloc_{i}")
+        item_keys.append(f"stat_type_{i}")
+
+    for i, locale in enumerate(_LOCALES):
+        # prepare
+        if i == 0:
+            item: dict
+            for item in data[locale]:
+                item["translations"] = {locale: item["name"]}
+                new_item = {}
+                for key in item_keys:
+                    new_item[key] = item[key]
+                trinkets.append(item)
+
+        # enrich
+        else:
+            for item in data[locale]:
+                for trinket in trinkets:
+                    if trinket["id"] == item["id"]:
+                        trinket["translations"][locale] = item["name"]
 
     logger.debug(f"Count: {len(trinkets)}")
 
     with open(os.path.join(DATA_PATH, "trinkets.json"), "w") as f:
-        json.dump(trinkets, f)
+        json.dump(trinkets, f, ensure_ascii=False)
 
 
 def main() -> None:
