@@ -2,6 +2,7 @@
 """
 
 import json
+import pkg_resources
 
 from simc_support.game_data import Source
 from simc_support.game_data.ItemLevel import *     # pylint: disable=unused-wildcard-import
@@ -13,8 +14,6 @@ from simc_support.game_data.WowClass import class_data as __class_data
 
 
 def _compare_trinket_lists():
-    import pkg_resources
-
     path = "equippable-items.json"
 
     with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
@@ -74,8 +73,6 @@ def get_trinket_list() -> list:
         list -- item list
     """
 
-    import pkg_resources
-
     path = "equippable-items.json"
 
     with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
@@ -100,9 +97,6 @@ def get_trinket_translation(trinket_name) -> dict:
     Returns:
         dict -- [description]
     """
-
-    import pkg_resources
-
     path = "trinket_translations.json"
 
     with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
@@ -142,8 +136,6 @@ def get_azerite_item_translation(item_name) -> dict:
         dict -- [description]
     """
 
-    import pkg_resources
-
     path = "azerite_item_translations.json"
 
     with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
@@ -176,8 +168,6 @@ def get_item_translation(item_name: str = "", item_id: int = None, item_list: li
         loaded_items = item_list
 
     else:
-        import pkg_resources
-
         path = "equippable-items.json"
 
         with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
@@ -200,8 +190,6 @@ def get_trait_translation_dict():
     Returns:
         dict -- {Name:{language:translation}}
     """
-
-    import pkg_resources
 
     path = "azerite_trait_translations.json"
 
@@ -229,8 +217,6 @@ def get_trait_translation(trait_name: str = "", translation_dict: dict = None) -
     if translation_dict:
         loaded_translations = translation_dict
     else:
-        import pkg_resources
-
         path = "azerite_trait_translations.json"
 
         with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
