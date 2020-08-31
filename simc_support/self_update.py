@@ -167,6 +167,8 @@ def casc(args: object) -> None:
         if rc != 0:
             logger.error(f"Error occured while loading {locale}.")
 
+    logger.info("Downloaded files")
+
 
 def get_compiled_data_path(args: object, locale: str) -> str:
     return os.path.join(args.output, "compiled", locale)
@@ -260,15 +262,19 @@ def update_trinkets(args: object) -> None:
     def is_shadowlands(item: dict) -> bool:
         """Tests for itemlevel and chracter level requirement."""
         # unbound changeling is somehow available for lvl 1
-        return is_gte_ilevel(item)  # and is_gte_level(item)
+        def is_expansion(item: dict) -> bool:
+            """Checks expansion id."""
+            return item["id_expansion"] == 9
 
-    def is_gte_level(item: dict) -> bool:
-        """An Expansion starts at the last possible character level of the previous one."""
-        return item.get("req_level") >= 50
+        def is_gte_level(item: dict) -> bool:
+            """An Expansion starts at the last possible character level of the previous one."""
+            return item.get("req_level") >= 50
 
-    def is_gte_ilevel(item: dict) -> bool:
-        """Value of normal Dungeon items at level 50."""
-        return item.get("ilevel") >= 155
+        def is_gte_ilevel(item: dict) -> bool:
+            """Value of normal Dungeon items at level 50."""
+            return item.get("ilevel") >= 155
+
+        return is_expansion(item) or is_gte_ilevel(item)  # and is_gte_level(item)
 
     def is_whitelisted(item: dict) -> bool:
         return item.get("id") in WHITELIST or item.get("name") in WHITELIST
@@ -324,7 +330,7 @@ def update_trinkets(args: object) -> None:
                 new_item = {}
                 for key in item_keys:
                     new_item[key] = item[key]
-                trinkets.append(item)
+                trinkets.append(new_item)
 
         # enrich
         else:
@@ -333,7 +339,7 @@ def update_trinkets(args: object) -> None:
                     if trinket["id"] == item["id"]:
                         trinket["translations"][locale] = item["name"]
 
-    logger.debug(f"Count: {len(trinkets)}")
+    logger.info(f"Updated {len(trinkets)} trinkets")
 
     with open(os.path.join(DATA_PATH, "trinkets.json"), "w") as f:
         json.dump(trinkets, f, ensure_ascii=False)
