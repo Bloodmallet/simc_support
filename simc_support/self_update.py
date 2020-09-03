@@ -247,7 +247,8 @@ def update_trinkets(args: object) -> None:
 
     logger.info("Update trinkets")
     # TODO: add ItemEffect to know which trinkets have on use effects
-    DB_FILES = ["ItemSparse"]
+    ITEMSPARSE = "ItemSparse"
+    ITEMEFFECT = "ItemEffect"
 
     WHITELIST = []
 
@@ -261,7 +262,7 @@ def update_trinkets(args: object) -> None:
 
     def is_shadowlands(item: dict) -> bool:
         """Tests for itemlevel and chracter level requirement."""
-        # unbound changeling is somehow available for lvl 1
+
         def is_expansion(item: dict) -> bool:
             """Checks expansion id."""
             return item["id_expansion"] == 9
@@ -274,18 +275,19 @@ def update_trinkets(args: object) -> None:
             """Value of normal Dungeon items at level 50."""
             return item.get("ilevel") >= 155
 
+        # Unbound Changeling is somehow available for lvl 1
         return is_expansion(item) or is_gte_ilevel(item)  # and is_gte_level(item)
 
     def is_whitelisted(item: dict) -> bool:
         return item.get("id") in WHITELIST or item.get("name") in WHITELIST
 
-    dbc(args, DB_FILES)
+    dbc(args, [ITEMSPARSE, ITEMEFFECT])
 
     data = {}
 
     for locale in _LOCALES:
         with open(
-            os.path.join(get_compiled_data_path(args, locale), f"{DB_FILES[0]}.json"),
+            os.path.join(get_compiled_data_path(args, locale), f"{ITEMSPARSE}.json"),
             "r",
         ) as f:
             items = json.load(f)
@@ -299,13 +301,29 @@ def update_trinkets(args: object) -> None:
             or is_whitelisted(item)
         ]
 
+    # load itemeffect table
+    with open(
+        os.path.join(get_compiled_data_path(args, _LOCALES[0]), f"{ITEMEFFECT}.json"),
+        "r",
+    ) as f:
+        itemeffects = json.load(f)
+
+    def is_on_use(item_id: int) -> bool:
+        uses = []
+        for effect in itemeffects:
+            if item_id == effect["id_parent"]:
+                if effect["trigger_type"] == 0:
+                    uses.append(True)
+                else:
+                    uses.append(False)
+        return any(uses)
+
     trinkets = []
     # TODO: research fields and possibly remove more
     item_keys = [
         "id",
         "race_mask",
         "desc",
-        "name",
         "duration",
         "bag_family",
         "ranged_mod_range",
@@ -315,7 +333,6 @@ def update_trinkets(args: object) -> None:
         "req_level",
         "inv_type",
         "quality",
-        "translations",
     ]
     for i in range(1, 11):
         item_keys.append(f"stat_alloc_{i}")
@@ -326,10 +343,13 @@ def update_trinkets(args: object) -> None:
         if i == 0:
             item: dict
             for item in data[locale]:
-                item["translations"] = {locale: item["name"]}
                 new_item = {}
                 for key in item_keys:
                     new_item[key] = item[key]
+
+                new_item[f"name_{locale}"] = item["name"]
+                new_item["on_use"] = is_on_use(item["id"])
+
                 trinkets.append(new_item)
 
         # enrich
@@ -337,7 +357,7 @@ def update_trinkets(args: object) -> None:
             for item in data[locale]:
                 for trinket in trinkets:
                     if trinket["id"] == item["id"]:
-                        trinket["translations"][locale] = item["name"]
+                        trinket[f"name_{locale}"] = item["name"]
 
     logger.info(f"Updated {len(trinkets)} trinkets")
 
