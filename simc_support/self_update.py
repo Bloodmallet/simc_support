@@ -34,7 +34,7 @@ _LOCALES = [
     "pt_PT",
 ]
 
-DATA_PATH = "data_files"
+DATA_PATH = "game_data/data_files"
 
 
 def handle_arguments() -> argparse.ArgumentParser:
