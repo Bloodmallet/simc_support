@@ -31,28 +31,14 @@ class Trinket(object):
         """Creates a Trinket instance
 
         Args:
-            name (str): Name
             item_id (str): Item ID
-            min_itemlevel (int): Minimal available itemlevel
-            max_itemlevel (int): maximum available itemlevel (warforged/upgrades)
-            max_itemlevel_drop (int): maximum dropping itemlevel
-            stat (typing.Union[Stat, typing.List[Stat]]): primary stats
-            role (Role): spec role
+            itemlevels (typing.List[int]): item is available at all these itemlevels
+            stats (typing.Union[typing.List[Stat], typing.Tuple[Stat]]): primary stats
+            translations (Translation): name of the item in all languages
             legendary (bool, optional): Flag to determine legendaries. Defaults to False.
             source (str, optional): Drop source. Defaults to None.
             on_use (bool, optional): Is the trinket on use? Defaults to False.
         """
-
-        # name: str,
-        # item_id: str,
-        # min_itemlevel: int,
-        # max_itemlevel: int,
-        # max_itemlevel_drop: int,
-        # stat: typing.Union[Stat, typing.List[Stat]],
-        # role: Role,
-        # legendary: bool = False,
-        # source: str = None,
-        # active: bool = False
         super(Trinket, self).__init__()
         self.translations = translations
         self.name: str = self.translations.US
@@ -77,7 +63,6 @@ class Trinket(object):
         self.source = source
 
         self.on_use: bool = bool(on_use)
-        # might need to transform stat and role to spec at some point...
 
 
 def _load_trinkets() -> typing.List[Trinket]:
