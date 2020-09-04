@@ -2,19 +2,18 @@ import enum
 
 
 class Language(enum.Enum):
-    CN = 'cn_CN'
-    DE = 'de_DE'
-    ES = 'es_ES'
-    FR = 'fr_FR'
-    IT = 'it_IT'
-    KR = 'ko_KR'
-    RU = 'ru_RU'
-    US = 'en_US'
+    CN = "cn_CN"
+    DE = "de_DE"
+    ES = "es_ES"
+    FR = "fr_FR"
+    IT = "it_IT"
+    KR = "ko_KR"
+    RU = "ru_RU"
+    US = "en_US"
 
 
 class Translation(object):
-    """Full translation information. All languages are present.
-    """
+    """Full translation information. All languages are present."""
 
     def __init__(
         self,
@@ -38,7 +37,21 @@ class Translation(object):
             if len(set(translations.keys()).intersection(languages)) == len(languages):
                 for language in translations:
                     setattr(self, language, translations[language])
-        elif cn_CN and de_DE and es_ES and fr_FR and it_IT and ko_KR and ru_RU and en_US:
+            elif isinstance(list(translations)[0], Language):
+                if len(
+                    set([key.name for key in list(translations)]).intersection(
+                        languages
+                    )
+                ) == len(languages):
+                    for language in translations:
+                        setattr(self, language.name, translations[language])
+            else:
+                raise ValueError(
+                    f"translations dictionary didn't contain expected keys. Got: {sorted(list(translations))} Expected keys: {languages}"
+                )
+        elif (
+            cn_CN and de_DE and es_ES and fr_FR and it_IT and ko_KR and ru_RU and en_US
+        ):
             self.CN = cn_CN
             self.DE = de_DE
             self.ES = es_ES
@@ -49,13 +62,12 @@ class Translation(object):
             self.US = en_US
         else:
             raise ValueError(
-                'Expected more information. Please make sure you have translations for all languages.'
+                "Expected more information. Please make sure you have translations for all languages."
             )
 
 
 class EmptyTranslation(Translation):
-    """If you don't have translations handy, but need to provide a translations object.
-    """
+    """If you don't have translations handy, but need to provide a translations object."""
 
     def __init__(self):
         languages = {language.name: "" for language in Language}
