@@ -27,7 +27,7 @@ setup(
             "*.md",
         ],
         "simc_support": [
-            "data_files/*.json",
+            "game_data/data_files/*.json",
         ],
     },
     python_requires=">=3.6",
