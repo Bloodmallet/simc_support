@@ -8,8 +8,7 @@ from simc_support.game_data.SimcObject import SimcObject
 
 
 class Race(SimcObject):
-    """Race defines how your character looks, moves, and what racial ability you have.
-    """
+    """Race defines how your character looks, moves, and what racial ability you have."""
 
     def __init__(
         self,
@@ -30,300 +29,372 @@ class Race(SimcObject):
             self.translations = Translation(translations=translations)
         else:
             raise TypeError(
-                'translations must either be a dictionary or a Translaton object.'
+                "translations must either be a dictionary or a Translaton object."
             )
 
 
 # Alliance
 DARKIRONDWARF = Race(
-    ALLIANCE, "Dark Iron Dwarf", 'dark_iron_dwarf', {
-        Language.US: 'Dark Iron Dwarf',
-        Language.IT: 'Nano Ferroscuro',
-        Language.DE: 'Dunkeleisenzwerg',
-        Language.FR: 'Nain sombrefer',
-        Language.RU: 'Дворф из клана Черного Железа',
-        Language.ES: 'Enano Hierro Negro',
-        Language.KR: '검은무쇠 드워프',
-        Language.CN: '黑铁矮人'
-    }
+    ALLIANCE,
+    "Dark Iron Dwarf",
+    "dark_iron_dwarf",
+    {
+        Language.US: "Dark Iron Dwarf",
+        Language.IT: "Nano Ferroscuro",
+        Language.DE: "Dunkeleisenzwerg",
+        Language.FR: "Nain sombrefer",
+        Language.RU: "Дворф из клана Черного Железа",
+        Language.ES: "Enano Hierro Negro",
+        Language.KR: "검은무쇠 드워프",
+        Language.CN: "黑铁矮人",
+    },
 )
 DRAENEI = Race(
-    ALLIANCE, "Draenei", 'draenei', {
-        Language.US: 'Draenei',
-        Language.IT: 'Draenei',
-        Language.DE: 'Draenei',
-        Language.FR: 'Draeneï',
-        Language.RU: 'Дреней',
-        Language.ES: 'Draenei',
-        Language.KR: '드레나이',
-        Language.CN: '德莱尼'
-    }
+    ALLIANCE,
+    "Draenei",
+    "draenei",
+    {
+        Language.US: "Draenei",
+        Language.IT: "Draenei",
+        Language.DE: "Draenei",
+        Language.FR: "Draeneï",
+        Language.RU: "Дреней",
+        Language.ES: "Draenei",
+        Language.KR: "드레나이",
+        Language.CN: "德莱尼",
+    },
 )
 DWARF = Race(
-    ALLIANCE, "Dwarf", 'dwarf', {
-        Language.US: 'Dwarf',
-        Language.IT: 'Nano',
-        Language.DE: 'Zwerg',
-        Language.FR: 'Nain',
-        Language.RU: 'Дворф',
-        Language.ES: 'Enano',
-        Language.KR: '드워프',
-        Language.CN: '矮人'
-    }
+    ALLIANCE,
+    "Dwarf",
+    "dwarf",
+    {
+        Language.US: "Dwarf",
+        Language.IT: "Nano",
+        Language.DE: "Zwerg",
+        Language.FR: "Nain",
+        Language.RU: "Дворф",
+        Language.ES: "Enano",
+        Language.KR: "드워프",
+        Language.CN: "矮人",
+    },
 )
 GNOME = Race(
-    ALLIANCE, "Gnome", 'gnome', {
-        Language.US: 'Gnome',
-        Language.IT: 'Gnomo',
-        Language.DE: 'Gnom',
-        Language.FR: 'Gnome',
-        Language.RU: 'Гном',
-        Language.ES: 'Gnomo',
-        Language.KR: '노움',
-        Language.CN: '侏儒'
-    }
+    ALLIANCE,
+    "Gnome",
+    "gnome",
+    {
+        Language.US: "Gnome",
+        Language.IT: "Gnomo",
+        Language.DE: "Gnom",
+        Language.FR: "Gnome",
+        Language.RU: "Гном",
+        Language.ES: "Gnomo",
+        Language.KR: "노움",
+        Language.CN: "侏儒",
+    },
 )
 HUMAN = Race(
-    ALLIANCE, "Human", 'human', {
-        Language.US: 'Human',
-        Language.IT: 'Umano',
-        Language.DE: 'Mensch',
-        Language.FR: 'Humain',
-        Language.RU: 'Человек',
-        Language.ES: 'Humano',
-        Language.KR: '인간',
-        Language.CN: '人类'
-    }
+    ALLIANCE,
+    "Human",
+    "human",
+    {
+        Language.US: "Human",
+        Language.IT: "Umano",
+        Language.DE: "Mensch",
+        Language.FR: "Humain",
+        Language.RU: "Человек",
+        Language.ES: "Humano",
+        Language.KR: "인간",
+        Language.CN: "人类",
+    },
 )
 KULTIRAN = Race(
-    ALLIANCE, "Kul Tiran", 'kul_tiran', {
-        Language.US: 'Kul Tiran',
-        Language.IT: 'Kul Tirano',
-        Language.DE: 'Kul Tiraner',
-        Language.FR: 'Kultirassien',
-        Language.RU: 'Култирасец',
-        Language.ES: 'Ciudadano de Kul Tiras',
-        Language.KR: '쿨 티란',
-        Language.CN: '库尔提拉斯人'
-    }
+    ALLIANCE,
+    "Kul Tiran",
+    "kul_tiran",
+    {
+        Language.US: "Kul Tiran",
+        Language.IT: "Kul Tirano",
+        Language.DE: "Kul Tiraner",
+        Language.FR: "Kultirassien",
+        Language.RU: "Култирасец",
+        Language.ES: "Ciudadano de Kul Tiras",
+        Language.KR: "쿨 티란",
+        Language.CN: "库尔提拉斯人",
+    },
 )
 LIGHTFORGEDDRAENEI = Race(
-    ALLIANCE, "Lightforged Draenei", 'lightforged_dranei', {
-        Language.US: 'Lightforged Draenei',
-        Language.IT: 'Draenei Forgialuce',
-        Language.DE: 'Lichtgeschmiedeter Draenei',
-        Language.FR: 'Draeneï sancteforge',
-        Language.RU: 'Озаренный дреней',
-        Language.ES: 'Draenei forjado por la Luz',
-        Language.KR: '빛벼림 드레나이',
-        Language.CN: '光铸德莱尼'
-    }
+    ALLIANCE,
+    "Lightforged Draenei",
+    "lightforged_dranei",
+    {
+        Language.US: "Lightforged Draenei",
+        Language.IT: "Draenei Forgialuce",
+        Language.DE: "Lichtgeschmiedeter Draenei",
+        Language.FR: "Draeneï sancteforge",
+        Language.RU: "Озаренный дреней",
+        Language.ES: "Draenei forjado por la Luz",
+        Language.KR: "빛벼림 드레나이",
+        Language.CN: "光铸德莱尼",
+    },
 )
 MECHAGNOME = Race(
-    ALLIANCE, "Mechagnome", 'mechagnome', {
-        Language.US: 'Mechagnome',
-        Language.IT: 'Meccagnomo',
-        Language.DE: 'Mechagnom',
-        Language.FR: 'Mécagnome',
-        Language.RU: 'Механогном',
-        Language.ES: 'Mecagnomo',
-        Language.KR: '기계노움',
-        Language.CN: '机械侏儒'
-    }
+    ALLIANCE,
+    "Mechagnome",
+    "mechagnome",
+    {
+        Language.US: "Mechagnome",
+        Language.IT: "Meccagnomo",
+        Language.DE: "Mechagnom",
+        Language.FR: "Mécagnome",
+        Language.RU: "Механогном",
+        Language.ES: "Mecagnomo",
+        Language.KR: "기계노움",
+        Language.CN: "机械侏儒",
+    },
 )
 NIGHTELF = Race(
-    ALLIANCE, "Night Elf", 'night_elf', {
-        Language.US: 'Night Elf',
-        Language.IT: 'Elfo della Notte',
-        Language.DE: 'Nachtelf',
-        Language.FR: 'Elfe de la nuit',
-        Language.RU: 'Ночной эльф',
-        Language.ES: 'Elfo de la noche',
-        Language.KR: '나이트 엘프',
-        Language.CN: '暗夜精灵'
-    }
+    ALLIANCE,
+    "Night Elf",
+    "night_elf",
+    {
+        Language.US: "Night Elf",
+        Language.IT: "Elfo della Notte",
+        Language.DE: "Nachtelf",
+        Language.FR: "Elfe de la nuit",
+        Language.RU: "Ночной эльф",
+        Language.ES: "Elfo de la noche",
+        Language.KR: "나이트 엘프",
+        Language.CN: "暗夜精灵",
+    },
 )
 PANDAREN_ALLIANCE = Race(
-    ALLIANCE, "Pandaren", 'pandaren', {
-        Language.US: 'Pandaren',
-        Language.IT: 'Pandaren',
-        Language.DE: 'Pandaren',
-        Language.FR: 'Pandaren',
-        Language.RU: 'Пандарен',
-        Language.ES: 'Pandaren',
-        Language.KR: '판다렌',
-        Language.CN: '熊猫人'
-    }
+    ALLIANCE,
+    "Pandaren",
+    "pandaren",
+    {
+        Language.US: "Pandaren",
+        Language.IT: "Pandaren",
+        Language.DE: "Pandaren",
+        Language.FR: "Pandaren",
+        Language.RU: "Пандарен",
+        Language.ES: "Pandaren",
+        Language.KR: "판다렌",
+        Language.CN: "熊猫人",
+    },
 )
 WORGEN = Race(
-    ALLIANCE, "Worgen", 'worgen', {
-        Language.US: 'Worgen',
-        Language.IT: 'Worgen',
-        Language.DE: 'Worgen',
-        Language.FR: 'Worgen',
-        Language.RU: 'Ворген',
-        Language.ES: 'Huargen',
-        Language.KR: '늑대인간',
-        Language.CN: '狼人'
-    }
+    ALLIANCE,
+    "Worgen",
+    "worgen",
+    {
+        Language.US: "Worgen",
+        Language.IT: "Worgen",
+        Language.DE: "Worgen",
+        Language.FR: "Worgen",
+        Language.RU: "Ворген",
+        Language.ES: "Huargen",
+        Language.KR: "늑대인간",
+        Language.CN: "狼人",
+    },
 )
 VOIDELF = Race(
-    ALLIANCE, "Void Elf", 'void_elf', {
-        Language.US: 'Void Elf',
-        Language.IT: 'Elfo del Vuoto',
-        Language.DE: 'Leerenelf',
-        Language.FR: 'Elfe du Vide',
-        Language.RU: 'Эльф Бездны',
-        Language.ES: 'Elfo del Vacío',
-        Language.KR: '공허 엘프',
-        Language.CN: '虚空精灵'
-    }
+    ALLIANCE,
+    "Void Elf",
+    "void_elf",
+    {
+        Language.US: "Void Elf",
+        Language.IT: "Elfo del Vuoto",
+        Language.DE: "Leerenelf",
+        Language.FR: "Elfe du Vide",
+        Language.RU: "Эльф Бездны",
+        Language.ES: "Elfo del Vacío",
+        Language.KR: "공허 엘프",
+        Language.CN: "虚空精灵",
+    },
 )
 
 # Horde
 BLOODELF = Race(
-    HORDE, "Blood Elf", 'blood_elf', {
-        Language.US: 'Blood Elf',
-        Language.IT: 'Elfo del Sangue',
-        Language.DE: 'Blutelf',
-        Language.FR: 'Elfe de sang',
-        Language.RU: 'Эльф крови',
-        Language.ES: 'Elfo de sangre',
-        Language.KR: '블러드 엘프',
-        Language.CN: '血精灵'
-    }
+    HORDE,
+    "Blood Elf",
+    "blood_elf",
+    {
+        Language.US: "Blood Elf",
+        Language.IT: "Elfo del Sangue",
+        Language.DE: "Blutelf",
+        Language.FR: "Elfe de sang",
+        Language.RU: "Эльф крови",
+        Language.ES: "Elfo de sangre",
+        Language.KR: "블러드 엘프",
+        Language.CN: "血精灵",
+    },
 )
 GOBLIN = Race(
-    HORDE, "Goblin", 'goblin', {
-        Language.US: 'Goblin',
-        Language.IT: 'Goblin',
-        Language.DE: 'Goblin',
-        Language.FR: 'Gobelin',
-        Language.RU: 'Гоблин',
-        Language.ES: 'Goblin',
-        Language.KR: '고블린',
-        Language.CN: '地精'
-    }
+    HORDE,
+    "Goblin",
+    "goblin",
+    {
+        Language.US: "Goblin",
+        Language.IT: "Goblin",
+        Language.DE: "Goblin",
+        Language.FR: "Gobelin",
+        Language.RU: "Гоблин",
+        Language.ES: "Goblin",
+        Language.KR: "고블린",
+        Language.CN: "地精",
+    },
 )
 HIGHMOUNTAINTAUREN = Race(
-    HORDE, "Hightmountain Tauren", 'highmountain_tauren', {
-        Language.US: 'Highmountain Tauren',
-        Language.IT: 'Tauren di Alto Monte',
-        Language.DE: 'Hochbergtauren',
-        Language.FR: 'Tauren de Haut-Roc',
-        Language.RU: 'Таурен Крутогорья',
-        Language.ES: 'Tauren Monte Alto',
-        Language.KR: '높은산 타우렌',
-        Language.CN: '至高岭牛头人'
-    }
+    HORDE,
+    "Hightmountain Tauren",
+    "highmountain_tauren",
+    {
+        Language.US: "Highmountain Tauren",
+        Language.IT: "Tauren di Alto Monte",
+        Language.DE: "Hochbergtauren",
+        Language.FR: "Tauren de Haut-Roc",
+        Language.RU: "Таурен Крутогорья",
+        Language.ES: "Tauren Monte Alto",
+        Language.KR: "높은산 타우렌",
+        Language.CN: "至高岭牛头人",
+    },
 )
 MAGHARORC = Race(
-    HORDE, "Mag'har Orc", 'maghar_orc', {
+    HORDE,
+    "Mag'har Orc",
+    "maghar_orc",
+    {
         Language.US: "Mag'har Orc",
         Language.IT: "Orco Mag'har",
         Language.DE: "Mag'har",
-        Language.FR: 'Orc mag’har',
+        Language.FR: "Orc mag’har",
         Language.RU: "Маг'хар",
         Language.ES: "Orco Mag'har",
-        Language.KR: '마그하르 오크',
-        Language.CN: '玛格汉兽人'
-    }
+        Language.KR: "마그하르 오크",
+        Language.CN: "玛格汉兽人",
+    },
 )
 NIGHTBORNE = Race(
-    HORDE, "Nightborne", 'nightborne', {
-        Language.US: 'Nightborne',
-        Language.IT: 'Nobile Oscuro',
-        Language.DE: 'Nachtgeborener',
-        Language.FR: 'Sacrenuit',
-        Language.RU: 'Ночнорожденный',
-        Language.ES: 'Nocheterna',
-        Language.KR: '나이트본',
-        Language.CN: '夜之子'
-    }
+    HORDE,
+    "Nightborne",
+    "nightborne",
+    {
+        Language.US: "Nightborne",
+        Language.IT: "Nobile Oscuro",
+        Language.DE: "Nachtgeborener",
+        Language.FR: "Sacrenuit",
+        Language.RU: "Ночнорожденный",
+        Language.ES: "Nocheterna",
+        Language.KR: "나이트본",
+        Language.CN: "夜之子",
+    },
 )
 ORC = Race(
-    HORDE, "Orc", 'orc', {
-        Language.US: 'Orc',
-        Language.IT: 'Orco',
-        Language.DE: 'Orc',
-        Language.FR: 'Orc',
-        Language.RU: 'Орк',
-        Language.ES: 'Orco',
-        Language.KR: '오크',
-        Language.CN: '兽人'
-    }
+    HORDE,
+    "Orc",
+    "orc",
+    {
+        Language.US: "Orc",
+        Language.IT: "Orco",
+        Language.DE: "Orc",
+        Language.FR: "Orc",
+        Language.RU: "Орк",
+        Language.ES: "Orco",
+        Language.KR: "오크",
+        Language.CN: "兽人",
+    },
 )
 PANDAREN_HORDE = Race(
-    HORDE, "Pandaren", 'pandaren', {
-        Language.US: 'Pandaren',
-        Language.IT: 'Pandaren',
-        Language.DE: 'Pandaren',
-        Language.FR: 'Pandaren',
-        Language.RU: 'Пандарен',
-        Language.ES: 'Pandaren',
-        Language.KR: '판다렌',
-        Language.CN: '熊猫人'
-    }
+    HORDE,
+    "Pandaren",
+    "pandaren",
+    {
+        Language.US: "Pandaren",
+        Language.IT: "Pandaren",
+        Language.DE: "Pandaren",
+        Language.FR: "Pandaren",
+        Language.RU: "Пандарен",
+        Language.ES: "Pandaren",
+        Language.KR: "판다렌",
+        Language.CN: "熊猫人",
+    },
 )
 TAUREN = Race(
-    HORDE, "Tauren", 'tauren', {
-        Language.US: 'Tauren',
-        Language.IT: 'Tauren',
-        Language.DE: 'Tauren',
-        Language.FR: 'Tauren',
-        Language.RU: 'Таурен',
-        Language.ES: 'Tauren',
-        Language.KR: '타우렌',
-        Language.CN: '牛头人'
-    }
+    HORDE,
+    "Tauren",
+    "tauren",
+    {
+        Language.US: "Tauren",
+        Language.IT: "Tauren",
+        Language.DE: "Tauren",
+        Language.FR: "Tauren",
+        Language.RU: "Таурен",
+        Language.ES: "Tauren",
+        Language.KR: "타우렌",
+        Language.CN: "牛头人",
+    },
 )
 TROLL = Race(
-    HORDE, "Troll", 'troll', {
-        Language.US: 'Troll',
-        Language.IT: 'Troll',
-        Language.DE: 'Troll',
-        Language.FR: 'Troll',
-        Language.RU: 'Тролль',
-        Language.ES: 'Trol',
-        Language.KR: '트롤',
-        Language.CN: '巨魔'
-    }
+    HORDE,
+    "Troll",
+    "troll",
+    {
+        Language.US: "Troll",
+        Language.IT: "Troll",
+        Language.DE: "Troll",
+        Language.FR: "Troll",
+        Language.RU: "Тролль",
+        Language.ES: "Trol",
+        Language.KR: "트롤",
+        Language.CN: "巨魔",
+    },
 )
 UNDEAD = Race(
-    HORDE, "Undead", 'undead', {
-        Language.US: 'Undead',
-        Language.IT: 'Non Morto',
-        Language.DE: 'Untoter',
-        Language.FR: 'Mort-vivant',
-        Language.RU: 'Нежить',
-        Language.ES: 'No-muerto',
-        Language.KR: '언데드',
-        Language.CN: '亡灵'
-    }
+    HORDE,
+    "Undead",
+    "undead",
+    {
+        Language.US: "Undead",
+        Language.IT: "Non Morto",
+        Language.DE: "Untoter",
+        Language.FR: "Mort-vivant",
+        Language.RU: "Нежить",
+        Language.ES: "No-muerto",
+        Language.KR: "언데드",
+        Language.CN: "亡灵",
+    },
 )
 VULPERA = Race(
-    HORDE, "Vulpera", 'vulpera', {
-        Language.US: 'Vulpera',
-        Language.IT: 'Vulpera',
-        Language.DE: 'Vulpera',
-        Language.FR: 'Vulpérin',
-        Language.RU: 'Вульпера',
-        Language.ES: 'Vulpera',
-        Language.KR: '불페라',
-        Language.CN: '狐人'
-    }
+    HORDE,
+    "Vulpera",
+    "vulpera",
+    {
+        Language.US: "Vulpera",
+        Language.IT: "Vulpera",
+        Language.DE: "Vulpera",
+        Language.FR: "Vulpérin",
+        Language.RU: "Вульпера",
+        Language.ES: "Vulpera",
+        Language.KR: "불페라",
+        Language.CN: "狐人",
+    },
 )
 ZANDALARITROLL = Race(
-    HORDE, "Zandalari Troll", 'zandalari_troll', {
-        Language.US: 'Zandalari Troll',
-        Language.IT: 'Troll Zandalari',
-        Language.DE: 'Zandalaritroll',
-        Language.FR: 'Troll zandalari',
-        Language.RU: 'Зандалар',
-        Language.ES: 'Trol Zandalari',
-        Language.KR: '잔달라 트롤',
-        Language.CN: '赞达拉巨魔'
-    }
+    HORDE,
+    "Zandalari Troll",
+    "zandalari_troll",
+    {
+        Language.US: "Zandalari Troll",
+        Language.IT: "Troll Zandalari",
+        Language.DE: "Zandalaritroll",
+        Language.FR: "Troll zandalari",
+        Language.RU: "Зандалар",
+        Language.ES: "Trol Zandalari",
+        Language.KR: "잔달라 트롤",
+        Language.CN: "赞达拉巨魔",
+    },
 )
 
 RACES = (
