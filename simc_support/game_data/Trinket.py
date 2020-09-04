@@ -1,7 +1,10 @@
+import json
 import typing
+import pkg_resources
 
-from simc_support.game_data import Source
+from simc_support.game_data.Source import Source
 from simc_support.game_data.ItemLevel import *  # pylint: disable=unused-wildcard-import
+from simc_support.game_data.Language import Translation
 from simc_support.game_data.Role import Role
 from simc_support.game_data.Source import Source
 from simc_support.game_data.Stat import Stat
@@ -14,19 +17,16 @@ except ImportError:
 
 
 class Trinket(object):
-
     def __init__(
         self,
-        name: str,
+        *,
         item_id: str,
-        min_itemlevel: int,
-        max_itemlevel: int,
-        max_itemlevel_drop: int,
-        stat: typing.Union[Stat, typing.List[Stat]],
+        itemlevels: typing.List[int],
         role: Role,
-        legendary: bool = False,
+        stats: typing.Union[typing.List[Stat], typing.Tuple[Stat]],
+        translations: Translation,
         source: str = None,
-        active: bool = False
+        on_use: bool = False,
     ):
         """Creates a Trinket instance
 
@@ -40,37 +40,121 @@ class Trinket(object):
             role (Role): spec role
             legendary (bool, optional): Flag to determine legendaries. Defaults to False.
             source (str, optional): Drop source. Defaults to None.
-            active (bool, optional): Is the trinket on use? Defaults to False.
+            on_use (bool, optional): Is the trinket on use? Defaults to False.
         """
-        super(Trinket, self).__init__()
-        self.name: str = str(name)
-        self.item_id: str = str(item_id)
-        self.min_itemlevel: int = int(min_itemlevel)
-        self.max_itemlevel: int = int(max_itemlevel)
-        self.max_itemlevel_drop: int = int(max_itemlevel_drop)
 
-        if isinstance(stat, list):
-            for element in stat:
+        # name: str,
+        # item_id: str,
+        # min_itemlevel: int,
+        # max_itemlevel: int,
+        # max_itemlevel_drop: int,
+        # stat: typing.Union[Stat, typing.List[Stat]],
+        # role: Role,
+        # legendary: bool = False,
+        # source: str = None,
+        # active: bool = False
+        super(Trinket, self).__init__()
+        self.translations = translations
+        self.name: str = self.translations.US
+        self.item_id: str = str(item_id)
+        self.itemlevels: list = sorted(itemlevels)
+        self.min_itemlevel: int = self.itemlevels[0]
+        self.max_itemlevel: int = self.itemlevels[-1]
+
+        if isinstance(stats, list) or isinstance(stats, tuple):
+            for element in stats:
                 if element not in Stat:
-                    raise ValueError("One or more provided stats are unknown.")
-        elif stat not in Stat:
-            raise ValueError(f"Unknown stat '{stat}'")
-        if isinstance(stat, list) or isinstance(stat, tuple):
-            self.stat = tuple(stat)
+                    raise TypeError("One or more provided stats are unknown.")
         else:
-            self.stat = tuple([stat])
+            raise TypeError(f"Expected list or tuple. Got {type(stats)}")
+        if isinstance(stats, list) or isinstance(stats, tuple):
+            self.stats = tuple(stats)
 
         self.role = role
 
-        self.legendary: bool = bool(legendary)
-        if str(source) not in Source:
+        if not isinstance(source, Source):
             raise ValueError(f"Unknown source '{source}'.")
-        self.source: str = str(source)
-        self.active: bool = bool(active)
+        self.source = source
+
+        self.on_use: bool = bool(on_use)
         # might need to transform stat and role to spec at some point...
 
 
-TRINKETS: typing.List[Trinket] = ()
+def _load_trinkets() -> typing.List[Trinket]:
+    with pkg_resources.resource_stream(
+        __name__, "/".join(("data_files", "trinkets.json"))
+    ) as f:
+        loaded_trinkets = json.load(f)
+
+    def _get_translations(item: dict) -> Translation:
+        keys = [
+            "en_US",
+            "ko_KR",
+            "fr_FR",
+            "de_DE",
+            "zh_CN",
+            "es_ES",
+            "ru_RU",
+            "it_IT",
+            "pt_PT",
+        ]
+        d = {}
+        for key in keys:
+            d[key.split("_")[1]] = item[f"name_{key}"]
+
+        d["BR"] = d["PT"]
+        d.pop("PT")
+
+        return Translation(translations=d)
+
+    def _get_stats(item: dict) -> typing.List[Stat]:
+        """Get primary stats from items stat_type information.
+        TODO: Can be extended using ItemEffect.id_specialization.
+        TODO: what to do with trinkets without primary stats?
+
+        Args:
+            item (dict): [description]
+
+        Returns:
+            typing.List[Stat]: [description]
+        """
+        stats = []
+        translation = {3: Stat.AGILITY, 4: Stat.STRENGTH, 5: Stat.INTELLECT}
+        for i in range(1, 11):
+            if item[f"stat_type_{i}"] in translation:
+                stats.append(translation[item[f"stat_type_{i}"]])
+            elif item[f"stat_type_{i}"] == 71:
+                stats.append(Stat.AGILITY)
+                stats.append(Stat.STRENGTH)
+                stats.append(Stat.INTELLECT)
+            elif item[f"stat_type_{i}"] == 72:
+                stats.append(Stat.AGILITY)
+                stats.append(Stat.STRENGTH)
+            elif item[f"stat_type_{i}"] == 73:
+                stats.append(Stat.AGILITY)
+                stats.append(Stat.INTELLECT)
+            elif item[f"stat_type_{i}"] == 74:
+                stats.append(Stat.STRENGTH)
+                stats.append(Stat.INTELLECT)
+        return stats
+
+    trinkets = []
+    for trinket in loaded_trinkets:
+        trinkets.append(
+            Trinket(
+                item_id=trinket["id"],
+                itemlevels=[trinket["ilevel"]],
+                role=None,  # TODO
+                stats=_get_stats(trinket),
+                translations=_get_translations(trinket),
+                source=Source.UNKNOWN,
+                on_use=trinket["on_use"],
+            )
+        )
+    return trinkets
+
+
+TRINKETS: typing.List[Trinket] = _load_trinkets()
 
 
 def get_trinkets_for_spec(wow_spec: WowSpec) -> tuple:
