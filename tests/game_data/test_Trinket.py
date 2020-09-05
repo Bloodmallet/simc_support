@@ -1,6 +1,9 @@
-from simc_support.game_data.Trinket import TRINKETS
-from simc_support.game_data.Stat import Stat
 import unittest
+
+from simc_support.game_data.Stat import Stat
+from simc_support.game_data.Trinket import get_versatility_trinket
+from simc_support.game_data.Trinket import Trinket
+from simc_support.game_data.Trinket import TRINKETS
 
 
 class Trinkets(unittest.TestCase):
@@ -20,3 +23,30 @@ class Trinkets(unittest.TestCase):
                         found = True
                         break
                 self.assertTrue(found)
+
+    def test_for_on_use(self):
+        found = False
+        for trinket in TRINKETS:
+            if trinket.on_use:
+                found = True
+                break
+        self.assertTrue(found)
+
+    def test_for_not_on_use(self):
+        found = False
+        for trinket in TRINKETS:
+            if not trinket.on_use:
+                found = True
+                break
+        self.assertTrue(found)
+
+
+class GetVersatilityTrinket(unittest.TestCase):
+    def test_type(self):
+        self.assertTrue(isinstance(get_versatility_trinket(Stat.STRENGTH), Trinket))
+
+    def test_stats(self):
+        for stat in Stat:
+            with self.subTest(stat=stat):
+                trinket = get_versatility_trinket(stat)
+                self.assertTrue(stat in trinket.stats)
