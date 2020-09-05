@@ -367,6 +367,7 @@ def update_trinkets(args: object) -> None:
 def update_wow_classes(args: object) -> None:
     logger.info("Update WowClasses")
 
+    # TODO: class - spec connection can be established via ChrClassRaceSex table
     CHRCLASSES = "ChrClasses"
     dbc(
         args,
