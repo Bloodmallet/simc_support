@@ -1,19 +1,14 @@
 import json
-import typing
 import pkg_resources
+import typing
 
-from simc_support.game_data.Source import Source
-from simc_support.game_data.ItemLevel import *  # pylint: disable=unused-wildcard-import
+from simc_support.game_data.ItemLevel import CASTLE_NATHRIA
 from simc_support.game_data.Language import Translation
+from simc_support.game_data.Language import EmptyTranslation
 from simc_support.game_data.Role import Role
 from simc_support.game_data.Source import Source
 from simc_support.game_data.Stat import Stat
-
-try:
-    # import exists to enable type hinting
-    from simc_support.game_data.WowSpec import WowSpec
-except ImportError:
-    WowSpec = object
+from simc_support.game_data.WowSpec import WowSpec
 
 
 class Trinket(object):
@@ -27,6 +22,7 @@ class Trinket(object):
         translations: Translation,
         source: str = None,
         on_use: bool = False,
+        bonus_ids: typing.Union[typing.List[int], typing.Tuple[int]] = (),
     ):
         """Creates a Trinket instance
 
@@ -52,7 +48,7 @@ class Trinket(object):
                 if element not in Stat:
                     raise TypeError("One or more provided stats are unknown.")
         else:
-            raise TypeError(f"Expected list or tuple. Got {type(stats)}")
+            raise TypeError(f"stats: Expected list or tuple. Got {type(stats)}")
         if isinstance(stats, list) or isinstance(stats, tuple):
             self.stats = tuple(stats)
 
@@ -63,6 +59,15 @@ class Trinket(object):
         self.source = source
 
         self.on_use: bool = bool(on_use)
+
+        if isinstance(bonus_ids, list) or isinstance(bonus_ids, tuple):
+            for bonus in bonus_ids:
+                if not isinstance(bonus, int):
+                    raise TypeError("One or more provided bonus IDs was not an INT.")
+        else:
+            raise TypeError(f"bonus_id: Expected list or tuple. Got {type(bonus_ids)}")
+        if isinstance(bonus_ids, list) or isinstance(bonus_ids, tuple):
+            self.bonus_ids = tuple(bonus_ids)
 
 
 def _load_trinkets() -> typing.List[Trinket]:
@@ -144,6 +149,7 @@ TRINKETS: typing.List[Trinket] = _load_trinkets()
 
 def get_trinkets_for_spec(wow_spec: WowSpec) -> tuple:
     """New function to return all available trinkets for a spec
+    TODO: see https://trinitycore.atlassian.net/wiki/spaces/tc/pages/2130045/item+sparse#item_sparse-AllowableClass
 
     Arguments:
       wow_spec {WowSpec} -- instance of a WowSpec
@@ -159,3 +165,61 @@ def get_trinkets_for_spec(wow_spec: WowSpec) -> tuple:
         elif wow_spec.stat in trinket.stat:
             trinkets.append(trinket)
     return tuple(trinkets)
+
+
+def get_versatility_trinket(stat: Stat) -> Trinket:
+    """Returns a vers stat stick with the given Stat.
+
+    Returns:
+        Trinket -- Versatility Stat stick
+    """
+    empty_translation = EmptyTranslation()
+    empty_translation.US = "Versatility Stat Stick"
+    if stat == Stat.AGILITY:
+        # "Stat Stick (Versatility)", "142506,bonus_id=607"
+        return Trinket(
+            item_id=142506,
+            bonus_ids=[
+                607,
+            ],
+            itemlevels=[CASTLE_NATHRIA[0]],
+            role=None,
+            stats=[
+                Stat.AGILITY,
+            ],
+            translations=empty_translation,
+            source=Source.UNKNOWN,
+            on_use=False,
+        )
+    elif stat == Stat.INTELLECT:
+        # "Stat Stick (Versatility)", "142507,bonus_id=607"
+        return Trinket(
+            item_id=142507,
+            bonus_ids=[
+                607,
+            ],
+            itemlevels=[CASTLE_NATHRIA[0]],
+            role=None,
+            stats=[
+                Stat.INTELLECT,
+            ],
+            translations=empty_translation,
+            source=Source.UNKNOWN,
+            on_use=False,
+        )
+    elif stat == Stat.STRENGTH:
+        # "Stat Stick (Versatility)", "142508,bonus_id=607"
+        return Trinket(
+            item_id=142508,
+            bonus_ids=[
+                607,
+            ],
+            itemlevels=[CASTLE_NATHRIA[0]],
+            role=None,
+            stats=[
+                Stat.STRENGTH,
+            ],
+            translations=empty_translation,
+            source=Source.UNKNOWN,
+            on_use=False,
+        )
