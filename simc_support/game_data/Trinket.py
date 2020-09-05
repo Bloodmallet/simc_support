@@ -19,6 +19,7 @@ class Trinket(object):
         itemlevels: typing.List[int],
         role: Role,
         stats: typing.Union[typing.List[Stat], typing.Tuple[Stat]],
+        class_mask: int,
         translations: Translation,
         source: str = None,
         on_use: bool = False,
@@ -29,11 +30,12 @@ class Trinket(object):
         Args:
             item_id (str): Item ID
             itemlevels (typing.List[int]): item is available at all these itemlevels
+            role (Role):
             stats (typing.Union[typing.List[Stat], typing.Tuple[Stat]]): primary stats
             translations (Translation): name of the item in all languages
-            legendary (bool, optional): Flag to determine legendaries. Defaults to False.
             source (str, optional): Drop source. Defaults to None.
             on_use (bool, optional): Is the trinket on use? Defaults to False.
+            bonus_ids (typing.Union[typing.List[int], typing.Tuple[int]]):
         """
         super(Trinket, self).__init__()
         self.translations = translations
@@ -52,6 +54,7 @@ class Trinket(object):
         if isinstance(stats, list) or isinstance(stats, tuple):
             self.stats = tuple(stats)
 
+        self.class_mask = class_mask
         self.role = role
 
         if not isinstance(source, Source):
@@ -68,6 +71,9 @@ class Trinket(object):
             raise TypeError(f"bonus_id: Expected list or tuple. Got {type(bonus_ids)}")
         if isinstance(bonus_ids, list) or isinstance(bonus_ids, tuple):
             self.bonus_ids = tuple(bonus_ids)
+
+    def is_usable_by_class(self, class_id: int) -> bool:
+        return bool(self.class_mask & 1 << (class_id - 1))
 
 
 def _load_trinkets() -> typing.List[Trinket]:
@@ -136,6 +142,7 @@ def _load_trinkets() -> typing.List[Trinket]:
                 itemlevels=[trinket["ilevel"]],
                 role=None,  # TODO
                 stats=_get_stats(trinket),
+                class_mask=trinket["class_mask"],
                 translations=_get_translations(trinket),
                 source=Source.UNKNOWN,
                 on_use=trinket["on_use"],
@@ -149,7 +156,6 @@ TRINKETS: typing.List[Trinket] = _load_trinkets()
 
 def get_trinkets_for_spec(wow_spec: WowSpec) -> tuple:
     """New function to return all available trinkets for a spec
-    TODO: see https://trinitycore.atlassian.net/wiki/spaces/tc/pages/2130045/item+sparse#item_sparse-AllowableClass
 
     Arguments:
       wow_spec {WowSpec} -- instance of a WowSpec
@@ -160,9 +166,9 @@ def get_trinkets_for_spec(wow_spec: WowSpec) -> tuple:
 
     trinkets: typing.List[Trinket] = []
     for trinket in TRINKETS:
-        if wow_spec.role in trinket.role:
-            trinkets.append(trinket)
-        elif wow_spec.stat in trinket.stat:
+        if wow_spec.stats in trinket.stat and trinket.is_usable_by_class(
+            wow_spec.wow_class.id
+        ):
             trinkets.append(trinket)
     return tuple(trinkets)
 
