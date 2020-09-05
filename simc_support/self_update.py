@@ -246,7 +246,6 @@ def update_trinkets(args: object) -> None:
     """
 
     logger.info("Update trinkets")
-    # TODO: add ItemEffect to know which trinkets have on use effects
     ITEMSPARSE = "ItemSparse"
     ITEMEFFECT = "ItemEffect"
 
@@ -365,12 +364,71 @@ def update_trinkets(args: object) -> None:
         json.dump(trinkets, f, ensure_ascii=False)
 
 
+def update_wow_classes(args: object) -> None:
+    logger.info("Update WowClasses")
+
+    CHRCLASSES = "ChrClasses"
+    dbc(
+        args,
+        [
+            CHRCLASSES,
+        ],
+    )
+    data = {}
+
+    for locale in _LOCALES:
+        with open(
+            os.path.join(get_compiled_data_path(args, locale), f"{CHRCLASSES}.json"),
+            "r",
+        ) as f:
+            data[locale] = json.load(f)
+
+    wow_classes = []
+    colums = [
+        "id",
+        "desc",
+        "icon_file_data_id",
+        "role_mask",
+        "armor_type_mask",
+        "primary_stat_priority",
+        "chat_color_r",
+        "chat_color_g",
+        "chat_color_b",
+    ]
+
+    for i, locale in enumerate(_LOCALES):
+        # prepare
+        if i == 0:
+            wow_class: dict
+            for wow_class in data[locale]:
+                new_wow_class = {}
+                for colum in colums:
+                    new_wow_class[colum] = wow_class[colum]
+
+                new_wow_class[f"name_{locale}"] = wow_class["name_lang"]
+
+                wow_classes.append(new_wow_class)
+
+        # enrich
+        else:
+            for class_data in data[locale]:
+                for wow_class in wow_classes:
+                    if wow_class["id"] == class_data["id"]:
+                        wow_class[f"name_{locale}"] = class_data["name_lang"]
+
+    logger.info(f"Updated {len(wow_classes)} WowClasses")
+
+    with open(os.path.join(DATA_PATH, "wow_classes.json"), "w") as f:
+        json.dump(wow_classes, f, ensure_ascii=False)
+
+
 def main() -> None:
     args = handle_arguments().parse_args()
     if args.debug:
         logger.setLevel(logging.DEBUG)
     casc(args)
     update_trinkets(args)
+    update_wow_classes(args)
 
 
 if __name__ == "__main__":
