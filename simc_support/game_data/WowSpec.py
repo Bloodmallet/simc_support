@@ -7,12 +7,10 @@ from simc_support.game_data.Role import Role
 from simc_support.game_data.SimcObject import SimcObject
 from simc_support.game_data.Stat import Stat
 from simc_support.game_data.Talent import get_talent_dict
-from simc_support.game_data.Trinket import Trinket
 
 
 class WowSpec(SimcObject):
-    """World of Warcraft Class spec data.
-    """
+    """World of Warcraft Class spec data."""
 
     def __init__(
         self,
@@ -153,37 +151,19 @@ class WowSpec(SimcObject):
             """
             zipped = zip(pattern, combination)
             mapped = map(
-                lambda t: t[0] in "0123" and t[0] != t[1] or t[0] == "x" and t[1] not in "123",
-                zipped
+                lambda t: t[0] in "0123"
+                and t[0] != t[1]
+                or t[0] == "x"
+                and t[1] not in "123",
+                zipped,
             )
             return any(mapped)
 
         filtered_combinations = filter(
-            lambda combination: filter_combination(combination),
-            combinations
+            lambda combination: filter_combination(combination), combinations
         )
 
         return tuple(filtered_combinations)
-
-    def get_versatility_trinket(self) -> Trinket:
-        """Returns a vers stat stick for the spec.
-
-        Returns:
-            Trinket -- Versatility Stat stick for the spec
-        """
-
-        if self.stat == Stat.AGILITY:
-            # "Stat Stick (Versatility)", "142506,bonus_id=607"
-            return Trinket("Versatility Stat Stick", "142506,bonus_id=607", -1, 9999, 9999, Stat.AGILITY, Role.MELEE)
-            # return ',id={}'.format("142506,bonus_id=607")
-        if self.stat == Stat.INTELLECT:
-            # "Stat Stick (Versatility)", "142507,bonus_id=607"
-            return Trinket("Versatility Stat Stick", "142507,bonus_id=607", -1, 9999, 9999, Stat.INTELLECT, Role.RANGED)
-            # return ',id={}'.format("142507,bonus_id=607")
-        if self.stat == Stat.STRENGTH:
-            # "Stat Stick (Versatility)", "142508,bonus_id=607"
-            return Trinket("Versatility Stat Stick", "142508,bonus_id=607", -1, 9999, 9999, Stat.STRENGTH, Role.RANGED)
-            # return ',id={}'.format("142508,bonus_id=607")
 
 
 # Spec data here
@@ -196,7 +176,7 @@ BLOOD = WowSpec(
     role=Role.MELEE,
     stat=Stat.STRENGTH,
     full_name="Blood",
-    simc_name='blood',
+    simc_name="blood",
 )
 FROST_DK = WowSpec(
     id=251,
@@ -207,7 +187,7 @@ FROST_DK = WowSpec(
     role=Role.MELEE,
     stat=Stat.STRENGTH,
     full_name="Frost",
-    simc_name='frost',
+    simc_name="frost",
 )
 UNHOLY = WowSpec(
     id=252,
@@ -218,7 +198,7 @@ UNHOLY = WowSpec(
     role=Role.MELEE,
     stat=Stat.STRENGTH,
     full_name="Unholy",
-    simc_name='unholy',
+    simc_name="unholy",
 )
 HAVOC = WowSpec(
     id=577,
@@ -229,7 +209,7 @@ HAVOC = WowSpec(
     role=Role.MELEE,
     stat=Stat.AGILITY,
     full_name="Havoc",
-    simc_name='havoc',
+    simc_name="havoc",
 )
 VENGEANCE = WowSpec(
     id=581,
@@ -240,7 +220,7 @@ VENGEANCE = WowSpec(
     role=Role.MELEE,
     stat=Stat.AGILITY,
     full_name="Vengeance",
-    simc_name='vengeance',
+    simc_name="vengeance",
 )
 BALANCE = WowSpec(
     id=102,
@@ -251,7 +231,7 @@ BALANCE = WowSpec(
     role=Role.RANGED,
     stat=Stat.INTELLECT,
     full_name="Balance",
-    simc_name='balance',
+    simc_name="balance",
 )
 FERAL = WowSpec(
     id=103,
@@ -262,7 +242,7 @@ FERAL = WowSpec(
     role=Role.MELEE,
     stat=Stat.AGILITY,
     full_name="Feral",
-    simc_name='feral',
+    simc_name="feral",
 )
 GUARDIAN = WowSpec(
     id=104,
@@ -273,7 +253,7 @@ GUARDIAN = WowSpec(
     role=Role.MELEE,
     stat=Stat.AGILITY,
     full_name="Guardian",
-    simc_name='guardian',
+    simc_name="guardian",
 )
 RESTORATION_DRUID = WowSpec(
     id=105,
@@ -284,7 +264,7 @@ RESTORATION_DRUID = WowSpec(
     role=Role.MELEE,
     stat=Stat.INTELLECT,
     full_name="Restoration",
-    simc_name='restoration',
+    simc_name="restoration",
 )
 BEASTMASTERY = WowSpec(
     id=253,
@@ -295,7 +275,7 @@ BEASTMASTERY = WowSpec(
     role=Role.RANGED,
     stat=Stat.AGILITY,
     full_name="Beast_Mastery",
-    simc_name='beast_mastery',
+    simc_name="beast_mastery",
 )
 MARKSMANSHIP = WowSpec(
     id=254,
@@ -306,7 +286,7 @@ MARKSMANSHIP = WowSpec(
     role=Role.RANGED,
     stat=Stat.AGILITY,
     full_name="Marksmanship",
-    simc_name='marksmanship',
+    simc_name="marksmanship",
 )
 SURVIVAL = WowSpec(
     id=255,
@@ -317,7 +297,7 @@ SURVIVAL = WowSpec(
     role=Role.MELEE,
     stat=Stat.AGILITY,
     full_name="Survival",
-    simc_name='survival',
+    simc_name="survival",
 )
 ARCANE = WowSpec(
     id=62,
@@ -328,7 +308,7 @@ ARCANE = WowSpec(
     role=Role.RANGED,
     stat=Stat.INTELLECT,
     full_name="Arcane",
-    simc_name='arcane',
+    simc_name="arcane",
 )
 FIRE = WowSpec(
     id=63,
@@ -339,7 +319,7 @@ FIRE = WowSpec(
     role=Role.RANGED,
     stat=Stat.INTELLECT,
     full_name="Fire",
-    simc_name='fire',
+    simc_name="fire",
 )
 FROST_MAGE = WowSpec(
     id=64,
@@ -350,7 +330,7 @@ FROST_MAGE = WowSpec(
     role=Role.RANGED,
     stat=Stat.INTELLECT,
     full_name="Frost",
-    simc_name='frost',
+    simc_name="frost",
 )
 BREWMASTER = WowSpec(
     id=268,
@@ -361,7 +341,7 @@ BREWMASTER = WowSpec(
     role=Role.MELEE,
     stat=Stat.AGILITY,
     full_name="Brewmaster",
-    simc_name='brewmaster',
+    simc_name="brewmaster",
 )
 WINDWALKER = WowSpec(
     id=269,
@@ -372,7 +352,7 @@ WINDWALKER = WowSpec(
     role=Role.MELEE,
     stat=Stat.AGILITY,
     full_name="Windwalker",
-    simc_name='windwalker',
+    simc_name="windwalker",
 )
 PROTECTION_PALADIN = WowSpec(
     id=66,
@@ -383,7 +363,7 @@ PROTECTION_PALADIN = WowSpec(
     role=Role.MELEE,
     stat=Stat.STRENGTH,
     full_name="Protection",
-    simc_name='protection',
+    simc_name="protection",
 )
 RETRIBUTION = WowSpec(
     id=70,
@@ -394,7 +374,7 @@ RETRIBUTION = WowSpec(
     role=Role.MELEE,
     stat=Stat.STRENGTH,
     full_name="Retribution",
-    simc_name='retribution',
+    simc_name="retribution",
 )
 DISCIPLINE = WowSpec(
     id=256,
@@ -405,7 +385,7 @@ DISCIPLINE = WowSpec(
     role=Role.RANGED,
     stat=Stat.INTELLECT,
     full_name="Discipline",
-    simc_name='discipline',
+    simc_name="discipline",
 )
 HOLY_PRIEST = WowSpec(
     id=257,
@@ -416,7 +396,7 @@ HOLY_PRIEST = WowSpec(
     role=Role.RANGED,
     stat=Stat.INTELLECT,
     full_name="Holy",
-    simc_name='holy',
+    simc_name="holy",
 )
 SHADOW = WowSpec(
     id=258,
@@ -427,7 +407,7 @@ SHADOW = WowSpec(
     role=Role.RANGED,
     stat=Stat.INTELLECT,
     full_name="Shadow",
-    simc_name='shadow',
+    simc_name="shadow",
 )
 ASSASSINATION = WowSpec(
     id=259,
@@ -438,7 +418,7 @@ ASSASSINATION = WowSpec(
     role=Role.MELEE,
     stat=Stat.AGILITY,
     full_name="Assassination",
-    simc_name='assassination',
+    simc_name="assassination",
 )
 OUTLAW = WowSpec(
     id=260,
@@ -449,7 +429,7 @@ OUTLAW = WowSpec(
     role=Role.MELEE,
     stat=Stat.AGILITY,
     full_name="Outlaw",
-    simc_name='outlaw',
+    simc_name="outlaw",
 )
 SUBTLETY = WowSpec(
     id=261,
@@ -460,7 +440,7 @@ SUBTLETY = WowSpec(
     role=Role.MELEE,
     stat=Stat.AGILITY,
     full_name="Subtlety",
-    simc_name='subtlety',
+    simc_name="subtlety",
 )
 ELEMENTAL = WowSpec(
     id=262,
@@ -471,7 +451,7 @@ ELEMENTAL = WowSpec(
     role=Role.RANGED,
     stat=Stat.INTELLECT,
     full_name="Elemental",
-    simc_name='elemental',
+    simc_name="elemental",
 )
 ENHANCEMENT = WowSpec(
     id=263,
@@ -482,7 +462,7 @@ ENHANCEMENT = WowSpec(
     role=Role.MELEE,
     stat=Stat.AGILITY,
     full_name="Enhancement",
-    simc_name='enhancement',
+    simc_name="enhancement",
 )
 RESTORATION_SHAMAN = WowSpec(
     id=264,
@@ -493,7 +473,7 @@ RESTORATION_SHAMAN = WowSpec(
     role=Role.RANGED,
     stat=Stat.INTELLECT,
     full_name="Restoration",
-    simc_name='restoration',
+    simc_name="restoration",
 )
 AFFLICTION = WowSpec(
     id=265,
@@ -504,7 +484,7 @@ AFFLICTION = WowSpec(
     role=Role.RANGED,
     stat=Stat.INTELLECT,
     full_name="Affliction",
-    simc_name='affliction',
+    simc_name="affliction",
 )
 DEMONOLOGY = WowSpec(
     id=266,
@@ -515,7 +495,7 @@ DEMONOLOGY = WowSpec(
     role=Role.RANGED,
     stat=Stat.INTELLECT,
     full_name="Demonology",
-    simc_name='demonology',
+    simc_name="demonology",
 )
 DESTRUCTION = WowSpec(
     id=267,
@@ -526,7 +506,7 @@ DESTRUCTION = WowSpec(
     role=Role.RANGED,
     stat=Stat.INTELLECT,
     full_name="Destruction",
-    simc_name='destruction',
+    simc_name="destruction",
 )
 ARMS = WowSpec(
     id=71,
@@ -537,7 +517,7 @@ ARMS = WowSpec(
     role=Role.MELEE,
     stat=Stat.STRENGTH,
     full_name="Arms",
-    simc_name='arms',
+    simc_name="arms",
 )
 FURY = WowSpec(
     id=72,
@@ -548,7 +528,7 @@ FURY = WowSpec(
     role=Role.MELEE,
     stat=Stat.STRENGTH,
     full_name="Fury",
-    simc_name='fury',
+    simc_name="fury",
 )
 PROTECTION_WARRIOR = WowSpec(
     id=73,
@@ -559,5 +539,5 @@ PROTECTION_WARRIOR = WowSpec(
     role=Role.MELEE,
     stat=Stat.STRENGTH,
     full_name="Protection",
-    simc_name='protection',
+    simc_name="protection",
 )
