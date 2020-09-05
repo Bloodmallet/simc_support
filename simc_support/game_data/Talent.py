@@ -15,7 +15,7 @@ class Talent(object):
         name: str,
         spell_id: str,
         row: str,
-        column: str
+        column: str,
     ):
         self.name = name
         self.spell_id = spell_id
@@ -37,7 +37,11 @@ def get_talent_dict(wow_spec: WowSpec, ptr: bool = False) -> dict:
     if ptr:
         file_name = "talent_list_ptr.json"
 
-    with open(pkg_resources.resource_filename(__name__, "../data_files/" + file_name), 'r', encoding="UTF-8") as f:
+    with open(
+        pkg_resources.resource_filename(__name__, "/".join(("data_files", file_name))),
+        "r",
+        encoding="UTF-8",
+    ) as f:
         talents = json.load(f, encoding="UTF-8")
 
     return talents[wow_spec.wow_class.simc_name.title()][wow_spec.simc_name.title()]
