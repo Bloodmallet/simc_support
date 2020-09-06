@@ -165,6 +165,12 @@ class WowSpec(SimcObject):
 
         return tuple(filtered_combinations)
 
+    def __repr__(self) -> str:
+        return " ".join([super().__repr__(), self.wow_class.__repr__()])
+
+    def __str__(self) -> str:
+        return " ".join([super().__str__(), self.wow_class.__str__()])
+
 
 # Spec data here
 BLOOD = WowSpec(
