@@ -166,10 +166,10 @@ def get_trinkets_for_spec(wow_spec: WowSpec) -> tuple:
 
     trinkets: typing.List[Trinket] = []
     for trinket in TRINKETS:
-        if wow_spec.stats in trinket.stat and trinket.is_usable_by_class(
-            wow_spec.wow_class.id
-        ):
-            trinkets.append(trinket)
+        if trinket.is_usable_by_class(wow_spec.wow_class.id):
+            if wow_spec.stat in trinket.stats or len(trinket.stats) == 0:
+                trinkets.append(trinket)
+
     return tuple(trinkets)
 
 
