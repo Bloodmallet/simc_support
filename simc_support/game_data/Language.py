@@ -65,6 +65,13 @@ class Translation(object):
                 "Expected more information. Please make sure you have translations for all languages."
             )
 
+    def get_dict(self) -> dict:
+        response = {}
+        for lang in Language:
+            response[lang.value] = getattr(self, lang.name)
+
+        return response
+
 
 class EmptyTranslation(Translation):
     """If you don't have translations handy, but need to provide a translations object."""
