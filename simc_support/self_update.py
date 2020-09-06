@@ -317,6 +317,25 @@ def update_trinkets(args: object) -> None:
                     uses.append(False)
         return any(uses)
 
+    def get_spec_mask(item_id: int) -> list:
+        """Turns out...trinkets add only 0 as specialization ids...worthless approach.
+
+        Args:
+            item_id (int): [description]
+
+        Returns:
+            list: [description]
+        """
+        mask = []
+        for effect in itemeffects:
+            if item_id == effect["id_parent"]:
+                mask.append(effect["id_specialization"])
+        if len(mask) == 0:
+            logger.info(f"No specializations found for {item_id}")
+        else:
+            logger.info(f"Specializations found for {item_id}: {mask}")
+        return any(mask)
+
     trinkets = []
     # TODO: research fields and possibly remove more
     item_keys = [
