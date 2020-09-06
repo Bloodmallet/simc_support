@@ -423,3 +423,10 @@ RACES = (
     VULPERA,
     ZANDALARITROLL,
 )
+
+
+def get_race(name: str) -> Race:
+    for race in RACES:
+        if race.full_name == name or race.simc_name == name:
+            return race
+    raise ValueError(f"No race '{name}' found.")

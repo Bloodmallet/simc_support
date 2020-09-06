@@ -257,3 +257,10 @@ WOWCLASSES = (
     WARLOCK,
     WARRIOR,
 )
+
+
+def get_wow_class(name: str) -> WowClass:
+    for wow_class in WOWCLASSES:
+        if wow_class.full_name == name or wow_class.simc_name == name:
+            return wow_class
+    raise ValueError(f"No WowClass found with name '{name}'.")

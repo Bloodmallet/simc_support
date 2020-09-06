@@ -541,3 +541,54 @@ PROTECTION_WARRIOR = WowSpec(
     full_name="Protection",
     simc_name="protection",
 )
+
+WOWSPECS = [
+    BLOOD,
+    FROST_DK,
+    UNHOLY,
+    HAVOC,
+    VENGEANCE,
+    BALANCE,
+    FERAL,
+    GUARDIAN,
+    RESTORATION_DRUID,
+    BEASTMASTERY,
+    MARKSMANSHIP,
+    SURVIVAL,
+    ARCANE,
+    FIRE,
+    FROST_MAGE,
+    BREWMASTER,
+    WINDWALKER,
+    PROTECTION_PALADIN,
+    RETRIBUTION,
+    DISCIPLINE,
+    HOLY_PRIEST,
+    SHADOW,
+    ASSASSINATION,
+    OUTLAW,
+    SUBTLETY,
+    ELEMENTAL,
+    ENHANCEMENT,
+    RESTORATION_SHAMAN,
+    AFFLICTION,
+    DEMONOLOGY,
+    DESTRUCTION,
+    ARMS,
+    FURY,
+    PROTECTION_WARRIOR,
+]
+
+
+def get_wow_spec(
+    wow_class: typing.Union[WowClass.WowClass, str], wow_spec: str
+) -> WowSpec:
+    if isinstance(wow_class, str):
+        wow_class = WowClass.get_wow_class(wow_class)
+
+    for spec in WOWSPECS:
+        if spec.wow_class == wow_class and wow_spec in (spec.full_name, spec.simc_name):
+            return spec
+    raise ValueError(
+        f"No WowSpec found of class '{wow_class.simc_name}' and spec '{wow_spec}'"
+    )
