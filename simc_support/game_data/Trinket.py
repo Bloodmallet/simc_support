@@ -2,7 +2,7 @@ import json
 import pkg_resources
 import typing
 
-from simc_support.game_data.ItemLevel import CASTLE_NATHRIA
+import simc_support.game_data.ItemLevel as ItemLevel
 from simc_support.game_data.Language import Translation
 from simc_support.game_data.Language import EmptyTranslation
 from simc_support.game_data.Role import Role
@@ -21,7 +21,7 @@ class Trinket(object):
         stats: typing.Union[typing.List[Stat], typing.Tuple[Stat]],
         class_mask: int,
         translations: Translation,
-        source: str = None,
+        source: Source = None,
         on_use: bool = False,
         bonus_ids: typing.Union[typing.List[int], typing.Tuple[int]] = (),
     ):
@@ -42,8 +42,6 @@ class Trinket(object):
         self.name: str = self.translations.US
         self.item_id: str = str(item_id)
         self.itemlevels: list = sorted(itemlevels)
-        self.min_itemlevel: int = self.itemlevels[0]
-        self.max_itemlevel: int = self.itemlevels[-1]
 
         if isinstance(stats, list) or isinstance(stats, tuple):
             for element in stats:
@@ -59,7 +57,7 @@ class Trinket(object):
 
         if not isinstance(source, Source):
             raise ValueError(f"Unknown source '{source}'.")
-        self.source = source
+        self.source: Source = source
 
         self.on_use: bool = bool(on_use)
 
@@ -71,6 +69,14 @@ class Trinket(object):
             raise TypeError(f"bonus_id: Expected list or tuple. Got {type(bonus_ids)}")
         if isinstance(bonus_ids, list) or isinstance(bonus_ids, tuple):
             self.bonus_ids = tuple(bonus_ids)
+
+    @property
+    def min_itemlevel(self) -> int:
+        return self.itemlevels[0]
+
+    @property
+    def max_itemlevel(self) -> int:
+        return self.itemlevels[-1]
 
     def is_usable_by_class(self, class_id: int) -> bool:
         return bool(self.class_mask & 1 << (class_id - 1))
@@ -134,12 +140,31 @@ def _load_trinkets() -> typing.List[Trinket]:
                 stats.append(Stat.INTELLECT)
         return stats
 
+    def _get_itemlevels(item: dict) -> typing.List[int]:
+        # TODO: This needs some heavy improvements...
+        # TODO: I'm just guessing here, probably need dungeon journal...somehow
+        starting_itemlevel = item.get("ilevel", None)
+        if starting_itemlevel > ItemLevel.UPPER_BOUND or not starting_itemlevel:
+            return []
+
+        return [
+            ilvl
+            for ilvl in range(
+                starting_itemlevel,
+                ItemLevel.UPPER_BOUND + 1,
+                ItemLevel.STEP_SIZE,
+            )
+        ]
+
     trinkets = []
     for trinket in loaded_trinkets:
+        itemlevels = _get_itemlevels(trinket)
+        if not itemlevels:
+            continue
         trinkets.append(
             Trinket(
                 item_id=trinket["id"],
-                itemlevels=[trinket["ilevel"]],
+                itemlevels=itemlevels,
                 role=None,  # TODO
                 stats=_get_stats(trinket),
                 class_mask=trinket["class_mask"],
@@ -154,7 +179,7 @@ def _load_trinkets() -> typing.List[Trinket]:
 TRINKETS: typing.List[Trinket] = _load_trinkets()
 
 
-def get_trinkets_for_spec(wow_spec: WowSpec) -> tuple:
+def get_trinkets_for_spec(wow_spec: WowSpec) -> typing.Tuple[Trinket]:
     """New function to return all available trinkets for a spec
 
     Arguments:
@@ -181,6 +206,7 @@ def get_versatility_trinket(stat: Stat) -> Trinket:
     """
     empty_translation = EmptyTranslation()
     empty_translation.US = "Versatility Stat Stick"
+    all_classes = 2 ** 16 - 1
     if stat == Stat.AGILITY:
         # "Stat Stick (Versatility)", "142506,bonus_id=607"
         return Trinket(
@@ -188,11 +214,12 @@ def get_versatility_trinket(stat: Stat) -> Trinket:
             bonus_ids=[
                 607,
             ],
-            itemlevels=[CASTLE_NATHRIA[0]],
+            itemlevels=[ItemLevel.CASTLE_NATHRIA[0]],
             role=None,
             stats=[
                 Stat.AGILITY,
             ],
+            class_mask=all_classes,
             translations=empty_translation,
             source=Source.UNKNOWN,
             on_use=False,
@@ -204,11 +231,12 @@ def get_versatility_trinket(stat: Stat) -> Trinket:
             bonus_ids=[
                 607,
             ],
-            itemlevels=[CASTLE_NATHRIA[0]],
+            itemlevels=[ItemLevel.CASTLE_NATHRIA[0]],
             role=None,
             stats=[
                 Stat.INTELLECT,
             ],
+            class_mask=all_classes,
             translations=empty_translation,
             source=Source.UNKNOWN,
             on_use=False,
@@ -220,11 +248,12 @@ def get_versatility_trinket(stat: Stat) -> Trinket:
             bonus_ids=[
                 607,
             ],
-            itemlevels=[CASTLE_NATHRIA[0]],
+            itemlevels=[ItemLevel.CASTLE_NATHRIA[0]],
             role=None,
             stats=[
                 Stat.STRENGTH,
             ],
+            class_mask=all_classes,
             translations=empty_translation,
             source=Source.UNKNOWN,
             on_use=False,
