@@ -5,9 +5,8 @@ import json
 import pkg_resources
 
 from simc_support.game_data import Source
-from simc_support.game_data.ItemLevel import *     # pylint: disable=unused-wildcard-import
-from simc_support.game_data.Race import races as __races
-from simc_support.game_data.Race import translations as __race_translations
+from simc_support.game_data.ItemLevel import *  # pylint: disable=unused-wildcard-import
+from simc_support.game_data.Race import RACES as __races
 from simc_support.game_data.Trinket import Trinket
 from simc_support.game_data.Trinket import trinket_list as __trinket_list
 from simc_support.game_data.WowClass import class_data as __class_data
@@ -16,7 +15,9 @@ from simc_support.game_data.WowClass import class_data as __class_data
 def _compare_trinket_lists():
     path = "equippable-items.json"
 
-    with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
+    with open(
+        pkg_resources.resource_filename(__name__, path), "r", encoding="UTF-8"
+    ) as f:
 
         loaded_items = json.load(f, encoding="UTF-8")
 
@@ -32,8 +33,7 @@ def _compare_trinket_lists():
 
             if not found:
                 missing += 1
-                print(
-                    f"  {item['name']} not found in local list! id: {item['id']}")
+                print(f"  {item['name']} not found in local list! id: {item['id']}")
     if missing:
         print(f"{missing} trinkets are missing.\n")
 
@@ -47,23 +47,8 @@ def _compare_trinket_lists():
 
         if not found:
             print(
-                f"  {trinket.get_name()} not found in equippable-items.json! id: {trinket.get_id()}")
-
-
-def get_race_translation(race: str) -> dict:
-    """Return the translation dict for a race.
-
-    Arguments:
-        race {str} -- wow race
-
-    Returns:
-        dict -- [description]
-    """
-
-    try:
-        return __race_translations[race.lower().replace(" ", "_")]
-    except Exception:
-        return None
+                f"  {trinket.get_name()} not found in equippable-items.json! id: {trinket.get_id()}"
+            )
 
 
 def get_trinket_list() -> list:
@@ -75,7 +60,9 @@ def get_trinket_list() -> list:
 
     path = "equippable-items.json"
 
-    with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
+    with open(
+        pkg_resources.resource_filename(__name__, path), "r", encoding="UTF-8"
+    ) as f:
 
         loaded_items = json.load(f, encoding="UTF-8")
 
@@ -99,15 +86,16 @@ def get_trinket_translation(trinket_name) -> dict:
     """
     path = "trinket_translations.json"
 
-    with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
+    with open(
+        pkg_resources.resource_filename(__name__, path), "r", encoding="UTF-8"
+    ) as f:
 
         loaded_items = json.load(f, encoding="UTF-8")
 
     try:
         return loaded_items[trinket_name]
     except Exception as e:
-        raise LookupError(
-            "Translation not found for {}. {}".format(trinket_name, e))
+        raise LookupError("Translation not found for {}. {}".format(trinket_name, e))
 
 
 def get_talent_blueprint(wow_class: str, wow_spec: str) -> str:
@@ -138,18 +126,21 @@ def get_azerite_item_translation(item_name) -> dict:
 
     path = "azerite_item_translations.json"
 
-    with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
+    with open(
+        pkg_resources.resource_filename(__name__, path), "r", encoding="UTF-8"
+    ) as f:
 
         loaded_items = json.load(f, encoding="UTF-8")
 
     try:
         return loaded_items[item_name]
     except Exception as e:
-        raise LookupError(
-            "Translation not found for {}. {}".format(item_name, e))
+        raise LookupError("Translation not found for {}. {}".format(item_name, e))
 
 
-def get_item_translation(item_name: str = "", item_id: int = None, item_list: list = None) -> dict:
+def get_item_translation(
+    item_name: str = "", item_id: int = None, item_list: list = None
+) -> dict:
     """Get the translation dictionary for an item. If item_list is provided, the lookup time is quicker.
 
     Keyword Arguments:
@@ -170,7 +161,9 @@ def get_item_translation(item_name: str = "", item_id: int = None, item_list: li
     else:
         path = "equippable-items.json"
 
-        with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
+        with open(
+            pkg_resources.resource_filename(__name__, path), "r", encoding="UTF-8"
+        ) as f:
 
             loaded_items = json.load(f, encoding="UTF-8")
 
@@ -180,8 +173,7 @@ def get_item_translation(item_name: str = "", item_id: int = None, item_list: li
         elif item_id and int(item_id) == item["id"]:
             return item["names"]
 
-    raise LookupError(
-        "Translation not found for {}{}".format(item_name, item_id))
+    raise LookupError("Translation not found for {}{}".format(item_name, item_id))
 
 
 def get_trait_translation_dict():
@@ -193,7 +185,9 @@ def get_trait_translation_dict():
 
     path = "azerite_trait_translations.json"
 
-    with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
+    with open(
+        pkg_resources.resource_filename(__name__, path), "r", encoding="UTF-8"
+    ) as f:
 
         loaded_translations = json.load(f, encoding="UTF-8")
 
@@ -219,7 +213,9 @@ def get_trait_translation(trait_name: str = "", translation_dict: dict = None) -
     else:
         path = "azerite_trait_translations.json"
 
-        with open(pkg_resources.resource_filename(__name__, path), 'r', encoding="UTF-8") as f:
+        with open(
+            pkg_resources.resource_filename(__name__, path), "r", encoding="UTF-8"
+        ) as f:
 
             loaded_translations = json.load(f, encoding="UTF-8")
 
@@ -231,5 +227,4 @@ def get_trait_translation(trait_name: str = "", translation_dict: dict = None) -
                 try:
                     return loaded_translations[name]
                 except Exception:
-                    raise LookupError(
-                        "Translation not found for {}".format(trait_name))
+                    raise LookupError("Translation not found for {}".format(trait_name))
