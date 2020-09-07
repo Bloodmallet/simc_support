@@ -5,7 +5,7 @@ __pycache__/
 # build directory from adding installing in local dev
 build/
 dist/
-env/
+env*/
 tmp/
 
 # files

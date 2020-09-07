@@ -1,2 +1,31 @@
 # simc_support
-Data to support simulations for World of Warcraft with SimulationCraft.
+Data to support simulations for World of Warcraft with SimulationCraft for each current expansion.
+
+## Installation
+
+```sh
+pip install simc-support
+```
+
+## Usage
+
+All information
+Get a list of all trinkets
+```python
+from simc_support.game_data.Trinket import TRINKETS
+
+for trinket in TRINKETS:
+    print(f"{trinket.item_id} {trinket.name}")
+```
+
+Get a list of all trinkets available to a specific spec
+```python
+from simc_support.game_data.WowSpec import get_wow_spec
+from simc_support.game_data.Trinket import get_trinkets_for_spec
+
+elemental_shaman = get_wow_spec("shaman", "elemental")
+trinkets = get_trinkets_for_spec(elemental_shaman)
+
+for trinket in TRINKETS:
+    print(f"{trinket.item_id} {trinket.name}")
+```
