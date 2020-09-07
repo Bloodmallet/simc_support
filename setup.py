@@ -1,5 +1,4 @@
-from setuptools import setup
-from setuptools import find_packages
+from setuptools import find_packages, setup
 
 
 def readme():
@@ -9,9 +8,10 @@ def readme():
 
 setup(
     name="simc_support",
-    version="9.0.0.0",
+    # schema: <wow_version, e.g. 9.0.1>.<own_version_per_wow_version><a/b/rc alpha/beta/release candidate bit><bit_id>
+    version="9.0.1.1a1",
     author="Bloodmallet(EU)",
-    author_email="kruse.peter.1990@gmail.com",
+    author_email="bloodmalleteu@gmail.com",
     description="Data to support simulations for World of Warcraft with SimulationCraft.",
     long_description=readme(),
     long_description_content_type="text/markdown",
