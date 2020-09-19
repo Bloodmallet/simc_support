@@ -412,11 +412,37 @@ def update_wow_classes(args: object) -> None:
     logger.info(f"Updated {len(wow_classes)} WowClasses")
 
 
+def update_covenants(args: object) -> None:
+    logger.info("Update covenants")
+
+    COVENANTS = "Covenant"
+
+    dbc(args, [COVENANTS])
+    data = {}
+    for locale in _LOCALES:
+        with open(
+            os.path.join(get_compiled_data_path(args, locale), f"{COVENANTS}.json"),
+            "r",
+        ) as f:
+            data[locale] = json.load(f)
+
+    covenants = merge_information(data)
+
+    with open(os.path.join(DATA_PATH, "covenants.json"), "w") as f:
+        json.dump(covenants, f, ensure_ascii=False)
+
+    logger.info(f"Updated {len(covenants)} covenants")
+
+
 def update_soul_binds(args: object) -> None:
     logger.info("Update soul binds")
-    # GarrTalentTree, GarrTalent, GarrTalentRank for the main tree
+    # GarrTalentCost: soul bind-tree ability link
+    # GarrTalentTree: soul bind information
+    # GarrTalent: soul bind talents + soul bind id
+    # GarrTalentRank for the main tree
     # SoulbindConduit, SoulbindConduitItem, SoulbindConduitRank for the conduit stuff
 
+    SOULBINDS = "Soulbind"
     TREE = "GarrTalentTree"
     TALENTS = "GarrTalent"
     RANKS = "GarrTalentRank"
@@ -424,12 +450,13 @@ def update_soul_binds(args: object) -> None:
     dbc(
         args,
         [
+            SOULBINDS,
             TREE,
             TALENTS,
             RANKS,
         ],
     )
-    data = {TREE: {}, TALENTS: {}, RANKS: {}}
+    data = {SOULBINDS: {}, TREE: {}, TALENTS: {}, RANKS: {}}
     for key in data:
         for locale in _LOCALES:
             with open(
@@ -446,9 +473,9 @@ def update_soul_binds(args: object) -> None:
         )
 
     soul_bind_dudes = merge_information(
-        data[TREE],
-        translation_field="title",
-        filter_function=is_soul_bind,
+        data[SOULBINDS],
+        # translation_field="title",
+        # filter_function=is_soul_bind,
     )
 
     with open(os.path.join(DATA_PATH, "soul_binds.json"), "w") as f:
@@ -462,8 +489,9 @@ def main() -> None:
     if args.debug:
         logger.setLevel(logging.DEBUG)
     casc(args)
-    update_trinkets(args)
-    update_wow_classes(args)
+    # update_trinkets(args)
+    # update_wow_classes(args)
+    update_covenants(args)
     update_soul_binds(args)
 
 
