@@ -1,5 +1,5 @@
 # simc_support
-Data to support simulations for World of Warcraft with SimulationCraft for each current expansion.
+Data to support simulations for World of Warcraft with SimulationCraft for each current expansion. First three versioning numbers match World of Warcrafts' build version.
 
 ## Installation
 
@@ -9,7 +9,6 @@ pip install simc-support
 
 ## Usage
 
-All information
 Get a list of all trinkets
 ```python
 from simc_support.game_data.Trinket import TRINKETS
