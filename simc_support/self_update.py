@@ -37,6 +37,41 @@ _LOCALES = [
 DATA_PATH = "game_data/data_files"
 
 
+def merge_information(
+    input_dict: dict,
+    *,
+    filter_function=any,
+    match_field="id",
+    translation_field="name",
+) -> typing.List[dict]:
+
+    result = []
+    for i, locale in enumerate(_LOCALES):
+        # prepare
+        if i == 0:
+            information: dict
+            for information in input_dict[locale]:
+                if not filter_function(information):
+                    continue
+
+                information[f"{translation_field}_{locale}"] = information[
+                    translation_field
+                ]
+
+                result.append(information)
+
+        # enrich
+        else:
+            for new_information in input_dict[locale]:
+                for information in result:
+                    if information[match_field] == new_information[match_field]:
+                        information[f"{translation_field}_{locale}"] = new_information[
+                            translation_field
+                        ]
+
+    return result
+
+
 def handle_arguments() -> argparse.ArgumentParser:
     """Scan user provided arguments and provide the corresponding argparse ArgumentParser.
 
@@ -244,8 +279,8 @@ def update_trinkets(args: object) -> None:
     Returns:
         None
     """
-
     logger.info("Update trinkets")
+
     ITEMSPARSE = "ItemSparse"
     ITEMEFFECT = "ItemEffect"
 
@@ -280,6 +315,14 @@ def update_trinkets(args: object) -> None:
     def is_whitelisted(item: dict) -> bool:
         return item.get("id") in WHITELIST or item.get("name") in WHITELIST
 
+    def is_approved(item: dict) -> bool:
+        return (
+            is_trinket(item)
+            and is_gte_rare(item)
+            and is_shadowlands(item)
+            or is_whitelisted(item)
+        )
+
     dbc(args, [ITEMSPARSE, ITEMEFFECT])
 
     data = {}
@@ -291,14 +334,7 @@ def update_trinkets(args: object) -> None:
         ) as f:
             items = json.load(f)
 
-        data[locale] = [
-            item
-            for item in items
-            if is_trinket(item)
-            and is_gte_rare(item)
-            and is_shadowlands(item)
-            or is_whitelisted(item)
-        ]
+        data[locale] = [item for item in items if is_approved(item)]
 
     # load itemeffect table
     with open(
@@ -336,51 +372,14 @@ def update_trinkets(args: object) -> None:
             logger.info(f"Specializations found for {item_id}: {mask}")
         return any(mask)
 
-    trinkets = []
-    # TODO: research fields and possibly remove more
-    item_keys = [
-        "id",
-        "race_mask",
-        "desc",
-        "duration",
-        "bag_family",
-        "ranged_mod_range",
-        "ilevel",
-        "class_mask",
-        "id_expansion",
-        "req_level",
-        "inv_type",
-        "quality",
-    ]
-    for i in range(1, 11):
-        item_keys.append(f"stat_alloc_{i}")
-        item_keys.append(f"stat_type_{i}")
-
-    for i, locale in enumerate(_LOCALES):
-        # prepare
-        if i == 0:
-            item: dict
-            for item in data[locale]:
-                new_item = {}
-                for key in item_keys:
-                    new_item[key] = item[key]
-
-                new_item[f"name_{locale}"] = item["name"]
-                new_item["on_use"] = is_on_use(item["id"])
-
-                trinkets.append(new_item)
-
-        # enrich
-        else:
-            for item in data[locale]:
-                for trinket in trinkets:
-                    if trinket["id"] == item["id"]:
-                        trinket[f"name_{locale}"] = item["name"]
-
-    logger.info(f"Updated {len(trinkets)} trinkets")
+    trinkets = merge_information(data, filter_function=is_approved)
+    for trinket in trinkets:
+        trinket["on_use"] = is_on_use(trinket["id"])
 
     with open(os.path.join(DATA_PATH, "trinkets.json"), "w") as f:
         json.dump(trinkets, f, ensure_ascii=False)
+
+    logger.info(f"Updated {len(trinkets)} trinkets")
 
 
 def update_wow_classes(args: object) -> None:
@@ -404,42 +403,58 @@ def update_wow_classes(args: object) -> None:
             data[locale] = json.load(f)
 
     wow_classes = []
-    colums = [
-        "id",
-        "desc",
-        "icon_file_data_id",
-        "role_mask",
-        "armor_type_mask",
-        "primary_stat_priority",
-        "chat_color_r",
-        "chat_color_g",
-        "chat_color_b",
-    ]
 
-    for i, locale in enumerate(_LOCALES):
-        # prepare
-        if i == 0:
-            wow_class: dict
-            for wow_class in data[locale]:
-                new_wow_class = {}
-                for colum in colums:
-                    new_wow_class[colum] = wow_class[colum]
-
-                new_wow_class[f"name_{locale}"] = wow_class["name_lang"]
-
-                wow_classes.append(new_wow_class)
-
-        # enrich
-        else:
-            for class_data in data[locale]:
-                for wow_class in wow_classes:
-                    if wow_class["id"] == class_data["id"]:
-                        wow_class[f"name_{locale}"] = class_data["name_lang"]
-
-    logger.info(f"Updated {len(wow_classes)} WowClasses")
+    wow_classes = merge_information(data, translation_field="name_lang")
 
     with open(os.path.join(DATA_PATH, "wow_classes.json"), "w") as f:
         json.dump(wow_classes, f, ensure_ascii=False)
+
+    logger.info(f"Updated {len(wow_classes)} WowClasses")
+
+
+def update_soul_binds(args: object) -> None:
+    logger.info("Update soul binds")
+    # GarrTalentTree, GarrTalent, GarrTalentRank for the main tree
+    # SoulbindConduit, SoulbindConduitItem, SoulbindConduitRank for the conduit stuff
+
+    TREE = "GarrTalentTree"
+    TALENTS = "GarrTalent"
+    RANKS = "GarrTalentRank"
+
+    dbc(
+        args,
+        [
+            TREE,
+            TALENTS,
+            RANKS,
+        ],
+    )
+    data = {TREE: {}, TALENTS: {}, RANKS: {}}
+    for key in data:
+        for locale in _LOCALES:
+            with open(
+                os.path.join(get_compiled_data_path(args, locale), f"{key}.json"),
+                "r",
+            ) as f:
+                data[key][locale] = json.load(f)
+
+    def is_soul_bind(soul_bind: dict) -> bool:
+        return (
+            soul_bind["id_garr_type"] == 111
+            and soul_bind["feature_type"] == 6
+            and soul_bind["garr_talent_tree_type"] == 0
+        )
+
+    soul_bind_dudes = merge_information(
+        data[TREE],
+        translation_field="title",
+        filter_function=is_soul_bind,
+    )
+
+    with open(os.path.join(DATA_PATH, "soul_binds.json"), "w") as f:
+        json.dump(soul_bind_dudes, f, ensure_ascii=False)
+
+    logger.info(f"Updated {len(soul_bind_dudes)} soul binds")
 
 
 def main() -> None:
@@ -449,6 +464,7 @@ def main() -> None:
     casc(args)
     update_trinkets(args)
     update_wow_classes(args)
+    update_soul_binds(args)
 
 
 if __name__ == "__main__":
