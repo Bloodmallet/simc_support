@@ -171,6 +171,16 @@ class WowSpec(SimcObject):
     def __str__(self) -> str:
         return " ".join([super().__str__(), self.wow_class.__str__()])
 
+    def to_dict(self) -> dict:
+        return {
+            "id": self.id,
+            "name": self.full_name,
+            "wow_class": {
+                "id": self.wow_class.id,
+                "name": self.wow_class.full_name,
+            },
+        }
+
 
 # Spec data here
 BLOOD = WowSpec(
