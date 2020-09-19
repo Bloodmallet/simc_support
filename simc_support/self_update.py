@@ -3,7 +3,6 @@ This script updates data_files by using SimulationCrafts casc and dbc extractors
 Basically; execute this script once per patch.
 """
 import argparse
-from genericpath import exists
 import json
 import logging
 import os
