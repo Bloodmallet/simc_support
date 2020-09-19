@@ -433,29 +433,23 @@ def update_covenants(args: object) -> None:
     logger.info(f"Updated {len(covenants)} covenants")
 
 
+# SoulbindConduit, SoulbindConduitItem, SoulbindConduitRank for the conduit stuff
+
+
 def update_soul_binds(args: object) -> None:
     logger.info("Update soul binds")
-    # GarrTalentCost: soul bind-tree ability link
-    # GarrTalentTree: soul bind information
-    # GarrTalent: soul bind talents + soul bind id
-    # GarrTalentRank for the main tree
-    # SoulbindConduit, SoulbindConduitItem, SoulbindConduitRank for the conduit stuff
 
     SOULBINDS = "Soulbind"
-    TREE = "GarrTalentTree"
     TALENTS = "GarrTalent"
-    RANKS = "GarrTalentRank"
 
     dbc(
         args,
         [
             SOULBINDS,
-            TREE,
             TALENTS,
-            RANKS,
         ],
     )
-    data = {SOULBINDS: {}, TREE: {}, TALENTS: {}, RANKS: {}}
+    data = {SOULBINDS: {}, TALENTS: {}}
     for key in data:
         for locale in _LOCALES:
             with open(
@@ -464,23 +458,22 @@ def update_soul_binds(args: object) -> None:
             ) as f:
                 data[key][locale] = json.load(f)
 
-    def is_soul_bind(soul_bind: dict) -> bool:
-        return (
-            soul_bind["id_garr_type"] == 111
-            and soul_bind["feature_type"] == 6
-            and soul_bind["garr_talent_tree_type"] == 0
-        )
+    soul_binds = merge_information(data[SOULBINDS])
 
-    soul_bind_dudes = merge_information(
-        data[SOULBINDS],
-        # translation_field="title",
-        # filter_function=is_soul_bind,
-    )
+    talents = merge_information(data[TALENTS])
+
+    # enrich with talents
+    for soul_bind in soul_binds:
+        soul_bind["talents"] = [
+            talent
+            for talent in talents
+            if talent["id_parent"] == soul_bind["id_garr_talent_tree"]
+        ]
 
     with open(os.path.join(DATA_PATH, "soul_binds.json"), "w") as f:
-        json.dump(soul_bind_dudes, f, ensure_ascii=False)
+        json.dump(soul_binds, f, ensure_ascii=False)
 
-    logger.info(f"Updated {len(soul_bind_dudes)} soul binds")
+    logger.info(f"Updated {len(soul_binds)} soul binds")
 
 
 def main() -> None:
@@ -490,7 +483,7 @@ def main() -> None:
     casc(args)
     # update_trinkets(args)
     # update_wow_classes(args)
-    update_covenants(args)
+    # update_covenants(args)
     update_soul_binds(args)
 
 
