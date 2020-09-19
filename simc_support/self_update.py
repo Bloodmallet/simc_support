@@ -481,9 +481,9 @@ def main() -> None:
     if args.debug:
         logger.setLevel(logging.DEBUG)
     casc(args)
-    # update_trinkets(args)
-    # update_wow_classes(args)
-    # update_covenants(args)
+    update_trinkets(args)
+    update_wow_classes(args)
+    update_covenants(args)
     update_soul_binds(args)
 
 
