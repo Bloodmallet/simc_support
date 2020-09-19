@@ -6,7 +6,7 @@ from simc_support.game_data.Trinket import Trinket
 from simc_support.game_data.Trinket import TRINKETS
 
 
-class Trinkets(unittest.TestCase):
+class TestTrinkets(unittest.TestCase):
     def test_type(self):
         self.assertTrue(isinstance(TRINKETS, list))
 
@@ -41,7 +41,7 @@ class Trinkets(unittest.TestCase):
         self.assertTrue(found)
 
 
-class GetVersatilityTrinket(unittest.TestCase):
+class TestGetVersatilityTrinket(unittest.TestCase):
     def test_type(self):
         self.assertTrue(isinstance(get_versatility_trinket(Stat.STRENGTH), Trinket))
 

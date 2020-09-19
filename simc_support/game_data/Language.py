@@ -79,3 +79,25 @@ class EmptyTranslation(Translation):
     def __init__(self):
         languages = {language.name: "" for language in Language}
         super().__init__(self, translations=languages)
+
+
+def _get_translations(item: dict) -> Translation:
+    keys = [
+        "en_US",
+        "ko_KR",
+        "fr_FR",
+        "de_DE",
+        "zh_CN",
+        "es_ES",
+        "ru_RU",
+        "it_IT",
+        "pt_PT",
+    ]
+    d = {}
+    for key in keys:
+        d[key.split("_")[1]] = item[f"name_{key}"]
+
+    d["BR"] = d["PT"]
+    d.pop("PT")
+
+    return Translation(translations=d)

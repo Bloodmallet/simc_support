@@ -3,6 +3,7 @@ import pkg_resources
 import typing
 
 
+from simc_support.game_data.Language import _get_translations
 from simc_support.game_data.Language import Translation
 from simc_support.game_data.SimcObject import SimcObject
 
@@ -13,12 +14,12 @@ class Covenant(SimcObject):
     def __init__(
         self,
         *args,
-        covenant_id: int,
+        id: int,
         translations: typing.Union[typing.Dict, Translation],
         **kwargs,
     ):
         super().__init__(*args, **kwargs)
-        self.covenant_id = covenant_id
+        self.id = id
 
         if isinstance(translations, Translation):
             self.translations = translations
@@ -36,32 +37,11 @@ def _load_covenants() -> typing.List[Covenant]:
     ) as f:
         loaded_covenants = json.load(f)
 
-    def _get_translations(item: dict) -> Translation:
-        keys = [
-            "en_US",
-            "ko_KR",
-            "fr_FR",
-            "de_DE",
-            "zh_CN",
-            "es_ES",
-            "ru_RU",
-            "it_IT",
-            "pt_PT",
-        ]
-        d = {}
-        for key in keys:
-            d[key.split("_")[1]] = item[f"name_{key}"]
-
-        d["BR"] = d["PT"]
-        d.pop("PT")
-
-        return Translation(translations=d)
-
     covenants = []
     for covenant in loaded_covenants:
         covenants.append(
             Covenant(
-                covenant_id=covenant["id"],
+                id=covenant["id"],
                 translations=_get_translations(covenant),
                 full_name=covenant["name"],
                 simc_name=covenant["name"].lower().replace(" ", "_"),
@@ -73,8 +53,16 @@ def _load_covenants() -> typing.List[Covenant]:
 COVENANTS = _load_covenants()
 
 
-def get_covenant(name: str) -> Covenant:
+def get_covenant(*, id: int = None, name: str = None) -> Covenant:
+    if not id and not name:
+        raise ValueError("Function requires either 'id' or 'name'.")
+
     for covenant in COVENANTS:
-        if name.lower().replace(" ", "_") == covenant.simc_name:
+        if (
+            name
+            and name.lower().replace(" ", "_") == covenant.simc_name
+            or id
+            and id == covenant.id
+        ):
             return covenant
     raise ValueError(f"No Covenant with name '{name}' found.")

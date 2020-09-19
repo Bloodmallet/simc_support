@@ -3,8 +3,9 @@ import pkg_resources
 import typing
 
 import simc_support.game_data.ItemLevel as ItemLevel
-from simc_support.game_data.Language import Translation
+from simc_support.game_data.Language import _get_translations
 from simc_support.game_data.Language import EmptyTranslation
+from simc_support.game_data.Language import Translation
 from simc_support.game_data.Role import Role
 from simc_support.game_data.Source import Source
 from simc_support.game_data.Stat import Stat
@@ -87,27 +88,6 @@ def _load_trinkets() -> typing.List[Trinket]:
         __name__, "/".join(("data_files", "trinkets.json"))
     ) as f:
         loaded_trinkets = json.load(f)
-
-    def _get_translations(item: dict) -> Translation:
-        keys = [
-            "en_US",
-            "ko_KR",
-            "fr_FR",
-            "de_DE",
-            "zh_CN",
-            "es_ES",
-            "ru_RU",
-            "it_IT",
-            "pt_PT",
-        ]
-        d = {}
-        for key in keys:
-            d[key.split("_")[1]] = item[f"name_{key}"]
-
-        d["BR"] = d["PT"]
-        d.pop("PT")
-
-        return Translation(translations=d)
 
     def _get_stats(item: dict) -> typing.List[Stat]:
         """Get primary stats from items stat_type information.
