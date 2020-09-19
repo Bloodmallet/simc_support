@@ -1,8 +1,7 @@
 #!/bin/sh
-source env/bin/activate
+. env/bin/activate
 
-DIRECTORIES=("build" "dist" "simc_support.egg-info")
-for D in ${DIRECTORIES}; do
+for D in "build" "dist" "simc_support.egg-info"; do
     if [ -d "${D}" ]; then
         rm -r ${D}
     fi
