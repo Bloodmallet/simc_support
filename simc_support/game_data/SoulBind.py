@@ -1,38 +1,11 @@
+import copy
 import json
 import pkg_resources
 import typing
 
-
 from simc_support.game_data.Language import Translation, _get_translations
 from simc_support.game_data.SimcObject import SimcObject
 from simc_support.game_data.Covenant import Covenant, get_covenant
-
-
-class SoulBind(SimcObject):
-    """Shadowlands specific additional talent tree."""
-
-    def __init__(
-        self,
-        *args,
-        id: int,
-        covenant: Covenant,
-        translations: typing.Union[typing.Dict, Translation],
-        soul_bind_talents: typing.List["SoulBindTalent"],
-        **kwargs,
-    ):
-        super().__init__(*args, **kwargs)
-        self.id = id
-        self.covenant = covenant
-        self.soul_bind_talents = soul_bind_talents
-
-        if isinstance(translations, Translation):
-            self.translations = translations
-        elif isinstance(translations, dict):
-            self.translations = Translation(translations=translations)
-        else:
-            raise TypeError(
-                "translations must either be a dictionary or a Translaton object."
-            )
 
 
 class SoulBindTalent(SimcObject):
@@ -61,6 +34,108 @@ class SoulBindTalent(SimcObject):
             raise TypeError(
                 "translations must either be a dictionary or a Translaton object."
             )
+
+    @property
+    def is_dps_increase(self) -> bool:
+        WHITELIST = [
+            # Pelagos
+            "Let Go of the Past",
+            "Combat Meditation",
+            # Kleia
+            "Pointed Courage",
+            # Forgelite Prime Mikanikos
+            "Hammer of Genesis",
+            "Bron's Call to Action",
+            # Plague Deviser Marelith
+            "Plague's Preemptive Strike",
+            # Emeni
+            "Gnashing Chompers",
+            "Embody the Construct",
+            # Bonesmith Heirmir
+            "Heirmir's Arsenal: Marrowed Gemstone",
+            # Niya
+            "Niya's Tools: Burrs",
+            "Niya's Tools: Poison",
+            "Grove Invigoration",
+            # Dreamweaver
+            "Field of Blossom",
+            "Social Butterfly",
+            # Korayn
+            "Face Your Foes",
+            "First Strike",
+            "Wild Hunt Tactics",
+            # Nadja the Mistblade
+            "Exacting Preparation",
+            "Dauntless Duelist",
+            "Thrill Seeker",
+            # Theotar the Mad Duke
+            "Refined Palate",
+            "Soothing Shade",
+            "Wasteland Propriety",
+        ]
+        return self.full_name in WHITELIST or self.is_potency
+
+    @property
+    def is_finesse(self) -> bool:
+        return self.type == 1
+
+    @property
+    def is_potency(self) -> bool:
+        return self.type == 2
+
+    @property
+    def is_endurance(self) -> bool:
+        return self.type == 3
+
+
+class SoulBind(SimcObject):
+    """Shadowlands specific additional talent tree."""
+
+    def __init__(
+        self,
+        *args,
+        id: int,
+        covenant: Covenant,
+        translations: typing.Union[typing.Dict, Translation],
+        soul_bind_talents: typing.List[SoulBindTalent],
+        **kwargs,
+    ):
+        super().__init__(*args, **kwargs)
+        self.id = id
+        self.covenant = covenant
+        self.soul_bind_talents = soul_bind_talents
+
+        if isinstance(translations, Translation):
+            self.translations = translations
+        elif isinstance(translations, dict):
+            self.translations = Translation(translations=translations)
+        else:
+            raise TypeError(
+                "translations must either be a dictionary or a Translaton object."
+            )
+
+    @property
+    def talent_paths(self) -> typing.List[SoulBindTalent]:
+        max_tier = 7
+
+        paths: typing.List[typing.List[SoulBindTalent]] = [[]]
+
+        for i in range(max_tier + 1):
+            talents = [talent for talent in self.soul_bind_talents if talent.tier == i]
+
+            new_paths = []
+            # create a deepcopy for each
+            for talent in talents:
+                if talent.parent_id == 0:
+                    for path in paths:
+                        new_paths.append(copy.deepcopy(path) + [talent])
+                else:
+                    for path in paths:
+                        if path[-1].id == talent.parent_id:
+                            new_paths.append(copy.deepcopy(path) + [talent])
+            paths = new_paths
+
+        return paths
 
 
 def _load_soul_binds() -> typing.List[SoulBind]:

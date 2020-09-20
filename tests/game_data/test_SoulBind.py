@@ -12,6 +12,18 @@ class TestSoulBind(unittest.TestCase):
     def test_known_count(self):
         self.assertTrue(len(SOULBINDS) == 4 * 3)
 
+    def test_path_existence(self):
+        for soul_bind in SOULBINDS:
+            with self.subTest(soul_bind=soul_bind):
+                self.assertTrue(len(soul_bind.talent_paths) > 0)
+
+    def test_path_length(self):
+        for soul_bind in SOULBINDS:
+            with self.subTest(soul_bind=soul_bind):
+                for path in soul_bind.talent_paths:
+                    with self.subTest(path=path):
+                        self.assertEqual(len(path), 8)
+
 
 class TestGetSoulBind(unittest.TestCase):
     def setUp(self) -> None:
