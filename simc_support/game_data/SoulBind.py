@@ -13,6 +13,7 @@ class SoulBindTalent(SimcObject):
         self,
         *args,
         id: int,
+        spell_id: int,
         tier: int,
         order: int,
         parent_id: int,
@@ -22,6 +23,7 @@ class SoulBindTalent(SimcObject):
     ) -> None:
         super().__init__(*args, **kwargs)
         self.id = id
+        self.spell_id = spell_id
         self.tier = tier
         self.order = order
         self.parent_id = parent_id
@@ -147,6 +149,7 @@ def _load_soul_binds() -> typing.List[SoulBind]:
     def create_talent(dict) -> SoulBindTalent:
         return SoulBindTalent(
             id=dict["id"],
+            spell_id=dict["spell_id"],
             tier=dict["tier"],
             order=dict["ui_order"],
             parent_id=dict["id_garr_talent_prereq"],
