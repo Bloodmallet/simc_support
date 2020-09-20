@@ -44,8 +44,10 @@ def merge_information(
     translation_field="name",
 ) -> typing.List[dict]:
 
+    logger.debug("Merging")
     result = []
     for i, locale in enumerate(_LOCALES):
+        logger.debug(f"  {locale}")
         # prepare
         if i == 0:
             information: dict
@@ -53,16 +55,22 @@ def merge_information(
                 if not filter_function(information):
                     continue
 
-                information[f"{translation_field}_{locale}"] = information[
-                    translation_field
-                ]
+                if translation_field:
+                    information[f"{translation_field}_{locale}"] = information[
+                        translation_field
+                    ]
 
                 result.append(information)
 
         # enrich
         else:
-            for new_information in input_dict[locale]:
-                for information in result:
+            if not translation_field:
+                continue
+            for information in result:
+
+                logger.debug(f"    {information[match_field]}")
+
+                for new_information in input_dict[locale]:
                     if information[match_field] == new_information[match_field]:
                         information[f"{translation_field}_{locale}"] = new_information[
                             translation_field
@@ -441,15 +449,19 @@ def update_soul_binds(args: object) -> None:
 
     SOULBINDS = "Soulbind"
     TALENTS = "GarrTalent"
+    RANKS = "GarrTalentRank"
+    SPELLS = "SpellName"
 
     dbc(
         args,
         [
             SOULBINDS,
             TALENTS,
+            RANKS,
+            SPELLS,
         ],
     )
-    data = {SOULBINDS: {}, TALENTS: {}}
+    data = {SOULBINDS: {}, TALENTS: {}, RANKS: {}, SPELLS: {}}
     for key in data:
         for locale in _LOCALES:
             with open(
@@ -462,13 +474,54 @@ def update_soul_binds(args: object) -> None:
 
     talents = merge_information(data[TALENTS])
 
+    ranks = merge_information(data[RANKS], translation_field=None)
+
+    def get_spell_id(talent: dict) -> int:
+        for rank in ranks:
+            if rank["id_parent"] == talent["id"]:
+                return rank["id_spell"]
+
+    logger.debug("Enriching talent information")
     # enrich with talents
+    talent_spells = []
     for soul_bind in soul_binds:
+        logger.debug(f"Soul Bind {soul_bind['id']}")
         soul_bind["talents"] = [
             talent
             for talent in talents
             if talent["id_parent"] == soul_bind["id_garr_talent_tree"]
         ]
+        for talent in soul_bind["talents"]:
+            logger.debug(f"  Talent {talent['id']}")
+            talent["spell_id"] = get_spell_id(talent)
+            talent_spells.append(talent["spell_id"])
+
+    # enrich talents with spells and spell translations
+    def is_relevant_spell(information: dict) -> bool:
+        return information["id"] in talent_spells
+
+    spells = merge_information(data[SPELLS], filter_function=is_relevant_spell)
+
+    def get_spell_names(spell_id: int) -> dict:
+        for spell in spells:
+            if spell_id == spell["id"]:
+                spell_names = {"name": spell["name"]}
+                for locale in _LOCALES:
+                    spell_names[f"name_{locale}"] = spell[f"name_{locale}"]
+                return spell_names
+        raise ValueError(f"No spell with id '{spell_id}' found.")
+
+    for soul_bind in soul_binds:
+        logger.debug(f"Soul Bind {soul_bind['id']}")
+        for talent in soul_bind["talents"]:
+            if talent["spell_id"] == 0:
+                continue
+            # node names are overwritten by their spells
+            spell_names = get_spell_names(talent["spell_id"])
+            for i, locale in enumerate(_LOCALES):
+                if i == 0:
+                    talent["name"] = spell_names["name"]
+                talent[f"name_{locale}"] = spell_names[f"name_{locale}"]
 
     with open(os.path.join(DATA_PATH, "soul_binds.json"), "w") as f:
         json.dump(soul_binds, f, ensure_ascii=False)
@@ -481,9 +534,9 @@ def main() -> None:
     if args.debug:
         logger.setLevel(logging.DEBUG)
     casc(args)
-    update_trinkets(args)
-    update_wow_classes(args)
-    update_covenants(args)
+    # update_trinkets(args)
+    # update_wow_classes(args)
+    # update_covenants(args)
     update_soul_binds(args)
 
 
