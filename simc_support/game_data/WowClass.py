@@ -1,3 +1,5 @@
+import typing
+
 from simc_support.game_data.SimcObject import SimcObject
 from simc_support.game_data import Race
 from simc_support.game_data import Language
@@ -7,7 +9,7 @@ class WowClass(SimcObject):
     def __init__(
         self,
         id: int,
-        races: list,
+        races: typing.List[Race.Race],
         translations: Language.Translation,
         *args,
         **kwargs,
