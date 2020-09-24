@@ -81,7 +81,7 @@ class EmptyTranslation(Translation):
         super().__init__(self, translations=languages)
 
 
-def _get_translations(item: dict) -> Translation:
+def _get_translations(item: dict, unified_key: str = "name") -> Translation:
     keys = [
         "en_US",
         "ko_KR",
@@ -95,7 +95,7 @@ def _get_translations(item: dict) -> Translation:
     ]
     d = {}
     for key in keys:
-        d[key.split("_")[1]] = item[f"name_{key}"]
+        d[key.split("_")[1]] = item[f"{unified_key}_{key}"]
 
     d["BR"] = d["PT"]
     d.pop("PT")
