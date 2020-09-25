@@ -57,7 +57,7 @@ def _load_legendaries() -> typing.List[Legendary]:
     for legendary in loaded_legendaries:
         legendaries.append(
             Legendary(
-                name=legendary["name"],
+                full_name=legendary["name"],
                 id=legendary["id"],
                 spell_id=legendary["id_spell"],
                 bonus_id=legendary["id_bonus"],
@@ -65,6 +65,8 @@ def _load_legendaries() -> typing.List[Legendary]:
                 wow_specs=_get_specs(legendary),
             )
         )
+
+    return legendaries
 
 
 LEGENDARIES: typing.List[Legendary] = _load_legendaries()
