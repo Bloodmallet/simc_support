@@ -68,8 +68,6 @@ def merge_information(
                 continue
             for information in result:
 
-                logger.debug(f"    {information[match_field]}")
-
                 for new_information in input_dict[locale]:
                     if information[match_field] == new_information[match_field]:
                         information[f"{translation_field}_{locale}"] = new_information[
@@ -518,10 +516,8 @@ def update_soul_binds(args: object) -> None:
                 continue
             # node names are overwritten by their spells
             spell_names = get_spell_names(talent["spell_id"])
-            for i, locale in enumerate(_LOCALES):
-                if i == 0:
-                    talent["name"] = spell_names["name"]
-                talent[f"name_{locale}"] = spell_names[f"name_{locale}"]
+            for key in spell_names:
+                talent[key] = spell_names[key]
 
     with open(os.path.join(DATA_PATH, "soul_binds.json"), "w") as f:
         json.dump(soul_binds, f, ensure_ascii=False)
@@ -572,6 +568,108 @@ def update_legendaries(args: object) -> None:
     logger.info(f"Updated {len(legendaries)} legendaries")
 
 
+def update_conduits(args: object) -> None:
+    logger.info("Update conduits")
+
+    CONDUIT = "SoulbindConduit"
+    # ITEM = "SoulbindConduitItem"
+    RANK = "SoulbindConduitRank"
+    SPECSETMEMBER = "SpecSetMember"
+    SPELLS = "SpellName"
+
+    WHITELIST = []
+
+    dbc(
+        args,
+        [
+            CONDUIT,
+            RANK,
+            SPECSETMEMBER,
+            SPELLS,
+        ],
+    )
+    data = {
+        CONDUIT: {},
+        RANK: {},
+        SPECSETMEMBER: {},
+        SPELLS: {},
+    }
+    for key in data:
+        for locale in _LOCALES:
+            with open(
+                os.path.join(get_compiled_data_path(args, locale), f"{key}.json"),
+                "r",
+            ) as f:
+                data[key][locale] = json.load(f)
+
+    conduits = merge_information(data[CONDUIT], translation_field=None)
+    ranks = merge_information(data[RANK], translation_field=None)
+    specs = data[SPECSETMEMBER][_LOCALES[0]]
+
+    def _get_spell_id(conduit: dict) -> int:
+        for rank in ranks:
+            if rank["id_parent"] == conduit["id"]:
+                return rank["id_spell"]
+
+    def _get_ranks(conduit: dict) -> typing.List[int]:
+        return list(
+            [rank["rank"] for rank in ranks if rank["id_parent"] == conduit["id"]]
+        )
+
+    spell_ids = []
+    for conduit in conduits:
+        conduit["spec_ids"] = list(
+            [
+                spec["id_spec"]
+                for spec in specs
+                if spec["id_parent"] == conduit["id_spec_set"]
+            ]
+        )
+        conduit["spell_id"] = _get_spell_id(conduit)
+        conduit["ranks"] = sorted(_get_ranks(conduit))
+        spell_ids.append(conduit["spell_id"])
+
+    # enrich talents with spells and spell translations
+    def is_relevant_spell(spell: dict) -> bool:
+        return spell["id"] in spell_ids
+
+    spells = merge_information(data[SPELLS], filter_function=is_relevant_spell)
+
+    def get_spell_names(spell_id: int) -> dict:
+        for spell in spells:
+            if spell_id == spell["id"]:
+                spell_names = {"name": spell["name"]}
+                for locale in _LOCALES:
+                    spell_names[f"name_{locale}"] = spell[f"name_{locale}"]
+                return spell_names
+        raise ValueError(f"No spell with id '{spell_id}' found.")
+
+    for conduit in conduits:
+        try:
+            translations = get_spell_names(conduit["spell_id"])
+        except ValueError:
+            translations = {"name": None}
+            for locale in _LOCALES:
+                translations[f"name_{locale}"] = None
+        for key in translations:
+            conduit[key] = translations[key]
+
+    def _is_conduit(conduit: dict) -> bool:
+        return (
+            conduit["name"]
+            and len(conduit["ranks"]) == 15
+            and len(conduit["spec_ids"]) > 0
+            or conduit["id"] in WHITELIST
+        )
+
+    conduits = list([conduit for conduit in conduits if _is_conduit(conduit)])
+
+    with open(os.path.join(DATA_PATH, "conduits.json"), "w") as f:
+        json.dump(conduits, f, ensure_ascii=False)
+
+    logger.info(f"Updated {len(conduits)} conduits")
+
+
 def main() -> None:
     args = handle_arguments().parse_args()
     if args.debug:
@@ -582,6 +680,7 @@ def main() -> None:
     update_covenants(args)
     update_soul_binds(args)
     update_legendaries(args)
+    update_conduits(args)
 
 
 if __name__ == "__main__":
