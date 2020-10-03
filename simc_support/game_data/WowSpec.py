@@ -608,3 +608,10 @@ def get_wow_spec(
     raise ValueError(
         f"No WowSpec found of class '{wow_class.simc_name}' and spec '{wow_spec}'"
     )
+
+
+def get_wow_spec_from_id(wow_spec_id: int) -> WowSpec:
+    for spec in WOWSPECS:
+        if spec.id == wow_spec_id:
+            return spec
+    raise ValueError(f"No WowSpec found with id '{wow_spec_id}'.")

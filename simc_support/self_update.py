@@ -36,6 +36,16 @@ _LOCALES = [
 DATA_PATH = "game_data/data_files"
 
 
+def get_spell_names(spells: typing.List[dict], spell_id: int) -> dict:
+    for spell in spells:
+        if spell_id == spell["id"]:
+            spell_names = {"name": spell["name"]}
+            for locale in _LOCALES:
+                spell_names[f"name_{locale}"] = spell[f"name_{locale}"]
+            return spell_names
+    raise ValueError(f"No spell with id '{spell_id}' found.")
+
+
 def merge_information(
     input_dict: dict,
     *,
@@ -500,22 +510,13 @@ def update_soul_binds(args: object) -> None:
 
     spells = merge_information(data[SPELLS], filter_function=is_relevant_spell)
 
-    def get_spell_names(spell_id: int) -> dict:
-        for spell in spells:
-            if spell_id == spell["id"]:
-                spell_names = {"name": spell["name"]}
-                for locale in _LOCALES:
-                    spell_names[f"name_{locale}"] = spell[f"name_{locale}"]
-                return spell_names
-        raise ValueError(f"No spell with id '{spell_id}' found.")
-
     for soul_bind in soul_binds:
         logger.debug(f"Soul Bind {soul_bind['id']}")
         for talent in soul_bind["talents"]:
             if talent["spell_id"] == 0:
                 continue
             # node names are overwritten by their spells
-            spell_names = get_spell_names(talent["spell_id"])
+            spell_names = get_spell_names(spells, talent["spell_id"])
             for key in spell_names:
                 talent[key] = spell_names[key]
 
@@ -635,18 +636,9 @@ def update_conduits(args: object) -> None:
 
     spells = merge_information(data[SPELLS], filter_function=is_relevant_spell)
 
-    def get_spell_names(spell_id: int) -> dict:
-        for spell in spells:
-            if spell_id == spell["id"]:
-                spell_names = {"name": spell["name"]}
-                for locale in _LOCALES:
-                    spell_names[f"name_{locale}"] = spell[f"name_{locale}"]
-                return spell_names
-        raise ValueError(f"No spell with id '{spell_id}' found.")
-
     for conduit in conduits:
         try:
-            translations = get_spell_names(conduit["spell_id"])
+            translations = get_spell_names(spells, conduit["spell_id"])
         except ValueError:
             translations = {"name": None}
             for locale in _LOCALES:
@@ -670,6 +662,43 @@ def update_conduits(args: object) -> None:
     logger.info(f"Updated {len(conduits)} conduits")
 
 
+def update_talents(args: object) -> None:
+    logger.info("Update talents")
+
+    TALENTS = "Talent"
+    SPELLS = "SpellName"
+
+    dbc(args, [TALENTS, SPELLS])
+    data = {
+        TALENTS: {},
+        SPELLS: {},
+    }
+    for key in data:
+        for locale in _LOCALES:
+            with open(
+                os.path.join(get_compiled_data_path(args, locale), f"{key}.json"),
+                "r",
+            ) as f:
+                data[key][locale] = json.load(f)
+
+    talents = data[TALENTS][_LOCALES[0]]
+
+    spell_ids = list([talent["id_spell"] for talent in talents])
+    spells = merge_information(
+        data[SPELLS], filter_function=lambda spell: spell["id"] in spell_ids
+    )
+
+    for talent in talents:
+        spell_names = get_spell_names(spells, talent["id_spell"])
+        for key in spell_names:
+            talent[key] = spell_names[key]
+
+    with open(os.path.join(DATA_PATH, "talents.json"), "w") as f:
+        json.dump(talents, f, ensure_ascii=False)
+
+    logger.info(f"Updated {len(talents)} talents")
+
+
 def main() -> None:
     args = handle_arguments().parse_args()
     if args.debug:
@@ -681,6 +710,7 @@ def main() -> None:
     update_soul_binds(args)
     update_legendaries(args)
     update_conduits(args)
+    update_talents(args)
 
 
 if __name__ == "__main__":
