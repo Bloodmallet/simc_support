@@ -17,7 +17,7 @@ class WowSpec(SimcObject):
         id: int,
         wow_class: WowClass.WowClass,
         translations: Language.Translation,
-        talents: str,
+        talents_blueprint: str,
         raid_role: RaidRole,
         role: Role,
         stat: Stat,
@@ -34,14 +34,14 @@ class WowSpec(SimcObject):
         else:
             self.translations = Language.Translation(translations=translations)
 
-        talents = str(talents)
-        if len(talents) != 7:
+        talents_blueprint = str(talents_blueprint)
+        if len(talents_blueprint) != 7:
             raise ValueError("Wrong talent string length, expected 7")
-        if len(talents.replace("1", "").replace("0", "")) != 0:
+        if len(talents_blueprint.replace("1", "").replace("0", "")) != 0:
             raise ValueError(
                 "Expected talent string to contain only '1' and '0' charcters"
             )
-        self.talents = talents
+        self.talents_blueprint = talents_blueprint
 
         if raid_role not in RaidRole:
             raise ValueError(f"Unknown raid_role '{raid_role}'")
@@ -70,10 +70,10 @@ class WowSpec(SimcObject):
         if not all([talent in "0123" for talent in talent_combination]):
             return ValueError("Unexpected talent value. Values can be 0, 1, 2, 3.")
 
-        for i, talent_type in enumerate(self.talents):
-            if talent_combination[i] == "0" and talent_type == "1":
+        for row, column in enumerate(self.talents_blueprint):
+            if talent_combination[row] == "0" and column == "1":
                 return False
-            elif talent_combination[i] != "0" and talent_type == "0":
+            elif talent_combination[row] != "0" and column == "0":
                 return False
         return True
 
@@ -124,7 +124,7 @@ class WowSpec(SimcObject):
 
         pattern = ""
 
-        for i, talent_type in enumerate(self.talents):
+        for i, talent_type in enumerate(self.talents_blueprint):
             if blueprint[i] == "x" and talent_type == "0":
                 pattern += "0"
             else:
@@ -132,7 +132,7 @@ class WowSpec(SimcObject):
 
         combinations = itertools.product(
             "0123",
-            repeat=len(self.talents),
+            repeat=len(self.talents_blueprint),
         )
 
         combinations = map(
@@ -187,7 +187,7 @@ BLOOD = WowSpec(
     id=250,
     wow_class=WowClass.DEATHKNIGHT,
     translations=Language.EmptyTranslation(),
-    talents="1101011",
+    talents_blueprint="1101011",
     raid_role=RaidRole.TANK,
     role=Role.MELEE,
     stat=Stat.STRENGTH,
@@ -198,7 +198,7 @@ FROST_DK = WowSpec(
     id=251,
     wow_class=WowClass.DEATHKNIGHT,
     translations=Language.EmptyTranslation(),
-    talents="1101011",
+    talents_blueprint="1101011",
     raid_role=RaidRole.DD,
     role=Role.MELEE,
     stat=Stat.STRENGTH,
@@ -209,7 +209,7 @@ UNHOLY = WowSpec(
     id=252,
     wow_class=WowClass.DEATHKNIGHT,
     translations=Language.EmptyTranslation(),
-    talents="1101011",
+    talents_blueprint="1101011",
     raid_role=RaidRole.DD,
     role=Role.MELEE,
     stat=Stat.STRENGTH,
@@ -220,7 +220,7 @@ HAVOC = WowSpec(
     id=577,
     wow_class=WowClass.DEMONHUNTER,
     translations=Language.EmptyTranslation(),
-    talents="1110111",
+    talents_blueprint="1110111",
     raid_role=RaidRole.DD,
     role=Role.MELEE,
     stat=Stat.AGILITY,
@@ -231,7 +231,7 @@ VENGEANCE = WowSpec(
     id=581,
     wow_class=WowClass.DEMONHUNTER,
     translations=Language.EmptyTranslation(),
-    talents="1111111",
+    talents_blueprint="1111111",
     raid_role=RaidRole.TANK,
     role=Role.MELEE,
     stat=Stat.AGILITY,
@@ -242,7 +242,7 @@ BALANCE = WowSpec(
     id=102,
     wow_class=WowClass.DRUID,
     translations=Language.EmptyTranslation(),
-    talents="1000111",
+    talents_blueprint="1000111",
     raid_role=RaidRole.DD,
     role=Role.RANGED,
     stat=Stat.INTELLECT,
@@ -253,7 +253,7 @@ FERAL = WowSpec(
     id=103,
     wow_class=WowClass.DRUID,
     translations=Language.EmptyTranslation(),
-    talents="1000111",
+    talents_blueprint="1000111",
     raid_role=RaidRole.DD,
     role=Role.MELEE,
     stat=Stat.AGILITY,
@@ -264,7 +264,7 @@ GUARDIAN = WowSpec(
     id=104,
     wow_class=WowClass.DRUID,
     translations=Language.EmptyTranslation(),
-    talents="1000111",
+    talents_blueprint="1000111",
     raid_role=RaidRole.TANK,
     role=Role.MELEE,
     stat=Stat.AGILITY,
@@ -275,7 +275,7 @@ RESTORATION_DRUID = WowSpec(
     id=105,
     wow_class=WowClass.DRUID,
     translations=Language.EmptyTranslation(),
-    talents="0010000",
+    talents_blueprint="0010000",
     raid_role=RaidRole.DD,
     role=Role.MELEE,
     stat=Stat.INTELLECT,
@@ -286,7 +286,7 @@ BEASTMASTERY = WowSpec(
     id=253,
     wow_class=WowClass.HUNTER,
     translations=Language.EmptyTranslation(),
-    talents="1101011",
+    talents_blueprint="1101011",
     raid_role=RaidRole.DD,
     role=Role.RANGED,
     stat=Stat.AGILITY,
@@ -297,7 +297,7 @@ MARKSMANSHIP = WowSpec(
     id=254,
     wow_class=WowClass.HUNTER,
     translations=Language.EmptyTranslation(),
-    talents="1101011",
+    talents_blueprint="1101011",
     raid_role=RaidRole.DD,
     role=Role.RANGED,
     stat=Stat.AGILITY,
@@ -308,7 +308,7 @@ SURVIVAL = WowSpec(
     id=255,
     wow_class=WowClass.HUNTER,
     translations=Language.EmptyTranslation(),
-    talents="1101011",
+    talents_blueprint="1101011",
     raid_role=RaidRole.DD,
     role=Role.MELEE,
     stat=Stat.AGILITY,
@@ -319,7 +319,7 @@ ARCANE = WowSpec(
     id=62,
     wow_class=WowClass.MAGE,
     translations=Language.EmptyTranslation(),
-    talents="1011011",
+    talents_blueprint="1011011",
     raid_role=RaidRole.DD,
     role=Role.RANGED,
     stat=Stat.INTELLECT,
@@ -330,7 +330,7 @@ FIRE = WowSpec(
     id=63,
     wow_class=WowClass.MAGE,
     translations=Language.EmptyTranslation(),
-    talents="1011011",
+    talents_blueprint="1011011",
     raid_role=RaidRole.DD,
     role=Role.RANGED,
     stat=Stat.INTELLECT,
@@ -341,7 +341,7 @@ FROST_MAGE = WowSpec(
     id=64,
     wow_class=WowClass.MAGE,
     translations=Language.EmptyTranslation(),
-    talents="1011011",
+    talents_blueprint="1011011",
     raid_role=RaidRole.DD,
     role=Role.RANGED,
     stat=Stat.INTELLECT,
@@ -352,7 +352,7 @@ BREWMASTER = WowSpec(
     id=268,
     wow_class=WowClass.MONK,
     translations=Language.EmptyTranslation(),
-    talents="1010011",
+    talents_blueprint="1010011",
     raid_role=RaidRole.TANK,
     role=Role.MELEE,
     stat=Stat.AGILITY,
@@ -363,7 +363,7 @@ WINDWALKER = WowSpec(
     id=269,
     wow_class=WowClass.MONK,
     translations=Language.EmptyTranslation(),
-    talents="1010011",
+    talents_blueprint="1010011",
     raid_role=RaidRole.DD,
     role=Role.MELEE,
     stat=Stat.AGILITY,
@@ -374,7 +374,7 @@ PROTECTION_PALADIN = WowSpec(
     id=66,
     wow_class=WowClass.PALADIN,
     translations=Language.EmptyTranslation(),
-    talents="1101001",
+    talents_blueprint="1101001",
     raid_role=RaidRole.TANK,
     role=Role.MELEE,
     stat=Stat.STRENGTH,
@@ -385,7 +385,7 @@ RETRIBUTION = WowSpec(
     id=70,
     wow_class=WowClass.PALADIN,
     translations=Language.EmptyTranslation(),
-    talents="1101001",
+    talents_blueprint="1101001",
     raid_role=RaidRole.DD,
     role=Role.MELEE,
     stat=Stat.STRENGTH,
@@ -396,7 +396,7 @@ DISCIPLINE = WowSpec(
     id=256,
     wow_class=WowClass.PRIEST,
     translations=Language.EmptyTranslation(),
-    talents="1010111",
+    talents_blueprint="1010111",
     raid_role=RaidRole.HEAL,
     role=Role.RANGED,
     stat=Stat.INTELLECT,
@@ -407,7 +407,7 @@ HOLY_PRIEST = WowSpec(
     id=257,
     wow_class=WowClass.PRIEST,
     translations=Language.EmptyTranslation(),
-    talents="1010111",
+    talents_blueprint="1010111",
     raid_role=RaidRole.HEAL,
     role=Role.RANGED,
     stat=Stat.INTELLECT,
@@ -418,7 +418,7 @@ SHADOW = WowSpec(
     id=258,
     wow_class=WowClass.PRIEST,
     translations=Language.EmptyTranslation(),
-    talents="1010111",
+    talents_blueprint="1010111",
     raid_role=RaidRole.DD,
     role=Role.RANGED,
     stat=Stat.INTELLECT,
@@ -429,7 +429,7 @@ ASSASSINATION = WowSpec(
     id=259,
     wow_class=WowClass.ROGUE,
     translations=Language.EmptyTranslation(),
-    talents="1110011",
+    talents_blueprint="1110011",
     raid_role=RaidRole.DD,
     role=Role.MELEE,
     stat=Stat.AGILITY,
@@ -440,7 +440,7 @@ OUTLAW = WowSpec(
     id=260,
     wow_class=WowClass.ROGUE,
     translations=Language.EmptyTranslation(),
-    talents="1010011",
+    talents_blueprint="1010011",
     raid_role=RaidRole.DD,
     role=Role.MELEE,
     stat=Stat.AGILITY,
@@ -451,7 +451,7 @@ SUBTLETY = WowSpec(
     id=261,
     wow_class=WowClass.ROGUE,
     translations=Language.EmptyTranslation(),
-    talents="1110011",
+    talents_blueprint="1110011",
     raid_role=RaidRole.DD,
     role=Role.MELEE,
     stat=Stat.AGILITY,
@@ -462,7 +462,7 @@ ELEMENTAL = WowSpec(
     id=262,
     wow_class=WowClass.SHAMAN,
     translations=Language.EmptyTranslation(),
-    talents="1101011",
+    talents_blueprint="1101011",
     raid_role=RaidRole.DD,
     role=Role.RANGED,
     stat=Stat.INTELLECT,
@@ -473,7 +473,7 @@ ENHANCEMENT = WowSpec(
     id=263,
     wow_class=WowClass.SHAMAN,
     translations=Language.EmptyTranslation(),
-    talents="1101011",
+    talents_blueprint="1101011",
     raid_role=RaidRole.DD,
     role=Role.MELEE,
     stat=Stat.AGILITY,
@@ -484,7 +484,7 @@ RESTORATION_SHAMAN = WowSpec(
     id=264,
     wow_class=WowClass.SHAMAN,
     translations=Language.EmptyTranslation(),
-    talents="0100000",
+    talents_blueprint="0100000",
     raid_role=RaidRole.HEAL,
     role=Role.RANGED,
     stat=Stat.INTELLECT,
@@ -495,7 +495,7 @@ AFFLICTION = WowSpec(
     id=265,
     wow_class=WowClass.WARLOCK,
     translations=Language.EmptyTranslation(),
-    talents="1101011",
+    talents_blueprint="1101011",
     raid_role=RaidRole.DD,
     role=Role.RANGED,
     stat=Stat.INTELLECT,
@@ -506,7 +506,7 @@ DEMONOLOGY = WowSpec(
     id=266,
     wow_class=WowClass.WARLOCK,
     translations=Language.EmptyTranslation(),
-    talents="1101011",
+    talents_blueprint="1101011",
     raid_role=RaidRole.DD,
     role=Role.RANGED,
     stat=Stat.INTELLECT,
@@ -517,7 +517,7 @@ DESTRUCTION = WowSpec(
     id=267,
     wow_class=WowClass.WARLOCK,
     translations=Language.EmptyTranslation(),
-    talents="1101011",
+    talents_blueprint="1101011",
     raid_role=RaidRole.DD,
     role=Role.RANGED,
     stat=Stat.INTELLECT,
@@ -528,7 +528,7 @@ ARMS = WowSpec(
     id=71,
     wow_class=WowClass.WARRIOR,
     translations=Language.EmptyTranslation(),
-    talents="1010111",
+    talents_blueprint="1010111",
     raid_role=RaidRole.DD,
     role=Role.MELEE,
     stat=Stat.STRENGTH,
@@ -539,7 +539,7 @@ FURY = WowSpec(
     id=72,
     wow_class=WowClass.WARRIOR,
     translations=Language.EmptyTranslation(),
-    talents="1010111",
+    talents_blueprint="1010111",
     raid_role=RaidRole.DD,
     role=Role.MELEE,
     stat=Stat.STRENGTH,
@@ -550,7 +550,7 @@ PROTECTION_WARRIOR = WowSpec(
     id=73,
     wow_class=WowClass.WARRIOR,
     translations=Language.EmptyTranslation(),
-    talents="1010111",
+    talents_blueprint="1010111",
     raid_role=RaidRole.TANK,
     role=Role.MELEE,
     stat=Stat.STRENGTH,
