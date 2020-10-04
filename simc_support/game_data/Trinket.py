@@ -2,6 +2,7 @@ import json
 import pkg_resources
 import typing
 
+from simc_support.game_data.SimcObject import SimcObject
 import simc_support.game_data.ItemLevel as ItemLevel
 from simc_support.game_data.Language import _get_translations
 from simc_support.game_data.Language import EmptyTranslation
@@ -12,10 +13,10 @@ from simc_support.game_data.Stat import Stat
 from simc_support.game_data.WowSpec import WowSpec
 
 
-class Trinket(object):
+class Trinket(SimcObject):
     def __init__(
         self,
-        *,
+        *args,
         item_id: str,
         itemlevels: typing.List[int],
         role: Role,
@@ -25,6 +26,7 @@ class Trinket(object):
         source: Source = None,
         on_use: bool = False,
         bonus_ids: typing.Union[typing.List[int], typing.Tuple[int]] = (),
+        **kwargs,
     ):
         """Creates a Trinket instance
 
@@ -38,7 +40,7 @@ class Trinket(object):
             on_use (bool, optional): Is the trinket on use? Defaults to False.
             bonus_ids (typing.Union[typing.List[int], typing.Tuple[int]]):
         """
-        super(Trinket, self).__init__()
+        super().__init__(*args, full_name=translations.US, **kwargs)
         self.translations = translations
         self.name: str = self.translations.US
         self.item_id: str = str(item_id)
