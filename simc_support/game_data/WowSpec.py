@@ -599,6 +599,18 @@ WOWSPECS = [
 def get_wow_spec(
     wow_class: typing.Union[WowClass.WowClass, str], wow_spec: str
 ) -> WowSpec:
+    """Obtain WowSpec from a WowClass/Name and wow spec name combination.
+
+    Args:
+        wow_class (typing.Union[WowClass.WowClass, str]): Instance of a WowClass or the name of that WowClass, e.g. "Mage"
+        wow_spec (str): Name of the WowSpec, e.g. "Arcane"
+
+    Raises:
+        ValueError: An appropriate WowSpec couldn't be found.
+
+    Returns:
+        WowSpec
+    """
     if isinstance(wow_class, str):
         wow_class = WowClass.get_wow_class(wow_class)
 
@@ -606,24 +618,42 @@ def get_wow_spec(
         if spec.wow_class == wow_class and wow_spec in (spec.full_name, spec.simc_name):
             return spec
     raise ValueError(
-        f"No WowSpec found of class '{wow_class.simc_name}' and spec '{wow_spec}'"
+        f"No WowSpec found of class '{wow_class.simc_name}' and spec '{wow_spec}'."
     )
 
 
 def get_wow_spec_from_id(wow_spec_id: int) -> WowSpec:
+    """Obtain WoWSpec from a spec ID.
+
+    Args:
+        wow_spec_id (int): e.g. 62 (which would be Arcane Mage)
+
+    Raises:
+        ValueError: An appropriate WowSpec couldn't be found.
+
+    Returns:
+        WowSpec
+    """
     for spec in WOWSPECS:
         if spec.id == wow_spec_id:
             return spec
     raise ValueError(f"No WowSpec found with id '{wow_spec_id}'.")
 
 
-"""Obtain WoWSpec from a combined Class_Spec string from SimC with whitespace replaced by underscore"""
 def get_wow_spec_from_combined_simc_name(wow_class_spec_name: str) -> WowSpec:
+    """Obtain WoWSpec from a combined Class_Spec string from SimC with whitespace replaced by underscore.
+
+    Args:
+        wow_class_spec_name (str): e.g. "Death_Knight_Frost"
+
+    Raises:
+        ValueError: An appropriate WowSpec couldn't be found.
+
+    Returns:
+        WowSpec
+    """
     for spec in WOWSPECS:
-        tokenized_class_name = str(spec.wow_class).replace(" ", "_")
-        combined_name = f"{tokenized_class_name}_{spec.full_name}"
+        combined_name = f"{spec.wow_class} {spec.full_name}".replace(" ", "_")
         if combined_name == wow_class_spec_name:
             return spec
-    raise ValueError(
-        f"No WowSpec found for class_spec '{wow_class_spec_name}'"
-    )
+    raise ValueError(f"No WowSpec found for class_spec '{wow_class_spec_name}'.")
