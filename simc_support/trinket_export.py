@@ -1,4 +1,4 @@
-"""Exports trinkets from simc_support to three copy= .simc files for testing purpose.
+"""Exports trinkets from simc_support to three copy= .simc files for SimulationCraft testing purpose.
 """
 import typing
 
@@ -10,7 +10,7 @@ def print_simc_file(trinket_list: typing.List[Trinket], name: str):
     with open("trinkets_shadowlands_" + name + ".simc", "w") as f:
         f.write("# PROFILE FOR TESTING ONLY!\n")
         f.write(
-            "# This file provides all available trinkets for {}s.\n".format(
+            "# This file provides all available trinkets for {} and neutral ones.\n".format(
                 name.upper()
             )
         )
@@ -22,22 +22,20 @@ def print_simc_file(trinket_list: typing.List[Trinket], name: str):
         for trinket in trinket_list:
             f.write('copy="{}"\n'.format(trinket.name))
             f.write(
-                "trinket1=,id={},ilevel={}\n\n".format(
-                    trinket.item_id, trinket.min_itemlevel
-                )
+                f"trinket1=,id={trinket.item_id},ilevel={trinket.min_itemlevel}\n\n"
             )
 
 
 def main():
 
     trinkets = get_trinkets_for_spec(get_wow_spec("warrior", "arms"))
-    print_simc_file(trinkets, "melee")
+    print_simc_file(trinkets, "str")
 
     trinkets = get_trinkets_for_spec(get_wow_spec("hunter", "marksmanship"))
-    print_simc_file(trinkets, "hunter")
+    print_simc_file(trinkets, "agi")
 
     trinkets = get_trinkets_for_spec(get_wow_spec("shaman", "elemental"))
-    print_simc_file(trinkets, "caster")
+    print_simc_file(trinkets, "int")
 
 
 if __name__ == "__main__":
