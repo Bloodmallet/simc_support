@@ -615,3 +615,15 @@ def get_wow_spec_from_id(wow_spec_id: int) -> WowSpec:
         if spec.id == wow_spec_id:
             return spec
     raise ValueError(f"No WowSpec found with id '{wow_spec_id}'.")
+
+
+"""Obtain WoWSpec from a combined Class_Spec string from SimC with whitespace replaced by underscore"""
+def get_wow_spec_from_combined_simc_name(wow_class_spec_name: str) -> WowSpec:
+    for spec in WOWSPECS:
+        tokenized_class_name = str(spec.wow_class).replace(" ", "_")
+        combined_name = f"{tokenized_class_name}_{spec.full_name}"
+        if combined_name == wow_class_spec_name:
+            return spec
+    raise ValueError(
+        f"No WowSpec found for class_spec '{wow_class_spec_name}'"
+    )
