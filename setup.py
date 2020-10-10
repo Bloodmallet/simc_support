@@ -9,7 +9,7 @@ def readme():
 setup(
     name="simc_support",
     # schema: <wow_version, e.g. 9.0.1>.<own_version_per_wow_version><a/b/rc alpha/beta/release candidate bit><bit_id>
-    version="9.0.2.1a5",
+    version="9.0.2.1a6",
     author="Bloodmallet(EU)",
     author_email="bloodmalleteu@gmail.com",
     description="Data to support simulations for World of Warcraft with SimulationCraft.",
