@@ -22,3 +22,20 @@ class TestTalent(unittest.TestCase):
         for wow_spec in WOWSPECS:
             with self.subTest(wow_spec=wow_spec):
                 self.assertTrue(isinstance(get_talent_dict(wow_spec), dict))
+
+    def test_existance_of_all(self):
+        for wow_spec in WOWSPECS:
+            talents = wow_spec.talents
+            for row in range(1, 8):
+                for column in range(1, 4):
+                    with self.subTest(
+                        wow_spec=wow_spec, talents=talents, row=row, column=column
+                    ):
+                        self.assertTrue(
+                            row in talents,
+                            f"Talent row {row} for {wow_spec} was not found.",
+                        )
+                        self.assertTrue(
+                            column in talents[row],
+                            f"Talent {column} in row {row} for {wow_spec} was not found.",
+                        )

@@ -22,7 +22,7 @@ class Talent(object):
     ):
         self.wow_class_id = int(wow_class_id)
         self.wow_spec_id = int(wow_spec_id)
-        self.name = name
+        self.name = str(name)
         self.spell_id = int(spell_id)
         self.row = int(row)
         self.column = int(column)
@@ -70,7 +70,15 @@ def get_talent_dict(wow_spec: WowSpec, ptr: bool = None) -> dict:
     Returns:
         dict -- row -> column -> name, spell_id
     """
-    talents = list([talent for talent in TALENTS if talent.wow_spec_id == wow_spec.id])
+    talents = list(
+        [
+            talent
+            for talent in TALENTS
+            if talent.wow_spec_id == wow_spec.id
+            or talent.wow_spec_id == 0
+            and talent.wow_class_id == wow_spec.wow_class.id
+        ]
+    )
 
     result = {}
     for row in range(1, 8):
