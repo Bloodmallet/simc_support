@@ -96,7 +96,7 @@ def _load_conduits() -> typing.List[Conduit]:
                 spec_mask=conduit["id_spec_set"],
                 wow_specs=_get_specs(conduit),
                 spell_id=conduit["spell_id"],
-                ranks=conduit["ranks"],
+                ranks=list([rank + 1 for rank in conduit["ranks"]]),
                 translations=_get_translations(conduit),
             )
         )
