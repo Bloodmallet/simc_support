@@ -1,4 +1,4 @@
-# simc_support [![CI](https://github.com/Bloodmallet/simc_support/workflows/Python%20package/badge.svg)](https://github.com/Bloodmallet/simc_support/actions?query=workflow%3A%22Python+package%22)
+# simc_support [![CI](https://github.com/Bloodmallet/simc_support/workflows/CI/badge.svg)](https://github.com/Bloodmallet/simc_support/actions?query=workflow%3A%22CI%22)
 
 Data to support simulations for World of Warcraft with SimulationCraft for each current expansion. First three versioning numbers match World of Warcrafts' build version.
 
