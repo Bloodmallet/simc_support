@@ -127,7 +127,7 @@ KULTIRAN = Race(
 LIGHTFORGEDDRAENEI = Race(
     ALLIANCE,
     "Lightforged Draenei",
-    "lightforged_dranei",
+    "lightforged_draenei",
     {
         Language.US: "Lightforged Draenei",
         Language.IT: "Draenei Forgialuce",
