@@ -49,10 +49,10 @@ class SoulBindTalent(SimcObject):
             "Hammer of Genesis",
             "Bron's Call to Action",
             # Plague Deviser Marelith
-            "Plague's Preemptive Strike",
+            "Plaguey's Preemptive Strike",
             # Emeni
+            "Lead by Example",
             "Gnashing Chompers",
-            "Embody the Construct",
             # Bonesmith Heirmir
             "Heirmir's Arsenal: Marrowed Gemstone",
             # Niya
@@ -63,7 +63,6 @@ class SoulBindTalent(SimcObject):
             "Field of Blossom",
             "Social Butterfly",
             # Korayn
-            "Face Your Foes",
             "First Strike",
             "Wild Hunt Tactics",
             # Nadja the Mistblade
@@ -74,6 +73,9 @@ class SoulBindTalent(SimcObject):
             "Refined Palate",
             "Soothing Shade",
             "Wasteland Propriety",
+            # General Draven
+            "Superior Tactics",
+            "Built for War",
         ]
         return self.full_name in WHITELIST or self.is_potency
 
