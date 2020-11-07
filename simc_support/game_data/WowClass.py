@@ -9,7 +9,7 @@ class WowClass(SimcObject):
     def __init__(
         self,
         id: int,
-        races: typing.List[Race.Race],
+        races: typing.Tuple[Race.Race, ...],
         translations: Language.Translation,
         *args,
         **kwargs,
@@ -42,17 +42,17 @@ DEATHKNIGHT = WowClass(
 )
 DEMONHUNTER = WowClass(
     12,
-    [
+    (
         Race.NIGHTELF,
         Race.BLOODELF,
-    ],
+    ),
     Language.EmptyTranslation(),
     "Demon Hunter",
     "demon_hunter",
 )
 DRUID = WowClass(
     11,
-    [
+    (
         Race.NIGHTELF,
         Race.WORGEN,
         Race.KULTIRAN,
@@ -60,7 +60,7 @@ DRUID = WowClass(
         Race.TROLL,
         Race.HIGHMOUNTAINTAUREN,
         Race.ZANDALARITROLL,
-    ],
+    ),
     Language.EmptyTranslation(),
     "Druid",
     "druid",
@@ -68,7 +68,7 @@ DRUID = WowClass(
 HUNTER = WowClass(3, Race.RACES, Language.EmptyTranslation(), "Hunter", "hunter")
 MAGE = WowClass(
     8,
-    [
+    (
         Race.DRAENEI,
         Race.DWARF,
         Race.GNOME,
@@ -91,14 +91,14 @@ MAGE = WowClass(
         Race.MAGHARORC,
         Race.ZANDALARITROLL,
         Race.VULPERA,
-    ],
+    ),
     Language.EmptyTranslation(),
     "Mage",
     "mage",
 )
 MONK = WowClass(
     10,
-    [
+    (
         Race.DRAENEI,
         Race.DWARF,
         Race.GNOME,
@@ -120,14 +120,14 @@ MONK = WowClass(
         Race.MAGHARORC,
         Race.ZANDALARITROLL,
         Race.VULPERA,
-    ],
+    ),
     Language.EmptyTranslation(),
     "Monk",
     "monk",
 )
 PALADIN = WowClass(
     2,
-    [
+    (
         Race.DRAENEI,
         Race.DWARF,
         Race.HUMAN,
@@ -136,14 +136,14 @@ PALADIN = WowClass(
         Race.BLOODELF,
         Race.TAUREN,
         Race.ZANDALARITROLL,
-    ],
+    ),
     Language.EmptyTranslation(),
     "Paladin",
     "paladin",
 )
 PRIEST = WowClass(
     5,
-    [
+    (
         Race.DRAENEI,
         Race.DWARF,
         Race.GNOME,
@@ -166,14 +166,14 @@ PRIEST = WowClass(
         Race.MAGHARORC,
         Race.ZANDALARITROLL,
         Race.VULPERA,
-    ],
+    ),
     Language.EmptyTranslation(),
     "Priest",
     "priest",
 )
 ROGUE = WowClass(
     4,
-    [
+    (
         Race.DWARF,
         Race.GNOME,
         Race.HUMAN,
@@ -194,14 +194,14 @@ ROGUE = WowClass(
         Race.MAGHARORC,
         Race.ZANDALARITROLL,
         Race.VULPERA,
-    ],
+    ),
     Language.EmptyTranslation(),
     "Rogue",
     "rogue",
 )
 SHAMAN = WowClass(
     7,
-    [
+    (
         Race.DRAENEI,
         Race.DWARF,
         Race.PANDAREN_ALLIANCE,
@@ -216,14 +216,14 @@ SHAMAN = WowClass(
         Race.MAGHARORC,
         Race.ZANDALARITROLL,
         Race.VULPERA,
-    ],
+    ),
     Language.EmptyTranslation(),
     "Shaman",
     "shaman",
 )
 WARLOCK = WowClass(
     9,
-    [
+    (
         Race.DWARF,
         Race.GNOME,
         Race.HUMAN,
@@ -238,7 +238,7 @@ WARLOCK = WowClass(
         Race.UNDEAD,
         Race.NIGHTBORNE,
         Race.VULPERA,
-    ],
+    ),
     Language.EmptyTranslation(),
     "Warlock",
     "warlock",

@@ -19,13 +19,13 @@ class Trinket(SimcObject):
         *args,
         item_id: str,
         itemlevels: typing.List[int],
-        role: Role,
+        role: typing.Optional[Role],
         stats: typing.Union[typing.List[Stat], typing.Tuple[Stat]],
         class_mask: int,
         translations: Translation,
         source: Source = None,
         on_use: bool = False,
-        bonus_ids: typing.Union[typing.List[int], typing.Tuple[int]] = (),
+        bonus_ids: typing.Union[typing.Tuple, typing.List[int], typing.Tuple[int]] = (),
         **kwargs,
     ):
         """Creates a Trinket instance
@@ -40,7 +40,7 @@ class Trinket(SimcObject):
             on_use (bool, optional): Is the trinket on use? Defaults to False.
             bonus_ids (typing.Union[typing.List[int], typing.Tuple[int]]):
         """
-        super().__init__(*args, full_name=translations.US, **kwargs)
+        super().__init__(translations.US, *args,  **kwargs)
         self.translations = translations
         self.name: str = self.translations.US
         self.item_id: str = str(item_id)
@@ -161,7 +161,7 @@ def _load_trinkets() -> typing.List[Trinket]:
 TRINKETS: typing.List[Trinket] = _load_trinkets()
 
 
-def get_trinkets_for_spec(wow_spec: WowSpec) -> typing.Tuple[Trinket]:
+def get_trinkets_for_spec(wow_spec: WowSpec) -> typing.Tuple[Trinket, ...]:
     """New function to return all available trinkets for a spec
 
     Arguments:
@@ -192,7 +192,7 @@ def get_versatility_trinket(stat: Stat) -> Trinket:
     if stat == Stat.AGILITY:
         # "Stat Stick (Versatility)", "142506,bonus_id=607"
         return Trinket(
-            item_id=142506,
+            item_id="142506",
             bonus_ids=[
                 607,
             ],
@@ -209,7 +209,7 @@ def get_versatility_trinket(stat: Stat) -> Trinket:
     elif stat == Stat.INTELLECT:
         # "Stat Stick (Versatility)", "142507,bonus_id=607"
         return Trinket(
-            item_id=142507,
+            item_id="142507",
             bonus_ids=[
                 607,
             ],
@@ -226,7 +226,7 @@ def get_versatility_trinket(stat: Stat) -> Trinket:
     elif stat == Stat.STRENGTH:
         # "Stat Stick (Versatility)", "142508,bonus_id=607"
         return Trinket(
-            item_id=142508,
+            item_id="142508",
             bonus_ids=[
                 607,
             ],
@@ -240,3 +240,4 @@ def get_versatility_trinket(stat: Stat) -> Trinket:
             source=Source.UNKNOWN,
             on_use=False,
         )
+    raise ValueError(f"Unknown stat {stat}. No Versatility trinket available.")

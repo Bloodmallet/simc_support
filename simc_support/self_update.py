@@ -1,6 +1,8 @@
 """
 This script updates data_files by using SimulationCrafts casc and dbc extractors.
 Basically; execute this script once per patch.
+
+e.g. python self_update.py -s ../../simulationcraft/ --beta --no-load --no-extract
 """
 import argparse
 import json
@@ -275,7 +277,7 @@ def dbc(args: object, files: typing.List[str]) -> None:
             )
             if process.returncode != 0:
                 logger.error(
-                    f"Error occured while extracting {file} {locale}. {process.stderr}"
+                    f"Error occured while extracting {file} {locale}. {process.stderr.decode()}"
                 )
             else:
                 with open(
@@ -385,7 +387,7 @@ def update_trinkets(args: object) -> None:
             logger.info(f"No specializations found for {item_id}")
         else:
             logger.info(f"Specializations found for {item_id}: {mask}")
-        return any(mask)
+        return mask
 
     trinkets = merge_information(data, filter_function=is_approved)
     for trinket in trinkets:
@@ -607,10 +609,11 @@ def update_conduits(args: object) -> None:
     ranks = merge_information(data[RANK], translation_field=None)
     specs = data[SPECSETMEMBER][_LOCALES[0]]
 
-    def _get_spell_id(conduit: dict) -> int:
+    def _get_spell_id(conduit: dict) -> typing.Optional[int]:
         for rank in ranks:
             if rank["id_parent"] == conduit["id"]:
                 return rank["id_spell"]
+        return None
 
     def _get_ranks(conduit: dict) -> typing.List[int]:
         return list(

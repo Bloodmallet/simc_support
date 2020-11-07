@@ -72,7 +72,7 @@ def _load_legendaries() -> typing.List[Legendary]:
 LEGENDARIES: typing.List[Legendary] = _load_legendaries()
 
 
-def get_legendaries_for_spec(wow_spec: WowSpec) -> typing.Tuple[Legendary]:
+def get_legendaries_for_spec(wow_spec: WowSpec) -> typing.Tuple[Legendary, ...]:
     """Return a tuple of legendaries for the provided WowSpec.
 
     Args:

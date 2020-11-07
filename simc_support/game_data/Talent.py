@@ -5,7 +5,7 @@ import typing
 try:
     from simc_support.game_data.WowSpec import WowSpec
 except ImportError:
-    WowSpec: object = None
+    WowSpec: object = None # type: ignore # test setup
 from simc_support.game_data.Language import Translation, _get_translations
 
 
@@ -80,7 +80,7 @@ def get_talent_dict(wow_spec: WowSpec, ptr: bool = None) -> dict:
         ]
     )
 
-    result = {}
+    result = {} # type: ignore # newer python versions and thus mypy versions want an annotation here
     for row in range(1, 8):
         result[row] = {}
 

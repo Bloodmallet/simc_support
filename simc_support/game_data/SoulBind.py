@@ -117,7 +117,7 @@ class SoulBind(SimcObject):
             )
 
     @property
-    def talent_paths(self) -> typing.List[SoulBindTalent]:
+    def talent_paths(self) -> typing.List[typing.List[SoulBindTalent]]:
         max_tier = 7
 
         paths: typing.List[typing.List[SoulBindTalent]] = [[]]

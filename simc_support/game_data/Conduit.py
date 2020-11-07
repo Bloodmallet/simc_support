@@ -106,7 +106,7 @@ def _load_conduits() -> typing.List[Conduit]:
 CONDUITS: typing.List[Conduit] = _load_conduits()
 
 
-def get_conduits_for_spec(wow_spec: WowSpec) -> typing.Tuple[Conduit]:
+def get_conduits_for_spec(wow_spec: WowSpec) -> typing.Tuple[Conduit, ...]:
     """Return all dps conduits for a spec.
 
     Arguments:

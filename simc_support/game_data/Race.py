@@ -12,7 +12,7 @@ class Race(SimcObject):
 
     def __init__(
         self,
-        faction: Faction,
+        faction: Faction.Faction,
         full_name: str,
         simc_name: str,
         translations: typing.Union[typing.Dict, Translation],

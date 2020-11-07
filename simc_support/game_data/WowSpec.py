@@ -68,7 +68,7 @@ class WowSpec(SimcObject):
         """
 
         if not all([talent in "0123" for talent in talent_combination]):
-            return ValueError("Unexpected talent value. Values can be 0, 1, 2, 3.")
+            raise ValueError("Unexpected talent value. Values can be 0, 1, 2, 3.")
 
         for row, column in enumerate(self.talents_blueprint):
             if talent_combination[row] == "0" and column == "1":
@@ -89,15 +89,15 @@ class WowSpec(SimcObject):
             list[talent_combination{str}] -- List of all valied talent combinations for a class.
         """
 
-        combinations = []
+        combinations = () # type: ignore # newer python version and thus mypy want an annotation here
 
         if not user_input:
-            combinations = self._get_talent_combinations(
+            combinations = self._get_talent_combinations( # type: ignore
                 "xxxxxxx",
             )
 
         elif len(user_input) == 7:
-            combinations = self._get_talent_combinations(
+            combinations = self._get_talent_combinations( # type: ignore
                 user_input,
             )
 
@@ -130,14 +130,14 @@ class WowSpec(SimcObject):
             else:
                 pattern += blueprint[i]
 
-        combinations = itertools.product(
+        raw_combinations = itertools.product(
             "0123",
             repeat=len(self.talents_blueprint),
         )
 
         combinations = map(
             lambda combination: "".join(combination),
-            combinations,
+            raw_combinations,
         )
 
         def filter_combination(combination: str) -> bool:
