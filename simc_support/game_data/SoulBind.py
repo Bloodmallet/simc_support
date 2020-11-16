@@ -60,7 +60,7 @@ class SoulBindTalent(SimcObject):
             "Niya's Tools: Poison",
             "Grove Invigoration",
             # Dreamweaver
-            "Field of Blossom",
+            "Field of Blossoms",
             "Social Butterfly",
             # Korayn
             "First Strike",
