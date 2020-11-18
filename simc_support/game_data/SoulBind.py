@@ -41,7 +41,6 @@ class SoulBindTalent(SimcObject):
     def is_dps_increase(self) -> bool:
         WHITELIST = [
             # Pelagos
-            "Let Go of the Past",
             "Combat Meditation",
             # Kleia
             "Pointed Courage",
@@ -54,6 +53,7 @@ class SoulBindTalent(SimcObject):
             "Lead by Example",
             "Gnashing Chompers",
             # Bonesmith Heirmir
+            "Forgeborne Reveries",
             "Heirmir's Arsenal: Marrowed Gemstone",
             # Niya
             "Niya's Tools: Burrs",
