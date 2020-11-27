@@ -129,6 +129,11 @@ def _load_trinkets() -> typing.List[Trinket]:
         if starting_itemlevel > ItemLevel.UPPER_BOUND or not starting_itemlevel:
             return []
 
+        # add special cases here
+        # Spiritual Alchemy Stone
+        if item["name"] == "Spiritual Alchemy Stone":
+            return [200,]
+
         return [
             ilvl
             for ilvl in range(
