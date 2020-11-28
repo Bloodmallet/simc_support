@@ -134,6 +134,10 @@ def _load_trinkets() -> typing.List[Trinket]:
         if item["name"] == "Spiritual Alchemy Stone":
             return [200,]
 
+        # Darkmoon Decks
+        if "Darkmoon Deck:" in item["name"]:
+            return [200,]
+
         return [
             ilvl
             for ilvl in range(
