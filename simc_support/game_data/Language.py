@@ -2,6 +2,7 @@ import enum
 
 
 class Language(enum.Enum):
+    BR = "pt_BR"
     CN = "cn_CN"
     DE = "de_DE"
     ES = "es_ES"
@@ -17,6 +18,7 @@ class Translation(object):
 
     def __init__(
         self,
+        pt_BR: str = None,
         cn_CN: str = None,
         de_DE: str = None,
         es_ES: str = None,
@@ -47,10 +49,18 @@ class Translation(object):
                         setattr(self, language.name, translations[language])
             else:
                 raise ValueError(
-                    f"translations dictionary didn't contain expected keys. Got: {sorted(list(translations))} Expected keys: {languages}"
+                    f"'translations'-dictionary didn't contain expected keys. Got: {sorted(list(translations))} Expected keys: {sorted(languages)}"
                 )
         elif (
-            cn_CN and de_DE and es_ES and fr_FR and it_IT and ko_KR and ru_RU and en_US
+            cn_CN
+            and de_DE
+            and es_ES
+            and fr_FR
+            and it_IT
+            and ko_KR
+            and ru_RU
+            and en_US
+            and pt_BR
         ):
             self.CN = cn_CN
             self.DE = de_DE
@@ -60,6 +70,7 @@ class Translation(object):
             self.KR = ko_KR
             self.RU = ru_RU
             self.US = en_US
+            self.BR = pt_BR
         else:
             raise ValueError(
                 "Expected more information. Please make sure you have translations for all languages."
