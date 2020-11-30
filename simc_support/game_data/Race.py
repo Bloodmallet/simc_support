@@ -1,449 +1,432 @@
-races = {
-    "alliance": {
-        "draenei": (
-            "warrior",
-            "paladin",
-            "hunter",
-            "priest",
-            "shaman",
-            "mage",
-            "monk",
-            "death_knight",
-        ),
-        "dwarf": (
-            "warrior",
-            "paladin",
-            "hunter",
-            "rogue",
-            "priest",
-            "shaman",
-            "mage",
-            "warlock",
-            "monk",
-            "death_knight",
-        ),
-        "gnome": (
-            "warrior",
-            "hunter",
-            "rogue",
-            "priest",
-            "mage",
-            "warlock",
-            "monk",
-            "death_knight",
-        ),
-        "human": (
-            "warrior",
-            "paladin",
-            "hunter",
-            "rogue",
-            "priest",
-            "mage",
-            "warlock",
-            "monk",
-            "death_knight",
-        ),
-        "night_elf": (
-            "warrior",
-            "hunter",
-            "rogue",
-            "priest",
-            "mage",
-            "monk",
-            "druid",
-            "death_knight",
-            "demon_hunter",
-        ),
-        "pandaren": (
-            "warrior",
-            "hunter",
-            "rogue",
-            "priest",
-            "shaman",
-            "mage",
-            "monk",
-            "death_knight",
-        ),
-        "worgen": (
-            "warrior",
-            "hunter",
-            "rogue",
-            "priest",
-            "mage",
-            "warlock",
-            "druid",
-            "death_knight",
-        ),
-        "void_elf": (
-            "warrior",
-            "hunter",
-            "rogue",
-            "priest",
-            "mage",
-            "warlock",
-            "monk",
-            "death_knight",
-        ),
-        "lightforged_draenei": (
-            "warrior",
-            "paladin",
-            "hunter",
-            "priest",
-            "mage",
-            "death_knight",
-        ),
-        "dark_iron_dwarf": (
-            "warrior",
-            "paladin",
-            "hunter",
-            "rogue",
-            "priest",
-            "shaman",
-            "mage",
-            "warlock",
-            "monk",
-            "death_knight",
-        ),
-        "kul_tiran": (
-            "warrior",
-            "hunter",
-            "rogue",
-            "priest",
-            "shaman",
-            "mage",
-            "monk",
-            "druid",
-            "death_knight",
-        ),
-        "mechagnome": (
-            "warrior",
-            "hunter",
-            "rogue",
-            "priest",
-            "mage",
-            "warlock",
-            "monk",
-            "death_knight",
-        ),
-    },
-    "horde": {
-        "blood_elf": (
-            "warrior",
-            "paladin",
-            "hunter",
-            "rogue",
-            "priest",
-            "mage",
-            "warlock",
-            "monk",
-            "death_knight",
-            "demon_hunter",
-        ),
-        "goblin": (
-            "warrior",
-            "hunter",
-            "rogue",
-            "priest",
-            "shaman",
-            "mage",
-            "warlock",
-            "death_knight",
-        ),
-        "orc": (
-            "warrior",
-            "hunter",
-            "rogue",
-            "shaman",
-            "mage",
-            "warlock",
-            "monk",
-            "death_knight",
-        ),
-        "pandaren": (
-            "warrior",
-            "hunter",
-            "rogue",
-            "priest",
-            "shaman",
-            "mage",
-            "monk",
-            "death_knight",
-        ),
-        "tauren": (
-            "warrior",
-            "paladin",
-            "hunter",
-            "priest",
-            "shaman",
-            "monk",
-            "druid",
-            "death_knight",
-        ),
-        "troll": (
-            "warrior",
-            "hunter",
-            "rogue",
-            "priest",
-            "shaman",
-            "mage",
-            "warlock",
-            "monk",
-            "druid",
-            "death_knight",
-        ),
-        "undead": (
-            "warrior",
-            "hunter",
-            "rogue",
-            "priest",
-            "mage",
-            "warlock",
-            "monk",
-            "death_knight",
-        ),
-        "nightborne": (
-            "warrior",
-            "hunter",
-            "rogue",
-            "priest",
-            "mage",
-            "warlock",
-            "monk",
-            "death_knight",
-        ),
-        "highmountain_tauren": (
-            "warrior",
-            "hunter",
-            "shaman",
-            "monk",
-            "druid",
-            "death_knight",
-        ),
-        "maghar_orc": (
-            "warrior",
-            "hunter",
-            "rogue",
-            "priest",
-            "shaman",
-            "mage",
-            "monk",
-            "death_knight",
-        ),
-        "zandalari_troll": (
-            "warrior",
-            "paladin",
-            "hunter",
-            "rogue",
-            "priest",
-            "shaman",
-            "mage",
-            "monk",
-            "druid",
-            "death_knight",
-        ),
-        "vulpera": (
-            "warrior",
-            "hunter",
-            "rogue",
-            "priest",
-            "shaman",
-            "mage",
-            "warlock",
-            "monk",
-            "death_knight",
-        ),
-    }
-}
+import typing
 
-translations = {
-    "draenei": {
-        'en_US': 'Draenei',
-        'it_IT': 'Draenei',
-        'de_DE': 'Draenei',
-        'fr_FR': 'Draeneï',
-        'ru_RU': 'Дреней',
-        'es_ES': 'Draenei',
-        'ko_KR': '드레나이',
-        'cn_CN': '德莱尼'
+from simc_support.game_data import Faction
+from simc_support.game_data.Faction import ALLIANCE
+from simc_support.game_data.Faction import HORDE
+from simc_support.game_data.Language import Translation, Language
+from simc_support.game_data.SimcObject import SimcObject
+
+
+class Race(SimcObject):
+    """Race defines how your character looks, moves, and what racial ability you have."""
+
+    def __init__(
+        self,
+        faction: Faction.Faction,
+        full_name: str,
+        simc_name: str,
+        translations: typing.Union[typing.Dict, Translation],
+        *args,
+        **kwargs,
+    ) -> None:
+        super().__init__(full_name, simc_name, *args, **kwargs)
+
+        self.faction = faction
+
+        if isinstance(translations, Translation):
+            self.translations = translations
+        elif isinstance(translations, dict):
+            self.translations = Translation(translations=translations)
+        else:
+            raise TypeError(
+                "translations must either be a dictionary or a Translaton object."
+            )
+
+
+# Alliance
+DARKIRONDWARF = Race(
+    ALLIANCE,
+    "Dark Iron Dwarf",
+    "dark_iron_dwarf",
+    {
+        Language.US: "Dark Iron Dwarf",
+        Language.IT: "Nano Ferroscuro",
+        Language.DE: "Dunkeleisenzwerg",
+        Language.FR: "Nain sombrefer",
+        Language.RU: "Дворф из клана Черного Железа",
+        Language.ES: "Enano Hierro Negro",
+        Language.KR: "검은무쇠 드워프",
+        Language.CN: "黑铁矮人",
     },
-    "dwarf": {
-        'en_US': 'Dwarf',
-        'it_IT': 'Nano',
-        'de_DE': 'Zwerg',
-        'fr_FR': 'Nain',
-        'ru_RU': 'Дворф',
-        'es_ES': 'Enano',
-        'ko_KR': '드워프',
-        'cn_CN': '矮人'
+)
+DRAENEI = Race(
+    ALLIANCE,
+    "Draenei",
+    "draenei",
+    {
+        Language.US: "Draenei",
+        Language.IT: "Draenei",
+        Language.DE: "Draenei",
+        Language.FR: "Draeneï",
+        Language.RU: "Дреней",
+        Language.ES: "Draenei",
+        Language.KR: "드레나이",
+        Language.CN: "德莱尼",
     },
-    "gnome": {
-        'en_US': 'Gnome',
-        'it_IT': 'Gnomo',
-        'de_DE': 'Gnom',
-        'fr_FR': 'Gnome',
-        'ru_RU': 'Гном',
-        'es_ES': 'Gnomo',
-        'ko_KR': '노움',
-        'cn_CN': '侏儒'
+)
+DWARF = Race(
+    ALLIANCE,
+    "Dwarf",
+    "dwarf",
+    {
+        Language.US: "Dwarf",
+        Language.IT: "Nano",
+        Language.DE: "Zwerg",
+        Language.FR: "Nain",
+        Language.RU: "Дворф",
+        Language.ES: "Enano",
+        Language.KR: "드워프",
+        Language.CN: "矮人",
     },
-    "human": {
-        'en_US': 'Human',
-        'it_IT': 'Umano',
-        'de_DE': 'Mensch',
-        'fr_FR': 'Humain',
-        'ru_RU': 'Человек',
-        'es_ES': 'Humano',
-        'ko_KR': '인간',
-        'cn_CN': '人类'
+)
+GNOME = Race(
+    ALLIANCE,
+    "Gnome",
+    "gnome",
+    {
+        Language.US: "Gnome",
+        Language.IT: "Gnomo",
+        Language.DE: "Gnom",
+        Language.FR: "Gnome",
+        Language.RU: "Гном",
+        Language.ES: "Gnomo",
+        Language.KR: "노움",
+        Language.CN: "侏儒",
     },
-    "night_elf": {
-        'en_US': 'Night Elf',
-        'it_IT': 'Elfo della Notte',
-        'de_DE': 'Nachtelf',
-        'fr_FR': 'Elfe de la nuit',
-        'ru_RU': 'Ночной эльф',
-        'es_ES': 'Elfo de la noche',
-        'ko_KR': '나이트 엘프',
-        'cn_CN': '暗夜精灵'
+)
+HUMAN = Race(
+    ALLIANCE,
+    "Human",
+    "human",
+    {
+        Language.US: "Human",
+        Language.IT: "Umano",
+        Language.DE: "Mensch",
+        Language.FR: "Humain",
+        Language.RU: "Человек",
+        Language.ES: "Humano",
+        Language.KR: "인간",
+        Language.CN: "人类",
     },
-    "worgen": {
-        'en_US': 'Worgen',
-        'it_IT': 'Worgen',
-        'de_DE': 'Worgen',
-        'fr_FR': 'Worgen',
-        'ru_RU': 'Ворген',
-        'es_ES': 'Huargen',
-        'ko_KR': '늑대인간',
-        'cn_CN': '狼人'
+)
+KULTIRAN = Race(
+    ALLIANCE,
+    "Kul Tiran",
+    "kul_tiran",
+    {
+        Language.US: "Kul Tiran",
+        Language.IT: "Kul Tirano",
+        Language.DE: "Kul Tiraner",
+        Language.FR: "Kultirassien",
+        Language.RU: "Култирасец",
+        Language.ES: "Ciudadano de Kul Tiras",
+        Language.KR: "쿨 티란",
+        Language.CN: "库尔提拉斯人",
     },
-    "void_elf": {
-        'en_US': 'Void Elf',
-        'it_IT': 'Elfo del Vuoto',
-        'de_DE': 'Leerenelf',
-        'fr_FR': 'Elfe du Vide',
-        'ru_RU': 'Эльф Бездны',
-        'es_ES': 'Elfo del Vacío',
-        'ko_KR': '공허 엘프',
-        'cn_CN': '虚空精灵'
+)
+LIGHTFORGEDDRAENEI = Race(
+    ALLIANCE,
+    "Lightforged Draenei",
+    "lightforged_draenei",
+    {
+        Language.US: "Lightforged Draenei",
+        Language.IT: "Draenei Forgialuce",
+        Language.DE: "Lichtgeschmiedeter Draenei",
+        Language.FR: "Draeneï sancteforge",
+        Language.RU: "Озаренный дреней",
+        Language.ES: "Draenei forjado por la Luz",
+        Language.KR: "빛벼림 드레나이",
+        Language.CN: "光铸德莱尼",
     },
-    "lightforged_draenei": {
-        'en_US': 'Lightforged Draenei',
-        'it_IT': 'Draenei Forgialuce',
-        'de_DE': 'Lichtgeschmiedeter Draenei',
-        'fr_FR': 'Draeneï sancteforge',
-        'ru_RU': 'Озаренный дреней',
-        'es_ES': 'Draenei forjado por la Luz',
-        'ko_KR': '빛벼림 드레나이',
-        'cn_CN': '光铸德莱尼'
+)
+MECHAGNOME = Race(
+    ALLIANCE,
+    "Mechagnome",
+    "mechagnome",
+    {
+        Language.US: "Mechagnome",
+        Language.IT: "Meccagnomo",
+        Language.DE: "Mechagnom",
+        Language.FR: "Mécagnome",
+        Language.RU: "Механогном",
+        Language.ES: "Mecagnomo",
+        Language.KR: "기계노움",
+        Language.CN: "机械侏儒",
     },
-    "dark_iron_dwarf": {
-        'en_US': 'Dark Iron Dwarf',
-        'it_IT': 'Nano Ferroscuro',
-        'de_DE': 'Dunkeleisenzwerg',
-        'fr_FR': 'Nain sombrefer',
-        'ru_RU': 'Дворф из клана Черного Железа',
-        'es_ES': 'Enano Hierro Negro',
-        'ko_KR': '검은무쇠 드워프',
-        'cn_CN': '黑铁矮人'
+)
+NIGHTELF = Race(
+    ALLIANCE,
+    "Night Elf",
+    "night_elf",
+    {
+        Language.US: "Night Elf",
+        Language.IT: "Elfo della Notte",
+        Language.DE: "Nachtelf",
+        Language.FR: "Elfe de la nuit",
+        Language.RU: "Ночной эльф",
+        Language.ES: "Elfo de la noche",
+        Language.KR: "나이트 엘프",
+        Language.CN: "暗夜精灵",
     },
-    "blood_elf": {
-        'en_US': 'Blood Elf',
-        'it_IT': 'Elfo del Sangue',
-        'de_DE': 'Blutelf',
-        'fr_FR': 'Elfe de sang',
-        'ru_RU': 'Эльф крови',
-        'es_ES': 'Elfo de sangre',
-        'ko_KR': '블러드 엘프',
-        'cn_CN': '血精灵'
+)
+PANDAREN_ALLIANCE = Race(
+    ALLIANCE,
+    "Pandaren",
+    "pandaren",
+    {
+        Language.US: "Pandaren",
+        Language.IT: "Pandaren",
+        Language.DE: "Pandaren",
+        Language.FR: "Pandaren",
+        Language.RU: "Пандарен",
+        Language.ES: "Pandaren",
+        Language.KR: "판다렌",
+        Language.CN: "熊猫人",
     },
-    "goblin": {
-        'en_US': 'Goblin',
-        'it_IT': 'Goblin',
-        'de_DE': 'Goblin',
-        'fr_FR': 'Gobelin',
-        'ru_RU': 'Гоблин',
-        'es_ES': 'Goblin',
-        'ko_KR': '고블린',
-        'cn_CN': '地精'
+)
+WORGEN = Race(
+    ALLIANCE,
+    "Worgen",
+    "worgen",
+    {
+        Language.US: "Worgen",
+        Language.IT: "Worgen",
+        Language.DE: "Worgen",
+        Language.FR: "Worgen",
+        Language.RU: "Ворген",
+        Language.ES: "Huargen",
+        Language.KR: "늑대인간",
+        Language.CN: "狼人",
     },
-    "orc": {
-        'en_US': 'Orc',
-        'it_IT': 'Orco',
-        'de_DE': 'Orc',
-        'fr_FR': 'Orc',
-        'ru_RU': 'Орк',
-        'es_ES': 'Orco',
-        'ko_KR': '오크',
-        'cn_CN': '兽人'
+)
+VOIDELF = Race(
+    ALLIANCE,
+    "Void Elf",
+    "void_elf",
+    {
+        Language.US: "Void Elf",
+        Language.IT: "Elfo del Vuoto",
+        Language.DE: "Leerenelf",
+        Language.FR: "Elfe du Vide",
+        Language.RU: "Эльф Бездны",
+        Language.ES: "Elfo del Vacío",
+        Language.KR: "공허 엘프",
+        Language.CN: "虚空精灵",
     },
-    "pandaren": {
-        'en_US': 'Pandaren',
-        'it_IT': 'Pandaren',
-        'de_DE': 'Pandaren',
-        'fr_FR': 'Pandaren',
-        'ru_RU': 'Пандарен',
-        'es_ES': 'Pandaren',
-        'ko_KR': '판다렌',
-        'cn_CN': '熊猫人'
+)
+
+# Horde
+BLOODELF = Race(
+    HORDE,
+    "Blood Elf",
+    "blood_elf",
+    {
+        Language.US: "Blood Elf",
+        Language.IT: "Elfo del Sangue",
+        Language.DE: "Blutelf",
+        Language.FR: "Elfe de sang",
+        Language.RU: "Эльф крови",
+        Language.ES: "Elfo de sangre",
+        Language.KR: "블러드 엘프",
+        Language.CN: "血精灵",
     },
-    "tauren": {
-        'en_US': 'Tauren',
-        'it_IT': 'Tauren',
-        'de_DE': 'Tauren',
-        'fr_FR': 'Tauren',
-        'ru_RU': 'Таурен',
-        'es_ES': 'Tauren',
-        'ko_KR': '타우렌',
-        'cn_CN': '牛头人'
+)
+GOBLIN = Race(
+    HORDE,
+    "Goblin",
+    "goblin",
+    {
+        Language.US: "Goblin",
+        Language.IT: "Goblin",
+        Language.DE: "Goblin",
+        Language.FR: "Gobelin",
+        Language.RU: "Гоблин",
+        Language.ES: "Goblin",
+        Language.KR: "고블린",
+        Language.CN: "地精",
     },
-    "troll": {
-        'en_US': 'Troll',
-        'it_IT': 'Troll',
-        'de_DE': 'Troll',
-        'fr_FR': 'Troll',
-        'ru_RU': 'Тролль',
-        'es_ES': 'Trol',
-        'ko_KR': '트롤',
-        'cn_CN': '巨魔'
+)
+HIGHMOUNTAINTAUREN = Race(
+    HORDE,
+    "Hightmountain Tauren",
+    "highmountain_tauren",
+    {
+        Language.US: "Highmountain Tauren",
+        Language.IT: "Tauren di Alto Monte",
+        Language.DE: "Hochbergtauren",
+        Language.FR: "Tauren de Haut-Roc",
+        Language.RU: "Таурен Крутогорья",
+        Language.ES: "Tauren Monte Alto",
+        Language.KR: "높은산 타우렌",
+        Language.CN: "至高岭牛头人",
     },
-    "undead": {
-        'en_US': 'Undead',
-        'it_IT': 'Non Morto',
-        'de_DE': 'Untoter',
-        'fr_FR': 'Mort-vivant',
-        'ru_RU': 'Нежить',
-        'es_ES': 'No-muerto',
-        'ko_KR': '언데드',
-        'cn_CN': '亡灵'
+)
+MAGHARORC = Race(
+    HORDE,
+    "Mag'har Orc",
+    "maghar_orc",
+    {
+        Language.US: "Mag'har Orc",
+        Language.IT: "Orco Mag'har",
+        Language.DE: "Mag'har",
+        Language.FR: "Orc mag’har",
+        Language.RU: "Маг'хар",
+        Language.ES: "Orco Mag'har",
+        Language.KR: "마그하르 오크",
+        Language.CN: "玛格汉兽人",
     },
-    "nightborne": {
-        'en_US': 'Nightborne',
-        'it_IT': 'Nobile Oscuro',
-        'de_DE': 'Nachtgeborener',
-        'fr_FR': 'Sacrenuit',
-        'ru_RU': 'Ночнорожденный',
-        'es_ES': 'Nocheterna',
-        'ko_KR': '나이트본',
-        'cn_CN': '夜之子'
+)
+NIGHTBORNE = Race(
+    HORDE,
+    "Nightborne",
+    "nightborne",
+    {
+        Language.US: "Nightborne",
+        Language.IT: "Nobile Oscuro",
+        Language.DE: "Nachtgeborener",
+        Language.FR: "Sacrenuit",
+        Language.RU: "Ночнорожденный",
+        Language.ES: "Nocheterna",
+        Language.KR: "나이트본",
+        Language.CN: "夜之子",
     },
-    "highmountain_tauren": {
-        'en_US': 'Highmountain Tauren',
-        'it_IT': 'Tauren di Alto Monte',
-        'de_DE': 'Hochbergtauren',
-        'fr_FR': 'Tauren de Haut-Roc',
-        'ru_RU': 'Таурен Крутогорья',
-        'es_ES': 'Tauren Monte Alto',
-        'ko_KR': '높은산 타우렌',
-        'cn_CN': '至高岭牛头人'
+)
+ORC = Race(
+    HORDE,
+    "Orc",
+    "orc",
+    {
+        Language.US: "Orc",
+        Language.IT: "Orco",
+        Language.DE: "Orc",
+        Language.FR: "Orc",
+        Language.RU: "Орк",
+        Language.ES: "Orco",
+        Language.KR: "오크",
+        Language.CN: "兽人",
     },
-    "maghar_orc": {
-        'en_US': "Mag'har Orc",
-        'it_IT': "Orco Mag'har",
-        'de_DE': "Mag'har",
-        'fr_FR': 'Orc mag’har',
-        'ru_RU': "Маг'хар",
-        'es_ES': "Orco Mag'har",
-        'ko_KR': '마그하르 오크',
-        'cn_CN': '玛格汉兽人'
-    }
-}
+)
+PANDAREN_HORDE = Race(
+    HORDE,
+    "Pandaren",
+    "pandaren",
+    {
+        Language.US: "Pandaren",
+        Language.IT: "Pandaren",
+        Language.DE: "Pandaren",
+        Language.FR: "Pandaren",
+        Language.RU: "Пандарен",
+        Language.ES: "Pandaren",
+        Language.KR: "판다렌",
+        Language.CN: "熊猫人",
+    },
+)
+TAUREN = Race(
+    HORDE,
+    "Tauren",
+    "tauren",
+    {
+        Language.US: "Tauren",
+        Language.IT: "Tauren",
+        Language.DE: "Tauren",
+        Language.FR: "Tauren",
+        Language.RU: "Таурен",
+        Language.ES: "Tauren",
+        Language.KR: "타우렌",
+        Language.CN: "牛头人",
+    },
+)
+TROLL = Race(
+    HORDE,
+    "Troll",
+    "troll",
+    {
+        Language.US: "Troll",
+        Language.IT: "Troll",
+        Language.DE: "Troll",
+        Language.FR: "Troll",
+        Language.RU: "Тролль",
+        Language.ES: "Trol",
+        Language.KR: "트롤",
+        Language.CN: "巨魔",
+    },
+)
+UNDEAD = Race(
+    HORDE,
+    "Undead",
+    "undead",
+    {
+        Language.US: "Undead",
+        Language.IT: "Non Morto",
+        Language.DE: "Untoter",
+        Language.FR: "Mort-vivant",
+        Language.RU: "Нежить",
+        Language.ES: "No-muerto",
+        Language.KR: "언데드",
+        Language.CN: "亡灵",
+    },
+)
+VULPERA = Race(
+    HORDE,
+    "Vulpera",
+    "vulpera",
+    {
+        Language.US: "Vulpera",
+        Language.IT: "Vulpera",
+        Language.DE: "Vulpera",
+        Language.FR: "Vulpérin",
+        Language.RU: "Вульпера",
+        Language.ES: "Vulpera",
+        Language.KR: "불페라",
+        Language.CN: "狐人",
+    },
+)
+ZANDALARITROLL = Race(
+    HORDE,
+    "Zandalari Troll",
+    "zandalari_troll",
+    {
+        Language.US: "Zandalari Troll",
+        Language.IT: "Troll Zandalari",
+        Language.DE: "Zandalaritroll",
+        Language.FR: "Troll zandalari",
+        Language.RU: "Зандалар",
+        Language.ES: "Trol Zandalari",
+        Language.KR: "잔달라 트롤",
+        Language.CN: "赞达拉巨魔",
+    },
+)
+
+RACES = (
+    DARKIRONDWARF,
+    DRAENEI,
+    DWARF,
+    GNOME,
+    HUMAN,
+    KULTIRAN,
+    LIGHTFORGEDDRAENEI,
+    MECHAGNOME,
+    NIGHTELF,
+    PANDAREN_ALLIANCE,
+    WORGEN,
+    VOIDELF,
+    BLOODELF,
+    GOBLIN,
+    HIGHMOUNTAINTAUREN,
+    MAGHARORC,
+    NIGHTBORNE,
+    ORC,
+    PANDAREN_HORDE,
+    TAUREN,
+    TROLL,
+    UNDEAD,
+    VULPERA,
+    ZANDALARITROLL,
+)
+
+
+def get_race(name: str) -> Race:
+    for race in RACES:
+        if race.full_name == name or race.simc_name == name:
+            return race
+    raise ValueError(f"No race '{name}' found.")

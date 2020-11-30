@@ -1,20 +1,20 @@
-# Compiled python modules.
-*.pyc
-
-# Setuptools distribution folder.
-/dist/
-
-# Python egg metadata, regenerated from source files by setuptools.
-/*.egg-info
-
-# build directory from adding installing in local dev
-/build/
-
-# local dev environement
-/env/
-
-/__pycache__/
-
+# directories
+__pycache__/
 .mypy_cache/
-
+.pytest_cache/
 .vscode/
+# build directory from adding installing in local dev
+build/
+dist/
+env*/
+htmlcov/
+junit/
+tmp/
+
+# files
+.coverage
+# Python egg metadata, regenerated from source files by setuptools.
+*.egg-info
+*.pyc
+*.simc
+coverage.xml

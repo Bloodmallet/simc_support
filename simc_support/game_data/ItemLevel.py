@@ -1,29 +1,23 @@
 # these values are used throughout the code to determine itemlevel "borders" of items
 # usually used as a catch up mechanic, drops usually all items from previous content
 TRADER_TOKEN = -1
-WORLD_QUEST_ITEMLEVEL = 300
-WORLD_QUEST_ITEMLEVEL_MAX = 430
+WORLD_QUEST_ITEMLEVELS = [
+    144,
+]  # guess
 # standard dungeon itemlevel (normal, max level dungeon)
-DUNGEON_ITEMLEVEL = 400
-MECHAGON = 415
+DUNGEON_ITEMLEVEL = 157  # 183 is mythic
 # highest available itemlevel from m+ dungeons. weekly chest is NOT included here
-M_PLUS_ITEMLEVEL = 465
-# currently highest itemlevel titanforging cap
-TITANFORGE_CAP = -1
+M_PLUS_ITEMLEVEL = 213
 # titanforging is dead, this now reflects the weekly chest
-WEEKLY_CHEST = 475
+WEEKLY_CHEST = 226
 
 # world related
-EMISSARY = 445
-DARKSHORE = 385
-NAZJATAR = 385
+EMISSARY = 170  # guess
 
 # raids
-ULDIR = 340
-DAZARALOR = 370
-CRUCIBLE_OF_THE_STORMS = 375
-ETERNAL_PALACE = 400
-NYALOTHA = 430
-NZOTH = NYALOTHA + 10
-# usual itemlevel increase over the difficulties of a raid
-RAID_INCREASE = 45
+CASTLE_NATHRIA = [187, 200, 213, 226]
+CASTLE_NATHRIA_ENDBOSSES = [ilvl + 7 for ilvl in CASTLE_NATHRIA]
+
+STEP_SIZE = 13
+
+UPPER_BOUND = CASTLE_NATHRIA_ENDBOSSES[-1]

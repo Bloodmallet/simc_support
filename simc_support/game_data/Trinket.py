@@ -1,906 +1,273 @@
-from .ItemLevel import *     # pylint: disable=unused-wildcard-import
-from . import Source
+import json
+import pkg_resources
+import typing
+
+from simc_support.game_data.SimcObject import SimcObject
+import simc_support.game_data.ItemLevel as ItemLevel
+from simc_support.game_data.Language import _get_translations
+from simc_support.game_data.Language import EmptyTranslation
+from simc_support.game_data.Language import Translation
+from simc_support.game_data.Role import Role
+from simc_support.game_data.Source import Source
+from simc_support.game_data.Stat import Stat
+from simc_support.game_data.WowSpec import WowSpec
 
 
-class Trinket(object):
-    """docstring for trinket"""
-
+class Trinket(SimcObject):
     def __init__(
         self,
-        name,
-        item_id,
-        min_itemlevel,
-        max_itemlevel,
-        max_itemlevel_drop,
-        agility,
-        intellect,
-        strength,
-        melee,
-        ranged,
-        legendary=False,
-        source=None,
-        active=False
+        *args,
+        item_id: str,
+        itemlevels: typing.List[int],
+        role: typing.Optional[Role],
+        stats: typing.Union[typing.List[Stat], typing.Tuple[Stat]],
+        class_mask: int,
+        translations: Translation,
+        source: Source = None,
+        on_use: bool = False,
+        bonus_ids: typing.Union[typing.Tuple, typing.List[int], typing.Tuple[int]] = (),
+        **kwargs,
     ):
-        super(Trinket, self).__init__()
-        self.name: str = str(name)
+        """Creates a Trinket instance
+
+        Args:
+            item_id (str): Item ID
+            itemlevels (typing.List[int]): item is available at all these itemlevels
+            role (Role):
+            stats (typing.Union[typing.List[Stat], typing.Tuple[Stat]]): primary stats
+            translations (Translation): name of the item in all languages
+            source (str, optional): Drop source. Defaults to None.
+            on_use (bool, optional): Is the trinket on use? Defaults to False.
+            bonus_ids (typing.Union[typing.List[int], typing.Tuple[int]]):
+        """
+        super().__init__(translations.US, *args, **kwargs)
+        self.translations = translations
+        self.name: str = self.translations.US
         self.item_id: str = str(item_id)
-        self.min_itemlevel: int = int(min_itemlevel)
-        self.max_itemlevel: int = int(max_itemlevel)
-        self.max_itemlevel_drop: int = int(max_itemlevel_drop)
-        self.agility: bool = bool(agility)
-        self.intellect: bool = bool(intellect)
-        self.strength: bool = bool(strength)
-        self.melee: bool = bool(melee)
-        self.ranged: bool = bool(ranged)
-        self.legendary: bool = bool(legendary)
-        self.source: str = str(source)
-        self.active: bool = bool(active)
+        self.itemlevels: list = sorted(itemlevels)
 
-    def get_name(self):
-        return self.name
+        if isinstance(stats, list) or isinstance(stats, tuple):
+            for element in stats:
+                if element not in Stat:
+                    raise TypeError("One or more provided stats are unknown.")
+        else:
+            raise TypeError(f"stats: Expected list or tuple. Got {type(stats)}")
+        if isinstance(stats, list) or isinstance(stats, tuple):
+            self.stats = tuple(stats)
 
-    def get_id(self):
-        return self.item_id
+        self.class_mask = class_mask
+        self.role = role
 
-    def get_source(self):
-        return self.source
+        if not isinstance(source, Source):
+            raise ValueError(f"Unknown source '{source}'.")
+        self.source: Source = source
+
+        self.on_use: bool = bool(on_use)
+
+        if isinstance(bonus_ids, list) or isinstance(bonus_ids, tuple):
+            for bonus in bonus_ids:
+                if not isinstance(bonus, int):
+                    raise TypeError("One or more provided bonus IDs was not an INT.")
+        else:
+            raise TypeError(f"bonus_id: Expected list or tuple. Got {type(bonus_ids)}")
+        if isinstance(bonus_ids, list) or isinstance(bonus_ids, tuple):
+            self.bonus_ids = tuple(bonus_ids)
+
+    @property
+    def min_itemlevel(self) -> int:
+        return self.itemlevels[0]
+
+    @property
+    def max_itemlevel(self) -> int:
+        return self.itemlevels[-1]
+
+    def is_usable_by_class(self, class_id: int) -> bool:
+        return bool(self.class_mask & 1 << (class_id - 1))
 
 
-trinket_list = [
-    # dungeon trinkets
-    Trinket( # atal'dazar
-        "My'das Talisman", "158319", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, True, False, False, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # atal'dazar
-        "Rezan's Gleaming Eye", "158712", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, False, False, True, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # atal'dazar
-        "Vessel of Skittering Shadows", "159610", DUNGEON_ITEMLEVEL,
-        WEEKLY_CHEST, M_PLUS_ITEMLEVEL, False, True, False, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # freehold
-        "Harlan's Loaded Dice", "155881", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, True, False, False, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # Kings' Rest
-        "Lustrous Golden Plumage", "159617", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, True, False, False, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # Shrine of the Storm
-        "Briny Barnacle", "159619", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, False, False, True, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # Shrine of the Storm
-        "Galecaller's Boon", "159614", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, True, False, False, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # Shrine of the Storm
-        "Conch of Dark Whispers", "159620", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, False, True, False, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # Siege of Boralus
-        "Dead-Eye Spyglass", "159623", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, True, False, False, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # Siege of Boralus
-        "Hadal's Nautilus", "159622", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, False, True, False, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # Temple of Sethraliss
-        "Tiny Electromental in a Jar", "158374", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, True, False, False, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # Temple of Sethraliss
-        "Merektha's Fang", "158367", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, False, False, True, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # The Motherlode
-        "Razdunk's Big Red Button", "159611", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, False, False, True, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # The Motherlode
-        "Azerokk's Resonating Heart", "159612", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, True, False, False, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # The Underrot
-        "Lingering Sporepods", "159626", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, True, False, True, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # The Underrot
-        "Rotcrusted Voodoo Doll", "159624", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, False, True, False, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # The Underrot
-        "Vial of Animated Blood", "159625", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, False, False, True, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # Tol Dagor
-        "Jes' Howler", "159627", DUNGEON_ITEMLEVEL, WEEKLY_CHEST, M_PLUS_ITEMLEVEL,
-        False, False, True, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # Tol Dagor
-        "Ignition Mage's Fuse", "159615", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, False, True, False, False, False, source=Source.DUNGEON, active=True
-    ),
-    Trinket( # Waycrest Manor
-        "Lady Waycrest's Music Box", "159631", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, False, True, False, False, False, source=Source.DUNGEON, active=False
-    ),
-    Trinket( # Waycrest Manor
-        "Balefire Branch", "159630", DUNGEON_ITEMLEVEL, WEEKLY_CHEST,
-        M_PLUS_ITEMLEVEL, False, True, False, False, False, source=Source.DUNGEON, active=True
-    ),
-    # Trinket( # not obtainable
-    #     "Cursed Captain's Charm", "161115", 290, TITANFORGE_CAP,
-    #     M_PLUS_ITEMLEVEL, True, True, True, False, False, active=False
-    # ),
-    Trinket( # world boss
-        "Azurethos' Singed Plumage", "161377", 355, 355, 355,
-        False, True, False, False, False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket( # world boss
-        "Drust-Runed Icicle", "161380", 355, 355, 355, False,
-        True, False, False, False, source=Source.WORLD_BOSS, active=False
-    ),
-    # Trinket( # ???
-    #     "Dunewalker's Survival Kit", "161418", ULDIR, TITANFORGE_CAP, M_PLUS_ITEMLEVEL,
-    #     True, False, False, False, False, active=True
-    # ),
-    Trinket( # world boss
-        "Galecaller's Beak", "161379", 355, 355, 355, False,
-        False, True, False, False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket( # world boss
-        "Kraulok's Claw", "161419", 355, 355, 355, False,
-        False, True, False, False, source=Source.WORLD_BOSS, active=False
-    ),
-    Trinket( # world boss
-        "Permafrost-Encrusted Heart", "161381", 355, 355, 355,
-        True, False, False, False, False, source=Source.WORLD_BOSS, active=False
-    ),
-    Trinket( # world boss
-        "Plume of the Seaborne Avian", "161378", 355, 355, 355,
-        True, False, False, False, False, source=Source.WORLD_BOSS, active=False
-    ),
-    Trinket( # world boss
-        "Prism of Dark Intensity", "161376", 355, 355, 355,
-        False, False, True, False, False, source=Source.WORLD_BOSS, active=False
-    ),
-    Trinket( # world boss
-        "Spiritbound Voodoo Burl", "161412", 355, 355, 355, True,
-        False, False, False, False, source=Source.WORLD_BOSS, active=False
-    ),
-    Trinket( # world boss
-        "T'zane's Barkspines", "161411", 355, 355, 355, False,
-        True, False, False, False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket( # inscription
-        "Darkmoon Deck: Squalls", "159126", 355, 355,
-        355, False, True, False, False, False, source=Source.PROFESSION, active=False
-    ),
-    Trinket( # inscription
-        "Darkmoon Deck: Fathoms", "159125", 355, 355,
-        355, True, False, True, False, False, source=Source.PROFESSION, active=False
-    ),
-    Trinket( # alchemy
-        "Surging Alchemist Stone", "152632", 300, 300,
-        300, True, True, True, False, False, source=Source.PROFESSION, active=False
-    ),
-    Trinket( # world quest
-        "Plunderbeard's Flask", "158164", WORLD_QUEST_ITEMLEVEL, EMISSARY,
-        EMISSARY, True, True, True, False, False, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket( # Uldir
-        "Frenetic Corpuscle", "160648", ULDIR, ULDIR+RAID_INCREASE,
-        ULDIR+RAID_INCREASE, True, False, False, False, False, source=Source.RAID, active=False
-    ),
-    Trinket( # Uldir
-        "Construct Overcharger", "160652", ULDIR, ULDIR+RAID_INCREASE,
-        ULDIR+RAID_INCREASE, True, False, False, False, False, source=Source.RAID, active=False
-    ),
-    Trinket(  # Uldir
-        "Vigilant's Bloodshaper", "160651", ULDIR, ULDIR+RAID_INCREASE,
-        ULDIR+RAID_INCREASE, False, True, False, False, False, source=Source.RAID, active=False
-    ),
-    Trinket( # Tol Dagor
-        name="Kul Tiran Cannonball Runner", item_id="159628", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=WEEKLY_CHEST,
-        max_itemlevel_drop=M_PLUS_ITEMLEVEL, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.DUNGEON, active=False
-    ),
-    Trinket(  # Uldir
-        name="Vanquished Tendril of G'huun", item_id="160654", min_itemlevel=ULDIR, max_itemlevel=ULDIR+RAID_INCREASE,
-        max_itemlevel_drop=ULDIR+RAID_INCREASE, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.RAID, active=False
-    ),
-    Trinket(  # world drop
-        name="Landoi's Scrutiny", item_id="163935", min_itemlevel=350, max_itemlevel=350,
-        max_itemlevel_drop=350, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_DROP, active=False
-    ),
-    Trinket(  # world drop
-        name="'Bygone Bee' Almanac", item_id="163936", min_itemlevel=350, max_itemlevel=350,
-        max_itemlevel_drop=350, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.WORLD_DROP, active=True
-    ),
-    Trinket(  # world drop
-        name="Leyshock's Grand Compilation", item_id="163937", min_itemlevel=350, max_itemlevel=350,
-        max_itemlevel_drop=350, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.WORLD_DROP, active=False
-    ),
-    Trinket( # wq
-        name="Kaja-fied Banana", item_id="161125", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
-        max_itemlevel_drop=EMISSARY, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # uldir
-        name="Syringe of Bloodborne Infirmity", item_id="160655", min_itemlevel=ULDIR, max_itemlevel=ULDIR+RAID_INCREASE,
-        max_itemlevel_drop=ULDIR+RAID_INCREASE, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.RAID, active=False
-    ),
-    Trinket(  # uldir
-        name="Disc of Systematic Regression", item_id="160650", min_itemlevel=ULDIR, max_itemlevel=ULDIR+RAID_INCREASE,
-        max_itemlevel_drop=ULDIR+RAID_INCREASE, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.RAID, active=False
-    ),
-    Trinket(  # uldir
-        name="Twitching Tentacle of Xalzaix", item_id="160656", min_itemlevel=ULDIR, max_itemlevel=ULDIR+RAID_INCREASE,
-        max_itemlevel_drop=ULDIR+RAID_INCREASE, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.RAID, active=False
-    ),
-    Trinket(  # alchemy
-        name="Endless Tincture of Fractional Power", item_id="152636", min_itemlevel=300, max_itemlevel=300,
-        max_itemlevel_drop=300, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=True
-    ),
-    Trinket(  # stormsong valley
-        name="Galewind Chimes", item_id="155568", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=WORLD_QUEST_ITEMLEVEL,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # wq
-        name="Gilded Loa Figurine", item_id="158153", min_itemlevel=WORLD_QUEST_ITEMLEVEL, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # wq
-        name="Emblem of Zandalar", item_id="158154", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # wq
-        name="Dinobone Charm", item_id="158155", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # wq
-        name="Pearl Diver's Compass", item_id="158162", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket(  # wq
-        name="First Mate's Spyglass", item_id="158163", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket(  # stormsong valley
-        name="Whirlwing's Plumage", item_id="158215", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket(  # stormsong valley
-        name="Living Oil Cannister", item_id="158216", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
-    ),
-    # Trinket(  # stormsong valley - tank
-    #     name="Dadalea's Wing", item_id="158218", min_itemlevel=310, max_itemlevel=TITANFORGE_CAP,
-    #     max_itemlevel_drop=M_PLUS_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, active=False
-    # ),
-    Trinket(  # stormsong valley
-        name="Vial of Storms", item_id="158224", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket(  # stormsong valley
-        name="Doom Shroom", item_id="158555", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # waycrest manor
-        name="Gore-Crusted Butcher's Block", item_id="159616", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=WEEKLY_CHEST,
-        max_itemlevel_drop=M_PLUS_ITEMLEVEL, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.DUNGEON, active=False
-    ),
-    Trinket(  # stormsong valley
-        name="Snowpelt Mangler", item_id="160263", min_itemlevel=310, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # nazmir
-        name="Incessantly Ticking Clock", item_id="161113", min_itemlevel=325, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # vol'dun
-        name="Ravasaur Skull Bijou", item_id="161119", min_itemlevel=325, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # nazmir
-        name="Crawg Gnawed Femur", item_id="163703", min_itemlevel=325, max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # airdrop
-        name="Dread Gladiator's Badge", item_id="161902", min_itemlevel=325, max_itemlevel=WEEKLY_CHEST,
-        max_itemlevel_drop=M_PLUS_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="PvP", active=True
-    ),
-    Trinket(  # warfront world boss
-        name="Lion's Grace", item_id="161472", min_itemlevel=370, max_itemlevel=370,
-        max_itemlevel_drop=370, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.WORLD_BOSS, active=False
-    ),
-    Trinket(  # warfront world boss
-        name="Lion's Guile", item_id="161473", min_itemlevel=370, max_itemlevel=370,
-        max_itemlevel_drop=370, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket(  # warfront world boss
-        name="Lion's Strength", item_id="161474", min_itemlevel=370, max_itemlevel=370,
-        max_itemlevel_drop=370, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket(  # warfront world boss
-        name="Doom's Fury", item_id="161463", min_itemlevel=370, max_itemlevel=370,
-        max_itemlevel_drop=370, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket(  # warfront world boss
-        name="Doom's Hatred", item_id="161461", min_itemlevel=370, max_itemlevel=370,
-        max_itemlevel_drop=370, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.WORLD_BOSS, active=False
-    ),
-    Trinket(  # warfront world boss
-        name="Doom's Wake", item_id="161462", min_itemlevel=370, max_itemlevel=370,
-        max_itemlevel_drop=370, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket(  # pvp
-        name="Dread Gladiator's Insignia", item_id="161676", min_itemlevel=280, max_itemlevel=WEEKLY_CHEST,
-        max_itemlevel_drop=M_PLUS_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="PvP", active=False
-    ),
-    Trinket(  # pvp
-        name="Dread Gladiator's Medallion", item_id="161674", min_itemlevel=280, max_itemlevel=WEEKLY_CHEST,
-        max_itemlevel_drop=M_PLUS_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source="PvP", active=True
-    ),
-    Trinket(  # wq
-        name="Berserker's Juju", item_id="161117", min_itemlevel=280, max_itemlevel=WORLD_QUEST_ITEMLEVEL,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket(  # profession alchemy
-        name="Sanguinated Alchemist Stone", item_id="166974", min_itemlevel=355, max_itemlevel=355,
-        max_itemlevel_drop=355, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=False
-    ),
-    Trinket(  # profession alchemy
-        name="Tidal Alchemist Stone", item_id="165926", min_itemlevel=385, max_itemlevel=385,
-        max_itemlevel_drop=385, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=False
-    ),
-    Trinket(  # profession alchemy
-        name="Spirited Alchemist Stone", item_id="165927", min_itemlevel=400, max_itemlevel=400,
-        max_itemlevel_drop=385, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=False
-    ),
-    Trinket(  # profession alchemy
-        name="Eternal Alchemist Stone", item_id="165928", min_itemlevel=415, max_itemlevel=415,
-        max_itemlevel_drop=415, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=False
-    ),
-    Trinket(  # profession alchemy
-        name="Crushing Alchemist Stone", item_id="168675", min_itemlevel=425, max_itemlevel=430,
-        max_itemlevel_drop=425, agility=True, intellect=True, strength=True, melee=True, ranged=True, source=Source.PROFESSION, active=False
-    ),
-    Trinket(  # World Boss Dark Shore
-        name="Ancient Knot of Wisdom", item_id="161417", min_itemlevel=355, max_itemlevel=355,
-        max_itemlevel_drop=355, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket(  # World Boss Dark Shore
-        name="Forest Lord's Razorleaf", item_id="166794", min_itemlevel=355, max_itemlevel=355,
-        max_itemlevel_drop=355, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_BOSS, active=False
-    ),
-    Trinket(  # World Boss Dark Shore
-        name="Knot of Ancient Fury", item_id="161413", min_itemlevel=355, max_itemlevel=355,
-        max_itemlevel_drop=355, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.WORLD_BOSS, active=True
-    ),
-    Trinket(  # Emissary
-        name="Razzashi Tooth Medallion", item_id="165667", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=EMISSARY,
-        max_itemlevel_drop=EMISSARY, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # Emissary
-        name="Moonstone of Zin-Azshari", item_id="165666", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=EMISSARY,
-        max_itemlevel_drop=EMISSARY, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # Emissary
-        name="Ancient Tuskarr Sea Charm", item_id="165661", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=EMISSARY,
-        max_itemlevel_drop=EMISSARY, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # Emissary
-        name="Sea Giant's Tidestone", item_id="165664", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=EMISSARY,
-        max_itemlevel_drop=EMISSARY, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket(  # Emissary
-        name="Kezan Stamped Bijou", item_id="165662", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=EMISSARY,
-        max_itemlevel_drop=EMISSARY, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket(  # Emissary
-        name="Chargestone of the Thunder King's Court", item_id="165660", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=EMISSARY,
-        max_itemlevel_drop=EMISSARY, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.WORLD_QUEST, active=False
-    ),
-    Trinket(  # Emissary
-        name="Ritual Feather of Unng Ak", item_id="165665", min_itemlevel=DUNGEON_ITEMLEVEL, max_itemlevel=EMISSARY,
-        max_itemlevel_drop=EMISSARY, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.WORLD_QUEST, active=True
-    ),
-    Trinket(  # Dazar'Alor
-        name="Crest of Pa'ku", item_id="166418", min_itemlevel=DAZARALOR, max_itemlevel=DAZARALOR+RAID_INCREASE,
-        max_itemlevel_drop=DAZARALOR, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.RAID, active=False
-    ),
-    Trinket(  # Dazar'Alor
-        name="Everchill Anchor", item_id="165570", min_itemlevel=DAZARALOR, max_itemlevel=DAZARALOR+RAID_INCREASE,
-        max_itemlevel_drop=DAZARALOR, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.RAID, active=False
-    ),
-    Trinket(  # Dazar'Alor
-        name="Grong's Primal Rage", item_id="165574", min_itemlevel=DAZARALOR, max_itemlevel=430,
-        max_itemlevel_drop=DAZARALOR, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.RAID, active=True
-    ),
-    Trinket(  # Dazar'Alor
-        name="Incandescent Sliver", item_id="165571", min_itemlevel=DAZARALOR, max_itemlevel=DAZARALOR+RAID_INCREASE,
-        max_itemlevel_drop=DAZARALOR, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.RAID, active=False
-    ),
-    Trinket(  # Dazar'Alor
-        name="Invocation of Yu'lon", item_id="165568", min_itemlevel=DAZARALOR, max_itemlevel=DAZARALOR+RAID_INCREASE,
-        max_itemlevel_drop=DAZARALOR, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.RAID, active=True
-    ),
-    Trinket(  # Dazar'Alor
-        name="Kimbul's Razor Claw", item_id="165579", min_itemlevel=DAZARALOR, max_itemlevel=DAZARALOR+RAID_INCREASE,
-        max_itemlevel_drop=DAZARALOR, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.RAID, active=False
-    ),
-    Trinket(  # Dazar'Alor
-        name="Rampaging Amplitude Gigavolt Engine", item_id="165580", min_itemlevel=DAZARALOR, max_itemlevel=DAZARALOR+RAID_INCREASE,
-        max_itemlevel_drop=DAZARALOR, agility=False, intellect=False, strength=True, melee=False, ranged=False, source=Source.RAID, active=True
-    ),
-    Trinket(  # Dazar'Alor
-        name="Tidestorm Codex", item_id="165576", min_itemlevel=DAZARALOR, max_itemlevel=DAZARALOR+RAID_INCREASE,
-        max_itemlevel_drop=DAZARALOR, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.RAID, active=True
-    ),
-    Trinket(  # Dazar'Alor
-        name="Variable Intensity Gigavolt Oscillating Reactor", item_id="165572", min_itemlevel=DAZARALOR, max_itemlevel=DAZARALOR+RAID_INCREASE,
-        max_itemlevel_drop=DAZARALOR, agility=True, intellect=False, strength=False, melee=False, ranged=False, source=Source.RAID, active=True
-    ),
-    Trinket(  # PvP
-        name="Sinister Gladiator's Maledict", item_id="165806", min_itemlevel=370, max_itemlevel=WEEKLY_CHEST,
-        max_itemlevel_drop=M_PLUS_ITEMLEVEL, agility=True, intellect=True, strength=True, melee=False, ranged=False, source=Source.PVP, active=True
-    ),
-    Trinket(  # Crucible of Storms
-        name="Lurker's Insidious Gift", item_id="167866", min_itemlevel=380, max_itemlevel=380+RAID_INCREASE,
-        max_itemlevel_drop=380+RAID_INCREASE, agility=True, intellect=False, strength=True, melee=False, ranged=False, source=Source.RAID, active=True
-    ),
-    Trinket(  # Crucible of Storms
-        name="Harbinger's Inscrutable Will", item_id="167867", min_itemlevel=380, max_itemlevel=380+RAID_INCREASE,
-        max_itemlevel_drop=380+RAID_INCREASE, agility=False, intellect=True, strength=False, melee=False, ranged=False, source=Source.RAID, active=False
-    ),
-    Trinket(  # Profession
-        name="Highborne Compendium of Sundering",
-        item_id="169321",
-        min_itemlevel=400,
-        max_itemlevel=400,
-        max_itemlevel_drop=400,
-        agility=True,
-        intellect=False,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.PROFESSION,
-        active=False
-    ),
-    Trinket(  # Profession
-        name="Highborne Compendium of Storms",
-        item_id="169328",
-        min_itemlevel=400,
-        max_itemlevel=400,
-        max_itemlevel_drop=400,
-        agility=False,
-        intellect=True,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.PROFESSION,
-        active=False
-    ),
-    Trinket(  # World Boss
-        name="Enthraller's Bindstone",
-        item_id="169317",
-        min_itemlevel=415,
-        max_itemlevel=415,
-        max_itemlevel_drop=415,
-        agility=True,
-        intellect=True,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.WORLD_BOSS,
-        active=False
-    ),
-    Trinket(  # World Quest
-        name="Oxidized Refuse Remover",
-        item_id="170273",
-        min_itemlevel=390,
-        max_itemlevel=WORLD_QUEST_ITEMLEVEL,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL_MAX,
-        agility=True,
-        intellect=True,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.WORLD_QUEST,
-        active=False
-    ),
-    Trinket(  # Eternal Palace
-        name="Aquipotent Nautilus",
-        item_id="169305",
-        min_itemlevel=ETERNAL_PALACE,
-        max_itemlevel=ETERNAL_PALACE+RAID_INCREASE,
-        max_itemlevel_drop=ETERNAL_PALACE+RAID_INCREASE,
-        agility=False,
-        intellect=True,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=True
-    ),
-    Trinket(  # Eternal Palace
-        name="Azshara's Font of Power",
-        item_id="169314",
-        min_itemlevel=ETERNAL_PALACE,
-        max_itemlevel=ETERNAL_PALACE+RAID_INCREASE,
-        max_itemlevel_drop=ETERNAL_PALACE+RAID_INCREASE,
-        agility=True,
-        intellect=True,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=True
-    ),
-    Trinket(  # Eternal Palace
-        name="Leviathan's Lure",
-        item_id="169304",
-        min_itemlevel=ETERNAL_PALACE,
-        max_itemlevel=ETERNAL_PALACE+RAID_INCREASE,
-        max_itemlevel_drop=ETERNAL_PALACE+RAID_INCREASE,
-        agility=False,
-        intellect=True,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=False
-    ),
-    Trinket(  # Eternal Palace
-        name="Shiver Venom Relic",
-        item_id="168905",
-        min_itemlevel=ETERNAL_PALACE,
-        max_itemlevel=ETERNAL_PALACE+RAID_INCREASE,
-        max_itemlevel_drop=ETERNAL_PALACE+RAID_INCREASE,
-        agility=False,
-        intellect=True,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=True
-    ),
-    Trinket(  # Eternal Palace
-        name="Za'qul's Portal Key",
-        item_id="169306",
-        min_itemlevel=ETERNAL_PALACE,
-        max_itemlevel=ETERNAL_PALACE+RAID_INCREASE,
-        max_itemlevel_drop=ETERNAL_PALACE+RAID_INCREASE,
-        agility=False,
-        intellect=True,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=False
-    ),
-    Trinket(  # Eternal Palace
-        name="Ashvane's Razor Coral",
-        item_id="169311",
-        min_itemlevel=ETERNAL_PALACE,
-        max_itemlevel=ETERNAL_PALACE+RAID_INCREASE,
-        max_itemlevel_drop=ETERNAL_PALACE+RAID_INCREASE,
-        agility=True,
-        intellect=False,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=True
-    ),
-    Trinket(  # Eternal Palace
-        name="Dribbling Inkpod",
-        item_id="169319",
-        min_itemlevel=ETERNAL_PALACE,
-        max_itemlevel=ETERNAL_PALACE+RAID_INCREASE,
-        max_itemlevel_drop=ETERNAL_PALACE+RAID_INCREASE,
-        agility=True,
-        intellect=False,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=False
-    ),
-    Trinket(  # Eternal Palace
-        name="Phial of the Arcane Tempest",
-        item_id="169313",
-        min_itemlevel=ETERNAL_PALACE,
-        max_itemlevel=ETERNAL_PALACE+RAID_INCREASE,
-        max_itemlevel_drop=ETERNAL_PALACE+RAID_INCREASE,
-        agility=True,
-        intellect=False,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=False
-    ),
-    Trinket(  # Eternal Palace
-        name="Vision of Demise",
-        item_id="169307",
-        min_itemlevel=ETERNAL_PALACE,
-        max_itemlevel=ETERNAL_PALACE+RAID_INCREASE,
-        max_itemlevel_drop=ETERNAL_PALACE+RAID_INCREASE,
-        agility=True,
-        intellect=False,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=True
-    ),
-    Trinket(  # Mechagon
-        name="Clockwork Re-Sharpener",
-        item_id="161375",
-        min_itemlevel=MECHAGON,
-        max_itemlevel=WEEKLY_CHEST,
-        max_itemlevel_drop=M_PLUS_ITEMLEVEL,
-        agility=True,
-        intellect=False,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.DUNGEON,
-        active=True
-    ),
-    Trinket(  # World Boss
-        name="Shockbiter's Fang",
-        item_id="169318",
-        min_itemlevel=415,
-        max_itemlevel=415,
-        max_itemlevel_drop=415,
-        agility=True,
-        intellect=True,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.WORLD_BOSS,
-        active=True
-    ),
-    Trinket(  # Craftable
-        name="Galvanic Turbo-Charger",
-        item_id="161416",
-        min_itemlevel=415,
-        max_itemlevel=415,
-        max_itemlevel_drop=415,
-        agility=False,
-        intellect=False,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.PROFESSION,
-        active=False
-    ),
-    Trinket(  # Profession
-        name="Ascended Alchemist Stone",
-        item_id="168676",
-        min_itemlevel=440,
-        max_itemlevel=450,
-        max_itemlevel_drop=450,
-        agility=True,
-        intellect=True,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.PROFESSION,
-        active=False
-    ),
-    Trinket(  # Profession
-        name="Ruthlessness Protocol Augment",
-        item_id="161374",
-        min_itemlevel=390,
-        max_itemlevel=420,
-        max_itemlevel_drop=420,
-        agility=False,
-        intellect=True,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.PROFESSION,
-        active=False
-    ),
-    Trinket(  # Profession
-        name="Self-Accelerating Drive Shaft",
-        item_id="161414",
-        min_itemlevel=390,
-        max_itemlevel=420,
-        max_itemlevel_drop=420,
-        agility=False,
-        intellect=True,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.PROFESSION,
-        active=False
-    ),
-    Trinket(  # Worldquest
-        name="Trunksy",
-        item_id="155565",
-        min_itemlevel=WORLD_QUEST_ITEMLEVEL,
-        max_itemlevel=WORLD_QUEST_ITEMLEVEL_MAX,
-        max_itemlevel_drop=WORLD_QUEST_ITEMLEVEL,
-        agility=True,
-        intellect=True,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.WORLD_QUEST,
-        active=False
-    ),
-    Trinket(  # Mechagon
-        name="Remote Guidance Device",
-        item_id="169769",
-        min_itemlevel=MECHAGON,
-        max_itemlevel=WEEKLY_CHEST,
-        max_itemlevel_drop=M_PLUS_ITEMLEVEL,
-        agility=True,
-        intellect=False,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.DUNGEON,
-        active=True
-    ),
-    Trinket(  # Ny'alotha
-        name="Forbidden Obsidian Claw",
-        item_id="173944",
-        min_itemlevel=NYALOTHA,
-        max_itemlevel=NYALOTHA+RAID_INCREASE,
-        max_itemlevel_drop=NYALOTHA+RAID_INCREASE,
-        agility=False,
-        intellect=True,
-        strength=False,
-        melee=False,
-        ranged=False, source=Source.RAID,
-        active=True,
-    ),
-    Trinket(  # Ny'alotha
-        name="Humming Black Dragonscale",
-        item_id="174044",
-        min_itemlevel=NYALOTHA,
-        max_itemlevel=NYALOTHA+RAID_INCREASE,
-        max_itemlevel_drop=NYALOTHA+RAID_INCREASE,
-        agility=True,
-        intellect=True,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=False
-    ),
-    Trinket(  # Ny'alotha
-        name="Lingering Psychic Shell",
-        item_id="174277",
-        min_itemlevel=NYALOTHA+10,
-        max_itemlevel=NYALOTHA+10+RAID_INCREASE,
-        max_itemlevel_drop=NYALOTHA+10+RAID_INCREASE,
-        agility=True,
-        intellect=False,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=True
-    ),
-    Trinket(  # Ny'alotha
-        name="Manifesto of Madness",
-        item_id="174103",
-        min_itemlevel=NYALOTHA+10,
-        max_itemlevel=NYALOTHA+10+RAID_INCREASE,
-        max_itemlevel_drop=NYALOTHA+10+RAID_INCREASE,
-        agility=False,
-        intellect=True,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=True
-    ),
-    Trinket(  # Ny'alotha
-        name="Psyche Shredder",
-        item_id="174060",
-        min_itemlevel=NYALOTHA,
-        max_itemlevel=NYALOTHA+RAID_INCREASE,
-        max_itemlevel_drop=NYALOTHA+RAID_INCREASE,
-        agility=False,
-        intellect=True,
-        strength=False,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=False
-    ),
-    Trinket(  # Ny'alotha
-        name="Torment in a Jar",
-        item_id="173943",
-        min_itemlevel=NYALOTHA,
-        max_itemlevel=NYALOTHA+RAID_INCREASE,
-        max_itemlevel_drop=NYALOTHA+RAID_INCREASE,
-        agility=True,
-        intellect=False,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=False
-    ),
-    Trinket(  # Ny'alotha
-        name="Vita-Charged Titanshard",
-        item_id="174500",
-        min_itemlevel=NYALOTHA,
-        max_itemlevel=NYALOTHA+RAID_INCREASE,
-        max_itemlevel_drop=NYALOTHA+RAID_INCREASE,
-        agility=True,
-        intellect=True,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=False
-    ),
-    Trinket(  # Ny'alotha
-        name="Void-Twisted Titanshard",
-        item_id="174528",
-        min_itemlevel=NYALOTHA,
-        max_itemlevel=NYALOTHA+RAID_INCREASE,
-        max_itemlevel_drop=NYALOTHA+RAID_INCREASE,
-        agility=True,
-        intellect=True,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=False
-    ),
-    Trinket(  # Ny'alotha
-        name="Writhing Segment of Drest'agath",
-        item_id="173946",
-        min_itemlevel=NYALOTHA,
-        max_itemlevel=NYALOTHA+RAID_INCREASE,
-        max_itemlevel_drop=NYALOTHA+RAID_INCREASE,
-        agility=True,
-        intellect=False,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.RAID,
-        active=True
-    ),
-    Trinket(  # Alchemy
-        name="Awakened Alchemist Stone",
-        item_id="171087",
-        min_itemlevel=455,
-        max_itemlevel=460,
-        max_itemlevel_drop=455,
-        agility=True,
-        intellect=True,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.PROFESSION,
-        active=False
-    ),
-    Trinket(  # Alchemy
-        name="Peerless Alchemist Stone",
-        item_id="171085",
-        min_itemlevel=470,
-        max_itemlevel=475,
-        max_itemlevel_drop=470,
-        agility=True,
-        intellect=True,
-        strength=True,
-        melee=False,
-        ranged=False,
-        source=Source.PROFESSION,
-        active=False
-    ),
-]
+def _load_trinkets() -> typing.List[Trinket]:
+    with pkg_resources.resource_stream(
+        __name__, "/".join(("data_files", "trinkets.json"))
+    ) as f:
+        loaded_trinkets = json.load(f)
+
+    def _get_stats(item: dict) -> typing.List[Stat]:
+        """Get primary stats from items stat_type information.
+        TODO: Can be extended using ItemEffect.id_specialization.
+        TODO: what to do with trinkets without primary stats?
+
+        Args:
+            item (dict): [description]
+
+        Returns:
+            typing.List[Stat]: [description]
+        """
+        stats = []
+        translation = {3: Stat.AGILITY, 4: Stat.STRENGTH, 5: Stat.INTELLECT}
+        for i in range(1, 11):
+            if item[f"stat_type_{i}"] in translation:
+                stats.append(translation[item[f"stat_type_{i}"]])
+            elif item[f"stat_type_{i}"] == 71:
+                stats.append(Stat.AGILITY)
+                stats.append(Stat.STRENGTH)
+                stats.append(Stat.INTELLECT)
+            elif item[f"stat_type_{i}"] == 72:
+                stats.append(Stat.AGILITY)
+                stats.append(Stat.STRENGTH)
+            elif item[f"stat_type_{i}"] == 73:
+                stats.append(Stat.AGILITY)
+                stats.append(Stat.INTELLECT)
+            elif item[f"stat_type_{i}"] == 74:
+                stats.append(Stat.STRENGTH)
+                stats.append(Stat.INTELLECT)
+        return stats
+
+    def _get_itemlevels(item: dict) -> typing.List[int]:
+        # TODO: This needs some heavy improvements...
+        # TODO: I'm just guessing here, probably need dungeon journal...somehow
+        starting_itemlevel = item.get("ilevel", None)
+        if starting_itemlevel > ItemLevel.UPPER_BOUND or not starting_itemlevel:
+            return []
+
+        # add special cases here
+        # Spiritual Alchemy Stone
+        if item["name"] == "Spiritual Alchemy Stone":
+            return [
+                200,
+            ]
+
+        # Darkmoon Decks
+        if "Darkmoon Deck:" in item["name"]:
+            return [
+                200,
+            ]
+
+        return [
+            ilvl
+            for ilvl in range(
+                starting_itemlevel,
+                ItemLevel.UPPER_BOUND + 1,
+                ItemLevel.STEP_SIZE,
+            )
+        ]
+
+    def _get_bonus_ids(item: dict) -> typing.List[int]:
+        ids = []
+
+        # Unbound Changeling
+        if item["id"] == 178708:
+            # crit
+            ids.append(6916)
+            # haste
+            ids.append(6917)
+            # mastery
+            ids.append(6918)
+            # crit haste mastery
+            ids.append(6915)
+
+        return ids
+
+    trinkets = []
+    for trinket in loaded_trinkets:
+        itemlevels = _get_itemlevels(trinket)
+        if not itemlevels:
+            continue
+        trinkets.append(
+            Trinket(
+                item_id=trinket["id"],
+                itemlevels=itemlevels,
+                role=None,  # TODO
+                stats=_get_stats(trinket),
+                class_mask=trinket["class_mask"],
+                translations=_get_translations(trinket),
+                source=Source.UNKNOWN,
+                on_use=trinket["on_use"],
+                bonus_ids=_get_bonus_ids(trinket),
+            )
+        )
+    return trinkets
+
+
+TRINKETS: typing.List[Trinket] = _load_trinkets()
+
+
+def get_trinkets_for_spec(wow_spec: WowSpec) -> typing.Tuple[Trinket, ...]:
+    """New function to return all available trinkets for a spec
+
+    Arguments:
+      wow_spec {WowSpec} -- instance of a WowSpec
+
+    Returns:
+      tuple[Trinket] -- Tuple of all Trinkets
+    """
+
+    trinkets: typing.List[Trinket] = []
+    for trinket in TRINKETS:
+        if trinket.is_usable_by_class(wow_spec.wow_class.id):
+            if wow_spec.stat in trinket.stats or len(trinket.stats) == 0:
+                trinkets.append(trinket)
+
+    return tuple(trinkets)
+
+
+def get_versatility_trinket(stat: Stat) -> Trinket:
+    """Returns a vers stat stick with the given Stat.
+
+    Returns:
+        Trinket -- Versatility Stat stick
+    """
+    empty_translation = EmptyTranslation()
+    empty_translation.US = "Versatility Stat Stick"
+    all_classes = 2 ** 16 - 1
+    if stat == Stat.AGILITY:
+        # "Stat Stick (Versatility)", "142506,bonus_id=607"
+        return Trinket(
+            item_id="142506",
+            bonus_ids=[
+                607,
+            ],
+            itemlevels=[ItemLevel.CASTLE_NATHRIA[0]],
+            role=None,
+            stats=[
+                Stat.AGILITY,
+            ],
+            class_mask=all_classes,
+            translations=empty_translation,
+            source=Source.UNKNOWN,
+            on_use=False,
+        )
+    elif stat == Stat.INTELLECT:
+        # "Stat Stick (Versatility)", "142507,bonus_id=607"
+        return Trinket(
+            item_id="142507",
+            bonus_ids=[
+                607,
+            ],
+            itemlevels=[ItemLevel.CASTLE_NATHRIA[0]],
+            role=None,
+            stats=[
+                Stat.INTELLECT,
+            ],
+            class_mask=all_classes,
+            translations=empty_translation,
+            source=Source.UNKNOWN,
+            on_use=False,
+        )
+    elif stat == Stat.STRENGTH:
+        # "Stat Stick (Versatility)", "142508,bonus_id=607"
+        return Trinket(
+            item_id="142508",
+            bonus_ids=[
+                607,
+            ],
+            itemlevels=[ItemLevel.CASTLE_NATHRIA[0]],
+            role=None,
+            stats=[
+                Stat.STRENGTH,
+            ],
+            class_mask=all_classes,
+            translations=empty_translation,
+            source=Source.UNKNOWN,
+            on_use=False,
+        )
+    raise ValueError(f"Unknown stat {stat}. No Versatility trinket available.")
