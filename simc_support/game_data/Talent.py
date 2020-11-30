@@ -75,7 +75,7 @@ def get_talent_dict(wow_spec: WowSpec, ptr: bool = None) -> dict:
             talent
             for talent in TALENTS
             if talent.wow_spec_id == wow_spec.id
-            or talent.wow_spec_id == 0
+            or talent.wow_spec_id == 0  # shared between specs
             and talent.wow_class_id == wow_spec.wow_class.id
         ]
     )
@@ -85,6 +85,9 @@ def get_talent_dict(wow_spec: WowSpec, ptr: bool = None) -> dict:
         result[row] = {}
 
     for talent in talents:
+        # spec specific information precedes class information
+        if talent.wow_spec_id == 0 and (talent.column + 1) in result[talent.row + 1]:
+            continue
         result[talent.row + 1][talent.column + 1] = talent.get_dict()
 
     return result
