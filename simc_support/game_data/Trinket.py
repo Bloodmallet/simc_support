@@ -40,7 +40,7 @@ class Trinket(SimcObject):
             on_use (bool, optional): Is the trinket on use? Defaults to False.
             bonus_ids (typing.Union[typing.List[int], typing.Tuple[int]]):
         """
-        super().__init__(translations.US, *args,  **kwargs)
+        super().__init__(translations.US, *args, **kwargs)
         self.translations = translations
         self.name: str = self.translations.US
         self.item_id: str = str(item_id)
@@ -132,11 +132,15 @@ def _load_trinkets() -> typing.List[Trinket]:
         # add special cases here
         # Spiritual Alchemy Stone
         if item["name"] == "Spiritual Alchemy Stone":
-            return [200,]
+            return [
+                200,
+            ]
 
         # Darkmoon Decks
         if "Darkmoon Deck:" in item["name"]:
-            return [200,]
+            return [
+                200,
+            ]
 
         return [
             ilvl
@@ -146,6 +150,22 @@ def _load_trinkets() -> typing.List[Trinket]:
                 ItemLevel.STEP_SIZE,
             )
         ]
+
+    def _get_bonus_ids(item: dict) -> typing.List[int]:
+        ids = []
+
+        # Unbound Changeling
+        if item["id"] == 178708:
+            # crit
+            ids.append(6916)
+            # haste
+            ids.append(6917)
+            # mastery
+            ids.append(6918)
+            # crit haste mastery
+            ids.append(6915)
+
+        return ids
 
     trinkets = []
     for trinket in loaded_trinkets:
@@ -162,6 +182,7 @@ def _load_trinkets() -> typing.List[Trinket]:
                 translations=_get_translations(trinket),
                 source=Source.UNKNOWN,
                 on_use=trinket["on_use"],
+                bonus_ids=_get_bonus_ids(trinket),
             )
         )
     return trinkets
