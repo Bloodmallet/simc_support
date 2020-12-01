@@ -47,6 +47,7 @@ DARKIRONDWARF = Race(
         Language.ES: "Enano Hierro Negro",
         Language.KR: "검은무쇠 드워프",
         Language.CN: "黑铁矮人",
+        Language.BR: "Anão Ferro Negro",
     },
 )
 DRAENEI = Race(
@@ -62,6 +63,7 @@ DRAENEI = Race(
         Language.ES: "Draenei",
         Language.KR: "드레나이",
         Language.CN: "德莱尼",
+        Language.BR: "Draenei",
     },
 )
 DWARF = Race(
@@ -77,6 +79,7 @@ DWARF = Race(
         Language.ES: "Enano",
         Language.KR: "드워프",
         Language.CN: "矮人",
+        Language.BR: "Anão",
     },
 )
 GNOME = Race(
@@ -92,6 +95,7 @@ GNOME = Race(
         Language.ES: "Gnomo",
         Language.KR: "노움",
         Language.CN: "侏儒",
+        Language.BR: "Gnomo",
     },
 )
 HUMAN = Race(
@@ -107,6 +111,7 @@ HUMAN = Race(
         Language.ES: "Humano",
         Language.KR: "인간",
         Language.CN: "人类",
+        Language.BR: "Humano",
     },
 )
 KULTIRAN = Race(
@@ -122,6 +127,7 @@ KULTIRAN = Race(
         Language.ES: "Ciudadano de Kul Tiras",
         Language.KR: "쿨 티란",
         Language.CN: "库尔提拉斯人",
+        Language.BR: "Kultireno",
     },
 )
 LIGHTFORGEDDRAENEI = Race(
@@ -137,6 +143,7 @@ LIGHTFORGEDDRAENEI = Race(
         Language.ES: "Draenei forjado por la Luz",
         Language.KR: "빛벼림 드레나이",
         Language.CN: "光铸德莱尼",
+        Language.BR: "Draenei Forjado a Luz",
     },
 )
 MECHAGNOME = Race(
@@ -152,6 +159,7 @@ MECHAGNOME = Race(
         Language.ES: "Mecagnomo",
         Language.KR: "기계노움",
         Language.CN: "机械侏儒",
+        Language.BR: "Gnomecânico",
     },
 )
 NIGHTELF = Race(
@@ -167,6 +175,7 @@ NIGHTELF = Race(
         Language.ES: "Elfo de la noche",
         Language.KR: "나이트 엘프",
         Language.CN: "暗夜精灵",
+        Language.BR: "Elfo Noturno",
     },
 )
 PANDAREN_ALLIANCE = Race(
@@ -182,6 +191,7 @@ PANDAREN_ALLIANCE = Race(
         Language.ES: "Pandaren",
         Language.KR: "판다렌",
         Language.CN: "熊猫人",
+        Language.BR: "Pandaren",
     },
 )
 WORGEN = Race(
@@ -197,6 +207,7 @@ WORGEN = Race(
         Language.ES: "Huargen",
         Language.KR: "늑대인간",
         Language.CN: "狼人",
+        Language.BR: "Worgen",
     },
 )
 VOIDELF = Race(
@@ -212,6 +223,7 @@ VOIDELF = Race(
         Language.ES: "Elfo del Vacío",
         Language.KR: "공허 엘프",
         Language.CN: "虚空精灵",
+        Language.BR: "Elfo Caótico",
     },
 )
 
@@ -229,6 +241,7 @@ BLOODELF = Race(
         Language.ES: "Elfo de sangre",
         Language.KR: "블러드 엘프",
         Language.CN: "血精灵",
+        Language.BR: "Elfo Sangrento",
     },
 )
 GOBLIN = Race(
@@ -244,6 +257,7 @@ GOBLIN = Race(
         Language.ES: "Goblin",
         Language.KR: "고블린",
         Language.CN: "地精",
+        Language.BR: "Goblin",
     },
 )
 HIGHMOUNTAINTAUREN = Race(
@@ -259,6 +273,7 @@ HIGHMOUNTAINTAUREN = Race(
         Language.ES: "Tauren Monte Alto",
         Language.KR: "높은산 타우렌",
         Language.CN: "至高岭牛头人",
+        Language.BR: "Tauren Altamontês",
     },
 )
 MAGHARORC = Race(
@@ -274,6 +289,7 @@ MAGHARORC = Race(
         Language.ES: "Orco Mag'har",
         Language.KR: "마그하르 오크",
         Language.CN: "玛格汉兽人",
+        Language.BR: "Orc Mag'har",
     },
 )
 NIGHTBORNE = Race(
@@ -289,6 +305,7 @@ NIGHTBORNE = Race(
         Language.ES: "Nocheterna",
         Language.KR: "나이트본",
         Language.CN: "夜之子",
+        Language.BR: "Filho da Noite",
     },
 )
 ORC = Race(
@@ -304,6 +321,7 @@ ORC = Race(
         Language.ES: "Orco",
         Language.KR: "오크",
         Language.CN: "兽人",
+        Language.BR: "Orc",
     },
 )
 PANDAREN_HORDE = Race(
@@ -319,6 +337,7 @@ PANDAREN_HORDE = Race(
         Language.ES: "Pandaren",
         Language.KR: "판다렌",
         Language.CN: "熊猫人",
+        Language.BR: "Pandaren",
     },
 )
 TAUREN = Race(
@@ -334,6 +353,7 @@ TAUREN = Race(
         Language.ES: "Tauren",
         Language.KR: "타우렌",
         Language.CN: "牛头人",
+        Language.BR: "Tauren",
     },
 )
 TROLL = Race(
@@ -349,6 +369,7 @@ TROLL = Race(
         Language.ES: "Trol",
         Language.KR: "트롤",
         Language.CN: "巨魔",
+        Language.BR: "Troll",
     },
 )
 UNDEAD = Race(
@@ -364,6 +385,7 @@ UNDEAD = Race(
         Language.ES: "No-muerto",
         Language.KR: "언데드",
         Language.CN: "亡灵",
+        Language.BR: "Morto-vivo",
     },
 )
 VULPERA = Race(
@@ -379,6 +401,7 @@ VULPERA = Race(
         Language.ES: "Vulpera",
         Language.KR: "불페라",
         Language.CN: "狐人",
+        Language.BR: "Vulpera",
     },
 )
 ZANDALARITROLL = Race(
@@ -394,6 +417,7 @@ ZANDALARITROLL = Race(
         Language.ES: "Trol Zandalari",
         Language.KR: "잔달라 트롤",
         Language.CN: "赞达拉巨魔",
+        Language.BR: "Troll Zandalari",
     },
 )
 
