@@ -89,15 +89,15 @@ class WowSpec(SimcObject):
             list[talent_combination{str}] -- List of all valied talent combinations for a class.
         """
 
-        combinations = () # type: ignore # newer python version and thus mypy want an annotation here
+        combinations = ()  # type: ignore # newer python version and thus mypy want an annotation here
 
         if not user_input:
-            combinations = self._get_talent_combinations( # type: ignore
+            combinations = self._get_talent_combinations(  # type: ignore
                 "xxxxxxx",
             )
 
         elif len(user_input) == 7:
-            combinations = self._get_talent_combinations( # type: ignore
+            combinations = self._get_talent_combinations(  # type: ignore
                 user_input,
             )
 
@@ -187,7 +187,7 @@ BLOOD = WowSpec(
     id=250,
     wow_class=WowClass.DEATHKNIGHT,
     translations=Language.EmptyTranslation(),
-    talents_blueprint="1101011",
+    talents_blueprint="1110011",
     raid_role=RaidRole.TANK,
     role=Role.MELEE,
     stat=Stat.STRENGTH,
