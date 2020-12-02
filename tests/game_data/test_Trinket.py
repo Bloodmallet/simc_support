@@ -40,6 +40,12 @@ class TestTrinkets(unittest.TestCase):
                 break
         self.assertTrue(found)
 
+    def test_for_itemlevel_presence(self):
+        """Test fails if a trinket doesn't have any itemlevels associated with it."""
+        self.assertTrue(
+            len(list([1 for trinket in TRINKETS if len(trinket.itemlevels) == 0])) == 0
+        )
+
 
 class TestGetVersatilityTrinket(unittest.TestCase):
     def test_type(self):
