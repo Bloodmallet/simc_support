@@ -18,7 +18,7 @@ class SimcObject(object):
         simc_name = self.full_name.lower()
         cleansers = (
             (" ", "_"),
-            ("-", "_"),
+            ("-", ""),
             ("'", ""),
             (":", ""),
             (",", ""),
