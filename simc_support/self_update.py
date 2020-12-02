@@ -300,6 +300,10 @@ def update_trinkets(args: object) -> None:
 
     ITEMSPARSE = "ItemSparse"
     ITEMEFFECT = "ItemEffect"
+    JOURNAL_ENCOUNTER_ITEM = "JournalEncounterItem"
+    JOURNAL_ENCOUNTER = "JournalEncounter"
+    JOURNAL_INSTANCE = "JournalInstance"
+    MAP = "Map"
 
     WHITELIST = []
 
@@ -340,7 +344,17 @@ def update_trinkets(args: object) -> None:
             or is_whitelisted(item)
         )
 
-    dbc(args, [ITEMSPARSE, ITEMEFFECT])
+    dbc(
+        args,
+        [
+            ITEMSPARSE,
+            ITEMEFFECT,
+            JOURNAL_ENCOUNTER_ITEM,
+            JOURNAL_ENCOUNTER,
+            JOURNAL_INSTANCE,
+            MAP,
+        ],
+    )
 
     data = {}
 
@@ -389,9 +403,77 @@ def update_trinkets(args: object) -> None:
             logger.info(f"Specializations found for {item_id}: {mask}")
         return mask
 
+    # load encounter_items table
+    with open(
+        os.path.join(
+            get_compiled_data_path(args, _LOCALES[0]), f"{JOURNAL_ENCOUNTER_ITEM}.json"
+        ),
+        "r",
+    ) as f:
+        encounter_items = json.load(f)
+
+    def get_id_encounter(item_id: int) -> typing.Optional[int]:
+        for item in encounter_items:
+            if item["id_item"] == item_id:
+                return item["id_encounter"]
+        return None
+
+    # load encounter table
+    with open(
+        os.path.join(
+            get_compiled_data_path(args, _LOCALES[0]), f"{JOURNAL_ENCOUNTER}.json"
+        ),
+        "r",
+    ) as f:
+        encounters = json.load(f)
+
+    def id_journal_instance(id_encounter: int) -> typing.Optional[int]:
+        if not id_encounter:
+            return None
+        for encounter in encounters:
+            if encounter["id"] == id_encounter:
+                return encounter["id_journal_instance"]
+        return None
+
+    # load instance table
+    with open(
+        os.path.join(
+            get_compiled_data_path(args, _LOCALES[0]), f"{JOURNAL_INSTANCE}.json"
+        ),
+        "r",
+    ) as f:
+        instances = json.load(f)
+
+    def get_id_map(id_journal_instance: int) -> typing.Optional[int]:
+        if not id_journal_instance:
+            return None
+        for instance in instances:
+            if instance["id"] == id_journal_instance:
+                return instance["map"]
+        return None
+
+    # load map table
+    with open(
+        os.path.join(get_compiled_data_path(args, _LOCALES[0]), f"{MAP}.json"),
+        "r",
+    ) as f:
+        maps = json.load(f)
+
+    def get_instance_type(id_map: int) -> typing.Optional[int]:
+        if not id_map:
+            return None
+        for map in maps:
+            if map["id"] == id_map:
+                return map["instance_type"]
+        return None
+
     trinkets = merge_information(data, filter_function=is_approved)
     for trinket in trinkets:
         trinket["on_use"] = is_on_use(trinket["id"])
+        trinket["id_encounter"] = get_id_encounter(trinket["id"])
+        trinket["id_journal_instance"] = id_journal_instance(trinket["id_encounter"])
+        trinket["id_map"] = get_id_map(trinket["id_journal_instance"])
+        trinket["instance_type"] = get_instance_type(trinket["id_map"])
 
     with open(os.path.join(DATA_PATH, "trinkets.json"), "w") as f:
         json.dump(trinkets, f, ensure_ascii=False)
