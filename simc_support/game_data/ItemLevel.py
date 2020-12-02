@@ -4,20 +4,48 @@ TRADER_TOKEN = -1
 WORLD_QUEST_ITEMLEVELS = [
     144,
 ]  # guess
-# standard dungeon itemlevel (normal, max level dungeon)
-DUNGEON_ITEMLEVEL = 157  # 183 is mythic
-# highest available itemlevel from m+ dungeons. weekly chest is NOT included here
-M_PLUS_ITEMLEVEL = 213
-# titanforging is dead, this now reflects the weekly chest
-WEEKLY_CHEST = 226
 
-# world related
-EMISSARY = 170  # guess
+DUNGEON_NORMAL = 158
+DUNGEON_HEROIC = 171
+DUNGEON_MYTHIC = 184
+DUNGEON_MYTHIC_LEVELS = [
+    187,
+    190,
+    194,
+    197,
+    200,
+    203,  # weekly
+    204,
+    207,
+    210,
+    213,  # weekly
+    216,  # weekly
+    220,  # weekly
+    223,  # weekly
+    226,  # weekly
+]
+DUNGEON = [DUNGEON_NORMAL] + [DUNGEON_HEROIC] + [DUNGEON_MYTHIC] + DUNGEON_MYTHIC_LEVELS
 
 # raids
 CASTLE_NATHRIA = [187, 200, 213, 226]
-CASTLE_NATHRIA_ENDBOSSES = [ilvl + 7 for ilvl in CASTLE_NATHRIA]
-
-STEP_SIZE = 13
+CASTLE_NATHRIA_ENDBOSSES = list([ilvl + 7 for ilvl in CASTLE_NATHRIA])
 
 UPPER_BOUND = CASTLE_NATHRIA_ENDBOSSES[-1]
+
+PVP_HONOR = [
+    158,
+    164,
+    171,
+    177,
+    184,
+    190,
+    197,
+]
+PVP_CONQUEST = [
+    200,
+    207,
+    213,
+    220,
+    226,
+]
+PVP = PVP_HONOR + PVP_CONQUEST
