@@ -84,6 +84,9 @@ class Trinket(SimcObject):
     def is_usable_by_class(self, class_id: int) -> bool:
         return bool(self.class_mask & 1 << (class_id - 1))
 
+    def _stringify(self) -> str:
+        return f"{self.item_id} {self.name} {self.stats} {self.source}"
+
 
 def _load_trinkets() -> typing.List[Trinket]:
     with pkg_resources.resource_stream(
@@ -122,33 +125,33 @@ def _load_trinkets() -> typing.List[Trinket]:
                 stats.append(Stat.INTELLECT)
         return stats
 
-    def _get_itemlevels(item: dict) -> typing.List[int]:
-        # TODO: This needs some heavy improvements...
-        # TODO: I'm just guessing here, probably need dungeon journal...somehow
-        starting_itemlevel = item.get("ilevel", None)
-        if starting_itemlevel > ItemLevel.UPPER_BOUND or not starting_itemlevel:
-            return []
+    def _get_itemlevels(item: dict, source: Source) -> typing.List[int]:
 
         # add special cases here
-        # Spiritual Alchemy Stone
         if item["name"] == "Spiritual Alchemy Stone":
             return [
+                item.get("ilevel", 0),
                 200,
             ]
 
-        # Darkmoon Decks
-        if "Darkmoon Deck:" in item["name"]:
+        if source == Source.DUNGEON:
+            return ItemLevel.DUNGEON
+        if source == Source.RAID and item["id_journal_instance"] == 1190:
+            return sorted(ItemLevel.CASTLE_NATHRIA + ItemLevel.CASTLE_NATHRIA_ENDBOSSES)
+        if source == Source.PROFESSION:
             return [
-                200,
+                item["ilevel"],
             ]
-
-        return [
-            ilvl
-            for ilvl in range(
-                starting_itemlevel,
-                ItemLevel.UPPER_BOUND + 1,
-                ItemLevel.STEP_SIZE,
+        if source == Source.PVP:
+            return list(
+                [
+                    itemlevel
+                    for itemlevel in ItemLevel.PVP
+                    if itemlevel >= item.get("ilevel", 0)
+                ]
             )
+        return [
+            item["ilevel"],
         ]
 
     def _get_bonus_ids(item: dict) -> typing.List[int]:
@@ -167,9 +170,56 @@ def _load_trinkets() -> typing.List[Trinket]:
 
         return ids
 
+    def _get_source(item: dict) -> Source:
+        instance_mapping = {
+            1: Source.DUNGEON,
+            2: Source.RAID,
+        }
+        item_mapping = {
+            175884: Source.PVP,
+            175921: Source.PVP,
+            178298: Source.PVP,
+            178334: Source.PVP,
+            178386: Source.PVP,
+            178447: Source.PVP,
+            181333: Source.PVP,
+            181335: Source.PVP,
+            181816: Source.PVP,
+            184052: Source.PVP,
+            184053: Source.PVP,
+            184054: Source.PVP,
+            184055: Source.PVP,
+            184056: Source.PVP,
+            184057: Source.PVP,
+            184058: Source.PVP,
+            184059: Source.PVP,
+            184060: Source.PVP,
+            184807: Source.WORLD_DROP,
+            182455: Source.WORLD_DROP,
+            182454: Source.WORLD_DROP,
+            182453: Source.WORLD_DROP,
+            182452: Source.WORLD_DROP,
+            182451: Source.WORLD_DROP,
+            175729: Source.WORLD_DROP,
+            175943: Source.PROFESSION,
+            175942: Source.PROFESSION,
+            175941: Source.PROFESSION,
+            171323: Source.PROFESSION,
+            173069: Source.PROFESSION,
+            173078: Source.PROFESSION,
+            173087: Source.PROFESSION,
+            173096: Source.PROFESSION,
+        }
+        if item["instance_type"]:
+            # use handcrafted mapping
+            return instance_mapping[item["instance_type"]]
+        # print(item)
+        return item_mapping.get(item["id"], Source.UNKNOWN)
+
     trinkets = []
     for trinket in loaded_trinkets:
-        itemlevels = _get_itemlevels(trinket)
+        source = _get_source(trinket)
+        itemlevels = _get_itemlevels(trinket, source)
         if not itemlevels:
             continue
         trinkets.append(
@@ -180,7 +230,7 @@ def _load_trinkets() -> typing.List[Trinket]:
                 stats=_get_stats(trinket),
                 class_mask=trinket["class_mask"],
                 translations=_get_translations(trinket),
-                source=Source.UNKNOWN,
+                source=_get_source(trinket),
                 on_use=trinket["on_use"],
                 bonus_ids=_get_bonus_ids(trinket),
             )
