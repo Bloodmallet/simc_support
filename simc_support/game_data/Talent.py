@@ -5,11 +5,12 @@ import typing
 try:
     from simc_support.game_data.WowSpec import WowSpec
 except ImportError:
-    WowSpec: object = None # type: ignore # test setup
+    WowSpec: object = None  # type: ignore # test setup
 from simc_support.game_data.Language import Translation, _get_translations
+from simc_support.game_data.SimcObject import SimcObject
 
 
-class Talent(object):
+class Talent(SimcObject):
     def __init__(
         self,
         wow_class_id: int,
@@ -20,6 +21,7 @@ class Talent(object):
         column: int,
         translations: Translation,
     ):
+        super().__init__(full_name=name)
         self.wow_class_id = int(wow_class_id)
         self.wow_spec_id = int(wow_spec_id)
         self.name = str(name)
@@ -33,6 +35,12 @@ class Talent(object):
 
     def get_dict(self) -> dict:
         return {"name": self.name, "spell_id": self.spell_id}
+
+    def __str__(self) -> str:
+        return self.name
+
+    def __repr__(self) -> str:
+        return self.simc_name
 
 
 def _load_talents() -> typing.List[Talent]:
@@ -80,7 +88,7 @@ def get_talent_dict(wow_spec: WowSpec, ptr: bool = None) -> dict:
         ]
     )
 
-    result = {} # type: ignore # newer python versions and thus mypy versions want an annotation here
+    result = {}  # type: ignore # newer python versions and thus mypy versions want an annotation here
     for row in range(1, 8):
         result[row] = {}
 
@@ -91,3 +99,15 @@ def get_talent_dict(wow_spec: WowSpec, ptr: bool = None) -> dict:
         result[talent.row + 1][talent.column + 1] = talent.get_dict()
 
     return result
+
+
+def get_talents_for_spec(wow_spec: WowSpec) -> typing.Tuple[Talent]:
+    return tuple(
+        [
+            talent
+            for talent in TALENTS
+            if talent.wow_spec_id == 0
+            and talent.wow_class_id == wow_spec.wow_class.id
+            or talent.wow_spec_id == wow_spec.id
+        ]
+    )
