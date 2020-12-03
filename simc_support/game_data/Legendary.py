@@ -6,6 +6,21 @@ from simc_support.game_data.SimcObject import SimcObject
 from simc_support.game_data.Language import Translation, _get_translations
 from simc_support.game_data.WowSpec import WowSpec, WOWSPECS
 
+# Legendary IDs which can be used by different specs than game data suggests.
+_EXCEPTIONS = {
+    9: [63, 64],  # Temporal Warp
+    10: [62, 64],  # Fevered Incantation
+    44: [250],  # Death's Certainty
+    70: [255],  # Dire Command
+    89: [269],  # Shaohao's Might
+    95: [268],  # Keefer's Skyreach
+    111: [66],  # Relentless Inquisitor
+    113: [259],  # Finality
+    129: [259, 260],  # Deathly Shadows
+    135: [263],  # Elemental Equilibrium
+    # 152: [258], # Kiss of Death # Shadow, needs checking
+}
+
 
 class Legendary(SimcObject):
     """World of Warcraft Legendary class"""
@@ -84,5 +99,10 @@ def get_legendaries_for_spec(wow_spec: WowSpec) -> typing.Tuple[Legendary, ...]:
     if not isinstance(wow_spec, WowSpec):
         raise TypeError("wow_spec needs to be of type WowSpec.")
     return tuple(
-        [legendary for legendary in LEGENDARIES if wow_spec in legendary.wow_specs]
+        [
+            legendary
+            for legendary in LEGENDARIES
+            if wow_spec in legendary.wow_specs
+            or wow_spec.id in _EXCEPTIONS.get(legendary.id, [])
+        ]
     )
