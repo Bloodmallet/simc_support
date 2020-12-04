@@ -150,6 +150,8 @@ def _load_trinkets() -> typing.List[Trinket]:
                     if itemlevel >= item.get("ilevel", 0)
                 ]
             )
+        if source == Source.RARE_MOB:
+            return ItemLevel.RARE_MOB.get(item["ilevel"], [item["ilevel"]])
         return [
             item["ilevel"],
         ]
@@ -195,12 +197,12 @@ def _load_trinkets() -> typing.List[Trinket]:
             184059: Source.PVP,
             184060: Source.PVP,
             184807: Source.WORLD_DROP,
-            182455: Source.WORLD_DROP,
-            182454: Source.WORLD_DROP,
-            182453: Source.WORLD_DROP,
-            182452: Source.WORLD_DROP,
-            182451: Source.WORLD_DROP,
-            175729: Source.WORLD_DROP,
+            182455: Source.RARE_MOB,
+            182454: Source.RARE_MOB,
+            182453: Source.RARE_MOB,
+            182452: Source.RARE_MOB,
+            182451: Source.RARE_MOB,
+            175729: Source.RARE_MOB,
             175943: Source.PROFESSION,
             175942: Source.PROFESSION,
             175941: Source.PROFESSION,
