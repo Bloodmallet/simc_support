@@ -49,3 +49,11 @@ PVP_CONQUEST = [
     226,
 ]
 PVP = PVP_HONOR + PVP_CONQUEST
+
+
+RARE_MOB = {
+    155: [
+        155,
+        164,
+    ]
+}
