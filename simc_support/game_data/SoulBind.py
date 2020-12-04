@@ -8,6 +8,134 @@ from simc_support.game_data.SimcObject import SimcObject
 from simc_support.game_data.Covenant import Covenant, get_covenant
 
 
+SECOND_SOULBIND_RENOWN = 6
+THIRD_SOULBIND_RENOWN = 25
+# until found/extracted in game data, here the rown table
+# soulbind_id: tier: renown
+RENOWN = {
+    1: {  # Niya
+        0: 0,
+        1: 0,
+        2: 3,
+        3: 7,
+        4: 10,
+        5: 18,
+        6: 25,
+        7: 30,
+    },
+    2: {  # Dreamweaver
+        0: SECOND_SOULBIND_RENOWN,
+        1: SECOND_SOULBIND_RENOWN,
+        2: SECOND_SOULBIND_RENOWN,
+        3: 9,
+        4: 13,
+        5: 21,
+        6: 29,
+        7: 34,
+    },
+    3: {  # General Draven
+        0: THIRD_SOULBIND_RENOWN,
+        1: THIRD_SOULBIND_RENOWN,
+        2: THIRD_SOULBIND_RENOWN,
+        3: THIRD_SOULBIND_RENOWN,
+        4: THIRD_SOULBIND_RENOWN,
+        5: THIRD_SOULBIND_RENOWN,
+        6: 29,
+        7: 31,
+    },
+    4: {  # Plague Deviser Marileth
+        0: 0,
+        1: 0,
+        2: 3,
+        3: 9,
+        4: 10,
+        5: 21,
+        6: 25,
+        7: 30,
+    },
+    5: {  # Emeni
+        0: SECOND_SOULBIND_RENOWN,
+        1: SECOND_SOULBIND_RENOWN,
+        2: SECOND_SOULBIND_RENOWN,
+        3: 7,
+        4: 13,
+        5: 18,
+        6: 28,
+        7: 34,
+    },
+    6: {  # Korayn
+        0: THIRD_SOULBIND_RENOWN,
+        1: THIRD_SOULBIND_RENOWN,
+        2: THIRD_SOULBIND_RENOWN,
+        3: THIRD_SOULBIND_RENOWN,
+        4: THIRD_SOULBIND_RENOWN,
+        5: THIRD_SOULBIND_RENOWN,
+        6: 28,
+        7: 31,
+    },
+    7: {  # Pelagos
+        0: 0,
+        1: 0,
+        2: 3,
+        3: 7,
+        4: 10,
+        5: 21,
+        6: 25,
+        7: 30,
+    },
+    8: {  # Nadjia the Mistblade
+        0: 0,
+        1: 0,
+        2: 3,
+        3: 7,
+        4: 10,
+        5: 21,
+        6: 25,
+        7: 30,
+    },
+    9: {  # Theotar the Mad Duke
+        0: SECOND_SOULBIND_RENOWN,
+        1: SECOND_SOULBIND_RENOWN,
+        2: SECOND_SOULBIND_RENOWN,
+        3: 9,
+        4: 13,
+        5: 18,
+        6: 28,
+        7: 34,
+    },
+    10: {  # Bonesmith Heirmir
+        0: THIRD_SOULBIND_RENOWN,
+        1: THIRD_SOULBIND_RENOWN,
+        2: THIRD_SOULBIND_RENOWN,
+        3: THIRD_SOULBIND_RENOWN,
+        4: THIRD_SOULBIND_RENOWN,
+        5: THIRD_SOULBIND_RENOWN,
+        6: 29,
+        7: 31,
+    },
+    13: {  # Kleia
+        0: SECOND_SOULBIND_RENOWN,
+        1: SECOND_SOULBIND_RENOWN,
+        2: SECOND_SOULBIND_RENOWN,
+        3: 9,
+        4: 13,
+        5: 18,
+        6: 28,
+        7: 34,
+    },
+    18: {  # Forgelite Prime Mikanikos
+        0: THIRD_SOULBIND_RENOWN,
+        1: THIRD_SOULBIND_RENOWN,
+        2: THIRD_SOULBIND_RENOWN,
+        3: THIRD_SOULBIND_RENOWN,
+        4: THIRD_SOULBIND_RENOWN,
+        5: THIRD_SOULBIND_RENOWN,
+        6: 29,
+        7: 31,
+    },
+}
+
+
 class SoulBindTalent(SimcObject):
     def __init__(
         self,
@@ -17,6 +145,7 @@ class SoulBindTalent(SimcObject):
         tier: int,
         order: int,
         parent_id: int,
+        soulbind_id: int,
         type: int,
         translations: typing.Union[typing.Dict, Translation],
         **kwargs,
@@ -27,6 +156,7 @@ class SoulBindTalent(SimcObject):
         self.tier = tier
         self.order = order
         self.parent_id = parent_id
+        self.soulbind_id = soulbind_id
         self.type = type
         if isinstance(translations, Translation):
             self.translations = translations
@@ -91,6 +221,10 @@ class SoulBindTalent(SimcObject):
     def is_endurance(self) -> bool:
         return self.type == 3
 
+    @property
+    def renown(self) -> int:
+        return RENOWN[self.soulbind_id][self.tier]
+
 
 class SoulBind(SimcObject):
     """Shadowlands specific additional talent tree."""
@@ -148,13 +282,14 @@ def _load_soul_binds() -> typing.List[SoulBind]:
     ) as f:
         loaded_soul_binds = json.load(f)
 
-    def create_talent(dict) -> SoulBindTalent:
+    def create_talent(dict, soulbind_id) -> SoulBindTalent:
         return SoulBindTalent(
             id=dict["id"],
             spell_id=dict["spell_id"],
             tier=dict["tier"],
             order=dict["ui_order"],
             parent_id=dict["id_garr_talent_prereq"],
+            soulbind_id=soulbind_id,
             type=dict["conduit_type"],
             translations=_get_translations(dict),
             full_name=dict["name"],
@@ -171,7 +306,8 @@ def _load_soul_binds() -> typing.List[SoulBind]:
                 full_name=soul_bind["name"],
                 simc_name=soul_bind["name"].lower().replace(" ", "_"),
                 soul_bind_talents=[
-                    create_talent(talent) for talent in soul_bind["talents"]
+                    create_talent(talent, soul_bind["id"])
+                    for talent in soul_bind["talents"]
                 ],
             )
         )
