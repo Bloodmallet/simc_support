@@ -137,7 +137,16 @@ def _load_trinkets() -> typing.List[Trinket]:
         if source == Source.DUNGEON:
             return ItemLevel.DUNGEON
         if source == Source.RAID and item["id_journal_instance"] == 1190:
-            return sorted(ItemLevel.CASTLE_NATHRIA + ItemLevel.CASTLE_NATHRIA_ENDBOSSES)
+            if item["id"] in (
+                184027,  # Stone Legion Heraldry
+                184028,  # Cabalist's Hymnal
+                184030,  # Dreadfire Vessel
+                184029,  # Manabound Mirror
+                184031,  # Sanguine Vintage
+            ):
+                return ItemLevel.CASTLE_NATHRIA_ENDBOSSES
+            else:
+                return ItemLevel.CASTLE_NATHRIA
         if source == Source.PROFESSION:
             return [
                 item["ilevel"],
