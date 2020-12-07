@@ -161,6 +161,8 @@ def _load_trinkets() -> typing.List[Trinket]:
             )
         if source == Source.RARE_MOB:
             return ItemLevel.RARE_MOB.get(item["ilevel"], [item["ilevel"]])
+        if source == Source.CALLING:
+            return ItemLevel.CALLINGS
         return [
             item["ilevel"],
         ]
@@ -220,6 +222,23 @@ def _load_trinkets() -> typing.List[Trinket]:
             173078: Source.PROFESSION,
             173087: Source.PROFESSION,
             173096: Source.PROFESSION,
+            175728: Source.CALLING,
+            181334: Source.CALLING,
+            181357: Source.CALLING,
+            181358: Source.CALLING,
+            181359: Source.CALLING,
+            181360: Source.CALLING,
+            181457: Source.CALLING,
+            181458: Source.CALLING,
+            181459: Source.CALLING,
+            181501: Source.CALLING,
+            181502: Source.CALLING,
+            181503: Source.CALLING,
+            181507: Source.CALLING,
+            184839: Source.CALLING,
+            184840: Source.CALLING,
+            184841: Source.CALLING,
+            184842: Source.CALLING,
         }
         if item["instance_type"]:
             # use handcrafted mapping
