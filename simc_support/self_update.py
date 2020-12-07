@@ -305,7 +305,10 @@ def update_trinkets(args: object) -> None:
     JOURNAL_INSTANCE = "JournalInstance"
     MAP = "Map"
 
-    WHITELIST = []
+    WHITELIST = [
+        181457,
+        184842,
+    ]
 
     def is_trinket(item: dict) -> bool:
         """See https://github.com/simulationcraft/simc/blob/shadowlands/engine/dbc/data_enums.hh#L335"""
@@ -328,7 +331,7 @@ def update_trinkets(args: object) -> None:
 
         def is_gte_ilevel(item: dict) -> bool:
             """Value of normal Dungeon items at level 50."""
-            return item.get("ilevel") >= 155
+            return item.get("ilevel") >= 148
 
         # Unbound Changeling is somehow available for lvl 1
         return is_expansion(item) or is_gte_ilevel(item)  # and is_gte_level(item)
