@@ -12,6 +12,7 @@ _EXCEPTIONS = {
     10: [62, 64],  # Fevered Incantation
     42: [250, 251],  # Reanimated Shambler
     44: [250],  # Death's Certainty
+    66: [112],  # Vanguard's Momentum
     70: [255],  # Dire Command
     89: [269],  # Shaohao's Might
     95: [268],  # Keefer's Skyreach
