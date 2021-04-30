@@ -392,6 +392,17 @@ RETRIBUTION = WowSpec(
     full_name="Retribution",
     simc_name="retribution",
 )
+HOLY_PALADIN = WowSpec(
+    id=65,
+    wow_class=WowClass.PALADIN,
+    translations=Language.EmptyTranslation(),
+    talents_blueprint="1212231",
+    raid_role=RaidRole.HEAL,
+    role=Role.MELEE,
+    stat=Stat.STRENGTH,
+    full_name="Holy",
+    simc_name="holy",
+)
 DISCIPLINE = WowSpec(
     id=256,
     wow_class=WowClass.PRIEST,
@@ -578,6 +589,7 @@ WOWSPECS = [
     WINDWALKER,
     PROTECTION_PALADIN,
     RETRIBUTION,
+    HOLY_PALADIN,
     DISCIPLINE,
     HOLY_PRIEST,
     SHADOW,
