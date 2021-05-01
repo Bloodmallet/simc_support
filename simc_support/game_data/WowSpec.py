@@ -370,7 +370,7 @@ MISTWEAVER = WowSpec(
     talents_blueprint="1110011",
     raid_role=RaidRole.HEAL,
     role=Role.MELEE,
-    stat=Stat.AGILITY,
+    stat=Stat.INTELLECT,
     full_name="Mistweaver",
     simc_name="mistweaver",
 )
