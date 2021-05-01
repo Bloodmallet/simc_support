@@ -364,7 +364,7 @@ WINDWALKER = WowSpec(
     simc_name="windwalker",
 )
 MISTWEAVER = WowSpec(
-    id=269,
+    id=270,
     wow_class=WowClass.MONK,
     translations=Language.EmptyTranslation(),
     talents_blueprint="1110011",
