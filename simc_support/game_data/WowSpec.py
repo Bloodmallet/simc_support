@@ -363,6 +363,17 @@ WINDWALKER = WowSpec(
     full_name="Windwalker",
     simc_name="windwalker",
 )
+MISTWEAVER = WowSpec(
+    id=269,
+    wow_class=WowClass.MONK,
+    translations=Language.EmptyTranslation(),
+    talents_blueprint="1110011",
+    raid_role=RaidRole.HEAL,
+    role=Role.MELEE,
+    stat=Stat.AGILITY,
+    full_name="Mistweaver",
+    simc_name="mistweaver",
+)
 PROTECTION_PALADIN = WowSpec(
     id=66,
     wow_class=WowClass.PALADIN,
@@ -580,6 +591,7 @@ WOWSPECS = [
     FROST_MAGE,
     BREWMASTER,
     WINDWALKER,
+    MISTWEAVER,
     PROTECTION_PALADIN,
     RETRIBUTION,
     HOLY_PALADIN,
