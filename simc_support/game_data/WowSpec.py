@@ -37,9 +37,12 @@ class WowSpec(SimcObject):
         talents_blueprint = str(talents_blueprint)
         if len(talents_blueprint) != 7:
             raise ValueError("Wrong talent string length, expected 7")
-        if len(talents_blueprint.replace("1", "").replace("0", "")) != 0:
+        if (
+            len(talents_blueprint.replace("1", "").replace("0", "").replace("x", ""))
+            != 0
+        ):
             raise ValueError(
-                "Expected talent string to contain only '1' and '0' charcters"
+                "Expected talent string to contain only 'x', '1' or '0' characters"
             )
         self.talents_blueprint = talents_blueprint
 
@@ -71,7 +74,7 @@ class WowSpec(SimcObject):
             raise ValueError("Unexpected talent value. Values can be 0, 1, 2, 3.")
 
         for row, column in enumerate(self.talents_blueprint):
-            if talent_combination[row] == "0" and column == "1":
+            if talent_combination[row] == "0" and (column == "1" or column == "x"):
                 return False
             elif talent_combination[row] != "0" and column == "0":
                 return False
@@ -89,18 +92,10 @@ class WowSpec(SimcObject):
             list[talent_combination{str}] -- List of all valied talent combinations for a class.
         """
 
-        combinations = ()  # type: ignore # newer python version and thus mypy want an annotation here
-
         if not user_input:
-            combinations = self._get_talent_combinations(  # type: ignore
-                "xxxxxxx",
-            )
-
+            combinations = self._get_talent_combinations("xxxxxxx")
         elif len(user_input) == 7:
-            combinations = self._get_talent_combinations(  # type: ignore
-                user_input,
-            )
-
+            combinations = self._get_talent_combinations(user_input)
         else:
             # something unexpected occured
             raise ValueError(f"Unexpected user_input '{user_input}'.")
@@ -151,16 +146,14 @@ class WowSpec(SimcObject):
             """
             zipped = zip(pattern, combination)
             mapped = map(
-                lambda t: t[0] in "0123"
-                and t[0] != t[1]
-                or t[0] == "x"
-                and t[1] not in "123",
+                lambda t: (t[0] in "0123" and t[0] != t[1])
+                or (t[0] == "x" and t[1] not in "123"),
                 zipped,
             )
             return any(mapped)
 
         filtered_combinations = filter(
-            lambda combination: filter_combination(combination), combinations
+            lambda combination: not filter_combination(combination), combinations
         )
 
         return tuple(filtered_combinations)
