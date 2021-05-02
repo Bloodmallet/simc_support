@@ -1,6 +1,6 @@
 import unittest
 
-from simc_support.game_data.WowSpec import WOWSPECS
+from simc_support.game_data.WowSpec import WOWSPECS, get_wow_spec
 from simc_support.game_data.Talent import Talent
 from simc_support.game_data.Talent import TALENTS
 from simc_support.game_data.Talent import get_talent_dict
@@ -39,3 +39,13 @@ class TestTalent(unittest.TestCase):
                             column in talents[row],
                             f"Talent {column} in row {row} for {wow_spec} was not found.",
                         )
+
+    def test_talent_combination_generator(self):
+        elemental = get_wow_spec("shaman", "elemental")
+        for wow_spec in WOWSPECS:
+            combinations = wow_spec.get_talent_combinations()
+            with self.subTest(wow_spec=wow_spec):
+                self.assertGreater(len(combinations), 0)
+
+                if wow_spec == elemental:
+                    self.assertEqual(len(combinations), 243)
