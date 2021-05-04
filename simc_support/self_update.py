@@ -162,7 +162,7 @@ def get_python() -> str:
 
     if not (is_python() or is_python3()):
         raise SystemError("Python 3 is required.")
-
+    return "D:\Programme\simc_support\env\Scripts\python.exe"
     return "python" if is_python() else "python3"
 
 
@@ -196,19 +196,20 @@ def casc(args: object) -> None:
 
     for locale in _LOCALES:
         logger.info(locale)
-
+        full_command = command + [
+            "--locale",
+            locale,
+            "-o",
+            os.path.join(args.output, locale),
+        ]
+        logger.debug(full_command)
         process = subprocess.Popen(
-            command
-            + [
-                "--locale",
-                locale,
-                "-o",
-                os.path.join(args.output, locale),
-            ],
+            full_command,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             cwd=os.path.join(args.simc, "casc_extract"),
         )
+        # ['python', 'casc_extract.py', '--cdn', '-m', 'batch', '--locale', 'pt_PT', '-o', 'D:\\Programme\\simc_support\\simc_support\\tmp\\pt_PT']
         while True:
             output = process.stdout.readline()
             if output == b"" and process.poll() is not None:
@@ -217,7 +218,9 @@ def casc(args: object) -> None:
                 logger.debug(output.strip().decode("ascii"))
         rc = process.poll()
         if rc != 0:
-            logger.error(f"Error occured while loading {locale}.")
+            logger.error(
+                f"Error occured while loading {locale}. {process.communicate()[1]}"
+            )
 
     logger.info("Downloaded files")
 
@@ -478,7 +481,9 @@ def update_trinkets(args: object) -> None:
         trinket["id_map"] = get_id_map(trinket["id_journal_instance"])
         trinket["instance_type"] = get_instance_type(trinket["id_map"])
 
-    with open(os.path.join(DATA_PATH, "trinkets.json"), "w") as f:
+    logger.debug(trinkets)
+
+    with open(os.path.join(DATA_PATH, "trinkets.json"), "w", encoding="utf-8") as f:
         json.dump(trinkets, f, ensure_ascii=False)
 
     logger.info(f"Updated {len(trinkets)} trinkets")
@@ -508,7 +513,7 @@ def update_wow_classes(args: object) -> None:
 
     wow_classes = merge_information(data, translation_field="name_lang")
 
-    with open(os.path.join(DATA_PATH, "wow_classes.json"), "w") as f:
+    with open(os.path.join(DATA_PATH, "wow_classes.json"), "w", encoding="utf-8") as f:
         json.dump(wow_classes, f, ensure_ascii=False)
 
     logger.info(f"Updated {len(wow_classes)} WowClasses")
@@ -530,7 +535,7 @@ def update_covenants(args: object) -> None:
 
     covenants = merge_information(data)
 
-    with open(os.path.join(DATA_PATH, "covenants.json"), "w") as f:
+    with open(os.path.join(DATA_PATH, "covenants.json"), "w", encoding="utf-8") as f:
         json.dump(covenants, f, ensure_ascii=False)
 
     logger.info(f"Updated {len(covenants)} covenants")
@@ -607,7 +612,7 @@ def update_soul_binds(args: object) -> None:
             for key in spell_names:
                 talent[key] = spell_names[key]
 
-    with open(os.path.join(DATA_PATH, "soul_binds.json"), "w") as f:
+    with open(os.path.join(DATA_PATH, "soul_binds.json"), "w", encoding="utf-8") as f:
         json.dump(soul_binds, f, ensure_ascii=False)
 
     logger.info(f"Updated {len(soul_binds)} soul binds")
@@ -650,7 +655,7 @@ def update_legendaries(args: object) -> None:
             ]
         )
 
-    with open(os.path.join(DATA_PATH, "legendaries.json"), "w") as f:
+    with open(os.path.join(DATA_PATH, "legendaries.json"), "w", encoding="utf-8") as f:
         json.dump(legendaries, f, ensure_ascii=False)
 
     logger.info(f"Updated {len(legendaries)} legendaries")
@@ -744,7 +749,7 @@ def update_conduits(args: object) -> None:
 
     conduits = list([conduit for conduit in conduits if _is_conduit(conduit)])
 
-    with open(os.path.join(DATA_PATH, "conduits.json"), "w") as f:
+    with open(os.path.join(DATA_PATH, "conduits.json"), "w", encoding="utf-8") as f:
         json.dump(conduits, f, ensure_ascii=False)
 
     logger.info(f"Updated {len(conduits)} conduits")
@@ -781,7 +786,7 @@ def update_talents(args: object) -> None:
         for key in spell_names:
             talent[key] = spell_names[key]
 
-    with open(os.path.join(DATA_PATH, "talents.json"), "w") as f:
+    with open(os.path.join(DATA_PATH, "talents.json"), "w", encoding="utf-8") as f:
         json.dump(talents, f, ensure_ascii=False)
 
     logger.info(f"Updated {len(talents)} talents")
