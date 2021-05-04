@@ -161,8 +161,10 @@ def _load_trinkets() -> typing.List[Trinket]:
             )
         if source == Source.RARE_MOB:
             return ItemLevel.RARE_MOB.get(item["ilevel"], [item["ilevel"]])
+
         if source == Source.CALLING:
             return ItemLevel.CALLINGS
+
         return [
             item["ilevel"],
         ]

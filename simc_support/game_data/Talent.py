@@ -101,6 +101,7 @@ def get_talent_dict(wow_spec: WowSpec, ptr: bool = None) -> dict:
     return result
 
 
+
 def get_talents_for_spec(wow_spec: WowSpec) -> typing.Tuple[Talent, ...]:
     return tuple(
         [
