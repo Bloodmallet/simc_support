@@ -10,7 +10,6 @@ class Source(enum.Enum):
     RAID = "Raid"
     RARE_MOB = "Rare Mob"
     UNKNOWN = "Unknown"
-    RARE_MOB = "Rare Mob"
     WORLD_BOSS = "World Boss"
     WORLD_DROP = "World Drop"
     WORLD_QUEST = "World Quest"
