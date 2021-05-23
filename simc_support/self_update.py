@@ -13,15 +13,19 @@ import subprocess
 import typing
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
+logger.setLevel(logging.DEBUG)
 
 ch = logging.StreamHandler()
-ch.setLevel(logging.DEBUG)
+ch.setLevel(logging.INFO)
 formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 ch.setFormatter(formatter)
 
-logger.addHandler(ch)
+fh = logging.FileHandler("debug.log", encoding="utf-8")
+fh.setLevel(logging.DEBUG)
+fh.setFormatter(formatter)
 
+logger.addHandler(ch)
+logger.addHandler(fh)
 
 _LOCALES = [
     "en_US",
@@ -142,27 +146,40 @@ def handle_arguments() -> argparse.ArgumentParser:
         action="store_true",
         help="Enable debug output",
     )
+    parser.add_argument(
+        "--env",
+        nargs="?",
+        default=None,
+        help="Absolute path to the executable python-env file.",
+    )
     return parser
 
 
-def get_python() -> str:
+def get_python(env: str = None) -> str:
     """Find and return the appropriate commandline input to use Python 3+
 
     Returns:
         str: Either "python" or "python3"
     """
 
+    if env:
+        return env
+
     def is_python() -> bool:
-        output = subprocess.run(["python", "--version"], stdout=subprocess.PIPE)
+        cmd = ["python", "--version"]
+        logger.debug(cmd)
+        output = subprocess.run(cmd, stdout=subprocess.PIPE)
         return output.stdout.split()[1].startswith(b"3")
 
     def is_python3() -> bool:
-        output = subprocess.run(["python3", "--version"], stdout=subprocess.PIPE)
+        cmd = ["python3", "--version"]
+        logger.debug(cmd)
+        output = subprocess.run(cmd, stdout=subprocess.PIPE)
         return output.stdout.split()[1].startswith(b"3")
 
     if not (is_python() or is_python3()):
         raise SystemError("Python 3 is required.")
-    return "D:\Programme\simc_support\env\Scripts\python.exe"
+
     return "python" if is_python() else "python3"
 
 
@@ -180,7 +197,7 @@ def casc(args: object) -> None:
         return
     logger.info("Downloading files (casc)")
 
-    python = get_python()
+    python = get_python(args.env)
 
     command = [
         python,
@@ -241,9 +258,11 @@ def dbc(args: object, files: typing.List[str]) -> None:
         return
     logger.info("Extracting files (dbc)")
 
-    python = get_python()
+    python = get_python(args.env)
 
-    wow_version = os.listdir(os.path.join(args.output, _LOCALES[0]))[0]
+    wow_versions = os.listdir(os.path.join(args.output, _LOCALES[0]))
+    logger.debug(f" Detected wow versions: {wow_versions}")
+    wow_version = wow_versions[-1]
 
     command = [
         python,
@@ -267,11 +286,11 @@ def dbc(args: object, files: typing.List[str]) -> None:
                 file,
             ]
 
-            logger.debug(cmd)
             pathlib.Path(os.path.join(get_compiled_data_path(args, locale))).mkdir(
                 parents=True, exist_ok=True
             )
 
+            logger.debug(cmd)
             process = subprocess.run(
                 cmd,
                 stdout=subprocess.PIPE,
@@ -380,10 +399,12 @@ def update_trinkets(args: object) -> None:
     ) as f:
         itemeffects = json.load(f)
 
+    logger.debug(itemeffects)
+
     def is_on_use(item_id: int) -> bool:
         uses = []
         for effect in itemeffects:
-            if item_id == effect["id_parent"]:
+            if item_id == effect.get("id_parent", None):
                 if effect["trigger_type"] == 0:
                     uses.append(True)
                 else:
@@ -804,6 +825,8 @@ def main() -> None:
     update_legendaries(args)
     update_conduits(args)
     update_talents(args)
+
+    logger.debug("self_update done")
 
 
 if __name__ == "__main__":
