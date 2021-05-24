@@ -321,6 +321,7 @@ def update_trinkets(args: object) -> None:
     logger.info("Update trinkets")
 
     ITEMSPARSE = "ItemSparse"
+    ITEMXITEMEFFECT = "ItemXItemEffect"
     ITEMEFFECT = "ItemEffect"
     JOURNAL_ENCOUNTER_ITEM = "JournalEncounterItem"
     JOURNAL_ENCOUNTER = "JournalEncounter"
@@ -372,10 +373,11 @@ def update_trinkets(args: object) -> None:
     dbc(
         args,
         [
-            ITEMSPARSE,
             ITEMEFFECT,
-            JOURNAL_ENCOUNTER_ITEM,
+            ITEMSPARSE,
+            ITEMXITEMEFFECT,
             JOURNAL_ENCOUNTER,
+            JOURNAL_ENCOUNTER_ITEM,
             JOURNAL_INSTANCE,
             MAP,
         ],
@@ -397,19 +399,40 @@ def update_trinkets(args: object) -> None:
         os.path.join(get_compiled_data_path(args, _LOCALES[0]), f"{ITEMEFFECT}.json"),
         "r",
     ) as f:
-        itemeffects = json.load(f)
+        _itemeffects = json.load(f)
+
+    itemeffects = {}
+    for effect in _itemeffects:
+        itemeffects[effect["id"]] = effect
 
     logger.debug(itemeffects)
 
+    # load ItemXItemEffect table
+    with open(
+        os.path.join(
+            get_compiled_data_path(args, _LOCALES[0]), f"{ITEMXITEMEFFECT}.json"
+        ),
+        "r",
+    ) as f:
+        _itemxitemeffects = json.load(f)
+
+    itemxitemeffects = {}
+    for effect in _itemxitemeffects:
+        if effect["id_parent"] in itemxitemeffects:
+            itemxitemeffects[effect["id_parent"]].append(
+                itemeffects[effect["id_item_effect"]]
+            )
+        else:
+            itemxitemeffects[effect["id_parent"]] = [
+                itemeffects[effect["id_item_effect"]]
+            ]
+
     def is_on_use(item_id: int) -> bool:
-        uses = []
-        for effect in itemeffects:
-            if item_id == effect.get("id_parent", None):
-                if effect["trigger_type"] == 0:
-                    uses.append(True)
-                else:
-                    uses.append(False)
-        return any(uses)
+        if item_id in itemxitemeffects:
+            return any(
+                map(lambda row: row["trigger_type"] == 0, itemxitemeffects[item_id])
+            )
+        return False
 
     def get_spec_mask(item_id: int) -> list:
         """Turns out...trinkets add only 0 as specialization ids...worthless approach.
