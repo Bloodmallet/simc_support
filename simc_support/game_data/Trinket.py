@@ -353,3 +353,20 @@ def get_versatility_trinket(stat: Stat) -> Trinket:
             on_use=False,
         )
     raise ValueError(f"Unknown stat {stat}. No Versatility trinket available.")
+
+
+def _get_trinket(id: int = None, name: str = None) -> Trinket:
+    if not (id or name):
+        raise ValueError("id or name must be provided to look up a trinket")
+
+    for trinket in TRINKETS:
+        if trinket.item_id == id or trinket.name == name:
+            return trinket
+    raise FileNotFoundError("Trinket not found")
+
+
+def get_trinket(search: typing.Union[int, str]) -> Trinket:
+    if isinstance(search, int):
+        return _get_trinket(id=search)
+    elif isinstance(search, str):
+        return _get_trinket(name=search)
