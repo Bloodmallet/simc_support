@@ -29,6 +29,6 @@ echo "Build wheel"
 python setup.py sdist bdist_wheel
 
 echo "Publish"
-# python -m twine upload dist/*
+python -m twine upload dist/*
 
 Remove-Artifacts
