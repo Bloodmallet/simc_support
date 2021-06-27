@@ -20,3 +20,4 @@ tmp/
 *.simc
 coverage.xml
 *.log
+run*.*
