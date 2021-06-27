@@ -152,13 +152,18 @@ def _load_trinkets() -> typing.List[Trinket]:
                 item["ilevel"],
             ]
         if source == Source.PVP:
-            return list(
-                [
+            if "Aspirant" in item["name"]:
+                return [
                     itemlevel
-                    for itemlevel in ItemLevel.PVP
+                    for itemlevel in ItemLevel.PVP_HONOR
                     if itemlevel >= item.get("ilevel", 0)
                 ]
-            )
+            else:
+                return [
+                    itemlevel
+                    for itemlevel in ItemLevel.PVP_CONQUEST
+                    if itemlevel >= item.get("ilevel", 0)
+                ]
         if source == Source.RARE_MOB:
             return ItemLevel.RARE_MOB.get(item["ilevel"], [item["ilevel"]])
 
