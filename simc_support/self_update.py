@@ -39,7 +39,7 @@ _LOCALES = [
     "pt_PT",
 ]
 
-DATA_PATH = "game_data/data_files"
+DATA_PATH = "simc_support/game_data/data_files"
 
 
 def get_spell_names(spells: typing.List[dict], spell_id: int) -> dict:
@@ -836,6 +836,201 @@ def update_talents(args: object) -> None:
     logger.info(f"Updated {len(talents)} talents")
 
 
+def update_shards_of_dominations(args: object) -> None:
+    logger.info("Update Shards of Dominations")
+
+    ITEM_SPARSE = "ItemSparse"
+    GEM_PROPERTIES = "GemProperties"
+    SPELL_ITEM_ENCHANTMENT = "SpellItemEnchantment"
+    SPELL_NAME = "SpellName"
+    SPELL_MISC = "SpellMisc"
+
+    dbc(
+        args,
+        [
+            ITEM_SPARSE,
+            GEM_PROPERTIES,
+            SPELL_ITEM_ENCHANTMENT,
+            SPELL_NAME,
+            SPELL_MISC,
+        ],
+    )
+    data = {
+        ITEM_SPARSE: {},
+        GEM_PROPERTIES: {},
+        SPELL_ITEM_ENCHANTMENT: {},
+        SPELL_NAME: {},
+        SPELL_MISC: {},
+    }
+
+    for key in data:
+        for locale in _LOCALES:
+            with open(
+                os.path.join(get_compiled_data_path(args, locale), f"{key}.json"),
+                "r",
+            ) as f:
+                data[key][locale] = json.load(f)
+
+    def is_shard(entry: dict) -> bool:
+        not_a_shard = [
+            187120,
+            186773,
+        ]
+        if entry["id"] in not_a_shard:
+            return False
+        return (
+            entry["id_expansion"] == 7
+            and entry["ilevel"] >= 255
+            and entry["quality"] == 4
+            and entry["req_level"] >= 50
+            and entry["gem_props"] != 0
+        )
+
+    shards = list(filter(is_shard, data[ITEM_SPARSE]["en_US"]))
+
+    shard_ids = list(set([shard["gem_props"] for shard in shards]))
+    logger.info(f"shard_ids ({len(shard_ids)}): {shard_ids}")
+
+    def is_relevant_gem_prop(entry: dict) -> bool:
+        return entry["id"] in shard_ids
+
+    relevant_gems = list(filter(is_relevant_gem_prop, data[GEM_PROPERTIES]["en_US"]))
+
+    enchant_ids = [gem_prop["id_enchant"] for gem_prop in relevant_gems]
+    logger.info(f"enchant_ids ({len(enchant_ids)}): {enchant_ids}")
+
+    def is_shard_enchantment(entry: dict) -> bool:
+        return entry["id"] in enchant_ids
+
+    # gem_properties = data[GEM_PROPERTIES]
+    spell_item_enchantments = list(
+        filter(is_shard_enchantment, data[SPELL_ITEM_ENCHANTMENT]["en_US"])
+    )
+
+    properties = ("id_property_1", "id_property_2", "id_property_3")
+
+    cutoff = 0
+    # logger.info(json.dumps(spell_item_enchantments))
+    shard_enchantment_ids = []
+    for prop in properties:
+        shard_enchantment_ids += [
+            enchant[prop]
+            for enchant in spell_item_enchantments
+            if enchant[prop] > cutoff
+        ]
+    shard_enchantment_ids = list(set(shard_enchantment_ids))
+    logger.info(
+        f"shard_enchantment_ids ({len(shard_enchantment_ids)}): {shard_enchantment_ids}"
+    )
+
+    def is_shard_spell(entry: dict) -> bool:
+        return entry["id"] in shard_enchantment_ids
+
+    spell_names = merge_information(data[SPELL_NAME], filter_function=is_shard_spell)
+
+    names = [spell["name"] for spell in spell_names]
+    logger.info(f"names ({len(names)}): {names}")
+
+    def is_misc(entry: dict) -> dict:
+        return entry["id_parent"] in shard_enchantment_ids
+
+    spell_miscs = list(filter(is_misc, data[SPELL_MISC]["en_US"]))
+
+    for shard in shards:
+        for gem in relevant_gems:
+            if shard["gem_props"] == gem["id"]:
+                shard["id_enchant"] = gem["id_enchant"]
+        for enchant in spell_item_enchantments:
+            if shard["id_enchant"] == enchant["id"]:
+                for prop in properties:
+                    shard[prop] = enchant[prop]
+        for name in spell_names:
+            if name["id"] in [shard[prop] for prop in properties]:
+                for key in name.keys():
+                    if "name_" in key:
+                        shard[key] = name[key]
+        for misc in spell_miscs:
+            if misc["id_parent"] in [shard[prop] for prop in properties]:
+                shard["school"] = misc["school"]
+        # cleanse unwanted keys
+        unwanted_keys = [
+            "desc",
+            "pad2",
+            "pad1",
+            "pad0",
+            "dmg_range",
+            "item_limit_category",
+            "duration",
+            "item_damage_modifier",
+            "bag_family",
+            "ranged_mod_range",
+            "stackable",
+            "max_count",
+            "id_content_tuning",
+            "sell_price",
+            "buy_price",
+            "unk_3",
+            "unk_2",
+            "unk_1",
+            "flags_1",
+            "flags_2",
+            "flags_3",
+            "flags_4",
+            "faction_conv_id",
+            "unk_901_1",
+            "req_spell",
+            "id_curve",
+            # "id_name_desc",
+            "unk_l72_1",
+            "id_holiday",
+            "socket_bonus",
+            "totem_category",
+            "map",
+            "area_1",
+            "area_2",
+            "item_set",
+            "id_lock",
+            "start_quest",
+            "page_text",
+            "delay",
+            "req_rep_faction",
+            "req_skill_rank",
+            "req_skill",
+            "id_artifact",
+            "unk_6",
+            "unk_7",
+            "socket_color_1",
+            "socket_color_2",
+            "socket_color_3",
+            "sheath",
+            "page_mat",
+            "id_lang",
+            "bonding",
+            "damage_type",
+            "container_slots",
+            "req_rep_rank",
+            "unk_5",
+            "unk_4",
+            "inv_type",
+        ]
+        for i in range(1, 11):
+            unwanted_keys += [
+                f"stat_socket_mul_{i}",
+                f"stat_alloc_{i}",
+                f"stat_type_{i}",
+            ]
+        for key in unwanted_keys:
+            del shard[key]
+
+    # save data to file
+    with open(
+        os.path.join(DATA_PATH, "damnation_shards.json"), "w", encoding="utf-8"
+    ) as f:
+        json.dump(shards, f, ensure_ascii=False)
+
+    logger.info(f"Updated {len(shards)} DamnationShards")
+
+
 def main() -> None:
     args = handle_arguments().parse_args()
     if args.debug:
@@ -848,6 +1043,8 @@ def main() -> None:
     update_legendaries(args)
     update_conduits(args)
     update_talents(args)
+    update_shards_of_dominations(args)
+    # anima powers? https://ptr.wowhead.com/news/how-the-tormented-seasonal-mythic-affix-works-get-anima-powers-from-lieutenants-322665
 
     logger.debug("self_update done")
 
