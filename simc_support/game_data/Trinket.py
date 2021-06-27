@@ -134,6 +134,10 @@ def _load_trinkets() -> typing.List[Trinket]:
                 200,
             ]
 
+        # Tazavesh Dungeon m0 specific itemlevel
+        if item["id_journal_instance"] == 1194:
+            return [ItemLevel.TAZAVESH]
+
         if source == Source.DUNGEON:
             return ItemLevel.DUNGEON
         if source == Source.RAID and item["id_journal_instance"] == 1190:

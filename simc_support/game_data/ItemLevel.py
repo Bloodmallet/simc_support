@@ -10,48 +10,66 @@ WORLD_QUEST_ITEMLEVELS = [
 ]  # guess
 CALLINGS = WORLD_QUEST_ITEMLEVELS
 
-DUNGEON_NORMAL = 158
-DUNGEON_HEROIC = 171
-DUNGEON_MYTHIC = 184
+DUNGEON_NORMAL = 184
+DUNGEON_HEROIC = 197
+DUNGEON_MYTHIC = 210
 DUNGEON_MYTHIC_LEVELS = [
-    187,
-    190,
-    194,
-    197,
-    200,
-    203,  # weekly
-    204,
-    207,
+    # 187,
+    # 190,
+    # 194,
+    # 197,
+    # 200,
+    # 203,  # weekly
+    # 204,
+    # 207,
     210,
-    213,  # weekly
-    216,  # weekly
-    220,  # weekly
-    223,  # weekly
-    226,  # weekly
+    213,
+    216,
+    220,
+    223,
+    226,  # + weekly
+    229,  # + weekly
+    233,  # + weekly
+    236,  # + weekly
+    239,  # weekly
+    242,  # weekly
+    246,  # weekly
+    249,  # weekly
+    252,  # weekly
 ]
 DUNGEON = [DUNGEON_NORMAL] + [DUNGEON_HEROIC] + [DUNGEON_MYTHIC] + DUNGEON_MYTHIC_LEVELS
+TAZAVESH = 226
 
 # raids
 CASTLE_NATHRIA = [187, 200, 213, 226]
 CASTLE_NATHRIA_ENDBOSSES = list([ilvl + 7 for ilvl in CASTLE_NATHRIA])
 
+SANCTUM_OF_DOMINATION = [213, 226, 239, 252]
+SANCTUM_OF_DOMINATION_ENDBOSSES = list([ilvl + 7 for ilvl in SANCTUM_OF_DOMINATION])
+
 UPPER_BOUND = CASTLE_NATHRIA_ENDBOSSES[-1]
 
 PVP_HONOR = [
-    158,
-    164,
-    171,
+    # 158,
+    # 164,
+    # 171,
     177,
     184,
     190,
     197,
+    203,  # 9.1
+    210,  # 9.1
+    216,  # 9.1
 ]
 PVP_CONQUEST = [
-    200,
-    207,
-    213,
+    # 200,
+    # 207,
+    # 213,
     220,
     226,
+    233,  # 9.1
+    240,  # 9.1
+    246,  # 9.1
 ]
 PVP = PVP_HONOR + PVP_CONQUEST
 
