@@ -22,7 +22,7 @@ class TestSoulBind(unittest.TestCase):
             with self.subTest(soul_bind=soul_bind):
                 for path in soul_bind.talent_paths:
                     with self.subTest(path=path):
-                        self.assertEqual(len(path), 8)
+                        self.assertEqual(len(path), 12)
 
 
 class TestGetSoulBind(unittest.TestCase):
