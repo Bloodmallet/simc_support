@@ -22,6 +22,10 @@ RENOWN = {
         5: 18,
         6: 25,
         7: 30,
+        8: 43,
+        9: 46,
+        10: 51,
+        11: 55,
     },
     2: {  # Dreamweaver
         0: SECOND_SOULBIND_RENOWN,
@@ -32,6 +36,10 @@ RENOWN = {
         5: 21,
         6: 29,
         7: 34,
+        8: 42,
+        9: 45,
+        10: 49,
+        11: 54,
     },
     3: {  # General Draven
         0: THIRD_SOULBIND_RENOWN,
@@ -42,6 +50,10 @@ RENOWN = {
         5: THIRD_SOULBIND_RENOWN,
         6: 29,
         7: 31,
+        8: 41,
+        9: 48,
+        10: 53,
+        11: 57,
     },
     4: {  # Plague Deviser Marileth
         0: 0,
@@ -52,6 +64,10 @@ RENOWN = {
         5: 21,
         6: 25,
         7: 30,
+        8: 43,
+        9: 46,
+        10: 51,
+        11: 55,
     },
     5: {  # Emeni
         0: SECOND_SOULBIND_RENOWN,
@@ -62,6 +78,10 @@ RENOWN = {
         5: 18,
         6: 28,
         7: 34,
+        8: 42,
+        9: 45,
+        10: 49,
+        11: 54,
     },
     6: {  # Korayn
         0: THIRD_SOULBIND_RENOWN,
@@ -72,6 +92,10 @@ RENOWN = {
         5: THIRD_SOULBIND_RENOWN,
         6: 28,
         7: 31,
+        8: 41,
+        9: 48,
+        10: 53,
+        11: 57,
     },
     7: {  # Pelagos
         0: 0,
@@ -82,6 +106,10 @@ RENOWN = {
         5: 21,
         6: 25,
         7: 30,
+        8: 43,
+        9: 46,
+        10: 51,
+        11: 55,
     },
     8: {  # Nadjia the Mistblade
         0: 0,
@@ -92,6 +120,10 @@ RENOWN = {
         5: 21,
         6: 25,
         7: 30,
+        8: 43,
+        9: 46,
+        10: 51,
+        11: 55,
     },
     9: {  # Theotar the Mad Duke
         0: SECOND_SOULBIND_RENOWN,
@@ -102,6 +134,10 @@ RENOWN = {
         5: 18,
         6: 28,
         7: 34,
+        8: 42,
+        9: 45,
+        10: 49,
+        11: 54,
     },
     10: {  # Bonesmith Heirmir
         0: THIRD_SOULBIND_RENOWN,
@@ -112,6 +148,10 @@ RENOWN = {
         5: THIRD_SOULBIND_RENOWN,
         6: 29,
         7: 31,
+        8: 41,
+        9: 48,
+        10: 53,
+        11: 57,
     },
     13: {  # Kleia
         0: SECOND_SOULBIND_RENOWN,
@@ -122,6 +162,10 @@ RENOWN = {
         5: 18,
         6: 28,
         7: 34,
+        8: 42,
+        9: 45,
+        10: 49,
+        11: 54,
     },
     18: {  # Forgelite Prime Mikanikos
         0: THIRD_SOULBIND_RENOWN,
@@ -132,6 +176,10 @@ RENOWN = {
         5: THIRD_SOULBIND_RENOWN,
         6: 29,
         7: 31,
+        8: 41,
+        9: 48,
+        10: 53,
+        11: 57,
     },
 }
 
@@ -172,33 +220,47 @@ class SoulBindTalent(SimcObject):
         WHITELIST = [
             # Pelagos
             "Combat Meditation",
+            "Better Together",
+            "Newfound Resolve",
             # Kleia
             "Pointed Courage",
+            "Spear of the Archon",
+            "Light the Path",
             # Forgelite Prime Mikanikos
             "Hammer of Genesis",
             "Bron's Call to Action",
+            "Soulglow Spectrometer",
+            "Effusive Anima Accelerator",
             # Plague Deviser Marelith
             "Plaguey's Preemptive Strike",
+            "Kevin's Oozeling",
             # Emeni
             "Lead by Example",
             "Gnashing Chompers",
+            "Pustule Eruption",
             # Bonesmith Heirmir
             "Forgeborne Reveries",
             "Heirmir's Arsenal: Marrowed Gemstone",
+            "Carver's Eye",
+            "Mnemonic Equipment",
             # Niya
             "Niya's Tools: Burrs",
             "Niya's Tools: Poison",
             "Grove Invigoration",
+            "Bonded Hearts",
             # Dreamweaver
             "Field of Blossoms",
             "Social Butterfly",
+            "Dream Delver",
             # Korayn
             "First Strike",
             "Wild Hunt Tactics",
+            "Wild Hunt Strategem",
             # Nadja the Mistblade
             "Exacting Preparation",
             "Dauntless Duelist",
             "Thrill Seeker",
+            "Fatal Flaw",
             # Theotar the Mad Duke
             "Refined Palate",
             "Soothing Shade",
@@ -206,6 +268,7 @@ class SoulBindTalent(SimcObject):
             # General Draven
             "Superior Tactics",
             "Built for War",
+            "Battlefield Presence",
         ]
         return self.full_name in WHITELIST or self.is_potency
 
