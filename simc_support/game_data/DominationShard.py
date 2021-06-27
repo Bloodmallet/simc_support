@@ -23,7 +23,7 @@ class ShardType(Enum):
         return mapping[school]
 
 
-class DamnationShard(SimcObject):
+class DominationShard(SimcObject):
     def __init__(
         self,
         *args,
@@ -32,7 +32,7 @@ class DamnationShard(SimcObject):
         translations: Translation,
         **kwargs,
     ):
-        """Damnation Socket of the second Raid of Shadowlands
+        """Domination Socket of the second Raid of Shadowlands
 
         Args:
             gem_id (int): id of the gem
@@ -47,22 +47,22 @@ class DamnationShard(SimcObject):
         self.school_type = ShardType.get_shard_type(self.school)
 
 
-def _load_damnation_shards() -> typing.List[DamnationShard]:
+def _load_domination_shards() -> typing.List[DominationShard]:
     with pkg_resources.resource_stream(
-        __name__, "/".join(("data_files", "damnation_shards.json"))
+        __name__, "/".join(("data_files", "domination_shards.json"))
     ) as f:
-        loaded_damnation_shards = json.load(f)
+        loaded_domination_shards = json.load(f)
 
-    damnation_shards = []
-    for shard in loaded_damnation_shards:
-        damnation_shards.append(
-            DamnationShard(
+    domination_shards = []
+    for shard in loaded_domination_shards:
+        domination_shards.append(
+            DominationShard(
                 gem_id=shard["id"],
                 school=shard["school"],
                 translations=_get_translations(shard),
             )
         )
-    return damnation_shards
+    return domination_shards
 
 
-DAMNATION_SHARDS: typing.List[DamnationShard] = _load_damnation_shards()
+DOMINATION_SHARDS: typing.List[DominationShard] = _load_domination_shards()
