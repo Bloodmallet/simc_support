@@ -151,6 +151,18 @@ def _load_trinkets() -> typing.List[Trinket]:
                 return ItemLevel.CASTLE_NATHRIA_ENDBOSSES
             else:
                 return ItemLevel.CASTLE_NATHRIA
+        if source == Source.RAID and item["id_journal_instance"] == 1193:
+            if item["id"] in (
+                186421,  # Forbidden Necromantic Tome
+                186437,  # Relic of the Frozen Wastes
+                186436,  # Resonant Silver Bell
+                186438,  # Old Warrior's Soul
+            ):
+                return ItemLevel.SANCTUM_OF_DOMINATION_ENDBOSSES
+            else:
+                return ItemLevel.SANCTUM_OF_DOMINATION
+        if source == source.KORTHIA:
+            return ItemLevel.KORTHIA
         if source == Source.PROFESSION:
             return [
                 item["ilevel"],
@@ -255,6 +267,14 @@ def _load_trinkets() -> typing.List[Trinket]:
             # use handcrafted mapping
             return instance_mapping[item["instance_type"]]
         # print(item)
+        if (
+            item["ilevel"] >= 200
+            and item["map"] == 0
+            and item["req_level"] == 60
+            and item["quality"] == 3
+        ):
+            return Source.KORTHIA
+
         return item_mapping.get(item["id"], Source.UNKNOWN)
 
     trinkets = []
@@ -271,7 +291,7 @@ def _load_trinkets() -> typing.List[Trinket]:
                 stats=_get_stats(trinket),
                 class_mask=trinket["class_mask"],
                 translations=_get_translations(trinket),
-                source=_get_source(trinket),
+                source=source,
                 on_use=trinket["on_use"],
                 bonus_ids=_get_bonus_ids(trinket),
             )
