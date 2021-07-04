@@ -5,6 +5,7 @@ import typing
 from simc_support.game_data.SimcObject import SimcObject
 from simc_support.game_data.Language import Translation, _get_translations
 from simc_support.game_data.WowSpec import WowSpec, WOWSPECS
+from simc_support.game_data.Covenant import get_covenant, COVENANTS, Covenant
 
 # Legendary IDs which can be used by different specs than game data suggests.
 _EXCEPTIONS = {
@@ -32,6 +33,7 @@ class Legendary(SimcObject):
         *args,
         id: int,
         bonus_id: int,
+        covenants: typing.List[Covenant],
         spell_id: int,
         wow_specs: typing.List[WowSpec],
         translations: Translation,
@@ -45,6 +47,10 @@ class Legendary(SimcObject):
         if not all([isinstance(spec, WowSpec) for spec in wow_specs]):
             raise TypeError("wow_specs expected a list or tuple of WowSpec's.")
         self.wow_specs = wow_specs
+
+        if not all([isinstance(covenant, Covenant) for covenant in covenants]):
+            raise TypeError("covenants need to be an iterable of Covenant instances.")
+        self.covenants = covenants
 
         if isinstance(translations, Translation):
             self.translations = translations
@@ -70,6 +76,12 @@ def _load_legendaries() -> typing.List[Legendary]:
 
         return wow_specs
 
+    def get_covenants(legendary: dict) -> typing.List[Covenant]:
+        if legendary["id_covenant"] == 0:
+            return COVENANTS
+        else:
+            return [get_covenant(id=legendary["id_covenant"])]
+
     legendaries = []
     for legendary in loaded_legendaries:
         legendaries.append(
@@ -80,6 +92,7 @@ def _load_legendaries() -> typing.List[Legendary]:
                 bonus_id=legendary["id_bonus"],
                 translations=_get_translations(legendary),
                 wow_specs=_get_specs(legendary),
+                covenants=get_covenants(legendary),
             )
         )
 
