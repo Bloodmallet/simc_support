@@ -13,12 +13,12 @@ _EXCEPTIONS = {
     10: [62, 64],  # Fevered Incantation
     42: [250, 251],  # Reanimated Shambler
     44: [250],  # Death's Certainty
-    66: [112],  # Vanguard's Momentum
     70: [255],  # Dire Command
     89: [269],  # Shaohao's Might
     95: [268],  # Keefer's Skyreach
     111: [66],  # Relentless Inquisitor
-    113: [259],  # Finality
+    112: [66],  # Vanguard's Momentum
+    126: [259],  # Finality
     129: [259, 260],  # Deathly Shadows
     135: [263],  # Elemental Equilibrium
     # 152: [258], # Kiss of Death # Shadow, needs checking
