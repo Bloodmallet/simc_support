@@ -232,6 +232,7 @@ class SoulBindTalent(SimcObject):
             "Soulglow Spectrometer",
             "Effusive Anima Accelerator",
             # Plague Deviser Marelith
+            "Volatile Solvent",
             "Plaguey's Preemptive Strike",
             "Kevin's Oozeling",
             # Emeni
