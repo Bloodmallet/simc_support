@@ -182,10 +182,10 @@ def _load_trinkets() -> typing.List[Trinket]:
                 ]
         if source == Source.RARE_MOB:
             return ItemLevel.RARE_MOB.get(item["ilevel"], [item["ilevel"]])
-
         if source == Source.CALLING:
             return ItemLevel.CALLINGS
-
+        if item["id"] == 187447:  # Soul Cage Fragment
+            return [ItemLevel.WORLD_BOSS_CHAINS_OF_DEVASTATION]
         return [
             item["ilevel"],
         ]
