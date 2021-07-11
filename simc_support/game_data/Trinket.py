@@ -132,6 +132,7 @@ def _load_trinkets() -> typing.List[Trinket]:
             return [
                 item.get("ilevel", 0),
                 200,
+                230,
             ]
 
         # Tazavesh Dungeon m0 specific itemlevel
