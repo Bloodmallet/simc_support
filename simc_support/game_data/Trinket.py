@@ -1,77 +1,82 @@
+import dataclasses
 import json
 import pkg_resources
 import typing
 
-from simc_support.game_data.SimcObject import SimcObject
 import simc_support.game_data.ItemLevel as ItemLevel
-from simc_support.game_data.Language import _get_translations
-from simc_support.game_data.Language import EmptyTranslation
-from simc_support.game_data.Language import Translation
+from simc_support.game_data.Language import (
+    EmptyTranslation,
+    Translation,
+    _get_translations,
+)
 from simc_support.game_data.Role import Role
+from simc_support.game_data.SimcObject import SimcObject
 from simc_support.game_data.Source import Source
 from simc_support.game_data.Stat import Stat
 from simc_support.game_data.WowSpec import WowSpec
 
 
-class Trinket(SimcObject):
-    def __init__(
-        self,
-        *args,
-        item_id: str,
-        itemlevels: typing.List[int],
-        role: typing.Optional[Role],
-        stats: typing.Union[typing.List[Stat], typing.Tuple[Stat]],
-        class_mask: int,
-        translations: Translation,
-        source: Source = None,
-        on_use: bool = False,
-        bonus_ids: typing.Union[typing.Tuple, typing.List[int], typing.Tuple[int]] = (),
-        **kwargs,
-    ):
-        """Creates a Trinket instance
+@dataclasses.dataclass
+class Trinket:
+    """Creates a Trinket instance
 
-        Args:
-            item_id (str): Item ID
-            itemlevels (typing.List[int]): item is available at all these itemlevels
-            role (Role):
-            stats (typing.Union[typing.List[Stat], typing.Tuple[Stat]]): primary stats
-            translations (Translation): name of the item in all languages
-            source (str, optional): Drop source. Defaults to None.
-            on_use (bool, optional): Is the trinket on use? Defaults to False.
-            bonus_ids (typing.Union[typing.List[int], typing.Tuple[int]]):
-        """
-        super().__init__(translations.US, *args, **kwargs)
-        self.translations = translations
-        self.name: str = self.translations.US
-        self.item_id: str = str(item_id)
-        self.itemlevels: list = sorted(itemlevels)
+    Args:
+        item_id (str): Item ID
+        itemlevels (typing.List[int]): item is available at all these itemlevels
+        role (Role):
+        stats (typing.Union[typing.List[Stat], typing.Tuple[Stat]]): primary stats
+        translations (Translation): name of the item in all languages
+        source (str, optional): Drop source. Defaults to None.
+        on_use (bool, optional): Is the trinket on use? Defaults to False.
+        bonus_ids (typing.Union[typing.List[int], typing.Tuple[int]]):
+    """
 
-        if isinstance(stats, list) or isinstance(stats, tuple):
-            for element in stats:
+    item_id: str
+    itemlevels: typing.Iterable[int]
+    role: typing.Optional[Role]
+    stats: typing.Iterable[Stat]
+    class_mask: int
+    translations: Translation
+    source: Source = None
+    on_use: bool = False
+    bonus_ids: typing.Iterable[typing.Optional[int]] = ()
+
+    def __post_init__(self):
+        self.itemlevels = sorted(self.itemlevels)
+
+        self._simc_object = SimcObject(self.translations.US)
+
+        if isinstance(self.stats, list) or isinstance(self.stats, tuple):
+            for element in self.stats:
                 if element not in Stat:
                     raise TypeError("One or more provided stats are unknown.")
         else:
-            raise TypeError(f"stats: Expected list or tuple. Got {type(stats)}")
-        if isinstance(stats, list) or isinstance(stats, tuple):
-            self.stats = tuple(stats)
+            raise TypeError(f"stats: Expected list or tuple. Got {type(self.stats)}")
+        if isinstance(self.stats, list) or isinstance(self.stats, tuple):
+            self.stats = tuple(self.stats)
 
-        self.class_mask = class_mask
-        self.role = role
-
-        if not isinstance(source, Source):
-            raise ValueError(f"Unknown source '{source}'.")
-        self.source: Source = source
-
-        self.on_use: bool = bool(on_use)
-
-        if isinstance(bonus_ids, list) or isinstance(bonus_ids, tuple):
-            for bonus in bonus_ids:
+        if isinstance(self.bonus_ids, list) or isinstance(self.bonus_ids, tuple):
+            for bonus in self.bonus_ids:
                 if not isinstance(bonus, int):
                     raise TypeError("One or more provided bonus IDs was not an INT.")
         else:
-            raise TypeError(f"bonus_id: Expected list or tuple. Got {type(bonus_ids)}")
-        if isinstance(bonus_ids, list) or isinstance(bonus_ids, tuple):
-            self.bonus_ids = tuple(bonus_ids)
+            raise TypeError(
+                f"bonus_id: Expected list or tuple. Got {type(self.bonus_ids)}"
+            )
+        if isinstance(self.bonus_ids, list) or isinstance(self.bonus_ids, tuple):
+            self.bonus_ids = tuple(self.bonus_ids)
+
+    @property
+    def full_name(self) -> str:
+        return self._simc_object.full_name
+
+    @property
+    def simc_name(self) -> str:
+        return self._simc_object.simc_name
+
+    @property
+    def name(self) -> str:
+        return self.translations.US
 
     @property
     def min_itemlevel(self) -> int:
@@ -137,7 +142,7 @@ def _load_trinkets() -> typing.List[Trinket]:
 
         # Tazavesh Dungeon m0 specific itemlevel
         if item["id_journal_instance"] == 1194:
-            return [ItemLevel.TAZAVESH]
+            return ItemLevel.TAZAVESH
 
         if source == Source.DUNGEON:
             return ItemLevel.DUNGEON
@@ -284,6 +289,7 @@ def _load_trinkets() -> typing.List[Trinket]:
         itemlevels = _get_itemlevels(trinket, source)
         if not itemlevels:
             continue
+        translations = _get_translations(trinket)
         trinkets.append(
             Trinket(
                 item_id=trinket["id"],
@@ -291,7 +297,7 @@ def _load_trinkets() -> typing.List[Trinket]:
                 role=None,  # TODO
                 stats=_get_stats(trinket),
                 class_mask=trinket["class_mask"],
-                translations=_get_translations(trinket),
+                translations=translations,
                 source=source,
                 on_use=trinket["on_use"],
                 bonus_ids=_get_bonus_ids(trinket),
