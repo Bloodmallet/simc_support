@@ -28,7 +28,7 @@ setup(
             "game_data/data_files/*.json",
         ],
     },
-    python_requires=">=3.6",
+    python_requires=">=3.7",
     license="GNU GENERAL PUBLIC LICENSE",
     version_config={
         "template": "{tag}",
