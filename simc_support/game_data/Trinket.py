@@ -42,7 +42,7 @@ class Trinket:
     bonus_ids: typing.Iterable[typing.Optional[int]] = ()
 
     def __post_init__(self):
-        self.itemlevels = sorted(self.itemlevels)
+        self.itemlevels = sorted(list(set(self.itemlevels)))
 
         self._simc_object = SimcObject(self.translations.US)
 
