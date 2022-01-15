@@ -16,7 +16,7 @@ class Faction(SimcObject):
         return self.full_name
 
 
-ALLIANCE = Faction("Alliance", 'alliance')
-HORDE = Faction("Horde", 'horde')
+ALLIANCE = Faction("Alliance", "alliance")
+HORDE = Faction("Horde", "horde")
 
 FACTIONS = (ALLIANCE, HORDE)
