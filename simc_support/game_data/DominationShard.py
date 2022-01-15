@@ -28,6 +28,7 @@ class DominationShard(SimcObject):
         self,
         *args,
         gem_id: int,
+        spell_id: int,
         school: int,
         translations: Translation,
         **kwargs,
@@ -43,6 +44,7 @@ class DominationShard(SimcObject):
         self.translations = translations
         self.name: str = self.translations.US
         self.gem_id: int = int(gem_id)
+        self.spell_id: int = int(spell_id)
         self.school: int = int(school)
         self.school_type = ShardType.get_shard_type(self.school)
 
@@ -58,6 +60,7 @@ def _load_domination_shards() -> typing.List[DominationShard]:
         domination_shards.append(
             DominationShard(
                 gem_id=shard["id"],
+                spell_id=shard["id_property_1"],
                 school=shard["school"],
                 translations=_get_translations(shard),
             )

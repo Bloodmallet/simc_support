@@ -755,14 +755,37 @@ def update_conduits(args: object) -> None:
         )
 
     spell_ids = []
+    almost_tank_spec_ids = [
+        251,
+        252,
+        577,
+        102,
+        103,
+        105,
+        269,
+        270,
+        70,
+        65,
+        71,
+        72,
+    ]
+    tank_ids = [
+        250,
+        581,
+        104,
+        268,
+        66,
+        73,
+    ]
     for conduit in conduits:
-        conduit["spec_ids"] = list(
-            [
-                spec["id_spec"]
-                for spec in specs
-                if spec["id_parent"] == conduit["id_spec_set"]
-            ]
-        )
+        conduit["spec_ids"] = [
+            spec["id_spec"]
+            for spec in specs
+            if spec["id_parent"] == conduit["id_spec_set"]
+        ]
+        if any([spec_id in tank_ids for spec_id in conduit["spec_ids"]]):
+            conduit["spec_ids"] += almost_tank_spec_ids
+
         conduit["spell_id"] = _get_spell_id(conduit)
         conduit["ranks"] = sorted(_get_ranks(conduit))
         spell_ids.append(conduit["spell_id"])

@@ -1,5 +1,3 @@
-black
-mypy
-fixedint
-requests
-bitarray
+# libraries required to use this library
+dataclasses; python_version<'3.7'
+types-dataclasses; python_version<'3.7'

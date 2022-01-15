@@ -11,13 +11,13 @@ done
 
 echo "Install requirements"
 pip install -U -r requirements.txt
-pip install -U setuptools wheel twine
+pip install -U setuptools wheel build twine
 
 echo "Execute unittest"
 python -m unittest
 
 echo "Build wheel"
-python setup.py sdist bdist_wheel
+python -m build
 
 echo "Publish"
 python -m twine upload dist/*

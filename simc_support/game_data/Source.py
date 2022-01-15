@@ -4,6 +4,7 @@ import enum
 class Source(enum.Enum):
     CALLING = "Calling"
     DUNGEON = "Dungeon"
+    KORTHIA = "Korthia"
     MISSION = "Mission"
     PROFESSION = "Profession"
     PVP = "PvP"
