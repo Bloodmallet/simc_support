@@ -1,1 +1,2 @@
 # libraries required to use this library
+dataclasses; python_version<'3.7'
