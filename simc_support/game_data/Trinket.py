@@ -24,22 +24,22 @@ class Trinket:
         item_id (str): Item ID
         itemlevels (typing.List[int]): item is available at all these itemlevels
         role (Role):
-        stats (typing.Union[typing.List[Stat], typing.Tuple[Stat]]): primary stats
+        stats (typing.List[Stat]): primary stats
         translations (Translation): name of the item in all languages
-        source (str, optional): Drop source. Defaults to None.
+        source (Source): Drop source.
         on_use (bool, optional): Is the trinket on use? Defaults to False.
-        bonus_ids (typing.Union[typing.List[int], typing.Tuple[int]]):
+        bonus_ids (typing.List[int]):
     """
 
     item_id: str
-    itemlevels: typing.Iterable[int]
+    itemlevels: typing.List[int]
     role: typing.Optional[Role]
-    stats: typing.Iterable[Stat]
+    stats: typing.List[Stat]
     class_mask: int
     translations: Translation
-    source: Source = None
+    source: Source
     on_use: bool = False
-    bonus_ids: typing.Iterable[typing.Optional[int]] = ()
+    bonus_ids: typing.List[int] = dataclasses.field(default_factory=list)
 
     def __post_init__(self):
         self.itemlevels = sorted(list(set(self.itemlevels)))
@@ -52,8 +52,6 @@ class Trinket:
                     raise TypeError("One or more provided stats are unknown.")
         else:
             raise TypeError(f"stats: Expected list or tuple. Got {type(self.stats)}")
-        if isinstance(self.stats, list) or isinstance(self.stats, tuple):
-            self.stats = tuple(self.stats)
 
         if isinstance(self.bonus_ids, list) or isinstance(self.bonus_ids, tuple):
             for bonus in self.bonus_ids:
@@ -63,16 +61,14 @@ class Trinket:
             raise TypeError(
                 f"bonus_id: Expected list or tuple. Got {type(self.bonus_ids)}"
             )
-        if isinstance(self.bonus_ids, list) or isinstance(self.bonus_ids, tuple):
-            self.bonus_ids = tuple(self.bonus_ids)
 
     @property
     def full_name(self) -> str:
-        return self._simc_object.full_name
+        return str(self._simc_object.full_name)
 
     @property
     def simc_name(self) -> str:
-        return self._simc_object.simc_name
+        return str(self._simc_object.simc_name)
 
     @property
     def name(self) -> str:
