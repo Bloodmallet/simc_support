@@ -1,5 +1,1 @@
-black
-mypy
-fixedint
-requests
-bitarray
+# libraries required to use this library
