@@ -140,8 +140,9 @@ def _load_trinkets() -> typing.List[Trinket]:
         if item["id_journal_instance"] == 1194:
             return ItemLevel.TAZAVESH
 
-        if source == Source.DUNGEON:
+        if source == Source.DUNGEON or item["id"] == 190958:
             return ItemLevel.DUNGEON
+
         if source == Source.RAID and item["id_journal_instance"] == 1190:
             if item["id"] in (
                 184027,  # Stone Legion Heraldry
@@ -153,6 +154,7 @@ def _load_trinkets() -> typing.List[Trinket]:
                 return ItemLevel.CASTLE_NATHRIA_ENDBOSSES
             else:
                 return ItemLevel.CASTLE_NATHRIA
+
         if source == Source.RAID and item["id_journal_instance"] == 1193:
             if item["id"] in (
                 186421,  # Forbidden Necromantic Tome
@@ -163,6 +165,18 @@ def _load_trinkets() -> typing.List[Trinket]:
                 return ItemLevel.SANCTUM_OF_DOMINATION_ENDBOSSES
             else:
                 return ItemLevel.SANCTUM_OF_DOMINATION
+
+        if source == Source.RAID and item["id_journal_instance"] == 1195:
+            if item["id"] in (
+                188252,  # Chains of Domination
+                188254,  # Grim Eclipse
+                188255,  # Heart of the Swarm
+                188261,  # Intrusive Thoughts
+                188253,  # Scars of Fraternal Strife
+            ):
+                return ItemLevel.SEPULCHER_OF_THE_FIRST_ONES_ENDBOSSES
+            else:
+                return ItemLevel.SEPULCHER_OF_THE_FIRST_ONES
         if source == source.KORTHIA:
             return ItemLevel.KORTHIA
         if source == Source.PROFESSION:
@@ -264,6 +278,7 @@ def _load_trinkets() -> typing.List[Trinket]:
             184840: Source.CALLING,
             184841: Source.CALLING,
             184842: Source.CALLING,
+            190958: Source.DUNGEON,  # So'leah's Secret Technique
         }
         if item["instance_type"]:
             # use handcrafted mapping
