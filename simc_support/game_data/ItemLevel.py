@@ -7,41 +7,37 @@ WORLD_QUEST_ITEMLEVELS = [
     161,
     171,
     200,
+    213,
 ]  # guess
 CALLINGS = WORLD_QUEST_ITEMLEVELS
 
 KORTHIA = [200, 207, 213, 220, 226, 233]
 
-DUNGEON_NORMAL = 184
-DUNGEON_HEROIC = 197
-DUNGEON_MYTHIC = 210
+ZERETH_MORTIS = [226]
+
+DUNGEON_NORMAL = 210
+DUNGEON_HEROIC = 223
+DUNGEON_MYTHIC = 236
 DUNGEON_MYTHIC_LEVELS = [
-    # 187,
-    # 190,
-    # 194,
-    # 197,
-    # 200,
-    # 203,  # weekly
-    # 204,
-    # 207,
-    210,
-    213,
-    216,
-    220,
-    223,
-    226,  # + weekly
-    229,  # + weekly
-    233,  # + weekly
-    236,  # + weekly
-    239,  # weekly
-    242,  # weekly
-    246,  # weekly
-    249,  # weekly
-    252,  # weekly
+    236,
+    239,
+    242,
+    246,
+    249,
+    252,  # + weekly
+    255,  # + weekly
+    258,  # + weekly
+    261,  # + weekly
+    264,  # weekly
+    267,  # weekly
+    271,  # weekly
+    274,  # weekly
+    278,  # weekly
 ]
 DUNGEON = [DUNGEON_NORMAL] + [DUNGEON_HEROIC] + [DUNGEON_MYTHIC] + DUNGEON_MYTHIC_LEVELS
 TAZAVESH = [226, 233]
 WORLD_BOSS_CHAINS_OF_DEVASTATION = 233
+WORLD_BOSS_ZERETH_MORTIS = 259
 
 # raids
 CASTLE_NATHRIA = [187, 200, 213, 226]
@@ -50,7 +46,12 @@ CASTLE_NATHRIA_ENDBOSSES = list([ilvl + 7 for ilvl in CASTLE_NATHRIA])
 SANCTUM_OF_DOMINATION = [213, 226, 239, 252]
 SANCTUM_OF_DOMINATION_ENDBOSSES = list([ilvl + 7 for ilvl in SANCTUM_OF_DOMINATION])
 
-UPPER_BOUND = CASTLE_NATHRIA_ENDBOSSES[-1]
+SEPULCHER_OF_THE_FIRST_ONES = [239, 252, 265, 278]
+SEPULCHER_OF_THE_FIRST_ONES_ENDBOSSES = list(
+    [ilvl + 7 for ilvl in SEPULCHER_OF_THE_FIRST_ONES]
+)
+
+UPPER_BOUND = SANCTUM_OF_DOMINATION_ENDBOSSES[-1]
 
 PVP_HONOR = [
     # 158,
