@@ -303,7 +303,7 @@ def _load_trinkets() -> typing.List[Trinket]:
         translations = _get_translations(trinket)
         trinkets.append(
             Trinket(
-                item_id=trinket["id"],
+                item_id=str(trinket["id"]),
                 itemlevels=itemlevels,
                 role=None,  # TODO
                 stats=_get_stats(trinket),
