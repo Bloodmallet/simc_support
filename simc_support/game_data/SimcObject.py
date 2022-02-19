@@ -11,8 +11,8 @@ class SimcObject:
     ):
         super().__init__()
         self.full_name: str = full_name
-        self._provided_simc_name = simc_name
-        self._simc_name = ""
+        self._provided_simc_name: typing.Optional[str] = simc_name
+        self._simc_name: str = ""
 
     @property
     def simc_name(self) -> str:

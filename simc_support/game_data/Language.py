@@ -1,4 +1,5 @@
 import enum
+import typing
 
 
 class Language(enum.Enum):
@@ -33,7 +34,7 @@ class Translation(object):
     ):
         super().__init__()
 
-        languages = [language.name for language in Language]
+        languages: typing.List[str] = [language.name for language in Language]
 
         if translations:
             if len(set(translations.keys()).intersection(languages)) == len(languages):

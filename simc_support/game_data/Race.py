@@ -21,10 +21,10 @@ class Race(SimcObject):
     ) -> None:
         super().__init__(full_name, simc_name, *args, **kwargs)
 
-        self.faction = faction
+        self.faction: Faction.Faction = faction
 
         if isinstance(translations, Translation):
-            self.translations = translations
+            self.translations: Translation = translations
         elif isinstance(translations, dict):
             self.translations = Translation(translations=translations)
         else:

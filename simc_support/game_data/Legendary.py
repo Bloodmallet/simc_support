@@ -46,14 +46,14 @@ class Legendary(SimcObject):
 
         if not all([isinstance(spec, WowSpec) for spec in wow_specs]):
             raise TypeError("wow_specs expected a list or tuple of WowSpec's.")
-        self.wow_specs = wow_specs
+        self.wow_specs: typing.List[WowSpec] = wow_specs
 
         if not all([isinstance(covenant, Covenant) for covenant in covenants]):
             raise TypeError("covenants need to be an iterable of Covenant instances.")
-        self.covenants = covenants
+        self.covenants: typing.List[Covenant] = covenants
 
         if isinstance(translations, Translation):
-            self.translations = translations
+            self.translations: Translation = translations
         else:
             self.translations = Translation(translations=translations)
 

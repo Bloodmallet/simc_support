@@ -19,10 +19,10 @@ class Covenant(SimcObject):
         **kwargs,
     ):
         super().__init__(*args, **kwargs)
-        self.id = id
+        self.id: int = id
 
         if isinstance(translations, Translation):
-            self.translations = translations
+            self.translations: Translation = translations
         elif isinstance(translations, dict):
             self.translations = Translation(translations=translations)
         else:

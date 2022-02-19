@@ -32,9 +32,7 @@ class WowSpec(SimcObject):
         if isinstance(translations, Language.Translation):
             self.translations: Language.Translation = translations
         else:
-            self.translations: Language.Translation = Language.Translation(
-                translations=translations
-            )
+            self.translations = Language.Translation(translations=translations)
 
         talents_blueprint = str(talents_blueprint)
         if len(talents_blueprint) != 7:
