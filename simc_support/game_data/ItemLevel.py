@@ -44,7 +44,7 @@ DUNGEON_MYTHIC_LEVELS = [
     264,  # weekly
     267,  # weekly
     271,  # weekly
-    274,  # weekly
+    275,  # weekly
     278,  # weekly
 ]
 # TODO: valor upgrades, 272?
