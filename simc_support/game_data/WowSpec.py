@@ -26,13 +26,15 @@ class WowSpec(SimcObject):
         **kwargs,
     ):
         super().__init__(*args, **kwargs)
-        self.id = int(id)
-        self.wow_class = wow_class
+        self.id: int = int(id)
+        self.wow_class: WowClass.WowClass = wow_class
 
         if isinstance(translations, Language.Translation):
-            self.translations = translations
+            self.translations: Language.Translation = translations
         else:
-            self.translations = Language.Translation(translations=translations)
+            self.translations: Language.Translation = Language.Translation(
+                translations=translations
+            )
 
         talents_blueprint = str(talents_blueprint)
         if len(talents_blueprint) != 7:
@@ -48,15 +50,15 @@ class WowSpec(SimcObject):
 
         if raid_role not in RaidRole:
             raise ValueError(f"Unknown raid_role '{raid_role}'")
-        self.raid_role = raid_role
+        self.raid_role: RaidRole = raid_role
 
         if role not in Role:
             raise ValueError(f"Unknown role '{role}'")
-        self.role = role
+        self.role: Role = role
 
         if stat not in Stat:
             raise ValueError(f"Unknown stat '{stat}'")
-        self.stat = stat
+        self.stat: Stat = stat
 
         self.talents = get_talent_dict(self, ptr)
 
