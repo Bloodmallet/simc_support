@@ -40,9 +40,9 @@ class Legendary(SimcObject):
         **kwargs,
     ):
         super().__init__(*args, **kwargs)
-        self.id = int(id)
-        self.bonus_id = int(bonus_id)
-        self.spell_id = int(spell_id)
+        self.id: int = int(id)
+        self.bonus_id: int = int(bonus_id)
+        self.spell_id: int = int(spell_id)
 
         if not all([isinstance(spec, WowSpec) for spec in wow_specs]):
             raise TypeError("wow_specs expected a list or tuple of WowSpec's.")

@@ -15,7 +15,7 @@ class WowClass(SimcObject):
         **kwargs,
     ) -> None:
         super().__init__(*args, **kwargs)
-        self.id = int(id)
+        self.id: int = int(id)
         # double check input to be of Race class
         for race in races:
             if not isinstance(race, Race.Race):

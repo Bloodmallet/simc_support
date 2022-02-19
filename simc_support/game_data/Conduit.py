@@ -27,8 +27,8 @@ class Conduit(SimcObject):
     ):
         super().__init__(*args, **kwargs)
 
-        self.id = int(id)
-        self.type = int(conduit_type)
+        self.id: int = int(id)
+        self.type: int = int(conduit_type)
         if not isinstance(covenants, (list, tuple)):
             raise TypeError(
                 f"covenants expected list or tuple. Got '{type(covenants)}' instead."
@@ -38,11 +38,11 @@ class Conduit(SimcObject):
                 "covenants expected a list or tuple of Covenant type objects."
             )
         self.covenants: typing.List[Covenant] = covenants
-        self.spec_mask = int(spec_mask)
+        self.spec_mask: int = int(spec_mask)
         if not all([isinstance(spec, WowSpec) for spec in wow_specs]):
             raise TypeError("wow_specs expected a list or tuple of WowSpec's.")
         self.wow_specs: typing.List[WowSpec] = wow_specs
-        self.spell_id = int(spell_id)
+        self.spell_id: int = int(spell_id)
         self.ranks: typing.List[int] = ranks
 
         if isinstance(translations, Translation):
