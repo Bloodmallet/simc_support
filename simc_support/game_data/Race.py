@@ -262,7 +262,7 @@ GOBLIN = Race(
 )
 HIGHMOUNTAINTAUREN = Race(
     HORDE,
-    "Hightmountain Tauren",
+    "Highmountain Tauren",
     "highmountain_tauren",
     {
         Language.US: "Highmountain Tauren",
