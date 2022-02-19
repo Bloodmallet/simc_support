@@ -26,9 +26,9 @@ class WowClass(SimcObject):
                 )
             if race not in Race.RACES:
                 raise ValueError("Unknown race {}.".format(race))
-        self.races = races
+        self.races: typing.Tuple[Race.Race, ...] = races
         if isinstance(translations, Language.Translation):
-            self.translations = translations
+            self.translations: Language.Translation = translations
         else:
             self.translations = Language.Translation(translations=translations)
 

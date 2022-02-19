@@ -303,12 +303,12 @@ class SoulBind(SimcObject):
         **kwargs,
     ):
         super().__init__(*args, **kwargs)
-        self.id = id
-        self.covenant = covenant
-        self.soul_bind_talents = soul_bind_talents
+        self.id: int = id
+        self.covenant: Covenant = covenant
+        self.soul_bind_talents: typing.List[SoulBindTalent] = soul_bind_talents
 
         if isinstance(translations, Translation):
-            self.translations = translations
+            self.translations: Translation = translations
         elif isinstance(translations, dict):
             self.translations = Translation(translations=translations)
         else:

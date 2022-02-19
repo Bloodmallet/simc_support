@@ -37,16 +37,16 @@ class Conduit(SimcObject):
             raise TypeError(
                 "covenants expected a list or tuple of Covenant type objects."
             )
-        self.covenants = covenants
+        self.covenants: typing.List[Covenant] = covenants
         self.spec_mask = int(spec_mask)
         if not all([isinstance(spec, WowSpec) for spec in wow_specs]):
             raise TypeError("wow_specs expected a list or tuple of WowSpec's.")
-        self.wow_specs = wow_specs
+        self.wow_specs: typing.List[WowSpec] = wow_specs
         self.spell_id = int(spell_id)
-        self.ranks = ranks
+        self.ranks: typing.List[int] = ranks
 
         if isinstance(translations, Translation):
-            self.translations = translations
+            self.translations: Translation = translations
         elif isinstance(translations, dict):
             self.translations = Translation(translations=translations)
         else:
