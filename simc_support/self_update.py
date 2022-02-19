@@ -248,6 +248,7 @@ def get_compiled_data_path(args: object, locale: str) -> str:
 
 def dbc(args: object, files: typing.List[str]) -> None:
     """Extract and transforms files into JSON format.
+    TODO: parallelize this
 
     Args:
         args (object): [description]
@@ -342,7 +343,7 @@ def update_trinkets(args: object) -> None:
         return item.get("quality") >= 3
 
     def is_shadowlands(item: dict) -> bool:
-        """Tests for itemlevel and chracter level requirement."""
+        """Tests for itemlevel and character level requirement."""
 
         def is_expansion(item: dict) -> bool:
             """Checks expansion id."""
@@ -359,6 +360,15 @@ def update_trinkets(args: object) -> None:
         # Unbound Changeling is somehow available for lvl 1
         return is_expansion(item) or is_gte_ilevel(item)  # and is_gte_level(item)
 
+    def is_legion(item: dict) -> bool:
+        """Tests for itemlevel and character level requirement."""
+
+        def is_expansion(item: dict) -> bool:
+            """Checks expansion id."""
+            return item["id_expansion"] == 6
+
+        return is_expansion(item)
+
     def is_whitelisted(item: dict) -> bool:
         return item.get("id") in WHITELIST or item.get("name") in WHITELIST
 
@@ -366,7 +376,7 @@ def update_trinkets(args: object) -> None:
         return (
             is_trinket(item)
             and is_gte_rare(item)
-            and is_shadowlands(item)
+            and (is_shadowlands(item) or is_legion(item))
             or is_whitelisted(item)
         )
 
@@ -1060,14 +1070,13 @@ def main() -> None:
         logger.setLevel(logging.DEBUG)
     casc(args)
     update_trinkets(args)
-    update_wow_classes(args)
-    update_covenants(args)
-    update_soul_binds(args)
-    update_legendaries(args)
-    update_conduits(args)
-    update_talents(args)
-    update_shards_of_dominations(args)
-    # anima powers? https://ptr.wowhead.com/news/how-the-tormented-seasonal-mythic-affix-works-get-anima-powers-from-lieutenants-322665
+    # update_wow_classes(args)
+    # update_covenants(args)
+    # update_soul_binds(args)
+    # update_legendaries(args)
+    # update_conduits(args)
+    # update_talents(args)
+    # update_shards_of_dominations(args)
 
     logger.debug("self_update done")
 
