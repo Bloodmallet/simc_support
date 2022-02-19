@@ -27,6 +27,7 @@ class Trinket:
         stats (typing.List[Stat]): primary stats
         translations (Translation): name of the item in all languages
         source (Source): Drop source.
+        expansion_id (int): ID of the expansion. e.g. 6-Legion, 8-Shadowlands
         on_use (bool, optional): Is the trinket on use? Defaults to False.
         bonus_ids (typing.List[int]):
     """
@@ -38,6 +39,7 @@ class Trinket:
     class_mask: int
     translations: Translation
     source: Source
+    expansion_id: int
     on_use: bool = False
     bonus_ids: typing.List[int] = dataclasses.field(default_factory=list)
 
@@ -140,6 +142,9 @@ def _load_trinkets() -> typing.List[Trinket]:
         if item["id_journal_instance"] == 1194:
             return ItemLevel.TAZAVESH
 
+        if item["id_expansion"] == 6 and source == Source.DUNGEON:
+            # TODO: valor upgrades?
+            return ItemLevel.DUNGEON_MYTHIC_DROPS
         if source == Source.DUNGEON or item["id"] == 190958:
             return ItemLevel.DUNGEON
 
@@ -312,6 +317,7 @@ def _load_trinkets() -> typing.List[Trinket]:
                 source=source,
                 on_use=trinket["on_use"],
                 bonus_ids=_get_bonus_ids(trinket),
+                expansion_id=trinket["id_expansion"],
             )
         )
     return trinkets
@@ -364,6 +370,7 @@ def get_versatility_trinket(stat: Stat) -> Trinket:
             translations=empty_translation,
             source=Source.UNKNOWN,
             on_use=False,
+            expansion_id=-1,
         )
     elif stat == Stat.INTELLECT:
         # "Stat Stick (Versatility)", "142507,bonus_id=607"
@@ -381,6 +388,7 @@ def get_versatility_trinket(stat: Stat) -> Trinket:
             translations=empty_translation,
             source=Source.UNKNOWN,
             on_use=False,
+            expansion_id=-1,
         )
     elif stat == Stat.STRENGTH:
         # "Stat Stick (Versatility)", "142508,bonus_id=607"
@@ -398,6 +406,7 @@ def get_versatility_trinket(stat: Stat) -> Trinket:
             translations=empty_translation,
             source=Source.UNKNOWN,
             on_use=False,
+            expansion_id=-1,
         )
     raise ValueError(f"Unknown stat {stat}. No Versatility trinket available.")
 
