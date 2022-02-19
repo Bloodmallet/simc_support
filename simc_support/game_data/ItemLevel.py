@@ -1,3 +1,5 @@
+import typing
+
 # these values are used throughout the code to determine itemlevel "borders" of items
 # usually used as a catch up mechanic, drops usually all items from previous content
 TRADER_TOKEN = -1
@@ -46,7 +48,7 @@ DUNGEON_MYTHIC_LEVELS = [
     278,  # weekly
 ]
 # TODO: valor upgrades, 272?
-VALOR_UPGRADES = []
+VALOR_UPGRADES: typing.List[int] = []
 DUNGEON = [DUNGEON_NORMAL] + [DUNGEON_HEROIC] + [DUNGEON_MYTHIC] + DUNGEON_MYTHIC_LEVELS
 TAZAVESH = [226, 233]
 WORLD_BOSS_CHAINS_OF_DEVASTATION = 233
