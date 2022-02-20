@@ -143,8 +143,10 @@ def _load_trinkets() -> typing.List[Trinket]:
             return ItemLevel.TAZAVESH
 
         if item["id_expansion"] == 6 and source == Source.DUNGEON:
-            # TODO: valor upgrades?
-            return ItemLevel.DUNGEON_MYTHIC_DROPS
+            combined_list = ItemLevel.DUNGEON_MYTHIC_DROPS + ItemLevel.VALOR_UPGRADES
+            unique_set = set(combined_list)
+            sorted_list = sorted(list(unique_set))
+            return sorted_list
         if source == Source.DUNGEON or item["id"] == 190958:
             return ItemLevel.DUNGEON
 
