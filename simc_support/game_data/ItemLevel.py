@@ -20,6 +20,7 @@ ZERETH_MORTIS = [226]
 DUNGEON_NORMAL = 210
 DUNGEON_HEROIC = 223
 DUNGEON_MYTHIC = 236
+# https://www.wowhead.com/guides/season-3-shadowlands-mythic-plus-updates-item-levels
 DUNGEON_MYTHIC_DROPS = [
     236,
     239,
@@ -28,8 +29,8 @@ DUNGEON_MYTHIC_DROPS = [
     249,
     252,  # + weekly
     255,  # + weekly
-    258,  # + weekly
-    261,  # + weekly
+    259,  # + weekly
+    262,  # + weekly
 ]
 DUNGEON_MYTHIC_LEVELS = [
     236,
@@ -39,11 +40,11 @@ DUNGEON_MYTHIC_LEVELS = [
     249,
     252,  # + weekly
     255,  # + weekly
-    258,  # + weekly
-    261,  # + weekly
-    264,  # weekly
-    267,  # weekly
-    271,  # weekly
+    259,  # + weekly
+    262,  # + weekly
+    265,  # weekly
+    268,  # weekly
+    272,  # weekly
     275,  # weekly
     278,  # weekly
 ]
