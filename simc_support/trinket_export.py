@@ -6,7 +6,7 @@ from simc_support.game_data.WowSpec import get_wow_spec
 from simc_support.game_data.Trinket import get_trinkets_for_spec, Trinket
 
 
-def print_simc_file(trinket_list: typing.List[Trinket], name: str):
+def print_simc_file(trinket_list: typing.Iterable[Trinket], name: str):
     with open("trinkets_shadowlands_" + name + ".simc", "w") as f:
         f.write("# PROFILE FOR TESTING ONLY!\n")
         f.write(
