@@ -48,8 +48,20 @@ DUNGEON_MYTHIC_LEVELS = [
     275,  # weekly
     278,  # weekly
 ]
-# TODO: valor upgrades, 272?
-VALOR_UPGRADES: typing.List[int] = [272]
+VALOR_UPGRADES: typing.List[int] = [
+    236,
+    239,
+    242,
+    246,
+    249,
+    252,
+    255,
+    259,
+    262,
+    265,
+    268,
+    272,
+]
 DUNGEON = [DUNGEON_NORMAL] + [DUNGEON_HEROIC] + [DUNGEON_MYTHIC] + DUNGEON_MYTHIC_LEVELS
 TAZAVESH = [226, 233]
 WORLD_BOSS_CHAINS_OF_DEVASTATION = 233
@@ -70,26 +82,24 @@ SEPULCHER_OF_THE_FIRST_ONES_ENDBOSSES = list(
 UPPER_BOUND = SANCTUM_OF_DOMINATION_ENDBOSSES[-1]
 
 PVP_HONOR = [
-    # 158,
-    # 164,
-    # 171,
-    177,
-    184,
-    190,
-    197,
-    203,  # 9.1
-    210,  # 9.1
-    216,  # 9.1
+    239,
+    242,
+    246,
+    249,
+    252,
+    255,
+    259,
 ]
 PVP_CONQUEST = [
-    # 200,
-    # 207,
-    # 213,
-    220,
-    226,
-    233,  # 9.1
-    240,  # 9.1
-    246,  # 9.1
+    249,
+    252,
+    255,
+    259,
+    262,
+    265,
+    268,
+    272,
+    275,
 ]
 PVP = PVP_HONOR + PVP_CONQUEST
 
