@@ -286,6 +286,7 @@ def _load_trinkets() -> typing.List[Trinket]:
             184841: Source.CALLING,
             184842: Source.CALLING,
             190958: Source.DUNGEON,  # So'leah's Secret Technique
+            185844: Source.DUNGEON,  # Ticking Sack of Terror
         }
         if item["instance_type"]:
             # use handcrafted mapping
