@@ -788,12 +788,19 @@ def update_conduits(args: object) -> None:
         73,
     ]
     for conduit in conduits:
+        # id_spec_set is the id of a spec group, can be only one
+        # id_parent is the id of a class
         conduit["spec_ids"] = [
             spec["id_spec"]
             for spec in specs
             if spec["id_parent"] == conduit["id_spec_set"]
         ]
-        if any([spec_id in tank_ids for spec_id in conduit["spec_ids"]]):
+        # special case: Adaptive Armor Fragment (id=284, spell_id=357902)
+        # is available to all non-tank specs of tank-classes
+        if (
+            any([spec_id in tank_ids for spec_id in conduit["spec_ids"]])
+            and conduit["id"] == 284
+        ):
             conduit["spec_ids"] += almost_tank_spec_ids
 
         conduit["spell_id"] = _get_spell_id(conduit)
@@ -1070,13 +1077,13 @@ def main() -> None:
         logger.setLevel(logging.DEBUG)
     casc(args)
     update_trinkets(args)
-    # update_wow_classes(args)
-    # update_covenants(args)
-    # update_soul_binds(args)
-    # update_legendaries(args)
-    # update_conduits(args)
-    # update_talents(args)
-    # update_shards_of_dominations(args)
+    update_wow_classes(args)
+    update_covenants(args)
+    update_soul_binds(args)
+    update_legendaries(args)
+    update_conduits(args)
+    update_talents(args)
+    update_shards_of_dominations(args)
 
     logger.debug("self_update done")
 
