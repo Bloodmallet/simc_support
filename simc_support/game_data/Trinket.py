@@ -136,17 +136,19 @@ def _load_trinkets() -> typing.List[Trinket]:
                 item.get("ilevel", 0),
                 200,
                 230,
+                262,
             ]
 
-        # Tazavesh Dungeon m0 specific itemlevel
+        # Tazavesh Dungeon m+ specific itemlevel
         if item["id_journal_instance"] == 1194:
-            return ItemLevel.TAZAVESH
+            return ItemLevel.DUNGEON
 
         if item["id_expansion"] == 6 and source == Source.DUNGEON:
             combined_list = ItemLevel.DUNGEON_MYTHIC_DROPS + ItemLevel.VALOR_UPGRADES
             unique_set = set(combined_list)
             sorted_list = sorted(list(unique_set))
             return sorted_list
+
         if source == Source.DUNGEON or item["id"] == 190958:
             return ItemLevel.DUNGEON
 
@@ -286,7 +288,7 @@ def _load_trinkets() -> typing.List[Trinket]:
             184841: Source.CALLING,
             184842: Source.CALLING,
             190958: Source.DUNGEON,  # So'leah's Secret Technique
-            185844: Source.DUNGEON,  # Ticking Sack of Terror
+            190652: Source.DUNGEON,  # Ticking Sack of Terror
         }
         if item["instance_type"]:
             # use handcrafted mapping
@@ -302,7 +304,7 @@ def _load_trinkets() -> typing.List[Trinket]:
 
         return item_mapping.get(item["id"], Source.UNKNOWN)
 
-    trinkets = []
+    trinkets: typing.List[Trinket] = []
     for trinket in loaded_trinkets:
         source = _get_source(trinket)
         itemlevels = _get_itemlevels(trinket, source)
@@ -323,7 +325,34 @@ def _load_trinkets() -> typing.List[Trinket]:
                 expansion_id=trinket["id_expansion"],
             )
         )
-    return trinkets
+
+    # filtering duplicates
+    @dataclasses.dataclass
+    class MetaData:
+        count: int = 0
+        item_ids: typing.List[str] = dataclasses.field(default_factory=list)
+
+        @property
+        def max_id(self) -> str:
+            return max(self.item_ids)
+
+    trinket_metadata: typing.Dict[str, MetaData] = {}
+    for trinket in trinkets:
+        if trinket.full_name not in trinket_metadata:
+            trinket_metadata[trinket.full_name] = MetaData()
+
+        trinket_metadata[trinket.full_name].count += 1
+        trinket_metadata[trinket.full_name].item_ids.append(trinket.item_id)
+
+    trinket_block_list: typing.List[str] = []
+    for _, data in trinket_metadata.items():
+        if data.count > 1:
+            # print(f"{name}: {data['count']}")
+            trinket_block_list += [id for id in data.item_ids if id != data.max_id]
+    # print("to be blocked trinket ids:")
+    # print(trinket_block_list)
+
+    return [t for t in trinkets if t.item_id not in trinket_block_list]
 
 
 TRINKETS: typing.List[Trinket] = _load_trinkets()
@@ -414,18 +443,10 @@ def get_versatility_trinket(stat: Stat) -> Trinket:
     raise ValueError(f"Unknown stat {stat}. No Versatility trinket available.")
 
 
-def _get_trinket(id: int = None, name: str = None) -> Trinket:
-    if not (id or name):
-        raise ValueError("id or name must be provided to look up a trinket")
-
+def get_trinket(id_or_full_name: str) -> Trinket:
     for trinket in TRINKETS:
-        if trinket.item_id == id or trinket.name == name:
+        if str(trinket.item_id) == str(id_or_full_name) or str(
+            trinket.full_name
+        ) == str(id_or_full_name):
             return trinket
     raise FileNotFoundError("Trinket not found")
-
-
-def get_trinket(search: typing.Union[int, str]) -> Trinket:
-    if isinstance(search, int):
-        return _get_trinket(id=search)
-    elif isinstance(search, str):
-        return _get_trinket(name=search)
