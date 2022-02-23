@@ -1083,7 +1083,7 @@ def main() -> None:
     update_legendaries(args)
     update_conduits(args)
     update_talents(args)
-    update_shards_of_dominations(args)
+    # update_shards_of_dominations(args)
 
     logger.debug("self_update done")
 
