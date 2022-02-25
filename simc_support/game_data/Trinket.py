@@ -1,5 +1,6 @@
 import dataclasses
 import json
+import logging
 import pkg_resources
 import typing
 
@@ -14,6 +15,8 @@ from simc_support.game_data.SimcObject import SimcObject
 from simc_support.game_data.Source import Source
 from simc_support.game_data.Stat import Stat
 from simc_support.game_data.WowSpec import WowSpec
+
+logger = logging.getLogger(__name__)
 
 
 @dataclasses.dataclass
@@ -237,24 +240,24 @@ def _load_trinkets() -> typing.List[Trinket]:
             2: Source.RAID,
         }
         item_mapping = {
-            175884: Source.PVP,
-            175921: Source.PVP,
-            178298: Source.PVP,
-            178334: Source.PVP,
-            178386: Source.PVP,
-            178447: Source.PVP,
-            181333: Source.PVP,
-            181335: Source.PVP,
-            181816: Source.PVP,
-            184052: Source.PVP,
-            184053: Source.PVP,
-            184054: Source.PVP,
-            184055: Source.PVP,
-            184056: Source.PVP,
-            184057: Source.PVP,
-            184058: Source.PVP,
-            184059: Source.PVP,
-            184060: Source.PVP,
+            # 175884: Source.PVP,
+            # 175921: Source.PVP,
+            # 178298: Source.PVP,
+            # 178334: Source.PVP,
+            # 178386: Source.PVP,
+            # 178447: Source.PVP,
+            # 181333: Source.PVP,
+            # 181335: Source.PVP,
+            # 181816: Source.PVP,
+            # 184052: Source.PVP,
+            # 184053: Source.PVP,
+            # 184054: Source.PVP,
+            # 184055: Source.PVP,
+            # 184056: Source.PVP,
+            # 184057: Source.PVP,
+            # 184058: Source.PVP,
+            # 184059: Source.PVP,
+            # 184060: Source.PVP,
             184807: Source.WORLD_DROP,
             182455: Source.RARE_MOB,
             182454: Source.RARE_MOB,
@@ -302,10 +305,62 @@ def _load_trinkets() -> typing.List[Trinket]:
         ):
             return Source.KORTHIA
 
+        if "Cosmic" in item["name_en_US"] and "Gladiator" in item["name_en_US"]:
+            return Source.PVP
+
         return item_mapping.get(item["id"], Source.UNKNOWN)
 
+    # remove not available legion trinkets
+    # id_journal_instance, id_map
+    legion_instances: typing.List[typing.Tuple[int, int]] = [
+        (740, 1501),  # Black Rook hold
+        (800, 1571),  # Court of Stars
+        (762, 1466),  # Darkheart Thicket
+        (716, 1456),  # Eye of Azshara
+        (767, 1458),  # Neltharion's Lair
+        (707, 1493),  # Vault of the Wardens
+    ]
+    id_journal_instances = [i[0] for i in legion_instances]
+    id_maps = [i[1] for i in legion_instances]
+
+    # matching id_journal_instance but unmatching id_map
+    match_only_id_journal = [
+        f"{t['name_en_US']} ({t['id']}) id_map: {t['id_map']}"
+        for t in loaded_trinkets
+        if t["id_expansion"] == 6
+        and t["id_journal_instance"] in id_journal_instances
+        and t["id_map"] not in id_maps
+    ]
+    if match_only_id_journal:
+        logger.warning(
+            "The following legion trinkets are suspicious and not included! They match a valid id_journal_instance, but don't have the matching id_map."
+        )
+        logger.warning(match_only_id_journal)
+    match_only_id_map = [
+        f"{t['name_en_US']} ({t['id']}) id_map: {t['id_map']}"
+        for t in loaded_trinkets
+        if t["id_expansion"] == 6
+        and t["id_journal_instance"] not in id_journal_instances
+        and t["id_map"] in id_maps
+    ]
+    if match_only_id_map:
+        logger.warning(
+            "The following legion trinkets are suspicious and not included! They match a valid id_map, but don't have the matching id_journal_instance."
+        )
+        logger.warning(match_only_id_map)
+
+    # remove non-timewalking legion trinkets
+    filtered_trinkets = [
+        t
+        for t in loaded_trinkets
+        if t["id_expansion"] != 6
+        or t["id_expansion"] == 6
+        and t["id_journal_instance"] in id_journal_instances
+        and t["id_map"] in id_maps
+    ]
+
     trinkets: typing.List[Trinket] = []
-    for trinket in loaded_trinkets:
+    for trinket in filtered_trinkets:
         source = _get_source(trinket)
         itemlevels = _get_itemlevels(trinket, source)
         if not itemlevels:
@@ -352,7 +407,9 @@ def _load_trinkets() -> typing.List[Trinket]:
     # print("to be blocked trinket ids:")
     # print(trinket_block_list)
 
-    return [t for t in trinkets if t.item_id not in trinket_block_list]
+    unique_trinkets = [t for t in trinkets if t.item_id not in trinket_block_list]
+
+    return unique_trinkets
 
 
 TRINKETS: typing.List[Trinket] = _load_trinkets()
