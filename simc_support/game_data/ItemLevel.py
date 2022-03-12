@@ -15,7 +15,10 @@ CALLINGS = WORLD_QUEST_ITEMLEVELS
 
 KORTHIA = [200, 207, 213, 220, 226, 233]
 
-ZERETH_MORTIS = [226]
+ZERETH_MORTIS = [
+    226,
+    242,  # some world quest can drop them at a higher itemlevel
+]
 
 DUNGEON_NORMAL = 210
 DUNGEON_HEROIC = 223

@@ -5,6 +5,7 @@ class Source(enum.Enum):
     CALLING = "Calling"
     DUNGEON = "Dungeon"
     KORTHIA = "Korthia"
+    ZERETH_MORTIS = "Zereth Mortis"
     MISSION = "Mission"
     PROFESSION = "Profession"
     PVP = "PvP"
