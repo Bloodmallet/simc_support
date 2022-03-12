@@ -338,16 +338,16 @@ def update_trinkets(args: object) -> None:
         """See https://github.com/simulationcraft/simc/blob/shadowlands/engine/dbc/data_enums.hh#L335"""
         return item.get("inv_type") == 12
 
-    def is_gte_rare(item: dict) -> bool:
+    def is_gte_uncommon(item: dict) -> bool:
         """See https://github.com/simulationcraft/simc/blob/shadowlands/engine/dbc/data_enums.hh#L369"""
-        return item.get("quality") >= 3
+        return item.get("quality") >= 2
 
     def is_shadowlands(item: dict) -> bool:
         """Tests for itemlevel and character level requirement."""
 
         def is_expansion(item: dict) -> bool:
             """Checks expansion id."""
-            return item["id_expansion"] == 9
+            return item["id_expansion"] == 8
 
         def is_gte_level(item: dict) -> bool:
             """An Expansion starts at the last possible character level of the previous one."""
@@ -373,12 +373,14 @@ def update_trinkets(args: object) -> None:
         return item.get("id") in WHITELIST or item.get("name") in WHITELIST
 
     def is_approved(item: dict) -> bool:
-        return (
+        is_a_good_one = (
             is_trinket(item)
-            and is_gte_rare(item)
+            and is_gte_uncommon(item)
             and (is_shadowlands(item) or is_legion(item))
             or is_whitelisted(item)
         )
+
+        return is_a_good_one
 
     dbc(
         args,
@@ -1077,12 +1079,12 @@ def main() -> None:
         logger.setLevel(logging.DEBUG)
     casc(args)
     update_trinkets(args)
-    update_wow_classes(args)
-    update_covenants(args)
-    update_soul_binds(args)
-    update_legendaries(args)
-    update_conduits(args)
-    update_talents(args)
+    # update_wow_classes(args)
+    # update_covenants(args)
+    # update_soul_binds(args)
+    # update_legendaries(args)
+    # update_conduits(args)
+    # update_talents(args)
     # update_shards_of_dominations(args)
 
     logger.debug("self_update done")

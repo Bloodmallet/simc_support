@@ -212,6 +212,9 @@ def _load_trinkets() -> typing.List[Trinket]:
             return ItemLevel.RARE_MOB.get(item["ilevel"], [item["ilevel"]])
         if source == Source.CALLING:
             return ItemLevel.CALLINGS
+        if source == Source.ZERETH_MORTIS:
+            return ItemLevel.ZERETH_MORTIS
+
         if item["id"] == 187447:  # Soul Cage Fragment
             return [ItemLevel.WORLD_BOSS_CHAINS_OF_DEVASTATION]
         return [
@@ -304,6 +307,14 @@ def _load_trinkets() -> typing.List[Trinket]:
             and item["quality"] == 3
         ):
             return Source.KORTHIA
+
+        if (
+            item["id_expansion"] == 8
+            and item["ilevel"] == 226
+            and item["req_level"] == 60
+            and item["quality"] == 2
+        ):
+            return Source.ZERETH_MORTIS
 
         if "Cosmic" in item["name_en_US"] and "Gladiator" in item["name_en_US"]:
             return Source.PVP
