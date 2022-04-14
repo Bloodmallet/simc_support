@@ -18,6 +18,7 @@ KORTHIA = [200, 207, 213, 220, 226, 233]
 ZERETH_MORTIS = [
     226,
     242,  # some world quest can drop them at a higher itemlevel
+    246,
 ]
 
 DUNGEON_NORMAL = 210
