@@ -188,6 +188,89 @@ def create_nodes() -> typing.List[TreeNode]:
             parent_names={"C3"},
         )
     )
+    # row 6
+    # nodes.append(
+    #     TreeNode(
+    #         talent=Talent(
+    #             full_name="F1",
+    #             max_rank=1,
+    #         ),
+    #         parent_names={"E1"},
+    #     )
+    # )
+    # nodes.append(
+    #     TreeNode(
+    #         talent=Talent(
+    #             full_name="F2",
+    #             max_rank=2,
+    #         ),
+    #         parent_names={"E2"},
+    #     )
+    # )
+    # nodes.append(
+    #     TreeNode(
+    #         talent=Talent(
+    #             full_name="F3",
+    #             max_rank=2,
+    #         ),
+    #         parent_names={"E3"},
+    #     )
+    # )
+    # nodes.append(
+    #     TreeNode(
+    #         talent=Talent(
+    #             full_name="F4",
+    #             max_rank=1,
+    #         ),
+    #         parent_names={"E4"},
+    #     )
+    # )
+
+    # row 7
+    # nodes.append(
+    #     TreeNode(
+    #         talent=Talent(
+    #             full_name="G1",
+    #             max_rank=1,
+    #         ),
+    #         parent_names={"F1", "F2"},
+    #         sibling_names={"G2"},
+    #     )
+    # )
+    # nodes.append(
+    #     TreeNode(
+    #         talent=Talent(
+    #             full_name="G2",
+    #             max_rank=1,
+    #         ),
+    #         parent_names={"F1", "F2"},
+    #         sibling_names={"G1"},
+    #     )
+    # )
+    # nodes.append(
+    #     TreeNode(
+    #         talent=Talent(
+    #             full_name="G3",
+    #             max_rank=1,
+    #         ),
+    #         parent_names={"F3", "F4"},
+    #     )
+    # )
+    # nodes.append(
+    #     TreeNode(
+    #         talent=Talent(
+    #             full_name="G4",
+    #             max_rank=2,
+    #         ),
+    #         parent_names={"F3", "F4"},
+    #     )
+    # )
+
+    # row 8
+
+    # row 9
+
+    # row 10
 
     return nodes
 
@@ -289,6 +372,16 @@ def create_paths(nodes: typing.List[TreeNode], points: int) -> typing.List[NodeP
                     continue
 
                 for child in node.tree_node.children:
+                    sibling_is_already_in_use = any(
+                        [
+                            s
+                            for s in child.siblings
+                            if s in [n.tree_node for n in path.selected_nodes]
+                        ]
+                    )
+                    if sibling_is_already_in_use:
+                        continue
+
                     if child not in tree_nodes and child not in potential_children:
                         potential_children.append(child)
 
