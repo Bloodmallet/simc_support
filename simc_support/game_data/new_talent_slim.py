@@ -623,10 +623,35 @@ def cut_paths(nodes: typing.List[TreeNode], points: int) -> typing.List[NodePath
             active_tree_nodes = [n.tree_node for n in path.selected_nodes]
             reduceable_nodes: typing.List[SelectedTreeNode] = []
             for node in path.selected_nodes:
+                # add node as reduceable if it has no children
                 child_is_in_use = any(
                     [n in active_tree_nodes for n in node.tree_node.children]
                 )
                 if not child_is_in_use and node not in reduceable_nodes:
+                    reduceable_nodes.append(node)
+
+                # add node as reduceable if all children have other "full" parents
+                has_alternative_paths: typing.List[bool] = []
+                for child in node.tree_node.children:
+                    child_has_multiple_parents = len(child.parents) > 1
+                    if not child_has_multiple_parents:
+                        has_alternative_paths.append(False)
+                        continue
+
+                    other_parents = [p for p in child.parents if p != node.tree_node]
+                    other_parent_selected_tree_nodes: typing.List[SelectedTreeNode] = []
+                    for parent in other_parents:
+                        for n in path.selected_nodes:
+                            if n.tree_node == parent:
+                                other_parent_selected_tree_nodes.append(n)
+                    if any(
+                        [
+                            n.rank == n.tree_node.talent.max_rank
+                            for n in other_parent_selected_tree_nodes
+                        ]
+                    ):
+                        has_alternative_paths.append(True)
+                if all(has_alternative_paths):
                     reduceable_nodes.append(node)
 
             for r_node in reduceable_nodes:
