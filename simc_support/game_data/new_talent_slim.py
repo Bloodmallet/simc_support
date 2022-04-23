@@ -449,9 +449,16 @@ class NodePath:
         default_factory=list
     )
 
+    def __post_init__(self):
+        self.selected_nodes = sorted(
+            self.selected_nodes, key=lambda n: f"{n.tree_node.talent.full_name}{n.rank}"
+        )
+
     @property
     def invested_points(self) -> int:
-        return sum([n.rank for n in self.selected_nodes])
+        if not hasattr(self, "_invested_points"):
+            self._invested_points = sum([n.rank for n in self.selected_nodes])
+        return self._invested_points
 
     def __repr__(self) -> str:
         return " - ".join(
@@ -480,7 +487,16 @@ class NodePath:
         return True
 
 
-def create_paths(nodes: typing.List[TreeNode], points: int) -> typing.List[NodePath]:
+@dataclasses.dataclass
+class NodePaths:
+    paths: typing.List[NodePath] = dataclasses.field(default_factory=list)
+
+    def append(self, node_path: NodePath) -> None:
+        if node_path not in self.paths:
+            self.paths.append(node_path)
+
+
+def grow_paths(nodes: typing.List[TreeNode], points: int) -> typing.List[NodePath]:
     paths: typing.List[NodePath] = []
     invested_points = 0
 
@@ -506,9 +522,11 @@ def create_paths(nodes: typing.List[TreeNode], points: int) -> typing.List[NodeP
     #
     #   filter by invested points
     #   or abort path generation early based on invested points
-    def _create_paths(paths: typing.List[NodePath]) -> typing.List[NodePath]:
+    def _grow_paths_by_one(paths: typing.List[NodePath]) -> typing.List[NodePath]:
         """Add new potential paths. Remove used path."""
-        new_paths: typing.List[NodePath] = []
+        print(f"{paths[0].invested_points}: {len(paths)}")
+
+        new_paths = NodePaths()
         for path in paths:
             # add paths with additional nodes
             potential_children: typing.List[TreeNode] = []
@@ -518,6 +536,7 @@ def create_paths(nodes: typing.List[TreeNode], points: int) -> typing.List[NodeP
                 if node.rank != node.tree_node.talent.max_rank:
                     continue
 
+                # create a new path for each child
                 for child in node.tree_node.children:
                     sibling_is_already_in_use = any(
                         [s in tree_nodes for s in child.siblings]
@@ -525,65 +544,106 @@ def create_paths(nodes: typing.List[TreeNode], points: int) -> typing.List[NodeP
                     if sibling_is_already_in_use:
                         continue
 
-                    if child not in tree_nodes and child not in potential_children:
+                    if child not in tree_nodes + potential_children:
                         potential_children.append(child)
-
             # print(f"potential children: {potential_children}")
             for node in potential_children:
-                new_paths.append(
-                    NodePath(
-                        # might need a copy
-                        selected_nodes=path.selected_nodes
-                        + [SelectedTreeNode(tree_node=node, rank=1)]
-                    )
-                )
+                new_nodes = path.selected_nodes + [
+                    SelectedTreeNode(tree_node=node, rank=1)
+                ]
+                new_path = NodePath(selected_nodes=new_nodes)
+                new_paths.append(new_path)
             # print("new paths")
             # print(new_paths)
 
             # add paths with incremented nodes
-            potential_increments: typing.List[
-                typing.Tuple[SelectedTreeNode, TreeNode]
-            ] = []
-            for node in path.selected_nodes:
-                if node.rank < node.tree_node.talent.max_rank:
-                    potential_increments.append((node, node.tree_node))
-
+            potential_increments = [
+                node
+                for node in path.selected_nodes
+                if node.rank < node.tree_node.talent.max_rank
+            ]
             # print(f"potential increments: {potential_increments}")
-            for old_selected, new_node in potential_increments:
-                copied_selected_nodes = path.selected_nodes.copy()
-                copied_selected_nodes.remove(old_selected)
-                new_paths.append(
-                    NodePath(
-                        # might need a copy
-                        selected_nodes=copied_selected_nodes
-                        + [
-                            SelectedTreeNode(
-                                tree_node=new_node, rank=old_selected.rank + 1
-                            )
-                        ]
+            for potential_increment in potential_increments:
+                nodes_without_old = [
+                    p for p in path.selected_nodes if p != potential_increment
+                ]
+                new_nodes = nodes_without_old + [
+                    SelectedTreeNode(
+                        tree_node=potential_increment.tree_node,
+                        rank=potential_increment.rank + 1,
                     )
+                ]
+                new_path = NodePath(
+                    # might need a copy
+                    selected_nodes=new_nodes
                 )
-            # print("new paths")
-            # print(new_paths)
 
-        return new_paths
+                new_paths.append(new_path)
 
-    def _make_paths_unique(paths: typing.List[NodePath]) -> typing.List[NodePath]:
-        """Ensure each path exists only once."""
-        unique_paths: typing.Dict[str, NodePath] = {}
-        for path in paths:
-            names = set()
-            for node in path.selected_nodes:
-                name = node.tree_node.talent.full_name + str(node.rank)
-                names.add(name)
-            names = "".join(sorted(list(names)))
-            unique_paths[names] = path
+        return new_paths.paths
 
-        return list(unique_paths.values())
-
-    for point in range(1, points):
-        # print(f"time to add point {point}")
-        paths = _create_paths(paths=paths)
-        paths = _make_paths_unique(paths)
+    while paths[0].invested_points != points:
+        paths = _grow_paths_by_one(paths=paths)
 
     return paths
+
+
+def cut_paths(nodes: typing.List[TreeNode], points: int) -> typing.List[NodePath]:
+    full_starting_trees: typing.List[typing.List[TreeNode]] = [[]]
+    for node in nodes:
+        if node.siblings:
+            is_already_in_trees = any([node in n for n in full_starting_trees])
+            if is_already_in_trees:
+                continue
+            else:
+                new_full_trees = [t + [node] for t in full_starting_trees]
+                for sibling in node.siblings:
+                    new_full_trees += [t + [sibling] for t in full_starting_trees]
+
+                full_starting_trees = new_full_trees
+        else:
+            full_starting_trees = [t + [node] for t in full_starting_trees]
+
+    node_paths = NodePaths(
+        [
+            NodePath([SelectedTreeNode(n, n.talent.max_rank) for n in tree])
+            for tree in full_starting_trees
+        ]
+    )
+
+    # unify_dict = {str(path): path for path in node_paths}
+    # node_paths = list(unify_dict.values())
+
+    while sum([p.invested_points for p in node_paths.paths]) > points * len(
+        node_paths.paths
+    ):
+        print(f"{node_paths.paths[0].invested_points}: {len(node_paths.paths)}")
+        reduced_paths = NodePaths()
+        for path in node_paths.paths:
+            active_tree_nodes = [n.tree_node for n in path.selected_nodes]
+            reduceable_nodes: typing.List[SelectedTreeNode] = []
+            for node in path.selected_nodes:
+                child_is_in_use = any(
+                    [n in active_tree_nodes for n in node.tree_node.children]
+                )
+                if not child_is_in_use and node not in reduceable_nodes:
+                    reduceable_nodes.append(node)
+
+            for r_node in reduceable_nodes:
+                if r_node.rank == 1:
+                    new_path = NodePath([n for n in path.selected_nodes if n != r_node])
+                    reduced_paths.append(new_path)
+                else:
+                    new_path = NodePath(
+                        [
+                            n
+                            if n != r_node
+                            else SelectedTreeNode(n.tree_node, n.rank - 1)
+                            for n in path.selected_nodes
+                        ]
+                    )
+                    reduced_paths.append(new_path)
+
+        node_paths = reduced_paths
+
+    return node_paths.paths
