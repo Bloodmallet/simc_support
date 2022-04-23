@@ -189,88 +189,235 @@ def create_nodes() -> typing.List[TreeNode]:
         )
     )
     # row 6
-    # nodes.append(
-    #     TreeNode(
-    #         talent=Talent(
-    #             full_name="F1",
-    #             max_rank=1,
-    #         ),
-    #         parent_names={"E1"},
-    #     )
-    # )
-    # nodes.append(
-    #     TreeNode(
-    #         talent=Talent(
-    #             full_name="F2",
-    #             max_rank=2,
-    #         ),
-    #         parent_names={"E2"},
-    #     )
-    # )
-    # nodes.append(
-    #     TreeNode(
-    #         talent=Talent(
-    #             full_name="F3",
-    #             max_rank=2,
-    #         ),
-    #         parent_names={"E3"},
-    #     )
-    # )
-    # nodes.append(
-    #     TreeNode(
-    #         talent=Talent(
-    #             full_name="F4",
-    #             max_rank=1,
-    #         ),
-    #         parent_names={"E4"},
-    #     )
-    # )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="F1",
+                max_rank=1,
+            ),
+            parent_names={"E1"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="F2",
+                max_rank=2,
+            ),
+            parent_names={"E2"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="F3",
+                max_rank=2,
+            ),
+            parent_names={"E3"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="F4",
+                max_rank=1,
+            ),
+            parent_names={"E4"},
+        )
+    )
 
     # row 7
-    # nodes.append(
-    #     TreeNode(
-    #         talent=Talent(
-    #             full_name="G1",
-    #             max_rank=1,
-    #         ),
-    #         parent_names={"F1", "F2"},
-    #         sibling_names={"G2"},
-    #     )
-    # )
-    # nodes.append(
-    #     TreeNode(
-    #         talent=Talent(
-    #             full_name="G2",
-    #             max_rank=1,
-    #         ),
-    #         parent_names={"F1", "F2"},
-    #         sibling_names={"G1"},
-    #     )
-    # )
-    # nodes.append(
-    #     TreeNode(
-    #         talent=Talent(
-    #             full_name="G3",
-    #             max_rank=1,
-    #         ),
-    #         parent_names={"F3", "F4"},
-    #     )
-    # )
-    # nodes.append(
-    #     TreeNode(
-    #         talent=Talent(
-    #             full_name="G4",
-    #             max_rank=2,
-    #         ),
-    #         parent_names={"F3", "F4"},
-    #     )
-    # )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="G1",
+                max_rank=1,
+            ),
+            parent_names={"F1", "F2"},
+            sibling_names={"G2"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="G2",
+                max_rank=1,
+            ),
+            parent_names={"F1", "F2"},
+            sibling_names={"G1"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="G3",
+                max_rank=1,
+            ),
+            parent_names={"F3", "F4"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="G4",
+                max_rank=2,
+            ),
+            parent_names={"F3", "F4"},
+        )
+    )
 
     # row 8
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="H1",
+                max_rank=1,
+            ),
+            parent_names={
+                "F1",
+            },
+            sibling_names={"H2"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="H2",
+                max_rank=1,
+            ),
+            parent_names={
+                "F1",
+            },
+            sibling_names={"H1"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="H3",
+                max_rank=1,
+            ),
+            parent_names={"G1", "G2", "G3"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="H4",
+                max_rank=1,
+            ),
+            parent_names={"G4"},
+        )
+    )
 
     # row 9
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="I1",
+                max_rank=2,
+            ),
+            parent_names={"H1", "H2"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="I2",
+                max_rank=1,
+            ),
+            parent_names={"H1", "H2"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="I3",
+                max_rank=2,
+            ),
+            parent_names={"H1", "H2", "H3"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="I4",
+                max_rank=2,
+            ),
+            parent_names={"H3", "H4"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="I5",
+                max_rank=1,
+            ),
+            parent_names={"H4"},
+        )
+    )
 
     # row 10
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="J1",
+                max_rank=1,
+            ),
+            parent_names={"I1"},
+            sibling_names={"J2"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="J2",
+                max_rank=1,
+            ),
+            parent_names={"I1"},
+            sibling_names={"J1"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="J3",
+                max_rank=1,
+            ),
+            parent_names={"I3", "I4"},
+            sibling_names={"J4"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="J4",
+                max_rank=1,
+            ),
+            parent_names={"I3", "I4"},
+            sibling_names={"J3"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="J5",
+                max_rank=1,
+            ),
+            parent_names={"I5"},
+            sibling_names={"J6"},
+        )
+    )
+    nodes.append(
+        TreeNode(
+            talent=Talent(
+                full_name="J6",
+                max_rank=1,
+            ),
+            parent_names={"I5"},
+            sibling_names={"J5"},
+        )
+    )
 
     return nodes
 
@@ -373,11 +520,7 @@ def create_paths(nodes: typing.List[TreeNode], points: int) -> typing.List[NodeP
 
                 for child in node.tree_node.children:
                     sibling_is_already_in_use = any(
-                        [
-                            s
-                            for s in child.siblings
-                            if s in [n.tree_node for n in path.selected_nodes]
-                        ]
+                        [s in tree_nodes for s in child.siblings]
                     )
                     if sibling_is_already_in_use:
                         continue
