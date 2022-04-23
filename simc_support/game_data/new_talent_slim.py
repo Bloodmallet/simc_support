@@ -315,7 +315,7 @@ def create_nodes() -> typing.List[TreeNode]:
         TreeNode(
             talent=Talent(
                 full_name="I1",
-                max_rank=2,
+                max_rank=1,
             ),
             parent_names={"H1", "H2"},
         )
