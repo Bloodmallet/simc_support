@@ -139,7 +139,7 @@ def create_nodes() -> typing.List[TreeNode]:
                 full_name="D2",
                 max_rank=2,
             ),
-            parent_names={"C2"},
+            parent_names={"C3"},
         )
     )
     nodes.append(
@@ -262,7 +262,7 @@ def create_nodes() -> typing.List[TreeNode]:
                 full_name="G4",
                 max_rank=2,
             ),
-            parent_names={"F3", "F4"},
+            parent_names={"F4"},
         )
     )
 
