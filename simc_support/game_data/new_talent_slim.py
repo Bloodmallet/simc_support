@@ -204,7 +204,7 @@ def create_nodes() -> typing.List[TreeNode]:
                 full_name="F2",
                 max_rank=2,
             ),
-            parent_names={"E2"},
+            parent_names={"E2", "E3"},
         )
     )
     nodes.append(
@@ -213,7 +213,7 @@ def create_nodes() -> typing.List[TreeNode]:
                 full_name="F3",
                 max_rank=2,
             ),
-            parent_names={"E3"},
+            parent_names={"E2", "E3"},
         )
     )
     nodes.append(
@@ -461,9 +461,9 @@ class NodePath:
         return self._invested_points
 
     def __repr__(self) -> str:
-        return " - ".join(
+        return ";".join(
             [
-                n.tree_node.talent.full_name + " " + str(n.rank)
+                n.tree_node.talent.full_name + ":" + str(n.rank)
                 for n in self.selected_nodes
             ]
         )
@@ -585,6 +585,7 @@ def grow_paths(nodes: typing.List[TreeNode], points: int) -> typing.List[NodePat
     while paths[0].invested_points != points:
         paths = _grow_paths_by_one(paths=paths)
 
+    print(f"{paths[0].invested_points}: {len(paths)}")
     return paths
 
 
