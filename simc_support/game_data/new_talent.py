@@ -1,0 +1,521 @@
+import datetime
+import typing
+import logging
+
+logger = logging.getLogger(__name__)
+T = typing.TypeVar("T")
+
+
+class InitializationError(Exception):
+    pass
+
+
+class MissingSelectedParentError(Exception):
+    pass
+
+
+class AlreadySelectedError(Exception):
+    pass
+
+
+class SiblingAlreadySelectedError(Exception):
+    pass
+
+
+class Talent:
+    def __init__(
+        self,
+        name: str,
+        *,
+        parent_names: typing.Tuple[str, ...] = tuple(),
+        children_names: typing.Tuple[str, ...] = tuple(),
+        sibling_names: typing.Tuple[str, ...] = tuple(),
+    ) -> None:
+        self.name: str = name
+        self.parent_names: typing.Tuple[str, ...] = parent_names
+        self.children_names: typing.Tuple[str, ...] = children_names
+        self.sibling_names: typing.Tuple[str, ...] = sibling_names
+
+        self.index: int = -1
+        self.parents: typing.Tuple["Talent", ...] = tuple()
+        self.children: typing.Tuple["Talent", ...] = tuple()
+        self.siblings: typing.Tuple["Talent", ...] = tuple()
+
+    def __repr__(self) -> str:
+        return f"{self.name}:{self.index}(p:{self.parent_names},c:{self.children_names},s:{self.sibling_names})"
+
+    @property
+    def is_initialized(self) -> bool:
+        return all(
+            [
+                self.index > -1,
+                len(self.parent_names) == len(self.parents),
+                len(self.children_names) == len(self.children),
+                len(self.sibling_names) == len(self.siblings),
+            ]
+        )
+
+    def is_selected(self, tree: typing.Tuple[bool]) -> bool:
+        return tree[self.index]
+
+    def select(self, tree: typing.Tuple[bool]) -> typing.Tuple[bool]:
+        if tree[self.index]:
+            raise AlreadySelectedError(
+                f"Node {self.name} at index {self.index} can't be selected at {tree} because node was already selected."
+            )
+
+        if len(self.parents) > 0 and not any(
+            [parent.is_selected(tree) for parent in self.parents]
+        ):
+            raise MissingSelectedParentError(
+                f"Node {self.name} at index {self.index} can't be selected at {tree} because no parent was selected."
+            )
+
+        if len(self.siblings) > 0 and any(
+            [sibling.is_selected(tree) for sibling in self.siblings]
+        ):
+            raise SiblingAlreadySelectedError(
+                f"Node {self.name} at index {self.index} can't be selected at {tree} because no parent was selected."
+            )
+
+        new_tree = list(tree).copy()
+        new_tree[self.index] = True
+
+        return tuple(new_tree)
+
+    @staticmethod
+    def create_ranks(
+        name: str,
+        max_rank: int,
+        *,
+        parent_names: typing.Tuple[str, ...] = tuple(),
+        children_names: typing.Tuple[str, ...] = tuple(),
+        # sibling_names: typing.Tuple[str, ...] = tuple(),
+    ) -> typing.Tuple["Talent", ...]:
+        talents: typing.List[Talent] = []
+
+        for rank in range(1, max_rank + 1):
+            if rank == 1:
+                talents.append(
+                    Talent(
+                        name=name + str(rank),
+                        parent_names=parent_names,
+                        children_names=(name + str(rank + 1),),
+                    )
+                )
+            elif rank == max_rank:
+                talents.append(
+                    Talent(
+                        name=name + str(rank),
+                        parent_names=(name + str(rank - 1),),
+                        children_names=children_names,
+                    )
+                )
+            else:
+                talents.append(
+                    Talent(
+                        name=name + str(rank),
+                        parent_names=(name + str(rank - 1),),
+                        children_names=(name + str(rank + 1),),
+                    )
+                )
+
+        return tuple(talents)
+
+
+def talent_post_init(talents: typing.Tuple[Talent, ...]) -> typing.Tuple[Talent, ...]:
+    t_dict = {t.name: t for t in talents}
+    # print(t_dict)
+
+    for index, talent in enumerate(talents):
+        for name in talent.parent_names:
+            parent_names = [n for n in t_dict.keys() if name in n]
+            last_parent_name = sorted(parent_names)[-1]
+
+            # add parent
+            talent.parents = tuple(list(talent.parents) + [t_dict[last_parent_name]])
+
+            # add child
+            if talent.name not in t_dict[last_parent_name].children_names:
+                t_dict[last_parent_name].children_names = tuple(
+                    list(t_dict[last_parent_name].children_names) + [talent.name]
+                )
+            if talent not in t_dict[last_parent_name].children:
+                t_dict[last_parent_name].children = tuple(
+                    list(t_dict[last_parent_name].children) + [talent]
+                )
+
+        # add siblings
+        for name in talent.sibling_names:
+            talent.siblings = tuple(list(talent.siblings) + [t_dict[name]])
+
+        talent.index = index
+
+    for t in talents:
+        if not t.is_initialized:
+            raise InitializationError(t)
+
+    return talents
+
+
+def create_talents() -> typing.Tuple[Talent, ...]:
+    """See /simc_support/game_data/partial_tree.jpg
+
+    Returns:
+        typing.List[TreeNode]: Representation of /simc_support/game_data/partial_tree.jpg
+    """
+
+    class HelperTalents:
+        def __init__(self) -> None:
+            self.talents: typing.List[Talent] = []
+
+        def append(self, talent: typing.Union[Talent, typing.Iterable[Talent]]) -> None:
+            if isinstance(talent, Talent):
+                self.talents.append(talent)
+            elif isinstance(talent, typing.Iterable):
+                for t in talent:
+                    self.talents.append(t)
+            else:
+                pass
+
+    talents = HelperTalents()
+
+    # row 1
+    talents.append(Talent(name="A1"))
+    # row 2
+    talents.append(
+        Talent(
+            name="B1",
+            parent_names=("A1",),
+        ),
+    )
+    talents.append(
+        Talent.create_ranks(
+            name="B2",
+            max_rank=2,
+            parent_names=("A1",),
+        ),
+    )
+    talents.append(
+        Talent(
+            name="B3",
+            parent_names=("A1",),
+        )
+    )
+    # row 3
+    talents.append(
+        Talent(
+            name="C1",
+            parent_names=("B1",),
+        )
+    )
+    talents.append(
+        Talent(
+            name="C2",
+            parent_names=("B2",),
+        )
+    )
+    talents.append(
+        Talent(
+            name="C3",
+            parent_names=("B3",),
+        )
+    )
+    # row 4
+    talents.append(
+        Talent.create_ranks(
+            name="D1",
+            max_rank=2,
+            parent_names=("C1",),
+        )
+    )
+    talents.append(
+        Talent.create_ranks(
+            name="D2",
+            max_rank=2,
+            parent_names=("C3",),
+        )
+    )
+    talents.append(
+        Talent.create_ranks(
+            name="D3",
+            max_rank=2,
+            parent_names=("C3",),
+        )
+    )
+    # row 5
+    talents.append(
+        Talent.create_ranks(
+            name="E1",
+            max_rank=3,
+            parent_names=("C1",),
+        )
+    )
+    talents.append(
+        Talent(
+            name="E2",
+            parent_names=(
+                "D1",
+                "D2",
+            ),
+            sibling_names=("E3",),
+        )
+    )
+    talents.append(
+        Talent(
+            name="E3",
+            parent_names=(
+                "D1",
+                "D2",
+            ),
+            sibling_names=("E2",),
+        )
+    )
+    talents.append(
+        Talent(
+            name="E4",
+            parent_names=("C3",),
+        )
+    )
+    # row 6
+    talents.append(
+        Talent(
+            name="F1",
+            parent_names=("E1",),
+        )
+    )
+    talents.append(
+        Talent.create_ranks(
+            name="F2",
+            max_rank=2,
+            parent_names=(
+                "E2",
+                "E3",
+            ),
+        )
+    )
+    talents.append(
+        Talent.create_ranks(
+            name="F3",
+            max_rank=2,
+            parent_names=(
+                "E2",
+                "E3",
+            ),
+        )
+    )
+    talents.append(
+        Talent(
+            name="F4",
+            parent_names=("E4",),
+        )
+    )
+
+    # row 7
+    talents.append(
+        Talent(
+            name="G1",
+            parent_names=(
+                "F1",
+                "F2",
+            ),
+            sibling_names=("G2",),
+        )
+    )
+    talents.append(
+        Talent(
+            name="G2",
+            parent_names=(
+                "F1",
+                "F2",
+            ),
+            sibling_names=("G1",),
+        )
+    )
+    talents.append(
+        Talent(
+            name="G3",
+            parent_names=(
+                "F3",
+                "F4",
+            ),
+        )
+    )
+    talents.append(
+        Talent.create_ranks(
+            name="G4",
+            max_rank=2,
+            parent_names=("F4",),
+        )
+    )
+
+    # row 8
+    talents.append(
+        Talent(
+            name="H1",
+            parent_names=("F1",),
+            sibling_names=("H2",),
+        )
+    )
+    talents.append(
+        Talent(
+            name="H2",
+            parent_names=("F1",),
+            sibling_names=("H1",),
+        )
+    )
+    talents.append(
+        Talent(
+            name="H3",
+            parent_names=(
+                "G1",
+                "G2",
+                "G3",
+            ),
+        )
+    )
+    talents.append(
+        Talent(
+            name="H4",
+            parent_names=("G4",),
+        )
+    )
+
+    # row 9
+    talents.append(
+        Talent(
+            name="I1",
+            parent_names=(
+                "H1",
+                "H2",
+            ),
+        )
+    )
+    talents.append(
+        Talent(
+            name="I2",
+            parent_names=(
+                "H1",
+                "H2",
+            ),
+        )
+    )
+    talents.append(
+        Talent.create_ranks(
+            name="I3",
+            max_rank=2,
+            parent_names=(
+                "H1",
+                "H2",
+                "H3",
+            ),
+        )
+    )
+    talents.append(
+        Talent.create_ranks(
+            name="I4",
+            max_rank=2,
+            parent_names=(
+                "H3",
+                "H4",
+            ),
+        )
+    )
+    talents.append(
+        Talent(
+            name="I5",
+            parent_names=("H4",),
+        )
+    )
+
+    # row 10
+    talents.append(
+        Talent(
+            name="J1",
+            parent_names=("I1",),
+            sibling_names=("J2",),
+        )
+    )
+    talents.append(
+        Talent(
+            name="J2",
+            parent_names=("I1",),
+            sibling_names=("J1",),
+        )
+    )
+    talents.append(
+        Talent(
+            name="J3",
+            parent_names=(
+                "I3",
+                "I4",
+            ),
+            sibling_names=("J4",),
+        )
+    )
+    talents.append(
+        Talent(
+            name="J4",
+            parent_names=(
+                "I3",
+                "I4",
+            ),
+            sibling_names=("J3",),
+        )
+    )
+    talents.append(
+        Talent(
+            name="J5",
+            parent_names=("I5",),
+            sibling_names=("J6",),
+        )
+    )
+    talents.append(
+        Talent(
+            name="J6",
+            parent_names=("I5",),
+            sibling_names=("J5",),
+        )
+    )
+
+    return tuple(talents.talents)
+
+
+TALENTS: typing.Tuple[Talent, ...] = talent_post_init(create_talents())
+
+
+def grow(
+    talents: typing.Tuple[Talent, ...], points: int
+) -> typing.Tuple[typing.Tuple[bool, ...]]:
+
+    invested_points: int = 0
+    existing_paths: typing.Set[typing.Tuple[bool, ...]] = set()
+    empty_path = [False for _ in talents]
+    existing_paths.add(tuple(empty_path))
+
+    while invested_points < points:
+        start_time = datetime.datetime.utcnow()
+
+        new_paths: typing.Set[typing.Tuple[bool, ...]] = set()
+        for path in existing_paths:
+            # it's probably cleverer to traverse through the actual child elements,
+            # that would terminate early instead of checking all talents every time
+            for talent in talents:
+                try:
+                    new_path = talent.select(path)
+                except AlreadySelectedError:
+                    pass
+                except MissingSelectedParentError:
+                    pass
+                except SiblingAlreadySelectedError:
+                    pass
+                else:
+                    new_paths.add(new_path)
+
+        existing_paths = new_paths
+        invested_points += 1
+
+        logger.info(
+            f"{invested_points}: {len(existing_paths)} ({datetime.datetime.utcnow()-start_time})"
+        )
+    return tuple(existing_paths)
