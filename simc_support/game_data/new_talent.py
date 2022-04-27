@@ -123,7 +123,7 @@ class Talent:
         return tuple(talents)
 
 
-def talent_post_init(talents: typing.Tuple[Talent, ...]) -> typing.Tuple[Talent, ...]:
+def _talent_post_init(talents: typing.Tuple[Talent, ...]) -> typing.Tuple[Talent, ...]:
     t_dict = {t.name: t for t in talents}
     # print(t_dict)
 
@@ -158,7 +158,7 @@ def talent_post_init(talents: typing.Tuple[Talent, ...]) -> typing.Tuple[Talent,
     return talents
 
 
-def create_talents() -> typing.Tuple[Talent, ...]:
+def _create_talents() -> typing.Tuple[Talent, ...]:
     """See /simc_support/game_data/partial_tree.jpg
 
     Returns:
@@ -481,7 +481,7 @@ def create_talents() -> typing.Tuple[Talent, ...]:
     return tuple(talents.talents)
 
 
-TALENTS: typing.Tuple[Talent, ...] = talent_post_init(create_talents())
+TALENTS: typing.Tuple[Talent, ...] = _talent_post_init(_create_talents())
 
 
 def grow(
