@@ -55,10 +55,10 @@ class Talent:
             ]
         )
 
-    def is_selected(self, tree: typing.Tuple[bool]) -> bool:
+    def is_selected(self, tree: typing.Tuple[bool, ...]) -> bool:
         return tree[self.index]
 
-    def select(self, tree: typing.Tuple[bool]) -> typing.Tuple[bool]:
+    def select(self, tree: typing.Tuple[bool, ...]) -> typing.Tuple[bool, ...]:
         if tree[self.index]:
             raise AlreadySelectedError(
                 f"Node {self.name} at index {self.index} can't be selected at {tree} because node was already selected."
@@ -486,7 +486,7 @@ TALENTS: typing.Tuple[Talent, ...] = talent_post_init(create_talents())
 
 def grow(
     talents: typing.Tuple[Talent, ...], points: int
-) -> typing.Tuple[typing.Tuple[bool, ...]]:
+) -> typing.Tuple[typing.Tuple[bool, ...], ...]:
 
     invested_points: int = 0
     existing_paths: typing.Set[typing.Tuple[bool, ...]] = set()
