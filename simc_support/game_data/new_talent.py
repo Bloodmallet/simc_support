@@ -22,16 +22,22 @@ class SiblingAlreadySelectedError(Exception):
     pass
 
 
+class NotEnoughPointsInvestedError(Exception):
+    pass
+
+
 class Talent:
     def __init__(
         self,
         name: str,
         *,
+        required_invested_points: int = 0,
         parent_names: typing.Tuple[str, ...] = tuple(),
         children_names: typing.Tuple[str, ...] = tuple(),
         sibling_names: typing.Tuple[str, ...] = tuple(),
     ) -> None:
         self.name: str = name
+        self.required_invested_points: int = required_invested_points
         self.parent_names: typing.Tuple[str, ...] = parent_names
         self.children_names: typing.Tuple[str, ...] = children_names
         self.sibling_names: typing.Tuple[str, ...] = sibling_names
@@ -58,6 +64,12 @@ class Talent:
     def is_selected(self, tree: typing.Tuple[bool, ...]) -> bool:
         return tree[self.index]
 
+    def has_selected_children(self, tree: typing.Tuple[bool, ...]) -> bool:
+        return any([c.is_selected(tree) for c in self.children])
+
+    def has_selected_parents(self, tree: typing.Tuple[bool, ...]) -> bool:
+        return any([p.is_selected(tree) for p in self.parents])
+
     def select(self, tree: typing.Tuple[bool, ...]) -> typing.Tuple[bool, ...]:
         if tree[self.index]:
             raise AlreadySelectedError(
@@ -75,7 +87,15 @@ class Talent:
             [sibling.is_selected(tree) for sibling in self.siblings]
         ):
             raise SiblingAlreadySelectedError(
-                f"Node {self.name} at index {self.index} can't be selected at {tree} because no parent was selected."
+                f"Node {self.name} at index {self.index} can't be selected at {tree} because one of its siblings was already selected."
+            )
+
+        if self.required_invested_points > 0 and (
+            sum([1 if selected else 0 for selected in tree])
+            < self.required_invested_points
+        ):
+            raise NotEnoughPointsInvestedError(
+                f"Node {self.name} at index {self.index} can't be selected at {tree} because not enough points were invested in the current tree."
             )
 
         new_tree = list(tree).copy()
@@ -88,6 +108,7 @@ class Talent:
         name: str,
         max_rank: int,
         *,
+        required_invested_points: int = 0,
         parent_names: typing.Tuple[str, ...] = tuple(),
         children_names: typing.Tuple[str, ...] = tuple(),
         # sibling_names: typing.Tuple[str, ...] = tuple(),
@@ -99,6 +120,7 @@ class Talent:
                 talents.append(
                     Talent(
                         name=name + str(rank),
+                        required_invested_points=required_invested_points,
                         parent_names=parent_names,
                         children_names=(name + str(rank + 1),),
                     )
@@ -107,6 +129,7 @@ class Talent:
                 talents.append(
                     Talent(
                         name=name + str(rank),
+                        required_invested_points=required_invested_points,
                         parent_names=(name + str(rank - 1),),
                         children_names=children_names,
                     )
@@ -115,6 +138,7 @@ class Talent:
                 talents.append(
                     Talent(
                         name=name + str(rank),
+                        required_invested_points=required_invested_points,
                         parent_names=(name + str(rank - 1),),
                         children_names=(name + str(rank + 1),),
                     )
@@ -247,6 +271,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent.create_ranks(
             name="E1",
+            required_invested_points=6,
             max_rank=3,
             parent_names=("C1",),
         )
@@ -254,6 +279,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="E2",
+            required_invested_points=6,
             parent_names=(
                 "D1",
                 "D2",
@@ -264,6 +290,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="E3",
+            required_invested_points=6,
             parent_names=(
                 "D1",
                 "D2",
@@ -274,6 +301,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="E4",
+            required_invested_points=6,
             parent_names=("C3",),
         )
     )
@@ -353,6 +381,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="H1",
+            required_invested_points=12,
             parent_names=("F1",),
             sibling_names=("H2",),
         )
@@ -360,6 +389,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="H2",
+            required_invested_points=12,
             parent_names=("F1",),
             sibling_names=("H1",),
         )
@@ -367,6 +397,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="H3",
+            required_invested_points=12,
             parent_names=(
                 "G1",
                 "G2",
@@ -377,6 +408,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="H4",
+            required_invested_points=12,
             parent_names=("G4",),
         )
     )
@@ -509,8 +541,55 @@ def grow(
                     pass
                 except SiblingAlreadySelectedError:
                     pass
+                except NotEnoughPointsInvestedError:
+                    pass
                 else:
                     new_paths.add(new_path)
+
+        existing_paths = new_paths
+        invested_points += 1
+
+        logger.info(
+            f"{invested_points}: {len(existing_paths)} ({datetime.datetime.utcnow()-start_time})"
+        )
+    return tuple(existing_paths)
+
+
+def igrow(
+    talents: typing.Tuple[Talent, ...], points: int
+) -> typing.Tuple[typing.Tuple[bool, ...], ...]:
+
+    invested_points: int = 0
+    existing_paths: typing.Dict[typing.Tuple[bool, ...], typing.Set[Talent]] = {}
+    empty_path = [False for _ in talents]
+    existing_paths[tuple(empty_path)] = {t for t in talents if len(t.parents) == 0}
+
+    while invested_points < points:
+        start_time = datetime.datetime.utcnow()
+
+        new_paths: typing.Dict[typing.Tuple[bool, ...], typing.Set[Talent]] = {}
+
+        for path, entry_points in existing_paths.items():
+
+            # it's probably cleverer to traverse through the actual child elements,
+            # that would terminate early instead of checking all talents every time
+            for talent in entry_points:
+                new_entry_points = entry_points.copy()
+                try:
+                    new_path = talent.select(path)
+                except AlreadySelectedError:
+                    new_entry_points.remove(talent)
+                except SiblingAlreadySelectedError:
+                    new_entry_points.remove(talent)
+                except NotEnoughPointsInvestedError:
+                    # this entry points needs to stay relevant for the time enough points are invested
+                    pass
+                else:
+                    for child in talent.children:
+                        new_entry_points.add(child)
+
+                    new_entry_points.remove(talent)
+                    new_paths[new_path] = new_entry_points
 
         existing_paths = new_paths
         invested_points += 1
