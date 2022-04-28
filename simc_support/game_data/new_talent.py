@@ -1,6 +1,7 @@
 import datetime
 import typing
 import logging
+import enum
 
 logger = logging.getLogger(__name__)
 T = typing.TypeVar("T")
@@ -26,10 +27,25 @@ class NotEnoughPointsInvestedError(Exception):
     pass
 
 
+class TalentType(enum.Enum):
+    PASSIVE = enum.auto()
+    ABILITY = enum.auto()
+    CHOICE = enum.auto()
+
+    def shape(self) -> str:
+        mapping = {
+            self.PASSIVE: "oval",
+            self.ABILITY: "square",
+            self.CHOICE: "octagon",
+        }
+        return mapping[self]
+
+
 class Talent:
     def __init__(
         self,
         name: str,
+        talent_type: TalentType,
         *,
         required_invested_points: int = 0,
         parent_names: typing.Tuple[str, ...] = tuple(),
@@ -37,6 +53,7 @@ class Talent:
         sibling_names: typing.Tuple[str, ...] = tuple(),
     ) -> None:
         self.name: str = name
+        self.talent_type: TalentType = talent_type
         self.required_invested_points: int = required_invested_points
         self.parent_names: typing.Tuple[str, ...] = parent_names
         self.children_names: typing.Tuple[str, ...] = children_names
@@ -106,6 +123,7 @@ class Talent:
     @staticmethod
     def create_ranks(
         name: str,
+        talent_type: TalentType,
         max_rank: int,
         *,
         required_invested_points: int = 0,
@@ -120,6 +138,7 @@ class Talent:
                 talents.append(
                     Talent(
                         name=name + str(rank),
+                        talent_type=talent_type,
                         required_invested_points=required_invested_points,
                         parent_names=parent_names,
                         children_names=(name + str(rank + 1),),
@@ -129,6 +148,7 @@ class Talent:
                 talents.append(
                     Talent(
                         name=name + str(rank),
+                        talent_type=talent_type,
                         required_invested_points=required_invested_points,
                         parent_names=(name + str(rank - 1),),
                         children_names=children_names,
@@ -138,6 +158,7 @@ class Talent:
                 talents.append(
                     Talent(
                         name=name + str(rank),
+                        talent_type=talent_type,
                         required_invested_points=required_invested_points,
                         parent_names=(name + str(rank - 1),),
                         children_names=(name + str(rank + 1),),
@@ -145,6 +166,20 @@ class Talent:
                 )
 
         return tuple(talents)
+
+    def get_dict(
+        self,
+    ) -> typing.Dict[str, typing.Union[str, int, typing.Tuple[str, ...]]]:
+        return {
+            "name": self.name,
+            "index": self.index,
+            "talent_type": self.talent_type.value,
+            "max_rank": 1,
+            "required_invested_points": self.required_invested_points,
+            "parent_names": self.parent_names,
+            "children_names": self.children_names,
+            "sibling_names": self.sibling_names,
+        }
 
 
 def _talent_post_init(talents: typing.Tuple[Talent, ...]) -> typing.Tuple[Talent, ...]:
@@ -205,17 +240,24 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents = HelperTalents()
 
     # row 1
-    talents.append(Talent(name="A1"))
+    talents.append(
+        Talent(
+            name="A1",
+            talent_type=TalentType.ABILITY,
+        )
+    )
     # row 2
     talents.append(
         Talent(
             name="B1",
+            talent_type=TalentType.ABILITY,
             parent_names=("A1",),
         ),
     )
     talents.append(
         Talent.create_ranks(
             name="B2",
+            talent_type=TalentType.PASSIVE,
             max_rank=2,
             parent_names=("A1",),
         ),
@@ -223,6 +265,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="B3",
+            talent_type=TalentType.PASSIVE,
             parent_names=("A1",),
         )
     )
@@ -230,18 +273,21 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="C1",
+            talent_type=TalentType.ABILITY,
             parent_names=("B1",),
         )
     )
     talents.append(
         Talent(
             name="C2",
+            talent_type=TalentType.ABILITY,
             parent_names=("B2",),
         )
     )
     talents.append(
         Talent(
             name="C3",
+            talent_type=TalentType.ABILITY,
             parent_names=("B3",),
         )
     )
@@ -249,6 +295,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent.create_ranks(
             name="D1",
+            talent_type=TalentType.PASSIVE,
             max_rank=2,
             parent_names=("C1",),
         )
@@ -256,6 +303,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent.create_ranks(
             name="D2",
+            talent_type=TalentType.PASSIVE,
             max_rank=2,
             parent_names=("C3",),
         )
@@ -263,6 +311,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent.create_ranks(
             name="D3",
+            talent_type=TalentType.PASSIVE,
             max_rank=2,
             parent_names=("C3",),
         )
@@ -271,6 +320,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent.create_ranks(
             name="E1",
+            talent_type=TalentType.PASSIVE,
             required_invested_points=6,
             max_rank=3,
             parent_names=("C1",),
@@ -279,6 +329,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="E2",
+            talent_type=TalentType.CHOICE,
             required_invested_points=6,
             parent_names=(
                 "D1",
@@ -290,6 +341,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="E3",
+            talent_type=TalentType.CHOICE,
             required_invested_points=6,
             parent_names=(
                 "D1",
@@ -301,6 +353,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="E4",
+            talent_type=TalentType.PASSIVE,
             required_invested_points=6,
             parent_names=("C3",),
         )
@@ -309,12 +362,14 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="F1",
+            talent_type=TalentType.PASSIVE,
             parent_names=("E1",),
         )
     )
     talents.append(
         Talent.create_ranks(
             name="F2",
+            talent_type=TalentType.PASSIVE,
             max_rank=2,
             parent_names=(
                 "E2",
@@ -325,6 +380,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent.create_ranks(
             name="F3",
+            talent_type=TalentType.PASSIVE,
             max_rank=2,
             parent_names=(
                 "E2",
@@ -335,6 +391,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="F4",
+            talent_type=TalentType.PASSIVE,
             parent_names=("E4",),
         )
     )
@@ -343,6 +400,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="G1",
+            talent_type=TalentType.CHOICE,
             parent_names=(
                 "F1",
                 "F2",
@@ -353,6 +411,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="G2",
+            talent_type=TalentType.CHOICE,
             parent_names=(
                 "F1",
                 "F2",
@@ -363,6 +422,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="G3",
+            talent_type=TalentType.PASSIVE,
             parent_names=(
                 "F3",
                 "F4",
@@ -372,6 +432,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent.create_ranks(
             name="G4",
+            talent_type=TalentType.PASSIVE,
             max_rank=2,
             parent_names=("F4",),
         )
@@ -381,6 +442,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="H1",
+            talent_type=TalentType.CHOICE,
             required_invested_points=12,
             parent_names=("F1",),
             sibling_names=("H2",),
@@ -389,6 +451,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="H2",
+            talent_type=TalentType.CHOICE,
             required_invested_points=12,
             parent_names=("F1",),
             sibling_names=("H1",),
@@ -397,6 +460,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="H3",
+            talent_type=TalentType.PASSIVE,
             required_invested_points=12,
             parent_names=(
                 "G1",
@@ -408,6 +472,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="H4",
+            talent_type=TalentType.ABILITY,
             required_invested_points=12,
             parent_names=("G4",),
         )
@@ -417,6 +482,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="I1",
+            talent_type=TalentType.PASSIVE,
             parent_names=(
                 "H1",
                 "H2",
@@ -426,6 +492,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="I2",
+            talent_type=TalentType.PASSIVE,
             parent_names=(
                 "H1",
                 "H2",
@@ -435,6 +502,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent.create_ranks(
             name="I3",
+            talent_type=TalentType.PASSIVE,
             max_rank=2,
             parent_names=(
                 "H1",
@@ -446,6 +514,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent.create_ranks(
             name="I4",
+            talent_type=TalentType.PASSIVE,
             max_rank=2,
             parent_names=(
                 "H3",
@@ -456,6 +525,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="I5",
+            talent_type=TalentType.PASSIVE,
             parent_names=("H4",),
         )
     )
@@ -464,6 +534,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="J1",
+            talent_type=TalentType.CHOICE,
             parent_names=("I1",),
             sibling_names=("J2",),
         )
@@ -471,6 +542,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="J2",
+            talent_type=TalentType.CHOICE,
             parent_names=("I1",),
             sibling_names=("J1",),
         )
@@ -478,6 +550,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="J3",
+            talent_type=TalentType.CHOICE,
             parent_names=(
                 "I3",
                 "I4",
@@ -488,6 +561,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="J4",
+            talent_type=TalentType.CHOICE,
             parent_names=(
                 "I3",
                 "I4",
@@ -498,6 +572,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="J5",
+            talent_type=TalentType.CHOICE,
             parent_names=("I5",),
             sibling_names=("J6",),
         )
@@ -505,6 +580,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     talents.append(
         Talent(
             name="J6",
+            talent_type=TalentType.CHOICE,
             parent_names=("I5",),
             sibling_names=("J5",),
         )
