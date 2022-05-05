@@ -54,7 +54,7 @@ class Talent:
     ) -> None:
         self.name: str = name
         self.talent_type: TalentType = talent_type
-        self.required_invested_points: int = required_invested_points
+        self.required_invested_points: int = 0  # required_invested_points
         self.parent_names: typing.Tuple[str, ...] = parent_names
         self.children_names: typing.Tuple[str, ...] = children_names
         self.sibling_names: typing.Tuple[str, ...] = sibling_names
@@ -654,9 +654,11 @@ def igrow(
                 try:
                     new_path = talent.select(path)
                 except AlreadySelectedError:
-                    new_entry_points.remove(talent)
+                    # new_entry_points.remove(talent)
+                    pass
                 except SiblingAlreadySelectedError:
-                    new_entry_points.remove(talent)
+                    # new_entry_points.remove(talent)
+                    pass
                 except NotEnoughPointsInvestedError:
                     # this entry points needs to stay relevant for the time enough points are invested
                     pass
