@@ -82,42 +82,55 @@ class Talent:
         return tree[self.index]
 
     def has_selected_children(self, tree: typing.Tuple[bool, ...]) -> bool:
+        if not self.children:
+            return False
         return any([c.is_selected(tree) for c in self.children])
 
     def has_selected_parents(self, tree: typing.Tuple[bool, ...]) -> bool:
+        if not self.parents:
+            return False
         return any([p.is_selected(tree) for p in self.parents])
 
-    def select(self, path: typing.Tuple[bool, ...]) -> typing.Tuple[bool, ...]:
+    def has_selected_siblings(self, tree: typing.Tuple[bool, ...]) -> bool:
+        if not self.siblings:
+            return False
+        return any([p.is_selected(tree) for p in self.siblings])
+
+    def is_gate_satisfied(self, tree: typing.Tuple[bool, ...]) -> bool:
+        if self.required_invested_points < 1:
+            return True
+        return (
+            sum([1 if selected else 0 for selected in tree])
+            >= self.required_invested_points
+        )
+
+    def select(self, tree: typing.Tuple[bool, ...]) -> typing.Tuple[bool, ...]:
         """Create a new path tuple."""
 
-        if path[self.index]:
+        if self.is_selected(tree):
             raise AlreadySelectedError(
-                f"Node {self.name} at index {self.index} can't be selected at {path} because node was already selected."
+                f"Node {self.name} at index {self.index} can't be selected at {tree} because node was already selected."
             )
 
-        if len(self.parents) > 0 and not any(
-            [parent.is_selected(path) for parent in self.parents]
-        ):
-            raise MissingSelectedParentError(
-                f"Node {self.name} at index {self.index} can't be selected at {path} because no parent was selected."
-            )
+        # because trees are grown this is not required
+        # if len(self.parents) > 0 and not any(
+        #     [parent.is_selected(path) for parent in self.parents]
+        # ):
+        #     raise MissingSelectedParentError(
+        #         f"Node {self.name} at index {self.index} can't be selected at {path} because no parent was selected."
+        #     )
 
-        if len(self.siblings) > 0 and any(
-            [sibling.is_selected(path) for sibling in self.siblings]
-        ):
+        if self.has_selected_siblings(tree):
             raise SiblingAlreadySelectedError(
-                f"Node {self.name} at index {self.index} can't be selected at {path} because one of its siblings was already selected."
+                f"Node {self.name} at index {self.index} can't be selected at {tree} because one of its siblings was already selected."
             )
 
-        if self.required_invested_points > 0 and (
-            sum([1 if selected else 0 for selected in path])
-            < self.required_invested_points
-        ):
+        if not self.is_gate_satisfied(tree):
             raise NotEnoughPointsInvestedError(
-                f"Node {self.name} at index {self.index} can't be selected at {path} because not enough points were invested in the current tree."
+                f"Node {self.name} at index {self.index} can't be selected at {tree} because not enough points were invested in the current tree."
             )
 
-        new_tree = list(path).copy()
+        new_tree = list(tree).copy()
         new_tree[self.index] = True
 
         return tuple(new_tree)
@@ -648,10 +661,8 @@ def igrow(
 
         for path, entry_points in existing_paths.items():
 
-            # it's probably cleverer to traverse through the actual child elements,
-            # that would terminate early instead of checking all talents every time
             for talent in entry_points:
-                new_entry_points = entry_points.copy()
+                new_path: typing.Tuple[bool, ...] = ()
                 try:
                     new_path = talent.select(path)
                 except AlreadySelectedError:
@@ -663,11 +674,14 @@ def igrow(
                 except NotEnoughPointsInvestedError:
                     # this entry points needs to stay relevant for the time enough points are invested
                     pass
-                else:
+
+                if new_path and new_path not in new_paths:
+                    new_entry_points = entry_points.copy()
+                    new_entry_points.remove(talent)
+
                     for child in talent.children:
                         new_entry_points.add(child)
 
-                    new_entry_points.remove(talent)
                     new_paths[new_path] = new_entry_points
 
         existing_paths = new_paths
