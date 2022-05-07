@@ -43,6 +43,19 @@ class TalentType(enum.Enum):
 
 
 class Talent:
+    __slots__ = (
+        "name",
+        "talent_type",
+        "required_invested_points",
+        "parent_names",
+        "children_names",
+        "sibling_names",
+        "index",
+        "parents",
+        "children",
+        "siblings",
+    )
+
     def __init__(
         self,
         name: str,
@@ -52,7 +65,6 @@ class Talent:
         parent_names: typing.Tuple[str, ...] = tuple(),
         children_names: typing.Tuple[str, ...] = tuple(),
         sibling_names: typing.Tuple[str, ...] = tuple(),
-        **kwargs,
     ) -> None:
         self.name: str = name
         self.talent_type: TalentType = talent_type
@@ -597,304 +609,6 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     return tuple(talents.talents)
 
 
-def _create_no_choice_talents() -> typing.Tuple[Talent, ...]:
-    """See /simc_support/game_data/partial_tree.jpg
-
-    Returns:
-        typing.List[TreeNode]: Representation of /simc_support/game_data/partial_tree.jpg
-    """
-
-    class HelperTalents:
-        def __init__(self) -> None:
-            self.talents: typing.List[Talent] = []
-
-        def append(self, talent: typing.Union[Talent, typing.Iterable[Talent]]) -> None:
-            if isinstance(talent, Talent):
-                self.talents.append(talent)
-            elif isinstance(talent, typing.Iterable):
-                for t in talent:
-                    self.talents.append(t)
-            else:
-                pass
-
-    talents = HelperTalents()
-
-    # row 1
-    talents.append(
-        Talent(
-            name="A1",
-            talent_type=TalentType.ABILITY,
-        )
-    )
-    # row 2
-    talents.append(
-        Talent(
-            name="B1",
-            talent_type=TalentType.ABILITY,
-            parent_names=("A1",),
-        ),
-    )
-    talents.append(
-        Talent.create_ranks(
-            name="B2",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=("A1",),
-        ),
-    )
-    talents.append(
-        Talent(
-            name="B3",
-            talent_type=TalentType.PASSIVE,
-            parent_names=("A1",),
-        )
-    )
-    # row 3
-    talents.append(
-        Talent(
-            name="C1",
-            talent_type=TalentType.ABILITY,
-            parent_names=("B1",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="C2",
-            talent_type=TalentType.ABILITY,
-            parent_names=("B2",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="C3",
-            talent_type=TalentType.ABILITY,
-            parent_names=("B3",),
-        )
-    )
-    # row 4
-    talents.append(
-        Talent.create_ranks(
-            name="D1",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=("C1",),
-        )
-    )
-    talents.append(
-        Talent.create_ranks(
-            name="D2",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=("C3",),
-        )
-    )
-    talents.append(
-        Talent.create_ranks(
-            name="D3",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=("C3",),
-        )
-    )
-    # row 5
-    talents.append(
-        Talent.create_ranks(
-            name="E1",
-            talent_type=TalentType.PASSIVE,
-            required_invested_points=6,
-            max_rank=3,
-            parent_names=("C1",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="E2",
-            talent_type=TalentType.CHOICE,
-            required_invested_points=6,
-            parent_names=(
-                "D1",
-                "D2",
-            ),
-            sibling_names=("A1",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="E4",
-            talent_type=TalentType.PASSIVE,
-            required_invested_points=6,
-            parent_names=("C3",),
-        )
-    )
-    # row 6
-    talents.append(
-        Talent(
-            name="F1",
-            talent_type=TalentType.PASSIVE,
-            parent_names=("E1",),
-        )
-    )
-    talents.append(
-        Talent.create_ranks(
-            name="F2",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=("E2",),
-        )
-    )
-    talents.append(
-        Talent.create_ranks(
-            name="F3",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=("E2",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="F4",
-            talent_type=TalentType.PASSIVE,
-            parent_names=("E4",),
-        )
-    )
-
-    # row 7
-    talents.append(
-        Talent(
-            name="G1",
-            talent_type=TalentType.CHOICE,
-            parent_names=(
-                "F1",
-                "F2",
-            ),
-            sibling_names=("A1",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="G3",
-            talent_type=TalentType.PASSIVE,
-            parent_names=(
-                "F3",
-                "F4",
-            ),
-        )
-    )
-    talents.append(
-        Talent.create_ranks(
-            name="G4",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=("F4",),
-        )
-    )
-
-    # row 8
-    talents.append(
-        Talent(
-            name="H1",
-            talent_type=TalentType.CHOICE,
-            required_invested_points=12,
-            parent_names=("F1",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="H3",
-            talent_type=TalentType.PASSIVE,
-            required_invested_points=12,
-            parent_names=(
-                "G1",
-                "G3",
-            ),
-        )
-    )
-    talents.append(
-        Talent(
-            name="H4",
-            talent_type=TalentType.ABILITY,
-            required_invested_points=12,
-            parent_names=("G4",),
-        )
-    )
-
-    # row 9
-    talents.append(
-        Talent(
-            name="I1",
-            talent_type=TalentType.PASSIVE,
-            parent_names=("H1",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="I2",
-            talent_type=TalentType.PASSIVE,
-            parent_names=("H1",),
-        )
-    )
-    talents.append(
-        Talent.create_ranks(
-            name="I3",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=(
-                "H1",
-                "H3",
-            ),
-        )
-    )
-    talents.append(
-        Talent.create_ranks(
-            name="I4",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=(
-                "H3",
-                "H4",
-            ),
-        )
-    )
-    talents.append(
-        Talent(
-            name="I5",
-            talent_type=TalentType.PASSIVE,
-            parent_names=("H4",),
-        )
-    )
-
-    # row 10
-    talents.append(
-        Talent(
-            name="J1",
-            talent_type=TalentType.CHOICE,
-            parent_names=("I1",),
-            sibling_names=("A1",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="J3",
-            talent_type=TalentType.CHOICE,
-            parent_names=(
-                "I3",
-                "I4",
-            ),
-            sibling_names=("A1",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="J5",
-            talent_type=TalentType.CHOICE,
-            parent_names=("I5",),
-            sibling_names=("A1",),
-        )
-    )
-
-    return tuple(talents.talents)
-
-
 TALENTS: typing.Tuple[Talent, ...] = _talent_post_init(_create_talents())
 
 
@@ -942,7 +656,16 @@ def remove_choices(talents: typing.Tuple[Talent, ...]) -> typing.Tuple[Talent, .
     ignored_nodes: typing.List[str] = []
     for t in talents:
         if all([t.name < s for s in t.sibling_names]):
-            single_choiced.append(Talent(**t.__dict__))
+            single_choiced.append(
+                Talent(
+                    name=t.name,
+                    talent_type=t.talent_type,
+                    required_invested_points=t.required_invested_points,
+                    parent_names=t.parent_names,
+                    children_names=t.children_names,
+                    sibling_names=t.sibling_names,
+                )
+            )
         else:
             logger.info(f"Temporarily ignoring {t.name}.")
             ignored_nodes.append(t.name)
