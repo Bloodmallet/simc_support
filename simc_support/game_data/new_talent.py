@@ -122,11 +122,6 @@ class Talent:
     def select(self, tree: typing.Tuple[bool, ...]) -> typing.Tuple[bool, ...]:
         """Create a new path tuple."""
 
-        if self.is_selected(tree):
-            raise AlreadySelectedError(
-                f"Node {self.name} at index {self.index} can't be selected at {tree} because node was already selected."
-            )
-
         if not self.is_gate_satisfied(tree):
             raise NotEnoughPointsInvestedError(
                 f"Node {self.name} at index {self.index} can't be selected at {tree} because not enough points were invested in the current tree."
@@ -612,44 +607,6 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
 TALENTS: typing.Tuple[Talent, ...] = _talent_post_init(_create_talents())
 
 
-def grow(
-    talents: typing.Tuple[Talent, ...], points: int
-) -> typing.Tuple[typing.Tuple[bool, ...], ...]:
-
-    empty_path = [False for _ in talents]
-
-    existing_paths: typing.Set[typing.Tuple[bool, ...]] = set()
-    existing_paths.add(tuple(empty_path))
-
-    for invested_points in range(1, points + 1):
-        start_time = datetime.datetime.utcnow()
-
-        new_paths: typing.Set[typing.Tuple[bool, ...]] = set()
-        for path in existing_paths:
-            # it's probably cleverer to traverse through the actual child elements,
-            # that would terminate early instead of checking all talents every time
-            for talent in talents:
-                try:
-                    new_path = talent.select(path)
-                except AlreadySelectedError:
-                    pass
-                except MissingSelectedParentError:
-                    pass
-                except SiblingAlreadySelectedError:
-                    pass
-                except NotEnoughPointsInvestedError:
-                    pass
-                else:
-                    new_paths.add(new_path)
-
-        existing_paths = new_paths
-
-        logger.info(
-            f"{invested_points}: {len(existing_paths)} ({datetime.datetime.utcnow()-start_time})"
-        )
-    return tuple(existing_paths)
-
-
 def remove_choices(talents: typing.Tuple[Talent, ...]) -> typing.Tuple[Talent, ...]:
     """Removes sibling/choice nodes by ensuring only one represents them. New talents are created."""
     single_choiced: typing.List[Talent] = []
@@ -732,6 +689,8 @@ def igrow(
 
     empty_path = [False for _ in prepared_talents]
 
+    # key : value
+    # path: next growable Talents
     existing_paths: typing.Dict[typing.Tuple[bool, ...], typing.Set[Talent]] = {}
     existing_paths[tuple(empty_path)] = {
         t for t in prepared_talents if len(t.parents) == 0
@@ -748,14 +707,8 @@ def igrow(
                 new_path: typing.Tuple[bool, ...] = ()
                 try:
                     new_path = talent.select(path)
-                except AlreadySelectedError:
-                    # new_entry_points.remove(talent)
-                    pass
-                except SiblingAlreadySelectedError:
-                    # new_entry_points.remove(talent)
-                    pass
                 except NotEnoughPointsInvestedError:
-                    # this entry points needs to stay relevant for the time enough points are invested
+                    # this entry point needs to stay relevant for the time enough points are invested
                     pass
 
                 if new_path and new_path not in new_paths:
@@ -763,7 +716,8 @@ def igrow(
                     new_entry_points.remove(talent)
 
                     for child in talent.children:
-                        new_entry_points.add(child)
+                        if not child.is_selected(new_path):
+                            new_entry_points.add(child)
 
                     new_paths[new_path] = new_entry_points
 
