@@ -93,33 +93,32 @@ class Talent:
             ]
         )
 
-    def is_selected(self, tree: typing.Tuple[bool, ...]) -> bool:
-        return tree[self.index]
+    def is_selected(self, tree: str) -> bool:
+        return tree[self.index] == "1"
 
-    def has_selected_children(self, tree: typing.Tuple[bool, ...]) -> bool:
+    def has_selected_children(self, tree: str) -> bool:
         if not self.children:
             return False
         return any([c.is_selected(tree) for c in self.children])
 
-    def has_selected_parents(self, tree: typing.Tuple[bool, ...]) -> bool:
+    def has_selected_parents(self, tree: str) -> bool:
         if not self.parents:
             return False
         return any([p.is_selected(tree) for p in self.parents])
 
-    def has_selected_siblings(self, tree: typing.Tuple[bool, ...]) -> bool:
+    def has_selected_siblings(self, tree: str) -> bool:
         if not self.siblings:
             return False
         return any([p.is_selected(tree) for p in self.siblings])
 
-    def is_gate_satisfied(self, tree: typing.Tuple[bool, ...]) -> bool:
+    def is_gate_satisfied(self, tree: str) -> bool:
         if self.required_invested_points < 1:
             return True
         return (
-            sum([1 if selected else 0 for selected in tree])
-            >= self.required_invested_points
+            sum([int(selected) for selected in tree]) >= self.required_invested_points
         )
 
-    def select(self, tree: typing.Tuple[bool, ...]) -> typing.Tuple[bool, ...]:
+    def select(self, tree: str) -> str:
         """Create a new path tuple."""
 
         if not self.is_gate_satisfied(tree):
@@ -127,10 +126,8 @@ class Talent:
                 f"Node {self.name} at index {self.index} can't be selected at {tree} because not enough points were invested in the current tree."
             )
 
-        new_tree = list(tree).copy()
-        new_tree[self.index] = True
-
-        return tuple(new_tree)
+        new_tree = tree[: self.index] + "1" + tree[self.index + 1 :]
+        return new_tree
 
     @staticmethod
     def create_ranks(
@@ -641,8 +638,8 @@ def remove_choices(talents: typing.Tuple[Talent, ...]) -> typing.Tuple[Talent, .
 def readd_choices(
     talents: typing.Tuple[Talent, ...],
     single_choice_talents: typing.Tuple[Talent, ...],
-    paths: typing.List[typing.Tuple[bool, ...]],
-) -> typing.Tuple[typing.Tuple[bool, ...]]:
+    paths: typing.List[str],
+) -> typing.Tuple[str, ...]:
     no_choice_to_talents_map: typing.Dict[Talent, Talent] = {}
     for n in single_choice_talents:
         for t in talents:
@@ -659,52 +656,52 @@ def readd_choices(
             if n.name == c.name:
                 prepared_choices[n] = _original_choices[c]
 
-    trees: typing.List[typing.Tuple[bool, ...]] = []
+    trees: typing.List[str] = []
     for path in paths:
         included_choice_nodes = {
             n: v for n, v in prepared_choices.items() if n.is_selected(path)
         }
-        blueprint = [False for _ in talents]
+        blueprint = "".join(["0" for _ in talents])
         for talent in single_choice_talents:
             if talent not in included_choice_nodes and talent.is_selected(path):
-                blueprint[no_choice_to_talents_map[talent].index] = True
-        blueprint = tuple(blueprint)
+                blueprint = (
+                    blueprint[: no_choice_to_talents_map[talent].index]
+                    + "1"
+                    + blueprint[no_choice_to_talents_map[talent].index + 1 :]
+                )
+        blueprint = blueprint
 
         choice_combinations = itertools.product(*included_choice_nodes.values())
         for combination in choice_combinations:
             talent: Talent
-            local_copy = [v for v in blueprint]
+            local_copy = blueprint
             for talent in combination:
-                local_copy = list(talent.select(tuple(local_copy)))
-            trees.append(tuple(local_copy))
+                local_copy = talent.select(local_copy)
+            trees.append(local_copy)
 
     return tuple(trees)
 
 
-def igrow(
-    talents: typing.Tuple[Talent, ...], points: int
-) -> typing.Tuple[typing.Tuple[bool, ...], ...]:
+def igrow(talents: typing.Tuple[Talent, ...], points: int) -> typing.Tuple[str, ...]:
 
     prepared_talents = remove_choices(talents)
 
-    empty_path = [False for _ in prepared_talents]
+    empty_path = "".join(["0" for _ in prepared_talents])
 
     # key : value
     # path: next growable Talents
-    existing_paths: typing.Dict[typing.Tuple[bool, ...], typing.Set[Talent]] = {}
-    existing_paths[tuple(empty_path)] = {
-        t for t in prepared_talents if len(t.parents) == 0
-    }
+    existing_paths: typing.Dict[str, typing.Set[Talent]] = {}
+    existing_paths[empty_path] = {t for t in prepared_talents if len(t.parents) == 0}
 
     for invested_points in range(points + 1):
         start_time = datetime.datetime.utcnow()
 
-        new_paths: typing.Dict[typing.Tuple[bool, ...], typing.Set[Talent]] = {}
+        new_paths: typing.Dict[str, typing.Set[Talent]] = {}
 
         for path, entry_points in existing_paths.items():
 
             for talent in entry_points:
-                new_path: typing.Tuple[bool, ...] = ()
+                new_path: str = ""
                 try:
                     new_path = talent.select(path)
                 except NotEnoughPointsInvestedError:
