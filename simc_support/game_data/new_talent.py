@@ -688,6 +688,7 @@ def readd_choices(
                 blueprint = no_choice_to_talents_map[talent].select(blueprint)
         blueprint = blueprint
 
+        # create trees for each included choice node combination
         choice_combinations = itertools.product(*included_choice_nodes.values())
         for combination in choice_combinations:
             talent: Talent
