@@ -126,7 +126,13 @@ class Talent:
                 f"Node {self.name} at index {self.index} can't be selected at {tree} because not enough points were invested in the current tree."
             )
 
+        # 24.3
         new_tree = tree[: self.index] + "1" + tree[self.index + 1 :]
+        # 25.7
+        # new_tree = "".join([tree[: self.index], "1", tree[self.index + 1 :]])
+        # 24.7
+        # new_tree = "".join((tree[: self.index], "1", tree[self.index + 1 :]))
+
         return new_tree
 
     @staticmethod
@@ -656,12 +662,14 @@ def readd_choices(
             if n.name == c.name:
                 prepared_choices[n] = _original_choices[c]
 
+    blueprint_all_false = "".join(["0" for _ in talents])
+
     trees: typing.List[str] = []
     for path in paths:
         included_choice_nodes = {
             n: v for n, v in prepared_choices.items() if n.is_selected(path)
         }
-        blueprint = "".join(["0" for _ in talents])
+        blueprint = blueprint_all_false
         for talent in single_choice_talents:
             if talent not in included_choice_nodes and talent.is_selected(path):
                 blueprint = (
