@@ -646,6 +646,16 @@ def readd_choices(
     single_choice_talents: typing.Tuple[Talent, ...],
     paths: typing.List[str],
 ) -> typing.Tuple[str, ...]:
+    """unpack all selected choice talent options
+
+    Args:
+        talents (typing.Tuple[Talent, ...]): all talents
+        single_choice_talents (typing.Tuple[Talent, ...]): talents with only the first of all choice talents
+        paths (typing.List[str]): selected paths of only the first choice talents
+
+    Returns:
+        typing.Tuple[str, ...]: unpacked full path using all talents
+    """
     no_choice_to_talents_map: typing.Dict[Talent, Talent] = {}
     for n in single_choice_talents:
         for t in talents:
@@ -669,14 +679,13 @@ def readd_choices(
         included_choice_nodes = {
             n: v for n, v in prepared_choices.items() if n.is_selected(path)
         }
+
+        # create a blueprint that doesn't have any choice nodes selected
         blueprint = blueprint_all_false
         for talent in single_choice_talents:
+            # set talent to matching state if it's not a choice node
             if talent not in included_choice_nodes and talent.is_selected(path):
-                blueprint = (
-                    blueprint[: no_choice_to_talents_map[talent].index]
-                    + "1"
-                    + blueprint[no_choice_to_talents_map[talent].index + 1 :]
-                )
+                blueprint = no_choice_to_talents_map[talent].select(blueprint)
         blueprint = blueprint
 
         choice_combinations = itertools.product(*included_choice_nodes.values())
