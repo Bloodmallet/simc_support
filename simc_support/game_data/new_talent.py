@@ -35,9 +35,9 @@ class TalentType(enum.Enum):
 
     def shape(self) -> str:
         mapping = {
-            self.PASSIVE: "oval",
-            self.ABILITY: "square",
-            self.CHOICE: "octagon",
+            TalentType.PASSIVE: "oval",
+            TalentType.ABILITY: "square",
+            TalentType.CHOICE: "octagon",
         }
         return mapping[self]
 
@@ -666,7 +666,7 @@ def readd_choices(
         n: tuple([n] + list(n.siblings)) for n in talents if n.sibling_names
     }
 
-    prepared_choices: typing.Dict[Talent, typing.Tuple[Talent]] = {}
+    prepared_choices: typing.Dict[Talent, typing.Tuple[Talent, ...]] = {}
     for n in single_choice_talents:
         for c in _original_choices:
             if n.name == c.name:
@@ -691,7 +691,6 @@ def readd_choices(
         # create trees for each included choice node combination
         choice_combinations = itertools.product(*included_choice_nodes.values())
         for combination in choice_combinations:
-            talent: Talent
             local_copy = blueprint
             for talent in combination:
                 local_copy = talent.select(local_copy)
