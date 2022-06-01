@@ -28,6 +28,10 @@ class NotEnoughPointsInvestedError(Exception):
     pass
 
 
+class LeafsDependOnNode(Exception):
+    pass
+
+
 class TalentType(enum.Enum):
     PASSIVE = enum.auto()
     ABILITY = enum.auto()
@@ -47,6 +51,8 @@ class Talent:
         "name",
         "talent_type",
         "required_invested_points",
+        "rank",
+        "max_rank",
         "parent_names",
         "children_names",
         "sibling_names",
@@ -62,6 +68,8 @@ class Talent:
         talent_type: TalentType,
         *,
         required_invested_points: int = 0,
+        rank: int = 1,
+        max_rank: int = 1,
         parent_names: typing.Tuple[str, ...] = tuple(),
         children_names: typing.Tuple[str, ...] = tuple(),
         sibling_names: typing.Tuple[str, ...] = tuple(),
@@ -74,6 +82,8 @@ class Talent:
         self.sibling_names: typing.Tuple[str, ...] = sibling_names
 
         self.index: int = -1
+        self.rank: int = rank
+        self.max_rank: int = max_rank
         self.parents: typing.Tuple["Talent", ...] = tuple()
         self.children: typing.Tuple["Talent", ...] = tuple()
         self.siblings: typing.Tuple["Talent", ...] = tuple()
@@ -135,6 +145,36 @@ class Talent:
 
         return new_tree
 
+    def deselect(self, tree: str) -> str:
+        """Create a new path tuple."""
+
+        new_tree = tree[: self.index] + "0" + tree[self.index + 1 :]
+
+        if not self.has_selected_children(tree):
+            return new_tree
+
+        # does any child depend on this node
+        child_has_responsible_parent: typing.List[bool] = []
+        for child in self.children:
+            if child.is_selected(tree):
+                if len(child.parents) < 2:
+                    child_has_responsible_parent.append(False)
+                for other_parent in child.parents:
+                    if other_parent == self:
+                        # print("found myself, ignoring")
+                        pass
+                    else:
+                        child_has_responsible_parent.append(
+                            other_parent.is_selected(tree)
+                        )
+
+        if not all(child_has_responsible_parent):
+            raise LeafsDependOnNode(
+                f"Node {self.name} at index {self.index} can't be deselected at {tree} because other nodes depend on it in the current tree."
+            )
+
+        return new_tree
+
     @staticmethod
     def create_ranks(
         name: str,
@@ -157,6 +197,8 @@ class Talent:
                         required_invested_points=required_invested_points,
                         parent_names=parent_names,
                         children_names=("".join([name, str(rank + 1)]),),
+                        rank=rank,
+                        max_rank=max_rank,
                     )
                 )
             elif rank == max_rank:
@@ -167,6 +209,8 @@ class Talent:
                         required_invested_points=required_invested_points,
                         parent_names=("".join([name, str(rank - 1)]),),
                         children_names=children_names,
+                        rank=rank,
+                        max_rank=max_rank,
                     )
                 )
             else:
@@ -177,6 +221,8 @@ class Talent:
                         required_invested_points=required_invested_points,
                         parent_names=("".join([name, str(rank - 1)]),),
                         children_names=("".join([name, str(rank + 1)]),),
+                        rank=rank,
+                        max_rank=max_rank,
                     )
                 )
 
@@ -224,6 +270,27 @@ def _talent_post_init(talents: typing.Tuple[Talent, ...]) -> typing.Tuple[Talent
             talent.siblings = tuple(list(talent.siblings) + [t_dict[name]])
 
         talent.index = index
+
+    # fix broken parent connections for parents with ranks
+    for talent in talents:
+        if talent.rank == 1:
+            for parent in talent.parents:
+                if (
+                    parent.max_rank != 1
+                    and parent.rank != parent.max_rank
+                    and len(parent.children) == 1
+                ):
+                    # find max-rank child
+                    max_rank_child = parent.children[0]
+                    if (
+                        max_rank_child.max_rank != 1
+                        and max_rank_child.rank != max_rank_child.max_rank
+                        and len(max_rank_child.children) == 1
+                    ):
+                        max_rank_child = max_rank_child.children[0]
+
+                    talent.parents = (max_rank_child,)
+                    talent.parent_names = (max_rank_child.name,)
 
     for t in talents:
         if not t.is_initialized:
@@ -699,7 +766,7 @@ def readd_choices(
     return tuple(trees)
 
 
-def igrow(talents: typing.Tuple[Talent, ...], points: int) -> typing.Tuple[str, ...]:
+def grow(talents: typing.Tuple[Talent, ...], points: int) -> typing.Tuple[str, ...]:
 
     prepared_talents = remove_choices(talents)
 
@@ -710,7 +777,7 @@ def igrow(talents: typing.Tuple[Talent, ...], points: int) -> typing.Tuple[str, 
     existing_paths: typing.Dict[str, typing.Set[Talent]] = {}
     existing_paths[empty_path] = {t for t in prepared_talents if len(t.parents) == 0}
 
-    for invested_points in range(points + 1):
+    for invested_points in range(1, points + 1):
         start_time = datetime.datetime.utcnow()
 
         new_paths: typing.Dict[str, typing.Set[Talent]] = {}
@@ -732,6 +799,67 @@ def igrow(talents: typing.Tuple[Talent, ...], points: int) -> typing.Tuple[str, 
                     for child in talent.children:
                         if not child.is_selected(new_path):
                             new_entry_points.add(child)
+
+                    new_paths[new_path] = new_entry_points
+
+        existing_paths = new_paths
+
+        logger.info(
+            f"{invested_points}: {len(existing_paths)} ({datetime.datetime.utcnow()-start_time})"
+        )
+
+    logger.info("Unpacking choice nodes")
+    start_time = datetime.datetime.utcnow()
+    trees = readd_choices(talents, prepared_talents, list(existing_paths.keys()))
+    logger.info(f"Unpacked: {len(trees)} ({datetime.datetime.utcnow()-start_time})")
+
+    return tuple(trees)
+
+
+def cut(talents: typing.Tuple[Talent, ...], points: int) -> typing.Tuple[str, ...]:
+
+    prepared_talents = remove_choices(talents)
+
+    full_path = "".join(["1" for _ in prepared_talents])
+
+    # key : value
+    # path: next growable Talents
+    existing_paths: typing.Dict[str, typing.Set[Talent]] = {}
+    existing_paths[full_path] = set()
+
+    # add deselectable nodes
+    for talent in prepared_talents:
+        try:
+            talent.deselect(full_path)
+        except LeafsDependOnNode:
+            pass
+        else:
+            existing_paths[full_path].add(talent)
+
+    # print(sorted([n.name for n in existing_paths[full_path]]))
+
+    for invested_points in range(len(prepared_talents) - 1, points - 1, -1):
+        start_time = datetime.datetime.utcnow()
+
+        new_paths: typing.Dict[str, typing.Set[Talent]] = {}
+
+        for path, entry_points in existing_paths.items():
+
+            for talent in entry_points:
+                new_path: str = ""
+                try:
+                    new_path = talent.deselect(path)
+                except LeafsDependOnNode:
+                    # this entry point needs to stay relevant for the time all children are either deselected or don't depend on this one
+                    pass
+
+                if new_path and new_path not in new_paths:
+                    new_entry_points = entry_points.copy()
+                    new_entry_points.remove(talent)
+
+                    for parent in talent.parents:
+                        if parent.is_selected(new_path):
+                            new_entry_points.add(parent)
 
                     new_paths[new_path] = new_entry_points
 
