@@ -1,7 +1,9 @@
 import datetime
 import enum
 import itertools
+import json
 import logging
+import pkg_resources
 import typing
 
 logger = logging.getLogger(__name__)
@@ -76,7 +78,7 @@ class Talent:
     ) -> None:
         self.name: str = name
         self.talent_type: TalentType = talent_type
-        self.required_invested_points: int = 0  # required_invested_points
+        self.required_invested_points: int = required_invested_points
         self.parent_names: typing.Tuple[str, ...] = parent_names
         self.children_names: typing.Tuple[str, ...] = children_names
         self.sibling_names: typing.Tuple[str, ...] = sibling_names
@@ -128,12 +130,13 @@ class Talent:
             sum([int(selected) for selected in tree]) >= self.required_invested_points
         )
 
-    def select(self, tree: str) -> str:
+    def select(self, tree: str, *, raise_exception: bool = True) -> str:
         """Create a new path tuple."""
 
-        if not self.is_gate_satisfied(tree):
+        if raise_exception and not self.is_gate_satisfied(tree):
+            invested_points = sum([int(selected) for selected in tree])
             raise NotEnoughPointsInvestedError(
-                f"Node {self.name} at index {self.index} can't be selected at {tree} because not enough points were invested in the current tree."
+                f"Node {self.name} at index {self.index} can't be selected at {tree} because not enough points were invested in the current tree ({invested_points} != {self.required_invested_points})."
             )
 
         # 24.3
@@ -150,8 +153,8 @@ class Talent:
 
         new_tree = tree[: self.index] + "0" + tree[self.index + 1 :]
 
-        if not self.has_selected_children(tree):
-            return new_tree
+        # if not self.has_selected_children(tree):
+        #     return new_tree
 
         # does any child depend on this node
         child_has_responsible_parent: typing.List[bool] = []
@@ -206,7 +209,7 @@ class Talent:
                     Talent(
                         name="".join([name, str(rank)]),
                         talent_type=talent_type,
-                        required_invested_points=required_invested_points,
+                        required_invested_points=0,
                         parent_names=("".join([name, str(rank - 1)]),),
                         children_names=children_names,
                         rank=rank,
@@ -218,7 +221,7 @@ class Talent:
                     Talent(
                         name=name + str(rank),
                         talent_type=talent_type,
-                        required_invested_points=required_invested_points,
+                        required_invested_points=0,
                         parent_names=("".join([name, str(rank - 1)]),),
                         children_names=("".join([name, str(rank + 1)]),),
                         rank=rank,
@@ -406,7 +409,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent.create_ranks(
             name="E1",
             talent_type=TalentType.PASSIVE,
-            required_invested_points=6,
+            required_invested_points=8,
             max_rank=3,
             parent_names=("C1",),
         )
@@ -415,7 +418,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent(
             name="E2",
             talent_type=TalentType.CHOICE,
-            required_invested_points=6,
+            required_invested_points=8,
             parent_names=(
                 "D1",
                 "D2",
@@ -427,7 +430,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent(
             name="E3",
             talent_type=TalentType.CHOICE,
-            required_invested_points=6,
+            required_invested_points=8,
             parent_names=(
                 "D1",
                 "D2",
@@ -439,7 +442,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent(
             name="E4",
             talent_type=TalentType.PASSIVE,
-            required_invested_points=6,
+            required_invested_points=8,
             parent_names=("C3",),
         )
     )
@@ -528,7 +531,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent(
             name="H1",
             talent_type=TalentType.CHOICE,
-            required_invested_points=12,
+            required_invested_points=20,
             parent_names=("F1",),
             sibling_names=("H2",),
         )
@@ -537,7 +540,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent(
             name="H2",
             talent_type=TalentType.CHOICE,
-            required_invested_points=12,
+            required_invested_points=20,
             parent_names=("F1",),
             sibling_names=("H1",),
         )
@@ -546,7 +549,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent(
             name="H3",
             talent_type=TalentType.PASSIVE,
-            required_invested_points=12,
+            required_invested_points=20,
             parent_names=(
                 "G1",
                 "G2",
@@ -558,7 +561,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent(
             name="H4",
             talent_type=TalentType.ABILITY,
-            required_invested_points=12,
+            required_invested_points=20,
             parent_names=("G4",),
         )
     )
@@ -674,6 +677,28 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
     return tuple(talents.talents)
 
 
+def _load_talents() -> typing.Dict[
+    str,
+    typing.List[
+        typing.Dict[
+            str,
+            typing.Union[str, int, typing.List[typing.Union[int, typing.List[int]]]],
+        ]
+    ],
+]:
+    talents_per_spec = {}
+
+    path = "/".join(("data_files", "trees"))
+    for file in pkg_resources.resource_listdir(__name__, path):
+        spec = file.split(".")[0]
+        file_path = "/".join((path, file))
+
+        with pkg_resources.resource_stream(__name__, file_path) as f:
+            talents_per_spec[spec] = json.load(f)
+
+    return talents_per_spec
+
+
 TALENTS: typing.Tuple[Talent, ...] = _talent_post_init(_create_talents())
 
 
@@ -723,16 +748,19 @@ def readd_choices(
     Returns:
         typing.Tuple[str, ...]: unpacked full path using all talents
     """
+    # dictionary of single_choices that map to their respective original counterpart
     no_choice_to_talents_map: typing.Dict[Talent, Talent] = {}
     for n in single_choice_talents:
         for t in talents:
             if n.name == t.name:
                 no_choice_to_talents_map[n] = t
 
+    # dictionary of original choice nodes and all their siblings and themselves
     _original_choices = {
         n: tuple([n] + list(n.siblings)) for n in talents if n.sibling_names
     }
 
+    # dictionary maps single_choice choice talents to all available original sibling choice talents
     prepared_choices: typing.Dict[Talent, typing.Tuple[Talent, ...]] = {}
     for n in single_choice_talents:
         for c in _original_choices:
@@ -752,8 +780,9 @@ def readd_choices(
         for talent in single_choice_talents:
             # set talent to matching state if it's not a choice node
             if talent not in included_choice_nodes and talent.is_selected(path):
-                blueprint = no_choice_to_talents_map[talent].select(blueprint)
-        blueprint = blueprint
+                blueprint = no_choice_to_talents_map[talent].select(
+                    blueprint, raise_exception=False
+                )
 
         # create trees for each included choice node combination
         choice_combinations = itertools.product(*included_choice_nodes.values())
@@ -790,9 +819,12 @@ def grow(talents: typing.Tuple[Talent, ...], points: int) -> typing.Tuple[str, .
                     new_path = talent.select(path)
                 except NotEnoughPointsInvestedError:
                     # this entry point needs to stay relevant for the time enough points are invested
-                    pass
+                    # logger.info(
+                    #     f"Skipping {talent} for now. Not enough points invested yet."
+                    # )
+                    continue
 
-                if new_path and new_path not in new_paths:
+                if new_path not in new_paths:
                     new_entry_points = entry_points.copy()
                     new_entry_points.remove(talent)
 

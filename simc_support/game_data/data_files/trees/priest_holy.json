@@ -1,0 +1,684 @@
+[
+    {
+        "name": "Heal",
+        "description": "An efficient spell that heals an ally.",
+        "max_rank": 1,
+        "coordinates": [
+            5,
+            1
+        ],
+        "child_coordinates": [
+            [
+                4,
+                2
+            ],
+            [
+                5,
+                2
+            ],
+            [
+                6,
+                2
+            ]
+        ],
+        "type": "active",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Prayer of Healing",
+        "description": "A powerful prayer that heals the target and the 4 nearest allies within 40 yards.",
+        "max_rank": 1,
+        "coordinates": [
+            4,
+            2
+        ],
+        "child_coordinates": [
+            [
+                4,
+                3
+            ]
+        ],
+        "type": "active",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Holy Word: Serenity",
+        "description": "Perform a miracle, healing an ally. Cooldown reduced by 6 sec when you cast Flash Heal.",
+        "max_rank": 1,
+        "coordinates": [
+            5,
+            2
+        ],
+        "child_coordinates": [
+            [
+                5,
+                4
+            ]
+        ],
+        "type": "active",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Holy Fire",
+        "description": "Consumes the enemy in Holy flames that cause immediate Holy damage and additional Holy damage over 7 sec.",
+        "max_rank": 1,
+        "coordinates": [
+            6,
+            2
+        ],
+        "child_coordinates": [
+            [
+                6,
+                3
+            ]
+        ],
+        "type": "active",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Holy Word: Sanctify",
+        "description": "Releases miraculous light at a target location, healing up to 6 allies within 10 yds for 3,001. Cooldown reduced by 6 sec when you cast Prayer of Healing and by 2 sec when you cast Renew.",
+        "max_rank": 1,
+        "coordinates": [
+            4,
+            3
+        ],
+        "child_coordinates": [
+            [
+                3,
+                4
+            ]
+        ],
+        "type": "active",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Holy Word: Chastise",
+        "description": "Chastises the target for 1,715 Holy damage and incapacitates them for 4 sec. Cooldown reduced by 4 sec when you cast Smite.",
+        "max_rank": 1,
+        "coordinates": [
+            6,
+            3
+        ],
+        "child_coordinates": [
+            [
+                6,
+                4
+            ],
+            [
+                7,
+                4
+            ]
+        ],
+        "type": "active",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Spirit of Redemption",
+        "description": "Upon death, you become the Spirit of Redemption for 15 sec. You cannot move, attack, be attacked, or be targeted by any spells or effects, and your healing spells cost no mana. When the effect ends, you die.",
+        "max_rank": 1,
+        "coordinates": [
+            3,
+            4
+        ],
+        "child_coordinates": [
+            [
+                2,
+                5
+            ],
+            [
+                3,
+                5
+            ],
+            [
+                4,
+                5
+            ]
+        ],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Trail of Light",
+        "description": "When you cast Heal or Flash Heal, 35% of the healing is replicated to the previous target you healed with Heal or Flash Heal.",
+        "max_rank": 1,
+        "coordinates": [
+            5,
+            4
+        ],
+        "child_coordinates": [
+            [
+                4,
+                5
+            ],
+            [
+                5,
+                5
+            ],
+            [
+                6,
+                5
+            ]
+        ],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Censure",
+        "description": "Holy Word: Chastise stuns the target for 4 sec and is not broken by damage.",
+        "max_rank": 1,
+        "coordinates": [
+            6,
+            4
+        ],
+        "child_coordinates": [],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Guardian Spirit",
+        "description": "Calls upon a guardian spirit to watch over the friendly target for 10 sec, increasing healing received by 60%. If the target would die, the Spirit sacrifices itself and restores the target to 40% health. Castable while stunned. Cannot save the target from massive damage.",
+        "max_rank": 1,
+        "coordinates": [
+            7,
+            4
+        ],
+        "child_coordinates": [
+            [
+                6,
+                5
+            ],
+            [
+                7,
+                5
+            ],
+            [
+                8,
+                5
+            ]
+        ],
+        "type": "active",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Afterlife",
+        "description": "Increases the duration of Spirit of Redemption by 50% and the range of its spells by 50%. As a Spirit of Redemption, you may sacrifice your spirit to Resurrect an ally, putting yourself to rest.",
+        "max_rank": 1,
+        "coordinates": [
+            2,
+            5
+        ],
+        "child_coordinates": [],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Cosmic Ripple",
+        "description": "When Holy Word: Serenity or Holy Word: Sanctify finish their cooldown, you emit a burst of light that heals up to 5 injured targets",
+        "max_rank": 1,
+        "coordinates": [
+            3,
+            5
+        ],
+        "child_coordinates": [
+            [
+                3,
+                7
+            ]
+        ],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Circle of Healing",
+        "description": "Heals the target and 4 injured allies within 30 yards of the target.",
+        "max_rank": 1,
+        "coordinates": [
+            4,
+            5
+        ],
+        "child_coordinates": [
+            [
+                4,
+                6
+            ]
+        ],
+        "type": "active",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Choice Node",
+        "description": "<p><span class=\"btt-talent-name\">Divine Star</span><br/>Throw a Divine Star forward 24 yds, healing allies in its path and dealing Holy damage to enemies. After reaching its destination, the Divine Star returns to you, healing allies and damaging enemies in its path again. Healing reduced beyond 6 targets.</p><p><span class=\"btt-talent-name\">Halo</span><br/>Creates a ring of Holy energy around you that quickly expands to a 30 yd radius, healing allies and dealing Holy damage to enemies. Healing reduced beyond 6 targets.</p>",
+        "max_rank": 1,
+        "coordinates": [
+            5,
+            5
+        ],
+        "child_coordinates": [
+            [
+                5,
+                7
+            ]
+        ],
+        "type": "choice",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Binding Heal",
+        "description": "Heals you, your target, and another friendly target within 20. Reduces the remaining cooldown on both Holy Word: Serenity and Holy Word: Sanctify by 3 sec.",
+        "max_rank": 1,
+        "coordinates": [
+            6,
+            5
+        ],
+        "child_coordinates": [],
+        "type": "active",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Surge of Light",
+        "description": "Your healing spells and Smite have an 8% chance to make your next Flash Heal instant and cost no mana. Stacks to 2.",
+        "max_rank": 2,
+        "coordinates": [
+            7,
+            5
+        ],
+        "child_coordinates": [
+            [
+                6,
+                6
+            ],
+            [
+                8,
+                6
+            ],
+            [
+                7,
+                7
+            ]
+        ],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Guardian Angel",
+        "description": "When Guardian Spirit saves the target from death, it does not expire. When Guardian Spirit expires without saving the target from death, reduce its remaining cooldown to 60 seconds.",
+        "max_rank": 1,
+        "coordinates": [
+            8,
+            5
+        ],
+        "child_coordinates": [],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Prayer Circle",
+        "description": "Using Circle of Healing reduces the cast time and cost of your Prayer of Healing by 25% for 8 sec.",
+        "max_rank": 2,
+        "coordinates": [
+            4,
+            6
+        ],
+        "child_coordinates": [],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Choice Node",
+        "description": "<p><span class=\"btt-talent-name\">Shining Force</span><br/>Creates a burst of light around a friendly target, knocking away nearby enemies and slowing their movement speed by 70% for 3 sec.</p><p><span class=\"btt-talent-name\">Psychic Voice</span><br/>Reduces the cooldown of Psychic Scream by 30 sec.</p>",
+        "max_rank": 1,
+        "coordinates": [
+            6,
+            6
+        ],
+        "child_coordinates": [],
+        "type": "choice",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Holy Conductor",
+        "description": "Surge of Light has an additional [6/12]% chance to occur if the target is affected by Renew or Holy Fire. Two Rank Talent.",
+        "max_rank": 2,
+        "coordinates": [
+            8,
+            6
+        ],
+        "child_coordinates": [],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Divine Hymn",
+        "description": "Heals all party or raid members within 40 yards over 8 sec. Each heal increases all targets' healing taken by 4% for 15 sec, stacking. Healing increased by 100% when not in a raid.",
+        "max_rank": 1,
+        "coordinates": [
+            3,
+            7
+        ],
+        "child_coordinates": [
+            [
+                3,
+                8
+            ]
+        ],
+        "type": "active",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Light of the Naaru",
+        "description": "The cooldowns of your Holy Words are reduced by an additional 33% when you cast the relevant spells.",
+        "max_rank": 1,
+        "coordinates": [
+            5,
+            7
+        ],
+        "child_coordinates": [],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Symbol of Hope",
+        "description": "Bolster the morale of raid members within 40 yds. They each recover 60 sec of cooldown of a major defensive ability, and regain 15% of their missing mana, over 4 sec.",
+        "max_rank": 1,
+        "coordinates": [
+            7,
+            7
+        ],
+        "child_coordinates": [
+            [
+                7,
+                8
+            ]
+        ],
+        "type": "active",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Piety of Mana",
+        "description": "Cosmic Ripple heals 15% more and restores [1.5/3]% of your mana. Two Rank Talent.",
+        "max_rank": 2,
+        "coordinates": [
+            3,
+            8
+        ],
+        "child_coordinates": [
+            [
+                2,
+                9
+            ],
+            [
+                3,
+                9
+            ],
+            [
+                4,
+                9
+            ]
+        ],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Choice Node",
+        "description": "<p><span class=\"btt-talent-name\">Holy Word: Salvation</span><br/>Heals all allies within 40 yards and applies Renew and 2 stacks of Prayer of Mending to each of them. Cooldown reduced by 30 sec when you cast Holy Word: Serenity or Holy Word: Sanctify.</p><p><span class=\"btt-talent-name\">Apotheosis</span><br/>Reset the cooldowns of your Holy Words, and enter a pure Holy form for 20 sec, increasing the cooldown reductions to your Holy Words by 300% and reducing their cost by 100%.</p>",
+        "max_rank": 1,
+        "coordinates": [
+            5,
+            8
+        ],
+        "child_coordinates": [
+            [
+                4,
+                9
+            ],
+            [
+                5,
+                9
+            ],
+            [
+                6,
+                9
+            ]
+        ],
+        "type": "choice",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Burning Vehemence",
+        "description": "Reduces the cast time of Holy Fire by [25/50]% and reduces its cooldown by [20/40]%. Two Rank Talent.",
+        "max_rank": 2,
+        "coordinates": [
+            7,
+            8
+        ],
+        "child_coordinates": [
+            [
+                6,
+                9
+            ],
+            [
+                7,
+                9
+            ],
+            [
+                8,
+                9
+            ]
+        ],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Gales of Song",
+        "description": "Divine Hymn heals for [10/20]% more. Stacks of Divine Hymn increase healing received by an additional [2/4]%. Two Rank Talent.",
+        "max_rank": 2,
+        "coordinates": [
+            2,
+            9
+        ],
+        "child_coordinates": [
+            [
+                2,
+                10
+            ]
+        ],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Rune of Healing",
+        "description": "Circle of Healing reduces the cooldown of Holy Word: Sanctify by 4 sec.",
+        "max_rank": 1,
+        "coordinates": [
+            3,
+            9
+        ],
+        "child_coordinates": [],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Resonant Words",
+        "description": "Casting a Holy Word spell increases the healing of your next Heal or Flash Heal by [25/50]%. Two Rank Talent.",
+        "max_rank": 2,
+        "coordinates": [
+            4,
+            9
+        ],
+        "child_coordinates": [
+            [
+                5,
+                10
+            ]
+        ],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Rune of Mending",
+        "description": "Prayer of Mending reduces the cooldown of Holy Word: Serenity by 4 sec.",
+        "max_rank": 1,
+        "coordinates": [
+            5,
+            9
+        ],
+        "child_coordinates": [],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Holy Oration",
+        "description": "Spells that reduce the cooldowns of your Holy Words reduce them by [10/20]% more. Two Rank Talent.",
+        "max_rank": 2,
+        "coordinates": [
+            6,
+            9
+        ],
+        "child_coordinates": [
+            [
+                5,
+                10
+            ]
+        ],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Rune of Fire",
+        "description": "Holy Fire reduces the cooldown of Holy Word: Chastise by 4 sec.",
+        "max_rank": 1,
+        "coordinates": [
+            7,
+            9
+        ],
+        "child_coordinates": [],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Searing Light",
+        "description": "Smite deals [15/30]% additional damage to targets affected by Holy Fire. Holy Nova deals [15/30]% additional damage to targets affected by Holy Fire. Two Rank Talent.",
+        "max_rank": 2,
+        "coordinates": [
+            8,
+            9
+        ],
+        "child_coordinates": [
+            [
+                8,
+                10
+            ]
+        ],
+        "type": "passive",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Lightwell",
+        "description": "Creates a Holy Lightwell. Every 1 sec the Lightwell will attempt to heal party and raid members within 10 yards that are lower than 50% health over 6 sec. Lightwell lasts for 3 min or until 15 heals are expended. 3 minute cooldown.",
+        "max_rank": 1,
+        "coordinates": [
+            2,
+            10
+        ],
+        "child_coordinates": [],
+        "type": "active",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Divine Words",
+        "description": "The effectiveness of your next Holy Word: Serenity, Sanctify, or Chastise is increased by 50% and grants a corresponding Divine Favor for 15 sec. 1 minute cooldown.<br/><ul><li>Serenity: Flash Heal, Heal, and Renew heal for more, critically strike more often, and cost less to cast.</li><li>Sanctify: Sanctify blesses the area where it was cast, healing allies.</li><li>Chastise: Increased damage and Smite has a chance to apply Holy Fire.</li></ul>",
+        "max_rank": 1,
+        "coordinates": [
+            5,
+            10
+        ],
+        "child_coordinates": [],
+        "type": "active",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    },
+    {
+        "name": "Empyreal Blaze",
+        "description": "Refreshes Holy Fire. Your next 3 casts of Holy Fire cost no mana, incur no cooldown, and cast instantly. 30 second cooldown. Passive: Whenever Holy Fire is reapplied, its duration is now extended instead.",
+        "max_rank": 1,
+        "coordinates": [
+            8,
+            10
+        ],
+        "child_coordinates": [],
+        "type": "active",
+        "spell_id": -1,
+        "img_url": "",
+        "default_for_specs": []
+    }
+]
