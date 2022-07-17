@@ -4,15 +4,19 @@ Basically; execute this script once per patch.
 
 e.g. python self_update.py -s ../../simulationcraft/ --beta --no-load --no-extract
 """
-import argparse
 import json
 import logging
 import os
 import pathlib
 import subprocess
 import typing
+from update.extractor import Extractor
 
-logger = logging.getLogger(__name__)
+from update.utils import ArgsObject, handle_arguments
+
+from update.talents import TalentExtractor
+
+logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
 ch = logging.StreamHandler()
@@ -93,69 +97,7 @@ def merge_information(
     return result
 
 
-def handle_arguments() -> argparse.ArgumentParser:
-    """Scan user provided arguments and provide the corresponding argparse ArgumentParser.
-
-    Returns:
-        argparse.ArgumentParser: [description]
-    """
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "-s",
-        "--simc",
-        nargs="?",
-        default=None,
-        help="Absolute path to your local SimulationCraft version.",
-    )
-    parser.add_argument(
-        "-o",
-        "--output",
-        nargs="?",
-        default=os.path.join(pathlib.Path(__file__).parent.absolute(), "tmp"),
-        help="Absolute path to the save location of DB files.",
-    )
-    parser.add_argument(
-        "-w",
-        "--wow",
-        nargs="?",
-        default=None,
-        help="Absolute path to your World of Warcaft installation to get hotfixes. E.g. /games/World\ of\ Warcraft/_beta_",
-    )
-    parser.add_argument(
-        "--no-load",
-        action="store_true",
-        help="Flag disables download from CDN. Instead only already present local files are used.",
-    )
-    parser.add_argument(
-        "--no-extract",
-        action="store_true",
-        help="Flag disables exrating from db2 files. Instead only already present local files are used.",
-    )
-    parser.add_argument(
-        "--ptr",
-        action="store_true",
-        help="Download PTR files",
-    )
-    parser.add_argument(
-        "--beta",
-        action="store_true",
-        help="Download BETA files",
-    )
-    parser.add_argument(
-        "--debug",
-        action="store_true",
-        help="Enable debug output",
-    )
-    parser.add_argument(
-        "--env",
-        nargs="?",
-        default=None,
-        help="Absolute path to the executable python-env file.",
-    )
-    return parser
-
-
-def get_python(env: str = None) -> str:
+def get_python(env: typing.Optional[str] = None) -> str:
     """Find and return the appropriate commandline input to use Python 3+
 
     Returns:
@@ -841,43 +783,6 @@ def update_conduits(args: object) -> None:
     logger.info(f"Updated {len(conduits)} conduits")
 
 
-def update_talents(args: object) -> None:
-    logger.info("Update talents")
-
-    TALENTS = "Talent"
-    SPELLS = "SpellName"
-
-    dbc(args, [TALENTS, SPELLS])
-    data = {
-        TALENTS: {},
-        SPELLS: {},
-    }
-    for key in data:
-        for locale in _LOCALES:
-            with open(
-                os.path.join(get_compiled_data_path(args, locale), f"{key}.json"),
-                "r",
-            ) as f:
-                data[key][locale] = json.load(f)
-
-    talents = data[TALENTS][_LOCALES[0]]
-
-    spell_ids = list([talent["id_spell"] for talent in talents])
-    spells = merge_information(
-        data[SPELLS], filter_function=lambda spell: spell["id"] in spell_ids
-    )
-
-    for talent in talents:
-        spell_names = get_spell_names(spells, talent["id_spell"])
-        for key in spell_names:
-            talent[key] = spell_names[key]
-
-    with open(os.path.join(DATA_PATH, "talents.json"), "w", encoding="utf-8") as f:
-        json.dump(talents, f, ensure_ascii=False)
-
-    logger.info(f"Updated {len(talents)} talents")
-
-
 def update_shards_of_dominations(args: object) -> None:
     logger.info("Update Shards of Dominations")
 
@@ -1074,18 +979,25 @@ def update_shards_of_dominations(args: object) -> None:
 
 
 def main() -> None:
-    args = handle_arguments().parse_args()
+    args = handle_arguments()
     if args.debug:
         logger.setLevel(logging.DEBUG)
     casc(args)
-    update_trinkets(args)
-    # update_wow_classes(args)
-    # update_covenants(args)
-    # update_soul_binds(args)
-    # update_legendaries(args)
-    # update_conduits(args)
-    # update_talents(args)
-    # update_shards_of_dominations(args)
+    updates: typing.List[typing.Callable[[ArgsObject], None]] = [
+        # update_trinkets,
+        # update_wow_classes,
+        # update_legendaries,
+    ]
+
+    for update in updates:
+        update(args)
+
+    extractors: typing.List[typing.Type[Extractor]] = [
+        TalentExtractor,
+    ]
+
+    for extractor in extractors:
+        extractor(args).extract()
 
     logger.debug("self_update done")
 
