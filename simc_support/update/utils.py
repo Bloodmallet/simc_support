@@ -105,7 +105,7 @@ class ArgsObject:
     env: str
 
 
-def handle_arguments() -> argparse.ArgumentParser:
+def handle_arguments() -> ArgsObject:
     """Scan user provided arguments and provide the corresponding argparse ArgumentParser.
 
     Returns:
@@ -123,7 +123,7 @@ def handle_arguments() -> argparse.ArgumentParser:
         "-o",
         "--output",
         nargs="?",
-        default=os.path.join(pathlib.Path(__file__).parent.absolute(), "tmp"),
+        default=os.path.join(pathlib.Path(__file__).parent.parent.absolute(), "tmp"),
         help="Absolute path to the save location of DB files.",
     )
     parser.add_argument(
@@ -131,7 +131,7 @@ def handle_arguments() -> argparse.ArgumentParser:
         "--wow",
         nargs="?",
         default=None,
-        help="Absolute path to your World of Warcraft installation to get hotfixes. E.g. /games/World\ of\ Warcraft/_beta_",
+        help=r"Absolute path to your World of Warcraft installation to get hotfixes. E.g. /games/World\ of\ Warcraft/_beta_",
     )
     parser.add_argument(
         "--no-load",
@@ -164,7 +164,7 @@ def handle_arguments() -> argparse.ArgumentParser:
         default=None,
         help="Absolute path to the executable python-env file.",
     )
-    return parser
+    return parser.parse_args()  # type: ignore
 
 
 def get_python(env: typing.Optional[str] = None) -> str:

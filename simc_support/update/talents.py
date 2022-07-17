@@ -84,48 +84,31 @@ then i jump through some hoops to figure out which trait tree is the left and wh
 TraitNodes also get you to TraitNodeEntries (through TraitNodeXTraitNodeEntry) .. TraitNodeEntry is your actual trait at the end of the day
 from the perspective of individual spells that we have, i basically collect the info atm into a (spell_id, trait_node_id) map, because the same spell can be associated with various trait nodes
 
+
+
+there's still plenty to do tho this is just the traits, i need to hook it up so that we get the spells also etc
+oh, and for the links between traits, TraitEdge has them, it links nodes
+seems pretty straightforward to me
+i didn't bother with that for now, and also didn't want to add point requirements for now
+the point requirement thing makes life a bit more complicated really from exportation perspective
+
 """
 import logging
 import typing
+import os
+import json
+
 from update.utils import (
-    dbc,
     ArgsObject,
     _LOCALES,
-    get_compiled_data_path,
     collect_localizations,
     get_localized_spell_names,
     DATA_PATH,
+    LOCALE_TABLES,
 )
-import os
-import json
-import abc
-import enum
+from update.extractor import Extractor
 
 logger = logging.getLogger(__name__)
-
-TABLE_ROW = typing.Dict[str, typing.Union[int, str]]
-TABLE = typing.List[TABLE_ROW]
-LOCALE_TABLES = typing.Dict[str, TABLE]
-
-
-class Extractor(abc.ABC):
-    def __init__(self, user_args: ArgsObject) -> None:
-        self.user_args: ArgsObject = user_args
-
-    @property
-    @abc.abstractmethod
-    def tables(self) -> typing.List[str]:
-        ...
-
-    @abc.abstractmethod
-    def combine_into_json(self, data: typing.Dict[str, LOCALE_TABLES]) -> None:
-        ...
-
-    def extract(self) -> None:
-        # convert db2 to json
-        data = dbc(self.user_args, self.tables)
-
-        self.combine_into_json(data)
 
 
 class TalentExtractor(Extractor):
