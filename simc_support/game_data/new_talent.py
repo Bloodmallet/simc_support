@@ -7,7 +7,9 @@ import pkg_resources
 import typing
 
 logger = logging.getLogger(__name__)
+
 T = typing.TypeVar("T")
+ID = typing.Union[str, typing.Tuple[int, int]]
 
 
 class InitializationError(Exception):
@@ -50,14 +52,16 @@ class TalentType(enum.Enum):
 
 class Talent:
     __slots__ = (
+        "id",
         "name",
+        "description",
         "talent_type",
         "required_invested_points",
         "rank",
         "max_rank",
-        "parent_names",
-        "children_names",
-        "sibling_names",
+        "parent_ids",
+        "children_ids",
+        "sibling_ids",
         "index",
         "parents",
         "children",
@@ -66,24 +70,30 @@ class Talent:
 
     def __init__(
         self,
-        name: str,
+        id: ID,
         talent_type: TalentType,
         *,
+        name: str = "",
+        description: str = "",
         required_invested_points: int = 0,
         rank: int = 1,
         max_rank: int = 1,
-        parent_names: typing.Tuple[str, ...] = tuple(),
-        children_names: typing.Tuple[str, ...] = tuple(),
-        sibling_names: typing.Tuple[str, ...] = tuple(),
+        parent_ids: typing.Tuple[ID, ...] = tuple(),
+        children_ids: typing.Tuple[ID, ...] = tuple(),
+        sibling_ids: typing.Tuple[ID, ...] = tuple(),
     ) -> None:
+        self.id: ID = id
         self.name: str = name
+        self.description: str = description
         self.talent_type: TalentType = talent_type
         self.required_invested_points: int = required_invested_points
-        self.parent_names: typing.Tuple[str, ...] = parent_names
-        self.children_names: typing.Tuple[str, ...] = children_names
-        self.sibling_names: typing.Tuple[str, ...] = sibling_names
+        self.parent_ids: typing.Tuple[ID, ...] = parent_ids
+        self.children_ids: typing.Tuple[ID, ...] = children_ids
+        self.sibling_ids: typing.Tuple[ID, ...] = sibling_ids
 
+        # index within a talent list of a tree
         self.index: int = -1
+        # rank of a talent (a talent list of trees has "flattened" talents, only representing exactly one rank)
         self.rank: int = rank
         self.max_rank: int = max_rank
         self.parents: typing.Tuple["Talent", ...] = tuple()
@@ -92,16 +102,16 @@ class Talent:
 
     def __repr__(self) -> str:
         # return f"{self.name}({self.index})"
-        return f"{self.name}:{self.index}(p:{self.parent_names},c:{self.children_names},s:{self.sibling_names})"
+        return f"{self.name}:{self.index}(id:{self.id},p:{self.parent_ids},c:{self.children_ids},s:{self.sibling_ids})"
 
     @property
     def is_initialized(self) -> bool:
         return all(
             [
                 self.index > -1,
-                len(self.parent_names) == len(self.parents),
-                len(self.children_names) == len(self.children),
-                len(self.sibling_names) == len(self.siblings),
+                len(self.parent_ids) == len(self.parents),
+                len(self.children_ids) == len(self.children),
+                len(self.sibling_ids) == len(self.siblings),
             ]
         )
 
@@ -195,11 +205,12 @@ class Talent:
             if rank == 1:
                 talents.append(
                     Talent(
-                        name="".join([name, str(rank)]),
+                        id="".join([name, str(rank)]),
                         talent_type=talent_type,
+                        name="".join([name, str(rank)]),
                         required_invested_points=required_invested_points,
-                        parent_names=parent_names,
-                        children_names=("".join([name, str(rank + 1)]),),
+                        parent_ids=parent_names,
+                        children_ids=("".join([name, str(rank + 1)]),),
                         rank=rank,
                         max_rank=max_rank,
                     )
@@ -207,11 +218,12 @@ class Talent:
             elif rank == max_rank:
                 talents.append(
                     Talent(
-                        name="".join([name, str(rank)]),
+                        id="".join([name, str(rank)]),
                         talent_type=talent_type,
+                        name="".join([name, str(rank)]),
                         required_invested_points=0,
-                        parent_names=("".join([name, str(rank - 1)]),),
-                        children_names=children_names,
+                        parent_ids=("".join([name, str(rank - 1)]),),
+                        children_ids=children_names,
                         rank=rank,
                         max_rank=max_rank,
                     )
@@ -219,11 +231,12 @@ class Talent:
             else:
                 talents.append(
                     Talent(
-                        name=name + str(rank),
                         talent_type=talent_type,
+                        id=name + str(rank),
+                        name=name + str(rank),
                         required_invested_points=0,
-                        parent_names=("".join([name, str(rank - 1)]),),
-                        children_names=("".join([name, str(rank + 1)]),),
+                        parent_ids=("".join([name, str(rank - 1)]),),
+                        children_ids=("".join([name, str(rank + 1)]),),
                         rank=rank,
                         max_rank=max_rank,
                     )
@@ -233,44 +246,48 @@ class Talent:
 
     def get_dict(
         self,
-    ) -> typing.Dict[str, typing.Union[str, int, typing.Tuple[str, ...]]]:
+    ) -> typing.Dict[str, typing.Union[ID, str, int, typing.Tuple[ID, ...]]]:
+
         return {
+            "id": self.id,
             "name": self.name,
             "index": self.index,
-            "talent_type": self.talent_type.value,
+            "talent_type": str(self.talent_type.value),
             "max_rank": 1,
             "required_invested_points": self.required_invested_points,
-            "parent_names": self.parent_names,
-            "children_names": self.children_names,
-            "sibling_names": self.sibling_names,
+            "parent_names": self.parent_ids,
+            "children_names": self.children_ids,
+            "sibling_names": self.sibling_ids,
         }
 
 
 def _talent_post_init(talents: typing.Tuple[Talent, ...]) -> typing.Tuple[Talent, ...]:
-    t_dict = {t.name: t for t in talents}
+    t_dict = {t.id: t for t in talents}
     # print(t_dict)
 
     for index, talent in enumerate(talents):
-        for name in talent.parent_names:
-            parent_names = [n for n in t_dict.keys() if name in n]
-            last_parent_name = sorted(parent_names)[-1]
+        # TODO: child_ids are actually provided by the website
+        # TODO: children are id + rank == 1
+        for talent_id in talent.parent_ids:
+            parent_ids = [n for n in t_dict.keys() if talent_id == n]
+            last_parent_id = sorted(parent_ids)[-1]
 
             # add parent
-            talent.parents = tuple(list(talent.parents) + [t_dict[last_parent_name]])
+            talent.parents = tuple(list(talent.parents) + [t_dict[last_parent_id]])
 
             # add child
-            if talent.name not in t_dict[last_parent_name].children_names:
-                t_dict[last_parent_name].children_names = tuple(
-                    list(t_dict[last_parent_name].children_names) + [talent.name]
+            if talent.name not in t_dict[last_parent_id].children_ids:
+                t_dict[last_parent_id].children_ids = tuple(
+                    list(t_dict[last_parent_id].children_ids) + [talent.name]
                 )
-            if talent not in t_dict[last_parent_name].children:
-                t_dict[last_parent_name].children = tuple(
-                    list(t_dict[last_parent_name].children) + [talent]
+            if talent not in t_dict[last_parent_id].children:
+                t_dict[last_parent_id].children = tuple(
+                    list(t_dict[last_parent_id].children) + [talent]
                 )
 
         # add siblings
-        for name in talent.sibling_names:
-            talent.siblings = tuple(list(talent.siblings) + [t_dict[name]])
+        for talent_id in talent.sibling_ids:
+            talent.siblings = tuple(list(talent.siblings) + [t_dict[talent_id]])
 
         talent.index = index
 
@@ -293,12 +310,12 @@ def _talent_post_init(talents: typing.Tuple[Talent, ...]) -> typing.Tuple[Talent
                         max_rank_child = max_rank_child.children[0]
 
                     talent.parents = (max_rank_child,)
-                    talent.parent_names = (max_rank_child.name,)
+                    talent.parent_ids = (max_rank_child.name,)
 
     for t in talents:
         if not t.is_initialized:
             logger.error(
-                f"{t.index}>-1, {len(t.parent_names)}=={len(t.parents)}, {len(t.children_names)}=={len(t.children)}"
+                f"{t.index}>-1, {len(t.parent_ids)}=={len(t.parents)}, {len(t.children_ids)}=={len(t.children)}"
             )
             raise InitializationError(t)
 
@@ -339,7 +356,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent(
             name="B1",
             talent_type=TalentType.ABILITY,
-            parent_names=("A1",),
+            parent_ids=("A1",),
         ),
     )
     talents.append(
@@ -354,7 +371,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent(
             name="B3",
             talent_type=TalentType.PASSIVE,
-            parent_names=("A1",),
+            parent_ids=("A1",),
         )
     )
     # row 3
@@ -362,21 +379,21 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent(
             name="C1",
             talent_type=TalentType.ABILITY,
-            parent_names=("B1",),
+            parent_ids=("B1",),
         )
     )
     talents.append(
         Talent(
             name="C2",
             talent_type=TalentType.ABILITY,
-            parent_names=("B2",),
+            parent_ids=("B2",),
         )
     )
     talents.append(
         Talent(
             name="C3",
             talent_type=TalentType.ABILITY,
-            parent_names=("B3",),
+            parent_ids=("B3",),
         )
     )
     # row 4
@@ -419,11 +436,11 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
             name="E2",
             talent_type=TalentType.CHOICE,
             required_invested_points=8,
-            parent_names=(
+            parent_ids=(
                 "D1",
                 "D2",
             ),
-            sibling_names=("E3",),
+            sibling_ids=("E3",),
         )
     )
     talents.append(
@@ -431,11 +448,11 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
             name="E3",
             talent_type=TalentType.CHOICE,
             required_invested_points=8,
-            parent_names=(
+            parent_ids=(
                 "D1",
                 "D2",
             ),
-            sibling_names=("E2",),
+            sibling_ids=("E2",),
         )
     )
     talents.append(
@@ -443,7 +460,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
             name="E4",
             talent_type=TalentType.PASSIVE,
             required_invested_points=8,
-            parent_names=("C3",),
+            parent_ids=("C3",),
         )
     )
     # row 6
@@ -451,7 +468,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent(
             name="F1",
             talent_type=TalentType.PASSIVE,
-            parent_names=("E1",),
+            parent_ids=("E1",),
         )
     )
     talents.append(
@@ -480,7 +497,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent(
             name="F4",
             talent_type=TalentType.PASSIVE,
-            parent_names=("E4",),
+            parent_ids=("E4",),
         )
     )
 
@@ -489,29 +506,29 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent(
             name="G1",
             talent_type=TalentType.CHOICE,
-            parent_names=(
+            parent_ids=(
                 "F1",
                 "F2",
             ),
-            sibling_names=("G2",),
+            sibling_ids=("G2",),
         )
     )
     talents.append(
         Talent(
             name="G2",
             talent_type=TalentType.CHOICE,
-            parent_names=(
+            parent_ids=(
                 "F1",
                 "F2",
             ),
-            sibling_names=("G1",),
+            sibling_ids=("G1",),
         )
     )
     talents.append(
         Talent(
             name="G3",
             talent_type=TalentType.PASSIVE,
-            parent_names=(
+            parent_ids=(
                 "F3",
                 "F4",
             ),
@@ -532,8 +549,8 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
             name="H1",
             talent_type=TalentType.CHOICE,
             required_invested_points=20,
-            parent_names=("F1",),
-            sibling_names=("H2",),
+            parent_ids=("F1",),
+            sibling_ids=("H2",),
         )
     )
     talents.append(
@@ -541,8 +558,8 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
             name="H2",
             talent_type=TalentType.CHOICE,
             required_invested_points=20,
-            parent_names=("F1",),
-            sibling_names=("H1",),
+            parent_ids=("F1",),
+            sibling_ids=("H1",),
         )
     )
     talents.append(
@@ -550,7 +567,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
             name="H3",
             talent_type=TalentType.PASSIVE,
             required_invested_points=20,
-            parent_names=(
+            parent_ids=(
                 "G1",
                 "G2",
                 "G3",
@@ -562,7 +579,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
             name="H4",
             talent_type=TalentType.ABILITY,
             required_invested_points=20,
-            parent_names=("G4",),
+            parent_ids=("G4",),
         )
     )
 
@@ -571,7 +588,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent(
             name="I1",
             talent_type=TalentType.PASSIVE,
-            parent_names=(
+            parent_ids=(
                 "H1",
                 "H2",
             ),
@@ -581,7 +598,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent(
             name="I2",
             talent_type=TalentType.PASSIVE,
-            parent_names=(
+            parent_ids=(
                 "H1",
                 "H2",
             ),
@@ -614,7 +631,7 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent(
             name="I5",
             talent_type=TalentType.PASSIVE,
-            parent_names=("H4",),
+            parent_ids=("H4",),
         )
     )
 
@@ -623,61 +640,61 @@ def _create_talents() -> typing.Tuple[Talent, ...]:
         Talent(
             name="J1",
             talent_type=TalentType.CHOICE,
-            parent_names=("I1",),
-            sibling_names=("J2",),
+            parent_ids=("I1",),
+            sibling_ids=("J2",),
         )
     )
     talents.append(
         Talent(
             name="J2",
             talent_type=TalentType.CHOICE,
-            parent_names=("I1",),
-            sibling_names=("J1",),
+            parent_ids=("I1",),
+            sibling_ids=("J1",),
         )
     )
     talents.append(
         Talent(
             name="J3",
             talent_type=TalentType.CHOICE,
-            parent_names=(
+            parent_ids=(
                 "I3",
                 "I4",
             ),
-            sibling_names=("J4",),
+            sibling_ids=("J4",),
         )
     )
     talents.append(
         Talent(
             name="J4",
             talent_type=TalentType.CHOICE,
-            parent_names=(
+            parent_ids=(
                 "I3",
                 "I4",
             ),
-            sibling_names=("J3",),
+            sibling_ids=("J3",),
         )
     )
     talents.append(
         Talent(
             name="J5",
             talent_type=TalentType.CHOICE,
-            parent_names=("I5",),
-            sibling_names=("J6",),
+            parent_ids=("I5",),
+            sibling_ids=("J6",),
         )
     )
     talents.append(
         Talent(
             name="J6",
             talent_type=TalentType.CHOICE,
-            parent_names=("I5",),
-            sibling_names=("J5",),
+            parent_ids=("I5",),
+            sibling_ids=("J5",),
         )
     )
 
     return tuple(talents.talents)
 
 
-def _load_talents() -> typing.Dict[
+def _load_talent_files() -> typing.Dict[
     str,
     typing.List[
         typing.Dict[
@@ -699,6 +716,36 @@ def _load_talents() -> typing.Dict[
     return talents_per_spec
 
 
+def _load_talents(
+    loaded_talents: typing.Dict[
+        str,
+        typing.List[
+            typing.Dict[
+                str,
+                typing.Union[
+                    str, int, typing.List[typing.Union[int, typing.List[int]]]
+                ],
+            ]
+        ],
+    ]
+) -> typing.Dict[str, typing.List[Talent]]:
+    talents: typing.Dict[str, typing.List[Talent]] = {}
+
+    for spec in loaded_talents.keys():
+        talents[spec] = []
+
+        for raw_talent in loaded_talents[spec]:
+            talents[spec].append(
+                Talent(
+                    name=str(raw_talent["name"]),
+                    talent_type=TalentType(raw_talent["type"]),
+                    max_rank=int(raw_talent["max_rank"]),
+                )
+            )
+
+    return talents
+
+
 TALENTS: typing.Tuple[Talent, ...] = _talent_post_init(_create_talents())
 
 
@@ -707,15 +754,15 @@ def remove_choices(talents: typing.Tuple[Talent, ...]) -> typing.Tuple[Talent, .
     single_choiced: typing.List[Talent] = []
     ignored_nodes: typing.List[str] = []
     for t in talents:
-        if all([t.name < s for s in t.sibling_names]):
+        if all([t.name < s for s in t.sibling_ids]):
             single_choiced.append(
                 Talent(
                     name=t.name,
                     talent_type=t.talent_type,
                     required_invested_points=t.required_invested_points,
-                    parent_names=t.parent_names,
-                    children_names=t.children_names,
-                    sibling_names=t.sibling_names,
+                    parent_ids=t.parent_ids,
+                    children_ids=t.children_ids,
+                    sibling_ids=t.sibling_ids,
                 )
             )
         else:
@@ -723,12 +770,12 @@ def remove_choices(talents: typing.Tuple[Talent, ...]) -> typing.Tuple[Talent, .
             ignored_nodes.append(t.name)
     # remove ignored nodes from parent names and children
     for t in single_choiced:
-        t.sibling_names = ()
+        t.sibling_ids = ()
         t.siblings = ()
         t.parents = ()
         t.children = ()
-        t.parent_names = tuple((p for p in t.parent_names if p not in ignored_nodes))
-        t.children_names = ()
+        t.parent_ids = tuple((p for p in t.parent_ids if p not in ignored_nodes))
+        t.children_ids = ()
 
     return _talent_post_init(tuple(single_choiced))
 
@@ -757,7 +804,7 @@ def readd_choices(
 
     # dictionary of original choice nodes and all their siblings and themselves
     _original_choices = {
-        n: tuple([n] + list(n.siblings)) for n in talents if n.sibling_names
+        n: tuple([n] + list(n.siblings)) for n in talents if n.sibling_ids
     }
 
     # dictionary maps single_choice choice talents to all available original sibling choice talents
