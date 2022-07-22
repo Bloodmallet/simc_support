@@ -1,13 +1,16 @@
 # libraries required to further develop this library
 # required by simulationcraft
 bitarray 
+fixedint
+
 # formatting
 black
-# required by simulationcraft
-fixedint
+
 # type checking
 mypy
+
 # loading files to update data
 requests
+
 # library versioning
 setuptools-git-versioning
