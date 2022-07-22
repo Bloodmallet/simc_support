@@ -22,9 +22,18 @@ _LOCALES = [
 
 DATA_PATH = "simc_support/game_data/data_files"
 
-TABLE_ROW = typing.Dict[str, typing.Union[int, str]]
+TABLE_ROW = typing.Dict[str, typing.Union[int, str, None, typing.List[int]]]
 TABLE = typing.List[TABLE_ROW]
 LOCALE_TABLES = typing.Dict[str, TABLE]
+T = typing.TypeVar("T")
+
+
+def safely_convert_to(
+    input: typing.Any, target_type: typing.Callable[[typing.Any], T], default: T
+) -> T:
+    if input is None:
+        return default
+    return target_type(input)
 
 
 def get_localized_spell_names(spells: TABLE, spell_id: int) -> typing.Dict[str, str]:

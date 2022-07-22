@@ -92,6 +92,14 @@ seems pretty straightforward to me
 i didn't bother with that for now, and also didn't want to add point requirements for now
 the point requirement thing makes life a bit more complicated really from exportation perspective
 
+
+
+alright, traitcond values i guess are relatively simple to figure out
+condition type 0 is point requirement
+condition type 1 is spec override
+condition type 2 is spec start
+or spec freebie
+
 """
 import logging
 import typing
@@ -105,6 +113,7 @@ from update.utils import (
     get_localized_spell_names,
     DATA_PATH,
     LOCALE_TABLES,
+    safely_convert_to,
 )
 from update.extractor import Extractor
 
@@ -134,7 +143,7 @@ class TalentExtractor(Extractor):
         )
         for talent in talents:
             localized_spell_names = get_localized_spell_names(
-                localized_spells, int(talent["id_spell"])
+                localized_spells, safely_convert_to(talent["id_spell"], int, -1)
             )
             talent.update(localized_spell_names)
 
