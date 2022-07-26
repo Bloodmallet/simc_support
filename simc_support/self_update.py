@@ -18,7 +18,7 @@ from update.utils import (
     collect_localizations,
     safely_convert_to,
 )
-from update.talents import TalentExtractor
+from update.talents import TalentLoader
 
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
@@ -371,20 +371,20 @@ def main() -> None:
     args = handle_arguments()
     if args.debug:
         logger.setLevel(logging.DEBUG)
+
     casc(args)
+
     updates: typing.List[typing.Callable[[ArgsObject], None]] = [
         # update_trinkets,
         # update_wow_classes,
         # update_legendaries,
     ]
-
     for update in updates:
         update(args)
 
     extractors: typing.List[typing.Type[Extractor]] = [
-        TalentExtractor,
+        TalentLoader,
     ]
-
     for extractor in extractors:
         extractor(args).extract()
 
