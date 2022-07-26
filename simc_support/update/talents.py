@@ -23,7 +23,7 @@ Anshlun — Today at 19:59
 SkillLine 798 is "druid skills"
 SkillLineXTraitTree 798 maps to tree 219
 TraitNodeGroup for tree 219 has many groups, including 2128
-TraitNodeGroupXTraitNode for group 2128 has many nodes, including 17260
+# TraitNodeGroupXTraitNode for group 2128 has many nodes, including 17260
 TraitNodeXTraitNodeEntry for 17260 maps to node entry 21826
 TraitNodeEntry 21826 maps to definition 22202
 TraitDefinition 22202 uses spell 278515
@@ -104,6 +104,7 @@ or spec freebie
 import logging
 import typing
 import os
+import requests
 import json
 
 from update.utils import (
@@ -126,6 +127,35 @@ class TalentExtractor(Extractor):
 
         self.TALENTS = "Talent"
         self.SPELLS = "SpellName"
+
+        self.other_tables = [
+            "GarrTalent",
+            "GarrTalentRank",
+            "GarrTalentTree",
+            "MinorTalent",
+            "RelicTalent",
+            "SpellName",
+            "SkillLine",
+            "SkillLineAbility",
+            "SkillLineXTraitTree",
+            "Talent",
+            "TraitCond",
+            "TraitCost",
+            "TraitCostDefinition",
+            "TraitCurrency",
+            "TraitDefinition",
+            "TraitDefinitionEffectPoints",
+            "TraitNode",
+            "TraitNodeEntry",
+            "TraitNodeGroup",
+            "TraitNodeGroupXTraitCond",
+            "TraitNodeGroupXTraitCost",
+            "TraitNodeGroupXTraitNode",
+            "TraitNodeXTraitCond",
+            "TraitNodeXTraitNodeEntry",
+            "TraitTree",
+            "TraitTreeXTraitCurrency",
+        ]
 
     @property
     def tables(self) -> typing.List[str]:
@@ -151,3 +181,57 @@ class TalentExtractor(Extractor):
             json.dump(talents, f, ensure_ascii=False)
 
         logger.info(f"Updated {len(talents)} talents")
+
+
+class TalentLoader(Extractor):
+    """Contrary to actual Extractors this one just loads the necessary data from raidbots.com.
+    Thank you mate for allowing this. Endpoint and structure might change.
+    """
+
+    @property
+    def tables(self) -> typing.List[str]:
+        return []
+
+    def combine_into_json(self, data: typing.Dict[str, LOCALE_TABLES]) -> None:
+        url = "https://www.raidbots.com/static/data/beta/new-talent-trees.json"
+
+        loaded_data = requests.get(url)
+        if loaded_data.status_code != 200:
+            logger.error(
+                f"Couldn't load Talent information from raidbots. {loaded_data.status_code}: {loaded_data.reason}"
+            )
+        json_data = loaded_data.json()
+
+        # save raw
+        with open(
+            r"simc_support\game_data\data_files\trees\raw_raidbots_talent_information.json",
+            "w",
+            encoding="utf-8",
+        ) as f:
+            json.dump(json_data, f, ensure_ascii=False)
+
+        # save by class
+        for spec_data in json_data:
+            spec_name = spec_data["specName"].lower()
+            try:
+                class_name = spec_data["className"].lower()
+            except KeyError:
+                logger.warning(
+                    f"Couldn't find className in talent data of a spec. Expecting this to be Evoker. specName is {spec_data['specName']}"
+                )
+                spec_data["className"] = "Evoker"
+                class_name = "evoker"
+
+            combined_name = "_".join([class_name, spec_name]).replace(" ", "_")
+
+            # sanity/curiousity checks
+            logger.info(
+                f"{combined_name}: {len(spec_data['classNodes'])} class nodes, {len(spec_data['specNodes'])} spec nodes"
+            )
+
+            with open(
+                rf"simc_support\game_data\data_files\trees\{combined_name}.json",
+                "w",
+                encoding="utf-8",
+            ) as f:
+                json.dump(spec_data, f)

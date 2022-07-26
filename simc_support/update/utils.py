@@ -109,6 +109,7 @@ class ArgsObject:
     no_load: bool
     no_extract: bool
     ptr: bool
+    alpha: bool
     beta: bool
     debug: bool
     env: str
@@ -161,6 +162,11 @@ def handle_arguments() -> ArgsObject:
         "--beta",
         action="store_true",
         help="Download BETA files",
+    )
+    parser.add_argument(
+        "--alpha",
+        action="store_true",
+        help="Download ALPHA files",
     )
     parser.add_argument(
         "--debug",
@@ -231,6 +237,8 @@ def casc(args: ArgsObject) -> None:
         command.append("--ptr")
     elif args.beta:
         command.append("--beta")
+    elif args.alpha:
+        command.append("--alpha")
 
     for locale in _LOCALES:
         logger.info(locale)
