@@ -9,7 +9,7 @@ import typing
 logger = logging.getLogger(__name__)
 
 T = typing.TypeVar("T")
-ID = typing.Union[str, typing.Tuple[int, int]]
+ID = int
 
 
 class InitializationError(Exception):
@@ -37,72 +37,132 @@ class LeafsDependOnNode(Exception):
 
 
 class TalentType(enum.Enum):
-    PASSIVE = enum.auto()
-    ABILITY = enum.auto()
-    CHOICE = enum.auto()
+    ACTIVE = "active"
+    PASSIVE = "passive"
 
     def shape(self) -> str:
         mapping = {
             TalentType.PASSIVE: "oval",
-            TalentType.ABILITY: "square",
-            TalentType.CHOICE: "octagon",
+            TalentType.ACTIVE: "square",
         }
         return mapping[self]
 
 
 class Talent:
+    """A Talent is the passive or active ability itself. Per click you're only interacting with one talent."""
+
+    __slots__ = ("id", "max_ranks", "type", "name", "spell_id", "icon")
+
+    def __init__(
+        self,
+        *,
+        id: int,
+        max_ranks: int,
+        type: TalentType,
+        name: str,
+        spell_id: int,
+        icon: str,
+    ) -> None:
+        self.id: int = id
+        self.max_ranks: int = max_ranks
+        self.type: TalentType = type
+        self.name: str = name
+        self.spell_id: int = spell_id
+        self.icon: str = icon
+
+
+class TalentTree:
+    """An actually selected talent tree"""
+
+    def __init__(
+        self, talents: typing.Tuple[Talent, ...], ranks: typing.Tuple[int, ...]
+    ) -> None:
+        self.talents: typing.Tuple[Talent] = talents
+        self.ranks: typing.Tuple[int] = ranks
+
+    def rank_talents(self) -> typing.Iterable[typing.Tuple[int, Talent]]:
+        return zip(self.ranks, self.talents)
+
+
+class TreeNodeType(enum.Enum):
+    SINGLE = "single"
+    CHOICE = "choice"
+    TIERED = "tiered"
+
+    def shape(self) -> str:
+        mapping = {
+            TreeNodeType.CHOICE: "octagon",
+        }
+        return mapping[self]
+
+
+class TreeNode:
+    """A TreeNode is one single interactive area in the Tree. A TreeNode can have one to many Talents selectable by it.
+
+    Raises:
+        NotEnoughPointsInvestedError: _description_
+        LeafsDependOnNode: _description_
+
+    Returns:
+        _type_: _description_
+    """
+
     __slots__ = (
         "id",
         "name",
-        "description",
-        "talent_type",
+        "tree_node_type",
         "required_invested_points",
         "rank",
         "max_rank",
         "parent_ids",
         "children_ids",
-        "sibling_ids",
         "index",
+        "x",
+        "y",
         "parents",
         "children",
-        "siblings",
+        "talents",
     )
 
     def __init__(
         self,
-        id: ID,
-        talent_type: TalentType,
         *,
-        name: str = "",
-        description: str = "",
+        id: ID,
+        name: str,
+        x: int,
+        y: int,
+        tree_node_type: TreeNodeType,
         required_invested_points: int = 0,
-        rank: int = 1,
         max_rank: int = 1,
+        rank: int = 0,
         parent_ids: typing.Tuple[ID, ...] = tuple(),
         children_ids: typing.Tuple[ID, ...] = tuple(),
-        sibling_ids: typing.Tuple[ID, ...] = tuple(),
+        talents: typing.Tuple[Talent, ...],
     ) -> None:
         self.id: ID = id
         self.name: str = name
-        self.description: str = description
-        self.talent_type: TalentType = talent_type
+        self.x: int = x
+        self.y: int = y
+        self.tree_node_type: TreeNodeType = tree_node_type
         self.required_invested_points: int = required_invested_points
+        # rank of a talent (a talent list of trees has "flattened" talents, only representing exactly one rank)
+        self.max_rank: int = max_rank
+        self.rank: int = rank
         self.parent_ids: typing.Tuple[ID, ...] = parent_ids
         self.children_ids: typing.Tuple[ID, ...] = children_ids
-        self.sibling_ids: typing.Tuple[ID, ...] = sibling_ids
+        self.talents: typing.Tuple[Talent, ...] = talents
 
         # index within a talent list of a tree
         self.index: int = -1
-        # rank of a talent (a talent list of trees has "flattened" talents, only representing exactly one rank)
-        self.rank: int = rank
-        self.max_rank: int = max_rank
-        self.parents: typing.Tuple["Talent", ...] = tuple()
-        self.children: typing.Tuple["Talent", ...] = tuple()
-        self.siblings: typing.Tuple["Talent", ...] = tuple()
+        self.parents: typing.Tuple["TreeNode", ...] = tuple()
+        self.children: typing.Tuple["TreeNode", ...] = tuple()
 
     def __repr__(self) -> str:
         # return f"{self.name}({self.index})"
-        return f"{self.name}:{self.index}(id:{self.id},p:{self.parent_ids},c:{self.children_ids},s:{self.sibling_ids})"
+        return f"{self.name}:{self.index}(id:{self.id},p:{self.parent_ids},c:{self.children_ids})"
+
+    def get_rank(self, tree: str) -> int:
+        return int(tree[self.index])
 
     @property
     def is_initialized(self) -> bool:
@@ -111,27 +171,21 @@ class Talent:
                 self.index > -1,
                 len(self.parent_ids) == len(self.parents),
                 len(self.children_ids) == len(self.children),
-                len(self.sibling_ids) == len(self.siblings),
             ]
         )
 
-    def is_selected(self, tree: str) -> bool:
-        return tree[self.index] == "1"
+    def is_at_max_rank(self, tree: str) -> bool:
+        return tree[self.index] == str(self.max_rank)
 
     def has_selected_children(self, tree: str) -> bool:
         if not self.children:
             return False
-        return any([c.is_selected(tree) for c in self.children])
+        return any([c.is_at_max_rank(tree) for c in self.children])
 
     def has_selected_parents(self, tree: str) -> bool:
         if not self.parents:
             return False
-        return any([p.is_selected(tree) for p in self.parents])
-
-    def has_selected_siblings(self, tree: str) -> bool:
-        if not self.siblings:
-            return False
-        return any([p.is_selected(tree) for p in self.siblings])
+        return any([p.is_at_max_rank(tree) for p in self.parents])
 
     def is_gate_satisfied(self, tree: str) -> bool:
         if self.required_invested_points < 1:
@@ -149,100 +203,11 @@ class Talent:
                 f"Node {self.name} at index {self.index} can't be selected at {tree} because not enough points were invested in the current tree ({invested_points} != {self.required_invested_points})."
             )
 
-        # 24.3
-        new_tree = tree[: self.index] + "1" + tree[self.index + 1 :]
-        # 25.7
-        # new_tree = "".join([tree[: self.index], "1", tree[self.index + 1 :]])
-        # 24.7
-        # new_tree = "".join((tree[: self.index], "1", tree[self.index + 1 :]))
+        new_tree = (
+            tree[: self.index] + str(int(tree[self.index]) + 1) + tree[self.index + 1 :]
+        )
 
         return new_tree
-
-    def deselect(self, tree: str) -> str:
-        """Create a new path tuple."""
-
-        new_tree = tree[: self.index] + "0" + tree[self.index + 1 :]
-
-        # if not self.has_selected_children(tree):
-        #     return new_tree
-
-        # does any child depend on this node
-        child_has_responsible_parent: typing.List[bool] = []
-        for child in self.children:
-            if child.is_selected(tree):
-                if len(child.parents) < 2:
-                    child_has_responsible_parent.append(False)
-                for other_parent in child.parents:
-                    if other_parent == self:
-                        # print("found myself, ignoring")
-                        pass
-                    else:
-                        child_has_responsible_parent.append(
-                            other_parent.is_selected(tree)
-                        )
-
-        if not all(child_has_responsible_parent):
-            raise LeafsDependOnNode(
-                f"Node {self.name} at index {self.index} can't be deselected at {tree} because other nodes depend on it in the current tree."
-            )
-
-        return new_tree
-
-    @staticmethod
-    def create_ranks(
-        name: str,
-        talent_type: TalentType,
-        max_rank: int,
-        *,
-        required_invested_points: int = 0,
-        parent_names: typing.Tuple[str, ...] = tuple(),
-        children_names: typing.Tuple[str, ...] = tuple(),
-        # sibling_names: typing.Tuple[str, ...] = tuple(),
-    ) -> typing.Tuple["Talent", ...]:
-        talents: typing.List[Talent] = []
-
-        for rank in range(1, max_rank + 1):
-            if rank == 1:
-                talents.append(
-                    Talent(
-                        id="".join([name, str(rank)]),
-                        talent_type=talent_type,
-                        name="".join([name, str(rank)]),
-                        required_invested_points=required_invested_points,
-                        parent_ids=parent_names,
-                        children_ids=("".join([name, str(rank + 1)]),),
-                        rank=rank,
-                        max_rank=max_rank,
-                    )
-                )
-            elif rank == max_rank:
-                talents.append(
-                    Talent(
-                        id="".join([name, str(rank)]),
-                        talent_type=talent_type,
-                        name="".join([name, str(rank)]),
-                        required_invested_points=0,
-                        parent_ids=("".join([name, str(rank - 1)]),),
-                        children_ids=children_names,
-                        rank=rank,
-                        max_rank=max_rank,
-                    )
-                )
-            else:
-                talents.append(
-                    Talent(
-                        talent_type=talent_type,
-                        id=name + str(rank),
-                        name=name + str(rank),
-                        required_invested_points=0,
-                        parent_ids=("".join([name, str(rank - 1)]),),
-                        children_ids=("".join([name, str(rank + 1)]),),
-                        rank=rank,
-                        max_rank=max_rank,
-                    )
-                )
-
-        return tuple(talents)
 
     def get_dict(
         self,
@@ -252,461 +217,223 @@ class Talent:
             "id": self.id,
             "name": self.name,
             "index": self.index,
-            "talent_type": str(self.talent_type.value),
+            "talent_type": str(self.tree_node_type.value),
             "max_rank": 1,
             "required_invested_points": self.required_invested_points,
             "parent_names": self.parent_ids,
             "children_names": self.children_ids,
-            "sibling_names": self.sibling_ids,
         }
 
 
-def _talent_post_init(talents: typing.Tuple[Talent, ...]) -> typing.Tuple[Talent, ...]:
-    t_dict = {t.id: t for t in talents}
-    # print(t_dict)
+class Tree:
+    __slots__ = (
+        "tree_nodes",
+        "paths",
+    )
 
-    for index, talent in enumerate(talents):
-        # TODO: child_ids are actually provided by the website
-        # TODO: children are id + rank == 1
-        for talent_id in talent.parent_ids:
-            parent_ids = [n for n in t_dict.keys() if talent_id == n]
-            last_parent_id = sorted(parent_ids)[-1]
+    def __init__(self, tree_nodes: typing.Tuple[TreeNode, ...]) -> None:
+        self.tree_nodes: typing.Tuple[TreeNode, ...] = tree_nodes
+        self.paths: typing.List[str] = []
 
-            # add parent
-            talent.parents = tuple(list(talent.parents) + [t_dict[last_parent_id]])
+        self._tree_nodes_post_init()
 
-            # add child
-            if talent.name not in t_dict[last_parent_id].children_ids:
-                t_dict[last_parent_id].children_ids = tuple(
-                    list(t_dict[last_parent_id].children_ids) + [talent.name]
+    @staticmethod
+    def create_ranks(
+        *,
+        id: int,
+        name: str,
+        tree_node_type: TreeNodeType,
+        x: int,
+        y: int,
+        max_rank: int,
+        required_invested_points: int = 0,
+        children_ids: typing.Tuple[ID, ...] = tuple(),
+        talents: typing.Tuple[Talent, ...] = tuple(),
+    ) -> typing.Tuple[TreeNode, ...]:
+        """Try to not use this...instead try to work with paths that have multi-ranks"""
+
+        tree_nodes: typing.List[TreeNode] = []
+
+        for rank in range(max_rank, 0, -1):
+            if rank == 1:
+                tree_nodes.append(
+                    TreeNode(
+                        id=id,
+                        name=name,
+                        tree_node_type=tree_node_type,
+                        required_invested_points=required_invested_points,
+                        children_ids=children_ids,
+                        rank=rank,
+                        max_rank=max_rank,
+                        x=x,
+                        y=y,
+                        talents=talents,
+                    )
                 )
-            if talent not in t_dict[last_parent_id].children:
-                t_dict[last_parent_id].children = tuple(
-                    list(t_dict[last_parent_id].children) + [talent]
+            elif rank == max_rank:
+                tree_nodes.append(
+                    TreeNode(
+                        id=id,
+                        name=name,
+                        tree_node_type=tree_node_type,
+                        required_invested_points=-1,
+                        children_ids=children_ids,
+                        rank=rank,
+                        max_rank=max_rank,
+                        x=x,
+                        y=y,
+                        talents=talents,
+                    )
                 )
-
-        # add siblings
-        for talent_id in talent.sibling_ids:
-            talent.siblings = tuple(list(talent.siblings) + [t_dict[talent_id]])
-
-        talent.index = index
-
-    # fix broken parent connections for parents with ranks
-    for talent in talents:
-        if talent.rank == 1:
-            for parent in talent.parents:
-                if (
-                    parent.max_rank != 1
-                    and parent.rank != parent.max_rank
-                    and len(parent.children) == 1
-                ):
-                    # find max-rank child
-                    max_rank_child = parent.children[0]
-                    if (
-                        max_rank_child.max_rank != 1
-                        and max_rank_child.rank != max_rank_child.max_rank
-                        and len(max_rank_child.children) == 1
-                    ):
-                        max_rank_child = max_rank_child.children[0]
-
-                    talent.parents = (max_rank_child,)
-                    talent.parent_ids = (max_rank_child.name,)
-
-    for t in talents:
-        if not t.is_initialized:
-            logger.error(
-                f"{t.index}>-1, {len(t.parent_ids)}=={len(t.parents)}, {len(t.children_ids)}=={len(t.children)}"
-            )
-            raise InitializationError(t)
-
-    return talents
-
-
-def _create_talents() -> typing.Tuple[Talent, ...]:
-    """See /simc_support/game_data/partial_tree.jpg
-
-    Returns:
-        typing.List[TreeNode]: Representation of /simc_support/game_data/partial_tree.jpg
-    """
-
-    class HelperTalents:
-        def __init__(self) -> None:
-            self.talents: typing.List[Talent] = []
-
-        def append(self, talent: typing.Union[Talent, typing.Iterable[Talent]]) -> None:
-            if isinstance(talent, Talent):
-                self.talents.append(talent)
-            elif isinstance(talent, typing.Iterable):
-                for t in talent:
-                    self.talents.append(t)
             else:
-                pass
+                tree_nodes.append(
+                    TreeNode(
+                        id=id,
+                        name=name,
+                        tree_node_type=tree_node_type,
+                        required_invested_points=-1,
+                        children_ids=children_ids,
+                        max_rank=max_rank,
+                        x=x,
+                        y=y,
+                        talents=talents,
+                        rank=rank,
+                    )
+                )
 
-    talents = HelperTalents()
+        return tuple(tree_nodes)
 
-    # row 1
-    talents.append(
-        Talent(
-            name="A1",
-            talent_type=TalentType.ABILITY,
-        )
-    )
-    # row 2
-    talents.append(
-        Talent(
-            name="B1",
-            talent_type=TalentType.ABILITY,
-            parent_ids=("A1",),
-        ),
-    )
-    talents.append(
-        Talent.create_ranks(
-            name="B2",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=("A1",),
-        ),
-    )
-    talents.append(
-        Talent(
-            name="B3",
-            talent_type=TalentType.PASSIVE,
-            parent_ids=("A1",),
-        )
-    )
-    # row 3
-    talents.append(
-        Talent(
-            name="C1",
-            talent_type=TalentType.ABILITY,
-            parent_ids=("B1",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="C2",
-            talent_type=TalentType.ABILITY,
-            parent_ids=("B2",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="C3",
-            talent_type=TalentType.ABILITY,
-            parent_ids=("B3",),
-        )
-    )
-    # row 4
-    talents.append(
-        Talent.create_ranks(
-            name="D1",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=("C1",),
-        )
-    )
-    talents.append(
-        Talent.create_ranks(
-            name="D2",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=("C3",),
-        )
-    )
-    talents.append(
-        Talent.create_ranks(
-            name="D3",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=("C3",),
-        )
-    )
-    # row 5
-    talents.append(
-        Talent.create_ranks(
-            name="E1",
-            talent_type=TalentType.PASSIVE,
-            required_invested_points=8,
-            max_rank=3,
-            parent_names=("C1",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="E2",
-            talent_type=TalentType.CHOICE,
-            required_invested_points=8,
-            parent_ids=(
-                "D1",
-                "D2",
-            ),
-            sibling_ids=("E3",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="E3",
-            talent_type=TalentType.CHOICE,
-            required_invested_points=8,
-            parent_ids=(
-                "D1",
-                "D2",
-            ),
-            sibling_ids=("E2",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="E4",
-            talent_type=TalentType.PASSIVE,
-            required_invested_points=8,
-            parent_ids=("C3",),
-        )
-    )
-    # row 6
-    talents.append(
-        Talent(
-            name="F1",
-            talent_type=TalentType.PASSIVE,
-            parent_ids=("E1",),
-        )
-    )
-    talents.append(
-        Talent.create_ranks(
-            name="F2",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=(
-                "E2",
-                "E3",
-            ),
-        )
-    )
-    talents.append(
-        Talent.create_ranks(
-            name="F3",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=(
-                "E2",
-                "E3",
-            ),
-        )
-    )
-    talents.append(
-        Talent(
-            name="F4",
-            talent_type=TalentType.PASSIVE,
-            parent_ids=("E4",),
-        )
-    )
+    def _tree_nodes_post_init(self) -> None:
 
-    # row 7
-    talents.append(
-        Talent(
-            name="G1",
-            talent_type=TalentType.CHOICE,
-            parent_ids=(
-                "F1",
-                "F2",
-            ),
-            sibling_ids=("G2",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="G2",
-            talent_type=TalentType.CHOICE,
-            parent_ids=(
-                "F1",
-                "F2",
-            ),
-            sibling_ids=("G1",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="G3",
-            talent_type=TalentType.PASSIVE,
-            parent_ids=(
-                "F3",
-                "F4",
-            ),
-        )
-    )
-    talents.append(
-        Talent.create_ranks(
-            name="G4",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=("F4",),
-        )
-    )
+        n_dict = {n.id: n for n in self.tree_nodes}
 
-    # row 8
-    talents.append(
-        Talent(
-            name="H1",
-            talent_type=TalentType.CHOICE,
-            required_invested_points=20,
-            parent_ids=("F1",),
-            sibling_ids=("H2",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="H2",
-            talent_type=TalentType.CHOICE,
-            required_invested_points=20,
-            parent_ids=("F1",),
-            sibling_ids=("H1",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="H3",
-            talent_type=TalentType.PASSIVE,
-            required_invested_points=20,
-            parent_ids=(
-                "G1",
-                "G2",
-                "G3",
-            ),
-        )
-    )
-    talents.append(
-        Talent(
-            name="H4",
-            talent_type=TalentType.ABILITY,
-            required_invested_points=20,
-            parent_ids=("G4",),
-        )
-    )
+        # set children, parent_ids and parents
+        for index, node in enumerate(self.tree_nodes):
+            node.index = index
 
-    # row 9
-    talents.append(
-        Talent(
-            name="I1",
-            talent_type=TalentType.PASSIVE,
-            parent_ids=(
-                "H1",
-                "H2",
-            ),
-        )
-    )
-    talents.append(
-        Talent(
-            name="I2",
-            talent_type=TalentType.PASSIVE,
-            parent_ids=(
-                "H1",
-                "H2",
-            ),
-        )
-    )
-    talents.append(
-        Talent.create_ranks(
-            name="I3",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=(
-                "H1",
-                "H2",
-                "H3",
-            ),
-        )
-    )
-    talents.append(
-        Talent.create_ranks(
-            name="I4",
-            talent_type=TalentType.PASSIVE,
-            max_rank=2,
-            parent_names=(
-                "H3",
-                "H4",
-            ),
-        )
-    )
-    talents.append(
-        Talent(
-            name="I5",
-            talent_type=TalentType.PASSIVE,
-            parent_ids=("H4",),
-        )
-    )
+            # children
+            node.children = tuple((n_dict[id] for id in node.children_ids))
 
-    # row 10
-    talents.append(
-        Talent(
-            name="J1",
-            talent_type=TalentType.CHOICE,
-            parent_ids=("I1",),
-            sibling_ids=("J2",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="J2",
-            talent_type=TalentType.CHOICE,
-            parent_ids=("I1",),
-            sibling_ids=("J1",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="J3",
-            talent_type=TalentType.CHOICE,
-            parent_ids=(
-                "I3",
-                "I4",
-            ),
-            sibling_ids=("J4",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="J4",
-            talent_type=TalentType.CHOICE,
-            parent_ids=(
-                "I3",
-                "I4",
-            ),
-            sibling_ids=("J3",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="J5",
-            talent_type=TalentType.CHOICE,
-            parent_ids=("I5",),
-            sibling_ids=("J6",),
-        )
-    )
-    talents.append(
-        Talent(
-            name="J6",
-            talent_type=TalentType.CHOICE,
-            parent_ids=("I5",),
-            sibling_ids=("J5",),
-        )
-    )
+            for node_id in node.children_ids:
+                # parent_ids
+                if node.id not in n_dict[node_id].parent_ids:
+                    n_dict[node_id].parent_ids = tuple(
+                        list(n_dict[node_id].parent_ids) + [node.id]
+                    )
+                # parents
+                if node not in n_dict[node_id].parents:
+                    n_dict[node_id].parents = tuple(
+                        list(n_dict[node_id].parents) + [node]
+                    )
 
-    return tuple(talents.talents)
+        # ensure everything is working
+        for t in self.tree_nodes:
+            if not t.is_initialized:
+                logger.error(
+                    f"{t.index}>-1, {len(t.parent_ids)}=={len(t.parents)}, {len(t.children_ids)}=={len(t.children)}"
+                )
+                raise InitializationError(t)
+
+    # def grow(self, *, points: int) -> typing.Iterable[TalentTree]:
+    def grow(self, *, points: int) -> typing.List[str]:
+
+        empty_path = "".join(["0" for _ in self.tree_nodes])
+
+        # key : value
+        # path: next growable Talents
+        existing_paths: typing.Dict[str, typing.Set[TreeNode]] = {}
+        existing_paths[empty_path] = {
+            t
+            for t in self.tree_nodes
+            if len(t.parents) == 0 and t.required_invested_points == 0
+        }
+
+        for invested_points in range(1, points + 1):
+            start_time = datetime.datetime.utcnow()
+
+            new_paths: typing.Dict[str, typing.Set[TreeNode]] = {}
+
+            for path, entry_points in existing_paths.items():
+
+                for node in entry_points:
+                    new_path: str = ""
+                    try:
+                        new_path = node.select(path)
+                    except NotEnoughPointsInvestedError:
+                        # this entry point needs to stay relevant for the time enough points are invested
+                        # logger.info(
+                        #     f"Skipping {talent} for now. Not enough points invested yet."
+                        # )
+                        continue
+
+                    if new_path not in new_paths:
+                        new_entry_points = entry_points.copy()
+
+                        if node.is_at_max_rank(new_path):
+                            new_entry_points.remove(node)
+
+                            for child in node.children:
+                                if not child.is_at_max_rank(new_path):
+                                    new_entry_points.add(child)
+
+                        new_paths[new_path] = new_entry_points
+
+            existing_paths = new_paths
+
+            logger.info(
+                f"{invested_points}: {len(existing_paths)} ({datetime.datetime.utcnow()-start_time})"
+            )
+
+        start_time = datetime.datetime.utcnow()
+        logger.warning(
+            "Choice nodes aren't unpacked. you're not dealing with the actual sum of paths yet."
+        )
+
+        return list(existing_paths.keys())
+
+        # choice_nodes = {
+        #     n.index: n
+        #     for n in self.tree_nodes
+        #     if n.tree_node_type == TreeNodeType.CHOICE
+        # }
+        # # 11101110101
+        # for path in existing_paths:
+        #     selected_choice_talents = [
+        #         choice_nodes[i].talents for i in choice_nodes if path[i] != "0"
+        #     ]
+        #     talent_indizes: typing.Dict[Talent, int] = {
+        #         talent: i for i in choice_nodes for talent in choice_nodes[i].talents
+        #     }
+
+        #     for choice_talent_combination in itertools.product(
+        #         *selected_choice_talents
+        #     ):
+        #         selected_indexes = {
+        #             talent_indizes[t]: t for t in choice_talent_combination
+        #         }
+
+        #         talents: typing.List[Talent] = []
+        #         ranks: typing.List[int] = []
+        #         for index, rank in enumerate(path):
+        #             if rank == "0":
+        #                 continue
+
+        #             talents.append(
+        #                 selected_indexes.get(index, self.tree_nodes[index].talents[0])
+        #             )
+        #             ranks.append(int(rank))
+
+        #         yield TalentTree(talents=tuple(talents), ranks=tuple(ranks))
 
 
-def _load_talent_files() -> typing.Dict[
-    str,
-    typing.List[
-        typing.Dict[
-            str,
-            typing.Union[str, int, typing.List[typing.Union[int, typing.List[int]]]],
-        ]
-    ],
-]:
+def _load_talent_files() -> typing.Dict[str, typing.Any]:
     talents_per_spec = {}
 
     path = "/".join(("data_files", "trees"))
     for file in pkg_resources.resource_listdir(__name__, path):
+        if "raidbots" in file:
+            continue
+
         spec = file.split(".")[0]
         file_path = "/".join((path, file))
 
@@ -717,72 +444,96 @@ def _load_talent_files() -> typing.Dict[
 
 
 def _load_talents(
-    loaded_talents: typing.Dict[
-        str,
-        typing.List[
-            typing.Dict[
-                str,
-                typing.Union[
-                    str, int, typing.List[typing.Union[int, typing.List[int]]]
-                ],
-            ]
-        ],
-    ]
-) -> typing.Dict[str, typing.List[Talent]]:
-    talents: typing.Dict[str, typing.List[Talent]] = {}
+    loaded_talents: typing.Dict[str, typing.Any]
+) -> typing.Dict[str, typing.Tuple[Tree, Tree]]:
+    trees: typing.Dict[str, typing.Tuple[Tree, Tree]] = {}
 
     for spec in loaded_talents.keys():
-        talents[spec] = []
+        # class_tree
+        class_nodes: typing.List[TreeNode] = []
+        for raw_node in loaded_talents[spec]["classNodes"]:
+            talents: typing.List[Talent] = []
+            for raw_talent in raw_node["entries"]:
+                try:
+                    talents.append(
+                        Talent(
+                            id=raw_talent["id"],
+                            max_ranks=raw_talent["maxRanks"],
+                            type=TalentType(raw_talent["type"]),
+                            name=raw_talent.get("name", "PH"),
+                            spell_id=raw_talent.get("spellId", -1),
+                            icon=raw_talent["icon"],
+                        )
+                    )
+                except KeyError as e:
+                    logger.exception(raw_talent)
+                    raise e
+            try:
+                class_nodes.append(
+                    TreeNode(
+                        id=raw_node["id"],
+                        name=raw_node["name"],
+                        x=raw_node["posX"],
+                        y=raw_node["posY"],
+                        tree_node_type=TreeNodeType(raw_node["type"] or "passive"),
+                        required_invested_points=raw_node.get("reqPoints", 0),
+                        max_rank=raw_node["maxRanks"],
+                        children_ids=tuple(raw_node["next"]),
+                        talents=tuple(talents),
+                    )
+                )
+            except ValueError as e:
+                logger.exception(raw_node)
+                raise e
 
-        for raw_talent in loaded_talents[spec]:
-            talents[spec].append(
-                Talent(
-                    name=str(raw_talent["name"]),
-                    talent_type=TalentType(raw_talent["type"]),
-                    max_rank=int(raw_talent["max_rank"]),
+        spec_nodes: typing.List[TreeNode] = []
+        for raw_node in loaded_talents[spec]["specNodes"]:
+            talents: typing.List[Talent] = []
+            for raw_talent in raw_node["entries"]:
+                try:
+                    talents.append(
+                        Talent(
+                            id=raw_talent["id"],
+                            max_ranks=raw_talent["maxRanks"],
+                            type=TalentType(raw_talent["type"] or "passive"),
+                            name=raw_talent.get("name", "PH"),
+                            spell_id=raw_talent.get("spellId", -1),
+                            icon=raw_talent["icon"],
+                        )
+                    )
+                except KeyError as e:
+                    logger.exception(raw_talent)
+                    raise e
+            spec_nodes.append(
+                TreeNode(
+                    id=raw_node["id"],
+                    name=raw_node["name"],
+                    x=raw_node["posX"],
+                    y=raw_node["posY"],
+                    tree_node_type=TreeNodeType(raw_node["type"]),
+                    required_invested_points=raw_node.get("reqPoints", 0),
+                    max_rank=raw_node["maxRanks"],
+                    children_ids=tuple(raw_node["next"]),
+                    talents=tuple(talents),
                 )
             )
 
-    return talents
+        class_tree = Tree(tree_nodes=tuple(class_nodes))
+        spec_tree = Tree(tree_nodes=tuple(spec_nodes))
+
+        trees[spec] = (class_tree, spec_tree)
+
+    return trees
 
 
-TALENTS: typing.Tuple[Talent, ...] = _talent_post_init(_create_talents())
-
-
-def remove_choices(talents: typing.Tuple[Talent, ...]) -> typing.Tuple[Talent, ...]:
-    """Removes sibling/choice nodes by ensuring only one represents them. New talents are created."""
-    single_choiced: typing.List[Talent] = []
-    ignored_nodes: typing.List[str] = []
-    for t in talents:
-        if all([t.name < s for s in t.sibling_ids]):
-            single_choiced.append(
-                Talent(
-                    name=t.name,
-                    talent_type=t.talent_type,
-                    required_invested_points=t.required_invested_points,
-                    parent_ids=t.parent_ids,
-                    children_ids=t.children_ids,
-                    sibling_ids=t.sibling_ids,
-                )
-            )
-        else:
-            logger.info(f"Temporarily ignoring {t.name}.")
-            ignored_nodes.append(t.name)
-    # remove ignored nodes from parent names and children
-    for t in single_choiced:
-        t.sibling_ids = ()
-        t.siblings = ()
-        t.parents = ()
-        t.children = ()
-        t.parent_ids = tuple((p for p in t.parent_ids if p not in ignored_nodes))
-        t.children_ids = ()
-
-    return _talent_post_init(tuple(single_choiced))
+TALENTS: typing.Dict[str, typing.Tuple[Tree, Tree]] = _load_talents(
+    _load_talent_files()
+)
 
 
 def readd_choices(
-    talents: typing.Tuple[Talent, ...],
-    single_choice_talents: typing.Tuple[Talent, ...],
+    talents: typing.Tuple[TreeNode, ...],
+    single_choice_talents: typing.Tuple[TreeNode, ...],
     paths: typing.List[str],
 ) -> typing.Tuple[str, ...]:
     """unpack all selected choice talent options
@@ -796,7 +547,7 @@ def readd_choices(
         typing.Tuple[str, ...]: unpacked full path using all talents
     """
     # dictionary of single_choices that map to their respective original counterpart
-    no_choice_to_talents_map: typing.Dict[Talent, Talent] = {}
+    no_choice_to_talents_map: typing.Dict[TreeNode, TreeNode] = {}
     for n in single_choice_talents:
         for t in talents:
             if n.name == t.name:
@@ -808,7 +559,7 @@ def readd_choices(
     }
 
     # dictionary maps single_choice choice talents to all available original sibling choice talents
-    prepared_choices: typing.Dict[Talent, typing.Tuple[Talent, ...]] = {}
+    prepared_choices: typing.Dict[TreeNode, typing.Tuple[TreeNode, ...]] = {}
     for n in single_choice_talents:
         for c in _original_choices:
             if n.name == c.name:
@@ -819,14 +570,14 @@ def readd_choices(
     trees: typing.List[str] = []
     for path in paths:
         included_choice_nodes = {
-            n: v for n, v in prepared_choices.items() if n.is_selected(path)
+            n: v for n, v in prepared_choices.items() if n.is_at_max_rank(path)
         }
 
         # create a blueprint that doesn't have any choice nodes selected
         blueprint = blueprint_all_false
         for talent in single_choice_talents:
             # set talent to matching state if it's not a choice node
-            if talent not in included_choice_nodes and talent.is_selected(path):
+            if talent not in included_choice_nodes and talent.is_at_max_rank(path):
                 blueprint = no_choice_to_talents_map[talent].select(
                     blueprint, raise_exception=False
                 )
@@ -838,119 +589,5 @@ def readd_choices(
             for talent in combination:
                 local_copy = talent.select(local_copy)
             trees.append(local_copy)
-
-    return tuple(trees)
-
-
-def grow(talents: typing.Tuple[Talent, ...], points: int) -> typing.Tuple[str, ...]:
-
-    prepared_talents = remove_choices(talents)
-
-    empty_path = "".join(["0" for _ in prepared_talents])
-
-    # key : value
-    # path: next growable Talents
-    existing_paths: typing.Dict[str, typing.Set[Talent]] = {}
-    existing_paths[empty_path] = {t for t in prepared_talents if len(t.parents) == 0}
-
-    for invested_points in range(1, points + 1):
-        start_time = datetime.datetime.utcnow()
-
-        new_paths: typing.Dict[str, typing.Set[Talent]] = {}
-
-        for path, entry_points in existing_paths.items():
-
-            for talent in entry_points:
-                new_path: str = ""
-                try:
-                    new_path = talent.select(path)
-                except NotEnoughPointsInvestedError:
-                    # this entry point needs to stay relevant for the time enough points are invested
-                    # logger.info(
-                    #     f"Skipping {talent} for now. Not enough points invested yet."
-                    # )
-                    continue
-
-                if new_path not in new_paths:
-                    new_entry_points = entry_points.copy()
-                    new_entry_points.remove(talent)
-
-                    for child in talent.children:
-                        if not child.is_selected(new_path):
-                            new_entry_points.add(child)
-
-                    new_paths[new_path] = new_entry_points
-
-        existing_paths = new_paths
-
-        logger.info(
-            f"{invested_points}: {len(existing_paths)} ({datetime.datetime.utcnow()-start_time})"
-        )
-
-    logger.info("Unpacking choice nodes")
-    start_time = datetime.datetime.utcnow()
-    trees = readd_choices(talents, prepared_talents, list(existing_paths.keys()))
-    logger.info(f"Unpacked: {len(trees)} ({datetime.datetime.utcnow()-start_time})")
-
-    return tuple(trees)
-
-
-def cut(talents: typing.Tuple[Talent, ...], points: int) -> typing.Tuple[str, ...]:
-
-    prepared_talents = remove_choices(talents)
-
-    full_path = "".join(["1" for _ in prepared_talents])
-
-    # key : value
-    # path: next growable Talents
-    existing_paths: typing.Dict[str, typing.Set[Talent]] = {}
-    existing_paths[full_path] = set()
-
-    # add deselectable nodes
-    for talent in prepared_talents:
-        try:
-            talent.deselect(full_path)
-        except LeafsDependOnNode:
-            pass
-        else:
-            existing_paths[full_path].add(talent)
-
-    # print(sorted([n.name for n in existing_paths[full_path]]))
-
-    for invested_points in range(len(prepared_talents) - 1, points - 1, -1):
-        start_time = datetime.datetime.utcnow()
-
-        new_paths: typing.Dict[str, typing.Set[Talent]] = {}
-
-        for path, entry_points in existing_paths.items():
-
-            for talent in entry_points:
-                new_path: str = ""
-                try:
-                    new_path = talent.deselect(path)
-                except LeafsDependOnNode:
-                    # this entry point needs to stay relevant for the time all children are either deselected or don't depend on this one
-                    pass
-
-                if new_path and new_path not in new_paths:
-                    new_entry_points = entry_points.copy()
-                    new_entry_points.remove(talent)
-
-                    for parent in talent.parents:
-                        if parent.is_selected(new_path):
-                            new_entry_points.add(parent)
-
-                    new_paths[new_path] = new_entry_points
-
-        existing_paths = new_paths
-
-        logger.info(
-            f"{invested_points}: {len(existing_paths)} ({datetime.datetime.utcnow()-start_time})"
-        )
-
-    logger.info("Unpacking choice nodes")
-    start_time = datetime.datetime.utcnow()
-    trees = readd_choices(talents, prepared_talents, list(existing_paths.keys()))
-    logger.info(f"Unpacked: {len(trees)} ({datetime.datetime.utcnow()-start_time})")
 
     return tuple(trees)
