@@ -391,6 +391,7 @@ class Tree:
 
         return list(existing_paths.keys())
 
+        # # build actual Talent trees, not NodeTrees. Essentially: unpack choice nodes based on what was selected.
         # choice_nodes = {
         #     n.index: n
         #     for n in self.tree_nodes
@@ -486,6 +487,7 @@ def _load_talents(
                 logger.exception(raw_node)
                 raise e
 
+        # spec tree
         spec_nodes: typing.List[TreeNode] = []
         for raw_node in loaded_talents[spec]["specNodes"]:
             talents: typing.List[Talent] = []
@@ -531,63 +533,63 @@ TALENTS: typing.Dict[str, typing.Tuple[Tree, Tree]] = _load_talents(
 )
 
 
-def readd_choices(
-    talents: typing.Tuple[TreeNode, ...],
-    single_choice_talents: typing.Tuple[TreeNode, ...],
-    paths: typing.List[str],
-) -> typing.Tuple[str, ...]:
-    """unpack all selected choice talent options
+# def readd_choices(
+#     talents: typing.Tuple[TreeNode, ...],
+#     single_choice_talents: typing.Tuple[TreeNode, ...],
+#     paths: typing.List[str],
+# ) -> typing.Tuple[str, ...]:
+#     """unpack all selected choice talent options
 
-    Args:
-        talents (typing.Tuple[Talent, ...]): all talents
-        single_choice_talents (typing.Tuple[Talent, ...]): talents with only the first of all choice talents
-        paths (typing.List[str]): selected paths of only the first choice talents
+#     Args:
+#         talents (typing.Tuple[Talent, ...]): all talents
+#         single_choice_talents (typing.Tuple[Talent, ...]): talents with only the first of all choice talents
+#         paths (typing.List[str]): selected paths of only the first choice talents
 
-    Returns:
-        typing.Tuple[str, ...]: unpacked full path using all talents
-    """
-    # dictionary of single_choices that map to their respective original counterpart
-    no_choice_to_talents_map: typing.Dict[TreeNode, TreeNode] = {}
-    for n in single_choice_talents:
-        for t in talents:
-            if n.name == t.name:
-                no_choice_to_talents_map[n] = t
+#     Returns:
+#         typing.Tuple[str, ...]: unpacked full path using all talents
+#     """
+#     # dictionary of single_choices that map to their respective original counterpart
+#     no_choice_to_talents_map: typing.Dict[TreeNode, TreeNode] = {}
+#     for n in single_choice_talents:
+#         for t in talents:
+#             if n.name == t.name:
+#                 no_choice_to_talents_map[n] = t
 
-    # dictionary of original choice nodes and all their siblings and themselves
-    _original_choices = {
-        n: tuple([n] + list(n.siblings)) for n in talents if n.sibling_ids
-    }
+#     # dictionary of original choice nodes and all their siblings and themselves
+#     _original_choices = {
+#         n: tuple([n] + list(n.siblings)) for n in talents if n.sibling_ids
+#     }
 
-    # dictionary maps single_choice choice talents to all available original sibling choice talents
-    prepared_choices: typing.Dict[TreeNode, typing.Tuple[TreeNode, ...]] = {}
-    for n in single_choice_talents:
-        for c in _original_choices:
-            if n.name == c.name:
-                prepared_choices[n] = _original_choices[c]
+#     # dictionary maps single_choice choice talents to all available original sibling choice talents
+#     prepared_choices: typing.Dict[TreeNode, typing.Tuple[TreeNode, ...]] = {}
+#     for n in single_choice_talents:
+#         for c in _original_choices:
+#             if n.name == c.name:
+#                 prepared_choices[n] = _original_choices[c]
 
-    blueprint_all_false = "".join(["0" for _ in talents])
+#     blueprint_all_false = "".join(["0" for _ in talents])
 
-    trees: typing.List[str] = []
-    for path in paths:
-        included_choice_nodes = {
-            n: v for n, v in prepared_choices.items() if n.is_at_max_rank(path)
-        }
+#     trees: typing.List[str] = []
+#     for path in paths:
+#         included_choice_nodes = {
+#             n: v for n, v in prepared_choices.items() if n.is_at_max_rank(path)
+#         }
 
-        # create a blueprint that doesn't have any choice nodes selected
-        blueprint = blueprint_all_false
-        for talent in single_choice_talents:
-            # set talent to matching state if it's not a choice node
-            if talent not in included_choice_nodes and talent.is_at_max_rank(path):
-                blueprint = no_choice_to_talents_map[talent].select(
-                    blueprint, raise_exception=False
-                )
+#         # create a blueprint that doesn't have any choice nodes selected
+#         blueprint = blueprint_all_false
+#         for talent in single_choice_talents:
+#             # set talent to matching state if it's not a choice node
+#             if talent not in included_choice_nodes and talent.is_at_max_rank(path):
+#                 blueprint = no_choice_to_talents_map[talent].select(
+#                     blueprint, raise_exception=False
+#                 )
 
-        # create trees for each included choice node combination
-        choice_combinations = itertools.product(*included_choice_nodes.values())
-        for combination in choice_combinations:
-            local_copy = blueprint
-            for talent in combination:
-                local_copy = talent.select(local_copy)
-            trees.append(local_copy)
+#         # create trees for each included choice node combination
+#         choice_combinations = itertools.product(*included_choice_nodes.values())
+#         for combination in choice_combinations:
+#             local_copy = blueprint
+#             for talent in combination:
+#                 local_copy = talent.select(local_copy)
+#             trees.append(local_copy)
 
-    return tuple(trees)
+#     return tuple(trees)
