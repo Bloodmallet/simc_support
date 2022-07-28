@@ -161,9 +161,6 @@ class TreeNode:
         # return f"{self.name}({self.index})"
         return f"{self.name}:{self.index}(id:{self.id},p:{self.parent_ids},c:{self.children_ids})"
 
-    def get_rank(self, tree: str) -> int:
-        return int(tree[self.index])
-
     @property
     def is_initialized(self) -> bool:
         return all(
@@ -173,41 +170,6 @@ class TreeNode:
                 len(self.children_ids) == len(self.children),
             ]
         )
-
-    def is_at_max_rank(self, tree: str) -> bool:
-        return tree[self.index] == str(self.max_rank)
-
-    def has_selected_children(self, tree: str) -> bool:
-        if not self.children:
-            return False
-        return any([c.is_at_max_rank(tree) for c in self.children])
-
-    def has_selected_parents(self, tree: str) -> bool:
-        if not self.parents:
-            return False
-        return any([p.is_at_max_rank(tree) for p in self.parents])
-
-    def is_gate_satisfied(self, tree: str) -> bool:
-        if self.required_invested_points < 1:
-            return True
-        return (
-            sum([int(selected) for selected in tree]) >= self.required_invested_points
-        )
-
-    def select(self, tree: str, *, raise_exception: bool = True) -> str:
-        """Create a new path tuple."""
-
-        if raise_exception and not self.is_gate_satisfied(tree):
-            invested_points = sum([int(selected) for selected in tree])
-            raise NotEnoughPointsInvestedError(
-                f"Node {self.name} at index {self.index} can't be selected at {tree} because not enough points were invested in the current tree ({invested_points} != {self.required_invested_points})."
-            )
-
-        new_tree = (
-            tree[: self.index] + str(int(tree[self.index]) + 1) + tree[self.index + 1 :]
-        )
-
-        return new_tree
 
     def get_dict(
         self,
@@ -226,14 +188,10 @@ class TreeNode:
 
 
 class Tree:
-    __slots__ = (
-        "tree_nodes",
-        "paths",
-    )
+    __slots__ = ("tree_nodes",)
 
     def __init__(self, tree_nodes: typing.Tuple[TreeNode, ...]) -> None:
         self.tree_nodes: typing.Tuple[TreeNode, ...] = tree_nodes
-        self.paths: typing.List[str] = []
 
         self._tree_nodes_post_init()
 
@@ -335,30 +293,32 @@ class Tree:
                 raise InitializationError(t)
 
     # def grow(self, *, points: int) -> typing.Iterable[TalentTree]:
-    def grow(self, *, points: int) -> typing.List[str]:
+    def grow(
+        self, *, points: int, unwanted_nodes: typing.Iterable[TreeNode] = ()
+    ) -> typing.List["TreePath"]:
 
-        empty_path = "".join(["0" for _ in self.tree_nodes])
+        empty_path = TreePath(tree=self)
 
         # key : value
         # path: next growable Talents
-        existing_paths: typing.Dict[str, typing.Set[TreeNode]] = {}
+        existing_paths: typing.Dict[TreePath, typing.Set[TreeNode]] = {}
+        # if a starting node requires more points than already invested it'll just idle around
         existing_paths[empty_path] = {
             t
             for t in self.tree_nodes
-            if len(t.parents) == 0 and t.required_invested_points == 0
+            if len(t.parents) == 0 and t not in unwanted_nodes
         }
 
         for invested_points in range(1, points + 1):
             start_time = datetime.datetime.utcnow()
 
-            new_paths: typing.Dict[str, typing.Set[TreeNode]] = {}
+            new_paths: typing.Dict[TreePath, typing.Set[TreeNode]] = {}
 
             for path, entry_points in existing_paths.items():
 
                 for node in entry_points:
-                    new_path: str = ""
                     try:
-                        new_path = node.select(path)
+                        new_path = path.select(node)
                     except NotEnoughPointsInvestedError:
                         # this entry point needs to stay relevant for the time enough points are invested
                         # logger.info(
@@ -369,11 +329,14 @@ class Tree:
                     if new_path not in new_paths:
                         new_entry_points = entry_points.copy()
 
-                        if node.is_at_max_rank(new_path):
+                        if new_path.is_at_max_rank(node):
                             new_entry_points.remove(node)
 
                             for child in node.children:
-                                if not child.is_at_max_rank(new_path):
+                                if (
+                                    child not in unwanted_nodes
+                                    and not new_path.is_at_max_rank(child)
+                                ):
                                     new_entry_points.add(child)
 
                         new_paths[new_path] = new_entry_points
@@ -425,6 +388,77 @@ class Tree:
         #             ranks.append(int(rank))
 
         #         yield TalentTree(talents=tuple(talents), ranks=tuple(ranks))
+
+
+class TreePath:
+    __slots__ = (
+        "path",
+        "invested_points",
+    )
+
+    def __eq__(self, __o: object) -> bool:
+        return self.path == __o.path  # type: ignore
+
+    def __hash__(self) -> int:
+        return hash(self.path)
+
+    def __init__(
+        self,
+        *,
+        tree: typing.Optional[Tree] = None,
+        path: typing.Optional[typing.Tuple[int, ...]] = None,
+        invested_points: typing.Optional[int] = None,
+    ) -> None:
+        if path is None and invested_points is None and tree is None:
+            raise ValueError("All input for TreePath creation was None.")
+
+        if path is None and invested_points is None and tree is not None:
+            self.path: typing.Tuple[int, ...] = tuple(0 for _ in tree.tree_nodes)
+            self.invested_points = 0
+
+        elif path is not None and invested_points is not None and tree is None:
+            self.path = path
+            self.invested_points = invested_points
+        else:
+            raise ValueError("TreePath was created with wrong input combination.")
+
+    def select(self, tree_node: TreeNode, raise_exception: bool = True) -> "TreePath":
+        if (
+            raise_exception
+            and self.invested_points < tree_node.required_invested_points
+        ):
+            raise NotEnoughPointsInvestedError(
+                f"Node {tree_node.name} at index {tree_node.index} can't be selected at {self.path} because not enough points were invested in the current tree ({self.invested_points} < {tree_node.required_invested_points})."
+            )
+
+        new_path = (
+            *self.path[: tree_node.index],
+            self.path[tree_node.index] + 1,
+            *self.path[tree_node.index + 1 :],
+        )
+
+        return TreePath(path=new_path, invested_points=self.invested_points + 1)
+
+    def is_gate_satisfied(self, tree_node: TreeNode) -> bool:
+        if tree_node.required_invested_points < 1:
+            return True
+        return self.invested_points >= tree_node.required_invested_points
+
+    def is_at_max_rank(self, tree_node: TreeNode) -> bool:
+        return self.path[tree_node.index] == tree_node.max_rank
+
+    def has_selected_children(self, tree_node: TreeNode) -> bool:
+        if not tree_node.children:
+            return False
+        return any([self.is_at_max_rank(c) for c in tree_node.children])
+
+    def has_selected_parents(self, tree_node: TreeNode) -> bool:
+        if not tree_node.parents:
+            return False
+        return any([self.is_at_max_rank(p) for p in tree_node.parents])
+
+    def get_rank(self, tree_node: TreeNode) -> int:
+        return self.path[tree_node.index]
 
 
 def _load_talent_files() -> typing.Dict[str, typing.Any]:
