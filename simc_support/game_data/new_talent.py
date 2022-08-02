@@ -567,6 +567,58 @@ TALENTS: typing.Dict[str, typing.Tuple[Tree, Tree]] = _load_talents(
 )
 
 
+class DepthFirstSearch:
+    """https://en.wikipedia.org/wiki/Depth-first_search"""
+
+    def __init__(self) -> None:
+        self.tree: typing.Tuple[TreeNode, ...] = ()
+
+    def non_recursion(self, G, v):
+        """
+        procedure DFS_iterative(G, v) is
+            let S be a stack
+            S.push(v)
+            while S is not empty do
+                v = S.pop()
+                if v is not labeled as discovered then
+                    label v as discovered
+                    for all edges from v to w in G.adjacentEdges(v) do
+                        S.push(w)
+        """
+
+        known_v = set()
+
+        # stack, append & pop
+        S = []
+        S.append(v)
+
+        while S:
+            v = S.pop()
+            if v in known_v:
+                known_v.add(v)
+                for child in v:
+                    S.append(child)
+
+    def recursive(self, G, v):
+        """
+        procedure DFS(G, v) is
+            label v as discovered
+            for all directed edges from v to w that are in G.adjacentEdges(v) do
+                if vertex w is not labeled as discovered then
+                    recursively call DFS(G, w)
+        """
+        known_v = set()
+        for child in v:
+            if child not in known_v:
+                self.recursive(G, child)
+
+
+class IterativeDeepening:
+    """https://en.wikipedia.org/wiki/Iterative_deepening_depth-first_search"""
+
+    pass
+
+
 # def readd_choices(
 #     talents: typing.Tuple[TreeNode, ...],
 #     single_choice_talents: typing.Tuple[TreeNode, ...],
