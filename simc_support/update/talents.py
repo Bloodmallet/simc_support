@@ -202,6 +202,19 @@ class TalentLoader(Extractor):
             )
         json_data = loaded_data.json()
 
+        spellicon_wowhead_icon_map = {
+            "spell_frost_piercing_chill": "spell_frost_piercing-chill",
+            "spell_frost_ice_shards": "spell_frost_ice-shards",
+            "spell_frost_ring_of_frost": "spell_frost_ring-of-frost",
+            "spell_priest_power_word": "spell_priest_power-word",
+            "inv_artifact_ashes_to_ashes": "inv_artifact_ashes-to-ashes",
+            "spell_priest_void_flay": "spell_priest_void-flay",
+            "spell_priest_shadow_mend": "spell_priest_shadow-mend",
+            "spell_priest_void_blast": "spell_priest_void-blast",
+            "spell_firefrost_orb": "spell_firefrost-orb",
+            "spell_frostfire_orb": "spell_frostfire-orb",
+        }
+
         # save raw
         with open(
             r"simc_support\game_data\data_files\trees\raw_raidbots_talent_information.json",
@@ -223,6 +236,13 @@ class TalentLoader(Extractor):
                 class_name = "evoker"
 
             combined_name = "_".join([class_name, spec_name]).replace(" ", "_")
+
+            for tree in ["specNodes", "classNodes"]:
+                for node in spec_data[tree]:
+                    for entry in node["entries"]:
+                        entry["icon"] = spellicon_wowhead_icon_map.get(
+                            entry["icon"], entry["icon"]
+                        )
 
             # sanity/curiousity checks
             logger.info(
