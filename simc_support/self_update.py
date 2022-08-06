@@ -334,6 +334,31 @@ def update_trinkets(args: object) -> None:
         184842,
     ]
 
+    shadowlands_season_4_dungeon_trinkets = [
+        # Tazavesh
+        185846,  # Miniscule Mailemental in an Enevelope
+        190958,  # So'leah's
+        190652,  # Ticking Sack of terror
+        # Mechagon
+        169769,  # Remote Guidance Device
+        169344,  # Ingenious Mana Battery
+        # Return to Karazhan
+        142159,  # Bloodstained Handkerchief
+        142167,  # Eye of Command
+        142164,  # Toe Knee's Promise
+        142157,  # Aran's Relaxing Ruby
+        142165,  # Detoriated Construct Core
+        142160,  # Mrrgia's Favor
+        # Grimrail Depo
+        110001,  # Tovra's Lightning Repository
+        109996,  # Thundertower's Targeting Reticle
+        # Iron Docks
+        110017,  # Enforer's Stun grenade
+        110002,  # Fleshrender's Meathook
+        109997,  # Kihra's Adrenaline Injector
+    ]
+    WHITELIST += shadowlands_season_4_dungeon_trinkets
+
     def is_trinket(item: dict) -> bool:
         """See https://github.com/simulationcraft/simc/blob/shadowlands/engine/dbc/data_enums.hh#L335"""
         return item.get("inv_type") == 12
