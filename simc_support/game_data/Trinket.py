@@ -100,6 +100,30 @@ def _load_trinkets() -> typing.List[Trinket]:
     ) as f:
         loaded_trinkets = json.load(f)
 
+    shadowlands_season_4_dungeon_trinkets = [
+        # Tazavesh
+        185846,  # Miniscule Mailemental in an Enevelope
+        190958,  # So'leah's
+        190652,  # Ticking Sack of terror
+        # Mechagon
+        169769,  # Remote Guidance Device
+        169344,  # Ingenious Mana Battery
+        # Return to Karazhan
+        142159,  # Bloodstained Handkerchief
+        142167,  # Eye of Command
+        142164,  # Toe Knee's Promise
+        142157,  # Aran's Relaxing Ruby
+        142165,  # Detoriated Construct Core
+        142160,  # Mrrgia's Favor
+        # Grimrail Depo
+        110001,  # Tovra's Lightning Repository
+        109996,  # Thundertower's Targeting Reticle
+        # Iron Docks
+        110017,  # Enforer's Stun grenade
+        110002,  # Fleshrender's Meathook
+        109997,  # Kihra's Adrenaline Injector
+    ]
+
     def _get_stats(item: dict) -> typing.List[Stat]:
         """Get primary stats from items stat_type information.
         TODO: Can be extended using ItemEffect.id_specialization.
@@ -132,6 +156,9 @@ def _load_trinkets() -> typing.List[Trinket]:
         return stats
 
     def _get_itemlevels(item: dict, source: Source) -> typing.List[int]:
+
+        if item["id"] in shadowlands_season_4_dungeon_trinkets:
+            return ItemLevel.SEASON_4_DUNGEON
 
         # add special cases here
         if item["name"] == "Spiritual Alchemy Stone":
@@ -368,6 +395,7 @@ def _load_trinkets() -> typing.List[Trinket]:
         or t["id_expansion"] == 6
         and t["id_journal_instance"] in id_journal_instances
         and t["id_map"] in id_maps
+        or t["id"] in shadowlands_season_4_dungeon_trinkets
     ]
 
     trinkets: typing.List[Trinket] = []
@@ -453,7 +481,7 @@ def get_versatility_trinket(stat: Stat) -> Trinket:
     """
     empty_translation = EmptyTranslation()
     empty_translation.US = "Versatility Stat Stick"
-    all_classes = 2 ** 16 - 1
+    all_classes = 2**16 - 1
     if stat == Stat.AGILITY:
         # "Stat Stick (Versatility)", "142506,bonus_id=607"
         return Trinket(
