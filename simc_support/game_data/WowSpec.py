@@ -17,7 +17,6 @@ class WowSpec(SimcObject):
         id: int,
         wow_class: WowClass.WowClass,
         translations: Language.Translation,
-        talents_blueprint: str,
         raid_role: RaidRole,
         role: Role,
         stat: Stat,
@@ -53,26 +52,6 @@ class WowSpec(SimcObject):
         else:
             self.class_tree = None
             self.spec_tree = None
-
-    def is_dps_talent_combination(self, talent_combination: str) -> bool:
-        """Determines whether a given talent combination is a valid talent combination.
-
-        Arguments:
-        talent_combination {str} -- [description]
-
-        Returns:
-        bool -- True, if all dps talent rows have a talent selected and all utility rows have no talent selected.
-        """
-
-        if not all([talent in "0123" for talent in talent_combination]):
-            raise ValueError("Unexpected talent value. Values can be 0, 1, 2, 3.")
-
-        for row, column in enumerate(self.talents_blueprint):
-            if talent_combination[row] == "0" and (column == "1" or column == "x"):
-                return False
-            elif talent_combination[row] != "0" and column == "0":
-                return False
-        return True
 
     def _get_talent_trees(self) -> typing.Optional[typing.Tuple[Tree, Tree]]:
         """Get class and spec talent trees
