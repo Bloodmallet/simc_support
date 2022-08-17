@@ -173,8 +173,9 @@ def _load_trinkets() -> typing.List[Trinket]:
         if item["id_journal_instance"] == 1194:
             return ItemLevel.DUNGEON
 
+        # Legion
         if item["id_expansion"] == 6 and source == Source.DUNGEON:
-            combined_list = ItemLevel.DUNGEON_MYTHIC_DROPS + ItemLevel.VALOR_UPGRADES
+            combined_list = ItemLevel.SEASON_4_VALOR_UPGRADES
             unique_set = set(combined_list)
             sorted_list = sorted(list(unique_set))
             return sorted_list
