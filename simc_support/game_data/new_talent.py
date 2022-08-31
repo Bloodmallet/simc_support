@@ -9,7 +9,7 @@ import typing
 logger = logging.getLogger(__name__)
 
 T = typing.TypeVar("T")
-ID = int
+ID = typing.Union[int, str]
 
 
 class InitializationError(Exception):
@@ -251,11 +251,11 @@ class Tree:
                         tree_node_type=tree_node_type,
                         required_invested_points=-1,
                         children_ids=children_ids,
+                        rank=rank,
                         max_rank=max_rank,
                         x=x,
                         y=y,
                         talents=talents,
-                        rank=rank,
                     )
                 )
 
@@ -617,6 +617,195 @@ class IterativeDeepening:
     """https://en.wikipedia.org/wiki/Iterative_deepening_depth-first_search"""
 
     pass
+
+
+class TopologicalSort:
+    __slots__ = ("nodes", "tree")
+
+    def __init__(self, tree: Tree) -> None:
+        # generate new tree, consisting og flattened 1-point nodes
+        self.nodes: typing.List[TreeNode] = []
+        for node in tree.tree_nodes:
+            self.nodes += self._create_ranks(node=node)
+
+        self.tree: Tree = Tree(tuple(self.nodes))
+
+    def is_compact_tree(self, tree: Tree) -> bool:
+        specifiers = set()
+        for node in tree.tree_nodes:
+            if node.id in specifiers:
+                return False
+            else:
+                specifiers.add(node.id)
+            if node.name in specifiers:
+                return False
+            else:
+                specifiers.add(node.name)
+            for talent in node.talents:
+                if talent in specifiers:
+                    return False
+                else:
+                    specifiers.add(talent)
+        return True
+
+    def _create_ranks(self, *, node: TreeNode) -> typing.List[TreeNode]:
+        """Create 1 point nodes based on `node`."""
+
+        tree_nodes: typing.List[TreeNode] = []
+
+        if node.max_rank == 1:
+            return [
+                TreeNode(
+                    id=" ".join([str(node.id), str(node.max_rank)]),
+                    name=" ".join([node.name, str(node.max_rank)]),
+                    x=node.x,
+                    y=node.y,
+                    tree_node_type=node.tree_node_type,
+                    required_invested_points=node.required_invested_points,
+                    max_rank=node.max_rank,
+                    rank=node.max_rank,
+                    children_ids=tuple(
+                        " ".join([str(n), "1"]) for n in node.children_ids
+                    ),
+                    talents=node.talents,
+                )
+            ]
+
+        for rank in range(1, node.max_rank + 1):
+            if rank == 1:
+                tree_nodes.append(
+                    TreeNode(
+                        id=" ".join([str(node.id), str(rank)]),
+                        name=" ".join([node.name, str(rank)]),
+                        tree_node_type=node.tree_node_type,
+                        required_invested_points=node.required_invested_points,
+                        children_ids=(" ".join([str(node.id), str(rank + 1)]),),
+                        rank=rank,
+                        max_rank=node.max_rank,
+                        x=node.x,
+                        y=node.y,
+                        talents=node.talents,
+                    )
+                )
+            elif rank == node.max_rank:
+                tree_nodes.append(
+                    TreeNode(
+                        id=" ".join([str(node.id), str(rank)]),
+                        name=" ".join([node.name, str(rank)]),
+                        tree_node_type=node.tree_node_type,
+                        required_invested_points=-1,
+                        children_ids=tuple(
+                            " ".join([str(n), "1"]) for n in node.children_ids
+                        ),
+                        rank=rank,
+                        max_rank=node.max_rank,
+                        x=node.x,
+                        y=node.y,
+                        talents=node.talents,
+                    )
+                )
+            else:
+                tree_nodes.append(
+                    TreeNode(
+                        id=" ".join([str(node.id), str(rank)]),
+                        name=" ".join([node.name, str(rank)]),
+                        tree_node_type=node.tree_node_type,
+                        required_invested_points=-1,
+                        children_ids=(" ".join([str(node.id), str(rank + 1)]),),
+                        rank=rank,
+                        max_rank=node.max_rank,
+                        x=node.x,
+                        y=node.y,
+                        talents=node.talents,
+                    )
+                )
+
+        return tree_nodes
+
+    def networkx(
+        self, invested_points: int
+    ) -> typing.Generator[typing.List[TreeNode], None, None]:
+        """https://networkx.org/documentation/stable/_modules/networkx/algorithms/dag.html#all_topological_sorts"""
+        # if not G.is_directed():
+        #     raise ValueError("Topological sort not defined on undirected graphs.")
+
+        # the names of count and D are chosen to match the global variables in [1]
+        # number of edges originating in a vertex v
+        # count = dict(G.in_degree())
+        count: typing.Dict[TreeNode, int] = {}
+        for node in self.tree.tree_nodes:
+            count[node] = len(node.parent_ids)
+        # vertices with indegree 0
+        # D = deque([v for v, d in G.in_degree() if d == 0])
+        from collections import deque
+
+        D = deque([v for v, d in count.items() if d == 0])
+        # stack of first value chosen at a position k in the topological sort
+        bases = []
+        current_sort: typing.List[TreeNode] = []
+
+        # do-while construct
+        while True:
+            assert all([count[v] == 0 for v in D])
+
+            # if len(current_sort) == len(G):
+            if len(current_sort) == len(self.tree.tree_nodes):
+                yield list(current_sort)
+
+                # clean-up stack
+                while len(current_sort) > 0:
+                    assert len(bases) == len(current_sort)
+                    q = current_sort.pop()
+
+                    # "restores" all edges (q, x)
+                    # NOTE: it is important to iterate over edges instead
+                    # of successors, so count is updated correctly in multigraphs
+                    # for _, j in G.out_edges(q):
+                    for j in q.children:
+                        count[j] += 1
+                        assert count[j] >= 0
+                    # remove entries from D
+                    while len(D) > 0 and count[D[-1]] > 0:
+                        D.pop()
+
+                    # corresponds to a circular shift of the values in D
+                    # if the first value chosen (the base) is in the first
+                    # position of D again, we are done and need to consider the
+                    # previous condition
+                    D.appendleft(q)
+                    if D[-1] == bases[-1]:
+                        # all possible values have been chosen at current position
+                        # remove corresponding marker
+                        bases.pop()
+                    else:
+                        # there are still elements that have not been fixed
+                        # at the current position in the topological sort
+                        # stop removing elements, escape inner loop
+                        break
+
+            else:
+                if len(D) == 0:
+                    raise ValueError("Graph contains a cycle.")
+
+                # choose next node
+                q = D.pop()
+                # "erase" all edges (q, x)
+                # NOTE: it is important to iterate over edges instead
+                # of successors, so count is updated correctly in multigraphs
+                # for _, j in G.out_edges(q):
+                for j in q.children:
+                    count[j] -= 1
+                    assert count[j] >= 0
+                    if count[j] == 0:
+                        D.append(j)
+                current_sort.append(q)
+
+                # base for current position might _not_ be fixed yet
+                if len(bases) < len(current_sort):
+                    bases.append(q)
+
+            if len(bases) == 0:
+                break
 
 
 # def readd_choices(
