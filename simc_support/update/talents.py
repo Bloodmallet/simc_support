@@ -213,6 +213,8 @@ class TalentLoader(Extractor):
             "spell_priest_void_blast": "spell_priest_void-blast",
             "spell_firefrost_orb": "spell_firefrost-orb",
             "spell_frostfire_orb": "spell_frostfire-orb",
+            "ability_rogue_shuriken_storm": "ability_rogue_shuriken-storm",
+            "warlock__healthstone": "warlock_-healthstone",
         }
 
         # save raw
