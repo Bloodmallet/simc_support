@@ -729,28 +729,45 @@ class TopologicalSort:
         # if not G.is_directed():
         #     raise ValueError("Topological sort not defined on undirected graphs.")
 
+        def string_representation(nodes: typing.List[TreeNode]) -> str:
+            sorted_nodes = sorted(nodes, key=lambda node: node.name)
+            name = " ".join([n.name for n in sorted_nodes])
+            return name
+
         # the names of count and D are chosen to match the global variables in [1]
         # number of edges originating in a vertex v
         # count = dict(G.in_degree())
-        count: typing.Dict[TreeNode, int] = {}
+        parent_count: typing.Dict[TreeNode, int] = {}
         for node in self.tree.tree_nodes:
-            count[node] = len(node.parent_ids)
+            parent_count[node] = len(node.parent_ids)
         # vertices with indegree 0
         # D = deque([v for v, d in G.in_degree() if d == 0])
         from collections import deque
 
-        D = deque([v for v, d in count.items() if d == 0])
+        known_paths = set()
+
+        next_nodes = deque([n for n, count in parent_count.items() if count == 0])
         # stack of first value chosen at a position k in the topological sort
         bases = []
         current_sort: typing.List[TreeNode] = []
 
+        # TODO: add gate restrictions
+        # TODO: add early exit at `invested_points`
         # do-while construct
         while True:
-            assert all([count[v] == 0 for v in D])
+            assert all([parent_count[v] == 0 for v in next_nodes])
 
             # if len(current_sort) == len(G):
-            if len(current_sort) == len(self.tree.tree_nodes):
-                yield list(current_sort)
+            # if len(current_sort) == len(self.tree.tree_nodes):
+            if len(current_sort) == 20:
+                name = string_representation(current_sort[:invested_points])
+                if name not in known_paths:
+                    logger.info(name)
+                    known_paths.add(name)
+                    yield list(current_sort)
+                else:
+                    pass
+                    # logger.info(f"dublicate {name}")
 
                 # clean-up stack
                 while len(current_sort) > 0:
@@ -762,18 +779,18 @@ class TopologicalSort:
                     # of successors, so count is updated correctly in multigraphs
                     # for _, j in G.out_edges(q):
                     for j in q.children:
-                        count[j] += 1
-                        assert count[j] >= 0
+                        parent_count[j] += 1
+                        assert parent_count[j] >= 0
                     # remove entries from D
-                    while len(D) > 0 and count[D[-1]] > 0:
-                        D.pop()
+                    while len(next_nodes) > 0 and parent_count[next_nodes[-1]] > 0:
+                        next_nodes.pop()
 
                     # corresponds to a circular shift of the values in D
                     # if the first value chosen (the base) is in the first
                     # position of D again, we are done and need to consider the
                     # previous condition
-                    D.appendleft(q)
-                    if D[-1] == bases[-1]:
+                    next_nodes.appendleft(q)
+                    if next_nodes[-1] == bases[-1]:
                         # all possible values have been chosen at current position
                         # remove corresponding marker
                         bases.pop()
@@ -784,20 +801,20 @@ class TopologicalSort:
                         break
 
             else:
-                if len(D) == 0:
+                if len(next_nodes) == 0:
                     raise ValueError("Graph contains a cycle.")
 
                 # choose next node
-                q = D.pop()
+                q = next_nodes.pop()
                 # "erase" all edges (q, x)
                 # NOTE: it is important to iterate over edges instead
                 # of successors, so count is updated correctly in multigraphs
                 # for _, j in G.out_edges(q):
                 for j in q.children:
-                    count[j] -= 1
-                    assert count[j] >= 0
-                    if count[j] == 0:
-                        D.append(j)
+                    parent_count[j] -= 1
+                    assert parent_count[j] >= 0
+                    if parent_count[j] == 0:
+                        next_nodes.append(j)
                 current_sort.append(q)
 
                 # base for current position might _not_ be fixed yet

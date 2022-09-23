@@ -562,6 +562,4 @@ def _load_talents(
     return trees
 
 
-TALENTS: typing.Dict[str, typing.Tuple[Tree, Tree]] = _load_talents(
-    _load_talent_files()
-)
+TREES: typing.Dict[str, typing.Tuple[Tree, Tree]] = _load_talents(_load_talent_files())
