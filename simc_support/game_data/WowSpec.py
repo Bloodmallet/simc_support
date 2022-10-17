@@ -178,6 +178,28 @@ RESTORATION_DRUID = WowSpec(
     full_name="Restoration",
     simc_name="restoration",
 )
+DEVASTATION = WowSpec(
+    id=1467,
+    wow_class=WowClass.EVOKER,
+    translations=Language.EmptyTranslation(),
+    talents_blueprint="1000111",
+    raid_role=RaidRole.DD,
+    role=Role.RANGED,
+    stat=Stat.INTELLECT,
+    full_name="Devastation",
+    simc_name="devastation",
+)
+PRESERVATION = WowSpec(
+    id=1468,
+    wow_class=WowClass.EVOKER,
+    translations=Language.EmptyTranslation(),
+    talents_blueprint="1000111",
+    raid_role=RaidRole.DD,
+    role=Role.RANGED,
+    stat=Stat.INTELLECT,
+    full_name="Devastation",
+    simc_name="devastation",
+)
 BEASTMASTERY = WowSpec(
     id=253,
     wow_class=WowClass.HUNTER,
@@ -486,6 +508,8 @@ WOWSPECS = [
     FERAL,
     GUARDIAN,
     RESTORATION_DRUID,
+    DEVASTATION,
+    PRESERVATION,
     BEASTMASTERY,
     MARKSMANSHIP,
     SURVIVAL,

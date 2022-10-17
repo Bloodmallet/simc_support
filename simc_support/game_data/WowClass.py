@@ -65,6 +65,16 @@ DRUID = WowClass(
     "Druid",
     "druid",
 )
+EVOKER = WowClass(
+    13,
+    (
+        Race.DRACTHYR_ALLIANCE,
+        Race.DRACTHYR_HORDE,
+    ),
+    Language.EmptyTranslation(),
+    "Evoker",
+    "evoker",
+)
 HUNTER = WowClass(3, Race.RACES, Language.EmptyTranslation(), "Hunter", "hunter")
 MAGE = WowClass(
     8,
@@ -249,6 +259,7 @@ WOWCLASSES = (
     DEATHKNIGHT,
     DEMONHUNTER,
     DRUID,
+    EVOKER,
     HUNTER,
     MAGE,
     MONK,
