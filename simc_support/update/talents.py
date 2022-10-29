@@ -193,7 +193,8 @@ class TalentLoader(Extractor):
         return []
 
     def combine_into_json(self, data: typing.Dict[str, LOCALE_TABLES]) -> None:
-        url = "https://www.raidbots.com/static/data/beta/new-talent-trees.json"
+        # url = "https://www.raidbots.com/static/data/beta/new-talent-trees.json"
+        url = "https://www.raidbots.com/static/data/live/talents.json"
 
         loaded_data = requests.get(url)
         if loaded_data.status_code != 200:
