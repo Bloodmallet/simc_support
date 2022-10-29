@@ -53,13 +53,33 @@ def get_localized_spell_names(spells: TABLE, spell_id: int) -> typing.Dict[str, 
     raise ValueError(f"No spell with id '{spell_id}' found.")
 
 
+def _create_id_dict_from_table(table: typing.List[dict], column: str = "id") -> dict:
+    """Create a new dictionary containing all rows, but now associated by the declared column value.
+
+    Args:
+        table (typing.List[dict]): [{"example": "hello"}, {"example", "world"}]
+        column (str): _description_
+
+    Returns:
+        dict: {"hello": [{"example": "hello"}], "world": [{"example", "world"}]}
+    """
+    id_dict = {}
+    for row in table:
+        if row[column] and row[column] not in id_dict:
+            id_dict[row[column]] = [row]
+        elif row[column] and row[column] in id_dict:
+            id_dict[row[column]].append(row)
+
+    return id_dict
+
+
 def collect_localizations(
     localized_tables: LOCALE_TABLES,
     *,
-    filter_function: typing.Callable[[TABLE_ROW], bool] = any,
+    filter_function: typing.Callable[[dict], bool] = any,
     match_field: str = "id",
     translation_field: str = "name",
-) -> TABLE:
+) -> typing.List[dict]:
     """Collect localized `translation_field` via matching `match_field`.
 
     Special Args:
@@ -71,6 +91,19 @@ def collect_localizations(
 
     logger.debug("Merging")
     result = []
+    logger.debug("Creating dictionaries for item tables.")
+
+    dict_locales = {}
+    for locale in _LOCALES:
+        logger.debug(f"Creating {locale} dictionary.")
+        dict_locales[locale] = _create_id_dict_from_table(
+            localized_tables[locale], match_field
+        )
+
+    logger.debug("Created all locale tables.")
+    # raise ValueError
+
+    logger.debug("Building table with all translations")
     for i, locale in enumerate(_LOCALES):
         logger.debug(f"  {locale}")
         # prepare
@@ -92,12 +125,12 @@ def collect_localizations(
             if not translation_field:
                 continue
             for information in result:
-
-                for new_information in localized_tables[locale]:
-                    if information[match_field] == new_information[match_field]:
-                        information[f"{translation_field}_{locale}"] = new_information[
-                            translation_field
-                        ]
+                translated_row = dict_locales[locale].get(information[match_field])
+                information[f"{translation_field}_{locale}"] = (
+                    translated_row[0][translation_field]
+                    if translated_row
+                    else information[translation_field]
+                )
 
     return result
 
