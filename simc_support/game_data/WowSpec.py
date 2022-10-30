@@ -6,7 +6,7 @@ from simc_support.game_data.RaidRole import RaidRole
 from simc_support.game_data.Role import Role
 from simc_support.game_data.SimcObject import SimcObject
 from simc_support.game_data.Stat import Stat
-from simc_support.game_data.Talent import TALENTS, Tree
+from simc_support.game_data.Talent import TREES, Tree
 
 
 class WowSpec(SimcObject):
@@ -59,7 +59,7 @@ class WowSpec(SimcObject):
         Returns:
             typing.Tuple[Tree, Tree]: (class Tree, spec Tree)
         """
-        return TALENTS.get(self.wow_class.simc_name + "_" + self.simc_name)
+        return TREES.get(self.wow_class.simc_name + "_" + self.simc_name)
 
     def __repr__(self) -> str:
         return " ".join([super().__repr__(), self.wow_class.__repr__()])

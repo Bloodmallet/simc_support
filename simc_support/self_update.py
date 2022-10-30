@@ -19,6 +19,7 @@ from update.utils import (
     safely_convert_to,
 )
 from update.talents import TalentLoader
+from update.trinkets import TrinketExtractor
 
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
@@ -28,7 +29,7 @@ ch.setLevel(logging.INFO)
 formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 ch.setFormatter(formatter)
 
-fh = logging.FileHandler("debug.log", encoding="utf-8")
+fh = logging.FileHandler("debug.log", encoding="utf-8", mode="w")
 fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 
@@ -383,7 +384,8 @@ def main() -> None:
         update(args)
 
     extractors: typing.List[typing.Type[Extractor]] = [
-        TalentLoader,
+        # TalentLoader,
+        TrinketExtractor
     ]
     for extractor in extractors:
         extractor(args).extract()

@@ -1,9 +1,11 @@
 import enum
+import json
 import logging
+import os
 import typing
 
 from .extractor import Extractor, LOCALE_TABLES
-from update.utils import collect_localizations, safely_convert_to, _LOCALES
+from update.utils import collect_localizations, safely_convert_to, DATA_PATH
 
 logger = logging.getLogger(__name__)
 
@@ -53,14 +55,15 @@ def _is_wanted(item: dict) -> bool:
 
 
 def _get_relevant_expansions() -> typing.List[Expansion]:
+    return [expansion for expansion in Expansion]
     return [expansion for expansion in Expansion if expansion >= MIN_RELEVANT_EXPANSION]
 
 
 def _wanted_trinket(item: dict) -> bool:
     is_a_good_one = (
         _is_trinket(item)
-        and _is_gte_uncommon(item)
-        and _get_expansion(item) in _get_relevant_expansions()
+        # and _is_gte_uncommon(item)
+        # and _get_expansion(item) in _get_relevant_expansions()
         or _is_wanted(item)
     )
 
@@ -93,13 +96,9 @@ def _get_id_map(
     return None
 
 
-def _get_instance_type(
-    id_map: typing.Optional[int], maps: dict
-) -> typing.Optional[int]:
-    if not id_map:
-        return None
-    if map := maps.get("id"):
-        return map["instance_type"]
+def _get_instance_type(id_map: int, maps: dict) -> typing.Optional[int]:
+    if map := maps.get(id_map):
+        return map[0]["instance_type"]
     return None
 
 
@@ -205,4 +204,5 @@ class TrinketExtractor(Extractor):
                 maps,
             )
 
-        logger.info(trinkets[0])
+        with open(os.path.join(DATA_PATH, "trinkets.json"), "w", encoding="utf-8") as f:
+            json.dump(trinkets, f, ensure_ascii=False)
