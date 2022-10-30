@@ -253,7 +253,7 @@ class TalentLoader(Extractor):
             )
 
             with open(
-                rf"simc_support\game_data\data_files\trees\{combined_name}.json",
+                rf"{DATA_PATH}\trees\{combined_name}.json",
                 "w",
                 encoding="utf-8",
             ) as f:
