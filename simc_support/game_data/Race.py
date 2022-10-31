@@ -50,6 +50,22 @@ DARKIRONDWARF = Race(
         Language.BR: "Anão Ferro Negro",
     },
 )
+DRACTHYR_ALLIANCE = Race(
+    ALLIANCE,
+    "Dracthyr",
+    "dracthyr",
+    {
+        Language.US: "Dracthyr",
+        Language.IT: "Dracthyr",
+        Language.DE: "Dracthyr",
+        Language.FR: "Dracthyr",
+        Language.RU: "Dracthyr",
+        Language.ES: "Dracthyr",
+        Language.KR: "Dracthyr",
+        Language.CN: "Dracthyr",
+        Language.BR: "Dracthyr",
+    },
+)
 DRAENEI = Race(
     ALLIANCE,
     "Draenei",
@@ -244,6 +260,22 @@ BLOODELF = Race(
         Language.BR: "Elfo Sangrento",
     },
 )
+DRACTHYR_HORDE = Race(
+    HORDE,
+    "Dracthyr",
+    "dracthyr",
+    {
+        Language.US: "Dracthyr",
+        Language.IT: "Dracthyr",
+        Language.DE: "Dracthyr",
+        Language.FR: "Dracthyr",
+        Language.RU: "Dracthyr",
+        Language.ES: "Dracthyr",
+        Language.KR: "Dracthyr",
+        Language.CN: "Dracthyr",
+        Language.BR: "Dracthyr",
+    },
+)
 GOBLIN = Race(
     HORDE,
     "Goblin",
@@ -423,6 +455,7 @@ ZANDALARITROLL = Race(
 
 RACES = (
     DARKIRONDWARF,
+    DRACTHYR_ALLIANCE,
     DRAENEI,
     DWARF,
     GNOME,
@@ -435,6 +468,7 @@ RACES = (
     WORGEN,
     VOIDELF,
     BLOODELF,
+    DRACTHYR_HORDE,
     GOBLIN,
     HIGHMOUNTAINTAUREN,
     MAGHARORC,
