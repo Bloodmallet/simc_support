@@ -77,8 +77,8 @@ class TalentTree:
     def __init__(
         self, talents: typing.Tuple[Talent, ...], ranks: typing.Tuple[int, ...]
     ) -> None:
-        self.talents: typing.Tuple[Talent] = talents
-        self.ranks: typing.Tuple[int] = ranks
+        self.talents: typing.Tuple[Talent, ...] = talents
+        self.ranks: typing.Tuple[int, ...] = ranks
 
     def rank_talents(self) -> typing.Iterable[typing.Tuple[int, Talent]]:
         return zip(self.ranks, self.talents)
@@ -524,7 +524,7 @@ def _load_talents(
         # spec tree
         spec_nodes: typing.List[TreeNode] = []
         for raw_node in loaded_talents[spec]["specNodes"]:
-            talents: typing.List[Talent] = []
+            talents = []
             for raw_talent in raw_node["entries"]:
                 try:
                     talents.append(
@@ -631,21 +631,25 @@ class TopologicalSort:
         self.tree: Tree = Tree(tuple(self.nodes))
 
     def is_compact_tree(self, tree: Tree) -> bool:
-        specifiers = set()
+        specifiers_id = set()
+        specifiers_name = set()
+        specifiers_talent = set()
         for node in tree.tree_nodes:
-            if node.id in specifiers:
+            if node.id in specifiers_id:
                 return False
             else:
-                specifiers.add(node.id)
-            if node.name in specifiers:
+                specifiers_id.add(node.id)
+
+            if node.name in specifiers_name:
                 return False
             else:
-                specifiers.add(node.name)
+                specifiers_name.add(node.name)
+
             for talent in node.talents:
-                if talent in specifiers:
+                if talent in specifiers_talent:
                     return False
                 else:
-                    specifiers.add(talent)
+                    specifiers_talent.add(talent)
         return True
 
     def _create_ranks(self, *, node: TreeNode) -> typing.List[TreeNode]:
@@ -748,7 +752,7 @@ class TopologicalSort:
 
         next_nodes = deque([n for n, count in parent_count.items() if count == 0])
         # stack of first value chosen at a position k in the topological sort
-        bases = []
+        bases: typing.List[TreeNode] = []
         current_sort: typing.List[TreeNode] = []
 
         # TODO: add gate restrictions

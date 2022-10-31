@@ -10,7 +10,7 @@ class Season(enum.Enum):
     def get_seasons_from_instance(
         instance: typing.Optional[Instance],
     ) -> typing.List["Season"]:
-        seasons = []
+        seasons: typing.List[Season] = []
 
         if instance is None:
             return seasons

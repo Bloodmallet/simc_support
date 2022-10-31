@@ -1,7 +1,7 @@
 import abc
 import typing
 
-from update.utils import ArgsObject, LOCALE_TABLES, dbc
+from simc_support.update.utils import ArgsObject, LOCALE_TABLES, dbc
 
 
 class Extractor(abc.ABC):

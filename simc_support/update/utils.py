@@ -301,7 +301,7 @@ def casc(args: ArgsObject) -> None:
         rc = process.poll()
         if rc != 0:
             logger.error(
-                f"Error occurred while loading {locale}. {process.communicate()[1]}"
+                f"Error occurred while loading {locale}. {process.communicate()[1]}"  # type: ignore
             )
 
     logger.info("Downloaded files")

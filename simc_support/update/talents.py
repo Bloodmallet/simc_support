@@ -107,7 +107,7 @@ import os
 import requests
 import json
 
-from update.utils import (
+from .utils import (
     ArgsObject,
     _LOCALES,
     collect_localizations,
@@ -116,7 +116,7 @@ from update.utils import (
     LOCALE_TABLES,
     safely_convert_to,
 )
-from update.extractor import Extractor
+from .extractor import Extractor
 
 logger = logging.getLogger(__name__)
 

@@ -524,7 +524,7 @@ def _load_talents(
         # spec tree
         spec_nodes: typing.List[TreeNode] = []
         for raw_node in loaded_talents[spec]["specNodes"]:
-            talents: typing.List[Talent] = []
+            talents = []
             for raw_talent in raw_node["entries"]:
                 try:
                     talents.append(
@@ -563,3 +563,8 @@ def _load_talents(
 
 
 TREES: typing.Dict[str, typing.Tuple[Tree, Tree]] = _load_talents(_load_talent_files())
+
+# Blizzard talent string sources:
+#
+# https://github.com/Gethe/wow-ui-source/blob/beta/Interface/AddOns/Blizzard_ClassTalentUI/Blizzard_ClassTalentImportExport.lua
+# https://github.com/simulationcraft/simc/blob/dragonflight/engine/player/player.cpp#L2469

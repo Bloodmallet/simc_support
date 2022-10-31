@@ -5,7 +5,7 @@ import os
 import typing
 
 from .extractor import Extractor, LOCALE_TABLES
-from update.utils import collect_localizations, safely_convert_to, DATA_PATH
+from .utils import collect_localizations, safely_convert_to, DATA_PATH
 
 logger = logging.getLogger(__name__)
 
@@ -38,25 +38,11 @@ def _is_trinket(item: dict) -> bool:
     return item.get("inv_type") == 12
 
 
-def _is_gte_uncommon(item: dict) -> bool:
-    """See https://github.com/simulationcraft/simc/blob/shadowlands/engine/dbc/data_enums.hh#L369"""
-    return item.get("quality", -1) >= 2
-
-
-def _get_expansion(item: dict) -> Expansion:
-    return Expansion(item["id_expansion"])
-
-
 def _is_wanted(item: dict) -> bool:
     return (
         item.get("id") in WANTED_ITEM_IDS_OR_NAMES
         or item.get("name") in WANTED_ITEM_IDS_OR_NAMES
     )
-
-
-def _get_relevant_expansions() -> typing.List[Expansion]:
-    return [expansion for expansion in Expansion]
-    return [expansion for expansion in Expansion if expansion >= MIN_RELEVANT_EXPANSION]
 
 
 def _wanted_trinket(item: dict) -> bool:
@@ -72,7 +58,7 @@ def _wanted_trinket(item: dict) -> bool:
 
 def _get_id_encounter(item_id: int, encounter_items: dict) -> typing.Optional[int]:
     if encounter_item := encounter_items.get(item_id):
-        return encounter_item[0]["id_encounter"]
+        return int(encounter_item[0]["id_encounter"])
     return None
 
 
@@ -82,7 +68,7 @@ def _get_id_journal_instance(
     if not id_encounter:
         return None
     if encounter := encounters.get(id_encounter):
-        return encounter[0]["id_journal_instance"]
+        return int(encounter[0]["id_journal_instance"])
     return None
 
 
@@ -92,13 +78,13 @@ def _get_id_map(
     if not id_journal_instance:
         return None
     if map := instances.get(id_journal_instance):
-        return map[0]["map"]
+        return int(map[0]["map"])
     return None
 
 
 def _get_instance_type(id_map: int, maps: dict) -> typing.Optional[int]:
     if map := maps.get(id_map):
-        return map[0]["instance_type"]
+        return int(map[0]["instance_type"])
     return None
 
 
@@ -150,16 +136,17 @@ class TrinketExtractor(Extractor):
         # _itemxitemeffects = _create_id_dict_from_table(
         #     data["ItemXItemEffect"][US], "id_parent"
         # )
-        itemxitemeffects = {}
+        itemxitemeffects: typing.Dict[int, typing.List[typing.Dict]] = {}
         for effect in data["ItemXItemEffect"][US]:
-            if effect["id_parent"] in itemxitemeffects:
-                itemxitemeffects[effect["id_parent"]].append(
-                    itemeffects[effect["id_item_effect"]][0]
-                )
-            else:
-                itemxitemeffects[effect["id_parent"]] = [
-                    itemeffects[effect["id_item_effect"]][0]
-                ]
+            if isinstance(effect["id_parent"], int):
+                if effect["id_parent"] in itemxitemeffects:
+                    itemxitemeffects[effect["id_parent"]].append(
+                        itemeffects[effect["id_item_effect"]][0]
+                    )
+                else:
+                    itemxitemeffects[effect["id_parent"]] = [
+                        itemeffects[effect["id_item_effect"]][0]
+                    ]
 
         logger.info("id_dict: JournalEncounterItem")
         journal_encounter_items = _create_id_dict_from_table(
