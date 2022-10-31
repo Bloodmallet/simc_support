@@ -1,8 +1,10 @@
 import typing
+from simc_support.game_data.Source import Source
+from simc_support.game_data.Season import Season
+from simc_support.game_data.Instance import RaidTier
 
 # these values are used throughout the code to determine itemlevel "borders" of items
 # usually used as a catch up mechanic, drops usually all items from previous content
-TRADER_TOKEN = -1
 WORLD_QUEST_ITEMLEVELS = [
     144,
     148,
@@ -10,7 +12,7 @@ WORLD_QUEST_ITEMLEVELS = [
     171,
     200,
     213,
-]  # guess
+]
 CALLINGS = WORLD_QUEST_ITEMLEVELS
 
 KORTHIA = [200, 207, 213, 220, 226, 233]
@@ -139,4 +141,43 @@ RARE_MOB = {
         155,
         164,
     ]
+}
+
+"""Source > Season
+"""
+ITEM_LEVELS = {
+    Source.CALLING: {Season.SEASON_1: []},
+    Source.MISSION: {Season.SEASON_1: []},
+    Source.PROFESSION: {Season.SEASON_1: []},
+    Source.PVP: {Season.SEASON_1: [408, 424]},  # split into aspirant and gladiator
+    Source.RARE_MOB: {Season.SEASON_1: []},
+    Source.WORLD_BOSS: {Season.SEASON_1: [389]},
+    Source.WORLD_DROP: {Season.SEASON_1: []},
+    Source.WORLD_QUEST: {Season.SEASON_1: []},
+    Source.DUNGEON: {
+        Season.SEASON_1: [
+            376,
+            379,
+            382,
+            385,
+            389,
+            392,
+            395,
+            398,
+            402,
+            405,
+            408,
+            411,
+            415,
+            418,
+            421,
+        ]
+    },
+    Source.RAID: {
+        Season.SEASON_1: {
+            RaidTier.LOW: [376, 389, 402, 415],
+            RaidTier.MID: [382, 395, 408, 421],
+            RaidTier.HIGH: [385, 398, 411, 424],
+        }
+    },
 }

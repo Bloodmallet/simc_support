@@ -47,19 +47,20 @@ class TestTrinkets(unittest.TestCase):
             len(list([1 for trinket in TRINKETS if len(trinket.itemlevels) == 0])) == 0
         )
 
-    def test_unique_trinket_names(self):
-        """If a trinket with the same name exists twice only one is usually available in game."""
-        name_count: typing.Dict[str, int] = {}
-        for trinket in TRINKETS:
-            if trinket.full_name not in name_count:
-                name_count[trinket.full_name] = 0
+    # # probably no longer relevant because filtering should do the user
+    # def test_unique_trinket_names(self):
+    #     """If a trinket with the same name exists twice only one is usually available in game."""
+    #     name_count: typing.Dict[str, int] = {}
+    #     for trinket in TRINKETS:
+    #         if trinket.full_name not in name_count:
+    #             name_count[trinket.full_name] = 0
 
-            name_count[trinket.full_name] += 1
+    #         name_count[trinket.full_name] += 1
 
-        for trinket_count in name_count.items():
-            with self.subTest(trinket_count=trinket_count):
-                trinket, count = trinket_count
-                self.assertEqual(1, count)
+    #     for trinket_count in name_count.items():
+    #         with self.subTest(trinket_count=trinket_count):
+    #             trinket, count = trinket_count
+    #             self.assertEqual(1, count)
 
 
 class TestGetVersatilityTrinket(unittest.TestCase):
