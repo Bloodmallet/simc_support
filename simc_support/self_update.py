@@ -16,7 +16,6 @@ from .update.utils import (
     casc,
     get_compiled_data_path,
     collect_localizations,
-    safely_convert_to,
 )
 from .update.talents import TalentLoader
 from .update.trinkets import TrinketExtractor
@@ -82,50 +81,6 @@ def update_wow_classes(args: ArgsObject) -> None:
     logger.info(f"Updated {len(wow_classes)} WowClasses")
 
 
-def update_legendaries(args: ArgsObject) -> None:
-    logger.info("Update legendaries")
-
-    RUNEFORGELEGENDARYABILITY = "RuneforgeLegendaryAbility"
-    SPECSETMEMBER = "SpecSetMember"
-
-    dbc(
-        args,
-        [
-            RUNEFORGELEGENDARYABILITY,
-            SPECSETMEMBER,
-        ],
-    )
-    data = {
-        RUNEFORGELEGENDARYABILITY: {},
-        SPECSETMEMBER: {},
-    }
-    for key in data:
-        for locale in _LOCALES:
-            with open(
-                os.path.join(get_compiled_data_path(args, locale), f"{key}.json"),
-                "r",
-            ) as f:
-                data[key][locale] = json.load(f)
-
-    legendaries = collect_localizations(data[RUNEFORGELEGENDARYABILITY])
-    specs = data[SPECSETMEMBER][_LOCALES[0]]
-
-    for legendary in legendaries:
-
-        legendary["spec_ids"] = list(
-            [
-                safely_convert_to(spec["id_spec"], int, -1)
-                for spec in specs
-                if spec["id_parent"] == legendary["id_spec_set"]
-            ]
-        )
-
-    with open(os.path.join(DATA_PATH, "legendaries.json"), "w", encoding="utf-8") as f:
-        json.dump(legendaries, f, ensure_ascii=False)
-
-    logger.info(f"Updated {len(legendaries)} legendaries")
-
-
 def main() -> None:
     args = handle_arguments()
     if args.debug:
@@ -134,9 +89,7 @@ def main() -> None:
     casc(args)
 
     updates: typing.List[typing.Callable[[ArgsObject], None]] = [
-        # update_trinkets,
         # update_wow_classes,
-        # update_legendaries,
     ]
     for update in updates:
         update(args)
