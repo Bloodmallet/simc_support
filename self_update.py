@@ -8,8 +8,8 @@ import json
 import logging
 import os
 import typing
-from .update.extractor import Extractor
-from .update.utils import (
+from simc_support.update.extractor import Extractor
+from simc_support.update.utils import (
     ArgsObject,
     handle_arguments,
     dbc,
@@ -17,8 +17,8 @@ from .update.utils import (
     get_compiled_data_path,
     collect_localizations,
 )
-from .update.talents import TalentLoader
-from .update.trinkets import TrinketExtractor
+from simc_support.update.talents import TalentLoader
+from simc_support.update.trinkets import TrinketExtractor
 
 
 logger = logging.getLogger()
@@ -96,7 +96,7 @@ def main() -> None:
 
     extractors: typing.List[typing.Type[Extractor]] = [
         TalentLoader,
-        TrinketExtractor,
+        # TrinketExtractor,
     ]
     for extractor in extractors:
         extractor(args).extract()
