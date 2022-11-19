@@ -45,21 +45,12 @@ class WowSpec(SimcObject):
             raise ValueError(f"Unknown stat '{stat}'")
         self.stat: Stat = stat
 
-        self.talent_trees = self._get_talent_trees()
-        if self.talent_trees:
-            self.class_tree: typing.Optional[Tree] = self.talent_trees[0]
-            self.spec_tree: typing.Optional[Tree] = self.talent_trees[1]
-        else:
-            self.class_tree = None
-            self.spec_tree = None
+        tree_info = TREES[self.wow_class.simc_name + "_" + self.simc_name]
 
-    def _get_talent_trees(self) -> typing.Optional[typing.Tuple[Tree, Tree]]:
-        """Get class and spec talent trees
-
-        Returns:
-            typing.Tuple[Tree, Tree]: (class Tree, spec Tree)
-        """
-        return TREES.get(self.wow_class.simc_name + "_" + self.simc_name)
+        self.talent_trees: tuple[Tree, Tree] = (tree_info[0], tree_info[1])
+        self.class_tree: Tree = self.talent_trees[0]
+        self.spec_tree: Tree = self.talent_trees[1]
+        self.full_node_order: typing.List[int] = tree_info[0].full_node_order
 
     def __repr__(self) -> str:
         return " ".join([super().__repr__(), self.wow_class.__repr__()])
