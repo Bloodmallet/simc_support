@@ -96,7 +96,7 @@ def main() -> None:
 
     extractors: typing.List[typing.Type[Extractor]] = [
         TalentLoader,
-        # TrinketExtractor,
+        TrinketExtractor,
     ]
     for extractor in extractors:
         extractor(args).extract()
