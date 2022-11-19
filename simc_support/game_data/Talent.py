@@ -198,7 +198,7 @@ class Tree:
         self,
         spec_id: int,
         tree_nodes: typing.Tuple[TreeNode, ...],
-        full_node_order: list[int],
+        full_node_order: typing.List[int],
     ) -> None:
         self.spec_id: int = spec_id
         self.tree_nodes: typing.Tuple[TreeNode, ...] = tree_nodes
@@ -550,7 +550,7 @@ def get_trees_by_spec_id(spec_id: int) -> tuple[Tree, Tree]:
     raise ValueError(f"No trees found for spec with id '{spec_id}'.")
 
 
-def get_nodes_from_wow_export_string(wow_export_string: str) -> list[TreeNode]:
+def get_nodes_from_wow_export_string(wow_export_string: str) -> typing.List[TreeNode]:
     # .\engine\player\player.cpp:2470
     BASE64_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
     # hardcoded values from Interface/AddOns/Blizzard_ClassTalentUI/Blizzard_ClassTalentImportExport.lua
@@ -568,19 +568,19 @@ def get_nodes_from_wow_export_string(wow_export_string: str) -> list[TreeNode]:
     # hardcoded value from Interface/SharedXML/ExportUtil.lua
     BYTE_SIZE = 6
 
-    def convert_into_indexes(string: str) -> list[int]:
+    def convert_into_indexes(string: str) -> typing.List[int]:
         numbers = []
         for letter in string:
             numbers.append(BASE64_CHARS.index(letter))
         return numbers
 
-    def convert_into_bin(numbers: list[int]) -> list[str]:
+    def convert_into_bin(numbers: typing.List[int]) -> typing.List[str]:
         bins = []
         for number in numbers:
             bins.append(f"{number:06b}")
         return bins
 
-    def extract_version(inverse_binary_strings: list[str]) -> int:
+    def extract_version(inverse_binary_strings: typing.List[str]) -> int:
         """
         Description:
         so the header starts <version:8bit>|<specid:16bit>, which encoded for balance druid (version 1|spec 102) is BYGA. base64decoded into binary that gives
@@ -605,7 +605,7 @@ def get_nodes_from_wow_export_string(wow_export_string: str) -> list[TreeNode]:
         bits = bin_string[-VERSION_BITS:]
         return int(bits, 2)
 
-    def extract_spec_id(inverse_binary_strings: list[str]) -> int:
+    def extract_spec_id(inverse_binary_strings: typing.List[str]) -> int:
         """
         Description:
         so the header starts <version:8bit>|<specid:16bit>, which encoded for balance druid (version 1|spec 102) is BYGA. base64decoded into binary that gives
@@ -675,7 +675,7 @@ def get_nodes_from_wow_export_string(wow_export_string: str) -> list[TreeNode]:
             return self.node.talents[self.talent_index]
 
         def _get_tree_node_by_node_id(
-            self, node_id: int, nodes: list[TreeNode]
+            self, node_id: int, nodes: typing.List[TreeNode]
         ) -> TreeNode:
             for node in nodes:
                 if node.id == node_id:
@@ -683,14 +683,16 @@ def get_nodes_from_wow_export_string(wow_export_string: str) -> list[TreeNode]:
                     return node
             raise ValueError(f"TreeNode for ID {node_id} was not found in spec.")
 
-    def extract_talent_info(inverse_binary_strings: list[str]) -> list[str]:
+    def extract_talent_info(
+        inverse_binary_strings: typing.List[str],
+    ) -> typing.List[str]:
         """_summary_
 
         Args:
-            inverse_binary_strings (list[str]): _description_
+            inverse_binary_strings (typing.List[str]): _description_
 
         Returns:
-            list[str]: list of 11 bit strings, e.g. ["00000000000", "10000000000"]
+            typing.List[str]: list of 11 bit strings, e.g. ["00000000000", "10000000000"]
         """
 
         def yield_info(info_string: str) -> typing.Generator[str, str, None]:
@@ -747,9 +749,9 @@ def get_nodes_from_wow_export_string(wow_export_string: str) -> list[TreeNode]:
         return info
 
     def get_extracted_nodes(
-        talent_info: list[str], trees: tuple[Tree, Tree]
-    ) -> list[ExtractedNode]:
-        talents: list[ExtractedNode] = []
+        talent_info: typing.List[str], trees: tuple[Tree, Tree]
+    ) -> typing.List[ExtractedNode]:
+        talents: typing.List[ExtractedNode] = []
         full_node_order = trees[0].full_node_order
         for info, node_id in zip(talent_info, full_node_order):
             talents.append(
