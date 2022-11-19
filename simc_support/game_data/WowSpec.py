@@ -47,7 +47,7 @@ class WowSpec(SimcObject):
 
         tree_info = TREES[self.wow_class.simc_name + "_" + self.simc_name]
 
-        self.talent_trees: tuple[Tree, Tree] = (tree_info[0], tree_info[1])
+        self.talent_trees: typing.Tuple[Tree, Tree] = (tree_info[0], tree_info[1])
         self.class_tree: Tree = self.talent_trees[0]
         self.spec_tree: Tree = self.talent_trees[1]
         self.full_node_order: typing.List[int] = tree_info[0].full_node_order
