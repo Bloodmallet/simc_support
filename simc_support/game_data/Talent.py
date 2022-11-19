@@ -535,14 +535,14 @@ TREES: typing.Dict[str, typing.Tuple[Tree, Tree]] = _load_talents(_load_talent_f
 # https://github.com/simulationcraft/simc/blob/dragonflight/engine/player/player.cpp#L2469
 
 
-def get_trees_by_spec_id(spec_id: int) -> tuple[Tree, Tree]:
+def get_trees_by_spec_id(spec_id: int) -> typing.Tuple[Tree, Tree]:
     """_summary_
 
     Args:
         spec_id (int): _description_
 
     Returns:
-        tuple[Tree, Tree]: class_tree, spec_tree
+        typing.Tuple[Tree, Tree]: class_tree, spec_tree
     """
     for class_tree, spec_tree in TREES.values():
         if class_tree.spec_id == spec_id:
@@ -634,7 +634,7 @@ def get_nodes_from_wow_export_string(wow_export_string: str) -> typing.List[Tree
     class ExtractedNode:
         node_id: int
         talent_info: str
-        trees: tuple[Tree, Tree]
+        trees: typing.Tuple[Tree, Tree]
 
         @property
         def is_selected(self) -> bool:
@@ -749,7 +749,7 @@ def get_nodes_from_wow_export_string(wow_export_string: str) -> typing.List[Tree
         return info
 
     def get_extracted_nodes(
-        talent_info: typing.List[str], trees: tuple[Tree, Tree]
+        talent_info: typing.List[str], trees: typing.Tuple[Tree, Tree]
     ) -> typing.List[ExtractedNode]:
         talents: typing.List[ExtractedNode] = []
         full_node_order = trees[0].full_node_order
