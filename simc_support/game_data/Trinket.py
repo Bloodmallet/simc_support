@@ -238,7 +238,7 @@ class Trinket:
         ]
 
         # add special cases here
-        special_cases = {}
+        special_cases: typing.Dict[str, typing.Dict[Season, typing.List[int]]] = {}
 
         for season in self.seasons:
             if self.full_name in special_cases.keys():
