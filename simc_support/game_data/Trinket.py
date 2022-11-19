@@ -238,28 +238,29 @@ class Trinket:
         ]
 
         # add special cases here
-        special_cases = {
-            "Spiritual Alchemy Stone": {
-                Season.SEASON_1: [
-                    self._trinket.ilevel,
-                    200,
-                    230,
-                    262,
-                ]
-            }
-        }
+        special_cases: typing.Dict[str, typing.Dict[Season, typing.List[int]]] = {}
 
         for season in self.seasons:
             if self.full_name in special_cases.keys():
                 levels += special_cases[self.full_name][season]
 
-            if self.source == Source.RAID:
+            elif self.source == Source.RAID:
                 levels += ItemLevel.ITEM_LEVELS[self.source][season][  # type: ignore
                     self.raid_tier
                 ]
 
-            if self.source in (Source.CALLING, Source.PVP, Source.DUNGEON):
+            elif self.source in (Source.CALLING, Source.PVP, Source.DUNGEON):
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
+
+            elif self.source == Source.PROFESSION:
+                levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
+                epic_cutoff = 382
+                if "Darkmoon Deck:" in self.full_name:
+                    levels = [level for level in levels if level < epic_cutoff]
+                elif "Darkmoon Deck Box:" in self.full_name:
+                    levels = [level for level in levels if level >= epic_cutoff]
+                elif "Idol of the" in self.full_name:
+                    levels = [level for level in levels if level < epic_cutoff]
 
         if self.source == Source.PROFESSION:
             levels += [
@@ -416,9 +417,12 @@ class Trinket:
         if seasons_:
             return seasons_
 
-        if self.source == Source.WORLD_BOSS:
-            return [Season.SEASON_1]
+        if self.expansion == Expansion.DRAGONFLIGHT:
+            if self.source == Source.WORLD_BOSS:
+                return [Season.SEASON_1]
 
+            if self.source == Source.PROFESSION and "zzOld" not in self.full_name:
+                return [Season.SEASON_1]
         # TODO: add more logic to present more trinkets as season trinkets
 
         return []

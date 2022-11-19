@@ -1,6 +1,30 @@
 import typing
 
 
+def convert_to_simc_string(normal_string: str) -> str:
+    """Converts a normal name into a simc_name.
+
+    Args:
+        normal_string (str): "My Awesome'st Name Ever"
+
+    Returns:
+        str: "my_awesomest_name_ever"
+    """
+    simc_name = normal_string.lower()
+    cleansers = (
+        (" ", "_"),
+        ("-", ""),
+        ("'", ""),
+        (":", ""),
+        (",", ""),
+    )
+
+    for cleanser in cleansers:
+        simc_name = simc_name.replace(*cleanser)
+
+    return simc_name
+
+
 class SimcObject:
     """Base class to enforce the usage of full_name for the User and
     simc_names in the background for SimulationCraft.
@@ -21,19 +45,7 @@ class SimcObject:
         if self._simc_name:
             return self._simc_name
 
-        simc_name = self.full_name.lower()
-        cleansers = (
-            (" ", "_"),
-            ("-", ""),
-            ("'", ""),
-            (":", ""),
-            (",", ""),
-        )
-
-        for cleanser in cleansers:
-            simc_name = simc_name.replace(*cleanser)
-
-        self._simc_name = simc_name
+        self._simc_name = convert_to_simc_string(self.full_name)
 
         return self._simc_name
 

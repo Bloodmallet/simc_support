@@ -6,9 +6,10 @@ import enum
 import datetime
 import logging
 import itertools
+import dataclasses
 
 from simc_support.game_data.Language import Translation, _get_translations
-from simc_support.game_data.SimcObject import SimcObject
+from simc_support.game_data.SimcObject import SimcObject, convert_to_simc_string
 
 logger = logging.getLogger(__name__)
 
@@ -74,6 +75,10 @@ class Talent:
         self.spell_id: int = spell_id
         self.icon: str = icon
 
+    @property
+    def simc_name(self) -> str:
+        return convert_to_simc_string(self.name)
+
 
 class TreeNodeType(enum.Enum):
     SINGLE = "single"
@@ -113,6 +118,7 @@ class TreeNode:
         "parents",
         "children",
         "talents",
+        "order_index",
     )
 
     def __init__(
@@ -129,6 +135,7 @@ class TreeNode:
         parent_ids: typing.Tuple[ID, ...] = tuple(),
         children_ids: typing.Tuple[ID, ...] = tuple(),
         talents: typing.Tuple[Talent, ...],
+        order_index: int,
     ) -> None:
         self.id: ID = id
         self.name: str = name
@@ -142,8 +149,10 @@ class TreeNode:
         self.parent_ids: typing.Tuple[ID, ...] = parent_ids
         self.children_ids: typing.Tuple[ID, ...] = children_ids
         self.talents: typing.Tuple[Talent, ...] = talents
+        # order_index repesents the index in a wow talent export string
+        self.order_index: int = order_index
 
-        # index within a talent list of a tree
+        # index within a talent list of a Tree
         self.index: int = -1
         self.parents: typing.Tuple["TreeNode", ...] = tuple()
         self.children: typing.Tuple["TreeNode", ...] = tuple()
@@ -179,78 +188,23 @@ class TreeNode:
 
 
 class Tree:
-    __slots__ = ("tree_nodes",)
+    __slots__ = (
+        "spec_id",
+        "tree_nodes",
+        "full_node_order",
+    )
 
-    def __init__(self, tree_nodes: typing.Tuple[TreeNode, ...]) -> None:
+    def __init__(
+        self,
+        spec_id: int,
+        tree_nodes: typing.Tuple[TreeNode, ...],
+        full_node_order: typing.List[int],
+    ) -> None:
+        self.spec_id: int = spec_id
         self.tree_nodes: typing.Tuple[TreeNode, ...] = tree_nodes
+        self.full_node_order = full_node_order
 
         self._tree_nodes_post_init()
-
-    @staticmethod
-    def create_ranks(
-        *,
-        id: int,
-        name: str,
-        tree_node_type: TreeNodeType,
-        x: int,
-        y: int,
-        max_rank: int,
-        required_invested_points: int = 0,
-        children_ids: typing.Tuple[ID, ...] = tuple(),
-        talents: typing.Tuple[Talent, ...] = tuple(),
-    ) -> typing.Tuple[TreeNode, ...]:
-        """Try to not use this...instead try to work with paths that have multi-ranks"""
-
-        tree_nodes: typing.List[TreeNode] = []
-
-        for rank in range(max_rank, 0, -1):
-            if rank == 1:
-                tree_nodes.append(
-                    TreeNode(
-                        id=id,
-                        name=name,
-                        tree_node_type=tree_node_type,
-                        required_invested_points=required_invested_points,
-                        children_ids=children_ids,
-                        rank=rank,
-                        max_rank=max_rank,
-                        x=x,
-                        y=y,
-                        talents=talents,
-                    )
-                )
-            elif rank == max_rank:
-                tree_nodes.append(
-                    TreeNode(
-                        id=id,
-                        name=name,
-                        tree_node_type=tree_node_type,
-                        required_invested_points=-1,
-                        children_ids=children_ids,
-                        rank=rank,
-                        max_rank=max_rank,
-                        x=x,
-                        y=y,
-                        talents=talents,
-                    )
-                )
-            else:
-                tree_nodes.append(
-                    TreeNode(
-                        id=id,
-                        name=name,
-                        tree_node_type=tree_node_type,
-                        required_invested_points=-1,
-                        children_ids=children_ids,
-                        max_rank=max_rank,
-                        x=x,
-                        y=y,
-                        talents=talents,
-                        rank=rank,
-                    )
-                )
-
-        return tuple(tree_nodes)
 
     def _tree_nodes_post_init(self) -> None:
         """Builds links between all TreeNodes and their parents and children
@@ -484,6 +438,7 @@ def _load_talents(
     trees: typing.Dict[str, typing.Tuple[Tree, Tree]] = {}
 
     for spec in loaded_talents.keys():
+        order = loaded_talents[spec]["fullNodeOrder"]
         # class_tree
         class_nodes: typing.List[TreeNode] = []
         for raw_node in loaded_talents[spec]["classNodes"]:
@@ -515,6 +470,7 @@ def _load_talents(
                         max_rank=raw_node["maxRanks"],
                         children_ids=tuple(raw_node["next"]),
                         talents=tuple(talents),
+                        order_index=order.index(raw_node["id"]),
                     )
                 )
             except ValueError as e:
@@ -551,11 +507,20 @@ def _load_talents(
                     max_rank=raw_node["maxRanks"],
                     children_ids=tuple(raw_node["next"]),
                     talents=tuple(talents),
+                    order_index=order.index(raw_node["id"]),
                 )
             )
 
-        class_tree = Tree(tree_nodes=tuple(class_nodes))
-        spec_tree = Tree(tree_nodes=tuple(spec_nodes))
+        class_tree = Tree(
+            spec_id=loaded_talents[spec]["specId"],
+            tree_nodes=tuple(class_nodes),
+            full_node_order=order,
+        )
+        spec_tree = Tree(
+            spec_id=loaded_talents[spec]["specId"],
+            tree_nodes=tuple(spec_nodes),
+            full_node_order=order,
+        )
 
         trees[spec] = (class_tree, spec_tree)
 
@@ -568,3 +533,255 @@ TREES: typing.Dict[str, typing.Tuple[Tree, Tree]] = _load_talents(_load_talent_f
 #
 # https://github.com/Gethe/wow-ui-source/blob/beta/Interface/AddOns/Blizzard_ClassTalentUI/Blizzard_ClassTalentImportExport.lua
 # https://github.com/simulationcraft/simc/blob/dragonflight/engine/player/player.cpp#L2469
+
+
+def get_trees_by_spec_id(spec_id: int) -> typing.Tuple[Tree, Tree]:
+    """_summary_
+
+    Args:
+        spec_id (int): _description_
+
+    Returns:
+        typing.Tuple[Tree, Tree]: class_tree, spec_tree
+    """
+    for class_tree, spec_tree in TREES.values():
+        if class_tree.spec_id == spec_id:
+            return (class_tree, spec_tree)
+    raise ValueError(f"No trees found for spec with id '{spec_id}'.")
+
+
+def get_nodes_from_wow_export_string(wow_export_string: str) -> typing.List[TreeNode]:
+    # .\engine\player\player.cpp:2470
+    BASE64_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+    # hardcoded values from Interface/AddOns/Blizzard_ClassTalentUI/Blizzard_ClassTalentImportExport.lua
+    LOADOUT_SERIALIZATION_VERSION = 1
+    # serialization version
+    VERSION_BITS = 8
+    # specialization id
+    SPEC_BITS = 16
+    # C_Traits.GetTreeHash(), optionally can be 0-filled
+    TREE_BITS = 128
+    # ranks purchased if node is partially filled
+    RANK_BITS = 6
+    # choice index, 0-based
+    CHOICE_BITS = 2
+    # hardcoded value from Interface/SharedXML/ExportUtil.lua
+    BYTE_SIZE = 6
+
+    def convert_into_indexes(string: str) -> typing.List[int]:
+        numbers = []
+        for letter in string:
+            numbers.append(BASE64_CHARS.index(letter))
+        return numbers
+
+    def convert_into_bin(numbers: typing.List[int]) -> typing.List[str]:
+        bins = []
+        for number in numbers:
+            bins.append(f"{number:06b}")
+        return bins
+
+    def extract_version(inverse_binary_strings: typing.List[str]) -> int:
+        """
+        Description:
+        so the header starts <version:8bit>|<specid:16bit>, which encoded for balance druid (version 1|spec 102) is BYGA. base64decoded into binary that gives
+        ```
+        binary:   000001 011000 000110 000000
+        position: 123456 789012 345678 901234
+        ```
+
+        but when contructing the first 8bit they take bits 11 & 12 then concat bits 1->6, so it looks like
+        ```
+        binary:   00 000001 = 1
+        position: 12 123456
+        ```
+
+        Args:
+            binary_string (str): _description_
+
+        Returns:
+            int: _description_
+        """
+        bin_string = "".join(inverse_binary_strings)
+        bits = bin_string[-VERSION_BITS:]
+        return int(bits, 2)
+
+    def extract_spec_id(inverse_binary_strings: typing.List[str]) -> int:
+        """
+        Description:
+        so the header starts <version:8bit>|<specid:16bit>, which encoded for balance druid (version 1|spec 102) is BYGA. base64decoded into binary that gives
+        ```
+        binary:   000001 011000 000110 000000
+        position: 123456 789012 345678 901234
+        ```
+
+        then for the next 16 bits they starts from bit 19->24, then 13->18, then 7->10
+        ```
+        binary:   000000 000110 0110 = 102
+        position: 901234 345678 7890
+        ```
+
+        Args:
+            binary_string (str): _description_
+
+        Returns:
+            int: _description_
+        """
+        bin_string = "".join(inverse_binary_strings)
+        bits = bin_string[-SPEC_BITS - VERSION_BITS : -VERSION_BITS]
+        return int(bits, 2)
+
+    @dataclasses.dataclass
+    class ExtractedNode:
+        node_id: int
+        talent_info: str
+        trees: typing.Tuple[Tree, Tree]
+
+        @property
+        def is_selected(self) -> bool:
+            return self.talent_info[0] == "1"
+
+        @property
+        def node(self) -> TreeNode:
+            nodes = list(self.trees[0].tree_nodes) + list(self.trees[1].tree_nodes)
+            return self._get_tree_node_by_node_id(self.node_id, nodes)
+
+        @property
+        def rank(self) -> int:
+            if not self.is_selected:
+                return 0
+            if self.talent_info[1] == "0":
+                return self.node.max_rank
+            return int(self.talent_info[2 : 2 + 6], 2)
+
+        @property
+        def is_choice_node(self) -> bool:
+            if not self.is_selected:
+                return False
+
+            choice_bit = 2 if self.talent_info[1] == "0" else 9
+
+            return self.talent_info[choice_bit] == "1"
+
+        @property
+        def talent_index(self) -> int:
+            talent_bit_start = 3 if self.talent_info[1] == "0" else 10
+            talent_bits = 2
+            return int(
+                self.talent_info[talent_bit_start : talent_bit_start + talent_bits], 2
+            )
+
+        @property
+        def talent(self) -> Talent:
+            return self.node.talents[self.talent_index]
+
+        def _get_tree_node_by_node_id(
+            self, node_id: int, nodes: typing.List[TreeNode]
+        ) -> TreeNode:
+            for node in nodes:
+                if node.id == node_id:
+                    node.rank = self.rank
+                    return node
+            raise ValueError(f"TreeNode for ID {node_id} was not found in spec.")
+
+    def extract_talent_info(
+        inverse_binary_strings: typing.List[str],
+    ) -> typing.List[str]:
+        """_summary_
+
+        Args:
+            inverse_binary_strings (typing.List[str]): _description_
+
+        Returns:
+            typing.List[str]: list of 11 bit strings, e.g. ["00000000000", "10000000000"]
+        """
+
+        def yield_info(info_string: str) -> typing.Generator[str, str, None]:
+            """
+            1 bit = is node taken?
+                1 bit = is node partial?
+                    6 bit = ranks if not full
+                1 bit = is node choice
+                    2 bit = choice index
+
+            Args:
+                info_string (str): _description_
+
+            Returns:
+                str: _description_
+            """
+            copy_str = info_string
+            while len(copy_str) > 0:
+                offset = 0
+
+                # taken?
+                offset += 1
+                talent_info = copy_str[-offset]
+                if copy_str[-offset] == "1":
+
+                    # partial?
+                    offset += 1
+                    talent_info += copy_str[-offset]
+                    if copy_str[-offset] == "1":
+                        talent_info += copy_str[-RANK_BITS - offset : -offset]
+                        offset += RANK_BITS
+
+                    # is choice node
+                    offset += 1
+                    talent_info += copy_str[-offset]
+                    if copy_str[-offset] == "1":
+                        talent_info += copy_str[-CHOICE_BITS - offset : -offset]
+                        offset += CHOICE_BITS
+
+                # print(f"yielding and offset of {offset} with string '{talent_info}'")
+                yield talent_info
+
+                copy_str = copy_str[:-offset]
+
+        bin_string = "".join(inverse_binary_strings)
+
+        talent_bin_string = bin_string[: -TREE_BITS - SPEC_BITS - VERSION_BITS]
+
+        info = []
+        for index, talent_info in enumerate(yield_info(talent_bin_string)):
+            full_talent_info = f"{talent_info:0<11}"
+            info.append(full_talent_info)
+            # print(index, full_talent_info)
+        return info
+
+    def get_extracted_nodes(
+        talent_info: typing.List[str], trees: typing.Tuple[Tree, Tree]
+    ) -> typing.List[ExtractedNode]:
+        talents: typing.List[ExtractedNode] = []
+        full_node_order = trees[0].full_node_order
+        for info, node_id in zip(talent_info, full_node_order):
+            talents.append(
+                ExtractedNode(node_id=node_id, talent_info=info, trees=trees)
+            )
+
+        return talents
+
+    indexes = convert_into_indexes(wow_export_string)
+    # print(numbers)
+    binary_strings = convert_into_bin(indexes)
+    # print(binary_strings)
+    inverse_binary_strings = binary_strings[::-1]
+    # print(inverse_binary_strings)
+
+    # unnecessary for now
+    string_version = extract_version(inverse_binary_strings)
+    # print(string_version)
+
+    spec_id = extract_spec_id(inverse_binary_strings)
+    # print(spec_id)
+
+    trees = get_trees_by_spec_id(spec_id)
+
+    talent_info = extract_talent_info(inverse_binary_strings)
+
+    nodes = get_extracted_nodes(talent_info, trees)
+
+    for node in nodes:
+        if node.is_selected:
+            print(f"{node.rank} {node.talent.name}")
+
+    return [n.node for n in nodes]
