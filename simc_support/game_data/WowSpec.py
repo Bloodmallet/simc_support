@@ -185,11 +185,11 @@ PRESERVATION = WowSpec(
     wow_class=WowClass.EVOKER,
     translations=Language.EmptyTranslation(),
     talents_blueprint="1000111",
-    raid_role=RaidRole.DD,
+    raid_role=RaidRole.HEAL,
     role=Role.RANGED,
     stat=Stat.INTELLECT,
-    full_name="Devastation",
-    simc_name="devastation",
+    full_name="Preservation",
+    simc_name="preservation",
 )
 BEASTMASTERY = WowSpec(
     id=253,

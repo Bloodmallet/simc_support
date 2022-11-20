@@ -1,13 +1,16 @@
 """Exports trinkets from simc_support to three copy= .simc files for SimulationCraft testing purpose.
 """
 import typing
+from simc_support.game_data.Season import Season
 
 from simc_support.game_data.WowSpec import get_wow_spec
 from simc_support.game_data.Trinket import get_trinkets_for_spec, Trinket
 
+EXPANSION = "dragonflight"
+
 
 def print_simc_file(trinket_list: typing.Iterable[Trinket], name: str):
-    with open("trinkets_shadowlands_" + name + ".simc", "w") as f:
+    with open(f"trinkets_{EXPANSION}_" + name + ".simc", "w") as f:
         f.write("# PROFILE FOR TESTING ONLY!\n")
         f.write(
             "# This file provides all available trinkets for {} and neutral ones.\n".format(
@@ -28,13 +31,27 @@ def print_simc_file(trinket_list: typing.Iterable[Trinket], name: str):
 
 def main():
 
-    trinkets = get_trinkets_for_spec(get_wow_spec("warrior", "arms"))
+    trinkets = [
+        t
+        for t in get_trinkets_for_spec(get_wow_spec("warrior", "arms"))
+        if Season.SEASON_1 in t.seasons
+    ]
     print_simc_file(trinkets, "str")
 
-    trinkets = get_trinkets_for_spec(get_wow_spec("hunter", "marksmanship"))
+    trinkets = [
+        t
+        for t in get_trinkets_for_spec(get_wow_spec("hunter", "marksmanship"))
+        if Season.SEASON_1 in t.seasons
+    ]
+
     print_simc_file(trinkets, "agi")
 
-    trinkets = get_trinkets_for_spec(get_wow_spec("shaman", "elemental"))
+    trinkets = [
+        t
+        for t in get_trinkets_for_spec(get_wow_spec("shaman", "elemental"))
+        if Season.SEASON_1 in t.seasons
+    ]
+
     print_simc_file(trinkets, "int")
 
 
