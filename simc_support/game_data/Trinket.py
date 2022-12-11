@@ -409,6 +409,11 @@ class Trinket:
         if self.instance not in (Instance.VAULT_OF_THE_INCARNATES,):
             return None
 
+        # special cases for rare drops
+        #   - Whispering Incarnate Icon
+        if self.item_id in (194301,):
+            return RaidTier.MID
+
         return RaidTier.get_raid_tier_from_encounter_id(self._trinket.id_encounter)
 
     @property
