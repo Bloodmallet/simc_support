@@ -32,10 +32,11 @@ class WowClass(SimcObject):
         else:
             self.translations = Language.Translation(translations=translations)
 
+_all_non_dracthyr_races = tuple([r for r in Race.RACES if r not in (Race.DRACTHYR_ALLIANCE, Race.DRACTHYR_HORDE)])
 
 DEATHKNIGHT = WowClass(
     6,
-    Race.RACES,
+    _all_non_dracthyr_races,
     Language.EmptyTranslation(),
     "Death Knight",
     "death_knight",
@@ -75,33 +76,10 @@ EVOKER = WowClass(
     "Evoker",
     "evoker",
 )
-HUNTER = WowClass(3, Race.RACES, Language.EmptyTranslation(), "Hunter", "hunter")
+HUNTER = WowClass(3, _all_non_dracthyr_races, Language.EmptyTranslation(), "Hunter", "hunter")
 MAGE = WowClass(
     8,
-    (
-        Race.DRAENEI,
-        Race.DWARF,
-        Race.GNOME,
-        Race.HUMAN,
-        Race.NIGHTELF,
-        Race.PANDAREN_ALLIANCE,
-        Race.WORGEN,
-        Race.VOIDELF,
-        Race.LIGHTFORGEDDRAENEI,
-        Race.DARKIRONDWARF,
-        Race.KULTIRAN,
-        Race.MECHAGNOME,
-        Race.BLOODELF,
-        Race.GOBLIN,
-        Race.ORC,
-        Race.PANDAREN_HORDE,
-        Race.TROLL,
-        Race.UNDEAD,
-        Race.NIGHTBORNE,
-        Race.MAGHARORC,
-        Race.ZANDALARITROLL,
-        Race.VULPERA,
-    ),
+    _all_non_dracthyr_races,
     Language.EmptyTranslation(),
     "Mage",
     "mage",
@@ -153,58 +131,14 @@ PALADIN = WowClass(
 )
 PRIEST = WowClass(
     5,
-    (
-        Race.DRAENEI,
-        Race.DWARF,
-        Race.GNOME,
-        Race.HUMAN,
-        Race.NIGHTELF,
-        Race.PANDAREN_ALLIANCE,
-        Race.WORGEN,
-        Race.VOIDELF,
-        Race.LIGHTFORGEDDRAENEI,
-        Race.DARKIRONDWARF,
-        Race.KULTIRAN,
-        Race.MECHAGNOME,
-        Race.BLOODELF,
-        Race.GOBLIN,
-        Race.PANDAREN_HORDE,
-        Race.TAUREN,
-        Race.TROLL,
-        Race.UNDEAD,
-        Race.NIGHTBORNE,
-        Race.MAGHARORC,
-        Race.ZANDALARITROLL,
-        Race.VULPERA,
-    ),
+    _all_non_dracthyr_races,
     Language.EmptyTranslation(),
     "Priest",
     "priest",
 )
 ROGUE = WowClass(
     4,
-    (
-        Race.DWARF,
-        Race.GNOME,
-        Race.HUMAN,
-        Race.NIGHTELF,
-        Race.PANDAREN_ALLIANCE,
-        Race.WORGEN,
-        Race.VOIDELF,
-        Race.DARKIRONDWARF,
-        Race.KULTIRAN,
-        Race.MECHAGNOME,
-        Race.BLOODELF,
-        Race.GOBLIN,
-        Race.ORC,
-        Race.PANDAREN_HORDE,
-        Race.TROLL,
-        Race.UNDEAD,
-        Race.NIGHTBORNE,
-        Race.MAGHARORC,
-        Race.ZANDALARITROLL,
-        Race.VULPERA,
-    ),
+    _all_non_dracthyr_races,
     Language.EmptyTranslation(),
     "Rogue",
     "rogue",
@@ -253,7 +187,7 @@ WARLOCK = WowClass(
     "Warlock",
     "warlock",
 )
-WARRIOR = WowClass(1, Race.RACES, Language.EmptyTranslation(), "Warrior", "warrior")
+WARRIOR = WowClass(1, _all_non_dracthyr_races, Language.EmptyTranslation(), "Warrior", "warrior")
 
 WOWCLASSES = (
     DEATHKNIGHT,
