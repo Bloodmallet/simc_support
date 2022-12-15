@@ -10,6 +10,8 @@ class Source(enum.Enum):
     MISSION = "Mission"
     PROFESSION = "Profession"
     PVP = "PvP"
+    LOW_PVP = "Low PvP"
+    HIGH_PVP = "High PvP"
     RAID = "Raid"
     RARE_MOB = "Rare Mob"
     WORLD_BOSS = "World Boss"
