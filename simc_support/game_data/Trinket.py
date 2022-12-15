@@ -214,6 +214,10 @@ class Trinket:
             return instance_mapping[self.instance_type]
 
         if "Crimson" in self.full_name:
+            if "Aspirant" in self.full_name:
+                return Source.LOW_PVP
+            elif "Gladiator" in self.full_name:
+                return Source.HIGH_PVP
             return Source.PVP
 
         if "Template" in self.full_name:
@@ -249,7 +253,13 @@ class Trinket:
                     self.raid_tier
                 ]
 
-            elif self.source in (Source.CALLING, Source.PVP, Source.DUNGEON):
+            elif self.source in (
+                Source.CALLING,
+                Source.PVP,
+                Source.LOW_PVP,
+                Source.HIGH_PVP,
+                Source.DUNGEON,
+            ):
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
 
             elif self.source == Source.PROFESSION:
@@ -427,6 +437,12 @@ class Trinket:
                 return [Season.SEASON_1]
 
             if self.source == Source.PROFESSION and "zzOld" not in self.full_name:
+                return [Season.SEASON_1]
+
+            if (
+                self.source in (Source.PVP, Source.LOW_PVP, Source.HIGH_PVP)
+                and "Crimson" in self.full_name
+            ):
                 return [Season.SEASON_1]
         # TODO: add more logic to present more trinkets as season trinkets
 

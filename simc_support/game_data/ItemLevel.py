@@ -24,6 +24,10 @@ ITEM_LEVELS = {
         ]
     },
     Source.PVP: {Season.SEASON_1: [408, 424]},  # split into aspirant and gladiator
+    Source.LOW_PVP: {Season.SEASON_1: [408]},
+    Source.HIGH_PVP: {
+        Season.SEASON_1: [382, 385, 389, 392, 395, 398, 402, 405, 408, 424]
+    },
     Source.RARE_MOB: {Season.SEASON_1: []},
     Source.WORLD_BOSS: {Season.SEASON_1: [389]},
     Source.WORLD_DROP: {Season.SEASON_1: []},
