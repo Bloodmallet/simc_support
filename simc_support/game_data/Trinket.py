@@ -197,6 +197,10 @@ class Trinket:
             184842: Source.CALLING,
             190958: Source.DUNGEON,  # So'leah's Secret Technique
             190652: Source.DUNGEON,  # Ticking Sack of Terror
+            # Dragonflight start
+            200217: Source.RARE_MOB,  # Blazing Essence
+            200563: Source.RARE_MOB,  # Primal Ritual Shell
+            200859: Source.RARE_MOB,  # Seasoned Hunter's Trophy
         }
 
         if self.item_id in item_mapping.keys():
@@ -259,6 +263,7 @@ class Trinket:
                 Source.LOW_PVP,
                 Source.HIGH_PVP,
                 Source.DUNGEON,
+                Source.RARE_MOB,
             ):
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
 
@@ -443,6 +448,9 @@ class Trinket:
                 self.source in (Source.PVP, Source.LOW_PVP, Source.HIGH_PVP)
                 and "Crimson" in self.full_name
             ):
+                return [Season.SEASON_1]
+
+            if self.source == Source.RARE_MOB:
                 return [Season.SEASON_1]
         # TODO: add more logic to present more trinkets as season trinkets
 
