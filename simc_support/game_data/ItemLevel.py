@@ -31,7 +31,7 @@ ITEM_LEVELS = {
     Source.RARE_MOB: {  # super rares that scale up
         Season.SEASON_1: [379, 382, 385, 389, 392]
     },
-    Source.WORLD_BOSS: {Season.SEASON_1: [389]},
+    Source.WORLD_BOSS: {Season.SEASON_1: [395]},
     Source.WORLD_DROP: {Season.SEASON_1: []},
     Source.WORLD_QUEST: {Season.SEASON_1: []},
     Source.DUNGEON: {
