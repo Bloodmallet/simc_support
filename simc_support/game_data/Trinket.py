@@ -277,6 +277,10 @@ class Trinket:
                 elif "Idol of the" in self.full_name:
                     levels = [level for level in levels if level < epic_cutoff]
 
+            elif self.source == Source.WORLD_BOSS:
+                # is REPLACED by prepared itemlevels, blizzard hotfixes are hot fixes
+                levels = ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
+
         if self.source == Source.PROFESSION:
             levels += [
                 self._trinket.ilevel,
