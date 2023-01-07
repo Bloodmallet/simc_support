@@ -201,6 +201,7 @@ class Trinket:
             200217: Source.RARE_MOB,  # Blazing Essence
             200563: Source.RARE_MOB,  # Primal Ritual Shell
             200859: Source.RARE_MOB,  # Seasoned Hunter's Trophy
+            198407: Source.WORLD_QUEST,  # Azure Arcanic Amplifier
         }
 
         if self.item_id in item_mapping.keys():
@@ -266,6 +267,9 @@ class Trinket:
                 Source.RARE_MOB,
             ):
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
+
+            elif self.source == Source.WORLD_QUEST:
+                levels = ItemLevel.ITEM_LEVELS[self.source][season]
 
             elif self.source == Source.PROFESSION:
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
@@ -455,6 +459,9 @@ class Trinket:
                 return [Season.SEASON_1]
 
             if self.source == Source.RARE_MOB:
+                return [Season.SEASON_1]
+
+            if self.item_id in (198407,):
                 return [Season.SEASON_1]
         # TODO: add more logic to present more trinkets as season trinkets
 
