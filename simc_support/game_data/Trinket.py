@@ -269,7 +269,7 @@ class Trinket:
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
 
             elif self.source == Source.WORLD_QUEST:
-                levels = ItemLevel.ITEM_LEVELS[self.source][season]
+                levels = ItemLevel.ITEM_LEVELS[self.source][season] # type: ignore
 
             elif self.source == Source.PROFESSION:
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
