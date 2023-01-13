@@ -202,6 +202,7 @@ class Trinket:
             200563: Source.RARE_MOB,  # Primal Ritual Shell
             200859: Source.RARE_MOB,  # Seasoned Hunter's Trophy
             198407: Source.WORLD_QUEST,  # Azure Arcanic Amplifier
+            198542: Source.WORLD_QUEST,  # Shikaari Huntress' Arrowhead
         }
 
         if self.item_id in item_mapping.keys():
@@ -459,7 +460,10 @@ class Trinket:
             if self.source == Source.RARE_MOB:
                 return [Season.SEASON_1]
 
-            if self.item_id in (198407,):
+            if self.item_id in (
+                198407,
+                198542,
+            ):
                 return [Season.SEASON_1]
         # TODO: add more logic to present more trinkets as season trinkets
 
