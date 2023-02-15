@@ -33,7 +33,7 @@ ITEM_LEVELS = {
     },
     Source.WORLD_BOSS: {Season.SEASON_1: [395]},
     Source.WORLD_DROP: {Season.SEASON_1: []},
-    Source.WORLD_QUEST: {Season.SEASON_1: [372, 376, 379, 382]},
+    Source.WORLD_QUEST: {Season.SEASON_1: [372, 376, 379, 382, 385, 389]},
     Source.DUNGEON: {
         Season.SEASON_1: [
             376,
