@@ -32,7 +32,10 @@ class WowClass(SimcObject):
         else:
             self.translations = Language.Translation(translations=translations)
 
-_all_non_dracthyr_races = tuple([r for r in Race.RACES if r not in (Race.DRACTHYR_ALLIANCE, Race.DRACTHYR_HORDE)])
+
+_all_non_dracthyr_races = tuple(
+    [r for r in Race.RACES if r not in (Race.DRACTHYR_ALLIANCE, Race.DRACTHYR_HORDE)]
+)
 
 DEATHKNIGHT = WowClass(
     6,
@@ -76,7 +79,9 @@ EVOKER = WowClass(
     "Evoker",
     "evoker",
 )
-HUNTER = WowClass(3, _all_non_dracthyr_races, Language.EmptyTranslation(), "Hunter", "hunter")
+HUNTER = WowClass(
+    3, _all_non_dracthyr_races, Language.EmptyTranslation(), "Hunter", "hunter"
+)
 MAGE = WowClass(
     8,
     _all_non_dracthyr_races,
@@ -91,7 +96,9 @@ MONK = WowClass(
         Race.DWARF,
         Race.GNOME,
         Race.HUMAN,
+        Race.LIGHTFORGEDDRAENEI,
         Race.NIGHTELF,
+        Race.WORGEN,
         Race.PANDAREN_ALLIANCE,
         Race.VOIDELF,
         Race.DARKIRONDWARF,
@@ -103,6 +110,7 @@ MONK = WowClass(
         Race.TAUREN,
         Race.TROLL,
         Race.UNDEAD,
+        Race.GOBLIN,
         Race.NIGHTBORNE,
         Race.HIGHMOUNTAINTAUREN,
         Race.MAGHARORC,
@@ -187,7 +195,9 @@ WARLOCK = WowClass(
     "Warlock",
     "warlock",
 )
-WARRIOR = WowClass(1, _all_non_dracthyr_races, Language.EmptyTranslation(), "Warrior", "warrior")
+WARRIOR = WowClass(
+    1, _all_non_dracthyr_races, Language.EmptyTranslation(), "Warrior", "warrior"
+)
 
 WOWCLASSES = (
     DEATHKNIGHT,

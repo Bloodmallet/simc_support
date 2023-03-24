@@ -286,7 +286,7 @@ def casc(args: ArgsObject) -> None:
             full_command,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
-            cwd=os.path.join(args.simc, "casc_extract"),
+            cwd=os.path.join(str(args.simc), "casc_extract"),
         )
         # ['python', 'casc_extract.py', '--cdn', '-m', 'batch', '--locale', 'pt_PT', '-o', 'D:\\Programme\\simc_support\\simc_support\\tmp\\pt_PT']
         while True:
