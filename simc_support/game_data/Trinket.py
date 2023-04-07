@@ -77,7 +77,7 @@ class _Trinket:
     flags_3: int  # 0
     flags_4: int  # 0
     faction_conv_id: int  # 0
-    unk_901_1: int  # 0
+    id_modified_crafting_reagent_item: int  # 0
     req_spell: int  # 0
     id_curve: int  # 0
     id_name_desc: int  # 0
@@ -143,7 +143,6 @@ class _Trinket:
 
 @dataclasses.dataclass
 class Trinket:
-
     _trinket: _Trinket = dataclasses.field(repr=False)
 
     _bonus_ids: typing.Optional[typing.List[int]] = dataclasses.field(
@@ -243,7 +242,6 @@ class Trinket:
 
     @property
     def itemlevels(self) -> typing.List[int]:
-
         levels: typing.List[int] = [
             self._trinket.ilevel,
         ]
@@ -429,13 +427,19 @@ class Trinket:
         if self.instance_type != InstanceType.RAID:
             return None
 
-        if self.instance not in (Instance.VAULT_OF_THE_INCARNATES,):
+        if self.instance not in (
+            Instance.VAULT_OF_THE_INCARNATES,
+            Instance.ABERUS_THE_SHADOWED_CRUCIBLE,
+        ):
             return None
 
         # special cases for rare drops
         #   - Whispering Incarnate Icon
         if self.item_id in (194301,):
             return RaidTier.MID
+
+        if Season.SEASON_2 in self.seasons:
+            return RaidTier.LOW
 
         return RaidTier.get_raid_tier_from_encounter_id(self._trinket.id_encounter)
 
