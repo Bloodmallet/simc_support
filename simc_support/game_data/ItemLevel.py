@@ -16,12 +16,22 @@ _hero = [428, 431, 434, 437, 441]
 _mythic = [441, 444, 447, 450]
 
 
-def _season_2_upgrade_range(start: int) -> typing.List[int]:
+def _season_2_upgrade_range(upgrade_level: int) -> typing.List[int]:
+    if upgrade_level < 1:
+        raise ValueError("Upgrade level start at 1.")
+
     options = (_explorer, _adventurer, _veteran, _champion, _hero, _mythic)
+    ilevels: typing.List[int] = []
     for option in options:
-        if start in option[:4]:
-            return option[option.index(start) :]
-    return []
+        ilevels = ilevels + option[upgrade_level - 1 :]
+
+    # make ilevels unique
+    ilevels = list(set(ilevels))
+
+    # ensure ilevels are ordered
+    ilevels = sorted(ilevels)
+
+    return ilevels
 
 
 ITEM_LEVELS = {
@@ -94,9 +104,13 @@ ITEM_LEVELS = {
             RaidTier.HIGH: [385, 398, 411, 424],
         },
         Season.SEASON_2: {
-            RaidTier.LOW: list(
-                {ilevel for ilevel in _veteran + _champion + _hero + _mythic}
-            )
+            RaidTier.LOW: _season_2_upgrade_range(1),
+            RaidTier.MID: _season_2_upgrade_range(2),
+            RaidTier.HIGH: _season_2_upgrade_range(3),
+            RaidTier.HIGHER: _season_2_upgrade_range(4),
+            RaidTier.VERY_RARE: sorted(
+                list(set([*_champion[2 - 1 :], *_hero[2 - 1 :], 444, 457]))
+            ),
         },
     },
 }

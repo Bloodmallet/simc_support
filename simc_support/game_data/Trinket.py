@@ -437,6 +437,14 @@ class Trinket:
         #   - Whispering Incarnate Icon
         if self.item_id in (194301,):
             return RaidTier.MID
+        #   - Screaming Black Dragonscale
+        elif self.item_id in (202612,):
+            return RaidTier.HIGH
+        # - Neltharion's Call to Chaos
+        # - Neltharion's Call to Dominance
+        # - Neltharion's Call to Suffering
+        elif self.item_id in (204201, 204202, 204211):
+            return RaidTier.VERY_RARE
 
         if Season.SEASON_2 in self.seasons:
             return RaidTier.LOW

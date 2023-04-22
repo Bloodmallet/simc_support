@@ -39,6 +39,8 @@ class RaidTier(int, enum.Enum):
     LOW = enum.auto()
     MID = enum.auto()
     HIGH = enum.auto()
+    HIGHER = enum.auto()
+    VERY_RARE = enum.auto()
 
     @staticmethod
     def get_raid_tier_from_encounter_id(encounter_id: int) -> "RaidTier":
@@ -47,16 +49,31 @@ class RaidTier(int, enum.Enum):
             2500,  # Terros
             2486,  # The Primal Council
             2482,  # Sennarth, the Cold Breath
+            # Aberrus, the Shadowed Crucible
+            2522,  # Kazzara, the Hellforged
+            2529,  # The Amalgamation Chamber
+            2524,  # Assault of the Zaqali
         ):
             return RaidTier.LOW
         elif encounter_id in (
             2502,  # Dathea, Ascended
             2491,  # Kurog Grimtotem
+            # Aberrus, the Shadowed Crucible
+            2530,  # The Forgotten Experiments
+            2525,  # Rashok, the Elder
         ):
             return RaidTier.MID
         elif encounter_id in (
             2493,  # Broodkeeper Diurna
             2499,  # Raszageth the Storm-Eater
+            # Abberus, the Shadowed Crucible
+            2532,  # The Vigilant Steward, Zskarn
+            2527,  # Magmorax
         ):
             return RaidTier.HIGH
+        elif encounter_id in (
+            2523,  # Echo of Neltharion
+            2520,  # Scalecommander Sarkareth
+        ):
+            return RaidTier.HIGHER
         return RaidTier.UNKNOWN
