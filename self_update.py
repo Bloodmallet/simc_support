@@ -89,7 +89,7 @@ def main() -> None:
     casc(args)
 
     updates: typing.List[typing.Callable[[ArgsObject], None]] = [
-        # update_wow_classes,
+        update_wow_classes,
     ]
     for update in updates:
         update(args)
