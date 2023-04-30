@@ -219,11 +219,11 @@ class Trinket:
         if self.instance_type in instance_mapping.keys():
             return instance_mapping[self.instance_type]
 
-        if "Crimson" in self.full_name:
-            if "Aspirant" in self.full_name:
-                return Source.LOW_PVP
-            elif "Gladiator" in self.full_name:
-                return Source.HIGH_PVP
+        if "Aspirant" in self.full_name:
+            return Source.LOW_PVP
+        elif "Gladiator" in self.full_name:
+            return Source.HIGH_PVP
+        elif "Combatant" in self.full_name:
             return Source.PVP
 
         if "Template" in self.full_name:
@@ -462,13 +462,13 @@ class Trinket:
                 return [Season.SEASON_1]
 
             if self.source == Source.PROFESSION and "zzOld" not in self.full_name:
-                return [Season.SEASON_1]
+                return [Season.SEASON_1, Season.SEASON_2]
 
-            if (
-                self.source in (Source.PVP, Source.LOW_PVP, Source.HIGH_PVP)
-                and "Crimson" in self.full_name
-            ):
-                return [Season.SEASON_1]
+            if self.source in (Source.PVP, Source.LOW_PVP, Source.HIGH_PVP):
+                if self.full_name.startswith("Crimson"):
+                    return [Season.SEASON_1]
+                elif self.full_name.startswith("Obsidian"):
+                    return [Season.SEASON_2]
 
             if self.source == Source.RARE_MOB:
                 return [Season.SEASON_1]
