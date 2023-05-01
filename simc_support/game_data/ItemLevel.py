@@ -9,7 +9,7 @@ def _prof_range(start: int) -> typing.List[int]:
 
 
 _explorer = [376, 379, 382, 385, 389, 392, 395, 398]
-_adventurer = [389, 392, 395, 398, 402405, 408, 411]
+_adventurer = [389, 392, 395, 398, 402, 405, 408, 411]
 _veteran = [402, 405, 408, 411, 415, 418, 421, 424]
 _champion = [415, 418, 421, 424, 428, 431, 434, 437]
 _hero = [428, 431, 434, 437, 441]
@@ -20,10 +20,13 @@ def _season_2_upgrade_range(upgrade_level: int) -> typing.List[int]:
     if upgrade_level < 1:
         raise ValueError("Upgrade level start at 1.")
 
-    options = (_explorer, _adventurer, _veteran, _champion, _hero, _mythic)
+    options = (_explorer, _adventurer, _veteran, _champion, _hero)
     ilevels: typing.List[int] = []
     for option in options:
         ilevels = ilevels + option[upgrade_level - 1 :]
+
+    # add mythic
+    ilevels.append(_mythic[upgrade_level - 1])
 
     # make ilevels unique
     ilevels = list(set(ilevels))
