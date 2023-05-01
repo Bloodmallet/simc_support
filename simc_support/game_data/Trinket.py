@@ -446,9 +446,6 @@ class Trinket:
         elif self.item_id in (204201, 204202, 204211):
             return RaidTier.VERY_RARE
 
-        if Season.SEASON_2 in self.seasons:
-            return RaidTier.LOW
-
         return RaidTier.get_raid_tier_from_encounter_id(self._trinket.id_encounter)
 
     @property
