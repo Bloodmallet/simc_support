@@ -94,7 +94,7 @@ ITEM_LEVELS = {
             421,
         ],
         Season.SEASON_2: list(
-            {ilevel for ilevel in _veteran + _champion + _hero + _mythic}
+            {ilevel for ilevel in _veteran + _champion + _hero + _mythic[:-1]}
         ),
     },
     Source.RAID: {
