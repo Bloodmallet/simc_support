@@ -20,7 +20,7 @@ def _season_2_upgrade_range(upgrade_level: int) -> typing.List[int]:
     if upgrade_level < 1:
         raise ValueError("Upgrade level start at 1.")
 
-    options = (_explorer, _adventurer, _veteran, _champion, _hero)
+    options = (_veteran, _champion, _hero)
     ilevels: typing.List[int] = []
     for option in options:
         ilevels = ilevels + option[upgrade_level - 1 :]
