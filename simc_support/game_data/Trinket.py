@@ -203,6 +203,8 @@ class Trinket:
             198407: Source.WORLD_QUEST,  # Azure Arcanic Amplifier
             198542: Source.WORLD_QUEST,  # Shikaari Huntress' Arrowhead
             198489: Source.WORLD_QUEST,  # Dreamscape Prism
+            204810: Source.WORLD_QUEST,  # Drogbar Rocks
+            204811: Source.WORLD_QUEST,  # Drogbar Stones
         }
 
         if self.item_id in item_mapping.keys():
@@ -265,6 +267,7 @@ class Trinket:
                 Source.HIGH_PVP,
                 Source.DUNGEON,
                 Source.RARE_MOB,
+                Source.WORLD_QUEST,
             ):
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
 
@@ -470,12 +473,8 @@ class Trinket:
             if self.source == Source.RARE_MOB:
                 return [Season.SEASON_1]
 
-            if self.item_id in (
-                198407,
-                198542,
-                198489,
-            ):
-                return [Season.SEASON_1]
+            if self.source == Source.WORLD_QUEST:
+                return [s for s in Season]
         # TODO: add more logic to present more trinkets as season trinkets
 
         return []
