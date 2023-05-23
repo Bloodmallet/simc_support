@@ -218,7 +218,9 @@ class Trinket:
         if self._trinket.id_journal_instance == 1205:
             return Source.WORLD_BOSS
 
-        if self.instance_type in instance_mapping.keys():
+        if self.expansion == Expansion.CATACLYSM and self.item_id > 100_000:
+            return Source.TIMEWALKING
+        elif self.instance_type in instance_mapping.keys():
             return instance_mapping[self.instance_type]
 
         if "Aspirant" in self.full_name:
@@ -267,6 +269,7 @@ class Trinket:
                 Source.HIGH_PVP,
                 Source.DUNGEON,
                 Source.RARE_MOB,
+                Source.TIMEWALKING,
                 Source.WORLD_QUEST,
             ):
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
@@ -476,6 +479,9 @@ class Trinket:
             if self.source == Source.WORLD_QUEST:
                 return [s for s in Season]
         # TODO: add more logic to present more trinkets as season trinkets
+
+        if self.source == Source.TIMEWALKING and self.instance:
+            return [Season.SEASON_2]
 
         return []
 

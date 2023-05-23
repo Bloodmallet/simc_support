@@ -29,9 +29,18 @@ class Instance(int, enum.Enum):
     THE_UNDERROT = 1022
     VORTEX_PINNACLE = 68
 
+    # Timewalking Cataclysm
+    BLACKROCK_CAVERNS = 66
+    END_TIME = 184
+    LOST_CITY_OF_TOLVIR = 69
+    THE_STONECORE = 67
+    # THE_VORTEX_PINNACLE = 68
+    THRONE_OF_THE_TIDES = 65
+
     # raids
     VAULT_OF_THE_INCARNATES = 1200
     ABERUS_THE_SHADOWED_CRUCIBLE = 1208
+    FIRELANDS = 78
 
 
 class RaidTier(int, enum.Enum):

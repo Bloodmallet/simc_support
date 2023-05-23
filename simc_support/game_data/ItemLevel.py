@@ -116,6 +116,10 @@ ITEM_LEVELS = {
             ),
         },
     },
+    Source.TIMEWALKING: {
+        Season.SEASON_1: [],
+        Season.SEASON_2: _champion,
+    },
 }
 """Source > Season
 """
