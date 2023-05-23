@@ -14,6 +14,7 @@ class Source(enum.Enum):
     HIGH_PVP = "High PvP"
     RAID = "Raid"
     RARE_MOB = "Rare Mob"
+    TIMEWALKING = "Timewalking"
     WORLD_BOSS = "World Boss"
     WORLD_DROP = "World Drop"
     WORLD_QUEST = "World Quest"
