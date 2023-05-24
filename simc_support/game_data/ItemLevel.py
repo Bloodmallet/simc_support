@@ -1,7 +1,7 @@
 import typing
 from simc_support.game_data.Source import Source
 from simc_support.game_data.Season import Season
-from simc_support.game_data.Instance import RaidTier
+from simc_support.game_data.Instance import InstanceType, RaidTier
 
 
 def _prof_range(start: int) -> typing.List[int]:
@@ -117,8 +117,14 @@ ITEM_LEVELS = {
         },
     },
     Source.TIMEWALKING: {
-        Season.SEASON_1: [],
-        Season.SEASON_2: _champion,
+        Season.SEASON_1: {
+            InstanceType.DUNGEON: [385],
+            InstanceType.RAID: [385],
+        },
+        Season.SEASON_2: {
+            InstanceType.DUNGEON: [385],
+            InstanceType.RAID: _champion,
+        },
     },
 }
 """Source > Season
