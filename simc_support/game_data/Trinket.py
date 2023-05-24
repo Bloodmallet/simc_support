@@ -269,10 +269,12 @@ class Trinket:
                 Source.HIGH_PVP,
                 Source.DUNGEON,
                 Source.RARE_MOB,
-                Source.TIMEWALKING,
                 Source.WORLD_QUEST,
             ):
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
+
+            elif self.source == Source.TIMEWALKING:
+                levels = ItemLevel.ITEM_LEVELS[self.source][season][self.instance_type]  # type: ignore
 
             elif self.source == Source.WORLD_QUEST:
                 levels = ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
