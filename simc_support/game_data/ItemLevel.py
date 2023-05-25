@@ -76,7 +76,7 @@ ITEM_LEVELS = {
     Source.WORLD_DROP: {Season.SEASON_1: [], Season.SEASON_2: []},
     Source.WORLD_QUEST: {
         Season.SEASON_1: [372, 376, 379, 382, 385, 389],
-        Season.SEASON_2: [*_adventurer],
+        Season.SEASON_2: _adventurer,
     },
     Source.DUNGEON: {
         Season.SEASON_1: [
