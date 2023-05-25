@@ -205,6 +205,24 @@ class Trinket:
             198489: Source.WORLD_QUEST,  # Dreamscape Prism
             204810: Source.WORLD_QUEST,  # Drogbar Rocks
             204811: Source.WORLD_QUEST,  # Drogbar Stones
+            204386: Source.WORLD_QUEST,  # Pocket Darkened Elemental Core
+            204387: Source.WORLD_QUEST,  # Buzzing Orb Core
+            204388: Source.WORLD_QUEST,  # Draconic Cauterizing Magma
+            204714: Source.WORLD_QUEST,  # Satchel of Healing Spores
+            204728: Source.WORLD_QUEST,  # Friendship Censer
+            204736: Source.WORLD_QUEST,  # Heatbound Medallion
+            204901: Source.WORLD_QUEST,  # Firecaller's Focus
+            205191: Source.WORLD_QUEST,  # Underlight Globe
+            205192: Source.WORLD_QUEST,  # Volatile Crystal Shard
+            205193: Source.WORLD_QUEST,  # Sturdy Deepflayer Scute
+            205194: Source.WORLD_QUEST,  # Fractured Crystalspine Quill
+            205195: Source.WORLD_QUEST,  # Drakeforged Magma Charm
+            205196: Source.WORLD_QUEST,  # Zaqali Hand Cauldron
+            205200: Source.WORLD_QUEST,  # Stirring Twilight Ember
+            205201: Source.WORLD_QUEST,  # Smoldering Howler Horn
+            205229: Source.WORLD_QUEST,  # Magma Serpent Lure
+            205262: Source.WORLD_QUEST,  # Magmaclaw Lure
+            205276: Source.WORLD_QUEST,  # Deepflayer Lure
         }
 
         if self.item_id in item_mapping.keys():
