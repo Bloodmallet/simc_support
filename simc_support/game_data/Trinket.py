@@ -223,6 +223,9 @@ class Trinket:
             205229: Source.WORLD_QUEST,  # Magma Serpent Lure
             205262: Source.WORLD_QUEST,  # Magmaclaw Lure
             205276: Source.WORLD_QUEST,  # Deepflayer Lure
+            # need to flag these because of timewalking :s
+            133252: Source.DUNGEON,  # Rainsong
+            133246: Source.DUNGEON,  # Heart of Thunder
         }
 
         if self.item_id in item_mapping.keys():
@@ -476,6 +479,14 @@ class Trinket:
 
     @property
     def seasons(self) -> typing.List[Season]:
+        non_seasonal_items = [
+            56370,
+            191492,
+        ]
+
+        if self.item_id in non_seasonal_items:
+            return []
+
         seasons_ = Season.get_seasons_from_instance(self.instance)
         if seasons_:
             return seasons_
