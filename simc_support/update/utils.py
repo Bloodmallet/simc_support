@@ -267,7 +267,12 @@ def casc(args: ArgsObject) -> None:
         "batch",
     ]
     if args.ptr:
-        command.append("--ptr")
+        # command.append("--ptr")
+        arg = "--product=wowxptr"
+        logger.warning(
+            f"Using {arg}. make sure this is still the correct ptr for your usecase."
+        )
+        command.append(arg)
     elif args.beta:
         command.append("--beta")
     elif args.alpha:
