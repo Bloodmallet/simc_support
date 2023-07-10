@@ -231,6 +231,9 @@ class Trinket:
         if self.item_id in item_mapping.keys():
             return item_mapping[self.item_id]
 
+        if self.instance == Instance.DAWN_OF_THE_INFINITE:
+            return Source.MEGA_DUNGEON
+
         instance_mapping = {
             InstanceType.DUNGEON: Source.DUNGEON,
             InstanceType.RAID: Source.RAID,
@@ -263,6 +266,9 @@ class Trinket:
         if "Idol of the" in self.full_name:
             return Source.PROFESSION
 
+        if "Paracausal Fragment of " in self.full_name:
+            return Source.CALLING
+
         return Source.UNKNOWN
 
     @property
@@ -290,14 +296,16 @@ class Trinket:
                 Source.HIGH_PVP,
                 Source.DUNGEON,
                 Source.RARE_MOB,
-                Source.WORLD_QUEST,
             ):
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
 
             elif self.source == Source.TIMEWALKING:
                 levels = ItemLevel.ITEM_LEVELS[self.source][season][self.instance_type]  # type: ignore
 
-            elif self.source == Source.WORLD_QUEST:
+            elif self.source in (
+                Source.WORLD_QUEST,
+                Source.MEGA_DUNGEON,
+            ):
                 levels = ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
 
             elif self.source == Source.PROFESSION:
@@ -509,6 +517,12 @@ class Trinket:
 
             if self.source == Source.WORLD_QUEST:
                 return [s for s in Season]
+
+            if (
+                self.source == Source.CALLING
+                and "Paracausal Fragment of " in self.full_name
+            ):
+                return [Season.SEASON_2]
         # TODO: add more logic to present more trinkets as season trinkets
 
         if self.source == Source.TIMEWALKING and self.instance:

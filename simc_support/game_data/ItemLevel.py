@@ -38,7 +38,10 @@ def _season_2_upgrade_range(upgrade_level: int) -> typing.List[int]:
 
 
 ITEM_LEVELS = {
-    Source.CALLING: {Season.SEASON_1: [], Season.SEASON_2: []},
+    Source.CALLING: {
+        Season.SEASON_1: [],
+        Season.SEASON_2: _veteran,
+    },
     Source.MISSION: {Season.SEASON_1: [], Season.SEASON_2: []},
     Source.PROFESSION: {
         Season.SEASON_1: [
@@ -99,6 +102,10 @@ ITEM_LEVELS = {
         Season.SEASON_2: list(
             {ilevel for ilevel in _veteran + _champion + _hero + _mythic[:-1]}
         ),
+    },
+    Source.MEGA_DUNGEON: {
+        Season.SEASON_1: [],
+        Season.SEASON_2: _hero[-2:],
     },
     Source.RAID: {
         Season.SEASON_1: {

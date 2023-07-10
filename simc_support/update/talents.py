@@ -162,7 +162,6 @@ class TalentExtractor(Extractor):
         return [self.TALENTS, self.SPELLS]
 
     def combine_into_json(self, data: typing.Dict[str, LOCALE_TABLES]) -> None:
-
         talents = data[self.TALENTS][_LOCALES[0]]
 
         # instead of trusting the talent names in the talent table we trust only their spell names
@@ -193,8 +192,24 @@ class TalentLoader(Extractor):
         return []
 
     def combine_into_json(self, data: typing.Dict[str, LOCALE_TABLES]) -> None:
-        # url = "https://www.raidbots.com/static/data/beta/new-talent-trees.json"
-        url = "https://www.raidbots.com/static/data/live/talents.json"
+        # https://www.raidbots.com/static/data/live/talents.json
+        # live
+        # ptr
+        # beta
+        data_endpoint = ""
+        if self.user_args.alpha:
+            data_endpoint = "beta"
+        elif self.user_args.beta:
+            data_endpoint = "beta"
+        elif self.user_args.ptr:
+            data_endpoint = "xptr"
+            logger.warning(
+                f"Using {data_endpoint} endpoint. Make sure this matches the currently most updated PTR!"
+            )
+        else:
+            data_endpoint = "live"
+
+        url = f"https://www.raidbots.com/static/data/{data_endpoint}/talents.json"
 
         loaded_data = requests.get(url)
         if loaded_data.status_code != 200:
