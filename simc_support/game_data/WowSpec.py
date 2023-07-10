@@ -169,6 +169,17 @@ RESTORATION_DRUID = WowSpec(
     full_name="Restoration",
     simc_name="restoration",
 )
+AUGMENTATION = WowSpec(
+    id=1473,
+    wow_class=WowClass.EVOKER,
+    translations=Language.EmptyTranslation(),
+    talents_blueprint="1000111",
+    raid_role=RaidRole.DD,
+    role=Role.RANGED,
+    stat=Stat.INTELLECT,
+    full_name="Augmentation",
+    simc_name="augmentation",
+)
 DEVASTATION = WowSpec(
     id=1467,
     wow_class=WowClass.EVOKER,
@@ -499,6 +510,7 @@ WOWSPECS = [
     FERAL,
     GUARDIAN,
     RESTORATION_DRUID,
+    AUGMENTATION,
     DEVASTATION,
     PRESERVATION,
     BEASTMASTERY,

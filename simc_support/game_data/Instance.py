@@ -37,6 +37,8 @@ class Instance(int, enum.Enum):
     # THE_VORTEX_PINNACLE = 68
     THRONE_OF_THE_TIDES = 65
 
+    DAWN_OF_THE_INFINITE = 1209
+
     # raids
     VAULT_OF_THE_INCARNATES = 1200
     ABERUS_THE_SHADOWED_CRUCIBLE = 1208

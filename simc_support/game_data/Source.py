@@ -7,6 +7,11 @@ class Source(enum.Enum):
 
     CALLING = "Calling"
     DUNGEON = "Dungeon"
+    MEGA_DUNGEON = "Mega Dungeon"
+    """
+    Another special kind of dungeon. Very long. Very tedious.
+    Most likely will get split in into multiple m+ dungeons in the future.
+    """
     MISSION = "Mission"
     PROFESSION = "Profession"
     PVP = "PvP"

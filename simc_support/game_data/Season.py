@@ -41,6 +41,7 @@ class Season(enum.Enum):
             Instance.THE_UNDERROT,
             Instance.VORTEX_PINNACLE,
             Instance.ABERUS_THE_SHADOWED_CRUCIBLE,
+            Instance.DAWN_OF_THE_INFINITE,
         )
 
         if instance in s2_instances:
