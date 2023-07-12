@@ -325,6 +325,9 @@ class Trinket:
                 self._trinket.ilevel,
             ]
 
+        if self.full_name == "Mirror of Fractured Tomorrows":
+            levels += ItemLevel._mythic[:-1]
+
         levels = sorted(list(set(levels)))
 
         return levels
