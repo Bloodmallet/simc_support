@@ -20,13 +20,10 @@ def _season_2_upgrade_range(upgrade_level: int) -> typing.List[int]:
     if upgrade_level < 1:
         raise ValueError("Upgrade level start at 1.")
 
-    options = (_veteran, _champion, _hero)
+    options = (_veteran, _champion, _hero, _mythic[:-1])
     ilevels: typing.List[int] = []
     for option in options:
         ilevels = ilevels + option[upgrade_level - 1 :]
-
-    # add mythic
-    ilevels.append(_mythic[upgrade_level - 1])
 
     # make ilevels unique
     ilevels = list(set(ilevels))
@@ -105,7 +102,7 @@ ITEM_LEVELS = {
     },
     Source.MEGA_DUNGEON: {
         Season.SEASON_1: [],
-        Season.SEASON_2: _hero,
+        Season.SEASON_2: _hero[-2:],
     },
     Source.RAID: {
         Season.SEASON_1: {
