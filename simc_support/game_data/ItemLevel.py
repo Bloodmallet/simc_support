@@ -102,7 +102,7 @@ ITEM_LEVELS = {
     },
     Source.MEGA_DUNGEON: {
         Season.SEASON_1: [],
-        Season.SEASON_2: _hero,
+        Season.SEASON_2: _hero[-2:],
     },
     Source.RAID: {
         Season.SEASON_1: {
