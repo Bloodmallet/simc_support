@@ -175,22 +175,7 @@ SHAMAN = WowClass(
 )
 WARLOCK = WowClass(
     9,
-    (
-        Race.DWARF,
-        Race.GNOME,
-        Race.HUMAN,
-        Race.WORGEN,
-        Race.VOIDELF,
-        Race.DARKIRONDWARF,
-        Race.MECHAGNOME,
-        Race.BLOODELF,
-        Race.GOBLIN,
-        Race.ORC,
-        Race.TROLL,
-        Race.UNDEAD,
-        Race.NIGHTBORNE,
-        Race.VULPERA,
-    ),
+    _all_non_dracthyr_races,
     Language.EmptyTranslation(),
     "Warlock",
     "warlock",
