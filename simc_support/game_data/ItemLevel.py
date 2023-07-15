@@ -25,6 +25,9 @@ def _season_2_upgrade_range(upgrade_level: int) -> typing.List[int]:
     for option in options:
         ilevels = ilevels + option[upgrade_level - 1 :]
 
+    if upgrade_level == len(_mythic):
+        ilevels.append(_mythic[-1])
+
     # make ilevels unique
     ilevels = list(set(ilevels))
 
