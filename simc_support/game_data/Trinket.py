@@ -358,6 +358,24 @@ class Trinket:
         Returns:
             typing.List[Stat]: [description]
         """
+        unknown_stats = {
+            56285: [Stat.STRENGTH],  # Might of the Ocean
+            133197: [Stat.STRENGTH],  # the newer "Might of the Ocean"
+            110019: [Stat.STRENGTH, Stat.AGILITY],  # Xeri'tac's Unhatched Egg Sac
+            137315: [Stat.STRENGTH, Stat.AGILITY],  # Writhing Heart of Darkness
+            136715: [Stat.STRENGTH, Stat.AGILITY],  # Spiked Counterweight
+            56290: [Stat.INTELLECT],  # Sea Star
+            133201: [Stat.INTELLECT],  # the newer "Sea Star"
+            56280: [Stat.STRENGTH, Stat.AGILITY],  # Porcelain Crab
+            137306: [Stat.INTELLECT, Stat.AGILITY],  # Oakheart's Gnarled Root
+            110009: [Stat.INTELLECT],  # Leaf of the Ancient Protectors
+            110009: [Stat.INTELLECT],  # Leaf of the Ancient Protectors
+        }
+        """Game data doesn't profile primary stat information."""
+
+        if self.item_id in unknown_stats:
+            return unknown_stats[self.item_id]
+
         stats = []
         translation = {3: Stat.AGILITY, 4: Stat.STRENGTH, 5: Stat.INTELLECT}
         for i in range(1, 11):
