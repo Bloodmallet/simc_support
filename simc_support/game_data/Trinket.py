@@ -231,8 +231,8 @@ class Trinket:
         if self.item_id in item_mapping.keys():
             return item_mapping[self.item_id]
 
-        if self.instance == Instance.DAWN_OF_THE_INFINITE:
-            return Source.MEGA_DUNGEON
+        # if self.instance == Instance.DAWN_OF_THE_INFINITE:
+        #     return Source.MEGA_DUNGEON
 
         instance_mapping = {
             InstanceType.DUNGEON: Source.DUNGEON,
@@ -242,9 +242,11 @@ class Trinket:
         if self._trinket.id_journal_instance == 1205:
             return Source.WORLD_BOSS
 
-        if self.expansion == Expansion.CATACLYSM and self.item_id > 100_000:
-            return Source.TIMEWALKING
-        elif self.instance_type in instance_mapping.keys():
+        # disabled because Cataclysm now is also featured in m+
+        # if self.expansion == Expansion.CATACLYSM and self.item_id > 100_000:
+        #     return Source.TIMEWALKING
+        # el
+        if self.instance_type in instance_mapping.keys():
             return instance_mapping[self.instance_type]
 
         if "Aspirant" in self.full_name:
@@ -273,6 +275,7 @@ class Trinket:
 
     @property
     def itemlevels(self) -> typing.List[int]:
+        # better than nothing
         levels: typing.List[int] = [
             self._trinket.ilevel,
         ]
@@ -280,11 +283,21 @@ class Trinket:
         # add special cases here
         special_cases: typing.Dict[str, typing.Dict[Season, typing.List[int]]] = {}
 
+        if self.seasons:
+            # removing baseline itemlevel in case we have season information
+            levels = []
+
         for season in self.seasons:
             if self.full_name in special_cases.keys():
                 levels += special_cases[self.full_name][season]
 
             elif self.source == Source.RAID:
+                if self.raid_tier in (None, RaidTier.UNKNOWN):
+                    logger.warning(
+                        "Raid Source was not yet properly set up. "
+                        "Missing Raid tier! Add Encounter ID: "
+                        f"'{self._trinket.id_encounter}' for '{self.full_name}'"
+                    )
                 levels += ItemLevel.ITEM_LEVELS[self.source][season][  # type: ignore
                     self.raid_tier
                 ]
@@ -326,7 +339,7 @@ class Trinket:
             ]
 
         if self.full_name == "Mirror of Fractured Tomorrows":
-            levels += ItemLevel._mythic[:-1]
+            levels += ItemLevel._s2_mythic[:-1]
 
         levels = sorted(list(set(levels)))
 
@@ -434,11 +447,11 @@ class Trinket:
 
     @property
     def min_itemlevel(self) -> int:
-        return self.itemlevels[0]
+        return min(self.itemlevels, default=-1)
 
     @property
     def max_itemlevel(self) -> int:
-        return self.itemlevels[-1]
+        return max(self.itemlevels, default=-1)
 
     @property
     def expansion(self) -> Expansion:
@@ -470,6 +483,7 @@ class Trinket:
         if self.instance not in (
             Instance.VAULT_OF_THE_INCARNATES,
             Instance.ABERUS_THE_SHADOWED_CRUCIBLE,
+            Instance.AMIRDRASSIL_THE_DREAMS_HOPE,
         ):
             return None
 
@@ -483,7 +497,17 @@ class Trinket:
         # - Neltharion's Call to Chaos
         # - Neltharion's Call to Dominance
         # - Neltharion's Call to Suffering
-        elif self.item_id in (204201, 204202, 204211):
+        # - Augury of the Primal Flame
+        # - Blossom of Amirdrassil
+        # - Fyrakk's Tainted Rageheart
+        elif self.item_id in (
+            204201,
+            204202,
+            204211,
+            208614,
+            207171,
+            207174,
+        ):
             return RaidTier.VERY_RARE
 
         return RaidTier.get_raid_tier_from_encounter_id(self._trinket.id_encounter)
@@ -514,6 +538,8 @@ class Trinket:
                     return [Season.SEASON_1]
                 elif self.full_name.startswith("Obsidian"):
                     return [Season.SEASON_2]
+                elif self.full_name.startswith("Verdant"):
+                    return [Season.SEASON_3]
 
             if self.source == Source.RARE_MOB:
                 return [Season.SEASON_1]

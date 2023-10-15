@@ -6,6 +6,7 @@ import typing
 class Season(enum.Enum):
     SEASON_1 = 1
     SEASON_2 = 2
+    SEASON_3 = 3
 
     @staticmethod
     def get_seasons_from_instance(
@@ -46,5 +47,22 @@ class Season(enum.Enum):
 
         if instance in s2_instances:
             seasons.append(Season.SEASON_2)
+
+        s3_instances = (
+            # Instance.DAWN_OF_THE_INFINITE_GALAKRONDS_FALL,
+            # Instance.DAWN_OF_THE_INFINITE_MUROZOND_RISE,
+            Instance.DAWN_OF_THE_INFINITE,
+            Instance.DARKHEART_THICKET,
+            Instance.BLACK_ROOCK_HOLD,
+            Instance.WAYCREST_MANOR,
+            Instance.ATAL_DAZAR,
+            Instance.EVERBLOOM_MPLUS,
+            # Instance.THRONE_OF_THE_TIDES_MPLUS,
+            Instance.THRONE_OF_THE_TIDES,
+            Instance.AMIRDRASSIL_THE_DREAMS_HOPE,
+        )
+
+        if instance in s3_instances:
+            seasons.append(Season.SEASON_3)
 
         return seasons
