@@ -90,7 +90,9 @@ ITEM_LEVELS = {
                 + [434, 437, 441, 444, 447]  # Aspect's
             }
         ),
-        Season.SEASON_3: [-1],
+        Season.SEASON_3: list(
+            {ilevel for ilevel in _s3_veteran + _s3_champion + _s3_hero + _s3_mythic}
+        ),
     },
     Source.PVP: {
         Season.SEASON_1: [408, 424],
