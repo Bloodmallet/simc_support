@@ -91,7 +91,10 @@ ITEM_LEVELS = {
             }
         ),
         Season.SEASON_3: list(
-            {ilevel for ilevel in _s3_veteran + _s3_champion + _s3_hero + _s3_mythic}
+            {
+                ilevel
+                for ilevel in _s3_veteran + _s3_champion + _s3_hero + _s3_mythic[:-1]
+            }
         ),
     },
     Source.PVP: {
