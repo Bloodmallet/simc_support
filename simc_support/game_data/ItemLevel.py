@@ -48,13 +48,13 @@ def _season_3_upgrade_range(upgrade_level: int) -> typing.List[int]:
     if upgrade_level < 1:
         raise ValueError("Upgrade level start at 1.")
 
-    options = (_s3_veteran, _s3_champion, _s3_hero, _s3_mythic[:-1])
+    options = (_s3_veteran, _s3_champion, _s3_hero, _s3_mythic)
     ilevels: typing.List[int] = []
     for option in options:
         ilevels = ilevels + option[upgrade_level - 1 :]
 
-    if upgrade_level == len(_s3_mythic):
-        ilevels.append(_s3_mythic[-1])
+    # if upgrade_level == len(_s3_mythic):
+    #     ilevels.append(_s3_mythic[-1])
 
     # make ilevels unique
     ilevels = list(set(ilevels))
@@ -91,7 +91,10 @@ ITEM_LEVELS = {
             }
         ),
         Season.SEASON_3: list(
-            {ilevel for ilevel in _s3_veteran + _s3_champion + _s3_hero + _s3_mythic}
+            {
+                ilevel
+                for ilevel in _s3_veteran + _s3_champion + _s3_hero + _s3_mythic[:-1]
+            }
         ),
     },
     Source.PVP: {
@@ -179,7 +182,16 @@ ITEM_LEVELS = {
             RaidTier.HIGH: _season_3_upgrade_range(3),
             RaidTier.HIGHER: _season_3_upgrade_range(4),
             RaidTier.VERY_RARE: sorted(
-                list(set([*_s3_champion[2 - 1 :], *_s3_hero[2 - 1 :], 483, 496]))
+                list(
+                    set(
+                        [
+                            *_s3_champion[2 - 1 :],
+                            *_s3_hero[2 - 1 :],
+                            *_s3_mythic[2 - 1 :],
+                            496,
+                        ]
+                    )
+                )
             ),
         },
     },
