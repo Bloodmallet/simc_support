@@ -569,7 +569,7 @@ class Trinket:
                 self.source == Source.CALLING
                 and "Paracausal Fragment of " in self.full_name
             ):
-                return [Season.SEASON_2]
+                return [Season.SEASON_2, Season.SEASON_3]
         # TODO: add more logic to present more trinkets as season trinkets
 
         if self.source == Source.TIMEWALKING and self.instance:
