@@ -16,7 +16,7 @@ _s2_hero = [428, 431, 434, 437, 441]
 _s2_mythic = [441, 444, 447, 450]
 
 _s3_explorer: typing.List[int] = []
-_s3_adventurer: typing.List[int] = []
+_s3_adventurer: typing.List[int] = [428, 431, 434, 437, 441, 444, 447, 450]
 _s3_veteran = [441, 444, 447, 450, 454, 457, 460, 463]
 _s3_champion = [454, 457, 460, 463, 467, 470, 473, 476]
 _s3_hero = [467, 470, 473, 476, 480, 483]
@@ -69,7 +69,7 @@ ITEM_LEVELS = {
     Source.CALLING: {
         Season.SEASON_1: [],
         Season.SEASON_2: _s2_veteran,
-        Season.SEASON_3: _s3_veteran,
+        Season.SEASON_3: _s3_adventurer,
     },
     Source.MISSION: {Season.SEASON_1: [], Season.SEASON_2: [], Season.SEASON_3: [-1]},
     Source.PROFESSION: {
