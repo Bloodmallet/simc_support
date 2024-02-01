@@ -205,8 +205,8 @@ ITEM_LEVELS = {
             InstanceType.RAID: _s2_champion,
         },
         Season.SEASON_3: {
-            InstanceType.DUNGEON: [-1],
-            InstanceType.RAID: [-1],
+            InstanceType.DUNGEON: _s3_adventurer,
+            InstanceType.RAID: _s3_hero,
         },
     },
 }
