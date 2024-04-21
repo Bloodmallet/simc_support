@@ -98,8 +98,14 @@ ITEM_LEVELS = {
         Season.SEASON_1: [],
         Season.SEASON_2: _s2_veteran,
         Season.SEASON_3: _s3_adventurer,
+        Season.SEASON_4: _s4_adventurer,
     },
-    Source.MISSION: {Season.SEASON_1: [], Season.SEASON_2: [], Season.SEASON_3: [-1]},
+    Source.MISSION: {
+        Season.SEASON_1: [],
+        Season.SEASON_2: [],
+        Season.SEASON_3: [-1],
+        Season.SEASON_4: [-1],
+    },
     Source.PROFESSION: {
         Season.SEASON_1: [
             *_prof_range(306),  # base
@@ -135,28 +141,38 @@ ITEM_LEVELS = {
         Season.SEASON_1: [408, 424],
         Season.SEASON_2: [424],
         Season.SEASON_3: [-1],
+        Season.SEASON_4: [-1],
     },  # split into aspirant and gladiator
     Source.LOW_PVP: {
         Season.SEASON_1: [408],
         Season.SEASON_2: [437],
         Season.SEASON_3: [-1],
+        Season.SEASON_4: [-1],
     },
     Source.HIGH_PVP: {
         Season.SEASON_1: [382, 385, 389, 392, 395, 398, 402, 405, 408, 424],
         Season.SEASON_2: [434, 450],
-        Season.SEASON_3: [-1],
+        Season.SEASON_3: [476],
+        Season.SEASON_4: [515],
     },
     Source.RARE_MOB: {  # super rares that scale up
         Season.SEASON_1: [379, 382, 385, 389, 392],
         Season.SEASON_2: [],
         Season.SEASON_3: [-1],
+        Season.SEASON_4: [-1],
     },
     Source.WORLD_BOSS: {
         Season.SEASON_1: [395],
         Season.SEASON_2: [415],
         Season.SEASON_3: [-1],
+        Season.SEASON_4: [-1],
     },
-    Source.WORLD_DROP: {Season.SEASON_1: [], Season.SEASON_2: [], Season.SEASON_3: []},
+    Source.WORLD_DROP: {
+        Season.SEASON_1: [],
+        Season.SEASON_2: [],
+        Season.SEASON_3: [],
+        Season.SEASON_4: [],
+    },
     Source.WORLD_QUEST: {
         Season.SEASON_1: [372, 376, 379, 382, 385, 389],
         Season.SEASON_2: _s2_adventurer,
@@ -198,6 +214,7 @@ ITEM_LEVELS = {
         Season.SEASON_1: [],
         Season.SEASON_2: _s2_hero[-2:],
         Season.SEASON_3: [-1],
+        Season.SEASON_4: [-1],
     },
     Source.RAID: {
         Season.SEASON_1: {
@@ -263,6 +280,10 @@ ITEM_LEVELS = {
         Season.SEASON_3: {
             InstanceType.DUNGEON: _s3_adventurer,
             InstanceType.RAID: _s3_hero,
+        },
+        Season.SEASON_4: {
+            InstanceType.DUNGEON: _s4_adventurer,
+            InstanceType.RAID: _s4_hero,
         },
     },
 }
