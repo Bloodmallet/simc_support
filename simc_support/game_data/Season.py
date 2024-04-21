@@ -67,14 +67,16 @@ class Season(enum.Enum):
             seasons.append(Season.SEASON_3)
 
         s4_instances = (
+            # dungeons
             Instance.ALGETHAR_ACADEMY,
-            Instance.COURT_OF_STARS,
-            Instance.HALLS_OF_VALOR,
-            Instance.RUBY_LIFE_POOLS,
-            Instance.HALLS_OF_INFUSION,
             Instance.BRACKENHIDE_HOLLOW,
-            Instance.ULDAMAN_LEGACY_OF_TYR,
+            Instance.HALLS_OF_INFUSION,
             Instance.NELTHARUS,
+            Instance.RUBY_LIFE_POOLS,
+            Instance.THE_AZURE_VAULT,
+            Instance.THE_NOKHUD_OFFENSIVE,
+            Instance.ULDAMAN_LEGACY_OF_TYR,
+            # raids
             Instance.VAULT_OF_THE_INCARNATES,
             Instance.ABERUS_THE_SHADOWED_CRUCIBLE,
             Instance.AMIRDRASSIL_THE_DREAMS_HOPE,
