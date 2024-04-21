@@ -16,11 +16,18 @@ _s2_hero = [428, 431, 434, 437, 441]
 _s2_mythic = [441, 444, 447, 450]
 
 _s3_explorer: typing.List[int] = []
-_s3_adventurer: typing.List[int] = [428, 431, 434, 437, 441, 444, 447, 450]
+_s3_adventurer = [428, 431, 434, 437, 441, 444, 447, 450]
 _s3_veteran = [441, 444, 447, 450, 454, 457, 460, 463]
 _s3_champion = [454, 457, 460, 463, 467, 470, 473, 476]
 _s3_hero = [467, 470, 473, 476, 480, 483]
 _s3_mythic = [480, 483, 486, 489]
+
+_s4_explorer = [454, 457, 460, 463, 467, 470, 473, 476]
+_s4_adventurer = [467, 470, 473, 476, 480, 483, 486, 489]
+_s4_veteran = [480, 483, 486, 489, 493, 496, 499, 502]
+_s4_champion = [493, 496, 499, 502, 506, 509, 512, 515]
+_s4_hero = [506, 509, 512, 515, 519, 522]
+_s4_mythic = [519, 522, 525, 528]  # guessed 525 and 528
 
 
 def _season_2_upgrade_range(upgrade_level: int) -> typing.List[int]:
@@ -49,6 +56,27 @@ def _season_3_upgrade_range(upgrade_level: int) -> typing.List[int]:
         raise ValueError("Upgrade level start at 1.")
 
     options = (_s3_veteran, _s3_champion, _s3_hero, _s3_mythic)
+    ilevels: typing.List[int] = []
+    for option in options:
+        ilevels = ilevels + option[upgrade_level - 1 :]
+
+    # if upgrade_level == len(_s3_mythic):
+    #     ilevels.append(_s3_mythic[-1])
+
+    # make ilevels unique
+    ilevels = list(set(ilevels))
+
+    # ensure ilevels are ordered
+    ilevels = sorted(ilevels)
+
+    return ilevels
+
+
+def _season_4_upgrade_range(upgrade_level: int) -> typing.List[int]:
+    if upgrade_level < 1:
+        raise ValueError("Upgrade level start at 1.")
+
+    options = (_s4_veteran, _s4_champion, _s4_hero, _s4_mythic)
     ilevels: typing.List[int] = []
     for option in options:
         ilevels = ilevels + option[upgrade_level - 1 :]
@@ -96,6 +124,12 @@ ITEM_LEVELS = {
                 for ilevel in _s3_veteran + _s3_champion + _s3_hero + _s3_mythic[:-1]
             }
         ),
+        Season.SEASON_4: list(
+            {
+                ilevel
+                for ilevel in _s4_veteran + _s4_champion + _s4_hero + _s4_mythic[:-2]
+            }
+        ),
     },
     Source.PVP: {
         Season.SEASON_1: [408, 424],
@@ -127,6 +161,7 @@ ITEM_LEVELS = {
         Season.SEASON_1: [372, 376, 379, 382, 385, 389],
         Season.SEASON_2: _s2_adventurer,
         Season.SEASON_3: [-1],
+        Season.SEASON_4: [-1],
     },
     Source.DUNGEON: {
         Season.SEASON_1: [
@@ -154,6 +189,9 @@ ITEM_LEVELS = {
         ),
         Season.SEASON_3: list(
             {ilevel for ilevel in _s3_veteran + _s3_champion + _s3_hero + _s3_mythic}
+        ),
+        Season.SEASON_4: list(
+            {ilevel for ilevel in _s4_veteran + _s4_champion + _s4_hero + _s4_mythic}
         ),
     },
     Source.MEGA_DUNGEON: {
@@ -189,6 +227,24 @@ ITEM_LEVELS = {
                             *_s3_hero[2 - 1 :],
                             *_s3_mythic[2 - 1 :],
                             496,
+                        ]
+                    )
+                )
+            ),
+        },
+        Season.SEASON_4: {
+            RaidTier.LOW: _season_4_upgrade_range(1),
+            RaidTier.MID: _season_4_upgrade_range(2),
+            RaidTier.HIGH: _season_4_upgrade_range(3),
+            RaidTier.HIGHER: _season_4_upgrade_range(4),
+            RaidTier.VERY_RARE: sorted(
+                list(
+                    set(
+                        [
+                            *_s4_champion[2 - 1 :],
+                            *_s4_hero[2 - 1 :],
+                            *_s4_mythic[2 - 1 :],
+                            535,
                         ]
                     )
                 )

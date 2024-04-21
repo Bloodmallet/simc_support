@@ -7,6 +7,7 @@ class Season(enum.Enum):
     SEASON_1 = 1
     SEASON_2 = 2
     SEASON_3 = 3
+    SEASON_4 = 4
 
     @staticmethod
     def get_seasons_from_instance(
@@ -64,5 +65,22 @@ class Season(enum.Enum):
 
         if instance in s3_instances:
             seasons.append(Season.SEASON_3)
+
+        s4_instances = (
+            Instance.ALGETHAR_ACADEMY,
+            Instance.COURT_OF_STARS,
+            Instance.HALLS_OF_VALOR,
+            Instance.RUBY_LIFE_POOLS,
+            Instance.HALLS_OF_INFUSION,
+            Instance.BRACKENHIDE_HOLLOW,
+            Instance.ULDAMAN_LEGACY_OF_TYR,
+            Instance.NELTHARUS,
+            Instance.VAULT_OF_THE_INCARNATES,
+            Instance.ABERUS_THE_SHADOWED_CRUCIBLE,
+            Instance.AMIRDRASSIL_THE_DREAMS_HOPE,
+        )
+
+        if instance in s4_instances:
+            seasons.append(Season.SEASON_4)
 
         return seasons
