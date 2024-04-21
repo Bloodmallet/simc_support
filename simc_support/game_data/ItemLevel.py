@@ -135,16 +135,19 @@ ITEM_LEVELS = {
         Season.SEASON_1: [408, 424],
         Season.SEASON_2: [424],
         Season.SEASON_3: [-1],
+        Season.SEASON_4: [-1],
     },  # split into aspirant and gladiator
     Source.LOW_PVP: {
         Season.SEASON_1: [408],
         Season.SEASON_2: [437],
         Season.SEASON_3: [-1],
+        Season.SEASON_4: [-1],
     },
     Source.HIGH_PVP: {
         Season.SEASON_1: [382, 385, 389, 392, 395, 398, 402, 405, 408, 424],
         Season.SEASON_2: [434, 450],
-        Season.SEASON_3: [-1],
+        Season.SEASON_3: [476],
+        Season.SEASON_4: [515],
     },
     Source.RARE_MOB: {  # super rares that scale up
         Season.SEASON_1: [379, 382, 385, 389, 392],

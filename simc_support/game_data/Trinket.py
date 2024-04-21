@@ -549,7 +549,12 @@ class Trinket:
                 return [Season.SEASON_1]
 
             if self.source == Source.PROFESSION and "zzOld" not in self.full_name:
-                return [Season.SEASON_1, Season.SEASON_2, Season.SEASON_3]
+                return [
+                    Season.SEASON_1,
+                    Season.SEASON_2,
+                    Season.SEASON_3,
+                    Season.SEASON_4,
+                ]
 
             if self.source in (Source.PVP, Source.LOW_PVP, Source.HIGH_PVP):
                 if self.full_name.startswith("Crimson"):
@@ -558,6 +563,8 @@ class Trinket:
                     return [Season.SEASON_2]
                 elif self.full_name.startswith("Verdant"):
                     return [Season.SEASON_3]
+                elif self.full_name.startswith("Draconic"):
+                    return [Season.SEASON_4]
 
             if self.source == Source.RARE_MOB:
                 return [Season.SEASON_1]
@@ -569,7 +576,7 @@ class Trinket:
                 self.source == Source.CALLING
                 and "Paracausal Fragment of " in self.full_name
             ):
-                return [Season.SEASON_2, Season.SEASON_3]
+                return [Season.SEASON_2, Season.SEASON_3, Season.SEASON_4]
         # TODO: add more logic to present more trinkets as season trinkets
 
         if self.source == Source.TIMEWALKING and self.instance:
