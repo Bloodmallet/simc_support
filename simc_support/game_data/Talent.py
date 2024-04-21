@@ -405,9 +405,9 @@ class TreePath:
             for n in self.tree.tree_nodes
             if self.get_rank(n) > 0 and n.tree_node_type == TreeNodeType.CHOICE
         ]
-        unpacked_path_parts: itertools.product[
-            typing.Tuple[Talent, ...]
-        ] = itertools.product(*unpackable_nodes)
+        unpacked_path_parts: itertools.product[typing.Tuple[Talent, ...]] = (
+            itertools.product(*unpackable_nodes)
+        )
         rank_and_parts = [
             tuple(zip(unpackable_ranks, part)) for part in unpacked_path_parts
         ]
