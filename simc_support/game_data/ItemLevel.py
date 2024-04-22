@@ -214,7 +214,7 @@ ITEM_LEVELS = {
         Season.SEASON_1: [],
         Season.SEASON_2: _s2_hero[-2:],
         Season.SEASON_3: [-1],
-        Season.SEASON_4: [-1],
+        Season.SEASON_4: _s4_champion,
     },
     Source.RAID: {
         Season.SEASON_1: {

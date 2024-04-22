@@ -231,8 +231,8 @@ class Trinket:
         if self.item_id in item_mapping.keys():
             return item_mapping[self.item_id]
 
-        # if self.instance == Instance.DAWN_OF_THE_INFINITE:
-        #     return Source.MEGA_DUNGEON
+        if self.instance == Instance.DAWN_OF_THE_INFINITE:
+            return Source.MEGA_DUNGEON
 
         instance_mapping = {
             InstanceType.DUNGEON: Source.DUNGEON,
@@ -320,6 +320,8 @@ class Trinket:
                 Source.MEGA_DUNGEON,
             ):
                 levels = ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
+                if self.full_name == "Mirror of Fractured Tomorrows":
+                    levels.extend(ItemLevel._s4_hero)
 
             elif self.source == Source.PROFESSION:
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
@@ -369,9 +371,10 @@ class Trinket:
             56280: [Stat.STRENGTH, Stat.AGILITY],  # Porcelain Crab
             137306: [Stat.INTELLECT, Stat.AGILITY],  # Oakheart's Gnarled Root
             110009: [Stat.INTELLECT],  # Leaf of the Ancient Protectors
-            110009: [Stat.INTELLECT],  # Leaf of the Ancient Protectors
+            193697: [Stat.AGILITY],  # Bottle of Spiraling Winds
+            193762: [Stat.STRENGTH],  # Blazebinder's Hoof
         }
-        """Game data doesn't profile primary stat information."""
+        """Game data doesn't provide primary stat information."""
 
         if self.item_id in unknown_stats:
             return unknown_stats[self.item_id]
