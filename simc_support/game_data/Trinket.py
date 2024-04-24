@@ -375,6 +375,7 @@ class Trinket:
             193762: [Stat.STRENGTH],  # Blazebinder's Hoof
             159630: [Stat.INTELLECT],  # Balefire Branch
             193791: [Stat.INTELLECT],  # Time-Breaching Talon
+            159625: [Stat.STRENGTH],  # Vial of Animated Blood
         }
         """Game data doesn't provide primary stat information."""
 
