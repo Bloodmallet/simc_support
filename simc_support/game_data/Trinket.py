@@ -373,6 +373,7 @@ class Trinket:
             110009: [Stat.INTELLECT],  # Leaf of the Ancient Protectors
             193697: [Stat.AGILITY],  # Bottle of Spiraling Winds
             193762: [Stat.STRENGTH],  # Blazebinder's Hoof
+            159630: [Stat.INTELLECT],  # Balefire Branch
         }
         """Game data doesn't provide primary stat information."""
 
