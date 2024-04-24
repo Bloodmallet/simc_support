@@ -374,6 +374,7 @@ class Trinket:
             193697: [Stat.AGILITY],  # Bottle of Spiraling Winds
             193762: [Stat.STRENGTH],  # Blazebinder's Hoof
             159630: [Stat.INTELLECT],  # Balefire Branch
+            193791: [Stat.INTELLECT],  # Time-Breaching Talon
         }
         """Game data doesn't provide primary stat information."""
 
