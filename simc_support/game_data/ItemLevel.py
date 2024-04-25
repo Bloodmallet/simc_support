@@ -261,6 +261,7 @@ ITEM_LEVELS = {
                             *_s4_champion[2 - 1 :],
                             *_s4_hero[2 - 1 :],
                             *_s4_mythic[2 - 1 :],
+                            532,
                             535,
                         ]
                     )
