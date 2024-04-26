@@ -177,7 +177,7 @@ ITEM_LEVELS = {
         Season.SEASON_1: [372, 376, 379, 382, 385, 389],
         Season.SEASON_2: _s2_adventurer,
         Season.SEASON_3: [-1],
-        Season.SEASON_4: [-1],
+        Season.SEASON_4: _s4_veteran,
     },
     Source.DUNGEON: {
         Season.SEASON_1: [
