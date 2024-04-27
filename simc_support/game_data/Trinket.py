@@ -321,7 +321,8 @@ class Trinket:
             ):
                 levels = ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
                 if self.full_name == "Mirror of Fractured Tomorrows":
-                    levels.extend(ItemLevel._s4_hero)
+                    levels.extend(ItemLevel._s4_hero)  # hardcore
+                    levels.extend(ItemLevel._s4_mythic)  # deathless
 
             elif self.source == Source.PROFESSION:
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
