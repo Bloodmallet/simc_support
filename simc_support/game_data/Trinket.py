@@ -547,6 +547,12 @@ class Trinket:
         if self.item_id in non_seasonal_items:
             return []
 
+        if (
+            self.expansion == Expansion.DRAGONFLIGHT
+            and self.source == Source.MEGA_DUNGEON
+        ):
+            return [Season.SEASON_2, Season.SEASON_3, Season.SEASON_4]
+
         seasons_ = Season.get_seasons_from_instance(self.instance)
         if seasons_:
             return seasons_
