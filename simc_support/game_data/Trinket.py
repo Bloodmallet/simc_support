@@ -223,6 +223,8 @@ class Trinket:
             205229: Source.WORLD_QUEST,  # Magma Serpent Lure
             205262: Source.WORLD_QUEST,  # Magmaclaw Lure
             205276: Source.WORLD_QUEST,  # Deepflayer Lure
+            192797: Source.CALLING,  # Gral's Discarded Tooth
+            198695: Source.CALLING,  # Bottomless Reliquary Satchel
             # need to flag these because of timewalking :s
             133252: Source.DUNGEON,  # Rainsong
             133246: Source.DUNGEON,  # Heart of Thunder
@@ -586,8 +588,9 @@ class Trinket:
                 return [s for s in Season]
 
             if (
-                self.source == Source.CALLING
-                and "Paracausal Fragment of " in self.full_name
+                self.source
+                == Source.CALLING
+                # and "Paracausal Fragment of " in self.full_name
             ):
                 return [Season.SEASON_2, Season.SEASON_3, Season.SEASON_4]
         # TODO: add more logic to present more trinkets as season trinkets

@@ -98,7 +98,7 @@ ITEM_LEVELS = {
         Season.SEASON_1: [],
         Season.SEASON_2: _s2_veteran,
         Season.SEASON_3: _s3_adventurer,
-        Season.SEASON_4: _s4_adventurer,
+        Season.SEASON_4: _s4_champion,
     },
     Source.MISSION: {
         Season.SEASON_1: [],
