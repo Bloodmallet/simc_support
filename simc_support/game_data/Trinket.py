@@ -69,19 +69,20 @@ class _Trinket:
     id_content_tuning: int  # 0
     sell_price: int  # 571854
     buy_price: int  # 2859270
-    unk_3: int  # 1
+    # unk_3: int  # 1
     unk_2: float  # 1.0
     unk_1: float  # 1.0214999914169312
     flags_1: int  # 524288
     flags_2: int  # 8192
     flags_3: int  # 0
     flags_4: int  # 0
+    flags_5: int  # 0
     faction_conv_id: int  # 0
     id_modified_crafting_reagent_item: int  # 0
     req_spell: int  # 0
     id_curve: int  # 0
     id_name_desc: int  # 0
-    unk_l72_1: int  # 0
+    # unk_l72_1: int  # 0
     id_holiday: int  # 0
     gem_props: int  # 0
     socket_bonus: int  # 0
@@ -91,7 +92,7 @@ class _Trinket:
     area_2: int  # 0
     item_set: int  # 0
     id_lock: int  # 0
-    page_text: int  # 0
+    # page_text: int  # 0
     delay: int  # 0
     req_rep_faction: int  # 0
     req_skill_rank: int  # 0
@@ -138,6 +139,9 @@ class _Trinket:
     id_journal_instance: int  # 1199
     id_map: int  # 2519
     instance_type: typing.Optional[int]  # null
+    vendor_stack: int  # = -1  # no clue
+    id_xmog_holiday: int  # = -1  # no clue
+    id_page: int  # = -1
     ilevel: int = 0  # 250
 
 
@@ -228,6 +232,22 @@ class Trinket:
             # need to flag these because of timewalking :s
             133252: Source.DUNGEON,  # Rainsong
             133246: Source.DUNGEON,  # Heart of Thunder
+            # Grim Batol is somehow not getting detected
+            133304: Source.DUNGEON,  # Gale of Shadows
+            133282: Source.DUNGEON,  # Skardyn's Grace
+            133300: Source.DUNGEON,  # Mark of Khardros
+            # need to somehow double check these
+            215174: Source.DELVE,  # Concoction: Kiss of Death
+            215171: Source.DELVE,  # Fungal Friend Flute
+            215169: Source.DELVE,  # Everburning Lantern
+            215178: Source.DELVE,  # Shadow-Binding Ritual Knife
+            225648: Source.DELVE,  # Candle Confidant
+            225656: Source.DELVE,  # Goldenglow Censer
+            225651: Source.DELVE,  # Kaheti Shadeweaver's Emblem
+            225649: Source.DELVE,  # Quickwick Candlestick
+            225668: Source.DELVE,  # Unstable Power Suit Core
+            225891: Source.DELVE,  # Vile Vial of Kaheti Bile
+            226539: Source.DELVE,  # Scroll of Momentum
         }
 
         if self.item_id in item_mapping.keys():
@@ -311,6 +331,7 @@ class Trinket:
                 Source.HIGH_PVP,
                 Source.DUNGEON,
                 Source.RARE_MOB,
+                Source.DELVE,
             ):
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
 
@@ -323,12 +344,12 @@ class Trinket:
             ):
                 levels = ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
                 if self.full_name == "Mirror of Fractured Tomorrows":
-                    levels.extend(ItemLevel._s4_hero)  # hardcore
-                    levels.extend(ItemLevel._s4_mythic)  # deathless
+                    levels.extend(ItemLevel._df_s4_hero)  # hardcore
+                    levels.extend(ItemLevel._df_s4_mythic)  # deathless
 
             elif self.source == Source.PROFESSION:
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
-                epic_cutoff = 382
+                epic_cutoff = 99999
                 if "Darkmoon Deck:" in self.full_name:
                     levels = [level for level in levels if level < epic_cutoff]
                 elif "Darkmoon Deck Box:" in self.full_name:
@@ -344,7 +365,7 @@ class Trinket:
             ]
 
         if self.full_name == "Mirror of Fractured Tomorrows":
-            levels += ItemLevel._s2_mythic[:-1]
+            levels += ItemLevel._df_s2_mythic[:-1]
 
         levels = sorted(list(set(levels)))
 
@@ -491,7 +512,12 @@ class Trinket:
                 return Instance(self._trinket.id_journal_instance)
             except ValueError:
                 return Instance.NOT_MAPPED
-        return None
+        unmapped_trinkets = {
+            133300: Instance.GRIM_BATOL,  # Mark of Khardros
+            133282: Instance.GRIM_BATOL,  # Skardyn's Grace
+            133304: Instance.GRIM_BATOL,  # Gale of Shadows
+        }
+        return unmapped_trinkets.get(self.item_id, None)
 
     @property
     def instance_type(self) -> InstanceType:
@@ -511,6 +537,7 @@ class Trinket:
             Instance.VAULT_OF_THE_INCARNATES,
             Instance.ABERUS_THE_SHADOWED_CRUCIBLE,
             Instance.AMIRDRASSIL_THE_DREAMS_HOPE,
+            Instance.NERUBAR_PALACE,
         ):
             return None
 
@@ -553,7 +580,7 @@ class Trinket:
             self.expansion == Expansion.DRAGONFLIGHT
             and self.source == Source.MEGA_DUNGEON
         ):
-            return [Season.SEASON_2, Season.SEASON_3, Season.SEASON_4]
+            return [Season.DF_SEASON_2, Season.DF_SEASON_3, Season.DF_SEASON_4]
 
         seasons_ = Season.get_seasons_from_instance(self.instance)
         if seasons_:
@@ -561,28 +588,28 @@ class Trinket:
 
         if self.expansion == Expansion.DRAGONFLIGHT:
             if self.source == Source.WORLD_BOSS:
-                return [Season.SEASON_1]
+                return [Season.DF_SEASON_1]
 
             if self.source == Source.PROFESSION and "zzOld" not in self.full_name:
                 return [
-                    Season.SEASON_1,
-                    Season.SEASON_2,
-                    Season.SEASON_3,
-                    Season.SEASON_4,
+                    Season.DF_SEASON_1,
+                    Season.DF_SEASON_2,
+                    Season.DF_SEASON_3,
+                    Season.DF_SEASON_4,
                 ]
 
             if self.source in (Source.PVP, Source.LOW_PVP, Source.HIGH_PVP):
                 if self.full_name.startswith("Crimson"):
-                    return [Season.SEASON_1]
+                    return [Season.DF_SEASON_1]
                 elif self.full_name.startswith("Obsidian"):
-                    return [Season.SEASON_2]
+                    return [Season.DF_SEASON_2]
                 elif self.full_name.startswith("Verdant"):
-                    return [Season.SEASON_3]
+                    return [Season.DF_SEASON_3]
                 elif self.full_name.startswith("Draconic"):
-                    return [Season.SEASON_4]
+                    return [Season.DF_SEASON_4]
 
             if self.source == Source.RARE_MOB:
-                return [Season.SEASON_1]
+                return [Season.DF_SEASON_1]
 
             if self.source == Source.WORLD_QUEST:
                 return [s for s in Season]
@@ -592,11 +619,47 @@ class Trinket:
                 == Source.CALLING
                 # and "Paracausal Fragment of " in self.full_name
             ):
-                return [Season.SEASON_2, Season.SEASON_3, Season.SEASON_4]
-        # TODO: add more logic to present more trinkets as season trinkets
+                return [Season.DF_SEASON_2, Season.DF_SEASON_3, Season.DF_SEASON_4]
 
-        if self.source == Source.TIMEWALKING and self.instance:
-            return [Season.SEASON_2]
+            if self.source == Source.TIMEWALKING and self.instance:
+                return [Season.DF_SEASON_2]
+
+        if self.expansion == Expansion.THE_WAR_WITHIN:
+            if self.source == Source.WORLD_BOSS:
+                return [Season.TWW_SEASON_1]
+
+            if self.source == Source.PROFESSION:
+                return [
+                    Season.TWW_SEASON_1,
+                ]
+
+            if self.source == Source.DELVE:
+                return [
+                    Season.TWW_SEASON_1,
+                ]
+
+            if self.source in (Source.PVP, Source.LOW_PVP, Source.HIGH_PVP):
+                if self.full_name.startswith("Forged"):
+                    return [
+                        Season.TWW_SEASON_1,
+                    ]
+
+            if self.source == Source.RARE_MOB:
+                return [
+                    Season.TWW_SEASON_1,
+                ]
+
+            if self.source == Source.WORLD_QUEST:
+                return [
+                    Season.TWW_SEASON_1,
+                ]
+
+            if self.source == Source.CALLING:
+                return [
+                    Season.TWW_SEASON_1,
+                ]
+
+        # TODO: add more logic to present more trinkets as season trinkets
 
         return []
 

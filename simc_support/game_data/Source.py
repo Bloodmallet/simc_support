@@ -6,6 +6,7 @@ class Source(enum.Enum):
     TEMPLATE = "Template"
 
     CALLING = "Calling"
+    DELVE = "Delve"  # 1-3 player dungeon
     DUNGEON = "Dungeon"
     MEGA_DUNGEON = "Mega Dungeon"
     """
