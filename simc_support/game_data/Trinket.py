@@ -280,6 +280,8 @@ class Trinket:
 
         if "Template" in self.full_name:
             return Source.TEMPLATE
+        if "Test Item" in self.full_name:
+            return Source.TEMPLATE
 
         if "Alchemist" in self.full_name:
             return Source.PROFESSION
