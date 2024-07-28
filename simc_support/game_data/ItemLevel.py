@@ -175,7 +175,7 @@ ITEM_LEVELS = {
                 for ilevel in _tww1_veteran
                 + _tww1_champion
                 + _tww1_hero
-                + _tww1_mythic[:-3]
+                + _tww1_mythic[:-2]
             }
         ),
     },
