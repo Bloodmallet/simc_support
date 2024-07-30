@@ -4,10 +4,11 @@ import typing
 
 
 class Season(enum.Enum):
-    SEASON_1 = 1
-    SEASON_2 = 2
-    SEASON_3 = 3
-    SEASON_4 = 4
+    DF_SEASON_1 = enum.auto()
+    DF_SEASON_2 = enum.auto()
+    DF_SEASON_3 = enum.auto()
+    DF_SEASON_4 = enum.auto()
+    TWW_SEASON_1 = enum.auto()
 
     @staticmethod
     def get_seasons_from_instance(
@@ -31,7 +32,7 @@ class Season(enum.Enum):
         )
 
         if instance in s1_instances:
-            seasons.append(Season.SEASON_1)
+            seasons.append(Season.DF_SEASON_1)
 
         s2_instances = (
             Instance.HALLS_OF_INFUSION,
@@ -47,7 +48,7 @@ class Season(enum.Enum):
         )
 
         if instance in s2_instances:
-            seasons.append(Season.SEASON_2)
+            seasons.append(Season.DF_SEASON_2)
 
         s3_instances = (
             # Instance.DAWN_OF_THE_INFINITE_GALAKRONDS_FALL,
@@ -64,7 +65,7 @@ class Season(enum.Enum):
         )
 
         if instance in s3_instances:
-            seasons.append(Season.SEASON_3)
+            seasons.append(Season.DF_SEASON_3)
 
         s4_instances = (
             # dungeons
@@ -83,6 +84,23 @@ class Season(enum.Enum):
         )
 
         if instance in s4_instances:
-            seasons.append(Season.SEASON_4)
+            seasons.append(Season.DF_SEASON_4)
+
+        tww_s1_instances = (
+            # dungeons
+            Instance.ARAKARA_CITY_OF_ECHOES,
+            Instance.CITY_OF_THREADS,
+            Instance.THE_STONEVAULT,
+            Instance.THE_DAWNBREAKER,
+            Instance.MISTS_OF_TIRNA_SCITHE,
+            Instance.THE_NECROTIC_WAKE,
+            Instance.SIEGE_OF_BORALUS,
+            Instance.GRIM_BATOL,
+            # raids
+            Instance.NERUBAR_PALACE,
+        )
+
+        if instance in tww_s1_instances:
+            seasons.append(Season.TWW_SEASON_1)
 
         return seasons

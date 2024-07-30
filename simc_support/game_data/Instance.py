@@ -10,7 +10,18 @@ class InstanceType(int, enum.Enum):
 class Instance(int, enum.Enum):
     NOT_MAPPED = -1
 
-    # dungeons
+    ## dungeons
+    # Cataclysm
+    GRIM_BATOL = -2
+
+    # Battle for Azeroth
+    SIEGE_OF_BORALUS = 1023
+
+    # Shadowlands
+    MISTS_OF_TIRNA_SCITHE = 1184
+    THE_NECROTIC_WAKE = 1182
+
+    # Dragonflight
     ALGETHAR_ACADEMY = 1201
     BRACKENHIDE_HOLLOW = 1196
     COURT_OF_STARS = 800
@@ -50,11 +61,22 @@ class Instance(int, enum.Enum):
 
     DAWN_OF_THE_INFINITE = 1209
 
-    # raids
+    # The War Within
+    CITY_OF_THREADS = 1274
+    ARAKARA_CITY_OF_ECHOES = 1271
+    THE_DAWNBREAKER = 1270
+    PRIORY_OF_THE_SACRED_FLAME = 1267
+    DARKFLAME_CLEFT = 1210
+    THE_STONEVAULT = 1269
+    CINDERBREW_MEADERY = 1272
+    THE_ROOKERY = 1268
+
+    ## raids
     VAULT_OF_THE_INCARNATES = 1200
     ABERUS_THE_SHADOWED_CRUCIBLE = 1208
     FIRELANDS = 78
     AMIRDRASSIL_THE_DREAMS_HOPE = 1207
+    NERUBAR_PALACE = 1273
 
 
 class RaidTier(int, enum.Enum):
@@ -79,6 +101,9 @@ class RaidTier(int, enum.Enum):
             # Amirdrassil, the Dream's Hope
             2564,  # Gnarlroot
             2554,  # Igira the Cruel
+            # Nerub-ar Palace
+            2607,  # Ulgrax the Devourer
+            2611,  # The Bloodbound Horror
         ):
             return RaidTier.LOW
         elif encounter_id in (
@@ -90,6 +115,9 @@ class RaidTier(int, enum.Enum):
             # Amirdrassil, the Dream's Hope
             2557,  # Volcoross
             2555,  # Council of Dreams
+            # Nerub-ar Palace
+            2599,  # Sikran, Captain of the Sureki
+            2609,  # Rasha'nan
         ):
             return RaidTier.MID
         elif encounter_id in (
@@ -102,6 +130,9 @@ class RaidTier(int, enum.Enum):
             2553,  # Larodar, Keeper of the Flame
             2556,  # Nymue, Weaver of the Cycle
             2563,  # Smolderon
+            # Nerub-ar Palace
+            2612,  # Broodtwister Ovi'nax
+            2601,  # Nexus-Princess Ky'veza
         ):
             return RaidTier.HIGH
         elif encounter_id in (
@@ -111,6 +142,9 @@ class RaidTier(int, enum.Enum):
             # Amirdrassil, the Dream's Hope
             2565,  # Tindral Sageswift, Seer of Flame
             2519,  # Fyrakk the Blazing
+            # Nerub-ar Palace
+            2608,  # The Silken Court
+            2602,  # Queen Ansurek
         ):
             return RaidTier.HIGHER
         return RaidTier.UNKNOWN
