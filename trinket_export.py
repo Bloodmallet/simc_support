@@ -1,5 +1,6 @@
 """Exports trinkets from simc_support to three copy= .simc files for SimulationCraft testing purpose.
 """
+
 import typing
 from simc_support.game_data.Season import Season
 
@@ -34,14 +35,14 @@ def main():
     trinkets = [
         t
         for t in get_trinkets_for_spec(get_wow_spec("warrior", "arms"))
-        if Season.SEASON_1 in t.seasons
+        if Season.DF_SEASON_1 in t.seasons
     ]
     print_simc_file(trinkets, "str")
 
     trinkets = [
         t
         for t in get_trinkets_for_spec(get_wow_spec("hunter", "marksmanship"))
-        if Season.SEASON_1 in t.seasons
+        if Season.DF_SEASON_1 in t.seasons
     ]
 
     print_simc_file(trinkets, "agi")
@@ -49,7 +50,7 @@ def main():
     trinkets = [
         t
         for t in get_trinkets_for_spec(get_wow_spec("shaman", "elemental"))
-        if Season.SEASON_1 in t.seasons
+        if Season.DF_SEASON_1 in t.seasons
     ]
 
     print_simc_file(trinkets, "int")
