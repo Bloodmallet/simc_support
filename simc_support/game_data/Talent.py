@@ -482,6 +482,9 @@ def _load_talents(
         for raw_node in loaded_talents[spec]["specNodes"]:
             talents = []
             for raw_talent in raw_node["entries"]:
+                if not raw_talent:
+                    continue
+
                 try:
                     talents.append(
                         Talent(
@@ -504,7 +507,7 @@ def _load_talents(
                     y=raw_node["posY"],
                     tree_node_type=TreeNodeType(raw_node["type"]),
                     required_invested_points=raw_node.get("reqPoints", 0),
-                    max_rank=raw_node["maxRanks"],
+                    max_rank=raw_node.get("maxRanks", 1),
                     children_ids=tuple(raw_node["next"]),
                     talents=tuple(talents),
                     order_index=order.index(raw_node["id"]),
