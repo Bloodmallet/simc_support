@@ -101,6 +101,7 @@ condition type 2 is spec start
 or spec freebie
 
 """
+
 import logging
 import typing
 import os
@@ -258,9 +259,11 @@ class TalentLoader(Extractor):
             for tree in ["specNodes", "classNodes"]:
                 for node in spec_data[tree]:
                     for entry in node["entries"]:
-                        entry["icon"] = spellicon_wowhead_icon_map.get(
-                            entry["icon"], entry["icon"]
-                        )
+                        # somehow icons started to get missing
+                        if "icon" in entry:
+                            entry["icon"] = spellicon_wowhead_icon_map.get(
+                                entry["icon"], entry["icon"]
+                            )
 
             # sanity/curiousity checks
             logger.info(
