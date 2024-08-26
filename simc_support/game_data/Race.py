@@ -98,6 +98,22 @@ DWARF = Race(
         Language.BR: "Anão",
     },
 )
+EARTHEN_ALLIANCE = Race(
+    ALLIANCE,
+    "Earthen",
+    "earthen",
+    {
+        Language.US: "Earthen",
+        Language.IT: "Terrigeno",
+        Language.DE: "Irdener",
+        Language.FR: "Terrestre",
+        Language.RU: "Земельник",
+        Language.ES: "Terráneo",
+        Language.KR: "토석인",
+        Language.CN: "土灵",
+        Language.BR: "Terrano",
+    },
+)
 GNOME = Race(
     ALLIANCE,
     "Gnome",
@@ -274,6 +290,22 @@ DRACTHYR_HORDE = Race(
         Language.KR: "Dracthyr",
         Language.CN: "Dracthyr",
         Language.BR: "Dracthyr",
+    },
+)
+EARTHEN_HORDE = Race(
+    HORDE,
+    "Earthen",
+    "earthen",
+    {
+        Language.US: "Earthen",
+        Language.IT: "Terrigeno",
+        Language.DE: "Irdener",
+        Language.FR: "Terrestre",
+        Language.RU: "Земельник",
+        Language.ES: "Terráneo",
+        Language.KR: "토석인",
+        Language.CN: "土灵",
+        Language.BR: "Terrano",
     },
 )
 GOBLIN = Race(
