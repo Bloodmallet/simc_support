@@ -33,13 +33,24 @@ class WowClass(SimcObject):
             self.translations = Language.Translation(translations=translations)
 
 
-_all_non_dracthyr_races = tuple(
-    [r for r in Race.RACES if r not in (Race.DRACTHYR_ALLIANCE, Race.DRACTHYR_HORDE)]
+_all_non_dracthyr_and_earthen_races = tuple(
+    [
+        r
+        for r in Race.RACES
+        if r
+        not in (
+            Race.DRACTHYR_ALLIANCE,
+            Race.DRACTHYR_HORDE,
+            Race.EARTHEN_ALLIANCE,
+            Race.EARTHEN_HORDE,
+        )
+    ]
 )
+_earthen = (Race.EARTHEN_ALLIANCE, Race.EARTHEN_HORDE)
 
 DEATHKNIGHT = WowClass(
     6,
-    _all_non_dracthyr_races,
+    _all_non_dracthyr_and_earthen_races,
     Language.EmptyTranslation(),
     "Death Knight",
     "death_knight",
@@ -80,11 +91,15 @@ EVOKER = WowClass(
     "evoker",
 )
 HUNTER = WowClass(
-    3, _all_non_dracthyr_races, Language.EmptyTranslation(), "Hunter", "hunter"
+    3,
+    _all_non_dracthyr_and_earthen_races + _earthen,
+    Language.EmptyTranslation(),
+    "Hunter",
+    "hunter",
 )
 MAGE = WowClass(
     8,
-    _all_non_dracthyr_races,
+    _all_non_dracthyr_and_earthen_races + _earthen,
     Language.EmptyTranslation(),
     "Mage",
     "mage",
@@ -116,7 +131,8 @@ MONK = WowClass(
         Race.MAGHARORC,
         Race.ZANDALARITROLL,
         Race.VULPERA,
-    ),
+    )
+    + _earthen,
     Language.EmptyTranslation(),
     "Monk",
     "monk",
@@ -132,21 +148,22 @@ PALADIN = WowClass(
         Race.BLOODELF,
         Race.TAUREN,
         Race.ZANDALARITROLL,
-    ),
+    )
+    + _earthen,
     Language.EmptyTranslation(),
     "Paladin",
     "paladin",
 )
 PRIEST = WowClass(
     5,
-    _all_non_dracthyr_races,
+    _all_non_dracthyr_and_earthen_races + _earthen,
     Language.EmptyTranslation(),
     "Priest",
     "priest",
 )
 ROGUE = WowClass(
     4,
-    _all_non_dracthyr_races,
+    _all_non_dracthyr_and_earthen_races + _earthen,
     Language.EmptyTranslation(),
     "Rogue",
     "rogue",
@@ -168,20 +185,25 @@ SHAMAN = WowClass(
         Race.MAGHARORC,
         Race.ZANDALARITROLL,
         Race.VULPERA,
-    ),
+    )
+    + _earthen,
     Language.EmptyTranslation(),
     "Shaman",
     "shaman",
 )
 WARLOCK = WowClass(
     9,
-    _all_non_dracthyr_races,
+    _all_non_dracthyr_and_earthen_races + _earthen,
     Language.EmptyTranslation(),
     "Warlock",
     "warlock",
 )
 WARRIOR = WowClass(
-    1, _all_non_dracthyr_races, Language.EmptyTranslation(), "Warrior", "warrior"
+    1,
+    _all_non_dracthyr_and_earthen_races + _earthen,
+    Language.EmptyTranslation(),
+    "Warrior",
+    "warrior",
 )
 
 WOWCLASSES = (
