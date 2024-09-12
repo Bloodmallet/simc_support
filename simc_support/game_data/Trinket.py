@@ -614,7 +614,12 @@ class Trinket:
                 return [Season.DF_SEASON_1]
 
             if self.source == Source.WORLD_QUEST:
-                return [s for s in Season]
+                return [
+                    Season.DF_SEASON_1,
+                    Season.DF_SEASON_2,
+                    Season.DF_SEASON_3,
+                    Season.DF_SEASON_4,
+                ]
 
             if (
                 self.source
