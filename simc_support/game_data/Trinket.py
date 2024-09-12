@@ -248,6 +248,12 @@ class Trinket:
             225668: Source.DELVE,  # Unstable Power Suit Core
             225891: Source.DELVE,  # Vile Vial of Kaheti Bile
             226539: Source.DELVE,  # Scroll of Momentum
+            225654: Source.DELVE,  # Imperfect Ascendancy Serum
+            215170: Source.DELVE,  # Abyssal Trap
+            225653: Source.DELVE,  # Siphoning Lightbrand
+            225638: Source.DELVE,  # Spelunker's Waning Candle
+            # 215172: Source.DELVE,  # Silken Chain Weaver
+            225657: Source.DELVE,  # Detachable Fang
         }
 
         if self.item_id in item_mapping.keys():
