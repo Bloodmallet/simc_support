@@ -254,6 +254,8 @@ class Trinket:
             225638: Source.DELVE,  # Spelunker's Waning Candle
             # 215172: Source.DELVE,  # Silken Chain Weaver
             225657: Source.DELVE,  # Detachable Fang
+            225647: Source.WORLD_QUEST,  # Shining Arathor Insignia
+            218307: Source.DELVE,  # Wildfire Wick
         }
 
         if self.item_id in item_mapping.keys():
