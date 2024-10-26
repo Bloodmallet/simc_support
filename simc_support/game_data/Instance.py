@@ -78,6 +78,9 @@ class Instance(int, enum.Enum):
     AMIRDRASSIL_THE_DREAMS_HOPE = 1207
     NERUBAR_PALACE = 1273
 
+    ## event raids
+    BLACKROCK_DEPTHS_EVENT = 1301
+
 
 class RaidTier(int, enum.Enum):
     UNKNOWN = enum.auto()
@@ -104,6 +107,9 @@ class RaidTier(int, enum.Enum):
             # Nerub-ar Palace
             2607,  # Ulgrax the Devourer
             2611,  # The Bloodbound Horror
+            # Blackrock Depths (event)
+            2663,  # Lord Roccor
+            2664,  # Bael'Gar
         ):
             return RaidTier.LOW
         elif encounter_id in (
@@ -118,6 +124,9 @@ class RaidTier(int, enum.Enum):
             # Nerub-ar Palace
             2599,  # Sikran, Captain of the Sureki
             2609,  # Rasha'nan
+            # Blackrock Depths (event)
+            2666,  # Golem Lord Argelmach
+            2667,  # The Seven
         ):
             return RaidTier.MID
         elif encounter_id in (
@@ -133,6 +142,9 @@ class RaidTier(int, enum.Enum):
             # Nerub-ar Palace
             2612,  # Broodtwister Ovi'nax
             2601,  # Nexus-Princess Ky'veza
+            # Blackrock Depths (event)
+            2669,  # Ambassador Flamelash
+            2668,  # General Angerforge
         ):
             return RaidTier.HIGH
         elif encounter_id in (
@@ -145,6 +157,8 @@ class RaidTier(int, enum.Enum):
             # Nerub-ar Palace
             2608,  # The Silken Court
             2602,  # Queen Ansurek
+            # Blackrock Depths (event)
+            2670,  # Emperor Dagran Thaurissan
         ):
             return RaidTier.HIGHER
         return RaidTier.UNKNOWN

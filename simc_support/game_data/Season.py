@@ -98,6 +98,7 @@ class Season(enum.Enum):
             Instance.GRIM_BATOL,
             # raids
             Instance.NERUBAR_PALACE,
+            Instance.BLACKROCK_DEPTHS_EVENT,
         )
 
         if instance in tww_s1_instances:
