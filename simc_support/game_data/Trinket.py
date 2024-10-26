@@ -548,6 +548,7 @@ class Trinket:
             Instance.ABERUS_THE_SHADOWED_CRUCIBLE,
             Instance.AMIRDRASSIL_THE_DREAMS_HOPE,
             Instance.NERUBAR_PALACE,
+            Instance.BLACKROCK_DEPTHS_EVENT,
         ):
             return None
 

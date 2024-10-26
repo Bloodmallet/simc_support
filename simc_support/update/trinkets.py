@@ -141,11 +141,11 @@ class TrinketExtractor(Extractor):
             if isinstance(effect["id_parent"], int):
                 if effect["id_parent"] in itemxitemeffects:
                     itemxitemeffects[effect["id_parent"]].append(
-                        itemeffects[effect["id_item_effect"]][0]
+                        itemeffects.get(effect["id_item_effect"], [-1])[0]
                     )
                 else:
                     itemxitemeffects[effect["id_parent"]] = [
-                        itemeffects[effect["id_item_effect"]][0]
+                        itemeffects.get(effect["id_item_effect"], [-1])[0]
                     ]
 
         logger.info("id_dict: JournalEncounterItem")
