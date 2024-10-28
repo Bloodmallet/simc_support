@@ -33,6 +33,7 @@ class WowClass(SimcObject):
             self.translations = Language.Translation(translations=translations)
 
 
+_all_races = Race.RACES
 _all_non_dracthyr_and_earthen_races = tuple(
     [
         r
@@ -92,14 +93,14 @@ EVOKER = WowClass(
 )
 HUNTER = WowClass(
     3,
-    _all_non_dracthyr_and_earthen_races + _earthen,
+    _all_races,
     Language.EmptyTranslation(),
     "Hunter",
     "hunter",
 )
 MAGE = WowClass(
     8,
-    _all_non_dracthyr_and_earthen_races + _earthen,
+    _all_races,
     Language.EmptyTranslation(),
     "Mage",
     "mage",
@@ -156,14 +157,14 @@ PALADIN = WowClass(
 )
 PRIEST = WowClass(
     5,
-    _all_non_dracthyr_and_earthen_races + _earthen,
+    _all_races,
     Language.EmptyTranslation(),
     "Priest",
     "priest",
 )
 ROGUE = WowClass(
     4,
-    _all_non_dracthyr_and_earthen_races + _earthen,
+    _all_races,
     Language.EmptyTranslation(),
     "Rogue",
     "rogue",
@@ -193,14 +194,14 @@ SHAMAN = WowClass(
 )
 WARLOCK = WowClass(
     9,
-    _all_non_dracthyr_and_earthen_races + _earthen,
+    _all_races,
     Language.EmptyTranslation(),
     "Warlock",
     "warlock",
 )
 WARRIOR = WowClass(
     1,
-    _all_non_dracthyr_and_earthen_races + _earthen,
+    _all_races,
     Language.EmptyTranslation(),
     "Warrior",
     "warrior",
