@@ -96,6 +96,11 @@ def _tww_season_1_upgrade_range(upgrade_level: int) -> typing.List[int]:
     return _upgrade_range(options, upgrade_level)
 
 
+def _tww_season_1_timewalking_upgrade_range(upgrade_level: int) -> typing.List[int]:
+    options = [_tww1_veteran, _tww1_champion, _tww1_hero]
+    return _upgrade_range(options, upgrade_level)
+
+
 def _combine_unify(*itemlevels: typing.List[int]) -> typing.List[int]:
     combined_list = []
     for levels in itemlevels:
@@ -362,23 +367,53 @@ ITEM_LEVELS = {
     Source.TIMEWALKING: {
         Season.DF_SEASON_1: {
             InstanceType.DUNGEON: [385],
-            InstanceType.RAID: [385],
+            InstanceType.RAID: {
+                RaidTier.LOW: [385],
+                RaidTier.MID: [385],
+                RaidTier.HIGH: [385],
+                RaidTier.HIGHER: [385],
+                RaidTier.VERY_RARE: [-1],
+            },
         },
         Season.DF_SEASON_2: {
             InstanceType.DUNGEON: [385],
-            InstanceType.RAID: _df_s2_champion,
+            InstanceType.RAID: {
+                RaidTier.LOW: _df_s2_champion,
+                RaidTier.MID: _df_s2_champion,
+                RaidTier.HIGH: _df_s2_champion,
+                RaidTier.HIGHER: _df_s2_champion,
+                RaidTier.VERY_RARE: [-1],
+            },
         },
         Season.DF_SEASON_3: {
             InstanceType.DUNGEON: _df_s3_adventurer,
-            InstanceType.RAID: _df_s3_hero,
+            InstanceType.RAID: {
+                RaidTier.LOW: _df_s3_hero,
+                RaidTier.MID: _df_s3_hero,
+                RaidTier.HIGH: _df_s3_hero,
+                RaidTier.HIGHER: _df_s3_hero,
+                RaidTier.VERY_RARE: [-1],
+            },
         },
         Season.DF_SEASON_4: {
             InstanceType.DUNGEON: _df_s4_adventurer,
-            InstanceType.RAID: _df_s4_hero,
+            InstanceType.RAID: {
+                RaidTier.LOW: _df_s4_hero,
+                RaidTier.MID: _df_s4_hero,
+                RaidTier.HIGH: _df_s4_hero,
+                RaidTier.HIGHER: _df_s4_hero,
+                RaidTier.VERY_RARE: [-1],
+            },
         },
         Season.TWW_SEASON_1: {
             InstanceType.DUNGEON: [-1],
-            InstanceType.RAID: [-1],
+            InstanceType.RAID: {
+                RaidTier.LOW: _tww_season_1_timewalking_upgrade_range(1),
+                RaidTier.MID: _tww_season_1_timewalking_upgrade_range(2),
+                RaidTier.HIGH: _tww_season_1_timewalking_upgrade_range(3),
+                RaidTier.HIGHER: _tww_season_1_timewalking_upgrade_range(4),
+                RaidTier.VERY_RARE: [-1],
+            },
         },
     },
     Source.DELVE: {
