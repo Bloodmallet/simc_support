@@ -269,6 +269,12 @@ class Trinket:
             InstanceType.RAID: Source.RAID,
         }
 
+        if (
+            self.expansion == Expansion.CLASSIC
+            and self.instance_type == InstanceType.RAID
+        ):
+            return Source.TIMEWALKING
+
         if self._trinket.id_journal_instance == 1205:
             return Source.WORLD_BOSS
 
@@ -345,8 +351,16 @@ class Trinket:
             ):
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
 
-            elif self.source == Source.TIMEWALKING:
+            elif (
+                self.source == Source.TIMEWALKING
+                and self.instance_type == InstanceType.DUNGEON
+            ):
                 levels = ItemLevel.ITEM_LEVELS[self.source][season][self.instance_type]  # type: ignore
+            elif (
+                self.source == Source.TIMEWALKING
+                and self.instance_type == InstanceType.RAID
+            ):
+                levels = ItemLevel.ITEM_LEVELS[self.source][season][self.instance_type][self.raid_tier]  # type: ignore
 
             elif self.source in (
                 Source.WORLD_QUEST,
