@@ -9,6 +9,7 @@ class Season(enum.Enum):
     DF_SEASON_3 = enum.auto()
     DF_SEASON_4 = enum.auto()
     TWW_SEASON_1 = enum.auto()
+    TWW_SEASON_2 = enum.auto()
 
     @staticmethod
     def get_seasons_from_instance(
@@ -19,7 +20,7 @@ class Season(enum.Enum):
         if instance is None:
             return seasons
 
-        s1_instances = (
+        df_s1_instances = (
             Instance.ALGETHAR_ACADEMY,
             Instance.COURT_OF_STARS,
             Instance.HALLS_OF_VALOR,
@@ -31,10 +32,10 @@ class Season(enum.Enum):
             Instance.VAULT_OF_THE_INCARNATES,
         )
 
-        if instance in s1_instances:
+        if instance in df_s1_instances:
             seasons.append(Season.DF_SEASON_1)
 
-        s2_instances = (
+        df_s2_instances = (
             Instance.HALLS_OF_INFUSION,
             Instance.BRACKENHIDE_HOLLOW,
             Instance.ULDAMAN_LEGACY_OF_TYR,
@@ -47,10 +48,10 @@ class Season(enum.Enum):
             Instance.DAWN_OF_THE_INFINITE,
         )
 
-        if instance in s2_instances:
+        if instance in df_s2_instances:
             seasons.append(Season.DF_SEASON_2)
 
-        s3_instances = (
+        df_s3_instances = (
             # Instance.DAWN_OF_THE_INFINITE_GALAKRONDS_FALL,
             # Instance.DAWN_OF_THE_INFINITE_MUROZOND_RISE,
             Instance.DAWN_OF_THE_INFINITE,
@@ -64,10 +65,10 @@ class Season(enum.Enum):
             Instance.AMIRDRASSIL_THE_DREAMS_HOPE,
         )
 
-        if instance in s3_instances:
+        if instance in df_s3_instances:
             seasons.append(Season.DF_SEASON_3)
 
-        s4_instances = (
+        df_s4_instances = (
             # dungeons
             Instance.ALGETHAR_ACADEMY,
             Instance.BRACKENHIDE_HOLLOW,
@@ -83,7 +84,7 @@ class Season(enum.Enum):
             Instance.AMIRDRASSIL_THE_DREAMS_HOPE,
         )
 
-        if instance in s4_instances:
+        if instance in df_s4_instances:
             seasons.append(Season.DF_SEASON_4)
 
         tww_s1_instances = (
@@ -103,5 +104,22 @@ class Season(enum.Enum):
 
         if instance in tww_s1_instances:
             seasons.append(Season.TWW_SEASON_1)
+
+        tww_s2_instances = (
+            # dungeons
+            Instance.CINDERBREW_MEADERY,
+            Instance.DARKFLAME_CLEFT,
+            Instance.PRIORY_OF_THE_SACRED_FLAME,
+            Instance.THE_ROOKERY,
+            Instance.OPERATION_FLOODGATE,
+            Instance.THEATER_OF_PAIN,
+            Instance.OPERATION_MECHAGON,
+            Instance.THE_MOTHERLODE,
+            # raids
+            Instance.LIBERATION_OF_UNDERMINE,
+        )
+
+        if instance in tww_s2_instances:
+            seasons.append(Season.TWW_SEASON_2)
 
         return seasons

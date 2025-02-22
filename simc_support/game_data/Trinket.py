@@ -563,6 +563,7 @@ class Trinket:
             Instance.AMIRDRASSIL_THE_DREAMS_HOPE,
             Instance.NERUBAR_PALACE,
             Instance.BLACKROCK_DEPTHS_EVENT,
+            Instance.LIBERATION_OF_UNDERMINE,
         ):
             return None
 
