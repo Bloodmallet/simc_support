@@ -16,10 +16,13 @@ class Instance(int, enum.Enum):
 
     # Battle for Azeroth
     SIEGE_OF_BORALUS = 1023
+    OPERATION_MECHAGON = 1178
+    THE_MOTHERLODE = 1012
 
     # Shadowlands
     MISTS_OF_TIRNA_SCITHE = 1184
     THE_NECROTIC_WAKE = 1182
+    THEATER_OF_PAIN = 1187
 
     # Dragonflight
     ALGETHAR_ACADEMY = 1201
@@ -62,14 +65,15 @@ class Instance(int, enum.Enum):
     DAWN_OF_THE_INFINITE = 1209
 
     # The War Within
-    CITY_OF_THREADS = 1274
     ARAKARA_CITY_OF_ECHOES = 1271
-    THE_DAWNBREAKER = 1270
-    PRIORY_OF_THE_SACRED_FLAME = 1267
-    DARKFLAME_CLEFT = 1210
-    THE_STONEVAULT = 1269
     CINDERBREW_MEADERY = 1272
+    CITY_OF_THREADS = 1274
+    DARKFLAME_CLEFT = 1210
+    OPERATION_FLOODGATE = 1298
+    PRIORY_OF_THE_SACRED_FLAME = 1267
+    THE_DAWNBREAKER = 1270
     THE_ROOKERY = 1268
+    THE_STONEVAULT = 1269
 
     ## raids
     VAULT_OF_THE_INCARNATES = 1200
@@ -77,6 +81,7 @@ class Instance(int, enum.Enum):
     FIRELANDS = 78
     AMIRDRASSIL_THE_DREAMS_HOPE = 1207
     NERUBAR_PALACE = 1273
+    LIBERATION_OF_UNDERMINE = 1296
 
     ## event raids
     BLACKROCK_DEPTHS_EVENT = 1301
@@ -110,6 +115,8 @@ class RaidTier(int, enum.Enum):
             # Blackrock Depths (event)
             2663,  # Lord Roccor
             2664,  # Bael'Gar
+            # Liberation of Undermine
+            2639,  # Vexie and the Geargrinders
         ):
             return RaidTier.LOW
         elif encounter_id in (
@@ -127,6 +134,9 @@ class RaidTier(int, enum.Enum):
             # Blackrock Depths (event)
             2666,  # Golem Lord Argelmach
             2667,  # The Seven
+            # Liberation of Undermine
+            2640,  # Cauldron of Carnage
+            2641,  # Rik Reverb
         ):
             return RaidTier.MID
         elif encounter_id in (
@@ -145,6 +155,10 @@ class RaidTier(int, enum.Enum):
             # Blackrock Depths (event)
             2669,  # Ambassador Flamelash
             2668,  # General Angerforge
+            # Liberation of Undermine
+            2642,  # Stix Bunkjunker
+            2653,  # Sprocketmonger Lockenstock
+            2644,  # The One-Armed Bandit
         ):
             return RaidTier.HIGH
         elif encounter_id in (
@@ -159,6 +173,9 @@ class RaidTier(int, enum.Enum):
             2602,  # Queen Ansurek
             # Blackrock Depths (event)
             2670,  # Emperor Dagran Thaurissan
+            # Liberation of Undermine
+            2645,  # Mug'zee, Heads of Security
+            2646,  # Chrome King Gallywix
         ):
             return RaidTier.HIGHER
         return RaidTier.UNKNOWN

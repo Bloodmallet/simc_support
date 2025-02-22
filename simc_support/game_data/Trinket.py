@@ -256,6 +256,18 @@ class Trinket:
             225657: Source.DELVE,  # Detachable Fang
             225647: Source.WORLD_QUEST,  # Shining Arathor Insignia
             218307: Source.DELVE,  # Wildfire Wick
+            # tww season 2
+            235363: Source.DELVE,  # Suspicious Energy Drink
+            234217: Source.DELVE,  # Funhouse Lens
+            232485: Source.DELVE,  # Mechano-Core Amplifier
+            232883: Source.DELVE,  # Turbo-Drain 5000
+            234821: Source.DELVE,  # Papa's Prized Putter
+            235359: Source.DELVE,  # Ratfang Toxin
+            232486: Source.DELVE,  # Noggenfogger Ultimate Deluxe
+            234717: Source.DELVE,  # Blastmaster3000
+            235373: Source.DELVE,  # Abyssal Volt
+            235283: Source.DELVE,  # Bashful Book
+            234218: Source.DELVE,  # Goo-blin Grenade
         }
 
         if self.item_id in item_mapping.keys():
@@ -563,6 +575,7 @@ class Trinket:
             Instance.AMIRDRASSIL_THE_DREAMS_HOPE,
             Instance.NERUBAR_PALACE,
             Instance.BLACKROCK_DEPTHS_EVENT,
+            Instance.LIBERATION_OF_UNDERMINE,
         ):
             return None
 
@@ -666,6 +679,7 @@ class Trinket:
             if self.source == Source.DELVE:
                 return [
                     Season.TWW_SEASON_1,
+                    Season.TWW_SEASON_2,
                 ]
 
             if self.source in (Source.PVP, Source.LOW_PVP, Source.HIGH_PVP):
