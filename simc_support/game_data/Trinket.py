@@ -22,6 +22,111 @@ from simc_support.game_data.Season import Season
 
 logger = logging.getLogger(__name__)
 
+ITEM_TO_SOURCE_MAPPING = {
+    184807: Source.WORLD_DROP,
+    182455: Source.RARE_MOB,
+    182454: Source.RARE_MOB,
+    182453: Source.RARE_MOB,
+    182452: Source.RARE_MOB,
+    182451: Source.RARE_MOB,
+    175729: Source.RARE_MOB,
+    175943: Source.PROFESSION,
+    175942: Source.PROFESSION,
+    175941: Source.PROFESSION,
+    171323: Source.PROFESSION,
+    173069: Source.PROFESSION,
+    173078: Source.PROFESSION,
+    173087: Source.PROFESSION,
+    173096: Source.PROFESSION,
+    175728: Source.CALLING,
+    181334: Source.CALLING,
+    181357: Source.CALLING,
+    181358: Source.CALLING,
+    181359: Source.CALLING,
+    181360: Source.CALLING,
+    181457: Source.CALLING,
+    181458: Source.CALLING,
+    181459: Source.CALLING,
+    181501: Source.CALLING,
+    181502: Source.CALLING,
+    181503: Source.CALLING,
+    181507: Source.CALLING,
+    184839: Source.CALLING,
+    184840: Source.CALLING,
+    184841: Source.CALLING,
+    184842: Source.CALLING,
+    190958: Source.DUNGEON,  # So'leah's Secret Technique
+    190652: Source.DUNGEON,  # Ticking Sack of Terror
+    # Dragonflight start
+    200217: Source.RARE_MOB,  # Blazing Essence
+    200563: Source.RARE_MOB,  # Primal Ritual Shell
+    200859: Source.RARE_MOB,  # Seasoned Hunter's Trophy
+    198407: Source.WORLD_QUEST,  # Azure Arcanic Amplifier
+    198542: Source.WORLD_QUEST,  # Shikaari Huntress' Arrowhead
+    198489: Source.WORLD_QUEST,  # Dreamscape Prism
+    204810: Source.WORLD_QUEST,  # Drogbar Rocks
+    204811: Source.WORLD_QUEST,  # Drogbar Stones
+    204386: Source.WORLD_QUEST,  # Pocket Darkened Elemental Core
+    204387: Source.WORLD_QUEST,  # Buzzing Orb Core
+    204388: Source.WORLD_QUEST,  # Draconic Cauterizing Magma
+    204714: Source.WORLD_QUEST,  # Satchel of Healing Spores
+    204728: Source.WORLD_QUEST,  # Friendship Censer
+    204736: Source.WORLD_QUEST,  # Heatbound Medallion
+    204901: Source.WORLD_QUEST,  # Firecaller's Focus
+    205191: Source.WORLD_QUEST,  # Underlight Globe
+    205192: Source.WORLD_QUEST,  # Volatile Crystal Shard
+    205193: Source.WORLD_QUEST,  # Sturdy Deepflayer Scute
+    205194: Source.WORLD_QUEST,  # Fractured Crystalspine Quill
+    205195: Source.WORLD_QUEST,  # Drakeforged Magma Charm
+    205196: Source.WORLD_QUEST,  # Zaqali Hand Cauldron
+    205200: Source.WORLD_QUEST,  # Stirring Twilight Ember
+    205201: Source.WORLD_QUEST,  # Smoldering Howler Horn
+    205229: Source.WORLD_QUEST,  # Magma Serpent Lure
+    205262: Source.WORLD_QUEST,  # Magmaclaw Lure
+    205276: Source.WORLD_QUEST,  # Deepflayer Lure
+    192797: Source.CALLING,  # Gral's Discarded Tooth
+    198695: Source.CALLING,  # Bottomless Reliquary Satchel
+    # need to flag these because of timewalking :s
+    133252: Source.DUNGEON,  # Rainsong
+    133246: Source.DUNGEON,  # Heart of Thunder
+    # Grim Batol is somehow not getting detected
+    133304: Source.DUNGEON,  # Gale of Shadows
+    133282: Source.DUNGEON,  # Skardyn's Grace
+    133300: Source.DUNGEON,  # Mark of Khardros
+    # need to somehow double check these
+    215174: Source.DELVE,  # Concoction: Kiss of Death
+    215171: Source.DELVE,  # Fungal Friend Flute
+    215169: Source.DELVE,  # Everburning Lantern
+    215178: Source.DELVE,  # Shadow-Binding Ritual Knife
+    225648: Source.DELVE,  # Candle Confidant
+    225656: Source.DELVE,  # Goldenglow Censer
+    225651: Source.DELVE,  # Kaheti Shadeweaver's Emblem
+    225649: Source.DELVE,  # Quickwick Candlestick
+    225668: Source.DELVE,  # Unstable Power Suit Core
+    225891: Source.DELVE,  # Vile Vial of Kaheti Bile
+    226539: Source.DELVE,  # Scroll of Momentum
+    225654: Source.DELVE,  # Imperfect Ascendancy Serum
+    215170: Source.DELVE,  # Abyssal Trap
+    225653: Source.DELVE,  # Siphoning Lightbrand
+    225638: Source.DELVE,  # Spelunker's Waning Candle
+    # 215172: Source.DELVE,  # Silken Chain Weaver
+    225657: Source.DELVE,  # Detachable Fang
+    225647: Source.WORLD_QUEST,  # Shining Arathor Insignia
+    218307: Source.DELVE,  # Wildfire Wick
+    # tww season 2
+    235363: Source.DELVE,  # Suspicious Energy Drink
+    234217: Source.DELVE,  # Funhouse Lens
+    232485: Source.DELVE,  # Mechano-Core Amplifier
+    232883: Source.DELVE,  # Turbo-Drain 5000
+    234821: Source.DELVE,  # Papa's Prized Putter
+    235359: Source.DELVE,  # Ratfang Toxin
+    232486: Source.DELVE,  # Noggenfogger Ultimate Deluxe
+    234717: Source.DELVE,  # Blastmaster3000
+    235373: Source.DELVE,  # Abyssal Volt
+    235283: Source.DELVE,  # Bashful Book
+    234218: Source.DELVE,  # Goo-blin Grenade
+}
+
 
 @dataclasses.dataclass(frozen=True)
 class _Trinket:
@@ -165,113 +270,8 @@ class Trinket:
 
     @property
     def source(self) -> Source:
-        item_mapping = {
-            184807: Source.WORLD_DROP,
-            182455: Source.RARE_MOB,
-            182454: Source.RARE_MOB,
-            182453: Source.RARE_MOB,
-            182452: Source.RARE_MOB,
-            182451: Source.RARE_MOB,
-            175729: Source.RARE_MOB,
-            175943: Source.PROFESSION,
-            175942: Source.PROFESSION,
-            175941: Source.PROFESSION,
-            171323: Source.PROFESSION,
-            173069: Source.PROFESSION,
-            173078: Source.PROFESSION,
-            173087: Source.PROFESSION,
-            173096: Source.PROFESSION,
-            175728: Source.CALLING,
-            181334: Source.CALLING,
-            181357: Source.CALLING,
-            181358: Source.CALLING,
-            181359: Source.CALLING,
-            181360: Source.CALLING,
-            181457: Source.CALLING,
-            181458: Source.CALLING,
-            181459: Source.CALLING,
-            181501: Source.CALLING,
-            181502: Source.CALLING,
-            181503: Source.CALLING,
-            181507: Source.CALLING,
-            184839: Source.CALLING,
-            184840: Source.CALLING,
-            184841: Source.CALLING,
-            184842: Source.CALLING,
-            190958: Source.DUNGEON,  # So'leah's Secret Technique
-            190652: Source.DUNGEON,  # Ticking Sack of Terror
-            # Dragonflight start
-            200217: Source.RARE_MOB,  # Blazing Essence
-            200563: Source.RARE_MOB,  # Primal Ritual Shell
-            200859: Source.RARE_MOB,  # Seasoned Hunter's Trophy
-            198407: Source.WORLD_QUEST,  # Azure Arcanic Amplifier
-            198542: Source.WORLD_QUEST,  # Shikaari Huntress' Arrowhead
-            198489: Source.WORLD_QUEST,  # Dreamscape Prism
-            204810: Source.WORLD_QUEST,  # Drogbar Rocks
-            204811: Source.WORLD_QUEST,  # Drogbar Stones
-            204386: Source.WORLD_QUEST,  # Pocket Darkened Elemental Core
-            204387: Source.WORLD_QUEST,  # Buzzing Orb Core
-            204388: Source.WORLD_QUEST,  # Draconic Cauterizing Magma
-            204714: Source.WORLD_QUEST,  # Satchel of Healing Spores
-            204728: Source.WORLD_QUEST,  # Friendship Censer
-            204736: Source.WORLD_QUEST,  # Heatbound Medallion
-            204901: Source.WORLD_QUEST,  # Firecaller's Focus
-            205191: Source.WORLD_QUEST,  # Underlight Globe
-            205192: Source.WORLD_QUEST,  # Volatile Crystal Shard
-            205193: Source.WORLD_QUEST,  # Sturdy Deepflayer Scute
-            205194: Source.WORLD_QUEST,  # Fractured Crystalspine Quill
-            205195: Source.WORLD_QUEST,  # Drakeforged Magma Charm
-            205196: Source.WORLD_QUEST,  # Zaqali Hand Cauldron
-            205200: Source.WORLD_QUEST,  # Stirring Twilight Ember
-            205201: Source.WORLD_QUEST,  # Smoldering Howler Horn
-            205229: Source.WORLD_QUEST,  # Magma Serpent Lure
-            205262: Source.WORLD_QUEST,  # Magmaclaw Lure
-            205276: Source.WORLD_QUEST,  # Deepflayer Lure
-            192797: Source.CALLING,  # Gral's Discarded Tooth
-            198695: Source.CALLING,  # Bottomless Reliquary Satchel
-            # need to flag these because of timewalking :s
-            133252: Source.DUNGEON,  # Rainsong
-            133246: Source.DUNGEON,  # Heart of Thunder
-            # Grim Batol is somehow not getting detected
-            133304: Source.DUNGEON,  # Gale of Shadows
-            133282: Source.DUNGEON,  # Skardyn's Grace
-            133300: Source.DUNGEON,  # Mark of Khardros
-            # need to somehow double check these
-            215174: Source.DELVE,  # Concoction: Kiss of Death
-            215171: Source.DELVE,  # Fungal Friend Flute
-            215169: Source.DELVE,  # Everburning Lantern
-            215178: Source.DELVE,  # Shadow-Binding Ritual Knife
-            225648: Source.DELVE,  # Candle Confidant
-            225656: Source.DELVE,  # Goldenglow Censer
-            225651: Source.DELVE,  # Kaheti Shadeweaver's Emblem
-            225649: Source.DELVE,  # Quickwick Candlestick
-            225668: Source.DELVE,  # Unstable Power Suit Core
-            225891: Source.DELVE,  # Vile Vial of Kaheti Bile
-            226539: Source.DELVE,  # Scroll of Momentum
-            225654: Source.DELVE,  # Imperfect Ascendancy Serum
-            215170: Source.DELVE,  # Abyssal Trap
-            225653: Source.DELVE,  # Siphoning Lightbrand
-            225638: Source.DELVE,  # Spelunker's Waning Candle
-            # 215172: Source.DELVE,  # Silken Chain Weaver
-            225657: Source.DELVE,  # Detachable Fang
-            225647: Source.WORLD_QUEST,  # Shining Arathor Insignia
-            218307: Source.DELVE,  # Wildfire Wick
-            # tww season 2
-            235363: Source.DELVE,  # Suspicious Energy Drink
-            234217: Source.DELVE,  # Funhouse Lens
-            232485: Source.DELVE,  # Mechano-Core Amplifier
-            232883: Source.DELVE,  # Turbo-Drain 5000
-            234821: Source.DELVE,  # Papa's Prized Putter
-            235359: Source.DELVE,  # Ratfang Toxin
-            232486: Source.DELVE,  # Noggenfogger Ultimate Deluxe
-            234717: Source.DELVE,  # Blastmaster3000
-            235373: Source.DELVE,  # Abyssal Volt
-            235283: Source.DELVE,  # Bashful Book
-            234218: Source.DELVE,  # Goo-blin Grenade
-        }
-
-        if self.item_id in item_mapping.keys():
-            return item_mapping[self.item_id]
+        if self.item_id in ITEM_TO_SOURCE_MAPPING.keys():
+            return ITEM_TO_SOURCE_MAPPING[self.item_id]
 
         if self.instance == Instance.DAWN_OF_THE_INFINITE:
             return Source.MEGA_DUNGEON
@@ -678,10 +678,66 @@ class Trinket:
                 ]
 
             if self.source == Source.DELVE:
-                return [
-                    Season.TWW_SEASON_1,
-                    Season.TWW_SEASON_2,
-                ]
+                season_1_trinkets = {
+                    215174: Source.DELVE,  # Concoction: Kiss of Death
+                    215171: Source.DELVE,  # Fungal Friend Flute
+                    215169: Source.DELVE,  # Everburning Lantern
+                    215178: Source.DELVE,  # Shadow-Binding Ritual Knife
+                    225648: Source.DELVE,  # Candle Confidant
+                    225656: Source.DELVE,  # Goldenglow Censer
+                    225651: Source.DELVE,  # Kaheti Shadeweaver's Emblem
+                    225649: Source.DELVE,  # Quickwick Candlestick
+                    225668: Source.DELVE,  # Unstable Power Suit Core
+                    225891: Source.DELVE,  # Vile Vial of Kaheti Bile
+                    226539: Source.DELVE,  # Scroll of Momentum
+                    225654: Source.DELVE,  # Imperfect Ascendancy Serum
+                    215170: Source.DELVE,  # Abyssal Trap
+                    225653: Source.DELVE,  # Siphoning Lightbrand
+                    225638: Source.DELVE,  # Spelunker's Waning Candle
+                    # 215172: Source.DELVE,  # Silken Chain Weaver
+                    225657: Source.DELVE,  # Detachable Fang
+                    225647: Source.WORLD_QUEST,  # Shining Arathor Insignia
+                    218307: Source.DELVE,  # Wildfire Wick
+                }
+                season_2_trinkets = {
+                    215174: Source.DELVE,  # Concoction: Kiss of Death
+                    215171: Source.DELVE,  # Fungal Friend Flute
+                    # 215169: Source.DELVE,  # Everburning Lantern
+                    # 215178: Source.DELVE,  # Shadow-Binding Ritual Knife
+                    225648: Source.DELVE,  # Candle Confidant
+                    225656: Source.DELVE,  # Goldenglow Censer
+                    225651: Source.DELVE,  # Kaheti Shadeweaver's Emblem
+                    # 225649: Source.DELVE,  # Quickwick Candlestick
+                    225668: Source.DELVE,  # Unstable Power Suit Core
+                    225891: Source.DELVE,  # Vile Vial of Kaheti Bile
+                    226539: Source.DELVE,  # Scroll of Momentum
+                    # 225654: Source.DELVE,  # Imperfect Ascendancy Serum
+                    215170: Source.DELVE,  # Abyssal Trap
+                    225653: Source.DELVE,  # Siphoning Lightbrand
+                    225638: Source.DELVE,  # Spelunker's Waning Candle
+                    # 215172: Source.DELVE,  # Silken Chain Weaver
+                    225657: Source.DELVE,  # Detachable Fang
+                    225647: Source.WORLD_QUEST,  # Shining Arathor Insignia
+                    218307: Source.DELVE,  # Wildfire Wick
+                    # tww season 2
+                    235363: Source.DELVE,  # Suspicious Energy Drink
+                    234217: Source.DELVE,  # Funhouse Lens
+                    232485: Source.DELVE,  # Mechano-Core Amplifier
+                    232883: Source.DELVE,  # Turbo-Drain 5000
+                    234821: Source.DELVE,  # Papa's Prized Putter
+                    235359: Source.DELVE,  # Ratfang Toxin
+                    232486: Source.DELVE,  # Noggenfogger Ultimate Deluxe
+                    234717: Source.DELVE,  # Blastmaster3000
+                    235373: Source.DELVE,  # Abyssal Volt
+                    235283: Source.DELVE,  # Bashful Book
+                    234218: Source.DELVE,  # Goo-blin Grenade
+                }
+                seasons: typing.List[Season] = []
+                if self.item_id in season_1_trinkets:
+                    seasons.append(Season.TWW_SEASON_1)
+                if self.item_id in season_2_trinkets:
+                    seasons.append(Season.TWW_SEASON_2)
+                return seasons
 
             if self.source in (Source.PVP, Source.LOW_PVP, Source.HIGH_PVP):
                 if self.full_name.startswith("Forged"):
