@@ -674,6 +674,7 @@ class Trinket:
             if self.source == Source.PROFESSION:
                 return [
                     Season.TWW_SEASON_1,
+                    Season.TWW_SEASON_2,
                 ]
 
             if self.source == Source.DELVE:
@@ -686,6 +687,10 @@ class Trinket:
                 if self.full_name.startswith("Forged"):
                     return [
                         Season.TWW_SEASON_1,
+                    ]
+                if self.full_name.startswith("Prized"):
+                    return [
+                        Season.TWW_SEASON_2,
                     ]
 
             if self.source == Source.RARE_MOB:
