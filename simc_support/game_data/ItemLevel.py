@@ -494,6 +494,7 @@ ITEM_LEVELS = {
             _tww1_veteran,
             _tww1_champion,
             _tww1_hero,
+            _tww2_veteran,
         ),
         Season.TWW_SEASON_2: _combine_unify(
             # _tww2_explorer,
