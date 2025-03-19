@@ -126,6 +126,7 @@ ITEM_TO_SOURCE_MAPPING = {
     235283: Source.DELVE,  # Bashful Book
     234218: Source.DELVE,  # Goo-blin Grenade
     232891: Source.DELVE,  # Amorphous Relic
+    235984: Source.DELVE,  # Garbagemancer's Last Resort
 }
 
 
@@ -733,6 +734,7 @@ class Trinket:
                     235283: Source.DELVE,  # Bashful Book
                     234218: Source.DELVE,  # Goo-blin Grenade
                     232891: Source.DELVE,  # Amorphous Relic
+                    235984: Source.DELVE,  # Garbagemancer's Last Resort
                 }
                 seasons: typing.List[Season] = []
                 if self.item_id in season_1_trinkets:
