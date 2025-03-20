@@ -709,7 +709,7 @@ class Trinket:
                     225648: Source.DELVE,  # Candle Confidant
                     225656: Source.DELVE,  # Goldenglow Censer
                     225651: Source.DELVE,  # Kaheti Shadeweaver's Emblem
-                    # 225649: Source.DELVE,  # Quickwick Candlestick
+                    225649: Source.DELVE,  # Quickwick Candlestick
                     225668: Source.DELVE,  # Unstable Power Suit Core
                     225891: Source.DELVE,  # Vile Vial of Kaheti Bile
                     226539: Source.DELVE,  # Scroll of Momentum
