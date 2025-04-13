@@ -611,6 +611,7 @@ class Trinket:
         non_seasonal_items = [
             56370,
             191492,
+            169769,  # Remote Guidance Device was part of the dungeon when it was released but the seasonal TWW2 shortened dungeon does not contain it.
         ]
 
         if self.item_id in non_seasonal_items:
