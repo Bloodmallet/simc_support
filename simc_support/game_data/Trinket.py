@@ -127,6 +127,12 @@ ITEM_TO_SOURCE_MAPPING = {
     234218: Source.DELVE,  # Goo-blin Grenade
     232891: Source.DELVE,  # Amorphous Relic
     235984: Source.DELVE,  # Garbagemancer's Last Resort
+    # tww season 2 event
+    237494: Source.MISSION,  # Hallowed Tome
+    238391: Source.MISSION,  # Arathi Minister's Receptacle
+    225647: Source.MISSION,  # Shining Arathor Insignia
+    237495: Source.MISSION,  # Baleful Excerpt
+    225693: Source.MISSION,  # Shadowed Essence
 }
 
 
@@ -362,6 +368,7 @@ class Trinket:
                 Source.DUNGEON,
                 Source.RARE_MOB,
                 Source.DELVE,
+                Source.MISSION,
             ):
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
 
@@ -611,6 +618,7 @@ class Trinket:
         non_seasonal_items = [
             56370,
             191492,
+            169769,  # Remote Guidance Device was part of the dungeon when it was released but the seasonal TWW2 shortened dungeon does not contain it.
         ]
 
         if self.item_id in non_seasonal_items:
@@ -766,6 +774,11 @@ class Trinket:
             if self.source == Source.CALLING:
                 return [
                     Season.TWW_SEASON_1,
+                ]
+
+            if self.source == Source.MISSION:
+                return [
+                    Season.TWW_SEASON_2,
                 ]
 
         # TODO: add more logic to present more trinkets as season trinkets
