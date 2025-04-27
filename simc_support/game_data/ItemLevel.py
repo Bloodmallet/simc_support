@@ -155,7 +155,7 @@ ITEM_LEVELS = {
             _tww1_champion,
             _tww1_hero,
         ),
-        Season.TWW_SEASON_2: [-1],
+        Season.TWW_SEASON_2: _tww2_champion,
     },
     Source.PROFESSION: {
         Season.DF_SEASON_1: [
