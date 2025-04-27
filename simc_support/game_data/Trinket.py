@@ -131,6 +131,8 @@ ITEM_TO_SOURCE_MAPPING = {
     237494: Source.MISSION,  # Hallowed Tome
     238391: Source.MISSION,  # Arathi Minister's Receptacle
     225647: Source.MISSION,  # Shining Arathor Insignia
+    237495: Source.MISSION,  # Baleful Excerpt
+    225693: Source.MISSION,  # Shadowed Essence
 }
 
 
