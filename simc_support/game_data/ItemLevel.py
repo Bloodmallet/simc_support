@@ -41,8 +41,8 @@ _tww1_mythic = [623, 626, 629, 632, 636, 639]
 # _tww2_adventurer = [623, 626, 629, 632,]
 _tww2_veteran = [623, 626, 629, 632, 636, 639, 642, 645]
 _tww2_champion = [636, 639, 642, 645, 649, 653, 655, 658]
-_tww2_hero = [649, 653, 655, 658, 662, 665]
-_tww2_mythic = [662, 665, 668, 672, 675, 678]
+_tww2_hero = [649, 653, 655, 658, 662, 665, 668, 672]
+_tww2_mythic = [662, 665, 668, 672, 675, 678, 681, 684]
 
 
 def _df_season_2_upgrade_range(upgrade_level: int) -> typing.List[int]:
