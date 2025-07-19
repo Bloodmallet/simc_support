@@ -585,6 +585,7 @@ class Trinket:
             Instance.NERUBAR_PALACE,
             Instance.BLACKROCK_DEPTHS_EVENT,
             Instance.LIBERATION_OF_UNDERMINE,
+            Instance.MANAFORGE_OMEGA,
         ):
             return None
 
