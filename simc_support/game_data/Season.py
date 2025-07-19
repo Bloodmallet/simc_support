@@ -10,6 +10,7 @@ class Season(enum.Enum):
     DF_SEASON_4 = enum.auto()
     TWW_SEASON_1 = enum.auto()
     TWW_SEASON_2 = enum.auto()
+    TWW_SEASON_3 = enum.auto()
 
     @staticmethod
     def get_seasons_from_instance(
@@ -121,5 +122,21 @@ class Season(enum.Enum):
 
         if instance in tww_s2_instances:
             seasons.append(Season.TWW_SEASON_2)
+
+        tww_s3_instances = (
+            # dungeons
+            Instance.ARAKARA_CITY_OF_ECHOES,
+            Instance.THE_DAWNBREAKER,
+            Instance.PRIORY_OF_THE_SACRED_FLAME,
+            Instance.OPERATION_FLOODGATE,
+            Instance.ECO_DOME_ALDANI,
+            Instance.HALLS_OF_ATONEMENT,
+            Instance.TAZAVESH_THE_VAILED_MARKET,
+            # raids
+            Instance.MANAFORGE_OMEGA,
+        )
+
+        if instance in tww_s3_instances:
+            seasons.append(Season.TWW_SEASON_3)
 
         return seasons

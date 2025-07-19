@@ -23,6 +23,8 @@ class Instance(int, enum.Enum):
     MISTS_OF_TIRNA_SCITHE = 1184
     THE_NECROTIC_WAKE = 1182
     THEATER_OF_PAIN = 1187
+    HALLS_OF_ATONEMENT = 1185
+    TAZAVESH_THE_VAILED_MARKET = 1194
 
     # Dragonflight
     ALGETHAR_ACADEMY = 1201
@@ -74,6 +76,7 @@ class Instance(int, enum.Enum):
     THE_DAWNBREAKER = 1270
     THE_ROOKERY = 1268
     THE_STONEVAULT = 1269
+    ECO_DOME_ALDANI = 1303
 
     ## raids
     VAULT_OF_THE_INCARNATES = 1200
@@ -82,6 +85,7 @@ class Instance(int, enum.Enum):
     AMIRDRASSIL_THE_DREAMS_HOPE = 1207
     NERUBAR_PALACE = 1273
     LIBERATION_OF_UNDERMINE = 1296
+    MANAFORGE_OMEGA = 1302
 
     ## event raids
     BLACKROCK_DEPTHS_EVENT = 1301
@@ -117,6 +121,9 @@ class RaidTier(int, enum.Enum):
             2664,  # Bael'Gar
             # Liberation of Undermine
             2639,  # Vexie and the Geargrinders
+            # Manaforge Omega
+            2685,  # Soulbinder Naazindhri
+            2684,  # Plexus Sentinel
         ):
             return RaidTier.LOW
         elif encounter_id in (
@@ -137,6 +144,11 @@ class RaidTier(int, enum.Enum):
             # Liberation of Undermine
             2640,  # Cauldron of Carnage
             2641,  # Rik Reverb
+            # Manaforge Omega
+            2687,  # Forgeweaver Araz
+            2686,  # Loom'ithar
+            2747,  # Fractillus
+            2688,  # The Soul Hunters
         ):
             return RaidTier.MID
         elif encounter_id in (
@@ -159,6 +171,9 @@ class RaidTier(int, enum.Enum):
             2642,  # Stix Bunkjunker
             2653,  # Sprocketmonger Lockenstock
             2644,  # The One-Armed Bandit
+            # Manaforge Omega
+            2690,  # Nexus-King Salhadaar
+            2691,  # Dimensius, the All-Devouring
         ):
             return RaidTier.HIGH
         elif encounter_id in (
