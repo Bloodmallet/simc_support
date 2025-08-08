@@ -133,6 +133,16 @@ ITEM_TO_SOURCE_MAPPING = {
     225647: Source.MISSION,  # Shining Arathor Insignia
     237495: Source.MISSION,  # Baleful Excerpt
     225693: Source.MISSION,  # Shadowed Essence
+    # tww season 2 delves
+    238386: Source.DELVE,  # Void-Touched Fragment
+    238390: Source.DELVE,  # Soulbreaker's Sigil
+    240172: Source.DELVE,  # Depleted K'areshi Battery
+    240213: Source.DELVE,  # Veiling Mana Shroud
+    242867: Source.DELVE,  # Automatic Footbomb Dispenser
+    246825: Source.DELVE,  # Chaotic Nethergate
+    246939: Source.DELVE,  # Essence-Hunter's Eyeglass
+    246944: Source.DELVE,  # Mind-Fracturing Odium
+    246945: Source.DELVE,  # Incorporeal Essence-Gorger
 }
 
 
@@ -745,11 +755,24 @@ class Trinket:
                     232891: Source.DELVE,  # Amorphous Relic
                     235984: Source.DELVE,  # Garbagemancer's Last Resort
                 }
+                season_3_trinkets = {
+                    238386: Source.DELVE,  # Void-Touched Fragment
+                    238390: Source.DELVE,  # Soulbreaker's Sigil
+                    240172: Source.DELVE,  # Depleted K'areshi Battery
+                    240213: Source.DELVE,  # Veiling Mana Shroud
+                    242867: Source.DELVE,  # Automatic Footbomb Dispenser
+                    246825: Source.DELVE,  # Chaotic Nethergate
+                    246939: Source.DELVE,  # Essence-Hunter's Eyeglass
+                    246944: Source.DELVE,  # Mind-Fracturing Odium
+                    246945: Source.DELVE,  # Incorporeal Essence-Gorger
+                }
                 seasons: typing.List[Season] = []
                 if self.item_id in season_1_trinkets:
                     seasons.append(Season.TWW_SEASON_1)
                 if self.item_id in season_2_trinkets:
                     seasons.append(Season.TWW_SEASON_2)
+                if self.item_id in season_3_trinkets:
+                    seasons.append(Season.TWW_SEASON_3)
                 return seasons
 
             if self.source in (Source.PVP, Source.LOW_PVP, Source.HIGH_PVP):
