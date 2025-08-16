@@ -397,8 +397,12 @@ class Trinket:
                 self.source == Source.TIMEWALKING
                 and self.instance_type == InstanceType.RAID
             ):
+                levels = [
+                    self._trinket.ilevel,
+                ]
+
                 try:
-                    levels = ItemLevel.ITEM_LEVELS[self.source][season][self.instance_type][self.raid_tier]  # type: ignore
+                    levels += ItemLevel.ITEM_LEVELS[self.source][season][self.instance_type][self.raid_tier]  # type: ignore
                 except KeyError:
                     pass
 
