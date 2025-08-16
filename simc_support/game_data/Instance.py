@@ -86,6 +86,7 @@ class Instance(int, enum.Enum):
     NERUBAR_PALACE = 1273
     LIBERATION_OF_UNDERMINE = 1296
     MANAFORGE_OMEGA = 1302
+    ULDUAR = 759
 
     ## event raids
     BLACKROCK_DEPTHS_EVENT = 1301
