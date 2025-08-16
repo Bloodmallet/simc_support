@@ -305,6 +305,12 @@ class Trinket:
         ):
             return Source.TIMEWALKING
 
+        if (
+            self.expansion == Expansion.WRATH_OF_THE_LICHKING
+            and self.instance_type == InstanceType.RAID
+        ):
+            return Source.TIMEWALKING
+
         if self._trinket.id_journal_instance == 1205:
             return Source.WORLD_BOSS
 
@@ -391,7 +397,10 @@ class Trinket:
                 self.source == Source.TIMEWALKING
                 and self.instance_type == InstanceType.RAID
             ):
-                levels = ItemLevel.ITEM_LEVELS[self.source][season][self.instance_type][self.raid_tier]  # type: ignore
+                try:
+                    levels = ItemLevel.ITEM_LEVELS[self.source][season][self.instance_type][self.raid_tier]  # type: ignore
+                except KeyError:
+                    pass
 
             elif self.source in (
                 Source.WORLD_QUEST,
@@ -596,8 +605,26 @@ class Trinket:
             Instance.BLACKROCK_DEPTHS_EVENT,
             Instance.LIBERATION_OF_UNDERMINE,
             Instance.MANAFORGE_OMEGA,
+            Instance.ULDUAR,
         ):
             return None
+
+        # Timewalking special cases
+        if self.item_id in (
+            156234,
+            156288,
+            156021,
+            156036,
+            156230,
+            155947,
+            156310,
+            156207,
+            156016,
+            156187,
+            156458,
+            156000,
+        ):
+            return RaidTier.LOW
 
         # special cases for rare drops
         #   - Whispering Incarnate Icon
@@ -634,6 +661,13 @@ class Trinket:
 
         if self.item_id in non_seasonal_items:
             return []
+
+        if (
+            self.expansion == Expansion.WRATH_OF_THE_LICHKING
+            and self.instance == Instance.ULDUAR
+            and self.source == Source.TIMEWALKING
+        ):
+            return [Season.TWW_SEASON_3]
 
         if (
             self.expansion == Expansion.DRAGONFLIGHT

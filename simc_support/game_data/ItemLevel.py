@@ -131,7 +131,7 @@ def _tww_season_2_timewalking_upgrade_range(upgrade_level: int) -> typing.List[i
 
 
 def _tww_season_3_timewalking_upgrade_range(upgrade_level: int) -> typing.List[int]:
-    options = [_tww3_veteran, _tww3_champion, _tww3_hero]
+    options = [_tww3_champion]
     return _upgrade_range(options, upgrade_level)
 
 
