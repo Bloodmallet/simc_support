@@ -45,7 +45,7 @@ _tww2_hero = [649, 652, 655, 658, 662, 665, 668, 671]
 _tww2_mythic = [662, 665, 668, 671, 675, 678, 681, 684]
 
 # _tww3_explorer = []
-# _tww3_adventurer = [623, 626, 629, 632,]
+_tww3_adventurer = [668, 671, 675, 678]
 _tww3_veteran = [668, 671, 675, 678, 681, 684, 688, 691]
 _tww3_champion = [681, 684, 688, 691, 694, 697, 701, 704]
 _tww3_hero = [694, 697, 701, 704, 707, 710]
@@ -286,10 +286,7 @@ ITEM_LEVELS = {
         ),
         Season.TWW_SEASON_3: _combine_unify(
             # _tww3_explorer,
-            # _tww3_adventurer,
-            _tww3_veteran,
-            _tww3_champion,
-            _tww3_hero,
+            _tww3_adventurer,
         ),
     },
     Source.WORLD_BOSS: {
