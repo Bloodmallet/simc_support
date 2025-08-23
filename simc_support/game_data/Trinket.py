@@ -143,6 +143,8 @@ ITEM_TO_SOURCE_MAPPING = {
     246939: Source.DELVE,  # Essence-Hunter's Eyeglass
     246944: Source.DELVE,  # Mind-Fracturing Odium
     246945: Source.DELVE,  # Incorporeal Essence-Gorger
+    # tww season 3 rare mobs
+    240171: Source.RARE_MOB,  # Observer's Soul Fetters
 }
 
 
@@ -824,9 +826,7 @@ class Trinket:
                     ]
 
             if self.source == Source.RARE_MOB:
-                return [
-                    Season.TWW_SEASON_1,
-                ]
+                return [Season.TWW_SEASON_1, Season.TWW_SEASON_3]
 
             if self.source == Source.WORLD_QUEST:
                 return [
