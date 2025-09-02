@@ -736,6 +736,7 @@ class Trinket:
                 return [
                     Season.TWW_SEASON_1,
                     Season.TWW_SEASON_2,
+                    Season.TWW_SEASON_3,
                 ]
 
             if self.source == Source.DELVE:
