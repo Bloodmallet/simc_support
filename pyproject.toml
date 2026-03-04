@@ -1,9 +1,5 @@
 [build-system]
-requires = [
-    "setuptools>=45",
-    "wheel",
-    "setuptools-git-versioning",
-]
+requires = ["setuptools>=45", "wheel", "setuptools-git-versioning"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools-git-versioning]
@@ -16,21 +12,12 @@ count_commits_from_version_file = false
 
 [tool.mypy]
 warn_return_any = true
-exclude = [
-    '^env/.',
-    'self_update.py',
-]
+exclude = ['^env/.', 'self_update.py']
 
 [[tool.mypy.overrides]]
-module = [
-    "pkg_resources",
-]
+module = ["pkg_resources"]
 ignore_missing_imports = true
 
 [[tool.mypy.overrides]]
-module = [
-    "networkx",
-    "pandas",
-    "requests"
-]
+module = ["networkx", "pandas", "requests"]
 ignore_missing_imports = true
