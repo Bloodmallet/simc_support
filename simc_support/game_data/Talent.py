@@ -1,6 +1,7 @@
 import json
 import logging
-import pkg_resources
+import importlib.resources
+
 import typing
 import enum
 import datetime
@@ -418,16 +419,27 @@ class TreePath:
 
 def _load_talent_files() -> typing.Dict[str, typing.Any]:
     talents_per_spec = {}
+    upper_module = ".".join(__name__.split(".")[:-1])
 
-    path = "/".join(("data_files", "trees"))
-    for file in pkg_resources.resource_listdir(__name__, path):
-        if "raidbots" in file:
+    for file in (
+        importlib.resources.files(f"{upper_module}")
+        .joinpath("data_files", "trees")
+        .iterdir()
+    ):
+        if file.is_dir():
             continue
 
-        spec = file.split(".")[0]
-        file_path = "/".join((path, file))
+        if not file.name.endswith(".json"):
+            continue
 
-        with pkg_resources.resource_stream(__name__, file_path) as f:
+        if "raidbots" in file.name:
+            continue
+
+        spec = file.name.split(".")[0]
+        ref = importlib.resources.files(upper_module).joinpath(
+            "data_files", "trees", file.name
+        )
+        with ref.open("rb") as f:
             talents_per_spec[spec] = json.load(f)
 
     return talents_per_spec

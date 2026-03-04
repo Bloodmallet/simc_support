@@ -2,7 +2,7 @@ import dataclasses
 import json
 import enum
 import logging
-import pkg_resources
+import importlib.resources
 import typing
 
 from simc_support.game_data.Expansion import Expansion
@@ -926,9 +926,11 @@ class Trinket:
 
 
 def _load_trinkets() -> typing.List[Trinket]:
-    with pkg_resources.resource_stream(
-        __name__, "/".join(("data_files", "trinkets.json"))
-    ) as f:
+    upper_module = ".".join(__name__.split(".")[:-1])
+    ref = importlib.resources.files(upper_module).joinpath(
+        "data_files", "trinkets.json"
+    )
+    with ref.open("rb") as f:
         loaded_trinkets = json.load(f)
 
     _trinkets = [_Trinket(**t) for t in loaded_trinkets]
