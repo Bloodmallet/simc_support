@@ -44,6 +44,7 @@ class LeafsDependOnNode(Exception):
 class TalentType(enum.Enum):
     ACTIVE = "active"
     PASSIVE = "passive"
+    TIERRANK = "tierrank"
 
     def shape(self) -> str:
         mapping = {
@@ -433,7 +434,7 @@ def _load_talent_files() -> typing.Dict[str, typing.Any]:
 
 
 def _load_talents(
-    loaded_talents: typing.Dict[str, typing.Any]
+    loaded_talents: typing.Dict[str, typing.Any],
 ) -> typing.Dict[str, typing.Tuple[Tree, Tree]]:
     trees: typing.Dict[str, typing.Tuple[Tree, Tree]] = {}
 

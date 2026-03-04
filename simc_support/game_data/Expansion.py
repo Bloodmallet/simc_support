@@ -13,4 +13,5 @@ class Expansion(int, enum.Enum):
     SHADOWLANDS = 8
     DRAGONFLIGHT = 9
     THE_WAR_WITHIN = 10
+    MIDNIGHT = 11
     UNKNOWN_MINUS_3 = -3

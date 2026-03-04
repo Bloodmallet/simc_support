@@ -188,15 +188,25 @@ class _Trinket:
     stat_alloc_8: int  # 0
     stat_alloc_9: int  # 0
     stat_alloc_10: int  # 0
+    stat_type_1: int  #  5
+    stat_type_2: int  #  -1
+    stat_type_3: int  #  -1
+    stat_type_4: int  #  -1
+    stat_type_5: int  #  -1
+    stat_type_6: int  #  -1
+    stat_type_7: int  #  -1
+    stat_type_8: int  #  -1
+    stat_type_9: int  #  -1
+    stat_type_10: int  # -1
     stackable: int  # 1
     max_count: int  # 0
     req_rep_rank: int  # 0
-    id_content_tuning: int  # 0
+    req_spell: int  # 0
     sell_price: int  # 571854
     buy_price: int  # 2859270
-    # unk_3: int  # 1
-    unk_2: float  # 1.0
-    unk_1: float  # 1.0214999914169312
+    vendor_stack: int  # = -1  # no clue
+    price_variance: float
+    price_random_value: float
     flags_1: int  # 524288
     flags_2: int  # 8192
     flags_3: int  # 0
@@ -204,9 +214,13 @@ class _Trinket:
     flags_5: int  # 0
     faction_conv_id: int  # 0
     id_modified_crafting_reagent_item: int  # 0
-    req_spell: int  # 0
+    id_content_tuning: int  # 0
     id_curve: int  # 0
+    unk_1: float  # 1.0214999914169312
+    unk_2: float  # 1.0
+    unk_3: int  # 1
     id_name_desc: int  # 0
+    id_xmog_holiday: int  # = -1  # no clue
     # unk_l72_1: int  # 0
     id_holiday: int  # 0
     gem_props: int  # 0
@@ -218,14 +232,16 @@ class _Trinket:
     item_set: int  # 0
     id_lock: int  # 0
     # page_text: int  # 0
+    id_page: int  # = -1
     delay: int  # 0
     req_rep_faction: int  # 0
     req_skill_rank: int  # 0
     req_skill: int  # 0
+    ilevel: int  # 250
     class_mask: int  # 65535
     id_artifact: int  # 0
-    unk_6: int  # 0
-    unk_7: int  # 0
+    spell_weight: int
+    spell_weight_category: int
     socket_color_1: int  # 0
     socket_color_2: int  # 0
     socket_color_3: int  # 0
@@ -234,19 +250,9 @@ class _Trinket:
     page_mat: int  # 0
     bonding: int  # 1
     damage_type: int  #  0
-    stat_type_1: int  #  5
-    stat_type_2: int  #  -1
-    stat_type_3: int  #  -1
-    stat_type_4: int  #  -1
-    stat_type_5: int  #  -1
-    stat_type_6: int  #  -1
-    stat_type_7: int  #  -1
-    stat_type_8: int  #  -1
-    stat_type_9: int  #  -1
-    stat_type_10: int  # -1
     container_slots: int  # 0
-    unk_5: int  # 0
-    unk_4: int  # 0
+    req_pvp_medal: int
+    req_pvp_rank: int
     req_level: int  # 58
     inv_type: int  # 12
     quality: int  # 3
@@ -264,10 +270,6 @@ class _Trinket:
     id_journal_instance: int  # 1199
     id_map: int  # 2519
     instance_type: typing.Optional[int]  # null
-    vendor_stack: int  # = -1  # no clue
-    id_xmog_holiday: int  # = -1  # no clue
-    id_page: int  # = -1
-    ilevel: int = 0  # 250
 
 
 @dataclasses.dataclass
@@ -313,7 +315,7 @@ class Trinket:
         ):
             return Source.TIMEWALKING
 
-        if self._trinket.id_journal_instance == 1205:
+        if self._trinket.id_journal_instance in (1205, 1312):
             return Source.WORLD_BOSS
 
         # disabled because Cataclysm now is also featured in m+
@@ -332,15 +334,21 @@ class Trinket:
 
         if "Template" in self.full_name:
             return Source.TEMPLATE
+        if "TEMPLATE" in self.full_name:
+            return Source.TEMPLATE
         if "Test Item" in self.full_name:
             return Source.TEMPLATE
 
         if "Alchemist" in self.full_name:
             return Source.PROFESSION
-
+        if "Philosopher's Stone" in self.full_name:
+            return Source.PROFESSION
+        if "Thalassian Competitor's" in self.full_name:
+            return Source.PROFESSION
+        if "Darkmoon Dominion:" in self.full_name:
+            return Source.PROFESSION
         if "Darkmoon Deck" in self.full_name:
             return Source.PROFESSION
-
         if "Idol of the" in self.full_name:
             return Source.PROFESSION
 
@@ -372,7 +380,7 @@ class Trinket:
                     logger.warning(
                         "Raid Source was not yet properly set up. "
                         "Missing Raid tier! Add Encounter ID: "
-                        f"'{self._trinket.id_encounter}' for '{self.full_name}'"
+                        f"'{self._trinket.id_encounter}' for '{self.full_name}' in {self.instance}."
                     )
                 levels += ItemLevel.ITEM_LEVELS[self.source][season][  # type: ignore
                     self.raid_tier
@@ -612,6 +620,9 @@ class Trinket:
             Instance.LIBERATION_OF_UNDERMINE,
             Instance.MANAFORGE_OMEGA,
             Instance.ULDUAR,
+            Instance.MARCH_ON_QUELDANAS,
+            Instance.THE_VOIDSPIRE,
+            Instance.THE_DREAMRIFT,
         ):
             return None
 
@@ -728,7 +739,7 @@ class Trinket:
             if self.source == Source.TIMEWALKING and self.instance:
                 return [Season.DF_SEASON_2]
 
-        if self.expansion == Expansion.THE_WAR_WITHIN:
+        elif self.expansion == Expansion.THE_WAR_WITHIN:
             if self.source == Source.WORLD_BOSS:
                 return [Season.TWW_SEASON_1]
 
@@ -845,6 +856,65 @@ class Trinket:
                 ]
 
         # TODO: add more logic to present more trinkets as season trinkets
+        elif self.expansion == Expansion.MIDNIGHT:
+            if self.source == Source.WORLD_BOSS:
+                return [Season.MID_SEASON_1]
+
+            if self.source == Source.PROFESSION:
+                return [
+                    Season.MID_SEASON_1,
+                ]
+
+            if self.source == Source.DELVE:
+                season_1_trinkets = {
+                    215174: Source.DELVE,  # Concoction: Kiss of Death
+                    215171: Source.DELVE,  # Fungal Friend Flute
+                    215169: Source.DELVE,  # Everburning Lantern
+                    215178: Source.DELVE,  # Shadow-Binding Ritual Knife
+                    225648: Source.DELVE,  # Candle Confidant
+                    225656: Source.DELVE,  # Goldenglow Censer
+                    225651: Source.DELVE,  # Kaheti Shadeweaver's Emblem
+                    225649: Source.DELVE,  # Quickwick Candlestick
+                    225668: Source.DELVE,  # Unstable Power Suit Core
+                    225891: Source.DELVE,  # Vile Vial of Kaheti Bile
+                    226539: Source.DELVE,  # Scroll of Momentum
+                    225654: Source.DELVE,  # Imperfect Ascendancy Serum
+                    215170: Source.DELVE,  # Abyssal Trap
+                    225653: Source.DELVE,  # Siphoning Lightbrand
+                    225638: Source.DELVE,  # Spelunker's Waning Candle
+                    # 215172: Source.DELVE,  # Silken Chain Weaver
+                    225657: Source.DELVE,  # Detachable Fang
+                    225647: Source.WORLD_QUEST,  # Shining Arathor Insignia
+                    218307: Source.DELVE,  # Wildfire Wick
+                }
+                seasons = []
+                if self.item_id in season_1_trinkets:
+                    seasons.append(Season.MID_SEASON_1)
+                return seasons
+
+            if self.source in (Source.PVP, Source.LOW_PVP, Source.HIGH_PVP):
+                if self.full_name.startswith("???"):
+                    return [
+                        Season.MID_SEASON_1,
+                    ]
+
+            if self.source == Source.RARE_MOB:
+                return [Season.MID_SEASON_1]
+
+            if self.source == Source.WORLD_QUEST:
+                return [
+                    Season.MID_SEASON_1,
+                ]
+
+            if self.source == Source.CALLING:
+                return [
+                    Season.MID_SEASON_1,
+                ]
+
+            if self.source == Source.MISSION:
+                return [
+                    Season.MID_SEASON_1,
+                ]
 
         return []
 
