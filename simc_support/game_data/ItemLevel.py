@@ -51,6 +51,12 @@ _tww3_champion = [681, 684, 688, 691, 694, 697, 701, 704]
 _tww3_hero = [694, 697, 701, 704, 707, 710]
 _tww3_mythic = [707, 710, 714, 717, 720, 723]
 
+_mid1_adventurer = [220, 224, 227, 230, 233, 237]
+_mid1_veteran = [233, 237, 240, 243, 246, 250]
+_mid1_champion = [246, 250, 253, 256, 259, 263]
+_mid1_hero = [259, 263, 266, 269, 272, 276]
+_mid1_myth = [272, 276, 279, 282, 285, 289]
+
 
 def _df_season_2_upgrade_range(upgrade_level: int) -> typing.List[int]:
     if upgrade_level < 1:
@@ -132,6 +138,11 @@ def _tww_season_2_timewalking_upgrade_range(upgrade_level: int) -> typing.List[i
 
 def _tww_season_3_timewalking_upgrade_range(upgrade_level: int) -> typing.List[int]:
     options = [_tww3_champion, _tww3_hero]
+    return _upgrade_range(options, upgrade_level)
+
+
+def _mid_season_1_upgrade_range(upgrade_level: int) -> typing.List[int]:
+    options = [_mid1_veteran, _mid1_champion, _mid1_hero, _mid1_myth]
     return _upgrade_range(options, upgrade_level)
 
 
@@ -237,6 +248,15 @@ ITEM_LEVELS = {
                 + _tww3_mythic[:-1]
             }
         ),
+        Season.MID_SEASON_1: list(
+            {
+                ilevel
+                for ilevel in _mid1_veteran
+                + _mid1_champion
+                + _mid1_hero
+                + _mid1_myth[:-1]
+            }
+        ),
     },
     Source.PVP: {
         Season.DF_SEASON_1: [408, 424],
@@ -264,6 +284,7 @@ ITEM_LEVELS = {
         Season.TWW_SEASON_1: _tww1_champion,
         Season.TWW_SEASON_2: _tww2_champion,
         Season.TWW_SEASON_3: _tww3_champion,
+        Season.MID_SEASON_1: _mid1_champion,
     },
     Source.RARE_MOB: {  # super rares that scale up
         Season.DF_SEASON_1: [379, 382, 385, 389, 392],
@@ -288,6 +309,7 @@ ITEM_LEVELS = {
             # _tww3_explorer,
             _tww3_adventurer,
         ),
+        Season.MID_SEASON_1: [-1],
     },
     Source.WORLD_BOSS: {
         Season.DF_SEASON_1: [395],
@@ -297,6 +319,7 @@ ITEM_LEVELS = {
         Season.TWW_SEASON_1: [-1],
         Season.TWW_SEASON_2: [-1],
         Season.TWW_SEASON_3: [-1],
+        Season.MID_SEASON_1: _mid1_champion[1:],
     },
     Source.WORLD_DROP: {
         Season.DF_SEASON_1: [],
@@ -397,6 +420,12 @@ ITEM_LEVELS = {
                 for ilevel in _tww3_veteran + _tww3_champion + _tww3_hero + _tww3_mythic
             }
         ),
+        Season.MID_SEASON_1: list(
+            {
+                ilevel
+                for ilevel in _mid1_veteran + _mid1_champion + _mid1_hero + _mid1_myth
+            }
+        ),
     },
     Source.MEGA_DUNGEON: {
         Season.DF_SEASON_1: [],
@@ -406,6 +435,7 @@ ITEM_LEVELS = {
         Season.TWW_SEASON_1: [-1],
         Season.TWW_SEASON_2: [-1],
         Season.TWW_SEASON_3: [-1],
+        Season.MID_SEASON_1: [-1],
     },
     Source.RAID: {
         Season.DF_SEASON_1: {
@@ -478,6 +508,13 @@ ITEM_LEVELS = {
             RaidTier.MID: _tww_season_3_upgrade_range(3),
             RaidTier.HIGH: _tww_season_3_upgrade_range(4),
             RaidTier.HIGHER: [-1],
+            RaidTier.VERY_RARE: [-1],
+        },
+        Season.MID_SEASON_1: {
+            RaidTier.LOW: _mid_season_1_upgrade_range(1),
+            RaidTier.MID: _mid_season_1_upgrade_range(2),
+            RaidTier.HIGH: _mid_season_1_upgrade_range(3),
+            RaidTier.HIGHER: _mid_season_1_upgrade_range(4),
             RaidTier.VERY_RARE: [-1],
         },
     },
@@ -575,6 +612,13 @@ ITEM_LEVELS = {
             _tww3_veteran,
             _tww3_champion,
             _tww3_hero,
+        ),
+        Season.MID_SEASON_1: _combine_unify(
+            # _tww3_explorer,
+            # _tww3_adventurer,
+            _mid1_veteran,
+            _mid1_champion,
+            _mid1_hero,
         ),
     },
 }

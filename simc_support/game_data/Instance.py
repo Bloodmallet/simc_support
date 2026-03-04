@@ -11,8 +11,17 @@ class Instance(int, enum.Enum):
     NOT_MAPPED = -1
 
     ## dungeons
+    # Wrath of the Lich King
+    PIT_OF_SARON = 278
+
+    # Warlords of Draenor
+    SKYREACH = 476
+
     # Cataclysm
     GRIM_BATOL = -2
+
+    # Legion
+    SEAT_OF_THE_TRIUMVIRATE = 945
 
     # Battle for Azeroth
     SIEGE_OF_BORALUS = 1023
@@ -78,6 +87,16 @@ class Instance(int, enum.Enum):
     THE_STONEVAULT = 1269
     ECO_DOME_ALDANI = 1303
 
+    # MIDNIGHT
+    DEN_OF_NALORAKK = 1311
+    MAGISTERS_TERRACE = 1300
+    MAISARA_CAVERNS = 1315
+    MURDER_ROW = 1304
+    NEXUS_POINT_XENAS = 1316
+    THE_BLINDING_VALE = 1309
+    VOIDSCAR_ARENA = 1313
+    WINDRUNNER_SPIRE = 1299
+
     ## raids
     VAULT_OF_THE_INCARNATES = 1200
     ABERUS_THE_SHADOWED_CRUCIBLE = 1208
@@ -87,6 +106,9 @@ class Instance(int, enum.Enum):
     LIBERATION_OF_UNDERMINE = 1296
     MANAFORGE_OMEGA = 1302
     ULDUAR = 759
+    THE_DREAMRIFT = 1314
+    THE_VOIDSPIRE = 1307
+    MARCH_ON_QUELDANAS = 1308
 
     ## event raids
     BLACKROCK_DEPTHS_EVENT = 1301
@@ -125,6 +147,8 @@ class RaidTier(int, enum.Enum):
             # Manaforge Omega
             2685,  # Soulbinder Naazindhri
             2684,  # Plexus Sentinel
+            # The Voidspire
+            2733,  # Imperator Averzian
         ):
             return RaidTier.LOW
         elif encounter_id in (
@@ -150,6 +174,11 @@ class RaidTier(int, enum.Enum):
             2686,  # Loom'ithar
             2747,  # Fractillus
             2688,  # The Soul Hunters
+            # The Dreamrift
+            2795,
+            # The Voidspire
+            2734,  # Vorasius
+            2736,  # Fallen-King Salhadaar
         ):
             return RaidTier.MID
         elif encounter_id in (
@@ -175,6 +204,11 @@ class RaidTier(int, enum.Enum):
             # Manaforge Omega
             2690,  # Nexus-King Salhadaar
             2691,  # Dimensius, the All-Devouring
+            # March on Quel'Danas
+            2739,  # Belo'ren, Child of Al'ar
+            # The Voidspire
+            2735,  # Vaelgor & Ezzorak
+            2737,  # Lightblinded Vanguard
         ):
             return RaidTier.HIGH
         elif encounter_id in (
@@ -192,6 +226,10 @@ class RaidTier(int, enum.Enum):
             # Liberation of Undermine
             2645,  # Mug'zee, Heads of Security
             2646,  # Chrome King Gallywix
+            # March on Quel'Danas
+            2740,  # Midnight Falls
+            # The Voidspire
+            2738,  # Crown of the Cosmos
         ):
             return RaidTier.HIGHER
         return RaidTier.UNKNOWN
