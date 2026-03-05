@@ -251,7 +251,8 @@ ITEM_LEVELS = {
         Season.MID_SEASON_1: list(
             {
                 ilevel
-                for ilevel in _mid1_veteran
+                for ilevel in _mid1_adventurer
+                + _mid1_veteran
                 + _mid1_champion
                 + _mid1_hero
                 + _mid1_myth[:-1]

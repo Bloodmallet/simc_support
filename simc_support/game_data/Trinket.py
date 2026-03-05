@@ -427,11 +427,14 @@ class Trinket:
 
             elif self.source == Source.PROFESSION:
                 levels += ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
-                epic_cutoff = 99999
+                epic_cutoff = 221
                 if "Darkmoon Deck:" in self.full_name:
                     levels = [level for level in levels if level < epic_cutoff]
-                elif "Darkmoon Deck Box:" in self.full_name:
+                elif "Darkmoon Dominion:" in self.full_name:
                     levels = [level for level in levels if level >= epic_cutoff]
+
+                if self.full_name == "Primal Philosopher's Stone":
+                    levels = [l for l in levels if l < 247]
 
             elif self.source == Source.WORLD_BOSS:
                 # is REPLACED by prepared itemlevels, blizzard hotfixes are hot fixes
