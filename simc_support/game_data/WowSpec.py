@@ -125,6 +125,7 @@ VENGEANCE = WowSpec(
     full_name="Vengeance",
     simc_name="vengeance",
 )
+# TODO: Add Devour Demon Hunter
 BALANCE = WowSpec(
     id=102,
     wow_class=WowClass.DRUID,

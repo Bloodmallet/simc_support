@@ -130,6 +130,22 @@ GNOME = Race(
         Language.BR: "Gnomo",
     },
 )
+HARANIR_ALLIANCE = Race(
+    ALLIANCE,
+    "Haranir",
+    "haranir",
+    {
+        Language.US: "Haranir",
+        Language.IT: "Haranir",
+        Language.DE: "Haranir",
+        Language.FR: "Haranir",
+        Language.RU: "Haranir",
+        Language.ES: "Haranir",
+        Language.KR: "Haranir",
+        Language.CN: "Haranir",
+        Language.BR: "Haranir",
+    },
+)
 HUMAN = Race(
     ALLIANCE,
     "Human",
@@ -324,6 +340,22 @@ GOBLIN = Race(
         Language.BR: "Goblin",
     },
 )
+HARANIR_HORDE = Race(
+    HORDE,
+    "Haranir",
+    "haranir",
+    {
+        Language.US: "Haranir",
+        Language.IT: "Haranir",
+        Language.DE: "Haranir",
+        Language.FR: "Haranir",
+        Language.RU: "Haranir",
+        Language.ES: "Haranir",
+        Language.KR: "Haranir",
+        Language.CN: "Haranir",
+        Language.BR: "Haranir",
+    },
+)
 HIGHMOUNTAINTAUREN = Race(
     HORDE,
     "Highmountain Tauren",
@@ -492,6 +524,7 @@ RACES = (
     DWARF,
     EARTHEN_ALLIANCE,
     GNOME,
+    HARANIR_ALLIANCE,
     HUMAN,
     KULTIRAN,
     LIGHTFORGEDDRAENEI,
@@ -504,6 +537,7 @@ RACES = (
     DRACTHYR_HORDE,
     EARTHEN_HORDE,
     GOBLIN,
+    HARANIR_HORDE,
     HIGHMOUNTAINTAUREN,
     MAGHARORC,
     NIGHTBORNE,
