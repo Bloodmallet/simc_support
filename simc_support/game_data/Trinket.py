@@ -145,6 +145,8 @@ ITEM_TO_SOURCE_MAPPING = {
     246945: Source.DELVE,  # Incorporeal Essence-Gorger
     # tww season 3 rare mobs
     240171: Source.RARE_MOB,  # Observer's Soul Fetters
+    # Midnight Season 1
+    264507: Source.REPUTATION,  # Crucible of Erratic Energies
 }
 
 
@@ -438,6 +440,9 @@ class Trinket:
 
             elif self.source == Source.WORLD_BOSS:
                 # is REPLACED by prepared itemlevels, blizzard hotfixes are hot fixes
+                levels = ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
+
+            elif self.source == Source.REPUTATION:
                 levels = ItemLevel.ITEM_LEVELS[self.source][season]  # type: ignore
 
         if self.source == Source.PROFESSION:
@@ -918,6 +923,9 @@ class Trinket:
                 return [
                     Season.MID_SEASON_1,
                 ]
+
+            if self.source == Source.REPUTATION:
+                return [Season.MID_SEASON_1]
 
         return []
 

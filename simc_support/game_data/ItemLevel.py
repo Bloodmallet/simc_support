@@ -622,6 +622,7 @@ ITEM_LEVELS = {
             _mid1_hero,
         ),
     },
+    Source.REPUTATION: {Season.MID_SEASON_1: _mid1_champion},
 }
 """Source > Season [ > InstanceType | > RaidTier ]
 """

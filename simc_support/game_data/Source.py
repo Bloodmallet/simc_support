@@ -24,3 +24,4 @@ class Source(enum.Enum):
     WORLD_BOSS = "World Boss"
     WORLD_DROP = "World Drop"
     WORLD_QUEST = "World Quest"
+    REPUTATION = "Reputation"
