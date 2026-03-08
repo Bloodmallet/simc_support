@@ -377,9 +377,9 @@ class Trinket:
         # add special cases here
         special_cases: typing.Dict[str, typing.Dict[Season, typing.List[int]]] = {
             # old items, not part of the actual loottable of highlevel content
-            "Solar Containment Unit": {Season.MID_SEASON_1: []},
-            "Rukhran's Quill": {Season.MID_SEASON_1: []},
-            "Fires of the Sun": {Season.MID_SEASON_1: []},
+            "Solar Containment Unit": {Season.MID_SEASON_1: [-1]},
+            "Rukhran's Quill": {Season.MID_SEASON_1: [-1]},
+            "Fires of the Sun": {Season.MID_SEASON_1: [-1]},
         }
 
         if self.seasons:
