@@ -15,7 +15,7 @@ _df_s2_champion = [-1]
 _df_s2_hero = [-1]
 _df_s2_mythic = [-1]
 
-_df_s3_explorer: typing.List[int] = []
+_df_s3_explorer: typing.List[int] = [-1]
 _df_s3_adventurer = [-1]
 _df_s3_veteran = [-1]
 _df_s3_champion = [-1]
@@ -97,6 +97,10 @@ def _upgrade_range(
 
     # ensure ilevels are ordered
     ilevels = sorted(ilevels)
+
+    # present default -1 value to ensure some "itemlevel" is still present and not empty
+    if not ilevels:
+        ilevels = [-1]
 
     return ilevels
 
