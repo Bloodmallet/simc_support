@@ -125,7 +125,17 @@ VENGEANCE = WowSpec(
     full_name="Vengeance",
     simc_name="vengeance",
 )
-# TODO: Add Devour Demon Hunter
+DEVOURER = WowSpec(
+    id=1480,
+    wow_class=WowClass.DEMONHUNTER,
+    translations=Language.EmptyTranslation(),
+    talents_blueprint="1111111",
+    raid_role=RaidRole.DD,
+    role=Role.MELEE,
+    stat=Stat.INTELLECT,
+    full_name="Devourer",
+    simc_name="devourer",
+)
 BALANCE = WowSpec(
     id=102,
     wow_class=WowClass.DRUID,
@@ -507,6 +517,7 @@ WOWSPECS = [
     UNHOLY,
     HAVOC,
     VENGEANCE,
+    DEVOURER,
     BALANCE,
     FERAL,
     GUARDIAN,
