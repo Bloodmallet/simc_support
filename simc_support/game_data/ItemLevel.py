@@ -332,7 +332,7 @@ ITEM_LEVELS = {
         Season.TWW_SEASON_3: [-1],
     },
     Source.WORLD_QUEST: {
-        Season.DF_SEASON_1: [372, 376, 379, 382, 385, 389],
+        Season.DF_SEASON_1: [-1],
         Season.DF_SEASON_2: _df_s2_adventurer,
         Season.DF_SEASON_3: [-1],
         Season.DF_SEASON_4: _df_s4_veteran,
@@ -357,6 +357,7 @@ ITEM_LEVELS = {
             _tww3_champion,
             _tww3_hero,
         ),
+        Season.MID_SEASON_1: _mid1_veteran,
     },
     Source.DUNGEON: {
         Season.DF_SEASON_1: [

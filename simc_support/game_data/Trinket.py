@@ -147,6 +147,14 @@ ITEM_TO_SOURCE_MAPPING = {
     240171: Source.RARE_MOB,  # Observer's Soul Fetters
     # Midnight Season 1
     264507: Source.REPUTATION,  # Crucible of Erratic Energies
+    251783: Source.WORLD_QUEST,  # Lost Idol of the Hash'ey
+    249339: Source.WORLD_QUEST,  # Gloom-Spattered Dreadscale
+    249339: Source.WORLD_QUEST,  # Gloom-Spattered Dreadscale
+    249339: Source.WORLD_QUEST,  # Gloom-Spattered Dreadscale
+    249339: Source.WORLD_QUEST,  # Gloom-Spattered Dreadscale
+    249339: Source.WORLD_QUEST,  # Gloom-Spattered Dreadscale
+    249339: Source.WORLD_QUEST,  # Gloom-Spattered Dreadscale
+    249339: Source.WORLD_QUEST,  # Gloom-Spattered Dreadscale
 }
 
 
@@ -367,7 +375,12 @@ class Trinket:
         ]
 
         # add special cases here
-        special_cases: typing.Dict[str, typing.Dict[Season, typing.List[int]]] = {}
+        special_cases: typing.Dict[str, typing.Dict[Season, typing.List[int]]] = {
+            # old items, not part of the actual loottable of highlevel content
+            "Solar Containment Unit": {Season.MID_SEASON_1: []},
+            "Rukhran's Quill": {Season.MID_SEASON_1: []},
+            "Fires of the Sun": {Season.MID_SEASON_1: []},
+        }
 
         if self.seasons:
             # removing baseline itemlevel in case we have season information
