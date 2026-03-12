@@ -61,6 +61,7 @@ DEMONHUNTER = WowClass(
     (
         Race.NIGHTELF,
         Race.BLOODELF,
+        Race.VOIDELF,
     ),
     Language.EmptyTranslation(),
     "Demon Hunter",
