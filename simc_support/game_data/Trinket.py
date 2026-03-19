@@ -149,12 +149,7 @@ ITEM_TO_SOURCE_MAPPING = {
     264507: Source.REPUTATION,  # Crucible of Erratic Energies
     251783: Source.WORLD_QUEST,  # Lost Idol of the Hash'ey
     249339: Source.WORLD_QUEST,  # Gloom-Spattered Dreadscale
-    249339: Source.WORLD_QUEST,  # Gloom-Spattered Dreadscale
-    249339: Source.WORLD_QUEST,  # Gloom-Spattered Dreadscale
-    249339: Source.WORLD_QUEST,  # Gloom-Spattered Dreadscale
-    249339: Source.WORLD_QUEST,  # Gloom-Spattered Dreadscale
-    249339: Source.WORLD_QUEST,  # Gloom-Spattered Dreadscale
-    249339: Source.WORLD_QUEST,  # Gloom-Spattered Dreadscale
+    251786: Source.DELVE,  # Ever-Collapsing Void Fissure
 }
 
 
