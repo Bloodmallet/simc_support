@@ -151,6 +151,7 @@ ITEM_TO_SOURCE_MAPPING = {
     249339: Source.WORLD_QUEST,  # Gloom-Spattered Dreadscale
     251786: Source.DELVE,  # Ever-Collapsing Void Fissure
     251792: Source.DELVE,  # Glorious Crusader's Keepsake
+    248583: Source.DELVE,  # Drum of Renewed Bonds
 }
 
 
@@ -884,25 +885,9 @@ class Trinket:
 
             if self.source == Source.DELVE:
                 season_1_trinkets = {
-                    215174: Source.DELVE,  # Concoction: Kiss of Death
-                    215171: Source.DELVE,  # Fungal Friend Flute
-                    215169: Source.DELVE,  # Everburning Lantern
-                    215178: Source.DELVE,  # Shadow-Binding Ritual Knife
-                    225648: Source.DELVE,  # Candle Confidant
-                    225656: Source.DELVE,  # Goldenglow Censer
-                    225651: Source.DELVE,  # Kaheti Shadeweaver's Emblem
-                    225649: Source.DELVE,  # Quickwick Candlestick
-                    225668: Source.DELVE,  # Unstable Power Suit Core
-                    225891: Source.DELVE,  # Vile Vial of Kaheti Bile
-                    226539: Source.DELVE,  # Scroll of Momentum
-                    225654: Source.DELVE,  # Imperfect Ascendancy Serum
-                    215170: Source.DELVE,  # Abyssal Trap
-                    225653: Source.DELVE,  # Siphoning Lightbrand
-                    225638: Source.DELVE,  # Spelunker's Waning Candle
-                    # 215172: Source.DELVE,  # Silken Chain Weaver
-                    225657: Source.DELVE,  # Detachable Fang
-                    225647: Source.WORLD_QUEST,  # Shining Arathor Insignia
-                    218307: Source.DELVE,  # Wildfire Wick
+                    251786: Source.DELVE,  # Ever-Collapsing Void Fissure
+                    251792: Source.DELVE,  # Glorious Crusader's Keepsake
+                    248583: Source.DELVE,  # Drum of Renewed Bonds
                 }
                 seasons = []
                 if self.item_id in season_1_trinkets:
