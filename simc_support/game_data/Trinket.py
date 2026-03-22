@@ -895,7 +895,7 @@ class Trinket:
                 return seasons
 
             if self.source in (Source.PVP, Source.LOW_PVP, Source.HIGH_PVP):
-                if self.full_name.startswith("???"):
+                if self.full_name.startswith("Galactic Gladiator"):
                     return [
                         Season.MID_SEASON_1,
                     ]
