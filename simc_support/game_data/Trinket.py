@@ -154,6 +154,7 @@ ITEM_TO_SOURCE_MAPPING = {
     248583: Source.DELVE,  # Drum of Renewed Bonds
     252957: Source.DELVE,  # Tangle of Vibrant Vines
     251787: Source.DELVE,  # Sealed Chaos Urn
+    265657: Source.DELVE,  # Fiber of Living Agony
 }
 
 
@@ -892,6 +893,7 @@ class Trinket:
                     248583: Source.DELVE,  # Drum of Renewed Bonds
                     252957: Source.DELVE,  # Tangle of Vibrant Vines
                     251787: Source.DELVE,  # Sealed Chaos Urn
+                    265657: Source.DELVE,  # Fiber of Living Agony
                 }
                 seasons = []
                 if self.item_id in season_1_trinkets:
