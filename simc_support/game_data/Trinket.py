@@ -148,7 +148,6 @@ ITEM_TO_SOURCE_MAPPING = {
     # Midnight Season 1
     264507: Source.REPUTATION,  # Crucible of Erratic Energies
     251783: Source.WORLD_QUEST,  # Lost Idol of the Hash'ey
-    249339: Source.WORLD_QUEST,  # Gloom-Spattered Dreadscale
     251786: Source.DELVE,  # Ever-Collapsing Void Fissure
     251792: Source.DELVE,  # Glorious Crusader's Keepsake
     248583: Source.DELVE,  # Drum of Renewed Bonds
