@@ -154,6 +154,12 @@ ITEM_TO_SOURCE_MAPPING = {
     252957: Source.DELVE,  # Tangle of Vibrant Vines
     251787: Source.DELVE,  # Sealed Chaos Urn
     265657: Source.DELVE,  # Fiber of Living Agony
+    251784: Source.DELVE,  # Sylvan Wakrapuku
+    251791: Source.DELVE,  # Holy Retributor's Order
+    251790: Source.DELVE,  # Desecrated Chalice
+    251785: Source.DELVE,  # Void-Reaper's Libram
+    251782: Source.DELVE,  # Withered Saptor's Paw
+    251792: Source.DELVE,  # Glorious Crusader's Keepsake
 }
 
 
@@ -893,6 +899,12 @@ class Trinket:
                     252957: Source.DELVE,  # Tangle of Vibrant Vines
                     251787: Source.DELVE,  # Sealed Chaos Urn
                     265657: Source.DELVE,  # Fiber of Living Agony
+                    251784: Source.DELVE,  # Sylvan Wakrapuku
+                    251791: Source.DELVE,  # Holy Retributor's Order
+                    251790: Source.DELVE,  # Desecrated Chalice
+                    251785: Source.DELVE,  # Void-Reaper's Libram
+                    251782: Source.DELVE,  # Withered Saptor's Paw
+                    251792: Source.DELVE,  # Glorious Crusader's Keepsake
                 }
                 seasons = []
                 if self.item_id in season_1_trinkets:
