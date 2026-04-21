@@ -54,8 +54,8 @@ _tww3_mythic = [-1]
 _mid1_adventurer = [220, 224, 227, 230, 233, 237]
 _mid1_veteran = [233, 237, 240, 243, 246, 250]
 _mid1_champion = [246, 250, 253, 256, 259, 263]
-_mid1_hero = [259, 263, 266, 269, 272, 276]
-_mid1_myth = [272, 276, 279, 282, 285, 289]
+_mid1_hero = [259, 263, 266, 269, 272, 276, 285]
+_mid1_myth = [272, 276, 279, 282, 285, 289, 298]
 
 
 def _df_season_2_upgrade_range(upgrade_level: int) -> typing.List[int]:
@@ -260,6 +260,7 @@ ITEM_LEVELS = {
                 + _mid1_champion
                 + _mid1_hero
                 + _mid1_myth[:-1]
+                + [295]  # void forged
             }
         ),
     },
