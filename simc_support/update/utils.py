@@ -96,6 +96,9 @@ def collect_localizations(
     dict_locales = {}
     for locale in _LOCALES:
         logger.debug(f"Creating {locale} dictionary.")
+        if locale not in localized_tables:
+            logger.debug("Language is missing in dictionary. Skipping")
+            continue
         dict_locales[locale] = _create_id_dict_from_table(
             localized_tables[locale], match_field
         )
@@ -125,7 +128,9 @@ def collect_localizations(
             if not translation_field:
                 continue
             for information in result:
-                translated_row = dict_locales[locale].get(information[match_field])
+                translated_row = dict_locales.get(locale, {}).get(
+                    information[match_field]
+                )
                 information[f"{translation_field}_{locale}"] = (
                     translated_row[0][translation_field]
                     if translated_row
@@ -267,10 +272,14 @@ def casc(args: ArgsObject) -> None:
         "batch",
     ]
     if args.ptr:
-        # command.append("--ptr")
-        arg = "--product=wowxptr"
+        # ?
+        # arg = "--product=wowxptr"
+        # 12.1
+        # product=wowt == ptr
+        # arg = "--product=wowt"
+        arg = "--ptr"
         logger.warning(
-            f"Using {arg}. make sure this is still the correct ptr for your usecase."
+            f"Using {arg}. make sure this is still the correct ptr for your usecase. (wowxptr versus ptr/wowt)"
         )
         command.append(arg)
     elif args.beta:

@@ -24,6 +24,8 @@ class Instance(int, enum.Enum):
     SEAT_OF_THE_TRIUMVIRATE = 945
 
     # Battle for Azeroth
+    KINGS_REST = 1041
+    TEMPLE_OF_SETHRALISS = 1030
     SIEGE_OF_BORALUS = 1023
     OPERATION_MECHAGON = 1178
     THE_MOTHERLODE = 1012
@@ -96,6 +98,7 @@ class Instance(int, enum.Enum):
     THE_BLINDING_VALE = 1309
     VOIDSCAR_ARENA = 1313
     WINDRUNNER_SPIRE = 1299
+    ALTAR_OF_FANGS = 1322
 
     ## raids
     VAULT_OF_THE_INCARNATES = 1200
@@ -109,6 +112,7 @@ class Instance(int, enum.Enum):
     THE_DREAMRIFT = 1314
     THE_VOIDSPIRE = 1307
     MARCH_ON_QUELDANAS = 1308
+    THE_VENOMOUS_ABYSS = 1320
 
     ## event raids
     BLACKROCK_DEPTHS_EVENT = 1301
@@ -149,6 +153,8 @@ class RaidTier(int, enum.Enum):
             2684,  # Plexus Sentinel
             # The Voidspire
             2733,  # Imperator Averzian
+            # The Venomous Abyss
+            2888,  # Nek'zali the Soulcoiler
         ):
             return RaidTier.LOW
         elif encounter_id in (
@@ -179,6 +185,9 @@ class RaidTier(int, enum.Enum):
             # The Voidspire
             2734,  # Vorasius
             2736,  # Fallen-King Salhadaar
+            # The Venomous Abyss
+            2874,  # Entombed Sentinels
+            2894,  # The Lost Explorers
         ):
             return RaidTier.MID
         elif encounter_id in (
@@ -209,6 +218,10 @@ class RaidTier(int, enum.Enum):
             # The Voidspire
             2735,  # Vaelgor & Ezzorak
             2737,  # Lightblinded Vanguard
+            # The Venomous Abyss
+            2882,  # Vashnik the Malignant
+            2871,  # Sszorak
+            2887,  # The Twin Fangs
         ):
             return RaidTier.HIGH
         elif encounter_id in (
@@ -230,6 +243,9 @@ class RaidTier(int, enum.Enum):
             2740,  # Midnight Falls
             # The Voidspire
             2738,  # Crown of the Cosmos
+            # The Venomous Abyss
+            2883,  # The Coiled Altar
+            2895,  # Ula'tek
         ):
             return RaidTier.HIGHER
         return RaidTier.UNKNOWN

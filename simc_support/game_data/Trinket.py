@@ -168,7 +168,6 @@ class _Trinket:
     """1:1 mapping of json to class."""
 
     id: int  # 193773
-    race_mask: int  # 18446744073709551615
     desc: str  # ""
     pad2: str  # ""
     pad1: str  # ""
@@ -217,6 +216,8 @@ class _Trinket:
     max_count: int  # 0
     req_rep_rank: int  # 0
     req_spell: int  # 0
+    race_mask_1: int  # 4294967295
+    race_mask_2: int  # 4294967295
     sell_price: int  # 571854
     buy_price: int  # 2859270
     vendor_stack: int  # = -1  # no clue
@@ -236,7 +237,6 @@ class _Trinket:
     unk_3: int  # 1
     id_name_desc: int  # 0
     id_xmog_holiday: int  # = -1  # no clue
-    # unk_l72_1: int  # 0
     id_holiday: int  # 0
     gem_props: int  # 0
     socket_bonus: int  # 0
@@ -246,7 +246,6 @@ class _Trinket:
     area_2: int  # 0
     item_set: int  # 0
     id_lock: int  # 0
-    # page_text: int  # 0
     id_page: int  # = -1
     delay: int  # 0
     req_rep_faction: int  # 0
@@ -330,7 +329,7 @@ class Trinket:
         ):
             return Source.TIMEWALKING
 
-        if self._trinket.id_journal_instance in (1205, 1312):
+        if self._trinket.id_journal_instance in (1205, 1312, 1317):
             return Source.WORLD_BOSS
 
         # disabled because Cataclysm now is also featured in m+
@@ -649,6 +648,7 @@ class Trinket:
             Instance.MARCH_ON_QUELDANAS,
             Instance.THE_VOIDSPIRE,
             Instance.THE_DREAMRIFT,
+            Instance.THE_VENOMOUS_ABYSS,
         ):
             return None
 
@@ -883,12 +883,15 @@ class Trinket:
 
         # TODO: add more logic to present more trinkets as season trinkets
         elif self.expansion == Expansion.MIDNIGHT:
-            if self.source == Source.WORLD_BOSS:
+            if self.source == Source.WORLD_BOSS and self._trinket.id_encounter == 2849:
+                return [Season.MID_SEASON_2]
+            elif self.source == Source.WORLD_BOSS:
                 return [Season.MID_SEASON_1]
 
             if self.source == Source.PROFESSION:
                 return [
                     Season.MID_SEASON_1,
+                    Season.MID_SEASON_2,
                 ]
 
             if self.source == Source.DELVE:
@@ -915,6 +918,10 @@ class Trinket:
                 if self.full_name.startswith("Galactic Gladiator"):
                     return [
                         Season.MID_SEASON_1,
+                    ]
+                if self.full_name.startswith("Venomous Gladiator"):
+                    return [
+                        Season.MID_SEASON_2,
                     ]
 
             if self.source == Source.RARE_MOB:

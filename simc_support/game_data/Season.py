@@ -12,6 +12,7 @@ class Season(enum.Enum):
     TWW_SEASON_2 = enum.auto()
     TWW_SEASON_3 = enum.auto()
     MID_SEASON_1 = enum.auto()
+    MID_SEASON_2 = enum.auto()
 
     @staticmethod
     def get_seasons_from_instance(
@@ -158,5 +159,22 @@ class Season(enum.Enum):
 
         if instance in mid_s1_instances:
             seasons.append(Season.MID_SEASON_1)
+
+        mid_s2_instances = (
+            # dungeons
+            Instance.ALTAR_OF_FANGS,
+            Instance.DEN_OF_NALORAKK,
+            Instance.MURDER_ROW,
+            Instance.THE_BLINDING_VALE,
+            Instance.VOIDSCAR_ARENA,
+            Instance.KINGS_REST,
+            Instance.RUBY_LIFE_POOLS,
+            Instance.TEMPLE_OF_SETHRALISS,
+            # raids
+            Instance.THE_VENOMOUS_ABYSS,
+        )
+
+        if instance in mid_s2_instances:
+            seasons.append(Season.MID_SEASON_2)
 
         return seasons
