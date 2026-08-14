@@ -160,7 +160,7 @@ def _mid_season_1_upgrade_range(upgrade_level: int) -> typing.List[int]:
 
 def _mid_season_2_upgrade_range(upgrade_level: int) -> typing.List[int]:
     # no mythic cause raids level 4 drop special itemlevel
-    options = [_mid2_veteran, _mid2_champion, _mid2_hero]
+    options = [_mid2_veteran, _mid2_champion, _mid2_hero, _mid2_myth]
     return _upgrade_range(options, upgrade_level) + (
         [344] if upgrade_level == 4 else []
     )
