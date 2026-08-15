@@ -113,6 +113,7 @@ class Instance(int, enum.Enum):
     THE_VOIDSPIRE = 1307
     MARCH_ON_QUELDANAS = 1308
     THE_VENOMOUS_ABYSS = 1320
+    THE_TIDEBOUND_GROTTO = 1317
 
     ## event raids
     BLACKROCK_DEPTHS_EVENT = 1301
@@ -155,6 +156,8 @@ class RaidTier(int, enum.Enum):
             2733,  # Imperator Averzian
             # The Venomous Abyss
             2888,  # Nek'zali the Soulcoiler
+            # The Tidebound Grotto
+            2849,  # Nymrissa Wavecaller
         ):
             return RaidTier.LOW
         elif encounter_id in (

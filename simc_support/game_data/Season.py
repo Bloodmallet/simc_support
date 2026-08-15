@@ -172,6 +172,7 @@ class Season(enum.Enum):
             Instance.TEMPLE_OF_SETHRALISS,
             # raids
             Instance.THE_VENOMOUS_ABYSS,
+            Instance.THE_TIDEBOUND_GROTTO,
         )
 
         if instance in mid_s2_instances:

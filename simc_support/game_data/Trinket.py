@@ -329,7 +329,7 @@ class Trinket:
         ):
             return Source.TIMEWALKING
 
-        if self._trinket.id_journal_instance in (1205, 1312, 1317):
+        if self._trinket.id_journal_instance in (1205, 1312):
             return Source.WORLD_BOSS
 
         # disabled because Cataclysm now is also featured in m+
@@ -649,6 +649,7 @@ class Trinket:
             Instance.THE_VOIDSPIRE,
             Instance.THE_DREAMRIFT,
             Instance.THE_VENOMOUS_ABYSS,
+            Instance.THE_TIDEBOUND_GROTTO,
         ):
             return None
 
