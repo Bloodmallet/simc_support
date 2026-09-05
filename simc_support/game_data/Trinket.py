@@ -160,6 +160,8 @@ ITEM_TO_SOURCE_MAPPING = {
     251785: Source.DELVE,  # Void-Reaper's Libram
     251782: Source.DELVE,  # Withered Saptor's Paw
     251792: Source.DELVE,  # Glorious Crusader's Keepsake
+    251783: Source.DELVE,  # Lost Idol of the Hash'ey
+    264878: Source.DELVE,  # Astalor's Anguish Agitator
 }
 
 
@@ -913,6 +915,15 @@ class Trinket:
                 seasons = []
                 if self.item_id in season_1_trinkets:
                     seasons.append(Season.MID_SEASON_1)
+
+                season_2_trinket_additions = {
+                    251783: Source.DELVE,  # Lost Idol of the Hash'ey
+                    264878: Source.DELVE,  # Astalor's Anguish Agitator
+                }
+                season_2_trinkets = season_1_trinkets.copy()
+                season_2_trinkets.update(season_2_trinket_additions)
+                if self.item_id in season_2_trinkets:
+                    seasons.append(Season.MID_SEASON_2)
                 return seasons
 
             if self.source in (Source.PVP, Source.LOW_PVP, Source.HIGH_PVP):
