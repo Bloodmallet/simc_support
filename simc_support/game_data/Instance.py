@@ -114,6 +114,7 @@ class Instance(int, enum.Enum):
     MARCH_ON_QUELDANAS = 1308
     THE_VENOMOUS_ABYSS = 1320
     THE_TIDEBOUND_GROTTO = 1317
+    THE_UNBINDING_OF_KITHIX = 1324
 
     ## event raids
     BLACKROCK_DEPTHS_EVENT = 1301
@@ -225,6 +226,8 @@ class RaidTier(int, enum.Enum):
             2882,  # Vashnik the Malignant
             2871,  # Sszorak
             2887,  # The Twin Fangs
+            # The Unbinding of Kith'ix
+            2896,  # Kith'ix
         ):
             return RaidTier.HIGH
         elif encounter_id in (
