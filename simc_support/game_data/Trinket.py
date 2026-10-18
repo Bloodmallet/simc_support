@@ -652,6 +652,7 @@ class Trinket:
             Instance.THE_DREAMRIFT,
             Instance.THE_VENOMOUS_ABYSS,
             Instance.THE_TIDEBOUND_GROTTO,
+            Instance.THE_UNBINDING_OF_KITHIX,
         ):
             return None
 
