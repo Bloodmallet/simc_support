@@ -63,7 +63,7 @@ _mid2_veteran = [279, 283, 286, 289, 292, 295]
 _mid2_champion = [292, 295, 298, 302, 305, 308]
 _mid2_hero = [305, 308, 311, 315, 318, 321, 328]
 # 344 as special raid mythic reward from the last 2 bosses
-_mid2_myth = [318, 321, 324, 328, 331, 334, 340]
+_mid2_myth = [318, 321, 324, 328, 331, 334, 341]
 
 
 def _df_season_2_upgrade_range(upgrade_level: int) -> typing.List[int]:
@@ -287,7 +287,7 @@ ITEM_LEVELS = {
                 + _mid2_champion
                 + _mid2_hero
                 + _mid2_myth[:-2]
-                + [338]  # fancy new upgrade, Ascendant Venomstones
+                + [337]  # fancy new upgrade, Ascendant Venomstones
             }
         ),
     },
